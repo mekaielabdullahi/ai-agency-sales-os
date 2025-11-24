@@ -1,0 +1,239 @@
+{
+  "daily_plan_schema": {
+    "date": "YYYY-MM-DD",
+    "planning_metadata": {
+      "generated_at": "HH:MM:SS",
+      "generation_time_seconds": 0,
+      "context_provided": true,
+      "obg": "string"
+    },
+    "the_one_thing": {
+      "description": "string",
+      "strategic_impact": "string",
+      "completed": false,
+      "completion_percentage": 0
+    },
+    "critical_path": [
+      {
+        "step": 1,
+        "task": "string",
+        "completed": false
+      }
+    ],
+    "tier1_tasks": [
+      {
+        "id": "t1_1",
+        "name": "string",
+        "estimated_hours": 0,
+        "actual_hours": 0,
+        "completed": false,
+        "completion_time": null,
+        "blockers_encountered": [],
+        "context": "string",
+        "success_criteria": "string"
+      }
+    ],
+    "tier2_tasks": [
+      {
+        "id": "t2_1",
+        "name": "string",
+        "estimated_hours": 0,
+        "actual_hours": 0,
+        "completed": false,
+        "attempted": false
+      }
+    ],
+    "tier3_tasks": [
+      {
+        "id": "t3_1",
+        "name": "string",
+        "completed": false,
+        "attempted": false
+      }
+    ],
+    "kill_list": [
+      "string"
+    ],
+    "energy_plan": {
+      "peak_hours": {
+        "time": "8-10 AM",
+        "planned_task": "string",
+        "actual_task": "string"
+      },
+      "good_hours": {
+        "time": "10-12 PM",
+        "planned_task": "string",
+        "actual_task": "string"
+      },
+      "ok_hours": {
+        "time": "1-3 PM",
+        "planned_task": "string",
+        "actual_task": "string"
+      },
+      "low_hours": {
+        "time": "3-5 PM",
+        "planned_task": "string",
+        "actual_task": "string"
+      }
+    },
+    "actual_performance": {
+      "productivity_score": 0,
+      "the_one_thing_progress": 0,
+      "tier1_completion_rate": 0,
+      "tier2_completion_rate": 0,
+      "tier3_completion_rate": 0,
+      "energy_management_success": false,
+      "ended_with_clarity": false
+    },
+    "patterns_noticed": [
+      "string"
+    ],
+    "lessons_learned": [
+      "string"
+    ],
+    "carry_forward": [
+      {
+        "task": "string",
+        "reason": "string",
+        "priority_tomorrow": "high|medium|low"
+      }
+    ]
+  },
+  "example_daily_plan": {
+    "date": "2024-01-23",
+    "planning_metadata": {
+      "generated_at": "06:00:00",
+      "generation_time_seconds": 45,
+      "context_provided": true,
+      "obg": "Scale to 100 customers by Q2"
+    },
+    "the_one_thing": {
+      "description": "Complete API documentation and deploy to staging",
+      "strategic_impact": "Unblocks team and enables automation",
+      "completed": true,
+      "completion_percentage": 100
+    },
+    "critical_path": [
+      {
+        "step": 1,
+        "task": "Finish API docs",
+        "completed": true
+      },
+      {
+        "step": 2,
+        "task": "Code review",
+        "completed": true
+      },
+      {
+        "step": 3,
+        "task": "Deploy staging",
+        "completed": true
+      }
+    ],
+    "tier1_tasks": [
+      {
+        "id": "t1_1",
+        "name": "Complete API documentation",
+        "estimated_hours": 2,
+        "actual_hours": 2.5,
+        "completed": true,
+        "completion_time": "10:30:00",
+        "blockers_encountered": ["Missing auth endpoint details"],
+        "context": "Carried from yesterday, blocking team",
+        "success_criteria": "All endpoints documented with examples"
+      },
+      {
+        "id": "t1_2",
+        "name": "Deploy API to staging",
+        "estimated_hours": 1,
+        "actual_hours": 0.75,
+        "completed": true,
+        "completion_time": "14:00:00",
+        "blockers_encountered": [],
+        "context": "After docs done and reviewed",
+        "success_criteria": "Running on staging, tested, team notified"
+      },
+      {
+        "id": "t1_3",
+        "name": "Customer onboarding planning",
+        "estimated_hours": 1.5,
+        "actual_hours": 2,
+        "completed": true,
+        "completion_time": "16:30:00",
+        "blockers_encountered": [],
+        "context": "Define scope for automation project",
+        "success_criteria": "Clear requirements doc and timeline"
+      }
+    ],
+    "tier2_tasks": [
+      {
+        "id": "t2_1",
+        "name": "Review team training materials",
+        "estimated_hours": 0.75,
+        "actual_hours": 0,
+        "completed": false,
+        "attempted": false
+      }
+    ],
+    "tier3_tasks": [
+      {
+        "id": "t3_1",
+        "name": "Research new deployment tools",
+        "completed": false,
+        "attempted": false
+      }
+    ],
+    "kill_list": [
+      "Redesigning the API",
+      "Starting new features",
+      "Optional product meeting"
+    ],
+    "energy_plan": {
+      "peak_hours": {
+        "time": "8-10 AM",
+        "planned_task": "API documentation deep work",
+        "actual_task": "API documentation deep work"
+      },
+      "good_hours": {
+        "time": "10-12 PM",
+        "planned_task": "Standup, then deployment",
+        "actual_task": "Standup ran long, started deployment"
+      },
+      "ok_hours": {
+        "time": "1-3 PM",
+        "planned_task": "Client call, then onboarding planning",
+        "actual_task": "Client call, deployment completion, then planning"
+      },
+      "low_hours": {
+        "time": "3-5 PM",
+        "planned_task": "Tier 2 tasks if energy permits",
+        "actual_task": "Extended onboarding planning"
+      }
+    },
+    "actual_performance": {
+      "productivity_score": 8.5,
+      "the_one_thing_progress": 100,
+      "tier1_completion_rate": 100,
+      "tier2_completion_rate": 0,
+      "tier3_completion_rate": 0,
+      "energy_management_success": true,
+      "ended_with_clarity": true
+    },
+    "patterns_noticed": [
+      "Documentation always takes 25% longer than estimated",
+      "Deployments are faster than expected when docs are complete",
+      "No energy for Tier 2 after completing all Tier 1"
+    ],
+    "lessons_learned": [
+      "Front-loading documentation in peak hours was perfect",
+      "Should batch non-critical tasks for specific days"
+    ],
+    "carry_forward": [
+      {
+        "task": "Review team training materials",
+        "reason": "Completed all Tier 1, no energy for Tier 2",
+        "priority_tomorrow": "medium"
+      }
+    ]
+  }
+}
