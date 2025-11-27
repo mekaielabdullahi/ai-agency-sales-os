@@ -70,9 +70,9 @@ Want to systematize your operations? [CTA]
 
 **Example**:
 ```
-3 systems every small business needs (but doesn't have):
+3 AI systems every organization needs for transformation:
 
-Most owners work IN the business, not ON it.
+Most leaders work IN the business, not ON it.
 Here's what changes that:
 
 1. Daily Planning System
@@ -279,7 +279,7 @@ You can't maintain chaos.
 The real question is:
 What system do you need first?
 
-For most small businesses: planning, tracking, or alignment.
+For most organizations: planning, tracking, or alignment.
 
 Which one's your bottleneck?
 ```
@@ -311,7 +311,7 @@ The solution:
 
 **Example**:
 ```
-73% of small business owners work 60+ hour weeks but can't explain where the time goes.
+73% of founders and executives work 60+ hour weeks but can't explain where the time goes.
 
 No time tracking. No productivity metrics. Just exhaustion.
 

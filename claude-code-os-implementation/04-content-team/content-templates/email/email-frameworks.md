@@ -194,7 +194,7 @@ SUBJECT: 5 free operations audits available this week
 
 Quick question: Do you know where your business operations are breaking down?
 
-Most small business owners don't.
+Most founders and executives don't.
 
 THE PROBLEM:
 You're working 60-hour weeks but can't point to exactly what's consuming all the time.
@@ -215,7 +215,7 @@ I'm offering 5 free operations audits this week.
 ize first
 
 PROOF:
-I've done this for 15+ years in high-stakes operations (Air Force, DoD, embassy security). Now bringing that discipline to small business.
+I've done this for 15+ years in high-stakes operations (Air Force, DoD, embassy security). Now bringing that discipline to organizational AI adoption and transformation.
 
 THE OFFER:
 Zero cost. Zero obligation.
