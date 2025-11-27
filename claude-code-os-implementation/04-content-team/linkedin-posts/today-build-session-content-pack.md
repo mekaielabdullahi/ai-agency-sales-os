@@ -66,7 +66,7 @@ Building systems for AriseGroup.ai clients. This is the foundation.
 
 What system are you building?
 
-#AIAutomation #BusinessSystems #ProductivityTools #AriseGroupAI
+#AIAutomation #AIAdoption #AITransformation #AriseGroupAI
 ```
 
 ### Publishing Notes:
@@ -229,7 +229,7 @@ Build systems for how you actually work.
 
 Not some ideal version.
 
-That's what I do at AriseGroup.ai - bring this kind of systematic discipline to small business operations.
+That's what I do at AriseGroup.ai - bring this kind of systematic discipline to organizational AI adoption and transformation.
 
 [CTA]
 What system should you build next?
@@ -277,7 +277,7 @@ That's what systematized operations look like.
 
 What system are you building? 👇
 
-#AIAutomation #BusinessSystems #Productivity #AriseGroupAI #SmallBusiness
+#AIAutomation #AIAdoption #Productivity #AriseGroupAI #AITransformation
 ```
 
 **Engagement Strategy**:

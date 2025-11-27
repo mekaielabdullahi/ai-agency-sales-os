@@ -26,7 +26,7 @@ Peak energy gone before real work even starts.
 
 Then at night, no idea if I was actually productive or just busy.
 
-As a small business owner, I was flying blind daily.
+As a founder, I was flying blind daily.
 
 THE SOLUTION:
 I built an AI-powered operating system using Claude.
@@ -43,17 +43,17 @@ My mornings back. Clear priorities. Real feedback.
 
 I know when I do my best work. I know what's blocking me. I know I'm working on the right things.
 
-At AriseGroup.ai, I help small businesses systematize their operations. This started as my own system—eating my own dog food.
+At AriseGroup.ai, I help organizations adopt AI and transform their operations systematically. This started as my own system—eating my own dog food.
 
-But the more I use it, the more I think other business owners need this too.
+But the more I use it, the more I think other organizations need this too.
 
-Your business operations should support you, not drain you.
+Your operations should support you, not drain you.
 
-→ Want to see where your operations are breaking down? Get a free operations audit at AriseGroup.ai
+→ Ready for systematic AI adoption? Get a free operations audit at AriseGroup.ai
 
 (Part 1/2)
 
-#SmallBusiness #AIAutomation #BusinessSystems #AriseGroupAI
+#AIAdoption #AITransformation #BusinessSystems #AriseGroupAI
 ```
 
 ---
@@ -85,9 +85,9 @@ I don't just get more done. I get the RIGHT things done.
 
 No more Friday realizations that I worked hard on the wrong stuff all week.
 
-At AriseGroup.ai, we bring this kind of systematic discipline to small business operations—without the complexity.
+At AriseGroup.ai, we bring this kind of systematic discipline to organizational AI adoption—without the complexity.
 
-Started building this for myself. Now I'm thinking about how to make it available to other business owners who are drowning in operations.
+Started building this for myself. Now I'm thinking about how to make it available to other organizations navigating AI transformation.
 
 Is your business running you, or do you have systems keeping you focused on what actually matters?
 
@@ -95,7 +95,7 @@ Is your business running you, or do you have systems keeping you focused on what
 
 (Part 2/2)
 
-#BusinessStrategy #SmallBusiness #Productivity #AriseGroupAI #AIAutomation
+#BusinessStrategy #AIAdoption #Productivity #AriseGroupAI #AITransformation
 ```
 
 ---
@@ -146,9 +146,9 @@ Based on engagement, consider:
 
 If this series performs well:
 - "How I automated my client onboarding in 2 hours"
-- "3 systems every small business needs (but doesn't have)"
+- "3 AI systems every organization needs for transformation"
 - "Why I stopped using [popular tool] and built my own"
-- "The $10K/month mistake most small businesses make"
+- "The $10K/month mistake organizations make with AI adoption"
 - "Behind the scenes: Building AI systems for AriseGroup.ai clients"
 
 ---
