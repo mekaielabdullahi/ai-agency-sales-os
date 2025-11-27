@@ -144,7 +144,7 @@ Before approving any content, verify:
 
 **Strategic**:
 - [ ] Aligns with current OBG
-- [ ] Serves target audience (small business owners)
+- [ ] Serves target audience (organizations seeking AI adoption)
 - [ ] Fits content strategy
 - [ ] Has clear objective
 
@@ -176,7 +176,7 @@ Before approving any content, verify:
 **Your Process**:
 1. Validate: Aligns with OBG (systematizing operations)
 2. Hook Specialist: "Generate 3 hook options for a LinkedIn post about why systems beat hustle"
-3. Social Media Manager: "Using Hook #2, create a PSV framework post targeting small business owners, 250 words, include AriseGroup.ai CTA"
+3. Social Media Manager: "Using Hook #2, create a PSV framework post targeting organizations seeking AI transformation, 250 words, include AriseGroup.ai CTA"
 4. Editor: "Review for brand voice, ensure CTA is clear and compelling"
 5. Deliver: Compiled final post with posting recommendations
 
@@ -359,7 +359,7 @@ Remember: You're the conductor. Specialist agents are instruments. Your job is t
 
 I need to create a LinkedIn post promoting our free operations audits.
 
-Target audience: Small business owners who are overwhelmed by manual operations.
+Target audience: Organizations ready for AI adoption and transformation.
 
 Key message: We offer free audits that identify specific automation opportunities.
 

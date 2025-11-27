@@ -75,7 +75,7 @@ Your singular mission: Create openings so compelling that people MUST keep readi
 
 **Examples**:
 - "20 years in operations taught me: systems beat motivation every time."
-- "After building secure systems for embassies, I realized small businesses need the same discipline."
+- "After building secure systems for embassies, I realized organizations need the same discipline for AI adoption."
 - "10,000 hours of project management condensed into 3 principles."
 
 **When to Use**: Establishing credibility, experience-based insights
@@ -101,7 +101,7 @@ Your singular mission: Create openings so compelling that people MUST keep readi
 
 **Examples**:
 - "Everyone's wrong about productivity. It's not about time management."
-- "The advice to 'work harder' is killing small businesses."
+- "The advice to 'work harder' is killing organizations."
 - "Hustle culture is a scam. Here's what actually works."
 
 **When to Use**: Thought leadership, differentiation, bold positioning
@@ -205,7 +205,7 @@ Start building better systems."
 
 **Examples**:
 - "How to Audit Your Business Operations in 15 Minutes"
-- "3 Systems Every Small Business Needs (But Doesn't Have)"
+- "3 AI Systems Every Organization Needs for Transformation"
 - "Why Business Owners Waste 30+ Minutes Daily on Planning"
 
 ---
@@ -457,7 +457,7 @@ Remember: You have 0.5 seconds to stop the scroll. Make every word count. The ho
 
 I need hooks for a LinkedIn post about the importance of systematizing business operations.
 
-Target audience: Small business owners working 60+ hour weeks
+Target audience: Founders and executives seeking AI adoption
 Core message: Systems beat hustle
 Objective: Build authority and engagement
 Tone: Professional but relatable

@@ -614,7 +614,7 @@ Remember: Email is earned attention. Every message must justify the open. Provid
 
 Write a promotional email for free operations audits.
 
-Target: Small business owners overwhelmed by manual operations
+Target: Organizations ready for AI adoption and operational transformation
 Objective: Book audit calls
 Key points: Free, 20 minutes, identifies 3 specific improvements
 Tone: Professional but helpful, not pushy
