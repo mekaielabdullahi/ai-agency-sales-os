@@ -1,1348 +1,725 @@
-# ARISEGROUP 90-DAY TRANSFORMATION TRACKER
-## From 4 Independent Contractors to Unified AI Transformation Firm
+# ARISEGROUP 90-DAY EXECUTION SYSTEM
+## The Daily Rhythm That Builds a $100K+ AI Transformation Firm
 
-**Start Date:** December 2, 2025
-**End Date:** March 2, 2026
-**Review Cadence:** Weekly Team Syncs (Every Friday 6pm)
-**Status:** 🟢 ACTIVE
+**Start:** December 2, 2025 | **End:** March 2, 2026 | **Review:** Every Friday 6pm
 
 ---
 
-## HOW TO USE THIS TRACKER
+## THE CORE PHILOSOPHY
 
-**Every Week:**
-1. **Monday:** Review last week (what worked, what didn't)
-2. **Mon-Fri:** Execute tasks for your role
-3. **Friday 6pm:** Team sync (30-60 min)
-   - Celebrate wins
-   - Review metrics
-   - Address blockers
-   - Plan next week
+You don't need a 90-day plan.
 
-**Color Legend:**
-- ✅ = Complete
-- 🟡 = In Progress
-- ❌ = Blocked/Needs Attention
-- 🎯 = Critical This Week
-- 💰 = Revenue Impact
-- 📈 = Brand Building
+You need a **90-day rhythm**.
+
+**Daily habits compound.**
+**Weekly rituals create momentum.**
+**Monthly milestones validate progress.**
+
+This tracker is organized around **what you do daily**, not what you plan weekly.
 
 ---
 
-## 90-DAY OVERVIEW
+## YOUR DAILY RHYTHM (2-3 Hours Per Founder)
 
-### **PHASE 1: FOUNDATION (WEEKS 1-4)**
-**Goal:** Form AriseGroup, launch personal brands, book 20-40 discovery calls, close first 1-3 projects
+### EVERY MORNING (1 hour): REVENUE GENERATION
 
-**Focus:**
-- Team formation and alignment
-- Personal brand strategy execution (Shreya's framework)
-- Sales pipeline activation (outreach, discovery, proposals)
-- First client delivery
+**10-11am Daily Sales Block**
 
-**Key Metrics:**
-- 60-80 outreach messages sent
-- 20-40 discovery calls booked
-- 4-8 proposals sent
-- 1-3 projects closed
-- 12 LinkedIn posts/week (team total)
+Pick ONE and execute:
 
----
+**Option A: Outreach (Mon/Wed/Fri)**
+- [ ] Send 5-10 personalized messages (LinkedIn or email)
+- [ ] Follow up on 3-5 previous messages
+- [ ] Book discovery calls from responses
+- **Tool:** Notion (track who, when, status)
+- **Target:** Book 2-3 calls per day
 
-### **PHASE 2: OPTIMIZATION (WEEKS 5-8)**
-**Goal:** Refine process, scale pipeline, deliver first projects, build authority
+**Option B: Discovery Calls (Tue/Thu)**
+- [ ] Run 2-4 discovery calls (15-20 min each)
+- [ ] Document Q1-Q5 immediately after
+- [ ] Run through Sales Analyst (Claude.ai)
+- [ ] Determine next step (proposal, follow-up, decline)
+- **Tool:** Notion + Claude.ai Sales Analyst
+- **Target:** 8-12 quality calls per week
 
-**Focus:**
-- Content strategy optimization (what's working?)
-- Sales process refinement (close more, faster)
-- Client delivery excellence (case studies incoming)
-- Team collaboration rhythm
-
-**Key Metrics:**
-- 40-60 discovery calls completed
-- 8-12 proposals sent
-- 3-5 projects closed
-- $15K-$50K signed contracts
-- 200-500 new LinkedIn followers (total across team)
+**Option C: Proposals (As Needed)**
+- [ ] Draft 1-2 proposals from analyzed calls
+- [ ] Internal review in Slack #pipeline
+- [ ] Send within 24 hours of discovery call
+- **Tool:** Proposal template + Sales Analyst outline
+- **Target:** Send same day as call when possible
 
 ---
 
-### **PHASE 3: SCALING (WEEKS 9-12)**
-**Goal:** Implement transformation strategy, establish recurring revenue, build tech assets
+### EVERY MIDDAY (30-60 min): CLIENT DELIVERY
 
-**Focus:**
-- Prerequisites framework implementation
-- Retainer conversions (first recurring revenue)
-- AriseCore v1 (reusable tech modules)
-- Authority established (inbound leads starting)
+**11am-12pm Client Work Block**
 
-**Key Metrics:**
-- 60+ discovery calls completed
-- 12-15 proposals sent
-- 6-12 projects closed
-- $30K-$100K total revenue
-- 2-4 retainer clients ($3K-$10K MRR)
-- 500-1000 new followers (total)
+If you have active projects:
+- [ ] 30-60 min focused work on client deliverable
+- [ ] Update client via Slack/email (progress report)
+- [ ] Unblock yourself or ask team for help
+- [ ] Track hours for revenue split calculation
 
----
+If no active projects yet:
+- [ ] Build reusable component (AriseCore)
+- [ ] Improve proposal template
+- [ ] Practice discovery call script
+- [ ] Study vertical-specific pain points
 
-## WEEK 1: FORMATION & LAUNCH
-**Dates:** December 2-8, 2025
-
-### 🎯 CRITICAL PRIORITIES THIS WEEK
-
-**ALL 4 FOUNDERS:**
-- [ ] 💰 Monday team meeting (2 hours) - Form AriseGroup, align on strategy
-- [ ] 📈 Update LinkedIn profiles (banner, headline, About section)
-- [ ] 📈 Post 3x on LinkedIn (Mon/Wed/Fri)
-- [ ] 💰 Send 15-20 outreach messages (warm network)
-- [ ] 💰 Book 5-10 discovery calls for Week 2
+**Target:** Make visible progress daily, even if small
 
 ---
 
-### MONDAY (DEC 2): TEAM FORMATION MEETING
+### EVERY EVENING (30-45 min): BRAND BUILDING
 
-**Time:** 6:00-8:00pm
-**Attendees:** Mekaiel, Chris, Trent, Matthew
-**Location:** Zoom/In-person
+**8-9pm Content & Engagement Block**
 
-**AGENDA (2 hours):**
+**3 Days Per Week (Mon/Wed/Fri): POST**
+- [ ] Write LinkedIn post (15-20 min)
+  - Use Personal Brand Agent prompt if needed
+  - Pick pillar: Client story, Founder journey, Project breakdown, or Industry insight
+- [ ] Schedule or post immediately
+- [ ] Respond to comments from previous post (10 min)
 
-**6:00-6:30pm: Strategic Alignment**
-- [ ] Review ARISEGROUP-COLLABORATION-FRAMEWORK-V3.md
-- [ ] Vote on key decisions:
-  - [ ] **Vote #1:** Recurring revenue split model
-    - Option A: Same as project split
-    - Option B: Modified (50% worker, 50% company)
-    - Option C: Hybrid (5% Originator, 50% worker, 25% support, 20% company)
-    - **DECISION:** _______________
+**4 Days Per Week (Tue/Thu/Sat/Sun): ENGAGE**
+- [ ] Comment on 10-15 posts in your feed (20 min)
+- [ ] Reply to all comments on your posts (10 min)
+- [ ] Check DMs, respond to inquiries
+- [ ] Repost team content (if your week for cross-amplification)
 
-  - [ ] **Vote #2:** Tech assets ownership
-    - Option A: Pure shared (free to use)
-    - Option B: Usage royalties
-    - Option C: Track for equity (Month 6 split)
-    - **DECISION:** _______________
-
-  - [ ] **Vote #3:** Client disqualification authority
-    - Option A: Vertical lead decides alone
-    - Option B: Team vote on all
-    - Option C: Tiered (<$5K alone, $5-10K vote, >$10K unanimous)
-    - **DECISION:** _______________
-
-**6:30-7:00pm: Personal Brand Strategy (Shreya's Framework)**
-- [ ] Review CONTENT-TEAM-BRIEF-V2.md
-- [ ] Understand separation: Personal brand vs Agency brand
-- [ ] Content pillars: Client stories, Project breakdowns, Founder journey, Industry insights
-- [ ] Team coordination: Each founder 3 posts/week, rotating reposts
-- [ ] Assign: Who's hiring content team? _______________
-
-**7:00-7:30pm: Week 1 Execution Plan**
-- [ ] Sales targets: Each founder sends 15-20 messages this week
-- [ ] Goal: Book 20-40 total discovery calls (combined)
-- [ ] Content: Each founder posts 3x (Mon/Wed/Fri)
-- [ ] Tools setup: Who creates Notion? _______________  Who creates Slack? _______________
-
-**7:30-8:00pm: Action Items & Accountability**
-- [ ] Sign IP agreement (simple 1-page, per COLLABORATION-FRAMEWORK)
-- [ ] Set up shared tools (Notion, Slack, Google Drive)
-- [ ] Next meeting: Friday 6pm (Week 1 review)
+**Target:** 3 posts/week, 100+ engagements/week, build authority
 
 ---
 
-### TUESDAY (DEC 3): SETUP DAY
+### DAILY CHECK (End of Day - 5 min)
 
-#### MEKAIEL (3 hours):
-- [ ] Form AriseGroup LLC (Stripe Atlas or LegalZoom, $300-500)
-- [ ] Apply for EIN (IRS.gov, 15 min)
-- [ ] Open business bank account (Mercury or Relay, online)
-- [ ] Create target list: 20 warm Defense/Government contacts
-- [ ] Add to Notion database (company, contact, relationship strength)
+**Log in Slack #general:**
+```
+Today's update:
+✅ Sales: [X outreach sent / X calls completed / X proposals sent]
+✅ Delivery: [X hours on Project Y / milestone reached / blocked on Z]
+✅ Content: [Posted about X / Engaged with Y people / Z DMs]
+🎯 Tomorrow: [Top priority for tomorrow]
+```
 
-#### CHRIS (3 hours):
-- [ ] Create target list: 20 warm Construction/Building contacts
-- [ ] Customize outreach script (from VERTICAL-OUTREACH-SCRIPTS.md)
+**Purpose:** Accountability + Pattern recognition + Team awareness
+
+---
+
+## YOUR WEEKLY RHYTHM
+
+### MONDAY: PLAN & ALIGN (30 min)
+
+**Individual (15 min):**
+- [ ] Review last week's results
+- [ ] Set this week's targets:
+  - Outreach: _____ messages
+  - Calls: _____ booked/completed
+  - Proposals: _____ sent
+  - Posts: 3 (Mon/Wed/Fri)
+  - Client deliverables: _____ milestones
+
+**Team Async (15 min in Slack):**
+- [ ] Each founder posts week's goals
+- [ ] Flag any conflicts (overlapping client needs, resource constraints)
+- [ ] Celebrate last week's wins (post in #wins)
+
+---
+
+### TUESDAY-THURSDAY: EXECUTE
+
+**Just follow the daily rhythm.**
+
+Morning: Revenue generation (outreach → calls → proposals)
+Midday: Client delivery (make progress)
+Evening: Brand building (post or engage)
+
+**No meetings. No planning. Just execution.**
+
+---
+
+### FRIDAY: REVIEW & SYNC (1 hour)
+
+**6:00-6:15pm: Individual Prep**
+- [ ] Update Notion with week's metrics
+- [ ] Prepare 2-min update for team
+- [ ] Note biggest win and biggest blocker
+
+**6:15-6:45pm: Team Sync (30 min)**
+
+**Agenda (Strict Timeboxes):**
+
+1. **Wins (10 min)** - Each founder shares best moment this week
+2. **Metrics (10 min)**:
+   - Total outreach sent: _____
+   - Total calls completed: _____
+   - Total proposals sent: _____
+   - Total projects closed: _____
+   - Total revenue: $_____
+   - Total LinkedIn posts: _____ (target: 12)
+   - Total new followers: _____
+
+3. **Blockers (5 min)** - What's stuck? Who can help?
+4. **Next Week (5 min)** - Any adjustments needed?
+
+**6:45-7:00pm: Celebration**
+- [ ] Post week's wins in #wins channel
+- [ ] Personal reflection: What did I learn?
+
+---
+
+### SATURDAY-SUNDAY: RECHARGE + LIGHT TOUCH
+
+**Saturday (1 hour):**
+- [ ] Follow up on hot proposals (if needed)
+- [ ] Engage on LinkedIn (30 min)
+- [ ] Sunday brain dump prep (voice memo: insights from this week)
+
+**Sunday (1 hour):**
+- [ ] Brain dump for content team (what happened this week worth sharing?)
+- [ ] Review Monday's priorities
+- [ ] Mental reset for next week
+
+**No heavy work. Protect your rest.**
+
+---
+
+## YOUR MONTHLY MILESTONES
+
+### MONTH 1 (WEEKS 1-4): FOUNDATION
+
+**Goal:** Form AriseGroup, activate pipeline, launch personal brands, close first deals
+
+**Week 1 (Dec 2-8): FORMATION**
+- [ ] Monday meeting: Vote on collaboration framework decisions
+- [ ] Form LLC, open bank account
+- [ ] Set up tools (Notion, Slack, Calendly, Claude.ai)
+- [ ] Update LinkedIn profiles (all 4 founders)
+- [ ] Send first 60-80 outreach messages (combined)
+- [ ] Book 20-40 discovery calls
+- [ ] Post 12 LinkedIn updates (3 per founder)
+
+**Week 2 (Dec 9-15): ACCELERATION**
+- [ ] Run 30-40 discovery calls
+- [ ] Send 8-12 proposals
+- [ ] Close 2-4 projects
+- [ ] Post 12 LinkedIn updates
+- [ ] First cross-amplification (Mekaiel reposts team)
+
+**Week 3 (Dec 16-22): DELIVERY BEGINS**
+- [ ] Start delivering first 2-3 projects
+- [ ] Run 30-40 more discovery calls
+- [ ] Send 8-12 proposals
+- [ ] Close 3-5 more projects
+- [ ] Create first PDF carousels (4 total, 1 per founder)
+- [ ] Hire content team (writer + designer)
+
+**Week 4 (Dec 23-29): MONTH 1 REVIEW**
+- [ ] Light week (holidays)
+- [ ] Complete Month 1 metrics review
+- [ ] Reflect on lessons learned
+- [ ] Plan Month 2 goals
+
+**MONTH 1 TARGET:**
+- ✅ 6-12 projects closed
+- ✅ $30K-$70K revenue
+- ✅ 48 LinkedIn posts (12/week)
+- ✅ 200-500 new followers
+- ✅ AriseGroup operational
+
+---
+
+### MONTH 2 (WEEKS 5-8): OPTIMIZATION
+
+**Goal:** Refine process, implement transformation strategy, build authority, scale revenue
+
+**Week 5 (Dec 30 - Jan 5): PREREQUISITES FRAMEWORK**
+- [ ] Train on Prerequisites Framework (Monday meeting)
+- [ ] Practice CPO positioning (not CTO order-taker)
+- [ ] Update all proposals with "What We Build First" section
+- [ ] Run 40-50 discovery calls (10-12 per founder)
+- [ ] Close 4-6 projects using new framework
+- [ ] Content: Month 1 recap posts
+
+**Week 6 (Jan 6-12): RETAINER PACKAGES**
+- [ ] Design 3-tier retainer offerings (Monday meeting)
+- [ ] Pitch retainers to completing clients
+- [ ] Goal: Convert 1-2 clients to retainer
+- [ ] Run 40-50 discovery calls
+- [ ] Close 4-6 more projects
+- [ ] Content: Client transformation stories
+
+**Week 7 (Jan 13-19): CASE STUDIES**
+- [ ] Document 2-3 completed projects as case studies
+- [ ] Request testimonials from satisfied clients
+- [ ] Create LinkedIn content from case studies (PDF carousels)
+- [ ] Run 40-50 discovery calls
+- [ ] Close 4-6 projects
+- [ ] Content: Share real results
+
+**Week 8 (Jan 20-26): ARISECORE PLANNING**
+- [ ] Audit projects 1-10: What have we built 2+ times?
+- [ ] Prioritize top 3 reusable modules
+- [ ] Plan AriseCore v1 build for Week 11
+- [ ] Run 40-50 discovery calls
+- [ ] Close 4-6 projects
+- [ ] Content: Behind-the-scenes of delivery
+
+**MONTH 2 TARGET:**
+- ✅ 16-24 projects closed (cumulative: 22-36)
+- ✅ $40K-$90K additional revenue (cumulative: $70K-$160K)
+- ✅ 48 LinkedIn posts (cumulative: 96)
+- ✅ 300-500 new followers (cumulative: 500-1000)
+- ✅ 1-2 retainer clients ($3K-$10K MRR)
+- ✅ Prerequisites Framework in all proposals
+
+---
+
+### MONTH 3 (WEEKS 9-12): SCALING
+
+**Goal:** Implement advanced monetization, decide specialization, build tech assets, hit $100K+
+
+**Week 9 (Feb 3-9): MONETIZATION TIERS**
+- [ ] Define Mercenary/Partnership/Missionary decision matrix
+- [ ] Test Partnership model (2-and-20) on 1 prospect
+- [ ] Run 50+ discovery calls
+- [ ] Close 5-8 projects
+- [ ] Content: Share monetization insights
+
+**Week 10 (Feb 10-16): SPECIALIST VS GENERALIST**
+- [ ] Analyze 60-90 days of data by vertical
+- [ ] Vote: Specialize in one vertical OR stay generalist
+- [ ] Update positioning based on decision
+- [ ] Run 50+ discovery calls
+- [ ] Close 5-8 projects
+- [ ] Content: Share strategic decision process
+
+**Week 11 (Feb 17-23): ARISECORE BUILD**
+- [ ] Build first 3 reusable modules
+- [ ] Test on active projects
+- [ ] Document usage guides
+- [ ] Run 50+ discovery calls
+- [ ] Close 5-8 projects
+- [ ] Content: Share tech asset strategy
+
+**Week 12 (Feb 24 - Mar 2): 90-DAY REVIEW**
+- [ ] Individual reflection (metrics + learnings)
+- [ ] Team 90-day review (Tuesday 3-hour session)
+- [ ] THE BIG DECISION: Formalize, Continue, or Dissolve
+- [ ] If continuing: Plan Month 4-6 roadmap
+- [ ] If formalizing: Define equity split, hire first team member
+- [ ] Run 50+ discovery calls (don't stop sales machine)
+- [ ] Close 5-8 projects
+- [ ] Content: Share 90-day transformation story
+
+**MONTH 3 TARGET:**
+- ✅ 20-32 projects closed (cumulative: 42-68 total)
+- ✅ $40K-$90K additional revenue (cumulative: $110K-$250K)
+- ✅ 48 LinkedIn posts (cumulative: 144)
+- ✅ 200-500 new followers (cumulative: 700-1500)
+- ✅ 2-4 retainer clients ($5K-$15K MRR)
+- ✅ AriseCore v1 with 3 modules
+- ✅ Specialist decision made
+
+---
+
+## 90-DAY TRANSFORMATION SCORECARD
+
+### WHERE YOU START (DAY 0)
+- 4 independent contractors
+- $0 revenue, $0 MRR
+- 0-5 discovery conversations completed
+- No LinkedIn presence
+- No shared infrastructure
+- No reusable tech assets
+- Working solo, no team rhythm
+
+### WHERE YOU END (DAY 90)
+- **Revenue:** $100K-$250K total signed contracts
+- **MRR:** $5K-$15K from 2-4 retainer clients
+- **Projects:** 40-70 total closed, 20-30 in delivery/completed
+- **Pipeline:** 200+ discovery calls completed, 60+ proposals sent
+- **Authority:** 700-1500 LinkedIn followers, 144 posts, thought leadership established
+- **Team:** Unified rhythm, high trust, 12 weekly syncs completed
+- **Assets:** AriseCore v1 (3 modules), case studies, testimonials, refined process
+- **Strategy:** Prerequisites framework implemented, CPO positioning adopted, retainer model live
+- **Decision:** Clear path forward (formalize, continue, or gracefully dissolve)
+
+---
+
+## THE DECISION FRAMEWORK (DAY 90)
+
+### OPTION A: FORMALIZE INTO SINGLE ENTITY
+
+**Choose if:**
+- ✅ Revenue target hit ($100K+)
+- ✅ Team collaboration excellent (8+/10)
+- ✅ All 4 founders want to continue
+- ✅ MRR growing ($5K-$15K+)
+- ✅ Ready to hire and scale
+
+**What happens:**
+- Form single AriseGroup LLC
+- Define equity split (based on 90-day contribution)
+- Hire first team member (VA, designer, junior dev)
+- Scale to $50K-$100K MRR in next 90 days
+
+---
+
+### OPTION B: CONTINUE AS INDEPENDENT COLLABORATORS
+
+**Choose if:**
+- ✅ Model working but not ready to formalize
+- ✅ Want more data (another 90 days)
+- ✅ Prefer flexibility over simplicity
+- ✅ Some founders not ready for full commitment
+
+**What happens:**
+- Refine collaboration framework
+- Optimize revenue splits based on learnings
+- Expand AriseCore assets
+- Re-evaluate at Month 6
+
+---
+
+### OPTION C: DISSOLVE PARTNERSHIP
+
+**Choose if:**
+- ❌ Revenue targets missed significantly
+- ❌ Team collaboration issues
+- ❌ One or more founders want out
+- ❌ Model not working as hoped
+
+**What happens (Clean Exit):**
+- Each founder keeps originated clients
+- Shared IP usage rights maintained
+- Distribute any pending payments
+- Part as friends, stay in network
+- Door open to collaborate later
+
+**All three outcomes are valid. 90 days gives you clarity.**
+
+---
+
+## CRITICAL SUCCESS FACTORS
+
+### WHAT WILL MAKE OR BREAK THE 90 DAYS:
+
+**1. DAILY EXECUTION BEATS PERFECT PLANNING**
+- Show up every day for 2-3 hours
+- Follow the rhythm: Morning (sales), Midday (delivery), Evening (content)
+- Don't overthink, just execute
+
+**2. FRIDAY SYNCS ARE NON-NEGOTIABLE**
+- Miss a Friday sync = lose team momentum
+- 12 syncs in 90 days = foundation of trust
+- Celebrate wins, address blockers, adjust quickly
+
+**3. CONTENT COMPOUNDS SLOWLY**
+- First 30 days: Crickets (normal)
+- Days 30-60: Traction (followers, engagement)
+- Days 60-90: Inbound (DMs, calls from content)
+- Don't quit at Day 30 when it feels like nothing is happening
+
+**4. CLOSE DEALS WEEK 1-2 OR ADJUST**
+- If no deals by Week 3, something is broken
+- Fix: Pricing too high? ICP wrong? Scripts bad? Positioning off?
+- Adjust fast, don't wait for Week 12 to realize
+
+**5. PROTECT THE TEAM DYNAMIC**
+- Address conflicts immediately (don't let fester)
+- Over-communicate in Slack
+- Assume good intent
+- If one founder is struggling, team helps (don't let them drown)
+
+**6. TRACK REVENUE SPLITS ACCURATELY**
+- Use simple spreadsheet: Project, Roles, Revenue, Split %
+- Update weekly
+- Transparent = no resentment
+- Month 6 equity split depends on this data
+
+---
+
+## WEEK 1 DETAILED EXECUTION PLAN
+
+### MONDAY, DECEMBER 2 (6-8pm): TEAM FORMATION MEETING
+
+**6:00-6:30pm: STRATEGIC DECISIONS (30 min)**
+
+Vote on 3 critical decisions:
+
+**Decision #1: Recurring Revenue Split Model**
+- Option A: Same as project (15% Originator forever)
+- Option B: Modified (50% worker, 50% company)
+- **Option C: Hybrid** (5% Originator, 50% worker, 20% company) ← RECOMMENDED
+- **VOTE:** _______________ (record in Slack)
+
+**Decision #2: Tech Assets Ownership**
+- **Option A: Pure Shared** (all modules free to use) ← RECOMMENDED for first 90 days
+- Option B: Usage royalties (builder gets % when used)
+- Option C: Track for equity (contributes to Month 6 split)
+- **VOTE:** _______________ (record in Slack)
+
+**Decision #3: Client Disqualification Authority**
+- Option A: Vertical lead decides alone
+- Option B: Team vote on all
+- **Option C: Tiered** (<$5K alone, $5-10K discuss, >$10K vote) ← RECOMMENDED
+- **VOTE:** _______________ (record in Slack)
+
+---
+
+**6:30-7:00pm: PERSONAL BRAND STRATEGY (30 min)**
+
+Review Shreya's Framework:
+
+**Understand:**
+- Personal brand (Mekaiel's story) ≠ Agency brand (AriseGroup logo/positioning)
+- Each founder posts 3x/week (Mon/Wed/Fri)
+- Team cross-amplifies (rotating weekly reposts)
+- Content pillars: Client stories (40%), Project breakdowns (30%), Founder journey (20%), Industry insights (10%)
+
+**Assign:**
+- Content team hiring: _______________
+- Notion database setup: _______________
+- Slack workspace setup: _______________
+- Sales Analyst setup: _______________
+
+---
+
+**7:00-7:30pm: WEEK 1 EXECUTION (30 min)**
+
+**Each founder commits:**
+- [ ] Tuesday: Build target list (15-20 warm contacts)
+- [ ] Wednesday: Send 15-20 outreach messages
+- [ ] Thursday: Run 3-5 discovery calls
+- [ ] Friday: Send 2-4 proposals
+- [ ] Mon/Wed/Fri: Post on LinkedIn (3x)
+
+**Assign Tool Setup:**
+- Mekaiel: Form LLC, open bank account
+- Chris: Create proposal template skeleton
+- Trent: Research industry pain points
+- Matthew: Build Notion database, Sales Analyst, Slack
+
+---
+
+**7:30-8:00pm: ACCOUNTABILITY SETUP (30 min)**
+
+- [ ] Sign simple IP agreement (1-page from collaboration framework)
+- [ ] Exchange phone numbers (emergency contact)
+- [ ] Set up Slack workspace, invite all
+- [ ] Schedule Friday 6pm sync (recurring calendar invite)
+- [ ] Commit to daily check-ins in Slack
+
+**End Meeting:**
+- Next sync: Friday, December 6 at 6pm
+- This week's goal: 60-80 messages sent, 20-40 calls booked, 4-8 proposals sent, 1-3 closed
+
+---
+
+### TUESDAY, DECEMBER 3: SETUP DAY
+
+**Each Founder (3-4 hours):**
+
+**Morning (2 hours): Build Target List**
+- [ ] List 15-20 warm contacts in your vertical
+- [ ] Add to Notion: Name, Company, Relationship, Last Contact
+- [ ] Customize outreach script from VERTICAL-OUTREACH-SCRIPTS.md
 - [ ] Set up Calendly (15-min AI Discovery Session)
-- [ ] Create proposal template skeleton (Executive Summary, SOW, Investment)
 
-#### TRENT (3 hours):
-- [ ] Create target list: 20 warm Industrial/Manufacturing contacts
-- [ ] Research 3 common pain points in industrial automation
-- [ ] Find 2-3 news articles about AI in manufacturing
-- [ ] Prepare industry-specific talking points
+**Afternoon (1-2 hours): Role-Specific Tasks**
+- **Mekaiel:** Form LLC (Stripe Atlas/LegalZoom), apply for EIN, open bank account
+- **Chris:** Create proposal template (Exec Summary, SOW, Investment, Why Us)
+- **Trent:** Research 3 industrial automation pain points, find news articles
+- **Matthew:** Build Notion database (Q1-Q5 fields), set up Sales Analyst in Claude.ai, create Slack
 
-#### MATTHEW (4 hours):
-- [ ] Create Notion workspace (Discovery Calls database with Q1-Q5 fields)
-- [ ] Set up Claude.ai Sales Analyst project (from SALES-ANALYST-AGENT-SETUP.md)
-- [ ] Create Slack workspace (channels: #general, #defense, #industrial, #commerce, #build, #wins, #pipeline)
-- [ ] Create target list: 15 warm E-commerce contacts
-
-**End of Day Check (9pm in Slack #general):**
-- Each founder posts: "✅ Target list complete: X contacts" OR "🟡 Still working on: X"
+**End of Day (9pm in Slack #general):**
+- [ ] Post: "✅ Target list: X contacts ready" OR "🟡 In progress"
 
 ---
 
-### WEDNESDAY (DEC 4): OUTREACH LAUNCH DAY
+### WEDNESDAY, DECEMBER 4: OUTREACH LAUNCH
 
-#### ALL FOUNDERS (3 hours each):
+**Each Founder (3 hours):**
 
 **10am-12pm: First Wave Outreach**
-- [ ] 💰 Send 15-20 LinkedIn messages (use warm network script)
-- [ ] 💰 Send 10-15 emails (if you have addresses)
-- [ ] Personalize first sentence of each message
+- [ ] Send 15-20 LinkedIn messages (personalized, warm network)
+- [ ] Send 10-15 emails (if you have addresses)
 - [ ] Include Calendly link
-- [ ] Track in Notion: Date sent, channel used
+- [ ] Track in Notion: Date sent, channel, response
 
 **2pm-3pm: Response Monitoring**
-- [ ] Check responses (email + LinkedIn)
-- [ ] Reply immediately to positive responses
-- [ ] Book confirmed calls in calendar
-- [ ] Update Notion status: "Call Booked"
+- [ ] Check and reply to responses immediately
+- [ ] Book calls in calendar
+- [ ] Update Notion status
 
-**TEAM TARGET:** 60-80 total messages sent (all 4 founders combined)
+**5pm: First LinkedIn Post**
+- [ ] Each founder posts (client story, industry insight, founder journey, or technical deep-dive)
 
-**5pm: Post First LinkedIn Content**
-- [ ] 📈 MEKAIEL: Post client transformation story OR founder journey
-- [ ] 📈 CHRIS: Post construction industry insight OR project breakdown
-- [ ] 📈 TRENT: Post industrial automation case study OR lessons learned
-- [ ] 📈 MATTHEW: Post e-commerce AI insight OR technical deep-dive
-
-**End of Day Check (6pm in Slack #pipeline):**
-- Messages sent today: X
-- Responses received: X
+**6pm Check-in (Slack #pipeline):**
+- Messages sent: X
+- Responses: X
 - Calls booked: X
-- Best response (share screenshot)
+- Best response (screenshot)
+
+**TEAM TARGET: 60-80 messages sent total**
 
 ---
 
-### THURSDAY (DEC 5): DISCOVERY CALLS BEGIN
+### THURSDAY, DECEMBER 5: DISCOVERY CALLS
 
-#### ALL FOUNDERS (4 hours each):
+**Each Founder (4 hours):**
 
-**Goal:** Run 3-5 discovery calls per founder (12-20 total)
+**10am-2pm: Discovery Sprint**
+- [ ] Run 3-5 discovery calls (15-20 min each)
+- [ ] After each call:
+  - Document Q1-Q5 in Notion
+  - Run Sales Analyst analysis
+  - Determine next step
 
-**Per Call Process (30-45 min total):**
-
-1. **The Call (15-20 min)**
-   - [ ] Intro (2 min): Thank them, set agenda
-   - [ ] Q1-Q5 (10 min): Ask questions, take notes
-   - [ ] Wrap-up (3 min): Set next steps
-
-2. **Post-Call Documentation (10 min)**
-   - [ ] Create Notion entry
-   - [ ] Fill Q1-Q5 answers while fresh
-   - [ ] Note prerequisites mentioned
-   - [ ] Add contact info, company details
-
-3. **Sales Analyst Analysis (5 min)**
-   - [ ] Paste call notes into Claude.ai Sales Analyst
-   - [ ] Get full analysis (prerequisites, deal size, tier, proposal outline)
-   - [ ] Copy to Notion entry
-
-4. **Next Steps (5 min)**
-   - [ ] If "Send proposal" → Add to Friday proposal queue
-   - [ ] If "Follow-up" → Schedule next call
-   - [ ] If "Decline" → Send polite email
-   - [ ] Update Notion status
-
-**Outreach Continuation (30 min):**
-- [ ] Send 5-10 more messages (follow up on Tuesday's outreach)
+**2pm-3pm: Outreach Continuation**
+- [ ] Send 5-10 more messages (follow-ups)
 - [ ] Book more calls for Friday/next week
 
-**5pm: Post Second LinkedIn Content (All Founders)**
-- [ ] 📈 Post Wed content (case study, insight, or story)
+**5pm: Second LinkedIn Post**
+
+**End of Day:** 12-20 calls completed (team total)
 
 ---
 
-### FRIDAY (DEC 6): PROPOSALS & WEEK 1 REVIEW
+### FRIDAY, DECEMBER 6: PROPOSALS & WEEK 1 REVIEW
 
-#### MORNING: More Discovery Calls (2 hours)
-- [ ] Complete 2-3 more discovery calls per founder
-- [ ] Follow same process as Thursday
-- [ ] Document everything in Notion
+**Morning (2 hours): Finish Calls**
+- [ ] Run 2-3 more discovery calls
 
-#### AFTERNOON: Proposal Generation (2 hours)
-
-**For Each Strong Opportunity:**
-
-1. **Review Sales Analyst Output (5 min)**
-   - Read full analysis
-   - Confirm deal size estimate
-   - Review prerequisites list
-   - Check monetization tier recommendation
-
-2. **Draft Proposal (30-45 min)**
-   - Use Sales Analyst proposal outline
-   - Customize for specific Q1-Q5 answers
-   - Add vertical-specific credibility
-   - Price based on 30-50% of Q2 cost + prerequisites
-   - Include optional retainer pricing
-
-3. **Internal Review (10 min)**
-   - Post in #pipeline Slack: "Review before I send?"
-   - Get quick feedback from other founders
-   - Adjust if needed
-
-4. **Send Proposal (5 min)**
-   - Email to prospect
-   - Subject: "AI Transformation Proposal for [Company]"
-   - Warm intro referencing call
-   - Attach/link proposal
-   - Ask: "When can we discuss?"
-   - Update Notion: "Proposal Sent"
-
-**TEAM TARGET:** 4-8 proposals sent total (across all verticals)
-
----
-
-### FRIDAY 6PM: WEEK 1 TEAM SYNC
-
-**Attendees:** All 4 founders
-**Duration:** 1 hour
-**Location:** Zoom
-
-**AGENDA:**
-
-**6:00-6:15pm: WINS (Celebrate)**
-- Each founder shares biggest win this week
-- Total calls completed: _____
-- Total proposals sent: _____
-- Any projects closed? _____
-- Post wins in #wins Slack channel
-
-**6:15-6:30pm: METRICS REVIEW**
-- [ ] Messages sent: _____ / 80 target
-- [ ] Calls booked: _____ / 20-40 target
-- [ ] Calls completed: _____ / 12-20 target
-- [ ] Proposals sent: _____ / 4-8 target
-- [ ] Projects closed: _____ / 1-3 stretch goal
-- [ ] LinkedIn posts: _____ / 12 target (3 per founder)
-
-**6:30-6:45pm: LEARNINGS**
-- What outreach messages got best response?
-- Which verticals responding fastest?
-- Common prerequisites showing up?
-- Any pricing questions/challenges?
-- Sales Analyst working well?
-
-**6:45-7:00pm: NEXT WEEK PLANNING**
-- Goal: 2x the calls (30-40 calls next week)
-- Who needs support?
-- Any process improvements?
-- Assign action items
-
----
-
-### WEEK 1 SUCCESS CRITERIA
-
-**FOUNDATION (Must-Have):**
-- [ ] ✅ AriseGroup formed (LLC, EIN, bank account)
-- [ ] ✅ Team agreement signed (IP, collaboration framework)
-- [ ] ✅ Tools live (Notion, Slack, Calendly)
-- [ ] ✅ LinkedIn profiles updated (all 4 founders)
-
-**OUTREACH (Key Metrics):**
-- [ ] ✅ 60-80 messages sent (combined)
-- [ ] ✅ 20-40 discovery calls booked
-- [ ] ✅ 12-20 calls completed
-- [ ] ✅ All calls documented in Notion
-- [ ] ✅ Sales Analyst used for every call
-
-**PIPELINE (Revenue Activities):**
-- [ ] ✅ 4-8 proposals sent
-- [ ] ✅ At least 2-3 strong opportunities (>$5K)
-- [ ] ✅ Clear next steps for all prospects
-- [ ] 🎯 1-3 projects closed (stretch goal)
-
-**CONTENT (Brand Building):**
-- [ ] ✅ 12 posts total (3 per founder)
-- [ ] ✅ Personal brand strategy understood
-- [ ] ✅ Content team brief shared
-- [ ] ✅ First LinkedIn banner updates live
-
-**STATUS:** _____ (On Track / Behind / Ahead)
-
----
-
-## WEEK 2: PIPELINE ACCELERATION
-**Dates:** December 9-15, 2025
-
-### 🎯 CRITICAL PRIORITIES THIS WEEK
-
-**ALL FOUNDERS:**
-- [ ] 💰 Run 30-40 total discovery calls (2x last week)
-- [ ] 💰 Send 8-12 proposals
-- [ ] 💰 Close 2-4 projects
-- [ ] 📈 Post 3x on LinkedIn (Mon/Wed/Fri)
-- [ ] 📈 Start cross-amplification (Mekaiel reposts team content)
-
----
-
-### MONDAY (DEC 9): WEEK 1 REVIEW & ADJUSTMENTS
-
-**Morning (Individual - 1 hour):**
-- [ ] Review Week 1 performance
-- [ ] Identify what worked (do more of this)
-- [ ] Identify what didn't (stop or adjust)
-- [ ] Prepare talking points for team meeting
-
-**Afternoon (Team Call - 30 min):**
-- [ ] Quick wins share
-- [ ] Adjust scripts based on Week 1 feedback
-- [ ] Refine discovery call approach
-- [ ] Update proposal template if needed
-
-**Rest of Day (Individual - 3 hours):**
-- [ ] 💰 Run 3-5 discovery calls (booked from last week)
-- [ ] 💰 Follow up on proposals sent last week
-- [ ] 💰 Send 10-15 new outreach messages
-- [ ] 📈 Post Monday LinkedIn content
-
----
-
-### TUESDAY-THURSDAY: DISCOVERY & PROPOSALS
-
-**Daily Routine (Each Founder):**
-
-**Morning (3 hours):**
-- [ ] 💰 Run 3-5 discovery calls
-- [ ] Document in Notion immediately after each
-- [ ] Use Sales Analyst for analysis
-- [ ] Identify proposals to draft
-
-**Afternoon (2 hours):**
-- [ ] 💰 Draft 2-3 proposals for strong opportunities
+**Afternoon (2 hours): Proposal Blitz**
+- [ ] Draft 1-2 proposals per founder
 - [ ] Internal review in Slack
-- [ ] Send proposals
-- [ ] Follow up on sent proposals (3-day follow-up)
+- [ ] Send same day if possible
 
-**Evening (1 hour):**
-- [ ] 💰 Send 5-10 more outreach messages
-- [ ] Book more calls
-- [ ] 📈 Post LinkedIn content (Wed/Thu if applicable)
-- [ ] Respond to LinkedIn comments
+**5pm: Third LinkedIn Post**
 
-**TEAM TARGET (Tue-Thu):**
-- 24-30 discovery calls completed (6-8 per founder)
-- 6-9 proposals sent (1-2 per founder)
-- 1-2 projects closed
+**6pm: WEEK 1 TEAM SYNC**
 
----
+**Agenda (45 min):**
+1. **Wins (10 min):** Each founder shares best moment
+2. **Metrics (10 min):**
+   - Messages sent: _____ / 80
+   - Calls completed: _____ / 20
+   - Proposals sent: _____ / 8
+   - Projects closed: _____ (stretch goal: 1-3)
+   - Posts: _____ / 12
+3. **Learnings (10 min):** What worked? What didn't?
+4. **Next Week (15 min):** Goal = 2x the calls (30-40)
 
-### FRIDAY (DEC 13): CLOSE & REVIEW
-
-**Morning (3 hours):**
-- [ ] 💰 Run final discovery calls for week
-- [ ] 💰 Draft remaining proposals
-- [ ] 💰 Send follow-ups to warm prospects
-- [ ] 💰 Close deals ready to sign
-
-**Afternoon (2 hours):**
-- [ ] Update Notion pipeline (all statuses current)
-- [ ] Prepare metrics for team sync
-- [ ] 📈 Post Friday LinkedIn content
-- [ ] 📈 First cross-amplification (Mekaiel reposts Chris, Trent, Matthew's best post with commentary)
-
-**6PM: WEEK 2 TEAM SYNC**
-
-**Metrics Review:**
-- Calls completed: _____ / 30-40 target
-- Proposals sent: _____ / 8-12 target
-- Projects closed: _____ / 2-4 target
-- Total revenue signed: $_____
-- LinkedIn followers gained: _____ (total across team)
-
-**Key Questions:**
-- Are we closing at expected rate?
-- What objections are we hearing?
-- Which vertical converting best?
-- Are proposals strong enough?
-- Content driving any inbound?
-
-**Next Week Plan:**
-- Continue current pace (30-40 calls)
-- Focus on closing proposals sent
-- Start first project deliveries
-- Begin content strategy optimization
+**TEAM TARGET: 4-8 proposals sent**
 
 ---
 
-### WEEK 2 SUCCESS CRITERIA
+## TOOLS & SYSTEMS QUICK REFERENCE
 
-- [ ] ✅ 30-40 discovery calls completed
-- [ ] ✅ 8-12 proposals sent
-- [ ] ✅ 2-4 projects closed
-- [ ] ✅ $10K-$40K in signed contracts
-- [ ] ✅ 12 LinkedIn posts (3 per founder)
-- [ ] ✅ First cross-amplification executed
-- [ ] ✅ Pipeline growing (40+ active prospects)
+### DAILY TOOLS YOU'LL USE:
 
-**STATUS:** _____ (On Track / Behind / Ahead)
+**Notion (Sales CRM):**
+- Discovery Calls database (Q1-Q5 tracking)
+- Pipeline view (by status: Discovery/Proposal/Closed/Lost)
+- Who owns what, next steps, deal size
 
----
+**Claude.ai Sales Analyst:**
+- Paste call notes after every discovery call
+- Get: Prerequisites assessment, deal size estimate, tier recommendation, proposal outline
+- Copy to Notion
 
-## WEEK 3: DELIVERY BEGINS + CONTENT OPTIMIZATION
-**Dates:** December 16-22, 2025
+**Slack:**
+- #general: Daily check-ins, team communication
+- #pipeline: Proposal reviews, deal updates
+- #wins: Celebrate closes and milestones
+- #defense #industrial #commerce #build: Vertical channels
 
-### 🎯 CRITICAL PRIORITIES THIS WEEK
+**Calendly:**
+- 15-min "AI Discovery Session" booking link
+- Include in all outreach messages
 
-- [ ] 💰 Start delivering first 2-3 projects
-- [ ] 💰 Continue sales pipeline (30-40 calls, 8-12 proposals)
-- [ ] 📈 Content strategy review (what's working?)
-- [ ] 📈 Launch first PDF carousel
-- [ ] 🎯 Hire content team (if not done yet)
-
----
-
-### PROJECT DELIVERY TRACKING
-
-**PROJECT #1:**
-- **Client:** _______________
-- **Technical Lead:** _______________
-- **Client Lead:** _______________
-- **Revenue:** $_____
-- **Timeline:** _____ weeks
-- **Status:** Discovery / Foundation / AI / Training / Complete
-
-**Weekly Tasks:**
-- [ ] Kickoff call completed
-- [ ] Q1-Q5 documented
-- [ ] Prerequisites identified
-- [ ] 50% payment received
-- [ ] Phase 1 work started
-- [ ] Weekly check-in with client (30 min)
+**LinkedIn:**
+- Post 3x/week (Mon/Wed/Fri)
+- Engage daily (comment on 10-15 posts)
+- Cross-amplify weekly (repost team content)
 
 ---
 
-**PROJECT #2:**
-- **Client:** _______________
-- **Technical Lead:** _______________
-- **Client Lead:** _______________
-- **Revenue:** $_____
-- **Timeline:** _____ weeks
-- **Status:** Discovery / Foundation / AI / Training / Complete
+## REVENUE TRACKING SPREADSHEET (Simple)
 
-**Weekly Tasks:**
-- [ ] Kickoff call completed
-- [ ] SOW signed
-- [ ] System access received
-- [ ] Foundation work started
-- [ ] Weekly client update sent
+### Track Every Project (Update Weekly):
 
----
+| Project | Client | Originator | Client Lead | Tech Lead | Tech Support | Support Owner | Revenue | Status | Payment |
+|---------|--------|------------|-------------|-----------|--------------|---------------|---------|--------|---------|
+| Project 1 | ACME Defense | Mekaiel | Mekaiel | Matthew | Trent | Matthew | $8,000 | Delivery | 50% Paid |
+| Project 2 | ABC Manufacturing | Trent | Chris | Trent | Matthew | Trent | $12,000 | Proposal | - |
 
-### CONTENT STRATEGY OPTIMIZATION
+**Calculate Splits:**
+- Originator: 15%
+- Client Lead: 18%
+- Technical Lead: 40%
+- Technical Support: 20%
+- Support Owner: 7% (usually included in Tech Lead's 40%)
 
-**Monday Team Meeting (1 hour):**
-
-**Content Performance Review:**
-- Which posts got most engagement? (share top 3)
-- Which pillars resonating? (Client stories? Founder journey? Project breakdowns?)
-- What formats working? (Text? We need PDFs and video)
-- Any inbound DMs from content?
-
-**This Week's Content Focus:**
-- [ ] 📈 Each founder creates first PDF carousel (8-10 slides)
-  - Mekaiel: Defense contractor case study
-  - Chris: Construction project breakdown
-  - Trent: Industrial automation framework
-  - Matthew: E-commerce transformation story
-
-- [ ] 📈 Launch first video content (optional, test)
-  - Format: Loom explainer (3-5 min) OR short-form (60 sec)
-  - Topic: "How we run discovery calls" or "Why AI projects fail"
-
-- [ ] 📈 Continue 3 posts/week per founder
-- [ ] 📈 Chris's turn to cross-amplify this week (repost Mekaiel, Trent, Matthew)
-
-**Content Team Hiring (If Not Done):**
-- [ ] Post job listing (Upwork, Fiverr, or referral)
-- [ ] Hire: Content writer (5-8 hrs/week, $25-40/hr)
-- [ ] Hire: Graphic designer (4-6 hrs/week, $20-35/hr)
-- [ ] Onboard with CONTENT-TEAM-BRIEF-V2.md
+**Payment Within 7-10 Days of Client Payment:**
+- Invoice your own LLC
+- Track contribution for Month 6 equity discussion
 
 ---
 
-### SALES PIPELINE CONTINUATION
+## EMERGENCY CONTACTS & SUPPORT
 
-**Same Routine as Week 2:**
-- 30-40 discovery calls (7-10 per founder)
-- 8-12 proposals sent
-- Goal: Close 3-5 more projects this week
-- Follow up on all sent proposals (7-day, 14-day cadence)
+**If You're Stuck:**
+1. **Sales stuck?** Post in #pipeline, team helps refine script/positioning
+2. **Client delivery blocked?** Post in vertical channel, technical founders assist
+3. **Content not performing?** Review CONTENT-TEAM-BRIEF-V2.md, adjust pillar mix
+4. **Team conflict?** Address in Friday sync or emergency call if critical
 
----
+**If Week 1-2 Fails (No Deals Closed):**
+1. Don't panic, but don't ignore
+2. Emergency Monday meeting Week 3: What's broken?
+3. Likely issues: Pricing, ICP targeting, scripts, positioning
+4. Adjust and relaunch
 
-### WEEK 3 SUCCESS CRITERIA
-
-- [ ] ✅ First 2-3 projects in active delivery
-- [ ] ✅ 30-40 discovery calls completed
-- [ ] ✅ 8-12 proposals sent
-- [ ] ✅ 3-5 new projects closed
-- [ ] ✅ $15K-$50K additional revenue
-- [ ] ✅ First 4 PDF carousels published
-- [ ] ✅ Content team hired (or in process)
-- [ ] ✅ 100-200 new LinkedIn followers (total)
-
-**STATUS:** _____ (On Track / Behind / Ahead)
+**If Founder Needs Out:**
+1. Have honest conversation
+2. Review exit protocol in COLLABORATION-FRAMEWORK-V3.md
+3. Clean exit: Take your originated clients, maintain IP usage rights
+4. No hard feelings, 90 days is a test
 
 ---
 
-## WEEK 4: MONTH 1 REVIEW & REFINEMENT
-**Dates:** December 23-29, 2025 (Holiday Week)
+## THE ULTIMATE REMINDER
 
-### 🎯 ADJUSTED PRIORITIES (Holiday Week)
+**This is not a 90-day sprint.**
+**This is learning a 90-day rhythm.**
 
-**Lighter workload, focus on:**
-- [ ] Month 1 review and reflection
-- [ ] Process documentation (what we learned)
-- [ ] Content calendar planning for Month 2
-- [ ] Follow-ups on active proposals
-- [ ] Client check-ins (active projects)
+- Morning: Generate revenue (outreach, calls, proposals)
+- Midday: Deliver value (client work, build assets)
+- Evening: Build authority (content, engagement)
 
----
+**Do this Monday-Friday for 12 weeks.**
 
-### MONDAY (DEC 23): MONTH 1 REVIEW
+By Day 90, you'll have:
+- $100K-$250K in revenue
+- $5K-$15K monthly recurring
+- 700-1500 LinkedIn followers
+- 40-70 completed projects
+- AriseCore v1 (3 reusable modules)
+- Team rhythm that feels natural
+- Clarity on what's next
 
-**Individual Reflection (2 hours):**
+**The rhythm becomes the result.**
 
-**Metrics Analysis:**
-- Total outreach messages sent: _____
-- Total discovery calls completed: _____
-- Total proposals sent: _____
-- Total projects closed: _____
-- Total revenue: $_____
-- LinkedIn followers gained: _____
-- Inbound leads from content: _____
+**Start Monday, December 2.**
+**6pm team meeting.**
+**Then execute the daily rhythm.**
 
-**What Worked:**
-- Best outreach channel: _______________
-- Best discovery call approach: _______________
-- Best proposal format: _______________
-- Best content pillar: _______________
-- Best vertical (fastest close rate): _______________
-
-**What Didn't Work:**
-- Biggest challenge: _______________
-- Most common objection: _______________
-- Weakest part of process: _______________
-- Content that flopped: _______________
-
-**Lessons Learned:**
-- About our ICP: _______________
-- About our pricing: _______________
-- About our positioning: _______________
-- About our team dynamic: _______________
+**Everything else is just details.**
 
 ---
 
-**Team Review Session (2 hours):**
-
-**Agenda:**
-
-**1. Celebrate Wins (30 min)**
-- Each founder shares proudest moment from Month 1
-- Total team accomplishments:
-  - Projects closed: _____
-  - Revenue generated: $_____
-  - LinkedIn reach: _____
-  - Team collaboration wins: _____
-
-**2. Metrics Deep Dive (30 min)**
-- Sales conversion funnel:
-  - Outreach → Call booking rate: _____%
-  - Call → Proposal rate: _____%
-  - Proposal → Close rate: _____%
-  - Overall outreach → Close rate: _____%
-
-- Content performance:
-  - Avg post engagement rate: _____%
-  - Best performing content type: _______________
-  - Inbound DM rate: _______________
-
-**3. Process Improvements (30 min)**
-- What should we start doing?
-- What should we stop doing?
-- What should we keep doing?
-- What should we do differently?
-
-**4. Month 2 Planning (30 min)**
-- Goal: 2x Month 1 revenue
-- Sales targets: _____ calls, _____ proposals, _____ closes
-- Content goals: Build authority, drive inbound
-- Delivery goals: Delight first clients, get testimonials
-- Team goals: Refine collaboration, build rhythm
-
----
-
-### TUE-THU (DEC 24-26): LIGHT WEEK
-
-**Holiday schedule - Reduced hours**
-
-**Daily (1-2 hours):**
-- [ ] Check email/Slack for urgent client needs
-- [ ] Respond to any hot prospects
-- [ ] Post 1x on LinkedIn (lighter schedule OK)
-- [ ] Catch up on project work
-- [ ] Rest and recharge
-
----
-
-### FRIDAY (DEC 27): WEEK 4 SYNC + 2026 KICKOFF PLANNING
-
-**Morning (Individual - 2 hours):**
-- [ ] Finalize Month 1 learnings doc
-- [ ] Plan personal Month 2 goals
-- [ ] Update Notion pipeline for 2026
-- [ ] Clear any loose ends before new year
-
-**6PM: Week 4 Team Sync (1 hour)**
-
-**Focus:** Month 2 Planning
-
-**Decisions to Make:**
-- Should we specialize in one vertical? (Have enough data now?)
-- What's our Month 2 revenue target?
-- Do we need to hire anyone? (VA, designer, etc.)
-- Are we ready to implement transformation strategy elements?
-  - Prerequisites framework?
-  - Retainer packages?
-  - Monetization tiers?
-
-**Action Items for Week 5:**
-- Assign owners for Month 2 initiatives
-- Set specific, measurable goals
-- Plan any process changes
-- Prepare to hit ground running Jan 2
-
----
-
-### MONTH 1 (WEEKS 1-4) FINAL SCORECARD
-
-**FOUNDATION:**
-- [ ] ✅ AriseGroup LLC formed
-- [ ] ✅ 4 founders aligned and collaborating
-- [ ] ✅ Tools operational (Notion, Slack, Calendly, etc.)
-- [ ] ✅ Personal brands launched (LinkedIn profiles updated)
-
-**SALES PERFORMANCE:**
-- Total outreach messages: _____ / 200+ target
-- Total discovery calls: _____ / 60+ target
-- Total proposals: _____ / 20+ target
-- Total projects closed: _____ / 6-12 target
-- Total revenue: $_____ / $30K-$70K target
-
-**CONTENT PERFORMANCE:**
-- Total posts: _____ / 48 target (12/week × 4 weeks)
-- Total followers gained: _____ / 200-500 target
-- Inbound DMs: _____
-- Discovery calls from content: _____
-
-**DELIVERY PERFORMANCE:**
-- Projects in active delivery: _____
-- Client satisfaction (avg 1-10): _____
-- On-time delivery rate: _____%
-
-**TEAM COLLABORATION:**
-- Weekly syncs completed: 4 / 4
-- Team conflicts/issues: _____
-- Collaboration rating (1-10): _____
-- Ready to continue? YES / NO
-
-**OVERALL STATUS:** _____ (Exceeding / On Track / Behind / Need to Pivot)
-
----
-
-## WEEK 5: MONTH 2 KICKOFF + PREREQUISITES FRAMEWORK
-**Dates:** December 30 - January 5, 2026
-
-### 🎯 CRITICAL PRIORITIES THIS WEEK
-
-- [ ] 💰 New Year push (book 40-50 calls for January)
-- [ ] 📈 Content: Share Month 1 wins, lessons learned
-- [ ] 🎯 Implement Prerequisites Framework (SHIFT #1 from Transformation Strategy)
-- [ ] 💰 Close pending proposals from December
-
----
-
-### TRANSFORMATION STRATEGY IMPLEMENTATION BEGINS
-
-**Monday Team Meeting (2 hours):**
-
-**Part 1: Prerequisites Framework Training (1 hour)**
-
-**Review TRANSFORMATION-PREREQUISITES-FRAMEWORK.md:**
-- [ ] Understand Phase 0-5 prerequisites
-- [ ] Learn how to assess client readiness
-- [ ] Practice prerequisites language
-- [ ] Role-play discovery calls with Q6 (internal assessment)
-
-**Create Internal Tools:**
-- [ ] Q6 Assessment Template (what prerequisites are missing?)
-- [ ] Prerequisites Pricing Guide (how to price foundation work)
-- [ ] Proposal Template Update (add "What We Build First" section)
-
-**Owner:** _______________
-**Deadline:** End of Week 5
-
----
-
-**Part 2: CPO vs CTO Positioning (1 hour)**
-
-**Practice:** "After Q5, here's what I'd actually recommend..."
-
-**Role-Play Scenario:**
-- Client: "We want AI for customer service automation"
-- You (CPO approach): "That makes sense. But based on what you told me about your current systems, here's what you actually need first..."
-- Then prescribe: Phase 1 (Foundation), Phase 2 (AI Layer)
-
-**Exercises:**
-- Each founder practices CPO positioning
-- Get feedback from team
-- Refine approach based on what feels natural
-
-**Goal:** Sound like strategic partner, not order-taking dev shop
-
----
-
-### SALES EXECUTION (SAME AS PREVIOUS WEEKS)
-
-**Routine:**
-- 40-50 discovery calls this week (10-12 per founder)
-- 10-15 proposals sent
-- Goal: Close 4-6 projects
-- **NEW:** Use Prerequisites Framework in every proposal
-
----
-
-### CONTENT: MONTH 1 RECAP & LESSONS
-
-**This Week's Posts (All Founders):**
-
-**Monday:** "Month 1 building AriseGroup: Here's what happened..."
-- Share formation story
-- Wins and challenges
-- Lessons learned
-- What's next
-
-**Wednesday:** Client transformation story (if you have one completed)
-- Or: "The pattern we're seeing in [vertical]..."
-- Industry insight from first month of discovery calls
-
-**Friday:** "The biggest lesson from 60+ discovery calls..."
-- What you learned about ICP
-- Common prerequisites gaps
-- Why most AI projects fail
-
-**Cross-Amplification:** Trent's turn to repost team content
-
----
-
-### WEEK 5 SUCCESS CRITERIA
-
-- [ ] ✅ Prerequisites Framework implemented in all proposals
-- [ ] ✅ CPO positioning practiced and refined
-- [ ] ✅ 40-50 discovery calls completed
-- [ ] ✅ 10-15 proposals sent (all with prerequisites section)
-- [ ] ✅ 4-6 new projects closed
-- [ ] ✅ 12 LinkedIn posts (3 per founder)
-- [ ] ✅ Month 1 recap content published
-
-**STATUS:** _____ (On Track / Behind / Ahead)
-
----
-
-## WEEKS 6-8: DELIVERY EXCELLENCE + RETAINER STRATEGY
-
-### WEEK 6: RETAINER PACKAGES (JAN 6-12)
-
-**Focus:** Create 3-tier retainer offerings, pitch to completing clients
-
-**Monday: Retainer Package Design (Team - 2 hours)**
-
-**Define 3 Tiers:**
-
-**Tier 1: Maintenance & Support**
-- What's included: _______________
-- Price: $1,500-$3,000/month
-- Who it's for: Clients who want peace of mind
-- [ ] Create service agreement template
-- [ ] Build pitch script
-
-**Tier 2: Engineering-as-a-Service**
-- What's included: _______________
-- Price: $3,000-$6,000/month
-- Who it's for: Clients who want ongoing development
-- [ ] Define hours included
-- [ ] Create expansion process
-
-**Tier 3: AI Operating System**
-- What's included: _______________
-- Price: $6,000-$10,000/month
-- Who it's for: Strategic partners
-- [ ] Define full scope
-- [ ] Create partnership model
-
-**Owner:** _______________
-
-**This Week:**
-- [ ] Pitch retainers to 2-3 clients completing projects
-- [ ] Goal: Convert 1-2 to retainer (start building MRR)
-- [ ] Track: Conversion rate, objections, what works
-
----
-
-### WEEK 7: CASE STUDY DEVELOPMENT (JAN 13-19)
-
-**Goal:** Document first client successes for marketing
-
-**For Each Completed Project:**
-- [ ] Request testimonial
-- [ ] Document results (time saved, cost reduced, ROI)
-- [ ] Create case study (using PILLAR 1 format from Content Brief)
-- [ ] Get client permission to share (anonymized or named)
-- [ ] Turn into LinkedIn content (PDF carousel + post)
-
-**Owners:** Technical Leads for each completed project
-
-**Deliverable:** 2-3 case studies by end of week
-
-**Use For:**
-- LinkedIn content (Client Transformation Stories)
-- Proposals (social proof)
-- Website (when built)
-- Sales calls (credibility)
-
----
-
-### WEEK 8: ARISECORE v1 PLANNING (JAN 20-26)
-
-**Goal:** Identify reusable components to build
-
-**Monday: Tech Assets Audit (Team - 1 hour)**
-
-**Review Projects 1-10:**
-- [ ] What have we built multiple times?
-- [ ] Common integrations (CRM, calendar, email, etc.)?
-- [ ] Repeated workflows or automations?
-- [ ] Shared infrastructure needs?
-
-**Prioritize Top 3 AriseCore Modules:**
-1. _______________
-2. _______________
-3. _______________
-
-**Plan:**
-- Week 9-11: Build these 3 modules
-- Use Learning/Process role (5-7% of project revenue funds this)
-- Test on projects, refine, document
-
-**Owner:** _______________
-
----
-
-### WEEKS 6-8 COMBINED METRICS
-
-**Sales:**
-- Discovery calls: 120-150 total
-- Proposals: 30-40 total
-- Projects closed: 12-18 total
-- Cumulative revenue: $60K-$120K
-
-**Delivery:**
-- Projects in delivery: 8-15
-- Projects completed: 4-8
-- Client satisfaction: 8+/10 avg
-- Case studies created: 2-3
-
-**Recurring Revenue:**
-- Retainer conversions: 1-2
-- MRR: $3K-$10K
-
-**Content:**
-- Total posts: 36 (3/week × 4 founders × 3 weeks)
-- Followers: 500-1000 total gained
-- Inbound leads: 5-10
-
-**STATUS:** _____ (On Track / Behind / Ahead)
-
----
-
-## WEEKS 9-12: SCALING + AUTHORITY BUILDING
-
-### WEEK 9: MONETIZATION TIERS (FEB 3-9)
-
-**Implement SHIFT #2 from Transformation Strategy**
-
-**Goal:** Define when to use Mercenary/Partnership/Missionary models
-
-**Monday: Monetization Training (Team - 2 hours)**
-
-**Decision Matrix:**
-
-**Tier 1: Mercenary (Cash-for-Service)**
-- When: $5K-$15K projects, no distribution, need cash flow
-- Structure: Upfront or monthly, client owns IP
-- Pricing: 30-50% of Q2 cost
-
-**Tier 2: Partnership (2-and-20)**
-- When: $15K-$50K value, measurable ROI, some distribution
-- Structure: Base fee (20-30% of cost) + 20% of savings/revenue
-- Requires: Performance tracking dashboard
-
-**Tier 3: Missionary (Co-Ownership)**
-- When: $50K+ value or massive TAM, client has distribution
-- Structure: Reduced/free cash + equity stake (30-50%)
-- Requires: Legal agreement, long-term commitment
-
-**This Week:**
-- [ ] Create decision scorecard
-- [ ] Test Partnership model on 1 prospect (pilot)
-- [ ] Track results
-
-**Owner:** _______________
-
----
-
-### WEEK 10: SPECIALIST VS GENERALIST DECISION (FEB 10-16)
-
-**You now have 60-90 days of data - Time to decide**
-
-**Monday: Strategic Decision Session (Team - 2 hours)**
-
-**Analyze:**
-- Which vertical has highest close rate? _______________
-- Which vertical has highest average deal size? _______________
-- Which vertical has fastest sales cycle? _______________
-- Which vertical do we enjoy most? _______________
-- Which vertical has best referral potential? _______________
-
-**Vote:**
-- [ ] Option A: Specialize in ONE vertical (which one?: _______________)
-- [ ] Option B: Stay generalist with 4 verticals
-- [ ] Option C: Digital franchise (vertical sub-brands)
-
-**DECISION:** _______________
-
-**If Specializing:**
-- Update all marketing (website, LinkedIn, proposals)
-- Focus 80% of outreach on chosen vertical
-- Become THE expert in that space
-
-**If Staying Generalist:**
-- Develop vertical-specific playbooks
-- Assign vertical leads
-- Maintain multi-vertical positioning
-
----
-
-### WEEK 11: ARISECORE v1 BUILD (FEB 17-23)
-
-**Build First 3 Reusable Modules**
-
-**Module #1:** _______________
-- [ ] Extract from Project X
-- [ ] Make configurable
-- [ ] Document usage
-- [ ] Test on Project Y
-- **Owner:** _______________
-
-**Module #2:** _______________
-- [ ] Extract from Project Z
-- [ ] Make reusable
-- [ ] Create integration guide
-- [ ] Test and refine
-- **Owner:** _______________
-
-**Module #3:** _______________
-- [ ] Build from scratch (common need)
-- [ ] Template/boilerplate
-- [ ] Document
-- [ ] Deploy
-- **Owner:** _______________
-
-**Goal:** 30%+ time savings on future projects using these modules
-
----
-
-### WEEK 12: 90-DAY REVIEW & 2026 PLANNING (FEB 24 - MAR 2)
-
-**FINAL WEEK OF 90-DAY TRANSFORMATION**
-
-### MONDAY (FEB 24): INDIVIDUAL REFLECTION
-
-**Each Founder (2 hours):**
-
-**Metrics Summary:**
-- Personal discovery calls completed: _____
-- Personal proposals sent: _____
-- Personal projects closed: _____
-- Personal revenue generated: $_____
-- LinkedIn followers gained: _____
-- Best win: _______________
-- Biggest lesson: _______________
-
-**Self-Assessment:**
-- Sales skills (1-10): _____
-- Content creation (1-10): _____
-- Client delivery (1-10): _____
-- Team collaboration (1-10): _____
-- Overall satisfaction (1-10): _____
-
-**Looking Forward:**
-- Do I want to continue? YES / NO
-- What should I focus on improving?
-- What role do I want going forward?
-
----
-
-### TUESDAY (FEB 25): TEAM 90-DAY REVIEW
-
-**Meeting: 3 hours**
-
-**Part 1: Metrics Review (1 hour)**
-
-**Sales Performance:**
-| Metric | Target | Actual | Status |
-|--------|--------|--------|--------|
-| Discovery calls | 200+ | _____ | ✅/❌ |
-| Proposals sent | 60+ | _____ | ✅/❌ |
-| Projects closed | 20-30 | _____ | ✅/❌ |
-| Total revenue | $100K-$200K | $_____ | ✅/❌ |
-| Avg deal size | $5K-$10K | $_____ | ✅/❌ |
-
-**Content Performance:**
-| Metric | Target | Actual | Status |
-|--------|--------|--------|--------|
-| Total posts | 144 (12/wk) | _____ | ✅/❌ |
-| Followers gained | 1000+ | _____ | ✅/❌ |
-| Inbound leads | 20+ | _____ | ✅/❌ |
-| Discovery calls from content | 10+ | _____ | ✅/❌ |
-
-**Delivery Performance:**
-| Metric | Target | Actual | Status |
-|--------|--------|--------|--------|
-| Projects completed | 10-15 | _____ | ✅/❌ |
-| Client satisfaction | 8+/10 | _____ | ✅/❌ |
-| Case studies created | 3-5 | _____ | ✅/❌ |
-| Testimonials received | 5+ | _____ | ✅/❌ |
-
-**Recurring Revenue:**
-| Metric | Target | Actual | Status |
-|--------|--------|--------|--------|
-| Retainer clients | 2-4 | _____ | ✅/❌ |
-| MRR | $5K-$15K | $_____ | ✅/❌ |
-| Retainer conversion rate | 30%+ | ____% | ✅/❌ |
-
-**Transformation Strategy:**
-| Element | Status |
-|---------|--------|
-| Prerequisites Framework | Implemented / Partial / Not Started |
-| CPO Positioning | Adopted / In Progress / Not Adopted |
-| Monetization Tiers | Defined / Testing / Not Implemented |
-| Retainer Packages | Live / Created / Not Started |
-| AriseCore Modules | 3 Built / In Progress / Not Started |
-| Specialist Decision | Made / Still Deciding |
-
----
-
-**Part 2: Qualitative Assessment (1 hour)**
-
-**What Worked:**
-- Biggest success: _______________
-- Unexpected win: _______________
-- Best team moment: _______________
-- Most valuable framework: _______________
-
-**What Didn't Work:**
-- Biggest challenge: _______________
-- What we should stop: _______________
-- What needs improvement: _______________
-
-**Lessons Learned:**
-- About our ICP: _______________
-- About our positioning: _______________
-- About our process: _______________
-- About working together: _______________
-
----
-
-**Part 3: The Big Decision (1 hour)**
-
-**Option A: Formalize into AriseGroup LLC (Single Entity)**
-- Pro: Simpler operations, clear equity, easier to scale
-- Con: Loss of independence, tax complexity, harder to exit
-
-**Option B: Continue as 4 Independent Collaborators**
-- Pro: Flexibility, independence, simple taxes
-- Con: Complex splits, harder to hire, brand dilution
-
-**Option C: Dissolve Partnership**
-- If it didn't work, part as friends
-- Each takes their clients
-- Shared IP usage rights maintained
-
-**VOTE (Unanimous Required for A or C):**
-- Mekaiel: A / B / C
-- Chris: A / B / C
-- Trent: A / B / C
-- Matthew: A / B / C
-
-**DECISION:** _______________
-
----
-
-### WEDNESDAY-THURSDAY: MONTH 4+ PLANNING
-
-**If Continuing (Option A or B):**
-
-**Create 6-Month Roadmap:**
-- Revenue target (Month 6): $_____
-- MRR target (Month 6): $_____
-- Retainer clients target: _____
-- AriseCore modules: _____
-- Team size: _____
-- Specialist or generalist: _____
-
-**Define Month 4 Goals:**
-- Sales targets
-- Content goals
-- Delivery goals
-- Hiring needs
-- Process improvements
-
-**Assign Owners for Q2 Initiatives**
-
----
-
-### FRIDAY (FEB 28): CELEBRATION & LAUNCH
-
-**6PM: Final 90-Day Sync**
-
-**Agenda:**
-1. Celebrate what we built
-2. Share gratitude for team
-3. Announce decision (formalize, continue, or dissolve)
-4. Toast to next 90 days
-5. Launch Month 4 with clarity
-
----
-
-## 90-DAY FINAL SCORECARD
-
-### FOUNDATION BUILT
-- [ ] AriseGroup formed and operational
-- [ ] 4 founders collaborating effectively
-- [ ] Tools and systems in place
-- [ ] Personal brands established
-
-### SALES ENGINE RUNNING
-- [ ] Consistent pipeline of discovery calls
-- [ ] Strong proposal-to-close conversion
-- [ ] $100K-$200K revenue generated
-- [ ] Avg deal size $5K-$10K+
-
-### CONTENT AUTHORITY BUILDING
-- [ ] 144+ LinkedIn posts published
-- [ ] 1000+ followers gained collectively
-- [ ] Inbound leads flowing
-- [ ] Thought leadership established
-
-### CLIENT DELIVERY EXCELLENCE
-- [ ] 10-15 projects completed successfully
-- [ ] High client satisfaction (8+/10)
-- [ ] Case studies and testimonials
-- [ ] Repeat clients and referrals
-
-### RECURRING REVENUE ESTABLISHED
-- [ ] 2-4 retainer clients
-- [ ] $5K-$15K MRR
-- [ ] Retainer conversion process refined
-
-### TRANSFORMATION STRATEGY IMPLEMENTED
-- [ ] Prerequisites framework in use
-- [ ] CPO positioning adopted
-- [ ] Monetization tiers defined
-- [ ] Retainer packages live
-- [ ] AriseCore v1 with 3 modules
-- [ ] Specialist vs generalist decided
-
-### TEAM COLLABORATION SUCCESS
-- [ ] 12 weekly syncs completed
-- [ ] Minimal conflicts, high trust
-- [ ] Cross-amplification working
-- [ ] Ready to scale together
-
----
-
-## WHAT HAPPENS AFTER DAY 90?
-
-### IF FORMALIZING (Option A):
-**Month 4-6 Focus:**
-- Form AriseGroup LLC (single entity)
-- Define equity split (based on contribution to date)
-- Hire first team member (VA, designer, or junior dev)
-- Build company infrastructure (website, systems, processes)
-- Scale to $50K-$100K MRR
-
----
-
-### IF CONTINUING AS INDEPENDENT (Option B):
-**Month 4-6 Focus:**
-- Refine collaboration framework based on learnings
-- Optimize role-based splits for recurring revenue
-- Build shared tech assets (AriseCore expansion)
-- Evaluate formalization again at Month 6
-
----
-
-### IF DISSOLVING (Option C):
-**Clean Exit Protocol:**
-- Each founder takes their originated clients
-- Shared IP usage rights maintained (per agreement)
-- Financial cleanup (distribute pending payments)
-- Part as friends, stay in network
-- Door open to collaborate again in future
-
----
-
-## FINAL WORD
-
-**These 90 days will transform:**
-- 4 solo contractors → Unified AI transformation firm
-- 0 clients → 20-30 active projects
-- $0 revenue → $100K-$200K signed contracts
-- No LinkedIn presence → 1000+ engaged followers
-- No recurring revenue → $5K-$15K MRR
-- Reactive order-takers → Strategic CPO partners
-- Starting over each project → Reusable AriseCore assets
-
-**This isn't theory.**
-**This is the execution plan.**
-
-**Start Week 1 Monday.**
-**Review every Friday.**
-**Adjust based on reality.**
-**Execute consistently.**
-
-**By Day 90, you'll either have:**
-- A thriving AI transformation business worth scaling
-- Valuable learnings and individual success
-- Or clarity that this wasn't the right path
-
-**All three are wins.**
-
-**Let's go build AriseGroup.**
-
----
-
-**Document Status:** ACTIVE 90-DAY TRACKER
-**Start Date:** December 2, 2025
-**End Date:** March 2, 2026
-**Next Review:** Every Friday 6pm (Team Sync)
-**Owner:** All 4 Founders (Collective Accountability)
-
----
-
-*Print this. Use this. Mark it up. Celebrate wins. Learn from losses. Adjust as needed. This is your roadmap from zero to sustainable AI transformation firm in 90 days.*
-
-**🚀 LET'S EXECUTE. 🚀**
+**🚀 EXECUTE THE RHYTHM. BUILD THE BUSINESS. TRANSFORM IN 90 DAYS. 🚀**
