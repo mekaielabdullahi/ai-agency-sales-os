@@ -1,7 +1,7 @@
 # ARISEGROUP DOCUMENTATION
 ## Complete Operating System for AI Transformation Agency
 
-**Last Updated:** December 3, 2025
+**Last Updated:** December 5, 2025
 **Status:** Active - Ready for Week 1 Execution (Dec 2, 2025)
 
 ---
@@ -32,12 +32,14 @@ Everything needed to generate revenue through discovery calls, proposals, and cl
 - **SALES-OPERATING-SYSTEM-GUIDE.md** - Complete sales playbook (Q1-Q5 framework, pipeline stages, objection handling)
 - **SALES-ANALYST-AGENT-SETUP.md** - Claude.ai Sales Analyst for analyzing discovery calls
 - **VERTICAL-OUTREACH-SCRIPTS.md** - Customized outreach scripts for Defense, Industrial, E-commerce, Construction
+- **Otto-AAA-Pricing-Perfection.pdf** - Comprehensive pricing guide from Otto's AAA Accelerator (cost-plus to value-based pricing)
 
 **When to use:**
 - Running discovery calls (use Q1-Q5 framework)
 - Analyzing call notes (Sales Analyst)
 - Sending outreach messages (vertical scripts)
 - Creating proposals (proposal templates in guide)
+- Pricing projects (Otto's guide for all pricing scenarios)
 
 ---
 
@@ -159,6 +161,7 @@ Old versions kept for reference, no longer actively used.
 | **90-Day Tracker** | 🟢 Active | Daily execution | Daily check-ins |
 | **Collaboration Framework V3** | 🟢 Active | Business model | Update after votes |
 | **Sales Operating System** | 🟢 Active | Discovery calls | Refine monthly |
+| **Otto Pricing Guide** | 🟢 Active | Project pricing | Reference as needed |
 | **Content Team Brief V2** | 🟢 Active | LinkedIn posts | Review monthly |
 | **Transformation Strategy** | 🟢 Active | Strategic decisions | Review quarterly |
 | **Prerequisites Framework** | 🟢 Active | Every proposal | Update as learned |
