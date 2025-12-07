@@ -84,6 +84,125 @@
 
 ---
 
+## 90-DAY STRATEGIC POSITIONING (ACTIVE)
+
+**Last Updated:** December 7, 2025
+**Status:** DRIVES ALL SALES FOR NEXT 90 DAYS
+**Reference:** `arisegroup/strategy/ARISEGROUP-90DAY-POSITIONING-FRAMEWORK.md`
+
+### Core Positioning Statement
+
+> "AriseGroup is your embedded AI transformation partner. We act as your AI strategy + engineering pod for 6-12 months, delivering measurable business outcomes—not just technology. We build the infrastructure your AI needs to work, then layer intelligence on top. The result: shorter sales cycles, higher conversion, and hours reclaimed every week."
+
+### Target Avatar (Narrow & Wealthy)
+
+**Primary Target:**
+- B2B service firms (consulting, agencies, professional services)
+- 10-50 employees, $2M-$20M annual revenue
+- Already spending $50K-$200K/year on tech/systems
+- Growth-focused with budget authority
+
+**Pain Points:**
+- Sales cycles too long (30-90 days)
+- Lead conversion below 20%
+- Operations overwhelmed with manual work
+- Data scattered across systems
+- Can't scale without more headcount
+
+**NOT targeting:**
+- Generic "any small business"
+- Low-budget solopreneurs
+- Companies not already investing in systems
+
+### The New Offer Ladder
+
+**TIER 1 (ENTRY): AI Readiness & ROI Audit**
+- **What:** 2-week intensive audit producing prioritized AI transformation roadmap
+- **Price:** $5K-$7.5K
+- **Timeline:** 2 weeks
+- **Goal:** 70%+ convert to Tier 2 or Tier 3
+- **Positioning:** "You need clarity on where AI delivers ROI before investing. This audit gives you that roadmap."
+
+**TIER 2 (MIDDLE): 4-8 Week AI Transformation Sprint**
+- **What:** Take ONE critical system from map → prototype → production
+- **Price:** $15K-$35K
+- **Timeline:** 4-8 weeks
+- **Goal:** Prove value, expand to Tier 3 (50%+ conversion)
+- **Positioning:** "One critical bottleneck, solved in 4-8 weeks. No endless discovery. No scope creep."
+
+**TIER 3 (PREMIUM): Embedded AI Transformation Partner**
+- **What:** 6-12 month embedded partnership as their AI strategy + engineering pod
+- **Price:** $25K-$50K setup + $10K-$20K/month retainer (Total: $85K-$290K)
+- **Timeline:** 6-12 months
+- **Goal:** Long-term recurring revenue, deep partnerships
+- **Positioning:** "Not a project. An embedded partnership. We become your AI transformation team."
+- **Limited Availability:** 3-5 partnerships maximum at any time
+
+### The Offer Flow
+
+```
+Prospect → Tier 1: Audit ($5K-$7.5K)
+           ↓ 70%+ convert
+           Tier 2: Sprint ($15K-$35K)
+           ↓ 50%+ convert
+           Tier 3: Partnership ($85K-$290K/year)
+```
+
+### Language & Messaging
+
+**Business Outcomes, NOT Technical Features:**
+
+❌ **DON'T SAY:**
+- "We build AI agents and workflows"
+- "Custom AI solutions"
+- "AI automation for your business"
+
+✅ **DO SAY:**
+- "Shorter sales cycles through intelligent lead qualification"
+- "Higher lead conversion with AI-powered follow-up"
+- "15+ hours reclaimed per week in ops"
+- "Reduce operational overhead by 40% in 90 days"
+
+### Experience & Delivery (What Justifies Premium)
+
+**Tier 3 (Partnership):**
+- Dedicated Slack channel (4-hour response SLA)
+- Weekly AI ops standups (30 min)
+- 2-week iteration cycles
+- Done-for-you engineering
+
+**Tier 2 (Sprint):**
+- Shared Slack channel (24-hour response SLA)
+- Bi-weekly standups (30 min)
+- 4-week build cycles
+- Done-for-you engineering
+
+**Tier 1 (Audit):**
+- Email + scheduled calls
+- 2-week delivery
+- 90-minute executive presentation
+
+### Sales Process Update
+
+**Discovery Call:**
+1. Use 5 Questions Framework (below)
+2. Qualify for Tier 1, 2, or 3:
+   - **Small/unclear scope:** Pitch Tier 1 (Audit)
+   - **Specific pain, clear ROI:** Pitch Tier 2 (Sprint)
+   - **Large scope, budget ready:** Pitch Tier 3 (Partnership)
+
+**Proposal:**
+- Lead with business outcomes
+- Frame Tier 1 as "roadmap to clarity"
+- Frame Tier 2 as "fast win on critical bottleneck"
+- Frame Tier 3 as "embedded partnership for transformation"
+
+**Upsell Path:**
+- Tier 1 → Tier 2/3 (credit audit fee toward engagement)
+- Tier 2 → Tier 3 (expand from single sprint to full partnership)
+
+---
+
 ## THE 5 QUESTIONS FRAMEWORK
 
 ### The Foundation of Every Sale
@@ -106,7 +225,7 @@ The 5 Questions Framework is our discovery engine. **Every sales conversation us
 - Core processes that could be automated
 
 **Example Good Answer:**
-"We're a defense contractor managing equipment maintenance schedules for 15 military bases. My team of 8 coordinators spends all day calling bases, tracking maintenance windows in spreadsheets, and coordinating with contractors."
+"We're a professional services firm managing project schedules for 15 enterprise clients. My team of 8 coordinators spends all day calling clients, tracking project timelines in spreadsheets, and coordinating with consultants."
 
 **Example Bad Answer:**
 "We do consulting." (Too vague - drill deeper)
@@ -156,7 +275,7 @@ Your project fee = 30-50% of their Q2 monthly cost
 - Objections you'll face
 
 **Example Good Answer:**
-"We tried Salesforce but it doesn't integrate with the military's GCSS system. Also hired 2 more coordinators but that just added overhead."
+"We tried Salesforce but it doesn't integrate with our legacy project management system. Also hired 2 more coordinators but that just added overhead."
 
 ### Q4: Why didn't those solutions work?
 
@@ -262,11 +381,11 @@ Book 20-40 discovery calls per week (across all 4 verticals)
 
 ### Target Persona by Vertical
 
-**Defense (Mekaiel):**
-- Title: VP Operations, CTO, CISO, Program Manager
-- Company: Defense contractors, government agencies, cybersecurity firms
-- Size: 50-500 employees
-- Pain: Security compliance + legacy systems + manual operations
+**Professional Services (Mekaiel):**
+- Title: VP Operations, Managing Partner, Director of Client Services
+- Company: Consulting firms, agencies, professional service providers
+- Size: 10-50 employees
+- Pain: Manual client management + disconnected systems + scaling bottlenecks
 
 **Industrial (4.0 Hero):**
 - Title: VP Operations, Director of Engineering, Plant Manager
@@ -716,8 +835,8 @@ WHY ARISEGROUP [VERTICAL]
 
 [Your specific vertical credibility]
 
-[Mekaiel - Defense]:
-"I spent 9 years securing Pentagon networks, NATO operations, and 15 U.S. embassies. Active Secret Clearance. I know DoD/DoS compliance and zero-failure standards. We're not a generic AI agency - we're defense infrastructure experts who happen to build AI."
+[Mekaiel - Professional Services]:
+"I've built complex operational systems for B2B service firms, helping them scale from manual processes to systematic automation. I understand the unique challenges of client-facing businesses—irregular workflows, high-touch service, and the need for flexibility. We're not a generic AI agency - we're operational efficiency experts who happen to build AI."
 
 [4.0 Hero - Industrial]:
 "22 years in industrial automation. I've built production systems across every industry. I know what works on plant floors, not just in PowerPoints. We're not consultants theorizing - we're engineers who've done this work."
@@ -1253,38 +1372,39 @@ Want to try it for 3 months and compare?
 
 ## VERTICAL-SPECIFIC PLAYBOOKS
 
-### Defense Vertical (Mekaiel)
+### Professional Services Vertical (Mekaiel)
 
 **Unique Characteristics:**
-- Long sales cycles (3-6 months typical)
-- Procurement processes (RFPs, GSA schedules)
-- Security compliance requirements (FedRAMP, NIST, DoD IL5)
-- Clearance considerations
-- Government fiscal year timing (October)
+- Sales cycles (1-3 months typical)
+- Decision-makers value ROI and efficiency
+- Client-facing operations are complex and irregular
+- High-touch service model
+- Scaling challenges (can't just hire more people)
 
 **Key Pain Points:**
-- Legacy systems that can't integrate
-- Security compliance slows AI adoption
-- Manual processes in operations
-- Siloed data across departments
+- Manual client management and communication
+- Disconnected tools (CRM, project management, billing)
+- Sales cycles too long (30-90 days)
+- Lead conversion below 20%
+- Operations overwhelmed, can't scale without headcount
 
 **Positioning:**
-"Military-grade systematic discipline for AI adoption. Built by former DoD/DoS network security engineer with active Secret Clearance."
+"Systematic operational discipline for AI adoption. Built for B2B service firms that need to scale without adding headcount."
 
-**Prerequisites Common to Defense:**
-- Security compliance audit
-- Authority to Operate (ATO) requirements
-- Integration with classified networks
-- Air-gapped deployment options
+**Prerequisites Common to Professional Services:**
+- CRM integration and cleanup
+- Client communication workflow mapping
+- Process documentation
+- Data consolidation across tools
 
 **Pricing Considerations:**
-- Higher budgets ($50K-$200K typical)
-- Performance-based preferred (government loves measurable ROI)
-- Multi-year contracts possible
+- Budgets ($50K-$200K typical for tech/systems annually)
+- ROI-focused (time savings, conversion improvement)
+- 6-12 month partnerships preferred
 
 **Objection Handling:**
-"How do you handle classified data?"
-→ "We build air-gapped systems or work within your security boundary. I have active Secret Clearance and 9 years DoD/DoS experience. We follow your security protocols."
+"Our client relationships are too complex for automation"
+→ "That's exactly why you need custom AI transformation, not generic software. We build systems that handle your unique workflows while keeping the high-touch service your clients expect."
 
 ### Industrial Vertical (4.0 Hero)
 

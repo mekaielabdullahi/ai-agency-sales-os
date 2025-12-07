@@ -31,27 +31,27 @@
 
 ---
 
-## VERTICAL 1: ARISEGROUP DEFENSE (MEKAIEL)
+## VERTICAL 1: ARISEGROUP PROFESSIONAL SERVICES (MEKAIEL)
 
 ### Target Audience
-- Defense contractors (Lockheed, Raytheon, Northrop Grumman, BAE, etc.)
-- Government agencies (DoD, DoS, DHS, etc.)
-- Cybersecurity firms working with government
-- Former military colleagues now in private sector
-- Companies you worked with (Leidos, Koandah, etc.)
+- B2B consulting firms (strategy, IT, management, marketing agencies)
+- Professional service providers (law firms, accounting firms, architects)
+- Agency owners (creative, digital, media)
+- Former colleagues and network in B2B services
+- Companies in your LinkedIn network providing client-facing services
 
 ### Pain Points They Face
-- Legacy systems can't integrate with modern AI tools
-- Security compliance slows down AI adoption (FedRAMP, NIST, DoD IL5)
-- Manual processes in operations/admin (proposal writing, documentation, scheduling)
-- Siloed data across departments
-- Need zero-failure reliability (like you built for embassies)
+- Sales cycles too long (30-90 days average)
+- Lead conversion below 20%
+- Manual client management overwhelming operations team
+- Disconnected tools (CRM, project management, billing, communication)
+- Can't scale without hiring more headcount
 
 ---
 
 ### Script 1A: WARM NETWORK (Former Colleagues/Contacts)
 
-**Subject:** Quick question about AI + defense contractors
+**Subject:** Quick question about AI + scaling your firm
 
 **Body:**
 
@@ -59,13 +59,13 @@ Hey [Name],
 
 Hope you're doing well at [Company]. Quick question for you:
 
-Are you dealing with pressure to adopt AI at [Company], but struggling with security compliance + legacy system integration?
+Are you dealing with the classic services firm problem—too much manual work in sales and operations, but can't scale without hiring more people?
 
-I'm working with a team that's built AI operating systems specifically for defense contractors and government-adjacent organizations.
+I'm working with B2B service firms on AI transformation that actually delivers business outcomes: shorter sales cycles, higher conversion, and hours reclaimed every week.
 
-We bring military-grade systematic discipline to AI adoption (I spent 9 years securing Pentagon networks and 15 U.S. embassies, so I know the zero-failure standards you need).
+Not generic software. Custom AI systems built around your unique workflows while keeping the high-touch service your clients expect.
 
-I'm running 5 free AI discovery sessions this week for defense/cybersecurity companies to map out what's actually possible (without breaking compliance or security protocols).
+I'm running 5 free AI discovery sessions this week for professional services firms to map out what's actually possible.
 
 No pitch. Just 5 questions to understand your operations, then I'll show you a roadmap.
 
@@ -74,8 +74,8 @@ No pitch. Just 5 questions to understand your operations, then I'll show you a r
 If yes, grab a time here: [Calendly link]
 
 — Mekaiel
-Former DoD/DoS Network Security | Active Secret Clearance
-AriseGroup.ai/defense
+Embedded AI Transformation Partner
+AriseGroup.ai
 
 ---
 

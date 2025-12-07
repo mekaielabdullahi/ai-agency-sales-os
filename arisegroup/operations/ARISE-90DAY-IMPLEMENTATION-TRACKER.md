@@ -5,6 +5,56 @@
 
 ---
 
+## 🎯 90-DAY STRATEGIC FOCUS (UPDATED DEC 7, 2025)
+
+**CRITICAL:** This execution system now operates under the new **Premium Embedded Positioning Framework**.
+
+### Core Positioning (What We Sell)
+
+> "Embedded AI Transformation & Engineering-as-a-Service for B2B firms serious about AI adoption."
+
+**We are NOT:** Generic AI agency, project vendor, one-and-done dev shop
+**We ARE:** Embedded AI strategy + engineering pod for 6-12 months
+
+### The 3-Tier Offer Ladder (Drives All Sales)
+
+**TIER 1 (ENTRY): AI Readiness & ROI Audit**
+- **Price:** $5K-$7.5K | **Timeline:** 2 weeks
+- **Goal:** 10+ closed in 90 days | Convert 70%+ to Tier 2/3
+
+**TIER 2 (MIDDLE): AI Transformation Sprint**
+- **Price:** $15K-$35K | **Timeline:** 4-8 weeks
+- **Goal:** 5+ closed in 90 days | Convert 50%+ to Tier 3
+
+**TIER 3 (PREMIUM): Embedded Partnership**
+- **Price:** $85K-$290K/year (setup + 6-12 month retainer)
+- **Goal:** 2+ closed in 90 days | Long-term recurring revenue
+
+### Target Avatar (Narrow & Wealthy)
+
+**Primary:** B2B service firms, agencies, professional services
+- 10-50 employees, $2M-$20M revenue
+- Already spending $50K-$200K/year on tech
+- Growth-focused with budget authority
+
+**NOT:** Generic small businesses, low-budget solopreneurs, veteran-only niche
+
+### Messaging (Business Outcomes, Not Tech Features)
+
+❌ **DON'T SAY:** "We build AI agents and workflows"
+✅ **DO SAY:** "Shorter sales cycles, higher conversion, 15+ hours reclaimed per week in ops"
+
+### 90-Day Revenue Targets (Updated)
+
+- **10+ Tier 1 (Audit):** $50K-$75K
+- **5+ Tier 2 (Sprint):** $75K-$175K
+- **2+ Tier 3 (Partnership):** $170K-$580K
+- **TOTAL:** $295K-$830K in 90 days
+
+**Reference:** `/arisegroup/strategy/ARISEGROUP-90DAY-POSITIONING-FRAMEWORK.md`
+
+---
+
 ## THE CORE PHILOSOPHY
 
 You don't need a 90-day plan.
