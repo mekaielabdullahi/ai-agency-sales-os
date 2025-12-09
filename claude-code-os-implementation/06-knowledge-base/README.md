@@ -8,6 +8,7 @@
 
 ### `/frameworks`
 Core decision-making and operational frameworks
+- [[learn-sell-teach-framework.md]] - **Core business model**: Learn AI skills → Sell as services → Teach via scalable products
 - [[brutal-prioritization.md]] - Eliminate 80% to focus on 20%
 - [[strategic-alignment-framework.md]] - Ensure work serves OBG
 - [[time-blocking-framework.md]] - Match energy to task complexity
@@ -88,9 +89,9 @@ Foundational productivity principles
 
 ## 📊 Current Status
 
-**Total Documents**: 16+ files
-**Last Major Update**: December 7, 2025
-**Contributors**: Core team + Week 3 learnings
+**Total Documents**: 17+ files
+**Last Major Update**: December 8, 2025
+**Contributors**: Core team + Week 3 learnings + Learn-Sell-Teach framework
 
 ---
 
