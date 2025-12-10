@@ -54,11 +54,87 @@
     "assumptions": []
   },
 
+  "discovery_interviews": {
+    "stakeholder_interviews": [
+      {
+        "interviewee_name": "",
+        "role": "",
+        "date": "",
+        "duration_minutes": 0,
+        "interview_type": "stakeholder",
+        "key_findings": [],
+        "pain_points_mentioned": [],
+        "tools_mentioned": [],
+        "goals_and_kpis": [],
+        "budget_range": "",
+        "timeline_constraints": "",
+        "change_readiness": "high|medium|low",
+        "transcript_link": "",
+        "recording_link": "",
+        "notes": "",
+        "powerful_quotes": []
+      }
+    ],
+    "end_user_interviews": [
+      {
+        "interviewee_name": "",
+        "role": "",
+        "date": "",
+        "duration_minutes": 0,
+        "interview_type": "end_user",
+        "processes_described": [],
+        "key_findings": [],
+        "pain_points_mentioned": [],
+        "tools_used_daily": [],
+        "workarounds_created": [],
+        "manual_data_transfers": [],
+        "wishlist_items": [],
+        "transcript_link": "",
+        "recording_link": "",
+        "notes": "",
+        "powerful_quotes": []
+      }
+    ],
+    "interview_summary": {
+      "total_interviews": 0,
+      "stakeholder_count": 0,
+      "end_user_count": 0,
+      "key_themes": [],
+      "top_pain_points": [],
+      "consensus_priorities": []
+    }
+  },
+
+  "ops_canvas": {
+    "acquisition_engine": {
+      "description": "How the business finds and signs new customers",
+      "processes": [],
+      "time_sinks": [],
+      "quality_risks": [],
+      "systems_involved": []
+    },
+    "delivery_engine": {
+      "description": "How the business delivers its product or service",
+      "processes": [],
+      "time_sinks": [],
+      "quality_risks": [],
+      "systems_involved": []
+    },
+    "support_engine": {
+      "description": "How the business handles customer questions and post-sale issues",
+      "processes": [],
+      "time_sinks": [],
+      "quality_risks": [],
+      "systems_involved": []
+    }
+  },
+
   "current_state_maps": [
     {
       "process_id": "process_001",
       "name": "Example: Lead Generation Process",
       "function_area": "Sales & Marketing",
+      "business_engine": "acquisition",
       "owner_roles": ["Marketing Manager", "Sales Team"],
       "trigger": "Prospect fills out website form",
       "frequency": "50-100 times per week",
@@ -124,6 +200,8 @@
       "process_id": "process_001",
       "type": "Automation",
       "category": "Lead Management",
+      "quadrant": "quick_win",
+      "business_engine": "acquisition",
       "description": "Automated lead capture and CRM sync with AI-powered lead scoring",
       "impact": "high",
       "impact_details": {
@@ -157,9 +235,76 @@
       ],
       "notes": "Quick win opportunity - high impact, manageable complexity",
       "priority_score": 9,
-      "assumption": false
+      "assumption": false,
+      "roi_calculation": {
+        "direct_cost_savings": {
+          "hours_saved_per_week": 0,
+          "number_of_employees_affected": 0,
+          "avg_hourly_rate": 0,
+          "calculation_notes": "",
+          "weekly_cost_savings": 0,
+          "annual_cost_savings": 0
+        },
+        "revenue_uplift": {
+          "hours_saved_per_week": 0,
+          "percent_reallocated_to_revenue": 0,
+          "revenue_generating_hours_per_week": 0,
+          "value_per_hour": 0,
+          "value_per_hour_calculation": "",
+          "conversion_efficiency": 0,
+          "conversion_efficiency_notes": "",
+          "weekly_revenue_potential": 0,
+          "annual_revenue_potential": 0
+        },
+        "total_annual_value": 0,
+        "implementation_cost": 0,
+        "ongoing_annual_cost": 0,
+        "net_annual_value": 0,
+        "roi_percentage": 0,
+        "break_even_months": 0,
+        "payback_period": "",
+        "assumptions": [],
+        "sensitivity_analysis": {
+          "conservative_annual_value": 0,
+          "realistic_annual_value": 0,
+          "optimistic_annual_value": 0
+        }
+      }
     }
   ],
+
+  "opportunity_validation": {
+    "validation_workshop_held": false,
+    "workshop_date": "",
+    "attendees": [],
+    "opportunities_reviewed": [],
+    "validated_opportunities": [
+      {
+        "opportunity_id": "",
+        "feedback": "",
+        "concerns_raised": [],
+        "support_level": "high|medium|low",
+        "modifications": ""
+      }
+    ],
+    "deprioritized_opportunities": [
+      {
+        "opportunity_id": "",
+        "reason": ""
+      }
+    ],
+    "modified_opportunities": [],
+    "stakeholder_feedback": [
+      {
+        "stakeholder": "",
+        "feedback": "",
+        "key_concerns": ""
+      }
+    ],
+    "agreed_upon_priorities": [],
+    "next_steps_from_workshop": [],
+    "key_insights": []
+  },
 
   "target_state_designs": [
     {
@@ -305,6 +450,30 @@
     "roi_break_even": "Month 2"
   },
 
+  "money_slide": {
+    "slide_title": "Investment & ROI Summary",
+    "opportunities": [
+      {
+        "opportunity_id": "",
+        "name": "",
+        "implementation_cost": 0,
+        "direct_savings_annual": 0,
+        "revenue_uplift_annual": 0,
+        "total_impact_annual": 0,
+        "roi_percentage": 0,
+        "payback_months": 0
+      }
+    ],
+    "totals": {
+      "total_investment": 0,
+      "total_direct_savings": 0,
+      "total_revenue_uplift": 0,
+      "total_annual_value": 0,
+      "blended_roi_percentage": 0,
+      "average_payback_months": 0
+    }
+  },
+
   "report_outline": {
     "executive_summary": {
       "current_state_overview": "",
@@ -444,6 +613,48 @@
       ]
     }
   ],
+
+  "operational_tracking": {
+    "slack_integration": {
+      "client_channel": "",
+      "sales_handoff": {
+        "posted": false,
+        "channel": "#client-new",
+        "posted_by": "",
+        "posted_date": "",
+        "message_link": ""
+      },
+      "audit_kickoff": {
+        "posted": false,
+        "channel": "#client-onboarding",
+        "posted_date": ""
+      },
+      "interviews_complete": {
+        "posted": false,
+        "summary_posted_to": "#client-onboarding"
+      },
+      "validation_workshop": {
+        "posted": false,
+        "summary_posted_to": "#client-onboarding"
+      },
+      "final_presentation": {
+        "posted": false,
+        "posted_to": "#client-onboarding",
+        "posted_date": ""
+      },
+      "implementation_handoff": {
+        "posted": false,
+        "posted_to": "#dev-sprint",
+        "posted_date": ""
+      }
+    },
+    "project_status_tracking": {
+      "current_phase": "discovery|mapping|opportunities|validation|presentation|complete",
+      "phase_start_date": "",
+      "expected_completion_date": "",
+      "blockers": []
+    }
+  },
 
   "notes": [
     {
