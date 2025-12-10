@@ -640,6 +640,101 @@ Auto-assign quadrant based on impact/effort scores
 
 ---
 
+### Task 2.5: Document Slack Operational Workflow
+
+**Files to Create**:
+- `documentation/slack-operational-workflow.md`
+- `templates/slack-sales-handoff-template.md`
+- `templates/slack-audit-milestone-updates.md`
+- `templates/slack-implementation-handoff-template.md`
+
+**Content for slack-operational-workflow.md**:
+- **Channel structure and purpose**
+  - Map of current Slack channels: #client-acquisition, #client-new, #client-onboarding, #sales-pipeline, #sales-revenue, #ops-general, #dev-sprint, etc.
+  - Purpose and usage guidelines for each channel
+  - When to use which channel
+
+- **Sales-to-Audit Handoff Process**
+  - What sales posts to #client-new when audit is sold
+  - Required information: client name, industry, contact, pain points, budget, timeline, discovery call recording
+  - Template format with all required fields
+  - cc: and @mentions protocol
+
+- **Audit Milestone Updates**
+  - What gets posted to #client-onboarding after each audit phase
+  - Interview completion summary template
+  - Opportunity validation workshop results template
+  - Final presentation delivered template
+  - Format and structure for consistency
+
+- **Audit-to-Implementation Handoff**
+  - What gets posted to #dev-sprint when audit converts to implementation
+  - Link to audit.json, roadmap, technical requirements
+  - Implementation team needs and dependencies
+
+- **Client Communication Guidelines**
+  - When/if to invite clients into Slack channels
+  - Professional communication standards
+  - What should vs. shouldn't be shared in client-facing channels
+
+**Update to audit-template.json**:
+
+Add `operational_tracking` section:
+
+```json
+{
+  "operational_tracking": {
+    "slack_integration": {
+      "client_channel": "",
+      "sales_handoff": {
+        "posted": false,
+        "channel": "#client-new",
+        "posted_by": "",
+        "posted_date": "",
+        "message_link": ""
+      },
+      "audit_kickoff": {
+        "posted": false,
+        "channel": "#client-onboarding",
+        "posted_date": ""
+      },
+      "interviews_complete": {
+        "posted": false,
+        "summary_posted_to": "#client-onboarding"
+      },
+      "validation_workshop": {
+        "posted": false,
+        "summary_posted_to": "#client-onboarding"
+      },
+      "final_presentation": {
+        "posted": false,
+        "posted_to": "#client-onboarding",
+        "posted_date": ""
+      },
+      "implementation_handoff": {
+        "posted": false,
+        "posted_to": "#dev-sprint",
+        "posted_date": ""
+      }
+    },
+    "project_status_tracking": {
+      "current_phase": "discovery|mapping|opportunities|validation|presentation|complete",
+      "phase_start_date": "",
+      "expected_completion_date": "",
+      "blockers": []
+    }
+  }
+}
+```
+
+**Outcome**:
+- Clear operational workflow for how audits move through Slack channels
+- Consistent handoff templates between sales, audit, and implementation teams
+- Tracking of Slack notifications in audit.json
+- Better team coordination and client communication
+
+---
+
 ## Phase 3: Visual Outputs (Weeks 3-4)
 
 **Goal**: Generate visual diagrams from audit.json data
@@ -868,28 +963,32 @@ graph TD
 
 ## File Change Summary
 
-### New Files (15)
+### New Files (19)
 ```
 templates/
-├── stakeholder-interview-questions.md
-├── end-user-interview-questions.md
-├── ops-canvas-generator.md
-├── opportunity-matrix-generator.md
-├── current-vs-future-generator.md
-└── audit-case-study-template.md
+├── stakeholder-interview-questions.md ✅ DONE (Phase 1)
+├── end-user-interview-questions.md ✅ DONE (Phase 1)
+├── slack-sales-handoff-template.md (Phase 2)
+├── slack-audit-milestone-updates.md (Phase 2)
+├── slack-implementation-handoff-template.md (Phase 2)
+├── ops-canvas-generator.md (Phase 3)
+├── opportunity-matrix-generator.md (Phase 3)
+├── current-vs-future-generator.md (Phase 3)
+└── audit-case-study-template.md (Phase 4)
 
 documentation/
-├── interview-best-practices.md
-├── roi-calculation-methodology.md
-├── opportunity-validation-workshop.md
-├── money-slide-generator.md
-├── 3-engine-framework-guide.md
-├── audit-pricing-strategy.md
-└── audit-quality-checklist.md
+├── interview-best-practices.md ✅ DONE (Phase 1)
+├── roi-calculation-methodology.md ✅ DONE (Phase 1)
+├── opportunity-validation-workshop.md ✅ DONE (Phase 1)
+├── money-slide-generator.md ✅ DONE (Phase 1)
+├── slack-operational-workflow.md (Phase 2)
+├── 3-engine-framework-guide.md (Phase 2)
+├── audit-pricing-strategy.md (Phase 4)
+└── audit-quality-checklist.md (Phase 4)
 
 audits/
 └── example-saas-company/
-    └── audit.json
+    └── audit.json (Phase 4)
 ```
 
 ### Updated Files (4)
