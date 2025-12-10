@@ -1,0 +1,276 @@
+<mxfile host="Electron" agent="Mozilla/5.0" version="24.0.0">
+  <diagram name="AriseGroup Sales & Onboarding Process" id="sales-onboarding-v1">
+    <mxGraphModel dx="1306" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- PHASE 1: ACQUISITION (Sales) -->
+        <mxCell id="phase1" value="PHASE 1: ACQUISITION (Sales Engine)" style="swimlane;horizontal=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;fontStyle=1;fontSize=16;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="320" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-1" value="1.1 Lead Generation&#xa;(LinkedIn, Content, Referrals)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;fontSize=12;" parent="phase1" vertex="1">
+          <mxGeometry x="20" y="60" width="280" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-2" value="1.2 Lead Qualification&#xa;(Response Analysis, ICP Fit)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;fontSize=12;" parent="phase1" vertex="1">
+          <mxGeometry x="20" y="120" width="280" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-3" value="1.3 Discovery Call&#xa;(30-min Free AI Readiness Audit)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;fontSize=12;" parent="phase1" vertex="1">
+          <mxGeometry x="20" y="180" width="280" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-4" value="1.4 Proposal & Closing&#xa;(ROI Calculation, Pricing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor="#6c8ebf;fontSize=12;" parent="phase1" vertex="1">
+          <mxGeometry x="20" y="240" width="280" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-5" value="1.5 Pipeline Management&#xa;(CRM Tracking)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666;fontSize=11;fontStyle=2;" parent="phase1" vertex="1">
+          <mxGeometry x="20" y="295" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows within Phase 1 -->
+        <mxCell id="arrow1-1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6c8ebf;" parent="phase1" source="step1-1" target="step1-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow1-2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6c8ebf;" parent="phase1" source="step1-2" target="step1-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow1-3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6c8ebf;" parent="phase1" source="step1-3" target="step1-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PHASE 2: HANDOFF -->
+        <mxCell id="phase2" value="PHASE 2: HANDOFF" style="swimlane;horizontal=1;startSize=40;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;fontStyle=1;fontSize=16;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="400" y="40" width="280" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-1" value="2.1 Sales → Onboarding Transfer&#xa;(Complete Handoff Packet)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#9673a6;fontSize=12;" parent="phase2" vertex="1">
+          <mxGeometry x="20" y="60" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-2" value="Transfer Packet Includes:&#xa;• Client info & contacts&#xa;• Business context&#xa;• Pain points&#xa;• Tech stack&#xa;• Agreed deliverables&#xa;• Timeline & investment&#xa;• Access requirements" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#9673a6;fontSize=10;align=left;spacingLeft=10;" parent="phase2" vertex="1">
+          <mxGeometry x="20" y="125" width="240" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-3" value="2.2 Delivery Team Review&#xa;(Acknowledge & Schedule Kickoff)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#9673a6;fontSize=12;" parent="phase2" vertex="1">
+          <mxGeometry x="20" y="260" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows within Phase 2 -->
+        <mxCell id="arrow2-1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" parent="phase2" source="step2-1" target="step2-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow2-2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" parent="phase2" source="step2-2" target="step2-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PHASE 3: ONBOARDING -->
+        <mxCell id="phase3" value="PHASE 3: CLIENT ONBOARDING" style="swimlane;horizontal=1;startSize=40;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontStyle=1;fontSize=16;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="720" y="40" width="320" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-1" value="3.1 Kickoff Call&#xa;(Align on expectations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;fontSize=12;" parent="phase3" vertex="1">
+          <mxGeometry x="20" y="60" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-2" value="3.2 Access Provisioning&#xa;(Collect system credentials)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;fontSize=12;" parent="phase3" vertex="1">
+          <mxGeometry x="20" y="115" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-3" value="3.3 Discovery Deep-Dive&#xa;(Stakeholder + End-User Interviews)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;fontSize=12;" parent="phase3" vertex="1">
+          <mxGeometry x="20" y="170" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-4" value="3.4 Project Planning&#xa;(Timeline, milestones, dependencies)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;fontSize=12;" parent="phase3" vertex="1">
+          <mxGeometry x="20" y="225" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-5" value="Onboarding Complete ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" parent="phase3" vertex="1">
+          <mxGeometry x="20" y="280" width="280" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows within Phase 3 -->
+        <mxCell id="arrow3-1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;" parent="phase3" source="step3-1" target="step3-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow3-2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;" parent="phase3" source="step3-2" target="step3-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow3-3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;" parent="phase3" source="step3-3" target="step3-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow3-4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;" parent="phase3" source="step3-4" target="step3-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PHASE 4: AI AUDIT DELIVERY -->
+        <mxCell id="phase4" value="PHASE 4: AI AUDIT DELIVERY (Paid)" style="swimlane;horizontal=1;startSize=40;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;fontStyle=1;fontSize=16;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="40" width="320" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-1" value="4.1 Workflow Mapping&#xa;(Business Functions Mapping)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#d79b00;fontSize=12;" parent="phase4" vertex="1">
+          <mxGeometry x="20" y="60" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-2" value="4.2 Bottleneck Analysis&#xa;(Time sinks, quality risks)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#d79b00;fontSize=12;" parent="phase4" vertex="1">
+          <mxGeometry x="20" y="115" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-3" value="4.3 AI Opportunity Identification&#xa;(Opportunity Matrix)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#d79b00;fontSize=12;" parent="phase4" vertex="1">
+          <mxGeometry x="20" y="170" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-4" value="4.4 Validation Workshop&#xa;(Co-creation with stakeholders)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#d79b00;fontSize=12;" parent="phase4" vertex="1">
+          <mxGeometry x="20" y="225" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-5" value="4.5 Deliverable Creation&#xa;(Roadmap, ROI, Money Slide)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" parent="phase4" vertex="1">
+          <mxGeometry x="20" y="280" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows within Phase 4 -->
+        <mxCell id="arrow4-1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#d79b00;" parent="phase4" source="step4-1" target="step4-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow4-2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#d79b00;" parent="phase4" source="step4-2" target="step4-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow4-3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#d79b00;" parent="phase4" source="step4-3" target="step4-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow4-4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#d79b00;" parent="phase4" source="step4-4" target="step4-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PHASE 5: IMPLEMENTATION -->
+        <mxCell id="phase5" value="PHASE 5: AI IMPLEMENTATION" style="swimlane;horizontal=1;startSize=40;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;fontStyle=1;fontSize=16;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="1440" y="40" width="320" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-1" value="5.1 Technical Setup&#xa;(APIs, integrations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#b85450;fontSize=12;" parent="phase5" vertex="1">
+          <mxGeometry x="20" y="60" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-2" value="5.2 Automation Building&#xa;(Make.com, n8n, custom)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#b85450;fontSize=12;" parent="phase5" vertex="1">
+          <mxGeometry x="20" y="115" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-3" value="5.3 Testing & Validation&#xa;(QA, edge cases)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#b85450;fontSize=12;" parent="phase5" vertex="1">
+          <mxGeometry x="20" y="170" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-4" value="5.4 Training & Handoff&#xa;(User training, documentation)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#b85450;fontSize=12;" parent="phase5" vertex="1">
+          <mxGeometry x="20" y="225" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-5" value="5.5 Go-Live Support&#xa;(Monitoring, adjustments)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" parent="phase5" vertex="1">
+          <mxGeometry x="20" y="280" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows within Phase 5 -->
+        <mxCell id="arrow5-1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#b85450;" parent="phase5" source="step5-1" target="step5-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow5-2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#b85450;" parent="phase5" source="step5-2" target="step5-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow5-3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#b85450;" parent="phase5" source="step5-3" target="step5-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow5-4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#b85450;" parent="phase5" source="step5-4" target="step5-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Phase-to-Phase Connectors -->
+        <mxCell id="connector-phase1-2" value="Client Converts" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#666;fontSize=12;fontStyle=1;" parent="1" source="step1-4" target="step2-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="connector-phase2-3" value="Handoff Complete" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#666;fontSize=12;fontStyle=1;" parent="1" source="step2-3" target="step3-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="connector-phase3-4" value="Start Audit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#666;fontSize=12;fontStyle=1;" parent="1" source="step3-5" target="step4-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="connector-phase4-5" value="Approved & Paid" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#666;fontSize=12;fontStyle=1;" parent="1" source="step4-5" target="step5-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Success/Loop Arrow -->
+        <mxCell id="success-cycle" value="Client Success → Referrals & Testimonials" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=8 8;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;fontSize=12;fontStyle=2;" parent="1" source="step5-5" target="step1-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="675" />
+              <mxPoint x="180" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Timeline Labels -->
+        <mxCell id="timeline-label" value="Timeline: Week 1-2 (Sales) → Week 3 (Handoff & Onboarding) → Week 4-5 (Audit) → Week 6-10 (Implementation)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666;fontSize=13;fontStyle=2;align=center;" parent="1" vertex="1">
+          <mxGeometry x="40" y="420" width="1720" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-title" value="LEGEND" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666;strokeColor=#666;fontSize=14;fontStyle=1;fontColor=#fff;" parent="1" vertex="1">
+          <mxGeometry x="40" y="500" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-1" value="Phase 1: Acquisition (Sales)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="40" y="540" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-2" value="Phase 2: Handoff" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="40" y="575" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-3" value="Phase 3: Onboarding" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="40" y="610" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-4" value="Phase 4: AI Audit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="40" y="645" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-5" value="Phase 5: Implementation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="40" y="680" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Key Metrics Box -->
+        <mxCell id="metrics-title" value="KEY METRICS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666;strokeColor=#666;fontSize=14;fontStyle=1;fontColor=#fff;" parent="1" vertex="1">
+          <mxGeometry x="280" y="500" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="metrics-content" value="• Lead Response Target: 15-20%&#xa;• Discovery Call Conversion: TBD&#xa;• Audit Time: 5-10 hours&#xa;• Implementation: 6-10 weeks&#xa;• Weekly Outreach: 30-40 messages&#xa;• Part-time Capacity: 3-4 hrs/day" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666;fontSize=11;align=left;spacingLeft=10;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="280" y="540" width="280" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- Pain Points Box -->
+        <mxCell id="pain-title" value="TOP PAIN POINTS TO SOLVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontSize=14;fontStyle=1;fontColor=#fff;" parent="1" vertex="1">
+          <mxGeometry x="600" y="500" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pain-content" value="1. 🔴 Proposal Creation (no template)&#xa;   → 4-6 hrs per proposal&#xa;&#xa;2. 🔴 Outreach Message Drafting&#xa;   → 7 min each, 3.5-4.5 hrs/week&#xa;&#xa;3. 🟡 Discovery Call Prep/Follow-up&#xa;   → 75 min per call&#xa;&#xa;4. 🟡 Creating Visual Diagrams&#xa;   → Workflow maps not automated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b85450;fontSize=11;align=left;spacingLeft=10;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="600" y="540" width="320" height="165" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
