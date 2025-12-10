@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="Electron" agent="Mozilla/5.0" version="24.0.0">
-  <diagram name="AriseGroup Sales & Onboarding Process" id="sales-onboarding-v1">
+  <diagram name="AriseGroup Sales &amp; Onboarding Process" id="sales-onboarding-v1">
     <mxGraphModel dx="1306" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -22,7 +23,7 @@
           <mxGeometry x="20" y="180" width="280" height="45" as="geometry" />
         </mxCell>
 
-        <mxCell id="step1-4" value="1.4 Proposal & Closing&#xa;(ROI Calculation, Pricing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor="#6c8ebf;fontSize=12;" parent="phase1" vertex="1">
+        <mxCell id="step1-4" value="1.4 Proposal & Closing&#xa;(ROI Calculation, Pricing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;fontSize=12;" parent="phase1" vertex="1">
           <mxGeometry x="20" y="240" width="280" height="45" as="geometry" />
         </mxCell>
 
