@@ -88,66 +88,166 @@
 ## 1.1 BUSINESS PROFILE
 
 **Company Name**: Plotter Mechanics
-**Industry**: Printing Supplies & Repair Services
-**Company Size**: Small Business (1-5 employees)
-**Annual Revenue**: $300K-500K (estimated)
-**Location**: TBD
+**Industry**: Printer Service & Repair (Large Format Specialists)
+**Company Size**: 3 people + Technical Consultant
+**Annual Revenue**: **$600,000 - $750,000**
+**Location**: Phoenix Metro, Arizona
+**Service Area**: Phoenix metro + remote consulting nationwide
 
-**Primary Contact**:
-- Name: Kelsey
-- Role: Owner/Operator
-- Email: TBD
+### Primary Contact:
+- **Name**: Kelce (Owner)
+- **Role**: Owner/Lead Technician (does ALL technical work)
+- **Effective Hourly Rate**: $300-375/hour (based on revenue/billable hours)
 
-**Current Revenue Streams**:
-1. Printing supplies sales (transactional)
-2. Printer repair services (in-home/in-office)
-3. Consulting services (print environment optimization)
-4. AWD conversion kits (automotive specialty - separate business)
+### Lead Source - STRATEGIC PARTNER:
+- **Name**: Chris
+- **Role**: High-Priority Revenue Partner
+- **Strategic Importance**: First project from Chris = unlocks entire pipeline
+- **Context**: Chris represents **bulk of future revenue generation** for agency
+- **Success Requirement**: Demo/case study needed to support future Chris-sourced deals
+
+---
+
+## 1.1.1 KEY STAKEHOLDERS
+
+### Kelce (Owner/Lead Technician)
+- **Role**: Does ALL technical work - sole person who can handle 90% of service calls
+- **Pain**: "If I don't come to work, we make no money. Business would shut down in a couple months."
+- **Vision**: Move to Piantop, manage business remotely, "sit on a porch with earbuds on, FaceTiming people doing remote support"
+- **Burnout**: "I'm so exhausted of pouring myself into people. Joe is the last dude I'm pouring myself into."
+- **Effective Rate**: $300-375/hour (time savings = direct revenue)
+
+### Alyssa (Office Manager)
+- **Role**: Scheduling, invoicing, supply orders, customer communication
+- **Workflow**: Answers office phone → writes notes on paper → transcribes to Jobber
+- **Challenge**: "Memory is not good" (per Kelce) - needs constant communication/reminders
+- **Strength**: Good at execution when given clear direction
+
+### Joe (Technician in Training)
+- **Role**: Learning field work, social media/content posting
+- **Status**: Can only handle ~10% of calls independently (still training)
+- **Potential**: Has technical skills (Chinese tools, benders), good color matching
+- **Goal**: Get Joe to handle 50% of calls to free up Kelce
+
+### Mike (Technical Consultant)
+- **Role**: Systems engineering, robotics, cloud infrastructure
+- **Value**: Can assist with IoT implementation, complex integrations, technical architecture
+- **Action Items**: Advise on IT/hardware-software networking, assist with database analysis from Malik's project
+
+### Chris (Revenue Partner) - STRATEGIC
+- **Relationship**: Lead generator / sales partner
+- **Importance**: Has "so many leads" - represents bulk of agency revenue
+- **This Project**: First project from Chris = proof of capability
+- **Success Metrics**: Quality delivery → trust → more projects → pipeline unlocked
+
+---
+
+## 1.1.2 CURRENT REVENUE STREAMS
+
+| Revenue Stream | Rate | Volume | Notes |
+|---------------|------|--------|-------|
+| **Service Calls** | $250/call | Daily, multiple | Primary revenue - Kelce only |
+| **Quick Jobs** | $500-1,000 | Opportunistic | Added between scheduled calls |
+| **Remote Consulting** | $175/session | Growing | Multi-state reach, high margin |
+| **Subcontracting** | $100 margin | Variable | Kelce charges $250, pays tech $150 |
+| **E-commerce** | Variable | Growing | Product sales via Shopify |
+
+### NEW REVENUE MODEL: Hardware Rental (HIGH MARGIN OPPORTUNITY)
+**Target Market**: AEC clients (Architecture, Engineering, Construction)
+**Pricing Structure**:
+- **Infrastructure Access Fee**: $300-450/month (fixed)
+- **Variable Usage Fees**: Consumables with **60% profit margins**
+- **Example**: $400/mo base + 200 prints × $5 = $1,400/month per client
+
+**Scale Potential**:
+| Clients | Monthly Revenue | Annual Revenue |
+|---------|-----------------|----------------|
+| 5 | $7,000 | $84,000 |
+| 10 | $14,000 | $168,000 |
+| 20 | $28,000 | $336,000 |
+
+**Requirements**: Fleet management, IoT monitoring, automated billing, client portal
+
+---
 
 **Ideal Customer Profile**:
-- Small to medium businesses with printing infrastructure
+- Small to medium businesses with large format printing needs
+- AEC firms (Architecture, Engineering, Construction) - rental model target
 - Offices requiring ongoing print support
 - Organizations ready to transition from CAPEX to OPEX model
 
 **Sales Model**:
-- Current: 100% transactional (one-time sales)
-- Vision: Print-Per-Page (PPP) recurring revenue model
+- Current: 100% transactional (one-time service calls)
+- Vision: Recurring revenue via rental model + remote consulting
 
 ---
 
 ## 1.2 CURRENT STATE ANALYSIS
 
-### Technology Stack (Current):
-- ❌ No CRM system
-- ❌ No automated billing
-- ❌ No customer portal
-- ❌ No usage tracking capability
-- ❌ No equipment database
-- ❌ No systematic communication routing
-- ❌ No SOPs for training new technicians
-- ✅ Phone/Email for communication (manual, inconsistent)
-- ✅ Spreadsheets for sporadic tracking
-- ✅ Manual calendars for scheduling
+### Technology Stack (Current - Systems NOT Talking):
+
+| System | Purpose | Status | Issues |
+|--------|---------|--------|--------|
+| **Jobber** | Primary CRM | ✅ Active | Mobile preferred; desktop confusing |
+| **QuickBooks** | Accounting | ⚠️ Broken | **$700K reconciliation error** being fixed |
+| **Shopify** | E-commerce | ✅ Active | Not integrated; complex product structure |
+| **Capsule** | Legacy CRM | 💸 Paying $30/mo | Unused but has all old contacts |
+| **Microsoft 365** | Email | ⚠️ Underused | Kelce doesn't check email ("too much") |
+| **Multiple Text Systems** | Communication | ❌ Chaos | Jobber, cell, office - messages lost |
+
+**Kelce's Quote on Data Silos:**
+> "I've got Capsule, QuickBooks, Jobber, Shopify - all have different information. Some's got some shit over there, some's got it over here."
+
+### 🚨 CRITICAL CONSTRAINT: January 1, 2025 QuickBooks Reset
+- **$700,000 reconciliation error** discovered last year
+- Wife + bookkeeper currently fixing it
+- **Fresh financial start**: January 1, 2025 (HARD DEADLINE)
+- Goal: Clarify costs/margins to justify hiring $40/hr employee
+- **ANY INTEGRATION MUST ALIGN WITH NEW QB SETUP**
+
+### ⚠️ PREVIOUS FAILED PROJECT: Malik's $7K Attempt
+- **Investment**: $7,000 (1% of annual revenue)
+- **Scope**: Central database/portal, Shopify integration, API work
+- **Result**: FAILED - developer couldn't handle complexity
+- **Status**: Work folder exists (Kelce's wife Nikki has it)
+- **ACTION NEEDED**: Retrieve Malik's work before starting new development
+- **Lesson**: Kelce has "change fatigue" - needs to SEE results, not promises
+> "Every week something else, never saw results"
 
 ### Existing AI Usage:
 - **NONE** - 0% automation across all business functions
 
 ### 🚨 CRITICAL RISK: SINGLE POINT OF FAILURE
-**Kelsey is the single point of failure for the entire business.**
+
+**Kelce is the single point of failure for the entire business.**
+
+> "If I don't come to work, we make no money. In a couple months we'd be out of business."
+
 - No effective systems to scale operations
-- No SOPs that would allow the business to function without Kelsey
-- If Kelsey is sick or unavailable, the business cannot operate effectively
-- Current model prevents him from achieving his vision of "taking service calls from home"
+- No SOPs that would allow the business to function without Kelce
+- If Kelce is sick or unavailable, the business cannot operate effectively
+- Joe can only handle ~10% of service calls independently
+- Current model prevents achieving vision of "taking service calls from home"
 
 ### Core Business Challenges:
-1. **Kelsey's Time is the Bottleneck** - Scheduling routes, taking calls, manual coordination
-2. **Communication Breakdowns** - Missed calls/messages = lost opportunities
+1. **Kelce's Time is the Bottleneck** - Scheduling routes, taking calls, manual coordination
+2. **Communication Breakdowns** - 4-5 different text/messaging systems, messages get lost
 3. **No Systematic Information Routing** - Manual phone calls, inconsistent tracking
-4. **100% manual operations** - No automation anywhere
+4. **Systems Don't Talk** - Jobber, QuickBooks, Shopify, Capsule all siloed
 5. **No SOPs for Training** - Cannot effectively train new technicians
-6. **Invoice Creation** - Time-consuming, needs automation
-7. **Inventory Management** - No tracking system (including rental equipment)
-8. **Annual Opportunity Loss**: **$50,000 (conservative estimate)** due to inefficient communication and operations
+6. **Inventory**: "I have no fucking clue what I have in stock"
+7. **Invoice Creation** - Time-consuming, needs automation
+
+### 💰 Financial Impact:
+
+| Impact Type | Amount | Context |
+|-------------|--------|---------|
+| **Actual Lost (Last Year)** | $10,000 | 1.3-1.6% of revenue from inefficiencies |
+| **Projected Loss (Scaling)** | $50,000+/year | Compounds as team grows without fixing systems |
+| **At-Risk Revenue** | $600K-750K | Business dies if Kelce unavailable |
+| **Time Wasted** | 2 hrs/day | Commute alone = $750+/day opportunity cost |
+
+**Key Insight**: The $10K lost last year becomes $50K+ when scaling because "adding more people to a broken communication system will compound existing problems exponentially."
 
 ---
 
@@ -208,45 +308,131 @@ This requires:
 ### Constraints:
 
 **Budget**:
-- Phase 1: $5K-10K (quick wins, prove value)
-- Phased implementation with value exchange each stage
+- **Not explicitly stated** in discovery (need follow-up)
+- Previous project: $7K (Malik - failed)
+- Revenue context: $600K-$750K/year
+- **Suggested range**: $10K-$30K for phased approach (1.5-4% of revenue)
+- Indicator: Willing to invest if ROI is clear
 
 **Timeline**:
 - Needs quick wins in 30-60 days to prove value
+- **January 1, 2025**: QuickBooks fresh start deadline
 - Foundation FIRST, then advanced capabilities
+- Pain is IMMEDIATE - ready to act now
 
 **Technical**:
-- No existing CRM or business management software
-- Limited technical infrastructure
-- Need solutions that work for field technicians
+- Has existing tech stack (Jobber, QB, Shopify, Capsule) - need integration, not replacement
+- Mike (consultant) available for complex technical work
+- Need solutions that work for field technicians (mobile-first)
+- Malik's previous work may be salvageable - need to retrieve
 
 **Organizational**:
-- Small team - limited change management capacity
+- Small team (3 + consultant) - limited change management capacity
 - Currently 100% manual - steep learning curve
 - Cash flow sensitive - needs ROI quickly
+- **Change fatigue**: Burned by Malik's failed project - needs to SEE results, not promises
 - **Employee retention is important** - systems should help, not burden
+
+---
+
+### 📋 ACTION ITEMS BY STAKEHOLDER
+
+**Kelce's Action Items:**
+1. Train Joe to split daily tasks 50/50
+2. Prepare inventory data + clean QuickBooks by January 1
+3. Continue improving Jobber usage
+4. Explore/develop remote consulting service model
+5. Share digital recordings of service processes
+6. Coordinate with devs to recover Malik's abandoned API project
+
+**Mike's Action Items:**
+1. Assist with system integration and database analysis from Malik's project
+2. Advise on IT/hardware-software networking for printer management
+3. Collaborate with development team on custom inventory system
+
+**Alyssa's Action Items:**
+1. Manage quotes/invoicing from Kelce's notes
+2. Track/flag urgent communication
+3. Consolidate customer contacts into Jobber with SMS capability
+
+**Joe's Action Items:**
+1. Continue learning printer maintenance
+2. Assist with order posting and social media marketing
+3. Support customers with basic maintenance
 
 ---
 
 ## 1.4 DISCOVERY INTERVIEW FINDINGS
 
 ### Interview Summary:
-- **Date**: December 5, 2025
-- **Duration**: ~2 hours (comprehensive discovery)
-- **Interviewee**: Kelsey (Owner/Operator)
-- **Facilitator**: Trent (AriseGroup.ai)
-- **Format**: Deep-dive stakeholder interview with operational analysis
+- **Date**: December 2-3, 2025
+- **Source**: 7 audio files (166KB transcript)
+- **Participants**: Kelce (Owner), Chris, Alyssa (Office Manager), Joe (Technician)
+- **Facilitator**: Discovery team
+- **Format**: Comprehensive multi-session discovery
+
+### 💎 GOLDEN QUOTES (Direct from Kelce)
+
+> **"If I don't come to work, we make no money. In a couple months we'd be out of business."**
+
+> **"I do everything. I load all this crap into my car, drive all over town, fix everybody's printers while my phone is blowing up, trying to communicate with Alyssa between stops, then fight traffic for an hour to get home."**
+
+> **"I'm so exhausted of pouring myself into people. Joe is the last dude I'm pouring myself into."**
+
+> **"One hub where I go - that's what Malik was supposed to build. Everything communicates with each other so WE can communicate better. Better team operation."**
+
+> **"Move to Piantop, sit on a porch with earbuds on, FaceTiming people all day doing remote support."**
+
+> **"Nothing I hate worse than calling a place and getting fucking voicemail. I go to the next place, bro."**
+
+> **"I have no fucking clue what I have in stock."**
+
+> **"I've got Capsule, QuickBooks, Jobber, Shopify - all have different information. Some's got some shit over there, some's got it over here."**
+
+---
+
+### 🪄 MAGIC WAND SOLUTIONS (What Kelce Actually Wants)
+
+When asked "If you had a magic wand, what would you fix?":
+
+1. **Training System to Clone Kelce**
+   - Video library of repairs
+   - Step-by-step SOPs
+   - Progress tracking for Joe
+   - "Plotter Mechanics' own app - when you're ready to onboard people, they log in and it walks them through base responsibilities"
+
+2. **Unified Communication Hub**
+   - All systems talking to each other
+   - One place to see everything
+   - "One hub where I go - everything communicates"
+
+3. **Inventory Management**
+   - See stock instantly
+   - Unlock capital tied up in excess
+   - Enable selling surplus on eBay
+
+4. **Voice-to-Text Automation**
+   - Kelce leaves voicemail → auto-transcribed to ticket
+   - Reduce Alyssa's manual note-taking
+
+5. **Hardware Monitoring Dashboard (Rental Model)**
+   - IoT connectivity for printers
+   - Real-time status monitoring
+   - Predictive maintenance
+
+---
 
 ### Key Findings:
 
-**1. Kelsey's Time is the Core Problem**
-- Kelsey is personally scheduling routes, taking calls, coordinating everything
+**1. Kelce's Time is the Core Problem**
+- Kelce is personally scheduling routes, taking calls, coordinating everything
 - When phone rings during a service call, it's a missed opportunity
-- Calls Alyssa (office) between stops for async communication - needs logging system
+- Calls Alyssa between stops for async communication - needs logging system
+- 2 hours/day commute = $750+/day opportunity cost
 - Vision: "Taking service calls from my home" - remote management capability
 
 **2. Single Point of Failure Risk**
-- Trent identified Kelsey as the single point of failure for the entire business
+- Kelce is the single point of failure for the entire business
 - No effective systems to scale operations
 - Current model suffers from manual processes, communication breakdowns
 - Cannot effectively train new technicians without SOPs
