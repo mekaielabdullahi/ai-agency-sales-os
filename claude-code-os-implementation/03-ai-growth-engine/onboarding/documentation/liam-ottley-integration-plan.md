@@ -807,6 +807,251 @@ Add `operational_tracking` section:
 
 ---
 
+### Task 3.5: Build Implementation Roadmap Timeline Generator
+
+**File to Create**: `templates/implementation-roadmap-generator.md`
+
+**Approach**:
+- Read `roadmap`, `client_strategic_initiatives`, and `dependencies_matrix` from audit.json
+- Generate quarterly timeline (Gantt-style) showing:
+  - Quick Wins phase with specific opportunities
+  - Client initiatives running in parallel
+  - Dependencies and sequencing marked
+  - Training/upskilling timeline
+  - Milestones and go-live dates
+- Generate as Mermaid Gantt chart or timeline diagram
+
+**Output Example**:
+```mermaid
+gantt
+    title Implementation Roadmap
+    dateFormat YYYY-MM-DD
+    section Quick Wins
+    Opportunity 1: Lead Automation    :a1, 2025-01-01, 21d
+    Opportunity 2: Email AI           :a2, 2025-01-15, 14d
+    section Client Initiatives
+    ERP Deployment                     :crit, 2025-02-01, 60d
+    Sales Segmentation Project         :2025-01-20, 45d
+    section AI Adoption
+    AI Fundamentals Training           :milestone, 2025-01-01, 0d
+    Phase 1 Go-Live                    :milestone, 2025-01-22, 0d
+    section Scale Up
+    Opportunity 3: Inventory AI        :after a1 ERP, 2025-04-01, 30d
+```
+
+**Visual Features**:
+- Color-code Quick Wins (green), Big Swings (blue), Client Initiatives (orange)
+- Show dependencies with arrows/connectors
+- Mark training milestones prominently
+- Display quarters (Q1, Q2, Q3) for easy reference
+- Include legend explaining phases
+
+**Outcome**: Visual timeline answering "where do we start?" for clients with 10+ opportunities
+
+---
+
+### Task 3.6: Create Implementation Sequencing Guide
+
+**File to Create**: `documentation/implementation-sequencing-guide.md`
+
+**Content**:
+
+```markdown
+# Implementation Sequencing Guide
+
+## The "Where Do We Start?" Problem
+
+When an audit identifies 10+ AI opportunities, clients often feel overwhelmed. This guide explains how to sequence implementation to maximize value and minimize disruption.
+
+## Sequencing Principles
+
+### 1. Quick Wins First
+- **Why**: Build momentum, prove value, gain stakeholder buy-in
+- **Criteria**: High impact, low/medium effort
+- **Timeline**: First 4-8 weeks
+
+### 2. Align with Client Initiatives
+- **Why**: Avoid conflicts, leverage existing change management, maximize synergy
+- **How**: Map AI opportunities to client's strategic initiatives (ERP rollouts, org restructuring, etc.)
+- **Timeline**: Coordinate go-live dates
+
+### 3. Respect Dependencies
+- **Technical**: Some AI systems require others to be in place first
+- **Data**: Some opportunities need data from other systems
+- **Organizational**: Change fatigue limits parallel initiatives
+
+### 4. Layer Training Throughout
+- **Don't**: Wait until the end to train users
+- **Do**: Initiate AI fundamentals training before Phase 1 kicks off
+- **Do**: Provide just-in-time training for each new tool
+
+## Creating the Roadmap
+
+### Step 1: Plot Client Initiatives
+Identify existing strategic initiatives:
+- ERP deployments
+- CRM migrations
+- Organizational restructuring
+- Market expansion plans
+- Regulatory compliance projects
+
+**Add to audit.json**:
+```json
+"client_strategic_initiatives": [
+  {
+    "name": "ERP Deployment",
+    "timeline": "Q2 2025",
+    "owner": "IT Director"
+  }
+]
+```
+
+### Step 2: Map Dependencies
+For each AI opportunity, ask:
+- Does this require a client initiative to complete first?
+- Can this run in parallel with client initiatives?
+- Is this a prerequisite for other opportunities?
+
+**Document in dependencies_matrix**:
+```json
+"dependencies_matrix": [
+  {
+    "opportunity_id": "opp_003",
+    "depends_on_client_initiative": "client_init_001",
+    "dependency_type": "must_wait",
+    "notes": "Inventory AI requires ERP to be live"
+  }
+]
+```
+
+### Step 3: Apply Timeframes
+- Quick Wins: 4-8 weeks
+- Scale Up: 8-12 weeks
+- Strategic: 12-20 weeks
+
+Be approximate but realistic. Clients need to understand the pace.
+
+### Step 4: Identify Prerequisites
+Some opportunities unlock others:
+- Example: "CRM integration must complete before lead scoring AI can deploy"
+- Flag these in the roadmap
+
+### Step 5: Plan Change Management
+**Training timeline**:
+- Week -2: AI Fundamentals (all staff)
+- Week 1: Tool-specific training (affected users)
+- Ongoing: Office hours, support channels
+
+**Communication**:
+- Weekly: Leadership updates
+- Bi-weekly: All-hands progress reports
+- As-needed: Department-specific sessions
+
+## Visual Roadmap Best Practices
+
+### Show Quarters, Not Just Weeks
+- Easier for leadership to digest
+- Aligns with business planning cycles
+- Example: "Q1 2025: Quick Wins, Q2 2025: Scale Up"
+
+### Use Color Coding
+- Green: Quick Wins
+- Blue: Scale Up / Big Swings
+- Orange: Client Initiatives
+- Purple: Training & Change Management
+
+### Mark Milestones
+- Training completion
+- Phase go-lives
+- Client initiative completions
+- ROI measurement points
+
+### Include a Legend
+Explain what each color, symbol, and phase means
+
+## Handling Common Scenarios
+
+### Scenario 1: Client Has Major Initiative in Progress
+**Problem**: Client is mid-ERP deployment, all resources focused there
+
+**Solution**:
+- Phase 1: Only quick wins that don't touch ERP-related processes
+- Phase 2: Wait until ERP stabilizes (2-3 months post-go-live)
+- Phase 3: Deploy AI opportunities that integrate with new ERP
+
+### Scenario 2: Too Many Quick Wins (8+)
+**Problem**: Can't implement 8 things simultaneously
+
+**Solution**:
+- Sub-phase Quick Wins: 1A (first 3), 1B (next 3), 1C (final 2)
+- Sequence by department to spread change load
+- Prioritize by ROI or stakeholder support level
+
+### Scenario 3: Big Swing Required for Strategic Goals
+**Problem**: Client's top priority is a high-effort opportunity
+
+**Solution**:
+- Still do 1-2 Quick Wins first (4 weeks)
+- Use Quick Wins to build credibility before tackling Big Swing
+- Parallel track: Start Big Swing discovery while Quick Wins deploy
+
+### Scenario 4: Low Change Readiness
+**Problem**: Interview data shows resistance to change, low AI literacy
+
+**Solution**:
+- Extend training timeline (add 2-4 weeks upfront)
+- Choose Quick Wins that are "invisible" (backend automation)
+- Celebrate early wins loudly to shift sentiment
+- Consider pilot programs with friendly departments first
+
+## Roadmap Communication Tips
+
+### For Leadership
+- Focus on quarters and strategic milestones
+- Emphasize ROI break-even points
+- Show alignment with business goals
+
+### For Implementation Team
+- Show week-by-week tasks
+- Highlight dependencies and prerequisites
+- Include resource allocation needs
+
+### For End Users
+- Show "what changes when" for their specific role
+- Emphasize training and support availability
+- Make it feel gradual, not overwhelming
+
+## Quality Checklist
+
+Before presenting the roadmap, verify:
+
+- [ ] All Quick Wins scheduled in first 4-8 weeks
+- [ ] No more than 3-4 initiatives running in parallel (avoid change overload)
+- [ ] Client initiatives mapped and dependencies documented
+- [ ] Training timeline starts before Phase 1
+- [ ] Each phase has clear go-live milestone
+- [ ] Total timeline is realistic (not overly aggressive)
+- [ ] Sequencing makes logical sense (no circular dependencies)
+- [ ] Visual roadmap is client-ready (clear, professional, color-coded)
+
+## Integration with Money Slide
+
+The roadmap should align with the Money Slide:
+- Show when each investment happens
+- Mark when value starts accruing
+- Highlight break-even point on timeline
+
+**Example**: "Phase 1 investment: $15K (Week 1), value starts: Week 4, break-even: Week 8"
+
+---
+
+**Next Step**: Use this guide when creating roadmap in audit.json and generating visual timeline
+```
+
+**Outcome**: Clear methodology for sequencing complex implementations
+
+---
+
 ## Phase 4: Polish & Documentation (Ongoing)
 
 **Goal**: Refine based on real-world usage
@@ -963,7 +1208,7 @@ graph TD
 
 ## File Change Summary
 
-### New Files (19)
+### New Files (21)
 ```
 templates/
 ├── stakeholder-interview-questions.md ✅ DONE (Phase 1)
@@ -974,6 +1219,7 @@ templates/
 ├── ops-canvas-generator.md (Phase 3)
 ├── opportunity-matrix-generator.md (Phase 3)
 ├── current-vs-future-generator.md (Phase 3)
+├── implementation-roadmap-generator.md (Phase 3) ← NEW
 └── audit-case-study-template.md (Phase 4)
 
 documentation/
@@ -983,6 +1229,7 @@ documentation/
 ├── money-slide-generator.md ✅ DONE (Phase 1)
 ├── slack-operational-workflow.md (Phase 2)
 ├── 3-engine-framework-guide.md (Phase 2)
+├── implementation-sequencing-guide.md (Phase 3) ← NEW
 ├── audit-pricing-strategy.md (Phase 4)
 └── audit-quality-checklist.md (Phase 4)
 
@@ -994,7 +1241,11 @@ audits/
 ### Updated Files (4)
 ```
 templates/
-└── audit-template.json (enhanced with new sections)
+└── audit-template.json ✅ ENHANCED (Phase 2)
+   - Added: client_strategic_initiatives section
+   - Added: roadmap.dependencies_matrix
+   - Added: roadmap.change_management
+   - Added: roadmap_format and start_quarter fields
 
 .claude/skills/comprehensive-ai-audit/
 └── SKILL.md (new phases added)

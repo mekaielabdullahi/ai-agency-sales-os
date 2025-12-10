@@ -363,7 +363,51 @@
     }
   ],
 
+  "client_strategic_initiatives": [
+    {
+      "initiative_id": "client_init_001",
+      "name": "Example: ERP System Deployment",
+      "description": "Company-wide ERP rollout affecting inventory, finance, and operations",
+      "timeline": "Q2 2025",
+      "owner": "IT Director",
+      "status": "planned",
+      "related_departments": [],
+      "dependencies_with_ai_opportunities": [],
+      "notes": "AI opportunities in inventory management should align with ERP go-live"
+    }
+  ],
+
   "roadmap": {
+    "roadmap_format": "quarterly",
+    "start_quarter": "Q1 2025",
+    "dependencies_matrix": [
+      {
+        "opportunity_id": "",
+        "depends_on_client_initiative": "",
+        "dependency_type": "must_wait|parallel|prerequisite",
+        "notes": "Example: Can't deploy AI inventory system until ERP is live"
+      }
+    ],
+    "change_management": {
+      "training_required": true,
+      "training_timeline": "Ongoing from Week 1",
+      "upskilling_initiatives": [
+        {
+          "initiative": "AI Fundamentals Training",
+          "target_audience": "All staff",
+          "timeline": "Before Phase 1 kickoff",
+          "delivery_method": "Online modules + workshop",
+          "estimated_duration": "4 hours"
+        }
+      ],
+      "communication_plan": "Weekly updates to leadership, bi-weekly all-hands on AI adoption progress",
+      "resistance_mitigation": [],
+      "success_metrics": [
+        "Training completion rate > 90%",
+        "User adoption rate > 80%",
+        "Support ticket volume within expected range"
+      ]
+    },
     "phase_1_quick_wins": [
       {
         "name": "Automated Lead Capture & CRM Sync",
