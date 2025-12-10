@@ -12,5 +12,5 @@ Thumbs.db
 .env
 .env.local
 
-# Claude Code
-.claude/
+# Claude Code (only ignore user-specific settings)
+.claude/settings.local.json
