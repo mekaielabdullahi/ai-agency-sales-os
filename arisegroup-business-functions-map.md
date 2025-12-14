@@ -1,5 +1,15 @@
 # Business Functions Map - AriseGroup.ai
 
+> **CRITICAL INSTRUCTIONS FOR AI ANALYSIS**
+> - Do NOT make up any details
+> - Only derive information that is EXPLICITLY stated in facts
+> - Do NOT hallucinate or infer unstated information
+> - Do NOT make up anything that appears factual unless derived from explicit source data
+> - All metrics, numbers, and specifics must come from documented sources
+> - If information is unknown, state "Unknown" or "TBD" - never guess
+
+---
+
 **Date**: December 8, 2025
 **Industry**: AI Consulting & Implementation
 **Size**: 1 (Solo Founder - Matt)
