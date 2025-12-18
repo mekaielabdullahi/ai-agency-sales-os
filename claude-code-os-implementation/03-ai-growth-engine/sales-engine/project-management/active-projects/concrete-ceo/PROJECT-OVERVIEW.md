@@ -3,7 +3,7 @@
 ## Overview
 **Client:** Concrete CEO (Tyler - Founder)
 **Type:** Strategic Partnership / Audit Services / Future Platform Development
-**Status:** Discovery Phase
+**Status:** Active - Discovery Call Scheduled with Tyler
 **Priority:** P0 - Revenue Generating Partnership
 **Health:** 🟢 Early Stage - High Strategic Value
 
@@ -229,7 +229,8 @@ Construction business management platform that competes with Procore/CoConstruct
 - [ ] Develop pilot audit plan
 
 ### Phase 1: Partnership Launch
-- [ ] Pitch audit package to Tyler and Concrete CEO team
+- [x] Pitch audit package to Tyler and Concrete CEO team (Dec 18, 2025 - Tyler interested!)
+- [ ] Schedule and complete discovery call with Tyler
 - [ ] Negotiate terms and revenue split
 - [ ] Formalize partnership agreement
 - [ ] Integrate audit into Concrete CEO's onboarding flow
@@ -283,6 +284,8 @@ Construction business management platform that competes with Procore/CoConstruct
 | Date | Type | Participants | Summary | Action Items |
 |------|------|--------------|---------|--------------|
 | Dec 2024 | Discovery Call | Chris Andrade | Identified Concrete CEO onboarding gap; Remus Development case study; defined two-week audit concept; discussed partnership model | Research Procore/CoConstruct, collect Remus data, create proposal |
+| Dec 16, 2025 | Check-in | Chris, Vince | Billing delay secured (next billing Jan 20); AI updates (chatbot working, voice AI 7/10); coaching call planned | Send calendar link, coordinate with Ty |
+| **Dec 18, 2025** | **Intro Call** | **Tyler, Vince, Chris, Trent, Matthew, Mekaiel** | **First direct pitch to Tyler. Presented AI audit services. Tyler: "now is the time" - agreed to schedule discovery call. Discussed pricing (~$10K quick win sprint).** | **Tyler to consult team; schedule 1-hour discovery call** |
 
 ---
 
@@ -424,6 +427,25 @@ Construction business management platform that competes with Procore/CoConstruct
 
 ---
 
-**Project Status:** 🟢 Discovery complete, moving to proposal phase
-**Next Milestone:** Proposal delivery to Tyler (Early Jan 2025)
+**Project Status:** 🟢 Active - Tyler interested, discovery call pending
+**Probability:** 65% (up from 50%)
+**Next Milestone:** Discovery call with Tyler (TBD - waiting for Tyler to schedule)
 **Escalation Contact:** Chris Andrade, Matt Kerns
+
+---
+
+## Dec 18, 2025 Meeting Highlights
+
+**Tyler's Key Quotes:**
+> "We are getting ready to really revamp our onboarding process. So now is the time."
+
+> "I'm definitely interested."
+
+> "We have some really cool things that I really hate that they live on Google sheets."
+
+**New Opportunities Identified:**
+1. **Concrete Pricing Tool** - Convert Google Sheet to app
+2. **Onboarding Revamp** - Tyler's Q1 focus
+3. **GoHighLevel Integrations** - Add features to their white-labeled platform
+
+**Full Meeting Details:** See `/meetings/intro-calls/2025-12-18-intro-call/`
