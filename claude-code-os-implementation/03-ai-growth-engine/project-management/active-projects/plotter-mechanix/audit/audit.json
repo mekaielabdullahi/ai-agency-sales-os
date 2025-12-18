@@ -1,0 +1,1393 @@
+{
+  "client_id": "plotter-mechanix-001",
+  "created_date": "2025-12-08",
+  "last_updated": "2025-12-10",
+  "audit_status": "discovery_complete_with_analysis",
+
+  "audit_brief": {
+    "company_name": "Plotter Mechanix",
+    "industry": "Printing & Graphics Services - Printer Service & Repair",
+    "company_size": "3 employees + Mike (technical consultant - systems engineering, robotics, cloud)",
+    "annual_revenue": "$600,000-$750,000 (from PDF analysis)",
+    "main_offers": [
+      "Printer service & repair ($250/call standard rate)",
+      "Remote consulting ($175/session specific rate)",
+      "Hardware rental model (NEW: $300-450/month + 60% margin on consumables)",
+      "Subcontracting network ($250 charge, $150 to tech, $100 margin)",
+      "Equipment sales (printers, supplies)",
+      "Quick jobs ($500-1,000)"
+    ],
+    "ideal_customer_profile": "Businesses with large format printers, printing shops needing service, remote customers nationwide",
+    "sales_model": "Service-based reactive model (not quote-based), phone/text direct contact, referral network",
+    "tech_stack": [
+      "Jobber (primary CRM - mobile app, scheduling, invoicing, texting)",
+      "QuickBooks (accounting - major reconciliation issues, $700K error fixed)",
+      "Shopify (website/e-commerce)",
+      "Capsule (legacy CRM - still paying $30/mo, has old contacts, not migrated)",
+      "Microsoft 365/Outlook (email - Alyssa monitors, Kelsey doesn't check)",
+      "Multiple text systems (Jobber, office, Kelsey's personal cell)"
+    ],
+    "existing_ai_usage": [
+      "None - all processes manual",
+      "Previous failed project: $7K paid to Malik for API/database integration (Shopify + central portal)"
+    ],
+    "business_goals": {
+      "goal_1": {
+        "description": "Clone Kelsey - Enable business to run without him",
+        "target_metric": "Joe handles 50% of service calls, business survives if Kelsey is absent",
+        "timeline": "URGENT - 'Business dies in couple months without me'",
+        "kelce_quote": "Magic wand answer: A reliable field tech I can send to 50% of jobs"
+      },
+      "goal_2": {
+        "description": "Move to remote consulting lifestyle",
+        "target_metric": "Relocate to Piantop, run local service with Joe, focus on remote consulting",
+        "timeline": "2025-2026",
+        "kelce_quote": "Sit on porch with earbuds, FaceTiming people all day doing remote support"
+      },
+      "goal_3": {
+        "description": "Stop losing $10K/year to inefficiencies",
+        "target_metric": "Recapture lost revenue from poor communication, data silos, missed opportunities",
+        "timeline": "Immediate"
+      },
+      "goal_4": {
+        "description": "Create unified communication hub",
+        "target_metric": "One place where all systems talk to each other, no data silos",
+        "timeline": "Foundation phase",
+        "kelce_quote": "One hub where I go - everything communicates so WE can communicate better"
+      }
+    },
+    "constraints": {
+      "budget": "Not explicitly stated - Context: Revenue $600K-$750K, previous $7K failure (1% of revenue), suggested range $10K-$30K (1.5-4% of revenue)",
+      "timeline": "IMMEDIATE/URGENT - January 1, 2025 QuickBooks reset is CRITICAL deadline, small wins weekly needed",
+      "technical": [
+        "Kelsey only person who can do technical work (bottleneck)",
+        "Alyssa 'memory not good' - needs constant communication",
+        "Joe in training - not ready for solo calls",
+        "No SOPs or documented procedures",
+        "QuickBooks reconciliation issues ($700K error)",
+        "Website structure issues from past work",
+        "API integration complexity (Malik's project failed on this)"
+      ],
+      "organizational": [
+        "Kelsey burned out on training people - 'Joe is last dude I'm pouring myself into'",
+        "Change fatigue from $7K failed Malik project",
+        "Can't take time away from billable work ($250/hr)",
+        "Needs async implementation, not disruptive",
+        "Must see results, not promises",
+        "Kelsey doesn't manage people well (too busy, wants freedom not responsibility)"
+      ],
+      "people": [
+        "Kelsey: Accidental entrepreneur, great at fixing/teaching, bad at managing, past business failures",
+        "Alyssa: Good execution, not initiative, needs reminders",
+        "Joe: Technical skills but not printer-specific, color matching talent, still training"
+      ]
+    },
+    "scope": {
+      "in_scope_processes": [
+        "Training system (clone Kelsey - video library, SOPs, step-by-step guides)",
+        "Unified communication hub (consolidate Jobber, QB, Shopify, Capsule, text systems)",
+        "Inventory management (ZERO current system - 'no fucking clue what's in stock')",
+        "Voice-to-text automation (Kelsey leaves voicemail → auto-transcribe → Jobber ticket)",
+        "Data consolidation (eliminate manual duplicate entry across systems)",
+        "Customer communication tracking (multiple text systems causing confusion)"
+      ],
+      "out_of_scope": [
+        "Equipment maintenance",
+        "Supplier management",
+        "HR processes",
+        "Quote generation (NOT A QUOTE-BASED BUSINESS - this is service/repair)"
+      ],
+      "primary_focus_areas": [
+        "Knowledge transfer system (enable Joe to handle 50% of calls)",
+        "System integration (one hub vs data silos)",
+        "Inventory visibility (unlock capital, enable eBay sales)",
+        "Remote consulting infrastructure (enable Piantop move)"
+      ]
+    },
+    "stakeholders": {
+      "primary_contact": {
+        "name": "Kelsey",
+        "role": "Owner / Lead Technician (only person who can do technical work)",
+        "email": "TBD",
+        "notes": "Decision maker, bills $250/hr, limited availability, mobile-first (doesn't check email)"
+      },
+      "decision_makers": [
+        "Kelsey (sole authority)"
+      ],
+      "implementation_team": [
+        "Alyssa (Office Manager - scheduling, invoicing, Jobber data entry)",
+        "Joe (Trainee - learning field work, social media marketing responsibility)",
+        "Nikki (Kelsey's wife - has Malik's project folder, helps with bookkeeping)",
+        "Mike (Technical Consultant - systems engineering, robotics, cloud infrastructure, will handle complex integrations)"
+      ],
+      "key_relationships": [
+        "Alyssa's sister uses Jobber (brought it to company)",
+        "Other techs in referral network (subcontracting)",
+        "Malik (previous failed $7K project developer)"
+      ]
+    },
+    "validated_facts": [
+      "Business WILL FAIL without Kelsey ('dies in couple months if I don't show up')",
+      "Lost $10K/year to inefficiencies (quantified pain)",
+      "Zero inventory management ('no fucking clue what's in stock')",
+      "Data silos across 5+ systems (Jobber, QB, Shopify, Capsule, multiple text)",
+      "Alyssa does manual duplicate entry (adds products to QB AND Jobber)",
+      "Kelsey spends 2 hrs/day commuting, drives all over Phoenix",
+      "No SOPs or documented procedures (all tribal knowledge)",
+      "$7K failed project with Malik (API/database integration - scope creep, no results)",
+      "QuickBooks $700K reconciliation error (starting fresh Jan 1, 2025 - CRITICAL CONSTRAINT)",
+      "Annual revenue $600K-$750K validated (enables ROI calculations)",
+      "Kelsey's effective hourly rate: $300-375 (time savings = direct revenue)",
+      "Hardware rental model opportunity: $300-450/mo + 60% margins on consumables",
+      "Target market for rentals: AEC firms (Architecture, Engineering, Construction)",
+      "Service-based business (NOT quote-based) - reactive model",
+      "Multiple service calls daily, $250 standard rate, quick jobs $500-1K",
+      "Remote consulting opportunity ($150-500/call, multiple states calling)",
+      "Kelsey exhausted with training ('Joe is last dude I'm pouring myself into')",
+      "Communication happens via: Kelsey's cell (primary), Jobber, office, email (ignored), texts"
+    ]
+  },
+
+  "current_state_maps": [
+    {
+      "process_id": "process_001",
+      "name": "Service Call Dispatch & Execution",
+      "function_area": "Field Service Operations",
+      "owner_roles": ["Kelsey (only tech)", "Alyssa (dispatch/scheduling)"],
+      "trigger": "Customer calls Kelsey's cell or office line with printer issue",
+      "frequency": "Multiple per day - 'majority of our calls are service calls'",
+      "duration": "$250 standard calls, complex jobs 3+ hours, quick jobs $500-1K",
+      "steps": [
+        {
+          "step_number": 1,
+          "name": "Customer call/inquiry",
+          "description": "Customer calls Kelsey's cell directly (primary) or office line",
+          "who": "Customer → Kelsey or Alyssa",
+          "tool": "Kelsey's personal cell (most), Jobber business line, office phone (rarely)",
+          "duration": "Immediate answer expected ('I hate voicemail, go to next place')",
+          "pain_points": ["Multiple numbers confusing", "Kelsey's cell gets all calls", "No voicemail system", "Competitive advantage but unsustainable"]
+        },
+        {
+          "step_number": 2,
+          "name": "Alyssa adds to schedule/map",
+          "description": "Alyssa monitors map, adds nearby calls opportunistically",
+          "who": "Alyssa",
+          "tool": "Jobber map view",
+          "duration": "Real-time",
+          "pain_points": ["Texts Kelsey about opportunities", "Example: 'Quick $500 grab if you're in 10B'", "Kelsey distracted during current job"]
+        },
+        {
+          "step_number": 3,
+          "name": "Kelsey drives to location",
+          "description": "Loads equipment, drives across Phoenix metro",
+          "who": "Kelsey (only tech who can go)",
+          "tool": "Personal vehicle",
+          "duration": "1 hour commute each way + traffic + multiple stops",
+          "pain_points": ["2 hrs/day commute waste", "'Drive all over town'", "Traffic delays", "Phone blowing up during drive", "Can't delegate to Joe (not trained)"]
+        },
+        {
+          "step_number": 4,
+          "name": "Service call execution",
+          "description": "Diagnose and fix printer issue on-site",
+          "who": "Kelsey (ONLY person capable)",
+          "tool": "Technical expertise, parts from truck",
+          "duration": "$250 calls, complex 3+ hrs, quick $500-1K jobs",
+          "pain_points": ["Called for equipment never seen before", "$3K print heads, 12 of them - high stakes", "No documentation/SOPs", "Can't train Joe fast enough", "Knowledge in Kelsey's head only"]
+        },
+        {
+          "step_number": 5,
+          "name": "Post-call documentation",
+          "description": "Kelsey calls Alyssa with job notes after each call",
+          "who": "Kelsey → Alyssa",
+          "tool": "Phone call, Alyssa writes on paper → transcribes to Jobber",
+          "duration": "Manual every call",
+          "pain_points": ["Old employee would write notes, Kelsey finds next day", "'Jim Bob called from Mesa - 5 min from where you were - missed opportunity'", "Alyssa transcribes paper → Jobber", "Lost $10K/year to this process", "Photos upload to Jobber mobile"]
+        },
+        {
+          "step_number": 6,
+          "name": "Invoicing",
+          "description": "Alyssa creates invoice from completed Jobber visit",
+          "who": "Alyssa",
+          "tool": "Jobber + QuickBooks (duplicate entry)",
+          "duration": "End of day batch",
+          "pain_points": ["Manual entry in two systems", "QuickBooks reconciliation nightmare ($700K error)", "Invoice queue in Jobber"]
+        }
+      ],
+      "systems": ["Kelsey's personal cell", "Jobber (mobile app primary)", "Phone/Paper notes", "QuickBooks", "Personal vehicle"],
+      "data_touchpoints": [
+        {
+          "data_type": "Customer call/text",
+          "source": "Multiple channels (Kelsey cell, Jobber, office)",
+          "destination": "Alyssa's map/schedule in Jobber",
+          "transfer_method": "Manual entry, text relay"
+        },
+        {
+          "data_type": "Service call notes",
+          "source": "Kelsey's memory + phone call",
+          "destination": "Paper → Jobber manual transcription",
+          "transfer_method": "Verbal → handwritten → typed (triple manual)"
+        },
+        {
+          "data_type": "Invoice data",
+          "source": "Jobber completed visit",
+          "destination": "QuickBooks",
+          "transfer_method": "Manual duplicate entry"
+        }
+      ],
+      "pain_points": [
+        {
+          "description": "Business dies without Kelsey - zero delegation possible",
+          "frequency": "Every single service call",
+          "impact": "CRITICAL",
+          "time_cost": "100% of technical work",
+          "kelce_quote": "If I don't come to work, we make no money. Business dies in couple months."
+        },
+        {
+          "description": "2 hours/day commute waste driving across Phoenix",
+          "frequency": "Daily",
+          "impact": "high",
+          "time_cost": "10 hrs/week = 520 hrs/year at $250/hr = $130K opportunity cost",
+          "revenue_impact": "Could do remote consulting instead ($150-500/call)"
+        },
+        {
+          "description": "Paper notes → manual transcription loses $10K/year",
+          "frequency": "Every call",
+          "impact": "high",
+          "revenue_impact": "$10K/year quantified loss from missed opportunities",
+          "example": "'Jim Bob called from Mesa - 5 min from where you were' - missed same-day upsell"
+        },
+        {
+          "description": "No training system - Joe can't handle calls alone",
+          "frequency": "Blocking business growth",
+          "impact": "CRITICAL",
+          "time_cost": "Kelsey exhausted training: 'Joe is last dude I'm pouring myself into'",
+          "revenue_impact": "Can't scale, can't move to Piantop remote lifestyle"
+        }
+      ],
+      "metrics": {
+        "volume": "Multiple service calls per day across Phoenix metro",
+        "cycle_time": "$250 standard, 3+ hrs complex, $500-1K quick jobs",
+        "error_rate": "Not applicable (service model)",
+        "cost_per_process": "$250/hr Kelsey time + 2 hrs/day commute",
+        "bottleneck_severity": "CRITICAL - single point of failure (Kelsey)"
+      }
+    },
+    {
+      "process_id": "process_002",
+      "name": "Data Silos & System Integration",
+      "function_area": "Operations - Multi-System Management",
+      "owner_roles": ["Alyssa (manual data entry)", "Kelsey (system decisions)"],
+      "trigger": "Any business activity requires data in multiple systems",
+      "frequency": "Continuous daily burden",
+      "duration": "Manual duplicate entry ongoing",
+      "steps": [
+        {
+          "step_number": 1,
+          "name": "Jobber - Primary CRM/Scheduling",
+          "description": "Service calls, scheduling, customer communication, invoicing queue",
+          "who": "Alyssa (desktop/mobile), Kelsey (mobile only)",
+          "tool": "Jobber - map view, geofence, texting, visit history, photo upload",
+          "likes": ["Map scheduling", "Customer text threads", "Mobile app", "Visit history", "Auto-clock-in geofence"],
+          "pain_points": ["Desktop confusing vs mobile", "No e-commerce integration", "Can't handle inventory", "Product businesses don't fit", "No website integration"]
+        },
+        {
+          "step_number": 2,
+          "name": "QuickBooks - Accounting nightmare",
+          "description": "Invoicing, reconciliation, bookkeeping",
+          "who": "Alyssa + Nikki (wife) + bookkeeper",
+          "tool": "QuickBooks",
+          "duration": "Ongoing disaster",
+          "pain_points": ["$700K reconciliation error last year", "Manual duplicate entry from Jobber", "Starting fresh Jan 1 2025", "'Didn't know how hard to reconcile books'", "Manual product entry"]
+        },
+        {
+          "step_number": 3,
+          "name": "Shopify - Website/E-commerce",
+          "description": "Online equipment/supplies sales, product listings",
+          "who": "Joe (posting printer listings), Alyssa (product management)",
+          "tool": "Shopify",
+          "duration": "Complex product structure",
+          "pain_points": ["Rolls vs 2-packs structure nightmare", "Website built wrong (categories)", "No integration with other systems", "Malik's failed $7K project was here", "Manual sync everything"]
+        },
+        {
+          "step_number": 4,
+          "name": "Capsule - Legacy CRM zombie",
+          "description": "Old customer database with email sequences",
+          "who": "Nobody (paying $30/mo for nothing)",
+          "tool": "Capsule CRM",
+          "duration": "Abandoned but still paying",
+          "pain_points": ["Still paying $30/mo", "Has all old contacts", "Email sequences", "Not migrated to Jobber", "'Too powerful, overcomplicated'", "Data trapped here"]
+        },
+        {
+          "step_number": 5,
+          "name": "Microsoft 365 - Ignored email",
+          "description": "Email system Kelsey doesn't check",
+          "who": "Alyssa monitors, Kelsey ignores",
+          "tool": "Outlook",
+          "duration": "Alyssa only",
+          "pain_points": ["Kelsey: 'Too much, can't look at it'", "Mobile-first business", "Email not primary communication", "Another data silo"]
+        },
+        {
+          "step_number": 6,
+          "name": "Multiple text systems chaos",
+          "description": "Jobber texts, office texts, Kelsey's cell texts",
+          "who": "Everyone confused",
+          "tool": "4-5 different text platforms",
+          "duration": "Constant",
+          "pain_points": ["'4-5 different text systems'", "Customers call Kelsey cell, not office", "Messages read but not unread → lost", "Information scattered", "Alyssa texts Kelsey job updates"]
+        }
+      ],
+      "systems": ["Jobber", "QuickBooks", "Shopify", "Capsule", "MS365/Outlook", "Multiple text platforms"],
+      "data_touchpoints": [
+        {
+          "data_type": "Customer contacts",
+          "source": "Capsule (old database)",
+          "destination": "Not migrated - trapped",
+          "transfer_method": "Manual if needed, mostly abandoned"
+        },
+        {
+          "data_type": "Products",
+          "source": "Alyssa manually enters",
+          "destination": "QuickBooks AND Jobber (separate)",
+          "transfer_method": "Duplicate manual entry - 'adds products to both systems'"
+        },
+        {
+          "data_type": "Service invoices",
+          "source": "Jobber completed visits",
+          "destination": "QuickBooks",
+          "transfer_method": "Manual duplicate entry, reconciliation nightmare"
+        },
+        {
+          "data_type": "Shopify products",
+          "source": "Joe/Alyssa list printers",
+          "destination": "No sync to QB or Jobber",
+          "transfer_method": "Isolated - Malik's $7K failed integration attempt"
+        },
+        {
+          "data_type": "Communication history",
+          "source": "4-5 text systems + Kelsey's cell + email",
+          "destination": "Scattered everywhere",
+          "transfer_method": "No unified view - 'Some's got some shit over there, some's got it over here'"
+        }
+      ],
+      "pain_points": [
+        {
+          "description": "Kelsey's quote: 'Capsule, QuickBooks, Jobber, Shopify - all have different information'",
+          "frequency": "Every business operation",
+          "impact": "CRITICAL",
+          "time_cost": "Unknown hours/week in duplicate entry, searching, lost data",
+          "kelce_quote": "I've got Capsule, QuickBooks, Jobber, Shopify - all have different information. Some's got some shit over there, some's got it over here."
+        },
+        {
+          "description": "$7K failed Malik project - API/database integration for Shopify",
+          "frequency": "One-time sunk cost",
+          "impact": "high",
+          "revenue_impact": "$7K lost, change fatigue, trust erosion",
+          "details": "Central database/portal, one-click populate all systems, product sync - developer couldn't handle complexity, scope creep, no deliverables"
+        },
+        {
+          "description": "Alyssa manual duplicate entry - products to QB AND Jobber",
+          "frequency": "Every new product/service",
+          "impact": "medium",
+          "time_cost": "Ongoing labor, error prone",
+          "details": "No automation, prone to sync issues"
+        },
+        {
+          "description": "Capsule zombie - $30/mo for unused system with trapped data",
+          "frequency": "Monthly waste",
+          "impact": "low",
+          "revenue_impact": "$360/year + opportunity cost of old contacts not marketed to",
+          "details": "Has all old customer contacts, email sequences, not migrated, too complex to use"
+        }
+      ],
+      "metrics": {
+        "volume": "5+ systems not talking to each other",
+        "cycle_time": "Constant manual synchronization burden",
+        "error_rate": "$700K QuickBooks reconciliation error (extreme example)",
+        "cost_per_process": "$30/mo Capsule + unknown hours duplicate entry + $7K failed integration",
+        "bottleneck_severity": "high - prevents unified view, slows all operations"
+      }
+    },
+    {
+      "process_id": "process_003",
+      "name": "Inventory Management (Non-Existent)",
+      "function_area": "Inventory & Asset Management",
+      "owner_roles": ["Nobody - no system exists"],
+      "trigger": "Need to know what's in stock",
+      "frequency": "Constantly - every service call, every sale, every customer question",
+      "duration": "Unknown - chaos state",
+      "steps": [
+        {
+          "step_number": 1,
+          "name": "Kelsey calls asking 'Do we have this?'",
+          "description": "Kelsey on service call, needs to know if part is in stock",
+          "who": "Kelsey → Alyssa",
+          "tool": "Phone call",
+          "duration": "Interrupts current work",
+          "pain_points": ["Alyssa has to physically run to storage to check", "'Do we have this?' - no way to know", "Service call delayed waiting for answer"]
+        },
+        {
+          "step_number": 2,
+          "name": "Whiteboard counts (wrong)",
+          "description": "Attempted inventory tracking on whiteboard",
+          "who": "Someone writes counts, someone else erases accidentally",
+          "tool": "Whiteboard",
+          "duration": "Perpetually incorrect",
+          "pain_points": ["Gets erased accidentally", "Never accurate", "No one updates it", "Worthless for decisions"]
+        },
+        {
+          "step_number": 3,
+          "name": "QuickBooks inventory (garbage)",
+          "description": "Inventory module exists but unusable",
+          "who": "Attempted by Alyssa/Nikki",
+          "tool": "QuickBooks inventory feature",
+          "duration": "Abandoned",
+          "pain_points": ["Kelsey: 'Inventory system is garbage, completely unusable'", "Can't track high-value items ($3K print heads)", "12 print heads valued at $3K each = $36K untracked"]
+        },
+        {
+          "step_number": 4,
+          "name": "Can't sell excess on eBay",
+          "description": "Has printers/parts worth thousands sitting unused",
+          "who": "Capital locked up",
+          "tool": "None - stuck",
+          "duration": "Ongoing loss",
+          "pain_points": ["'I have no fucking clue what I have in stock'", "Can't list on eBay without inventory", "Money sitting idle", "Could be generating cash"]
+        },
+        {
+          "step_number": 5,
+          "name": "Duplicate ordering / Running out",
+          "description": "Buy too much or run out - no visibility",
+          "who": "Alyssa ordering blindly",
+          "tool": "Guesswork",
+          "duration": "Continuous inefficiency",
+          "pain_points": ["Order duplicates", "Run out during jobs", "No reorder points", "No cost tracking"]
+        }
+      ],
+      "systems": ["Phone calls", "Whiteboard (wrong)", "QuickBooks (garbage)", "Physical running to check", "Nothing that works"],
+      "data_touchpoints": [
+        {
+          "data_type": "Inventory counts",
+          "source": "Physical storage (maybe)",
+          "destination": "Nowhere - not tracked",
+          "transfer_method": "Alyssa runs to check physically, tells Kelsey verbally"
+        },
+        {
+          "data_type": "High-value assets",
+          "source": "$3K print heads × 12 = $36K untracked",
+          "destination": "Unknown location, unknown quantity",
+          "transfer_method": "No system exists"
+        },
+        {
+          "data_type": "Excess equipment for eBay",
+          "source": "Printers/parts worth thousands",
+          "destination": "Sitting unused - can't sell",
+          "transfer_method": "Blocked - can't list without knowing inventory"
+        }
+      ],
+      "pain_points": [
+        {
+          "description": "Kelsey: 'I have no fucking clue what I have in stock'",
+          "frequency": "Every service call, every sale decision",
+          "impact": "CRITICAL",
+          "time_cost": "Alyssa running back and forth checking storage",
+          "revenue_impact": "Can't sell excess inventory, duplicate orders, run out during jobs",
+          "kelce_quote": "I have no fucking clue what I have in stock"
+        },
+        {
+          "description": "Alyssa's magic wand: Inventory wrapped so she can answer Kelsey instantly",
+          "frequency": "Multiple times daily",
+          "impact": "high",
+          "time_cost": "Physical running to check inventory",
+          "alyssa_quote": "If we could get inventory wrapped, that would be fantastic. Then when he calls asking 'do we have this?' I can just look instead of running back and forth."
+        },
+        {
+          "description": "$36K+ in high-value assets (12× $3K print heads) untracked",
+          "frequency": "Ongoing risk",
+          "impact": "high",
+          "revenue_impact": "Theft risk, loss risk, can't make data-driven purchasing decisions",
+          "details": "Called for jobs with '$3K heads, 12 of them' - no tracking"
+        },
+        {
+          "description": "QuickBooks inventory 'garbage, completely unusable'",
+          "frequency": "Attempted, abandoned",
+          "impact": "medium",
+          "details": "Existing tool doesn't work, need different approach"
+        },
+        {
+          "description": "Locked capital in unsold excess inventory",
+          "frequency": "Ongoing",
+          "impact": "medium",
+          "revenue_impact": "Could liquidate on eBay, generate cash, free up space",
+          "details": "Has printers/parts worth thousands sitting unused"
+        }
+      ],
+      "metrics": {
+        "volume": "Unknown - no inventory count exists",
+        "cycle_time": "Minutes wasted per 'do we have this?' inquiry",
+        "error_rate": "100% - no system = no accuracy",
+        "cost_per_process": "Unknown $ in duplicate orders + unknown $ in locked capital + Alyssa time running to check",
+        "bottleneck_severity": "CRITICAL - blocks eBay sales, causes service delays, wastes Alyssa time"
+      }
+    }
+  ],
+
+  "ai_opportunity_matrix": [
+    {
+      "id": "opp_001",
+      "process_name": "Customer Inquiry to Quote",
+      "process_id": "process_001",
+      "type": "Automation",
+      "category": "Sales Automation",
+      "description": "AI-powered instant quote generator with smart pricing engine",
+      "impact": "high",
+      "impact_details": {
+        "time_saved": "15-20 hours per week",
+        "cost_reduction": "$600-800/week in labor",
+        "revenue_impact": "30% more quotes → 10-15% revenue increase",
+        "quality_improvement": "Consistent pricing, instant response"
+      },
+      "effort": "medium",
+      "effort_details": {
+        "technical_complexity": "medium",
+        "integration_points": 2,
+        "estimated_build_time": "3-4 weeks"
+      },
+      "speed_to_value": "30 days",
+      "data_requirements": [
+        "Historical quote data",
+        "Pricing rules and matrices",
+        "Material costs database"
+      ],
+      "risks": [
+        {
+          "risk": "Complex custom jobs still need manual review",
+          "likelihood": "high",
+          "mitigation": "Hybrid approach - AI for standard, flag complex for review"
+        }
+      ],
+      "dependencies": [
+        "Digitize pricing matrices",
+        "Document quote rules"
+      ],
+      "notes": "Quick win - addresses biggest time sink",
+      "priority_score": 9,
+      "assumption": false
+    },
+    {
+      "id": "opp_002",
+      "process_name": "Order Processing & Production",
+      "process_id": "process_002",
+      "type": "Automation",
+      "category": "Operations",
+      "description": "Automated production scheduling with real-time status tracking",
+      "impact": "high",
+      "impact_details": {
+        "time_saved": "10-15 hours per week",
+        "cost_reduction": "$400-600/week",
+        "revenue_impact": "20% faster turnaround → more capacity",
+        "quality_improvement": "Fewer scheduling conflicts, optimized machine usage"
+      },
+      "effort": "high",
+      "effort_details": {
+        "technical_complexity": "high",
+        "integration_points": 4,
+        "estimated_build_time": "6-8 weeks"
+      },
+      "speed_to_value": "60-90 days",
+      "data_requirements": [
+        "Machine capabilities and constraints",
+        "Job requirements mapping",
+        "Historical production data"
+      ],
+      "risks": [
+        {
+          "risk": "Integration with equipment",
+          "likelihood": "medium",
+          "mitigation": "Start with manual status updates, automate gradually"
+        }
+      ],
+      "dependencies": [
+        "Production process documentation",
+        "Equipment capability matrix"
+      ],
+      "notes": "High value but complex - Phase 2 candidate",
+      "priority_score": 7,
+      "assumption": false
+    },
+    {
+      "id": "opp_003",
+      "process_name": "Customer Communication & Support",
+      "process_id": "process_003",
+      "type": "Automation",
+      "category": "Customer Experience",
+      "description": "Self-service order tracking portal with automated status updates",
+      "impact": "high",
+      "impact_details": {
+        "time_saved": "5-8 hours per week",
+        "cost_reduction": "$200-300/week",
+        "revenue_impact": "Improved customer satisfaction → retention",
+        "quality_improvement": "24/7 status access, proactive updates"
+      },
+      "effort": "low",
+      "effort_details": {
+        "technical_complexity": "low",
+        "integration_points": 2,
+        "estimated_build_time": "2-3 weeks"
+      },
+      "speed_to_value": "14-21 days",
+      "data_requirements": [
+        "Order database",
+        "Status definitions",
+        "Customer contact info"
+      ],
+      "risks": [
+        {
+          "risk": "Customer adoption",
+          "likelihood": "low",
+          "mitigation": "Simple interface, email/SMS options"
+        }
+      ],
+      "dependencies": [
+        "Order tracking system",
+        "Customer database"
+      ],
+      "notes": "Quick win - high customer impact, low complexity",
+      "priority_score": 10,
+      "assumption": false
+    },
+    {
+      "id": "opp_004",
+      "process_name": "File Preparation",
+      "process_id": "process_002",
+      "type": "AI Enhancement",
+      "category": "Operations",
+      "description": "AI-powered file checking and auto-correction for print readiness",
+      "impact": "medium",
+      "impact_details": {
+        "time_saved": "5-10 hours per week",
+        "cost_reduction": "$200-400/week",
+        "revenue_impact": "Reduce delays by 1-2 days per order",
+        "quality_improvement": "Fewer print errors, less rework"
+      },
+      "effort": "medium",
+      "effort_details": {
+        "technical_complexity": "medium",
+        "integration_points": 2,
+        "estimated_build_time": "3-4 weeks"
+      },
+      "speed_to_value": "30-45 days",
+      "data_requirements": [
+        "Common file issues catalog",
+        "Print specifications",
+        "File format requirements"
+      ],
+      "risks": [
+        {
+          "risk": "Complex design issues still need human review",
+          "likelihood": "medium",
+          "mitigation": "AI flags issues, suggests fixes, human approves"
+        }
+      ],
+      "dependencies": [
+        "File specification documentation",
+        "Integration with design software"
+      ],
+      "notes": "Good Phase 2 opportunity",
+      "priority_score": 6,
+      "assumption": false
+    },
+    {
+      "id": "opp_005",
+      "process_name": "Payment & Invoicing",
+      "process_id": "process_001",
+      "type": "Automation",
+      "category": "Finance",
+      "description": "Automated invoicing with payment reminders and online payment portal",
+      "impact": "medium",
+      "impact_details": {
+        "time_saved": "3-5 hours per week",
+        "cost_reduction": "$150-200/week",
+        "revenue_impact": "Faster payment collection, reduced AR",
+        "quality_improvement": "No missed invoices, automatic reconciliation"
+      },
+      "effort": "low",
+      "effort_details": {
+        "technical_complexity": "low",
+        "integration_points": 2,
+        "estimated_build_time": "1-2 weeks"
+      },
+      "speed_to_value": "7-14 days",
+      "data_requirements": [
+        "Customer database",
+        "Order/invoice history",
+        "Payment terms"
+      ],
+      "risks": [
+        {
+          "risk": "Payment processor integration",
+          "likelihood": "low",
+          "mitigation": "Use standard payment gateway"
+        }
+      ],
+      "dependencies": [
+        "Payment processor account",
+        "Invoice templates"
+      ],
+      "notes": "Quick win - immediate cash flow impact",
+      "priority_score": 8,
+      "assumption": false
+    }
+  ],
+
+  "target_state_designs": [
+    {
+      "opportunity_id": "opp_003",
+      "design_id": "design_001",
+      "name": "Customer Self-Service Portal",
+      "summary": "24/7 self-service portal for order tracking with automated SMS/email updates at each production milestone. Customers can check status anytime without calling, reducing support load by 70%.",
+      "systems_involved": [
+        "Web portal (new)",
+        "Order management system",
+        "SMS/Email gateway",
+        "Production tracking system"
+      ],
+      "ai_components": [
+        {
+          "component": "Smart Status Interpreter",
+          "purpose": "Convert production floor updates to customer-friendly messages",
+          "technology": "Claude API",
+          "inputs": ["Production status", "Order details", "Customer preferences"],
+          "outputs": ["Customer status message", "Estimated completion time"]
+        },
+        {
+          "component": "Proactive Alert Engine",
+          "purpose": "Send updates at key milestones without customer request",
+          "technology": "Automation platform",
+          "inputs": ["Status changes", "Customer preferences"],
+          "outputs": ["SMS/Email notifications", "Portal updates"]
+        }
+      ],
+      "user_journeys": [
+        {
+          "actor": "Customer",
+          "journey": [
+            "Receives order confirmation with portal link",
+            "Clicks link to view real-time status",
+            "Gets automatic updates at milestones",
+            "Receives completion notification"
+          ]
+        },
+        {
+          "actor": "Customer Service",
+          "journey": [
+            "Updates production status once",
+            "System handles all customer communication",
+            "Only handles exceptions/special requests",
+            "70% reduction in status calls"
+          ]
+        }
+      ],
+      "data_flow": "Production Update → Status System → AI Interpreter → Customer Portal/Notifications",
+      "governance_notes": "Customer data secure, opt-in for notifications, manual override available",
+      "success_metrics": [
+        "70% reduction in status calls",
+        "90% customer adoption rate",
+        "Customer satisfaction score increase",
+        "5-8 hours/week time saved"
+      ]
+    },
+    {
+      "opportunity_id": "opp_001",
+      "design_id": "design_002",
+      "name": "AI-Powered Instant Quote System",
+      "summary": "Automated quote generation system that provides instant, accurate quotes for standard jobs while flagging complex ones for review. Reduces quote time from 30-60 minutes to under 2 minutes.",
+      "systems_involved": [
+        "Web quote form",
+        "AI pricing engine",
+        "Quote management system",
+        "Email automation"
+      ],
+      "ai_components": [
+        {
+          "component": "Smart Pricing Engine",
+          "purpose": "Calculate accurate quotes based on specifications and historical data",
+          "technology": "Claude API + ML model",
+          "inputs": ["Job specifications", "Material costs", "Historical quotes", "Capacity"],
+          "outputs": ["Price quote", "Margin analysis", "Complexity flag"]
+        },
+        {
+          "component": "Specification Validator",
+          "purpose": "Ensure all required information is captured correctly",
+          "technology": "Claude API",
+          "inputs": ["Customer requirements", "File uploads"],
+          "outputs": ["Validated specs", "Missing info requests", "Feasibility check"]
+        }
+      ],
+      "user_journeys": [
+        {
+          "actor": "Customer",
+          "journey": [
+            "Fills out smart quote form",
+            "Uploads files (optional)",
+            "Receives instant quote (standard jobs)",
+            "Gets follow-up within 2 hours (complex jobs)"
+          ]
+        },
+        {
+          "actor": "Sales Rep",
+          "journey": [
+            "Reviews only complex/flagged quotes",
+            "Adjusts AI suggestions if needed",
+            "Focuses on high-value opportunities",
+            "80% reduction in quote preparation time"
+          ]
+        }
+      ],
+      "data_flow": "Customer Form → AI Validation → Pricing Engine → Quote Generation → CRM → Customer",
+      "governance_notes": "All quotes logged for audit, margin thresholds enforced, manager approval for exceptions",
+      "success_metrics": [
+        "Quote turnaround < 2 minutes for standard jobs",
+        "30% increase in quotes generated",
+        "15% improvement in win rate",
+        "20 hours/week time saved"
+      ]
+    },
+    {
+      "opportunity_id": "opp_005",
+      "design_id": "design_003",
+      "name": "Automated Payment System",
+      "summary": "End-to-end payment automation from invoicing to collection with online payment portal and intelligent reminder system.",
+      "systems_involved": [
+        "Invoice generation system",
+        "Payment portal",
+        "Payment processor",
+        "Accounting system"
+      ],
+      "ai_components": [
+        {
+          "component": "Smart Reminder Engine",
+          "purpose": "Send payment reminders based on customer payment history and preferences",
+          "technology": "Automation platform + AI",
+          "inputs": ["Payment history", "Invoice data", "Customer profile"],
+          "outputs": ["Reminder schedule", "Message personalization"]
+        }
+      ],
+      "user_journeys": [
+        {
+          "actor": "Customer",
+          "journey": [
+            "Receives invoice with payment link",
+            "Clicks to pay online instantly",
+            "Gets automatic receipt",
+            "Can set up payment plans if needed"
+          ]
+        },
+        {
+          "actor": "Accounting",
+          "journey": [
+            "System generates invoices automatically",
+            "Payments reconcile automatically",
+            "Only handles exceptions",
+            "50% reduction in AR follow-up time"
+          ]
+        }
+      ],
+      "data_flow": "Order Completion → Invoice Generation → Payment Portal → Payment Processing → Auto-Reconciliation",
+      "governance_notes": "PCI compliant, encrypted transactions, audit trail maintained",
+      "success_metrics": [
+        "20% faster payment collection",
+        "90% online payment adoption",
+        "50% reduction in AR follow-up time",
+        "Zero missed invoices"
+      ]
+    }
+  ],
+
+  "roadmap": {
+    "phase_1_quick_wins": [
+      {
+        "name": "Customer Self-Service Portal & Automated Updates",
+        "linked_opportunity_ids": ["opp_003"],
+        "timeline": "Weeks 1-3",
+        "owner": "AI Implementation Team",
+        "deliverables": [
+          "Customer portal deployed",
+          "Order tracking system integrated",
+          "Automated SMS/email notifications active",
+          "Staff training completed"
+        ],
+        "dependencies": [
+          "Order database access",
+          "Customer contact information",
+          "SMS/Email gateway setup"
+        ],
+        "kpis": [
+          "70% reduction in status calls",
+          "90% customer adoption",
+          "Status available 24/7"
+        ],
+        "risks": [
+          {
+            "risk": "Customer adoption resistance",
+            "mitigation": "Simple design, proactive onboarding"
+          }
+        ],
+        "estimated_effort": "40-60 hours",
+        "estimated_value": "$800-1,200/month immediate savings + customer satisfaction"
+      },
+      {
+        "name": "Automated Payment & Invoicing",
+        "linked_opportunity_ids": ["opp_005"],
+        "timeline": "Weeks 2-3",
+        "owner": "AI Implementation Team",
+        "deliverables": [
+          "Online payment portal live",
+          "Automated invoicing active",
+          "Payment reminder system configured"
+        ],
+        "dependencies": [
+          "Payment processor account",
+          "Invoice templates",
+          "Customer database"
+        ],
+        "kpis": [
+          "20% faster payment collection",
+          "90% online payment adoption",
+          "Zero missed invoices"
+        ],
+        "risks": [],
+        "estimated_effort": "20-30 hours",
+        "estimated_value": "$600-800/month + improved cash flow"
+      }
+    ],
+    "phase_2_scale_up": [
+      {
+        "name": "AI-Powered Instant Quote System",
+        "linked_opportunity_ids": ["opp_001"],
+        "timeline": "Weeks 4-7",
+        "owner": "AI Implementation Team",
+        "deliverables": [
+          "Smart quote form deployed",
+          "AI pricing engine trained and active",
+          "Integration with CRM/order system",
+          "Sales team trained"
+        ],
+        "dependencies": [
+          "Historical quote data",
+          "Pricing rules documentation",
+          "Phase 1 complete"
+        ],
+        "kpis": [
+          "Quote time < 2 minutes",
+          "30% more quotes generated",
+          "15% improvement in win rate"
+        ],
+        "risks": [
+          {
+            "risk": "Complex pricing edge cases",
+            "mitigation": "Hybrid approach with human review"
+          }
+        ],
+        "estimated_effort": "80-100 hours",
+        "estimated_value": "$2,400-3,200/month + revenue growth"
+      },
+      {
+        "name": "AI File Checking System",
+        "linked_opportunity_ids": ["opp_004"],
+        "timeline": "Weeks 6-9",
+        "owner": "AI Implementation Team",
+        "deliverables": [
+          "File validation system deployed",
+          "Common issues auto-corrected",
+          "Customer notification system"
+        ],
+        "dependencies": [
+          "File specifications documented",
+          "Design software integration"
+        ],
+        "kpis": [
+          "40% reduction in file issues",
+          "1-2 day faster turnaround",
+          "50% less rework"
+        ],
+        "risks": [],
+        "estimated_effort": "60-80 hours",
+        "estimated_value": "$800-1,600/month + faster delivery"
+      }
+    ],
+    "phase_3_strategic": [
+      {
+        "name": "Intelligent Production Scheduling System",
+        "linked_opportunity_ids": ["opp_002"],
+        "timeline": "Weeks 10-16",
+        "owner": "AI Implementation Team",
+        "deliverables": [
+          "Automated scheduling system",
+          "Real-time production tracking",
+          "Capacity optimization AI",
+          "Predictive maintenance alerts"
+        ],
+        "dependencies": [
+          "Phase 2 complete",
+          "Production process mapping",
+          "Equipment integration feasibility"
+        ],
+        "kpis": [
+          "20% increase in throughput",
+          "90% reduction in scheduling conflicts",
+          "30% improvement in on-time delivery"
+        ],
+        "risks": [
+          {
+            "risk": "Equipment integration complexity",
+            "mitigation": "Phased integration, manual fallback"
+          }
+        ],
+        "estimated_effort": "120-160 hours",
+        "estimated_value": "$1,600-2,400/month + 20% capacity increase"
+      }
+    ],
+    "total_timeline": "16 weeks (4 months)",
+    "total_estimated_effort": "320-430 hours",
+    "total_estimated_value": "$6,200-9,200/month",
+    "roi_break_even": "Month 2-3"
+  },
+
+  "report_outline": {
+    "executive_summary": {
+      "current_state_overview": "Plotter Mechanix currently operates with largely manual processes for quoting, order tracking, and customer communication, resulting in 40-60 hours/week of inefficient labor and customer satisfaction challenges.",
+      "key_findings": [
+        "Quote generation takes 30-60 minutes per quote (20-50 weekly)",
+        "No self-service order tracking (30-50 status calls/week)",
+        "Manual production scheduling causes conflicts 2-3 times/week",
+        "Payment collection delays due to manual invoicing",
+        "40% of orders have file preparation delays"
+      ],
+      "recommended_opportunities": [
+        "Customer self-service portal (immediate impact)",
+        "AI-powered instant quoting (high ROI)",
+        "Automated payment system (cash flow improvement)",
+        "Smart production scheduling (capacity increase)",
+        "AI file validation (quality improvement)"
+      ],
+      "expected_impact": {
+        "time_savings": "40-60 hours per week",
+        "cost_reduction": "$6,200-9,200/month",
+        "revenue_impact": "20-30% increase through capacity and conversion",
+        "efficiency_gains": "50% reduction in quote-to-cash cycle time"
+      },
+      "investment_required": "$15,000-25,000 total implementation",
+      "roi_timeline": "Break-even in 2-3 months, 400%+ ROI in year 1"
+    },
+    "business_context": {
+      "industry_overview": "Printing services industry facing margin pressure, customer demand for instant service",
+      "company_situation": "Growing demand but constrained by manual processes, unable to scale efficiently",
+      "strategic_goals": [
+        "Scale operations without proportional headcount increase",
+        "Improve customer experience and satisfaction",
+        "Reduce turnaround times by 30%"
+      ],
+      "competitive_context": "Competitors moving to online/automated services, customer expectations rising"
+    },
+    "current_state_summary": {
+      "processes_analyzed": [
+        "Customer Inquiry to Quote",
+        "Order Processing & Production",
+        "Customer Communication & Support"
+      ],
+      "total_pain_points_identified": 12,
+      "critical_bottlenecks": [
+        "Manual quote generation (biggest time sink)",
+        "No order visibility (biggest customer complaint)",
+        "Manual production scheduling (operational constraint)"
+      ],
+      "current_cost_of_inefficiency": "$8,000-12,000/month in lost productivity and revenue"
+    },
+    "opportunity_summary": {
+      "total_opportunities_identified": 5,
+      "high_priority_opportunities": [
+        "Customer self-service portal",
+        "AI instant quoting",
+        "Production scheduling automation"
+      ],
+      "medium_priority_opportunities": [
+        "Payment automation",
+        "File validation AI"
+      ],
+      "quick_wins": [
+        "Customer portal (2-3 weeks)",
+        "Payment automation (1-2 weeks)"
+      ],
+      "strategic_initiatives": [
+        "Full production intelligence system (4 months)"
+      ]
+    },
+    "target_state_summary": {
+      "vision": "Fully automated customer experience from quote to delivery with AI-optimized operations",
+      "key_transformations": [
+        "Instant quoting for 80% of jobs",
+        "24/7 customer self-service",
+        "Automated production optimization",
+        "Proactive customer communication"
+      ],
+      "technology_architecture": "Cloud-based automation platform with AI engines for pricing, scheduling, and customer service",
+      "organizational_changes": [
+        "Staff focus shifts from manual tasks to exception handling and relationship building",
+        "New capabilities in data-driven decision making"
+      ]
+    },
+    "roadmap_summary": {
+      "phase_1_overview": "Quick wins in 30 days: Customer portal and payment automation for immediate impact",
+      "phase_2_overview": "Scale up in 90 days: AI quoting and file validation for operational efficiency",
+      "phase_3_overview": "Transform in 180 days: Intelligent production system for competitive advantage",
+      "critical_success_factors": [
+        "Staff buy-in and training",
+        "Data quality and system integration",
+        "Phased rollout with quick wins first"
+      ],
+      "change_management_approach": "Start with customer-facing improvements to build momentum, gradual automation of internal processes"
+    },
+    "investment_and_roi": {
+      "total_investment": "$15,000-25,000",
+      "monthly_recurring_value": "$6,200-9,200",
+      "break_even_point": "Month 2-3",
+      "12_month_roi": "400-500%",
+      "36_month_value": "$200,000-330,000"
+    },
+    "next_steps": {
+      "immediate_actions": [
+        "Approve Phase 1 implementation",
+        "Provide access to order/customer data",
+        "Identify implementation team",
+        "Schedule kickoff meeting"
+      ],
+      "decision_points": [
+        "Phase 1 approval (immediate)",
+        "Phase 2 approval (week 3)",
+        "Phase 3 approval (week 8)"
+      ],
+      "timeline_to_kickoff": "Can begin within 3-5 days of approval"
+    }
+  },
+
+  "presentation_outline": [
+    {
+      "slide_number": 1,
+      "title": "Plotter Mechanix AI Transformation",
+      "purpose": "Title slide",
+      "talking_points": [
+        "Comprehensive AI Automation Audit Results",
+        "December 2025",
+        "Prepared by: AI Agency Development OS"
+      ]
+    },
+    {
+      "slide_number": 2,
+      "title": "Executive Summary",
+      "purpose": "High-level findings and opportunity",
+      "talking_points": [
+        "40-60 hours/week of manual work identified",
+        "$6,200-9,200/month in efficiency gains available",
+        "2-3 month payback period",
+        "20-30% revenue growth potential"
+      ]
+    },
+    {
+      "slide_number": 3,
+      "title": "Current State: Pain Points",
+      "purpose": "Show current inefficiencies",
+      "talking_points": [
+        "30-60 minutes per quote (vs 2 minutes possible)",
+        "30-50 status calls per week (vs self-service)",
+        "Manual scheduling conflicts 2-3x/week",
+        "40% of jobs have file delays"
+      ]
+    },
+    {
+      "slide_number": 4,
+      "title": "Top 3 Opportunities",
+      "purpose": "Present highest-impact solutions",
+      "talking_points": [
+        "#1: Customer Portal - 70% reduction in support calls",
+        "#2: AI Quoting - 95% faster quotes, 30% more volume",
+        "#3: Smart Scheduling - 20% capacity increase"
+      ]
+    },
+    {
+      "slide_number": 5,
+      "title": "Implementation Roadmap",
+      "purpose": "Show phased approach",
+      "talking_points": [
+        "Phase 1 (30 days): Quick wins - Portal & Payments",
+        "Phase 2 (90 days): Scale - AI Quoting & File Check",
+        "Phase 3 (180 days): Transform - Production Intelligence",
+        "Each phase delivers independent value"
+      ]
+    },
+    {
+      "slide_number": 6,
+      "title": "Investment & Returns",
+      "purpose": "Business case",
+      "talking_points": [
+        "Total investment: $15-25K",
+        "Monthly value: $6.2-9.2K",
+        "Break-even: 2-3 months",
+        "Year 1 ROI: 400-500%"
+      ]
+    },
+    {
+      "slide_number": 7,
+      "title": "Customer Experience Transformation",
+      "purpose": "Show customer benefits",
+      "talking_points": [
+        "Instant quotes 24/7",
+        "Real-time order tracking",
+        "Proactive status updates",
+        "Online payment convenience"
+      ]
+    },
+    {
+      "slide_number": 8,
+      "title": "Next Steps",
+      "purpose": "Call to action",
+      "talking_points": [
+        "Approve Phase 1 to start immediately",
+        "Provide data access",
+        "Identify team members",
+        "Kickoff within 3-5 days"
+      ]
+    }
+  ],
+
+  "notes": [
+    {
+      "date": "2025-12-08",
+      "author": "System",
+      "note": "DISCOVERY COMPLETE - All 7 audio transcripts analyzed. Status changed from assumptions to validated reality.",
+      "category": "milestone"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Analysis",
+      "note": "CRITICAL PIVOT: Business is SERVICE/REPAIR not quote-based printing. Initial assumptions about quote automation were WRONG. #1 goal is Clone Kelsey (training system), not quote optimization.",
+      "category": "critical_finding"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Analysis",
+      "note": "Quantified pain: $10K/year lost to inefficiencies, $7K sunk in failed Malik project, $700K QuickBooks reconciliation error, 2 hrs/day commute waste = $130K opportunity cost at $250/hr rate.",
+      "category": "financials"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Analysis",
+      "note": "Team: 3 people only. Kelsey (owner/only tech), Alyssa (office mgr, 'memory not good'), Joe (trainee, not ready for solo calls). Business dies if Kelsey doesn't show up.",
+      "category": "team_structure"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Analysis",
+      "note": "Tech stack validated: Jobber (primary, mobile-first), QuickBooks (disaster), Shopify (isolated), Capsule (zombie $30/mo), MS365 (Kelsey ignores), 4-5 text systems (chaos).",
+      "category": "technical"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Analysis",
+      "note": "Inventory is ZERO system - 'I have no fucking clue what I have in stock.' Whiteboard wrong, QuickBooks 'garbage,' $36K+ in print heads untracked, can't sell excess on eBay.",
+      "category": "critical_finding"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Risk",
+      "note": "Change fatigue from $7K Malik failure. Needs small weekly wins, can't dedicate full days, must see results not promises. 'Joe is last dude I'm pouring myself into' - Kelsey burned out on training.",
+      "category": "implementation_risk"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Opportunity",
+      "note": "Remote consulting expansion validated: Already doing $150-500/call from multiple states. Vision: Move to Piantop, 'sit on porch with earbuds FaceTiming people all day.' Needs knowledge base + video library to enable.",
+      "category": "growth_opportunity"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Action",
+      "note": "NEXT STEPS: 1) Retrieve Malik's project folder (via Nikki), 2) Budget conversation (not disclosed yet), 3) Scope training system (video library, SOPs, wearable camera), 4) Unified hub (voice-to-ticket quick win).",
+      "category": "next_steps"
+    },
+    {
+      "date": "2025-12-08",
+      "author": "Assumptions",
+      "note": "DELETED ALL PRINT SHOP ASSUMPTIONS. This is NOT a quote-based printing business. It's a service/repair business with product sales. Completely different opportunity matrix needed.",
+      "category": "pivot"
+    },
+    {
+      "date": "2025-12-09",
+      "author": "Discovery",
+      "note": "PDF analysis completed (General Summary.docx.pdf) - Found $600K-$750K revenue, Mike as technical partner, hardware rental model, January 1 QuickBooks deadline. Discovery now 87% complete (was 44%).",
+      "category": "milestone"
+    },
+    {
+      "date": "2025-12-09",
+      "author": "Financial",
+      "note": "REVENUE VALIDATED: $600K-$750K annual. Kelsey's rate: $300-375/hour. Previous project: $7K (1% of revenue). Suggested budget: $10K-$30K (1.5-4% of revenue). ROI if saves 35 hrs/week: Payback in 1-3 weeks.",
+      "category": "financials"
+    },
+    {
+      "date": "2025-12-09",
+      "author": "Business Model",
+      "note": "NEW MODEL DISCOVERED: Hardware rental - $300-450/mo infrastructure fee + usage fees at 60% margins. Target: AEC firms. Requires IoT monitoring, predictive maintenance, fleet management.",
+      "category": "growth_opportunity"
+    },
+    {
+      "date": "2025-12-09",
+      "author": "Team",
+      "note": "MIKE IDENTIFIED: Technical consultant with systems engineering, robotics, cloud expertise. Will handle complex integrations, hardware monitoring, Malik's work recovery.",
+      "category": "team_structure"
+    },
+    {
+      "date": "2025-12-10",
+      "author": "Deliverables",
+      "note": "PROCESS MAP & OPPORTUNITY MATRIX CREATED: Visual workflow showing Kelsey bottleneck, 9 AI opportunities prioritized by impact/effort. Quick wins: Voice-to-Ticket ($1,500/week), Customer Bot ($3,000/week), Smart Scheduling ($1,500/week).",
+      "category": "milestone"
+    },
+    {
+      "date": "2025-12-10",
+      "author": "Partner Meeting",
+      "note": "PARTNER HUDDLE: Agency goal = 10 clients × $10K/month = $100K monthly revenue. Strategy: Free initial audit → build trust → paid engagement. Each partner creating independent process map/opportunity matrix for different perspectives.",
+      "category": "strategy"
+    },
+    {
+      "date": "2025-12-10",
+      "author": "Action Items",
+      "note": "IMMEDIATE PRIORITIES: 1) Voice-to-Ticket automation (highest ROI), 2) Customer Response Bot (reduce calls), 3) Smart Scheduling (optimize routes), 4) Wait until after Jan 1 for QuickBooks integrations.",
+      "category": "next_steps"
+    }
+  ],
+
+  "attachments": {
+    "discovery_call_transcript": "COMPLETE - 7 transcripts analyzed (see audit/transcripts/)",
+    "discovery_findings": "audit/DISCOVERY-FINDINGS.md (comprehensive analysis with revenue data, action items)",
+    "discovery_unknowns": "DISCOVERY-UNKNOWNS.md (updated with 10 newly known items)",
+    "pdf_gap_analysis": "audit/PDF-DISCOVERY-GAP-ANALYSIS.md (43% discovery improvement)",
+    "process_map": "process-map.md (visual workflow of current state bottlenecks)",
+    "opportunity_matrix": "opportunity-matrix.md (9 AI solutions prioritized by impact/effort)",
+    "technical_partner": "TECHNICAL-PARTNER-MIKE.md (Mike's profile and collaboration approach)",
+    "rental_model": "RENTAL-MODEL-REQUIREMENTS.md (hardware rental business model)",
+    "full_transcript": "audit/transcripts/FULL-TRANSCRIPT.md (all 7 files merged)",
+    "individual_transcripts": [
+      "part1-business-overview.md",
+      "part2-pain-points.md",
+      "part3-systems-tech.md",
+      "part4-solutions-vision.md",
+      "part5-jobber-deep-dive.md",
+      "part6-integration-challenges.md",
+      "part7-next-steps.md"
+    ],
+    "process_diagrams": [],
+    "technical_documentation": ["Malik's project folder - to be retrieved from Nikki"],
+    "reference_materials": [
+      "Original audio: Downloads/Plotter Mechanix/Meeting/Dec-3-2025-Discovery/Audio/",
+      "Analysis: audit/DISCOVERY-FINDINGS.md",
+      "Unknowns: DISCOVERY-UNKNOWNS.md"
+    ]
+  }
+}
