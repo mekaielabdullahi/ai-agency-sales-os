@@ -1,0 +1,312 @@
+{
+  "name": "Email Classifier",
+  "nodes": [
+    {
+      "id": "trigger-gmail",
+      "name": "Gmail Trigger",
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0],
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "filters": {}
+      }
+    },
+    {
+      "id": "get-email",
+      "name": "Get Email Details",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [220, 0],
+      "parameters": {
+        "operation": "get",
+        "messageId": "={{ $json.id }}",
+        "simple": false,
+        "options": {}
+      }
+    },
+    {
+      "id": "classify-email",
+      "name": "Classify Email",
+      "type": "@n8n/n8n-nodes-langchain.textClassifier",
+      "typeVersion": 1.1,
+      "position": [440, 0],
+      "parameters": {
+        "inputText": "=From: {{ $json.from.value[0].address }}\nSubject: {{ $json.subject }}\n\nBody:\n{{ $json.text || $json.snippet }}",
+        "categories": {
+          "categories": [
+            {
+              "category": "Marketing",
+              "description": "Promotional emails, newsletters, sales pitches, advertising, product announcements, marketing campaigns, discount offers, brand updates"
+            },
+            {
+              "category": "Expenses",
+              "description": "Receipts, invoices, subscription confirmations, billing statements, payment notifications, order confirmations, subscription renewals, service charges, transaction alerts"
+            },
+            {
+              "category": "Other",
+              "description": "Personal emails, work emails, conversations, questions, anything that is not marketing or expense-related"
+            }
+          ]
+        },
+        "options": {
+          "fallback": "other",
+          "enableAutoFixing": true
+        }
+      }
+    },
+    {
+      "id": "gemini-model",
+      "name": "Google Gemini",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [440, 200],
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {
+          "temperature": 0.1
+        }
+      }
+    },
+    {
+      "id": "route-category",
+      "name": "Route by Category",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [660, 0],
+      "parameters": {
+        "rules": {
+          "rules": [
+            {
+              "outputKey": "Marketing",
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "combinator": "and"
+                },
+                "conditions": [
+                  {
+                    "id": "marketing-condition",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "Marketing",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "outputKey": "Expenses",
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "combinator": "and"
+                },
+                "conditions": [
+                  {
+                    "id": "expenses-condition",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "Expenses",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      }
+    },
+    {
+      "id": "label-marketing",
+      "name": "Add Marketing Label",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [900, -100],
+      "parameters": {
+        "operation": "addLabels",
+        "messageId": "={{ $('Get Email Details').item.json.id }}",
+        "labelIds": ["REPLACE_WITH_MARKETING_LABEL_ID"]
+      }
+    },
+    {
+      "id": "label-expenses",
+      "name": "Add Expenses Label",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [900, 100],
+      "parameters": {
+        "operation": "addLabels",
+        "messageId": "={{ $('Get Email Details').item.json.id }}",
+        "labelIds": ["REPLACE_WITH_EXPENSES_LABEL_ID"]
+      }
+    },
+    {
+      "id": "log-marketing",
+      "name": "Log Marketing Email",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [1120, -100],
+      "parameters": {
+        "operation": "insert",
+        "dataTableId": {
+          "mode": "id",
+          "value": "REPLACE_WITH_DATA_TABLE_ID"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "email_id": "={{ $('Get Email Details').item.json.id }}",
+            "from_address": "={{ $('Get Email Details').item.json.from.value[0].address }}",
+            "from_name": "={{ $('Get Email Details').item.json.from.value[0].name || '' }}",
+            "subject": "={{ $('Get Email Details').item.json.subject }}",
+            "category": "Marketing",
+            "classified_at": "={{ $now.toISO() }}"
+          }
+        }
+      }
+    },
+    {
+      "id": "log-expenses",
+      "name": "Log Expenses Email",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [1120, 100],
+      "parameters": {
+        "operation": "insert",
+        "dataTableId": {
+          "mode": "id",
+          "value": "REPLACE_WITH_DATA_TABLE_ID"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "email_id": "={{ $('Get Email Details').item.json.id }}",
+            "from_address": "={{ $('Get Email Details').item.json.from.value[0].address }}",
+            "from_name": "={{ $('Get Email Details').item.json.from.value[0].name || '' }}",
+            "subject": "={{ $('Get Email Details').item.json.subject }}",
+            "category": "Expenses",
+            "classified_at": "={{ $now.toISO() }}"
+          }
+        }
+      }
+    },
+    {
+      "id": "no-action",
+      "name": "No Action (Other)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [900, 300],
+      "parameters": {}
+    }
+  ],
+  "connections": {
+    "Gmail Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get Email Details",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Email Details": {
+      "main": [
+        [
+          {
+            "node": "Classify Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Classify Email",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Classify Email": {
+      "main": [
+        [
+          {
+            "node": "Route by Category",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route by Category": {
+      "main": [
+        [
+          {
+            "node": "Add Marketing Label",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Add Expenses Label",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Action (Other)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add Marketing Label": {
+      "main": [
+        [
+          {
+            "node": "Log Marketing Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add Expenses Label": {
+      "main": [
+        [
+          {
+            "node": "Log Expenses Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

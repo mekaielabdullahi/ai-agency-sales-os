@@ -1,0 +1,22 @@
+# Python dependencies for Agentic Workspaces
+# Install with: pip install -r requirements.txt
+
+# Core
+python-dotenv
+requests
+PyYAML
+
+# Google APIs (md-export, proposal)
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+
+# OpenAI (diagrams, sop)
+openai
+
+# Apify (leads)
+apify-client
+
+# Slack (slack, client-onboarding)
+slack-sdk

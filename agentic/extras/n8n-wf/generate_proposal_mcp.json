@@ -1,0 +1,434 @@
+{
+  "name": "AI Proposal Generator - MCP",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "sales-tools"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 1,
+      "position": [0, 0],
+      "id": "mcp-trigger-001",
+      "name": "MCP Server Trigger",
+      "webhookId": "generate-proposal-mcp"
+    },
+    {
+      "parameters": {
+        "name": "generate_proposal",
+        "description": "Generate a sales proposal presentation from prospect information. Provide company name, problem statement, proposed solution, and timeline. Returns a Google Slides URL with the completed proposal.",
+        "workflowId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $workflow.id }}"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "company_name": "={{ $fromAI('company_name', 'The prospect company name', 'string') }}",
+            "problem": "={{ $fromAI('problem', 'The problem or challenge the company is facing', 'string') }}",
+            "solution": "={{ $fromAI('solution', 'The proposed solution approach', 'string') }}",
+            "days": "={{ $fromAI('days', 'Project timeline in days (number)', 'number') }}"
+          },
+          "schema": [
+            {
+              "id": "company_name",
+              "type": "string",
+              "display": true,
+              "required": true,
+              "displayName": "company_name",
+              "defaultMatch": false,
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "problem",
+              "type": "string",
+              "display": true,
+              "required": true,
+              "displayName": "problem",
+              "defaultMatch": false,
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "solution",
+              "type": "string",
+              "display": true,
+              "required": true,
+              "displayName": "solution",
+              "defaultMatch": false,
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "days",
+              "type": "number",
+              "display": true,
+              "required": true,
+              "displayName": "days",
+              "defaultMatch": false,
+              "canBeUsedToMatch": true
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.1,
+      "position": [220, 0],
+      "id": "tool-workflow-001",
+      "name": "Generate Proposal Tool"
+    },
+    {
+      "parameters": {
+        "name": "log_sales_interaction",
+        "description": "Log a sales interaction (call, email, or meeting) to HubSpot CRM. Describe the interaction including contact name, type (call/email/meeting), and what was discussed. The agent will search for the contact, create the appropriate engagement, and optionally create follow-up tasks.",
+        "workflowId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "NxKzsALvX50XqaXw"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "message": "={{ $fromAI('message', 'Natural language description of the sales interaction (e.g., Just had a 30 minute call with Jane Smith about the Q4 deal)', 'string') }}"
+          },
+          "schema": [
+            {
+              "id": "message",
+              "type": "string",
+              "display": true,
+              "required": true,
+              "displayName": "message",
+              "defaultMatch": false,
+              "canBeUsedToMatch": true
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.1,
+      "position": [220, 140],
+      "id": "tool-workflow-002",
+      "name": "Sales Interaction Tool"
+    },
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "company_name",
+              "type": "string"
+            },
+            {
+              "name": "problem",
+              "type": "string"
+            },
+            {
+              "name": "solution",
+              "type": "string"
+            },
+            {
+              "name": "days",
+              "type": "number"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 300],
+      "id": "subworkflow-trigger-001",
+      "name": "When Called By Tool"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=Please generate a proposal using this Input from a user form:\n{\n\"company_name\": \"{{ $json.company_name }}\",\n\"problem\": \"{{ $json.problem }}\",\n\"solution\": \"{{ $json.solution }}\",\n\"days\": \"{{ $json.days }}\"\n}"
+            },
+            {
+              "content": "Your task is to generate a proposal using input data from a form . This proposal should be highly customized, specific, and high-quality considering we're going to be sending it immediately after you're done. The proposal template we're using has many fields. \nYou must return these fields in one JSON object. \nBelow is an example, but you need to generate the fields from the user provided content.\n{\n\"proposal_title\": \"Generative AI Workflow Acceleration\",\n\"proposal_subtitle\": \"Low-Code/No-Code Solutions for Immediate Impact\",\n\"overview\": \"Strategic proposal for rapid LLM integration using low-code tools. Solves bottlenecks immediately through intelligent workflows, delivering fast, high-value results.\",\n\"problem1\": \"Manual Content & Communication Tasks\",\n\"problem2\": \"Delayed Information Synthesis\",\n\"problem3\": \"Inconsistent Internal Knowledge\",\n\"problem4\": \"Unoptimized Resource Use\",\n\"objective\": \"Integrate LLM APIs into 4 key workflows, achieving 60% task automation and 4X content acceleration within 60 days.\",\n\"proposed_solution\": \"Rapid, two-phase integration using low-code platforms to connect existing apps directly to commercial LLM APIs.\",\n\"process_step1_title\": \"1. Discovery & Setup\",\n\"process_step1_desc\": \"Identify 4 highest-value workflows. Set up the low-code environment and secure API access.\",\n\"process_step2_title\": \"2. Design & Integration\",\n\"process_step2_desc\": \"Design and build the LLM-powered automation pipelines. Test and validate output quality.\",\n\"process_step3_title\": \"3. Deployment & Training\",\n\"process_step3_desc\": \"Deploy integrated workflows to production. Provide training for users and documentation.\",\n\"deliverables\": \"4 fully automated, LLM-powered workflows, complete low-code documentation, secure API integration, and user training materials.\",\n\"benefit_metric1_title\": \"Content Speed\",\n\"benefit_metric1_value\": \"4x\",\n\"benefit_metric1_desc\": \"Target increase in speed for drafting, summarizing, and translating documents.\",\n\"benefit_metric2_title\": \"Task Automation\",\n\"benefit_metric2_value\": \"60%\",\n\"benefit_metric2_desc\": \"Percentage of manual effort eliminated from the four targeted workflows.\",\n\"benefit_metric3_title\": \"Time-to-Value\",\n\"benefit_metric3_value\": \"45\",\n\"benefit_metric3_desc\": \"Days from project kick-off to full production deployment and realized benefit.\"\n}\nRules:\n1. Use a spartan, casual tone of voice. \n2. Be to the point but professional. Assume you're writing to a sophisticated audience. \n3. All fields inside the JSON object must be filled out. Please do not miss a field. Don't leave any of them blank either. \n4. The Metric values need to be a number, units are optional but reserve only 1-2ch for units. Maximum of 6 characters for this field.\n5. Expand the Overview section to 2-3 sentences.\n6. Expand the Deliverables to 2-3 sentences.",
+              "role": "model"
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [220, 300],
+      "id": "gemini-001",
+      "name": "Generate Proposal JSON",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "RmPMuQbrtizDZqAX",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ JSON.parse($json.content.parts[0].text) }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [440, 300],
+      "id": "parse-json-001",
+      "name": "Parse to JSON"
+    },
+    {
+      "parameters": {
+        "operation": "copy",
+        "fileId": {
+          "__rl": true,
+          "value": "1ANPY3KX5c-G4ZFzsD5dMN3qACKYf8ZXlE7755KqCjF0",
+          "mode": "list",
+          "cachedResultName": "Proposal Template",
+          "cachedResultUrl": "https://docs.google.com/presentation/d/1ANPY3KX5c-G4ZFzsD5dMN3qACKYf8ZXlE7755KqCjF0/edit?usp=drivesdk"
+        },
+        "name": "={{ $json.proposal_title }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [660, 300],
+      "id": "google-drive-001",
+      "name": "Copy Template",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "T4IdmcEUFffo3uLy",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "replaceText",
+        "presentationId": "={{ $json.id }}",
+        "textUi": {
+          "textValues": [
+            {
+              "text": "{{proposal_title}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.proposal_title }}"
+            },
+            {
+              "text": "{{proposal_subtitle}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.proposal_subtitle }}"
+            },
+            {
+              "text": "{{overview}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.overview }}"
+            },
+            {
+              "text": "{{problem1}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.problem1 }}"
+            },
+            {
+              "text": "{{problem2}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.problem2 }}"
+            },
+            {
+              "text": "{{problem3}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.problem3 }}"
+            },
+            {
+              "text": "{{problem4}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.problem4 }}"
+            },
+            {
+              "text": "{{objective}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.objective }}"
+            },
+            {
+              "text": "{{proposed_solution}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.proposed_solution }}"
+            },
+            {
+              "text": "{{process_step1_title}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.process_step1_title }}"
+            },
+            {
+              "text": "{{process_step1_desc}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.process_step1_desc }}"
+            },
+            {
+              "text": "{{process_step2_title}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.process_step2_title }}"
+            },
+            {
+              "text": "{{process_step2_desc}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.process_step2_desc }}"
+            },
+            {
+              "text": "{{process_step3_title}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.process_step3_title }}"
+            },
+            {
+              "text": "{{process_step3_desc}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.process_step3_desc }}"
+            },
+            {
+              "text": "{{deliverables}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.deliverables }}"
+            },
+            {
+              "text": "{{benefit_metric1_title}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric1_title }}"
+            },
+            {
+              "text": "{{benefit_metric1_value}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric1_value }}"
+            },
+            {
+              "text": "{{benefit_metric1_desc}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric1_desc }}"
+            },
+            {
+              "text": "{{benefit_metric2_title}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric2_title }}"
+            },
+            {
+              "text": "{{benefit_metric2_value}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric2_value }}"
+            },
+            {
+              "text": "{{benefit_metric2_desc}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric2_desc }}"
+            },
+            {
+              "text": "{{benefit_metric3_title}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric3_title }}"
+            },
+            {
+              "text": "{{benefit_metric3_value}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric3_value }}"
+            },
+            {
+              "text": "{{benefit_metric3_desc}}",
+              "replaceText": "={{ $('Parse to JSON').item.json.benefit_metric3_desc }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSlides",
+      "typeVersion": 2,
+      "position": [880, 300],
+      "id": "google-slides-001",
+      "name": "Replace Text",
+      "credentials": {
+        "googleSlidesOAuth2Api": {
+          "id": "yDluZM3CozPcNXFQ",
+          "name": "Google Slides account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"result\": \"Proposal created successfully for {{ $('Parse to JSON').item.json.proposal_title }}\",\n  \"proposal_url\": \"https://docs.google.com/presentation/d/{{ $('Copy Template').item.json.id }}/edit\",\n  \"proposal_title\": \"{{ $('Parse to JSON').item.json.proposal_title }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1100, 300],
+      "id": "format-result-001",
+      "name": "Format Result"
+    }
+  ],
+  "connections": {
+    "Generate Proposal Tool": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sales Interaction Tool": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Called By Tool": {
+      "main": [
+        [
+          {
+            "node": "Generate Proposal JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Proposal JSON": {
+      "main": [
+        [
+          {
+            "node": "Parse to JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse to JSON": {
+      "main": [
+        [
+          {
+            "node": "Copy Template",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Copy Template": {
+      "main": [
+        [
+          {
+            "node": "Replace Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Text": {
+      "main": [
+        [
+          {
+            "node": "Format Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "tags": []
+}

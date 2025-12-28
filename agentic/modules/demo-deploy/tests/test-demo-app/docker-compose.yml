@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    networks:
+      - dokploy-network
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+
+networks:
+  dokploy-network:
+    external: true

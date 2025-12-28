@@ -1,0 +1,41 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: infrastructure
+version: 1.0.0
+description: Manage team infrastructure with Cloudflare DNS/tunnels and Dokploy containers
+
+type: bundled
+
+files:
+  tools:
+    - tool/cloudflare_api.py
+    - tool/dokploy_api.py
+  runbooks:
+    - runbook/team_infrastructure.md
+  commands:
+    - commands/dns-list.md
+    - commands/tunnel-status.md
+    - commands/sandbox-add.md
+    - commands/sandbox-remove.md
+
+requires: []
+
+python_requires:
+  - python-dotenv
+  - requests
+
+env_vars:
+  - CLOUDFLARE_API_TOKEN
+  - CLOUDFLARE_ACCOUNT_ID
+  - DOKPLOY_URL
+  - DOKPLOY_API_KEY
+
+mcp_servers:
+  dokploy:
+    package: "@trentbrew/dokploy-mcp"
+    command: npx
+    args: ["-y", "@trentbrew/dokploy-mcp"]
+    env:
+      DOKPLOY_API_URL: "${DOKPLOY_URL}"
+      DOKPLOY_API_TOKEN: "${DOKPLOY_API_KEY}"

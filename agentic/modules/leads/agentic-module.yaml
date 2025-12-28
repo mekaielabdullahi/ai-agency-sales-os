@@ -1,0 +1,30 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: leads
+version: 1.0.0
+description: Scrape and verify sales leads via Apify, upload to Google Sheets
+
+type: bundled
+
+files:
+  tools:
+    - tool/scrape_leads.py
+    - tool/verify_leads.py
+    - tool/update_sheets.py
+  runbooks:
+    - runbook/scrape_leads.md
+  commands:
+    - commands/scrape-leads.md
+
+requires: []
+
+python_requires:
+  - python-dotenv
+  - apify-client
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
+
+env_vars:
+  - APIFY_TOKEN

@@ -1,0 +1,788 @@
+{
+  "name": "Client Onboarding Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "slack-onboarding",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Slack Events Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "slack-onboarding"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ JSON.parse($json.body.payload || '{}') }}",
+        "options": {}
+      },
+      "id": "parse-payload",
+      "name": "Parse Slack Payload",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.type }}",
+                    "rightValue": "url_verification",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "URL Verification"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.type }}",
+                    "rightValue": "block_actions",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Button Click"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.type }}",
+                    "rightValue": "view_submission",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Modal Submit"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "route-event",
+      "name": "Route Event Type",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.challenge }}",
+        "options": {}
+      },
+      "id": "url-verify-response",
+      "name": "URL Verification Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [660, 100]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://slack.com/api/views.open",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "slackApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"trigger_id\": \"{{ $json.trigger_id }}\",\n  \"view\": {\n    \"type\": \"modal\",\n    \"callback_id\": \"client_onboarding_modal\",\n    \"title\": {\n      \"type\": \"plain_text\",\n      \"text\": \"New Client Onboarding\"\n    },\n    \"submit\": {\n      \"type\": \"plain_text\",\n      \"text\": \"Create Channels\"\n    },\n    \"close\": {\n      \"type\": \"plain_text\",\n      \"text\": \"Cancel\"\n    },\n    \"blocks\": [\n      {\n        \"type\": \"input\",\n        \"block_id\": \"client_slug_block\",\n        \"element\": {\n          \"type\": \"plain_text_input\",\n          \"action_id\": \"client_slug\",\n          \"placeholder\": {\n            \"type\": \"plain_text\",\n            \"text\": \"acme\"\n          }\n        },\n        \"label\": {\n          \"type\": \"plain_text\",\n          \"text\": \"Client Slug (channel name)\"\n        },\n        \"hint\": {\n          \"type\": \"plain_text\",\n          \"text\": \"Lowercase, no spaces. Used for #clientname and #clientname-internal\"\n        }\n      },\n      {\n        \"type\": \"input\",\n        \"block_id\": \"display_name_block\",\n        \"element\": {\n          \"type\": \"plain_text_input\",\n          \"action_id\": \"display_name\",\n          \"placeholder\": {\n            \"type\": \"plain_text\",\n            \"text\": \"Acme Corporation\"\n          }\n        },\n        \"label\": {\n          \"type\": \"plain_text\",\n          \"text\": \"Display Name\"\n        },\n        \"hint\": {\n          \"type\": \"plain_text\",\n          \"text\": \"Human-readable name for the client\"\n        }\n      },\n      {\n        \"type\": \"input\",\n        \"block_id\": \"client_email_block\",\n        \"element\": {\n          \"type\": \"email_text_input\",\n          \"action_id\": \"client_email\",\n          \"placeholder\": {\n            \"type\": \"plain_text\",\n            \"text\": \"contact@acme.com\"\n          }\n        },\n        \"label\": {\n          \"type\": \"plain_text\",\n          \"text\": \"Client Email\"\n        },\n        \"hint\": {\n          \"type\": \"plain_text\",\n          \"text\": \"Welcome email will be sent to this address\"\n        }\n      }\n    ]\n  }\n}",
+        "options": {}
+      },
+      "id": "open-modal",
+      "name": "Open Onboarding Modal",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [660, 300],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {}
+      },
+      "id": "button-ack",
+      "name": "Acknowledge Button",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {}
+      },
+      "id": "modal-ack",
+      "name": "Acknowledge Modal",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [660, 500]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"client_slug\": \"{{ $json.view.state.values.client_slug_block.client_slug.value.toLowerCase().replace(/\\s+/g, '-').replace(/[^a-z0-9-]/g, '') }}\",\n  \"display_name\": \"{{ $json.view.state.values.display_name_block.display_name.value }}\",\n  \"client_email\": \"{{ $json.view.state.values.client_email_block.client_email.value }}\",\n  \"user_id\": \"{{ $json.user.id }}\",\n  \"user_name\": \"{{ $json.user.name }}\",\n  \"today\": \"{{ $now.format('yyyy-MM-dd') }}\"\n}",
+        "options": {}
+      },
+      "id": "extract-form-data",
+      "name": "Extract Form Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [880, 500]
+    },
+    {
+      "parameters": {
+        "resource": "channel",
+        "operation": "create",
+        "channelId": "={{ $json.client_slug }}",
+        "channelVisibility": "public",
+        "options": {}
+      },
+      "id": "create-client-channel",
+      "name": "Create Client Channel",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [1100, 500],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"client_slug\": \"{{ $('Extract Form Data').item.json.client_slug }}\",\n  \"display_name\": \"{{ $('Extract Form Data').item.json.display_name }}\",\n  \"client_email\": \"{{ $('Extract Form Data').item.json.client_email }}\",\n  \"user_id\": \"{{ $('Extract Form Data').item.json.user_id }}\",\n  \"user_name\": \"{{ $('Extract Form Data').item.json.user_name }}\",\n  \"today\": \"{{ $('Extract Form Data').item.json.today }}\",\n  \"client_channel_id\": \"{{ $json.channel.id }}\",\n  \"client_channel_name\": \"{{ $json.channel.name }}\"\n}",
+        "options": {}
+      },
+      "id": "store-client-channel",
+      "name": "Store Client Channel ID",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1320, 500]
+    },
+    {
+      "parameters": {
+        "resource": "channel",
+        "operation": "create",
+        "channelId": "={{ $json.client_slug }}-internal",
+        "channelVisibility": "public",
+        "options": {}
+      },
+      "id": "create-internal-channel",
+      "name": "Create Internal Channel",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [1540, 500],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"client_slug\": \"{{ $('Store Client Channel ID').item.json.client_slug }}\",\n  \"display_name\": \"{{ $('Store Client Channel ID').item.json.display_name }}\",\n  \"client_email\": \"{{ $('Store Client Channel ID').item.json.client_email }}\",\n  \"user_id\": \"{{ $('Store Client Channel ID').item.json.user_id }}\",\n  \"user_name\": \"{{ $('Store Client Channel ID').item.json.user_name }}\",\n  \"today\": \"{{ $('Store Client Channel ID').item.json.today }}\",\n  \"client_channel_id\": \"{{ $('Store Client Channel ID').item.json.client_channel_id }}\",\n  \"client_channel_name\": \"{{ $('Store Client Channel ID').item.json.client_channel_name }}\",\n  \"internal_channel_id\": \"{{ $json.channel.id }}\",\n  \"internal_channel_name\": \"{{ $json.channel.name }}\"\n}",
+        "options": {}
+      },
+      "id": "store-internal-channel",
+      "name": "Store Internal Channel ID",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1760, 500]
+    },
+    {
+      "parameters": {
+        "resource": "channel",
+        "operation": "setPurpose",
+        "channelId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.client_channel_id }}"
+        },
+        "purpose": "=Client communications with {{ $json.display_name }}. Guests welcome."
+      },
+      "id": "set-client-purpose",
+      "name": "Set Client Channel Purpose",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [1980, 400],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "channel",
+        "operation": "setPurpose",
+        "channelId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.internal_channel_id }}"
+        },
+        "purpose": "=Internal discussions about {{ $json.display_name }}. No clients."
+      },
+      "id": "set-internal-purpose",
+      "name": "Set Internal Channel Purpose",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [1980, 600],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://slack.com/api/conversations.canvases.create",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "slackApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"channel_id\": \"{{ $('Store Internal Channel ID').item.json.client_channel_id }}\",\n  \"document_content\": {\n    \"type\": \"markdown\",\n    \"markdown\": \"# {{ $('Store Internal Channel ID').item.json.display_name }}\\n\\n## Quick Links\\n- [ ] Add project management link\\n- [ ] Add shared drive link\\n- [ ] Add contract/SOW link\\n\\n## Team\\n| Role | Person |\\n|------|--------|\\n| Account Lead | TBD |\\n| Technical Lead | TBD |\\n\\n## Key Dates\\n| Milestone | Date |\\n|-----------|------|\\n| Kickoff | {{ $('Store Internal Channel ID').item.json.today }} |\\n| Phase 1 | TBD |\\n\\n## Notes\\n_Add important notes here_\"\n  }\n}",
+        "options": {}
+      },
+      "id": "create-canvas",
+      "name": "Create Canvas",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2200, 500],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://slack.com/api/conversations.history",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "slackApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"channel\": \"{{ $('Store Internal Channel ID').item.json.client_channel_id }}\",\n  \"limit\": 100\n}",
+        "options": {}
+      },
+      "id": "get-client-messages",
+      "name": "Get Client Channel Messages",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2420, 400],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://slack.com/api/conversations.history",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "slackApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"channel\": \"{{ $('Store Internal Channel ID').item.json.internal_channel_id }}\",\n  \"limit\": 100\n}",
+        "options": {}
+      },
+      "id": "get-internal-messages",
+      "name": "Get Internal Channel Messages",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2420, 600],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get messages from both channels and delete them using user token\nconst clientMessages = $('Get Client Channel Messages').first().json.messages || [];\nconst internalMessages = $('Get Internal Channel Messages').first().json.messages || [];\nconst formData = $('Store Internal Channel ID').first().json;\n\nconst messagesToDelete = [];\n\n// Collect client channel messages\nfor (const msg of clientMessages) {\n  if (msg.ts) {\n    messagesToDelete.push({\n      channel: formData.client_channel_id,\n      ts: msg.ts\n    });\n  }\n}\n\n// Collect internal channel messages\nfor (const msg of internalMessages) {\n  if (msg.ts) {\n    messagesToDelete.push({\n      channel: formData.internal_channel_id,\n      ts: msg.ts\n    });\n  }\n}\n\n// Return all messages to delete, plus the form data\nreturn [{\n  json: {\n    ...formData,\n    messagesToDelete\n  }\n}];"
+      },
+      "id": "collect-messages",
+      "name": "Collect Messages to Delete",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2640, 500]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Delete messages one by one using user token\nconst data = $input.first().json;\nconst userToken = $env.SLACK_USER_TOKEN;\n\nlet deletedCount = 0;\nlet errors = [];\n\nfor (const msg of data.messagesToDelete) {\n  try {\n    const response = await fetch('https://slack.com/api/chat.delete', {\n      method: 'POST',\n      headers: {\n        'Authorization': `Bearer ${userToken}`,\n        'Content-Type': 'application/json'\n      },\n      body: JSON.stringify({\n        channel: msg.channel,\n        ts: msg.ts\n      })\n    });\n    const result = await response.json();\n    if (result.ok) {\n      deletedCount++;\n    } else {\n      errors.push(`${msg.channel}:${msg.ts} - ${result.error}`);\n    }\n  } catch (err) {\n    errors.push(`${msg.channel}:${msg.ts} - ${err.message}`);\n  }\n}\n\n// Return data for next nodes\nreturn [{\n  json: {\n    client_slug: data.client_slug,\n    display_name: data.display_name,\n    client_email: data.client_email,\n    user_id: data.user_id,\n    user_name: data.user_name,\n    today: data.today,\n    client_channel_id: data.client_channel_id,\n    client_channel_name: data.client_channel_name,\n    internal_channel_id: data.internal_channel_id,\n    internal_channel_name: data.internal_channel_name,\n    deletedMessages: deletedCount,\n    deleteErrors: errors\n  }\n}];"
+      },
+      "id": "delete-messages",
+      "name": "Delete System Messages",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2860, 500]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.client_channel_id }}"
+        },
+        "text": "=Welcome to the {{ $json.display_name }} channel! :wave:\n\nCheck out the *canvas* above :point_up: for project info, key links, and team contacts.\n\nWe're excited to work with you!",
+        "otherOptions": {}
+      },
+      "id": "post-welcome",
+      "name": "Post Welcome Message",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [3080, 500],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "new-client"
+        },
+        "messageType": "block",
+        "blocksUi": "={\n  \"blocks\": [\n    {\n      \"type\": \"section\",\n      \"text\": {\n        \"type\": \"mrkdwn\",\n        \"text\": \":white_check_mark: *New client channels created!*\"\n      }\n    },\n    {\n      \"type\": \"section\",\n      \"fields\": [\n        {\n          \"type\": \"mrkdwn\",\n          \"text\": \"*Client:*\\n{{ $json.display_name }}\"\n        },\n        {\n          \"type\": \"mrkdwn\",\n          \"text\": \"*Created by:*\\n<@{{ $json.user_id }}>\"\n        }\n      ]\n    },\n    {\n      \"type\": \"section\",\n      \"text\": {\n        \"type\": \"mrkdwn\",\n        \"text\": \":speech_balloon: <#{{ $json.client_channel_id }}> - Client communications\\n:lock: <#{{ $json.internal_channel_id }}> - Internal discussions\"\n      }\n    },\n    {\n      \"type\": \"context\",\n      \"elements\": [\n        {\n          \"type\": \"mrkdwn\",\n          \"text\": \"Welcome email will be sent to {{ $json.client_email }}\"\n        }\n      ]\n    }\n  ]\n}",
+        "otherOptions": {}
+      },
+      "id": "notify-team",
+      "name": "Notify Team",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [3300, 500],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nconst workspaceId = $env.SLACK_WORKSPACE_ID || 'T9521548270103';\n\n// Generate Slack channel invite link\nconst inviteLink = `https://slack.com/app_redirect?team=${workspaceId}&channel=${data.client_channel_id}`;\n\nreturn [{\n  json: {\n    ...data,\n    inviteLink\n  }\n}];"
+      },
+      "id": "generate-invite-link",
+      "name": "Generate Invite Link",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3520, 500]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Load email template from GitHub raw URL and render with data\nconst data = $input.first().json;\n\n// Template URL - update this to your raw GitHub URL after pushing\nconst templateUrl = $env.EMAIL_TEMPLATE_URL || 'https://raw.githubusercontent.com/your-repo/main/templates/client_welcome_email.html';\n\nlet template;\ntry {\n  const response = await fetch(templateUrl);\n  if (!response.ok) {\n    throw new Error(`Failed to fetch template: ${response.status}`);\n  }\n  template = await response.text();\n} catch (err) {\n  // Fallback to inline template if fetch fails\n  template = `<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; padding: 20px; }\n    .header { background: #4A154B; color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center; }\n    .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 8px 8px; }\n    .button { display: inline-block; background: #4A154B; color: white !important; padding: 12px 24px;\n              text-decoration: none; border-radius: 4px; margin: 20px 0; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; text-align: center; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>Welcome to {{display_name}}!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hi there,</p>\n      <p>We're excited to have you on board! We've set up a dedicated Slack channel for our collaboration.</p>\n      <p>Click the button below to join the <strong>#{{client_slug}}</strong> channel:</p>\n      <p style=\"text-align: center;\">\n        <a href=\"{{inviteLink}}\" class=\"button\">Join Slack Channel</a>\n      </p>\n      <p>In the channel, you'll find:</p>\n      <ul>\n        <li>A canvas with project links and key information</li>\n        <li>Direct access to our team</li>\n        <li>Updates and discussions about our work together</li>\n      </ul>\n      <p>Looking forward to working with you!</p>\n      <div class=\"footer\">\n        <p>If you have any trouble accessing Slack, please reply to this email.</p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>`;\n}\n\n// Replace placeholders with actual values\nconst emailHtml = template\n  .replace(/\\{\\{display_name\\}\\}/g, data.display_name)\n  .replace(/\\{\\{client_slug\\}\\}/g, data.client_slug)\n  .replace(/\\{\\{inviteLink\\}\\}/g, data.inviteLink);\n\nreturn [{\n  json: {\n    ...data,\n    emailHtml\n  }\n}];"
+      },
+      "id": "load-email-template",
+      "name": "Load Email Template",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3740, 500]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "sendTo": "={{ $json.client_email }}",
+        "subject": "=Welcome to {{ $json.display_name }} on Slack!",
+        "emailType": "html",
+        "message": "={{ $json.emailHtml }}",
+        "options": {}
+      },
+      "id": "send-welcome-email",
+      "name": "Send Welcome Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [3960, 500],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail-oauth-cred",
+          "name": "Gmail OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "new-client"
+        },
+        "messageType": "block",
+        "blocksUi": "={\n  \"blocks\": [\n    {\n      \"type\": \"section\",\n      \"text\": {\n        \"type\": \"mrkdwn\",\n        \"text\": \":rocket: *Start New Client Onboarding*\\n\\nClick the button below to set up channels for a new client.\"\n      }\n    },\n    {\n      \"type\": \"actions\",\n      \"elements\": [\n        {\n          \"type\": \"button\",\n          \"text\": {\n            \"type\": \"plain_text\",\n            \"text\": \"Onboard New Client\",\n            \"emoji\": true\n          },\n          \"style\": \"primary\",\n          \"action_id\": \"start_onboarding\"\n        }\n      ]\n    }\n  ]\n}",
+        "otherOptions": {}
+      },
+      "id": "trigger-message",
+      "name": "Post Trigger Message (Manual)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [0, 600],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [-220, 600]
+    },
+    {
+      "parameters": {
+        "content": "## Client Onboarding Workflow\n\nThis workflow automates new client channel setup:\n\n1. **Trigger**: Post in #new-client or click \"Onboard New Client\" button\n2. **Form**: Modal collects client slug, display name, and email\n3. **Channels**: Creates #clientname and #clientname-internal\n4. **Setup**: Creates canvas, clears system messages, posts welcome\n5. **Notify**: Posts success message to #new-client\n6. **Email**: Sends welcome email with Slack invite link\n\n### Setup Required:\n- Configure Slack API credentials\n- Configure Gmail OAuth2 credentials\n- Set SLACK_USER_TOKEN environment variable (for message deletion)\n- Set SLACK_WORKSPACE_ID environment variable (for invite links)\n- Configure Slack app with Interactivity URL pointing to this webhook",
+        "width": 400,
+        "height": 340
+      },
+      "id": "sticky-note",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-220, -100]
+    }
+  ],
+  "connections": {
+    "Slack Events Webhook": {
+      "main": [
+        [
+          {
+            "node": "Parse Slack Payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Slack Payload": {
+      "main": [
+        [
+          {
+            "node": "Route Event Type",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route Event Type": {
+      "main": [
+        [
+          {
+            "node": "URL Verification Response",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Open Onboarding Modal",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Acknowledge Modal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Open Onboarding Modal": {
+      "main": [
+        [
+          {
+            "node": "Acknowledge Button",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Acknowledge Modal": {
+      "main": [
+        [
+          {
+            "node": "Extract Form Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Form Data": {
+      "main": [
+        [
+          {
+            "node": "Create Client Channel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Client Channel": {
+      "main": [
+        [
+          {
+            "node": "Store Client Channel ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Client Channel ID": {
+      "main": [
+        [
+          {
+            "node": "Create Internal Channel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Internal Channel": {
+      "main": [
+        [
+          {
+            "node": "Store Internal Channel ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Internal Channel ID": {
+      "main": [
+        [
+          {
+            "node": "Set Client Channel Purpose",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Set Internal Channel Purpose",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Client Channel Purpose": {
+      "main": [
+        [
+          {
+            "node": "Create Canvas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Canvas": {
+      "main": [
+        [
+          {
+            "node": "Get Client Channel Messages",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Get Internal Channel Messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Client Channel Messages": {
+      "main": [
+        [
+          {
+            "node": "Collect Messages to Delete",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Internal Channel Messages": {
+      "main": [
+        [
+          {
+            "node": "Collect Messages to Delete",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Collect Messages to Delete": {
+      "main": [
+        [
+          {
+            "node": "Delete System Messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete System Messages": {
+      "main": [
+        [
+          {
+            "node": "Post Welcome Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post Welcome Message": {
+      "main": [
+        [
+          {
+            "node": "Notify Team",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notify Team": {
+      "main": [
+        [
+          {
+            "node": "Generate Invite Link",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Invite Link": {
+      "main": [
+        [
+          {
+            "node": "Load Email Template",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Load Email Template": {
+      "main": [
+        [
+          {
+            "node": "Send Welcome Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Post Trigger Message (Manual)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

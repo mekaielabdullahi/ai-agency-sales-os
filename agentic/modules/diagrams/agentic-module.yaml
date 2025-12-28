@@ -1,0 +1,33 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: diagrams
+version: 1.0.0
+description: Generate diagrams in Draw.io, Mermaid, and ASCII formats from JSON or natural language
+
+type: bundled
+
+files:
+  tools:
+    - tool/generate_drawio.py
+    - tool/generate_mermaid.py
+    - tool/migrate_ascii_to_mermaid.py
+  runbooks:
+    - runbook/generate_diagram.md
+  commands:
+    - commands/diagram.md
+    - commands/drawio.md
+    - commands/mermaid.md
+    - commands/migrate-ascii.md
+  templates:
+    - templates/flowchart_simple.json
+    - templates/swimlane_process.json
+
+requires: []
+
+python_requires:
+  - python-dotenv>=1.0.0
+  - openai>=1.0.0
+
+env_vars:
+  - OPENAI_API_KEY

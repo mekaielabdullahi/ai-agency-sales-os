@@ -1,0 +1,29 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: slack
+version: 1.0.0
+description: Slack channel and message management - create channels, retrieve messages, manage pins, canvases, and user groups
+
+# Module type: bundled = tool + runbook + commands together
+type: bundled
+
+# Files to install (relative paths in this repo -> workspace locations)
+files:
+  tool: tool/slack_api.py
+  runbook: runbook/slack_management.md
+  commands:
+    - commands/slack.md
+
+# Dependencies on other modules (checked but not auto-installed)
+requires: []
+
+# Python package dependencies (merged into workspace requirements.txt)
+python_requires:
+  - slack_sdk>=3.0
+  - python-dotenv
+
+# Environment variables required (added to .env.example)
+env_vars:
+  - SLACK_BOT_TOKEN
+  - SLACK_USER_TOKEN

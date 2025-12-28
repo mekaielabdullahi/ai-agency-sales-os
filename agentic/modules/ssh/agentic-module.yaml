@@ -1,0 +1,24 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: ssh
+version: 1.0.0
+description: Execute commands and transfer files on remote servers via SSH/SFTP
+
+type: bundled
+
+files:
+  tools:
+    - tool/ssh_client.py
+  runbooks:
+    - runbook/ssh.md
+
+requires: []
+
+python_requires:
+  - python-dotenv
+  - paramiko
+
+env_vars:
+  - SSH_KEY_PATH
+  - SSH_PASSWORD

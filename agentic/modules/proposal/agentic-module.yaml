@@ -1,0 +1,27 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: proposal
+version: 1.0.0
+description: Generate sales proposals and create Google Slides presentations from templates
+
+type: bundled
+
+files:
+  tools:
+    - tool/generate_proposal.py
+    - tool/copy_slides_template.py
+  runbooks:
+    - runbook/generate_proposal.md
+  commands:
+    - commands/proposal.md
+
+requires: []
+
+python_requires:
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
+
+env_vars:
+  - GOOGLE_SLIDES_TEMPLATE_ID

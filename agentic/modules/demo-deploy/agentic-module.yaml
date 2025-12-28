@@ -1,0 +1,28 @@
+name: demo-deploy
+version: "1.0.0"
+description: "Deploy demo applications with GitHub integration and Traefik routing"
+
+type: bundled
+
+files:
+  tools:
+    - tool/demo_deploy.py
+  runbooks:
+    - runbook/demo_deploy.md
+  commands:
+    - commands/demo-deploy.md
+  templates:
+    - templates/compose-demo.yaml
+
+requires:
+  - name: infrastructure
+    optional: false
+
+python_requires:
+  - pyyaml
+  - requests
+  - python-dotenv
+
+env_vars:
+  - DOKPLOY_URL
+  - DOKPLOY_API_KEY

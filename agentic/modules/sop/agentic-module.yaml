@@ -1,0 +1,28 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: sop
+version: 1.0.0
+description: Audio transcription and SOP extraction - convert interviews and recordings into structured procedures
+
+type: bundled
+
+files:
+  tools:
+    - tool/extract_sop.py
+    - tool/transcribe_audio.py
+  runbooks:
+    - runbook/audio_to_sop.md
+    - runbook/writing_sops.md
+  commands:
+    - commands/extract-sop.md
+    - commands/transcribe.md
+
+requires: []
+
+python_requires:
+  - python-dotenv
+  - openai>=1.0
+
+env_vars:
+  - OPENAI_API_KEY

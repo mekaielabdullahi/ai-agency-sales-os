@@ -1,0 +1,30 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: md-export
+version: 1.0.0
+description: Export markdown to Google Docs and Word documents with Mermaid diagram rendering
+
+type: bundled
+
+files:
+  tools:
+    - tool/md_to_gdoc.py
+    - tool/md_to_docx.py
+  runbook: runbook/markdown_to_gdoc.md
+  commands:
+    - commands/md-to-gdoc.md
+    - commands/md-to-word.md
+
+requires: []
+
+python_requires:
+  - python-dotenv
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
+  - python-docx
+  - mistune>=3.0
+
+env_vars:
+  - GOOGLE_FOLDER_ID

@@ -1,0 +1,28 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: client-onboarding
+version: 1.0.0
+description: Set up Slack channels and resources for new clients
+
+type: bundled
+
+files:
+  tools: []
+  runbooks:
+    - runbook/client_onboarding.md
+  commands:
+    - commands/client-setup.md
+  templates:
+    - templates/client_canvas.md
+    - templates/client_welcome.md
+
+requires:
+  - name: slack
+    optional: false
+
+python_requires: []
+
+env_vars:
+  - SLACK_BOT_TOKEN
+  - SLACK_USER_TOKEN

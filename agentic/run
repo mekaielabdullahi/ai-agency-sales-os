@@ -1,0 +1,11 @@
+#!/bin/bash
+# Wrapper script to run Python tools with venv activated
+# Usage: ./run modules/slack/tool/slack_api.py channels list
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+if [[ -d "$SCRIPT_DIR/.venv" ]]; then
+    source "$SCRIPT_DIR/.venv/bin/activate"
+fi
+
+python3 "$@"

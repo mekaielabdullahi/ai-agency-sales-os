@@ -1,0 +1,37 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: n8n
+version: 1.0.0
+description: Manage n8n workflows - list, deploy, activate, execute, and monitor
+
+type: bundled
+
+files:
+  tools:
+    - tool/n8n_api.py
+  runbooks:
+    - runbook/n8n_workflow.md
+  commands:
+    - commands/workflow-list.md
+    - commands/workflow-deploy.md
+    - commands/workflow-activate.md
+    - commands/workflow-execute.md
+    - commands/workflow-history.md
+
+requires: []
+
+python_requires:
+  - python-dotenv
+  - requests
+
+env_vars:
+  - N8N_API_URL
+  - N8N_API_KEY
+
+mcp_servers:
+  n8n:
+    package: "@leonardsellem/n8n-mcp-server"
+    command: npx
+    args: ["-y", "@leonardsellem/n8n-mcp-server"]
+    env_from_module: true

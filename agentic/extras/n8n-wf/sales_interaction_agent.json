@@ -1,0 +1,363 @@
+{
+  "name": "Sales Interaction Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "message",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 300],
+      "id": "subworkflow-trigger-001",
+      "name": "When Called By Tool"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message }}",
+        "options": {
+          "systemMessage": "=You are a helpful sales assistant that logs sales interactions to HubSpot CRM.\n\nCURRENT DATE/TIME: {{ $now.format('yyyy-MM-dd') }} {{ $now.format('HH:mm:ss') }} ({{ $now.format('EEEE, MMMM d, yyyy') }})\n\n## YOUR WORKFLOW:\n1. Parse the salesperson's input to identify: contact name, interaction type, any deal mentioned, and any follow-up tasks\n2. ALWAYS search for the contact first using 'Search HubSpot contact'\n3. EVALUATE the search results before proceeding (see CONTACT MATCHING RULES)\n4. BEFORE creating any engagement, make sure you have COMPLETE information (see INFORMATION GATHERING)\n5. ONLY search for a deal if the user EXPLICITLY mentions a deal name\n6. Create the appropriate engagement with the Contact ID you found\n7. If a follow-up task is mentioned, create a task using 'Create Task'\n\n## INFORMATION GATHERING (IMPORTANT!):\n- DO NOT create an engagement until you have sufficient details about what was discussed\n- If the user only mentions they had a call/meeting/email but doesn't provide details, ASK what was discussed before logging\n- Example: If user says \"I just got off a call with Bernie\" -> Ask \"What did you discuss with Bernie? I'll log the details for you.\"\n- Only create the engagement once you have: WHO (contact), WHAT TYPE (call/email/meeting), and WHAT WAS DISCUSSED (summary)\n- It's better to ask for details than to log an incomplete entry\n\n## CONTACT MATCHING RULES:\n- If search returns EXACTLY 1 result: Proceed (but still gather complete info first)\n- If search returns MULTIPLE results: List ALL matches with their full name and email, then ask user to clarify\n- If search returns 0 results: Ask the user for more details (email, company, last name)\n\n## CRITICAL RULES FOR TOOL CALLS:\n- Contact_IDs: Pass the contact ID as a STRING (e.g., '252258775790')\n- Due_Date: For tasks, calculate the actual date in YYYY-MM-DD format based on CURRENT DATE/TIME above\n- All parameters must be strings, never null or undefined\n\n## INTERACTION TYPES:\n- 'had a call' or 'spoke with' -> Use 'Create call engagement'\n- 'sent email' or 'emailed' -> Use 'Create Email Engagment'\n- 'had a meeting' or 'met with' -> Use 'Create meeting engagement'\n- 'need to send', 'follow up', 'task', 'by Friday' -> Use 'Create Task'\n\n## TASK CREATION:\nWhen the user mentions a follow-up action with a deadline:\n- Subject: Short action item (e.g., 'Send proposal to Sarah')\n- Body: Full context of what needs to be done\n- Due_Date: Calculate from CURRENT DATE/TIME above\n- Status: NOT_STARTED\n\nBe conversational. When you have complete information, log the engagement and confirm to the user."
+        }
+      },
+      "id": "ai-agent",
+      "name": "Sales Logger Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "options": {
+          "temperature": 0.3
+        }
+      },
+      "id": "gemini-model",
+      "name": "Google Gemini Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [0, 520],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "RmPMuQbrtizDZqAX",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "=sales-agent-{{ $workflow.id }}",
+        "contextWindowLength": 10
+      },
+      "id": "memory",
+      "name": "Simple Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [128, 520]
+    },
+    {
+      "parameters": {
+        "authentication": "appToken",
+        "resource": "engagement",
+        "type": "meeting",
+        "metadata": {
+          "body": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Body', 'Notes or summary of the meeting', 'string') }}",
+          "title": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Title', 'Title of the meeting', 'string') }}"
+        },
+        "additionalFields": {
+          "associations": {
+            "contactIds": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Contact_IDs', 'The HubSpot contact ID as a string', 'string') }}"
+          }
+        }
+      },
+      "type": "n8n-nodes-base.hubspotTool",
+      "typeVersion": 2.2,
+      "position": [256, 520],
+      "id": "hubspot-meeting",
+      "name": "Create meeting engagement",
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "O1LELhWgYPSNZ34b",
+          "name": "HubSpot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "appToken",
+        "resource": "engagement",
+        "type": "call",
+        "metadata": {
+          "body": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Body', 'Summary of the call conversation', 'string') }}",
+          "status": "COMPLETED"
+        },
+        "additionalFields": {
+          "associations": {
+            "contactIds": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Contact_IDs', 'The HubSpot contact ID as a string', 'string') }}"
+          }
+        }
+      },
+      "type": "n8n-nodes-base.hubspotTool",
+      "typeVersion": 2.2,
+      "position": [384, 520],
+      "id": "hubspot-call",
+      "name": "Create call engagement",
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "O1LELhWgYPSNZ34b",
+          "name": "HubSpot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "appToken",
+        "resource": "engagement",
+        "type": "task",
+        "dueDate": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Due_Date', 'The due date for the task in ISO format (YYYY-MM-DD)', 'string') }}",
+        "metadata": {
+          "body": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Body', 'Detailed description of the task', 'string') }}",
+          "forObjectType": "CONTACT",
+          "status": "NOT_STARTED",
+          "subject": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Subject', 'Short title of the task', 'string') }}"
+        },
+        "additionalFields": {
+          "associations": {
+            "contactIds": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Contact_IDs', 'The HubSpot contact ID as a string', 'string') }}"
+          }
+        }
+      },
+      "type": "n8n-nodes-base.hubspotTool",
+      "typeVersion": 2.2,
+      "position": [512, 520],
+      "id": "hubspot-task",
+      "name": "Create Task",
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "O1LELhWgYPSNZ34b",
+          "name": "HubSpot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "appToken",
+        "resource": "engagement",
+        "type": "email",
+        "metadata": {
+          "html": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('HTML', 'Body content or summary of the email', 'string') }}",
+          "subject": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Subject', 'Subject line of the email', 'string') }}"
+        },
+        "additionalFields": {
+          "associations": {
+            "contactIds": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Contact_IDs', 'The HubSpot contact ID as a string', 'string') }}"
+          }
+        }
+      },
+      "type": "n8n-nodes-base.hubspotTool",
+      "typeVersion": 2.2,
+      "position": [640, 520],
+      "id": "hubspot-email",
+      "name": "Create Email Engagement",
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "O1LELhWgYPSNZ34b",
+          "name": "HubSpot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "appToken",
+        "resource": "deal",
+        "operation": "search",
+        "limit": 5,
+        "additionalFields": {
+          "properties": [
+            "dealname",
+            "amount",
+            "dealstage"
+          ],
+          "query": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Query', 'Deal search query', 'string') }}"
+        }
+      },
+      "type": "n8n-nodes-base.hubspotTool",
+      "typeVersion": 2.2,
+      "position": [768, 520],
+      "id": "hubspot-deal-search",
+      "name": "Search HubSpot deal",
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "O1LELhWgYPSNZ34b",
+          "name": "HubSpot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "appToken",
+        "operation": "search",
+        "limit": 5,
+        "additionalFields": {
+          "properties": [
+            "firstname",
+            "lastname",
+            "email"
+          ],
+          "query": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Query', `The contact search query by first name, last name, or email `, 'string') }}"
+        }
+      },
+      "type": "n8n-nodes-base.hubspotTool",
+      "typeVersion": 2.2,
+      "position": [896, 520],
+      "id": "hubspot-contact-search",
+      "name": "Search HubSpot contact",
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "O1LELhWgYPSNZ34b",
+          "name": "HubSpot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"result\": \"{{ $json.output }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [440, 300],
+      "id": "format-result",
+      "name": "Format Result"
+    }
+  ],
+  "connections": {
+    "When Called By Tool": {
+      "main": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create meeting engagement": {
+      "ai_tool": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create call engagement": {
+      "ai_tool": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Task": {
+      "ai_tool": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Email Engagement": {
+      "ai_tool": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search HubSpot deal": {
+      "ai_tool": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search HubSpot contact": {
+      "ai_tool": [
+        [
+          {
+            "node": "Sales Logger Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sales Logger Agent": {
+      "main": [
+        [
+          {
+            "node": "Format Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "tags": []
+}

@@ -1,0 +1,169 @@
+<mxfile host="65bd71144e">
+    <diagram name="Client Onboarding Workflow" id="client-onboarding-n8n">
+        <mxGraphModel dx="1466" dy="689" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Client Onboarding Workflow (n8n)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="20" width="500" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="subtitle" value="Automated via Slack trigger → Block Kit form → channel creation → welcome email" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="55" width="600" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="group-trigger" value="TRIGGER" style="swimlane;horizontal=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="trigger-user" value="👤 Team Member" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;" parent="group-trigger" vertex="1">
+                    <mxGeometry x="30" y="45" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="trigger-post" value="Posts in #new-client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;" parent="group-trigger" vertex="1">
+                    <mxGeometry x="30" y="90" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="group-form" value="BLOCK KIT FORM" style="swimlane;horizontal=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="100" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="form-slug" value="Client Slug: [acme]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" parent="group-form" vertex="1">
+                    <mxGeometry x="20" y="40" width="160" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="form-name" value="Display Name: [Acme Corp]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" parent="group-form" vertex="1">
+                    <mxGeometry x="20" y="70" width="160" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="form-email" value="Email: [a@acme.com]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" parent="group-form" vertex="1">
+                    <mxGeometry x="20" y="100" width="160" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="group-channels" value="CHANNEL SETUP" style="swimlane;horizontal=1;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="100" width="340" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="channel-client" value="#acme (public)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" parent="group-channels" vertex="1">
+                    <mxGeometry x="20" y="45" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="channel-internal" value="#acme-internal (public)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" parent="group-channels" vertex="1">
+                    <mxGeometry x="180" y="45" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="channel-purpose" value="Set Purpose &amp; Description" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" parent="group-channels" vertex="1">
+                    <mxGeometry x="20" y="90" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="channel-canvas" value="Create Canvas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" parent="group-channels" vertex="1">
+                    <mxGeometry x="180" y="90" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="group-cleanup" value="CLEANUP" style="swimlane;horizontal=1;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="100" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="cleanup-delete" value="Delete System Messages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=11;" parent="group-cleanup" vertex="1">
+                    <mxGeometry x="30" y="45" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="cleanup-note" value="Uses SLACK_USER_TOKEN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;fontStyle=2;" parent="group-cleanup" vertex="1">
+                    <mxGeometry x="30" y="90" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="group-notify" value="NOTIFICATIONS" style="swimlane;horizontal=1;startSize=30;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="100" width="220" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="notify-welcome" value="Post Welcome Message" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" parent="group-notify" vertex="1">
+                    <mxGeometry x="40" y="45" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="notify-team" value="Notify #new-client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" parent="group-notify" vertex="1">
+                    <mxGeometry x="40" y="90" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="group-email" value="EMAIL" style="swimlane;horizontal=1;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="280" width="340" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="email-gmail" value="📧 Gmail: Send Welcome Email" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=12;" parent="group-email" vertex="1">
+                    <mxGeometry x="20" y="40" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="email-link" value="Includes Slack invite link" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;fontStyle=2;" parent="group-email" vertex="1">
+                    <mxGeometry x="230" y="40" width="95" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow-trigger-form" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=classic;" parent="1" source="group-trigger" target="group-form" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow-form-channels" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=classic;" parent="1" source="group-form" target="group-channels" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow-channels-cleanup" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=classic;" parent="1" source="group-channels" target="group-cleanup" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow-cleanup-notify" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=classic;" parent="1" source="group-cleanup" target="group-notify" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow-notify-email" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=classic;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="group-notify" target="group-email" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1250" y="280"/>
+                            <mxPoint x="988" y="280"/>
+                            <mxPoint x="988" y="330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dual-trigger-box" value="DUAL TRIGGER SUPPORT" style="swimlane;horizontal=1;startSize=25;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="280" width="440" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="dual-auto" value="🤖 Automated: Post in #new-client → form → full automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="dual-trigger-box" vertex="1">
+                    <mxGeometry x="10" y="35" width="420" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="dual-manual" value="⌨️ Manual: python3 execution/slack_api.py client setup &quot;name&quot; → channels only" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" parent="dual-trigger-box" vertex="1">
+                    <mxGeometry x="10" y="65" width="420" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="nodes-box" value="N8N WORKFLOW NODES" style="swimlane;horizontal=1;startSize=25;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="420" width="680" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="node-row1" value="1. Webhook Trigger  →  2. Switch Router  →  3. URL Verification  →  4. Open Modal" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="nodes-box" vertex="1">
+                    <mxGeometry x="10" y="30" width="660" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="node-row2" value="5. Prepare Variables  →  6-7. Create Channels  →  8-9. Set Purpose  →  10. Create Canvas" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="nodes-box" vertex="1">
+                    <mxGeometry x="10" y="55" width="660" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="node-row3" value="11. Get Channel Messages  →  12. Filter System Msgs  →  13-14. Delete Messages (both channels)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="nodes-box" vertex="1">
+                    <mxGeometry x="10" y="80" width="660" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="node-row4" value="15. Post Welcome  →  16. Notify Team  →  17. Generate Invite Link  →  18. Send Gmail" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="nodes-box" vertex="1">
+                    <mxGeometry x="10" y="105" width="660" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="node-total" value="Total: 25 nodes | Workflow ID: 3yKH9QKDM58tnNmV" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="nodes-box" vertex="1">
+                    <mxGeometry x="10" y="130" width="400" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="config-box" value="CONFIGURATION REQUIRED" style="swimlane;horizontal=1;startSize=25;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="420" width="320" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="config-slack" value="Slack App Scopes:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="config-box" vertex="1">
+                    <mxGeometry x="10" y="30" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="config-scopes" value="channels:manage, channels:read, chat:write" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="config-box" vertex="1">
+                    <mxGeometry x="10" y="50" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="config-env" value="n8n Environment Variables:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="config-box" vertex="1">
+                    <mxGeometry x="10" y="75" width="180" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="config-vars" value="SLACK_BOT_TOKEN, SLACK_USER_TOKEN, SLACK_WORKSPACE_ID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="config-box" vertex="1">
+                    <mxGeometry x="10" y="95" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="config-creds" value="n8n Credentials:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="config-box" vertex="1">
+                    <mxGeometry x="10" y="120" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="config-oauth" value="Slack OAuth2, Gmail OAuth2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="config-box" vertex="1">
+                    <mxGeometry x="10" y="140" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="files-box" value="FILES" style="swimlane;horizontal=1;startSize=25;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="420" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="file-workflow" value="n8n/client_onboarding.json" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="files-box" vertex="1">
+                    <mxGeometry x="10" y="35" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="file-python" value="execution/slack_api.py (manual CLI)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="files-box" vertex="1">
+                    <mxGeometry x="10" y="55" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="file-canvas" value="templates/client_canvas.md" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="files-box" vertex="1">
+                    <mxGeometry x="10" y="75" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="file-welcome" value="templates/client_welcome.md" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="files-box" vertex="1">
+                    <mxGeometry x="10" y="95" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="file-directive" value="directives/client_onboarding.md" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="files-box" vertex="1">
+                    <mxGeometry x="10" y="115" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="file-diagram" value="diagrams/client_onboarding.drawio" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" parent="files-box" vertex="1">
+                    <mxGeometry x="10" y="135" width="260" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

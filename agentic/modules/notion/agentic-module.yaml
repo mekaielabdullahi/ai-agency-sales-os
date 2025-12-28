@@ -1,0 +1,28 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: notion
+version: 1.0.0
+description: Notion page, database, and block management - create pages, query databases, manage content blocks, and search workspace
+
+# Module type: bundled = tool + runbook + commands together
+type: bundled
+
+# Files to install (relative paths in this repo -> workspace locations)
+files:
+  tool: tool/notion_api.py
+  runbook: runbook/notion_management.md
+  commands:
+    - commands/notion-search.md
+
+# Dependencies on other modules (checked but not auto-installed)
+requires: []
+
+# Python package dependencies (merged into workspace requirements.txt)
+python_requires:
+  - notion-client>=2.0
+  - python-dotenv
+
+# Environment variables required (added to .env.example)
+env_vars:
+  - NOTION_API_KEY
