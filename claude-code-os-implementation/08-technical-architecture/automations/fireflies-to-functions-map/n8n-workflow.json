@@ -1,0 +1,181 @@
+{
+  "name": "Fireflies → Business Functions Map",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "fireflies-transcript",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      },
+      "id": "webhook-trigger",
+      "name": "Fireflies Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Extract transcript and metadata from Fireflies payload\nconst data = items[0].json;\n\n// Fireflies sends transcript in sentences array\nlet transcript = '';\nif (data.transcript && data.transcript.sentences) {\n  transcript = data.transcript.sentences\n    .map(s => `${s.speaker_name}: ${s.text}`)\n    .join('\\n');\n} else if (data.transcript && typeof data.transcript === 'string') {\n  transcript = data.transcript;\n} else if (data.text) {\n  transcript = data.text;\n}\n\n// Extract meeting metadata\nconst meetingTitle = data.meeting?.title || data.title || 'Unknown Meeting';\nconst meetingDate = data.meeting?.date || data.date || new Date().toISOString().split('T')[0];\nconst participants = data.participants || data.meeting?.participants || [];\n\n// Generate client slug from meeting title\nconst clientSlug = meetingTitle\n  .toLowerCase()\n  .replace(/[^a-z0-9]+/g, '-')\n  .replace(/^-|-$/g, '');\n\n// Format date for folder name (YYYY-MM-DD)\nconst folderDate = new Date(meetingDate).toISOString().split('T')[0];\n\nreturn [{\n  json: {\n    transcript,\n    meetingTitle,\n    meetingDate: folderDate,\n    participants,\n    clientSlug\n  }\n}];"
+      },
+      "id": "extract-transcript",
+      "name": "Extract Transcript",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{$credentials.httpHeaderAuth.value}}"
+            },
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"claude-sonnet-4-20250514\",\n  \"max_tokens\": 8192,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"You are a business operations analyst for AriseGroup.ai, an AI transformation consulting agency.\\n\\nAnalyze this discovery call transcript and extract a comprehensive Business Functions Map.\\n\\n## YOUR TASK\\n\\nFrom this transcript, identify and document:\\n\\n### 1. COMPANY CONTEXT\\n- Company name\\n- Industry\\n- Size (employees, revenue if mentioned)\\n- Primary business model\\n- Key people mentioned (names + roles)\\n\\n### 2. CORE BUSINESS FUNCTIONS (5-12)\\nFor each function identified:\\n- Function name\\n- Purpose (what it accomplishes)\\n- Who owns it (role/person)\\n- Sub-functions (3-8 per function)\\n- Tools/systems mentioned\\n\\n### 3. PAIN POINTS (Extract exact quotes)\\nFor each pain point:\\n- Direct quote from transcript\\n- Which function it relates to\\n- Impact (time, cost, frustration level)\\n- Frequency (daily, weekly, per project)\\n\\n### 4. AI/AUTOMATION OPPORTUNITIES\\nFor each opportunity:\\n- Opportunity name\\n- Which function/pain point it addresses\\n- Type: Full Automation | AI-Assisted | AI-Augmented\\n- Impact score (1-10)\\n- Feasibility score (1-10)\\n- Priority score: (Impact × 2 + Feasibility) / 3\\n- Estimated time savings\\n\\n### 5. PRIORITIZED ROADMAP\\n- Phase 1 Quick Wins (30 days): Top 2-3 opportunities\\n- Phase 2 Scale Up (90 days): Next 3-4 opportunities\\n- Phase 3 Strategic (6 months): Transformational items\\n\\n## OUTPUT FORMAT\\n\\nUse this exact markdown structure:\\n\\n---\\n\\n# Business Functions Map: {{COMPANY_NAME}}\\n\\n**Generated:** {{DATE}}\\n**Source:** Discovery Call Transcript\\n**Industry:** {{INDUSTRY}}\\n**Size:** {{SIZE}}\\n\\n---\\n\\n## Executive Summary\\n\\n[2-3 sentences: What they do, biggest pain points, highest-impact AI opportunities]\\n\\n---\\n\\n## Company Context\\n\\n| Field | Value |\\n|-------|-------|\\n| Company | {{name}} |\\n| Industry | {{industry}} |\\n| Size | {{employees/revenue}} |\\n| Business Model | {{description}} |\\n| Key Contacts | {{names and roles}} |\\n\\n---\\n\\n## Core Business Functions\\n\\n### 1. {{FUNCTION_NAME}}\\n\\n**Purpose:** {{what it accomplishes}}\\n**Owner:** {{role/person}}\\n**Tools:** {{systems mentioned}}\\n\\n**Sub-Functions:**\\n- {{sub-function 1}}\\n- {{sub-function 2}}\\n- {{sub-function 3}}\\n\\n**Pain Points:**\\n> \\\"{{exact quote from transcript}}\\\"\\n- Impact: {{time/cost/frustration}}\\n- Frequency: {{how often}}\\n\\n**AI Opportunities:**\\n- {{opportunity 1}}\\n- {{opportunity 2}}\\n\\n---\\n\\n[Repeat for each function]\\n\\n---\\n\\n## Pain Points Summary\\n\\n| Pain Point | Function | Quote | Impact | Frequency |\\n|------------|----------|-------|--------|-----------|\\n| {{name}} | {{function}} | \\\"{{quote}}\\\" | {{impact}} | {{freq}} |\\n\\n---\\n\\n## AI Opportunity Matrix\\n\\n| Rank | Opportunity | Function | Impact | Feasibility | Priority | Phase |\\n|------|-------------|----------|--------|-------------|----------|-------|\\n| 1 | {{name}} | {{function}} | {{1-10}} | {{1-10}} | {{score}} | Quick Win |\\n| 2 | {{name}} | {{function}} | {{1-10}} | {{1-10}} | {{score}} | Quick Win |\\n\\n---\\n\\n## Recommended Roadmap\\n\\n### Phase 1: Quick Wins (30 days)\\n**Goal:** Immediate impact, build trust\\n\\n1. **{{Opportunity Name}}**\\n   - What: {{description}}\\n   - Impact: {{time/cost savings}}\\n   - Effort: {{hours/days}}\\n\\n### Phase 2: Scale Up (90 days)\\n**Goal:** Systematic improvement\\n\\n1. **{{Opportunity Name}}**\\n   - What: {{description}}\\n   - Impact: {{time/cost savings}}\\n\\n### Phase 3: Strategic (6 months)\\n**Goal:** Transformation\\n\\n1. **{{Opportunity Name}}**\\n   - What: {{description}}\\n   - Impact: {{time/cost savings}}\\n\\n---\\n\\n## Next Steps\\n\\n1. {{Immediate action}}\\n2. {{Follow-up item}}\\n3. {{Decision needed}}\\n\\n---\\n\\n*Generated by AriseGroup.ai Business Functions Mapping System*\\n\\n---\\n\\n## IMPORTANT INSTRUCTIONS\\n\\n1. Use THEIR language - extract actual terms and phrases from the transcript\\n2. Quote directly when documenting pain points - use their exact words\\n3. Be specific - \\\"proposal creation takes 8 hours\\\" not \\\"proposals are slow\\\"\\n4. Quantify everything possible - hours, dollars, percentages, frequencies\\n5. Only include what's actually in the transcript - don't invent or assume\\n6. If information is missing, note it as \\\"Not discussed\\\" rather than guessing\\n7. Prioritize ruthlessly - not everything is a \\\"quick win\\\"\\n8. Focus on actionable opportunities, not generic \\\"use AI\\\" suggestions\\n\\n---\\n\\nTRANSCRIPT TO ANALYZE:\\n\\n\" + $json.transcript\n    }\n  ]\n}"
+      },
+      "id": "claude-api",
+      "name": "Claude API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [650, 300],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Anthropic API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "// Parse Claude response and prepare for GitHub\nconst response = items[0].json;\nconst previousData = $node['Extract Transcript'].json;\n\n// Extract the markdown content from Claude's response\nlet content = '';\nif (response.content && response.content[0] && response.content[0].text) {\n  content = response.content[0].text;\n} else if (response.text) {\n  content = response.text;\n}\n\n// Build the file path\nconst clientSlug = previousData.clientSlug;\nconst meetingDate = previousData.meetingDate;\nconst filePath = `claude-code-os-implementation/03-ai-growth-engine/sales-engine/project-management/active-projects/${clientSlug}/meetings/${meetingDate}/business-functions-map.md`;\n\n// Prepare commit message\nconst commitMessage = `Add business functions map for ${previousData.meetingTitle} - ${meetingDate}\\n\\n🤖 Generated by Fireflies→Functions automation`;\n\nreturn [{\n  json: {\n    content,\n    filePath,\n    commitMessage,\n    clientSlug,\n    meetingDate,\n    meetingTitle: previousData.meetingTitle\n  }\n}];"
+      },
+      "id": "parse-response",
+      "name": "Parse Response",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "create",
+        "owner": "MatthewKerns",
+        "repository": "ai-agency-sales-os",
+        "filePath": "={{$json.filePath}}",
+        "fileContent": "={{$json.content}}",
+        "commitMessage": "={{$json.commitMessage}}"
+      },
+      "id": "github-commit",
+      "name": "GitHub Commit",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [1050, 300],
+      "credentials": {
+        "githubApi": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "GitHub API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "channel": "#ai-agency-alerts",
+        "text": "=✅ Business Functions Map Generated!\n\n*Client:* {{$json.meetingTitle}}\n*Date:* {{$json.meetingDate}}\n*File:* {{$json.filePath}}\n\nView in GitHub: https://github.com/MatthewKerns/ai-agency-sales-os/blob/main/{{$json.filePath}}",
+        "otherOptions": {}
+      },
+      "id": "slack-notify",
+      "name": "Slack Notification",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [1250, 300],
+      "credentials": {
+        "slackApi": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Slack API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Fireflies Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract Transcript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Transcript": {
+      "main": [
+        [
+          {
+            "node": "Claude API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Claude API": {
+      "main": [
+        [
+          {
+            "node": "Parse Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Response": {
+      "main": [
+        [
+          {
+            "node": "GitHub Commit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub Commit": {
+      "main": [
+        [
+          {
+            "node": "Slack Notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2024-12-22T12:00:00.000Z",
+  "versionId": "1"
+}
