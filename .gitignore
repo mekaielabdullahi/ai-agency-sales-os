@@ -14,3 +14,6 @@ Thumbs.db
 
 # Claude Code (only ignore user-specific settings)
 .claude/settings.local.json
+
+# Auto Claude data directory
+.auto-claude/
