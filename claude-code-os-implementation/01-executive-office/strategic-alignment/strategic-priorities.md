@@ -1,355 +1,257 @@
-# Strategic Priorities Framework
+# Strategic Priorities
+
+## OBG: $50k/month for 3+ consecutive months
+
+All work must drive toward this. Everything else is deferred.
 
 ---
 
-## 🎯 Purpose
+## Your Role: The Architect
 
-Define and maintain clear strategic priorities that align all daily work with the OBG and long-term vision.
+| You ARE | You are NOT |
+|---------|-------------|
+| Diagnoser of business problems | A coder-for-hire |
+| Prototyper (vibe coding) | A freelancer |
+| Scoper and estimator | Someone who builds everything |
+| Developer evaluator | Someone who grinds production |
+| Margin protector | A service monkey |
+| Quality enforcer | |
+| Developer trainer | |
+
+**Your value = knowing what code is needed, who should build it, what it should cost, and ensuring it's done right.**
 
 ---
 
-## 📊 Priority Hierarchy
+## Priority Hierarchy
+
+**Full Roadmap:** [P1-P5 Strategic Roadmap](../../02-operations/project-management/active-projects/antsavvy/ROADMAP-P1-P5.md)
+
+### P0: Revenue-Generating Activities (Non-Negotiable)
+
+**Close deals and deliver projects with margin.**
+
+- Run diagnostic calls ($200-500/hr - NO more free discovery)
+- Prototype to validate demand (vibe coding)
+- Scope and price projects
+- Manage active client projects to completion
+- Collect payments
+
+**Active P0 Projects:**
+- **Plotter Mechanix Case Study** - First proof of concept for 3-tier engagement model (Free Audit → Low-Cost → Scale)
+- **SOP Creation Service** - NEW: Productized offering (audio → SOP in 48 hours, $500-750 per SOP)
+- Trevor Brand Coach Demo - PAYING CLIENT ($1,000 paid)
+
+**New Revenue Model (Dec 10-11 Partner Meetings):**
+- **3-Tier Engagement:** Free initial audit → Low-cost entry ($3-5K) → Scale ($10K+/month)
+- **SOP Service:** Audio/video → transcription → structured SOP → $500-750 per SOP
+- **Case Study Strategy:** Plotter Mechanix validates entire agency model
+
+*If it doesn't generate revenue, question whether it should be done.*
+
+---
+
+### P1: Agency Infrastructure
+
+**Build the machine that produces revenue.**
+
+**Engagement Framework (Dec 10 Meeting):**
+- [x] **3-Tier Engagement Model** - Free Audit → Low-Cost → Scale (documented)
+- [ ] **Trent's 3-Step AI Audit Framework** - Stakeholder Interviews → End-User Interviews → Readiness Survey (templates needed)
+- [ ] **Pricing Model Documentation** - Define pricing for all three tiers
+- [ ] **Client Qualification Framework** - Criteria for selecting high-value clients (Dec 11 decision)
+
+**Documentation & Media Services (Dec 11 Meeting):**
+- [x] **SOP Creation Service** - Productized (audio → SOP, 48-hour delivery)
+- [ ] **Audio-to-SOP Platform** - Web portal for automated processing (Q1 2026)
+- [ ] **Deliverable Standards** - Templates for process maps, opportunity matrices, SOPs
+
+**Original Infrastructure:**
+- [ ] Define roles with Linh and Mikael
+- [ ] Align incentives (revenue splits)
+- [ ] Build developer evaluation criteria
+- [ ] Establish margin protection standards
+- [x] **Meeting note capture system** - IMPLEMENTED (Dec 11: new workflow active)
+
+---
+
+### P2: Developer Pipeline & Capability Building
+
+**Recruit, evaluate, and manage developers.**
+
+**Technology Development (Dec 11 Meeting):**
+- [ ] **Mobile Recording App** - Seamless field recording for clients (Q2 2026)
+- [ ] **Partner NCP Sandboxes** - Individual AI tool environments for experimentation
+
+**Original Pipeline:**
+- [ ] Create developer vetting process
+- [ ] Build relationships with capable devs (Mike identified for Plotter implementation)
+- [ ] Negotiate rates
+- [ ] Establish delivery standards
+- [ ] Document what "good" looks like
+- [ ] **Discord code sessions Q&A** - document everything in real-time (adopt Mikael's system) → leads developers to be able to replicate your work
+
+---
+
+### P3: Developer Academy Foundation
+
+**Long-term moat: train developers who feed into agency.**
+
+"I Code My Business" program:
+- Automation fundamentals
+- Build tutorials with real case studies
+- Scoping and estimation training
+- Cost-based pricing education
+- **Documentation pipeline** - Discord sessions → documented processes → academy content (capture live problem-solving as training material)
+
+*Developers learn → trust you → want projects → feed into ecosystem*
+
+---
+
+### P4: Credibility Assets (Supports P0)
+
+**Demo videos and case studies that help close deals.**
+
+**Active/Due (Dec 10-11 Meetings):**
+- [ ] **Trevor Brand Coach Demo** - OVERDUE, paying client waiting
+- [ ] **Eric Scratch & Win Demo** - 4+ days overdue
+- [ ] **Plotter Mechanix Transformation Demo** - Showcase SOP creation process (Matthew)
+- [ ] **Case Study: Plotter Mechanix** - First flagship client (end of December)
+
+**Framework:**
+- Demo videos of working automations
+- Quantified results (hours saved, $ value)
+- Client testimonials
+- Portfolio of proof
+
+*Only matters if it helps close the next deal.*
+
+---
+
+### P5: Scale Preparation (DEFERRED)
+
+**Only after 3 months at $50k/mo:**
+- YouTube content scaling
+- Inbound lead flow optimization
+- Personal brand building
+- Content marketing
+
+**Gate:** Do NOT work on this until OBG achieved.
+
+---
+
+## The Agency Flow (Your Workflow)
 
 ```
-VISION (10-year)
-    ↓
-STRATEGY (3-year)
-    ↓
-OBG (90-day)
-    ↓
-MONTHLY PRIORITIES
-    ↓
-WEEKLY PRIORITIES
-    ↓
-DAILY THE ONE THING
-```
-
----
-
-## 🔝 Current Strategic Priorities
-
-### Quarter: Q{{QUARTER}} {{YEAR}}
-
-#### Priority Level 1: OBG-Critical
-**These directly advance the OBG and must happen**
-
-1. **{{P1_ITEM_1}}**
-   - OBG Impact: {{P1_IMPACT_1}}
-   - Deadline: {{P1_DEADLINE_1}}
-   - Owner: {{P1_OWNER_1}}
-   - Status: {{P1_STATUS_1}}
-
-2. **{{P1_ITEM_2}}**
-   - OBG Impact: {{P1_IMPACT_2}}
-   - Deadline: {{P1_DEADLINE_2}}
-   - Owner: {{P1_OWNER_2}}
-   - Status: {{P1_STATUS_2}}
-
-3. **{{P1_ITEM_3}}**
-   - OBG Impact: {{P1_IMPACT_3}}
-   - Deadline: {{P1_DEADLINE_3}}
-   - Owner: {{P1_OWNER_3}}
-   - Status: {{P1_STATUS_3}}
-
----
-
-#### Priority Level 2: Strategic Support
-**These support the OBG indirectly but are still important**
-
-1. **{{P2_ITEM_1}}**
-   - OBG Relation: {{P2_RELATION_1}}
-   - Deadline: {{P2_DEADLINE_1}}
-   - Status: {{P2_STATUS_1}}
-
-2. **{{P2_ITEM_2}}**
-   - OBG Relation: {{P2_RELATION_2}}
-   - Deadline: {{P2_DEADLINE_2}}
-   - Status: {{P2_STATUS_2}}
-
-3. **{{P2_ITEM_3}}**
-   - OBG Relation: {{P2_RELATION_3}}
-   - Deadline: {{P2_DEADLINE_3}}
-   - Status: {{P2_STATUS_3}}
-
----
-
-#### Priority Level 3: Maintenance & Operations
-**These keep the lights on but don't advance OBG**
-
-1. **{{P3_ITEM_1}}** - {{P3_FREQ_1}}
-2. **{{P3_ITEM_2}}** - {{P3_FREQ_2}}
-3. **{{P3_ITEM_3}}** - {{P3_FREQ_3}}
-
-**Time Allocation for P3**: Maximum {{P3_TIME_MAX}}% of weekly capacity
-
----
-
-## 🎯 Priority Alignment Test
-
-### The Daily Question
-**Every task must answer**: "Which priority does this serve?"
-
-| Task | Priority Level | OBG Connection | Keep/Kill |
-|------|---------------|----------------|-----------|
-| {{TASK_1}} | {{LEVEL_1}} | {{CONN_1}} | {{KEEP_1}} |
-| {{TASK_2}} | {{LEVEL_2}} | {{CONN_2}} | {{KEEP_2}} |
-| {{TASK_3}} | {{LEVEL_3}} | {{CONN_3}} | {{KEEP_3}} |
-
-**Rule**: If it doesn't connect to P1 or P2, question whether it should exist.
-
----
-
-## 📋 Strategic Focus Areas
-
-### Focus Area 1: {{FOCUS_AREA_1}}
-**Why it matters**: {{FA1_WHY}}
-**OBG Connection**: {{FA1_OBG}}
-**Key Initiatives**:
-- {{FA1_INIT_1}}
-- {{FA1_INIT_2}}
-- {{FA1_INIT_3}}
-
-**Success Metrics**:
-- {{FA1_METRIC_1}}
-- {{FA1_METRIC_2}}
-
----
-
-### Focus Area 2: {{FOCUS_AREA_2}}
-**Why it matters**: {{FA2_WHY}}
-**OBG Connection**: {{FA2_OBG}}
-**Key Initiatives**:
-- {{FA2_INIT_1}}
-- {{FA2_INIT_2}}
-- {{FA2_INIT_3}}
-
-**Success Metrics**:
-- {{FA2_METRIC_1}}
-- {{FA2_METRIC_2}}
-
----
-
-### Focus Area 3: {{FOCUS_AREA_3}}
-**Why it matters**: {{FA3_WHY}}
-**OBG Connection**: {{FA3_OBG}}
-**Key Initiatives**:
-- {{FA3_INIT_1}}
-- {{FA3_INIT_2}}
-- {{FA3_INIT_3}}
-
-**Success Metrics**:
-- {{FA3_METRIC_1}}
-- {{FA3_METRIC_2}}
-
----
-
-## 🚫 Strategic "NOT-To-Do" List
-
-### Things We're Actively NOT Doing
-
-**Category: Opportunities**
-- ❌ {{NOT_DO_OPP_1}} - Reason: {{NOT_REASON_1}}
-- ❌ {{NOT_DO_OPP_2}} - Reason: {{NOT_REASON_2}}
-- ❌ {{NOT_DO_OPP_3}} - Reason: {{NOT_REASON_3}}
-
-**Category: Features/Products**
-- ❌ {{NOT_DO_FEAT_1}} - Reason: {{NOT_FEAT_1}}
-- ❌ {{NOT_DO_FEAT_2}} - Reason: {{NOT_FEAT_2}}
-
-**Category: Meetings/Commitments**
-- ❌ {{NOT_DO_MEET_1}} - Reason: {{NOT_MEET_1}}
-- ❌ {{NOT_DO_MEET_2}} - Reason: {{NOT_MEET_2}}
-
-**Category: Learning/Development**
-- ❌ {{NOT_DO_LEARN_1}} - Reason: {{NOT_LEARN_1}}
-
-**Rule**: Saying "no" to good things so we can say "yes" to great things.
-
----
-
-## 🎪 Resource Allocation
-
-### Time Allocation by Priority
-
-| Priority Level | Target % | Actual % | Variance |
-|---------------|----------|----------|----------|
-| P1 (OBG-Critical) | {{P1_TARGET}}% | {{P1_ACTUAL}}% | {{P1_VAR}}% |
-| P2 (Strategic) | {{P2_TARGET}}% | {{P2_ACTUAL}}% | {{P2_VAR}}% |
-| P3 (Maintenance) | {{P3_TARGET}}% | {{P3_ACTUAL}}% | {{P3_VAR}}% |
-| P4 (Other) | {{P4_TARGET}}% | {{P4_ACTUAL}}% | {{P4_VAR}}% |
-
-**Target**: 60%+ on P1, 25% on P2, 15% or less on P3+P4
-
----
-
-### Budget Allocation
-
-| Priority Level | Budget | Spent | Remaining |
-|---------------|--------|-------|-----------|
-| P1 (OBG-Critical) | {{P1_BUDGET}} | {{P1_SPENT}} | {{P1_REM}} |
-| P2 (Strategic) | {{P2_BUDGET}} | {{P2_SPENT}} | {{P2_REM}} |
-| P3 (Maintenance) | {{P3_BUDGET}} | {{P3_SPENT}} | {{P3_REM}} |
-
----
-
-### Team Allocation (If Applicable)
-
-| Team Member | P1 Time % | P2 Time % | P3 Time % | Alignment |
-|-------------|-----------|-----------|-----------|-----------|
-| {{MEMBER_1}} | {{M1_P1}}% | {{M1_P2}}% | {{M1_P3}}% | {{M1_ALIGN}} |
-| {{MEMBER_2}} | {{M2_P1}}% | {{M2_P2}}% | {{M2_P3}}% | {{M2_ALIGN}} |
-| {{MEMBER_3}} | {{M3_P1}}% | {{M3_P2}}% | {{M3_P3}}% | {{M3_ALIGN}} |
-
----
-
-## 🔄 Priority Review Cadence
-
-### Weekly Priority Check
-**Every Monday**:
-- [ ] Are P1 priorities still correct?
-- [ ] Any new P1 items emerged?
-- [ ] Any P1 items to remove/deprioritize?
-- [ ] Time allocation aligned?
-
-### Monthly Priority Review
-**Last Sunday of Month**:
-- [ ] OBG still correct?
-- [ ] P1 priorities still aligned with OBG?
-- [ ] P2 priorities still relevant?
-- [ ] Strategic drift check
-- [ ] Update priorities document
-
-### Quarterly Strategy Reset
-**Week before new quarter**:
-- [ ] Set new OBG
-- [ ] Redefine all priorities
-- [ ] Establish new focus areas
-- [ ] Update not-to-do list
-- [ ] Communicate changes
-
----
-
-## 📊 Priority Decision Framework
-
-### When New Opportunity/Request Arises
-
-```
-NEW REQUEST: {{REQUEST}}
-
-Step 1: OBG Alignment Check
-Does this advance our OBG? YES / NO / MAYBE
-If NO → Decline
-
-Step 2: Priority Level Assessment
-If YES, which priority level?
-- P1 (OBG-Critical)
-- P2 (Strategic Support)
-- P3 (Maintenance)
-
-Step 3: Capacity Check
-Do we have capacity for this priority level? YES / NO
-If NO → Defer or decline
-
-Step 4: Trade-Off Analysis
-What must we stop doing to do this?
-Trade: {{TRADE_OFF}}
-Worth it? YES / NO
-
-Step 5: Decision
-ACCEPT / DEFER / DECLINE
+1. Linh/Mikael bring lead
+   ↓
+2. You run diagnostic call (BILLABLE: $200-500/hr)
+   ↓
+3. You vibe code a prototype
+   ↓
+4. Client says YES → You scope and price
+   ↓
+5. You find/evaluate developer
+   ↓
+6. You add margin (dev cost + your margin + sales fee)
+   ↓
+7. You manage delivery to completion
+   ↓
+8. Collect payment → Repeat
 ```
 
 ---
 
-## 🎯 Alignment Verification
+## Priority Decision Matrix
 
-### Daily Alignment
-**Morning**: "Does THE ONE THING align with P1 priorities?"
-**Evening**: "Did today advance P1 priorities?"
-
-### Weekly Alignment
-**Sunday**: "Did this week's work align with priorities?"
-**Alignment Score**: ____/10
-
-### Monthly Alignment
-**Month End**: "Did this month advance strategic priorities?"
-**Strategic Drift**: ____% (target: <10%)
+| Situation | Action |
+|-----------|--------|
+| Lead comes in | Run diagnostic (bill for it) |
+| Client wants solution | Prototype to validate |
+| Prototype approved | Scope, price, find dev |
+| Project in progress | Manage delivery, enforce quality |
+| Need more devs | Recruit and evaluate |
+| Want to make content | STOP - does it close a deal? |
+| New tool idea | STOP - does it generate revenue? |
 
 ---
 
-## 💡 Strategic Principles
+## Daily Priority Check
 
-### Principle 1: Focus
-**"Do less, better"**
-- Fewer priorities = More progress
-- 3 P1 priorities maximum
-- Everything else is secondary
+Before starting work:
 
-### Principle 2: Alignment
-**"Every action supports the strategy"**
-- If it doesn't support P1 or P2, question it
-- Daily work must connect to weekly priorities
-- Weekly work must connect to OBG
-
-### Principle 3: Constraint
-**"Identify and break the bottleneck"**
-- Only ONE thing is the true constraint
-- P1 priorities should target the constraint
-- Remove constraint, find next one
-
-### Principle 4: Trade-offs
-**"Saying yes to one thing means no to others"**
-- Every "yes" requires explicit "no"s
-- Opportunity cost must be worth it
-- Protect P1 priorities fiercely
-
-### Principle 5: Flexibility
-**"Fixed on what, flexible on how"**
-- OBG: Fixed for 90 days
-- Priorities: Fixed for 30 days
-- Tactics: Flexible daily
+1. **Does this close a deal or get paid?** → Do it
+2. **Does this deliver a client project?** → Do it
+3. **Does this recruit/manage developers?** → Do it
+4. **Does this build the dev academy?** → Do it (lower priority)
+5. **Is this content/inbound work?** → DEFER until $50k/mo hit
 
 ---
 
-## 🚨 Priority Red Flags
+## Anti-Priorities (Kill List)
 
-### Warning Signs of Misalignment
+Until $50k/mo achieved for 3 months:
 
-- [ ] Can't clearly state top 3 priorities
-- [ ] P1 priorities haven't changed in weeks (while making no progress)
-- [ ] Spending <40% time on P1 items
-- [ ] Daily work feels disconnected from strategy
-- [ ] Constantly reacting vs. proactively executing
-- [ ] OBG progress stalled
-- [ ] Everything feels "urgent and important"
-
-**If any checked**: Stop and realign priorities.
-
----
-
-## 🎬 Immediate Actions
-
-### Right Now
-1. [ ] Define your top 3 P1 priorities
-2. [ ] Verify each connects to OBG
-3. [ ] Identify what to STOP doing
-4. [ ] Set weekly review reminder
-
-### This Week
-1. [ ] Track time by priority level
-2. [ ] Run daily alignment checks
-3. [ ] Say "no" to at least one non-priority
-4. [ ] Review progress on P1 items
-
-### This Month
-1. [ ] Conduct full priority audit
-2. [ ] Optimize resource allocation
-3. [ ] Update strategic priorities doc
-4. [ ] Communicate priorities to stakeholders
+- Free discovery calls (charge $200-500/hr)
+- Building production code yourself (recruit devs)
+- YouTube content scaling
+- Inbound optimization
+- Personal brand building
+- "Nice to have" features
+- Perfectionism on non-revenue work
+- Grinding as a coder instead of architecting
 
 ---
 
-*"Strategy is about making choices, trade-offs; it's about deliberately choosing to be different." - Michael Porter*
+## Revenue Math
 
-*Last Updated: {{DATE}}*
-*Next Review: {{NEXT_REVIEW}}*
+**Target:** $50k/month
+
+| Activity | Rate/Value | Volume Needed |
+|----------|------------|---------------|
+| Client projects | $10k avg (with margin) | 5/month |
+| Diagnostic calls | $300/hr avg | 10-20 hrs/month |
+| Developer Academy | Future revenue | Building now |
+
+**Margin Example:**
+```
+Client pays:        $10,000
+Developer cost:     -$4,000
+Sales commission:   -$2,000
+Your margin:        $4,000
+```
+
+5 projects × $4k margin = $20k/month from management alone
++ diagnostic revenue + future academy = $50k achievable
+
+---
+
+## Weekly Priority Review
+
+### Revenue Check
+- [ ] Deals in pipeline?
+- [ ] Diagnostic calls scheduled?
+- [ ] Active projects on track?
+- [ ] Payments collected?
+
+### Agency Infrastructure Check
+- [ ] Roles clear with team?
+- [ ] Developer pipeline healthy?
+- [ ] Margins protected?
+
+### Discipline Check
+- [ ] Avoided coding production myself?
+- [ ] Charged for diagnostic time?
+- [ ] Stayed out of content/inbound work?
+
+---
+
+## The Simple Rule
+
+```
+Revenue first. Everything else later.
+
+You are the Architect, not the builder.
+Diagnose → Prototype → Scope → Price → Delegate → Manage → Collect
+
+$50k/mo × 3 months → THEN scale with content.
+```

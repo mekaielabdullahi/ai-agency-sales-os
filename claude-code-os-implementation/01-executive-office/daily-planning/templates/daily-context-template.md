@@ -1,20 +1,33 @@
-# Daily Planning Context Template
+# Daily Planning Context Template (Mentor-Aligned)
 
 Use this template to provide context for daily planning generation.
+**REMEMBER:** Time is your most valuable asset. Protect it.
 
 ## Date: [YYYY-MM-DD]
 
+## 🎯 TODAY'S TOP 2-3 (ONLY)
+1. [Most Important - MUST complete]
+2. [Second Priority - MUST complete]
+3. [Third Priority - MUST complete if applicable]
+
+## 🚫 TODAY'S NO LIST (Protecting Time)
+- NOT doing: [Specific thing you're saying NO to]
+- NOT doing: [Another distraction to avoid]
+- NOT doing: [Time sink to refuse]
+
+## 🔄 OPEN LOOPS TO CLOSE TODAY
+- [ ] [Commitment that ends today]
+- [ ] [Loop that must be closed]
+- [ ] [Obligation to complete]
+
 ## Yesterday's Status
-### Completed
+### Completed (Did I finish my TOP 2-3?)
 - [Task 1]
 - [Task 2]
 
-### Incomplete (carry over)
+### Incomplete (Why didn't it close?)
 - [Task 1 - reason for incompletion]
 - [Task 2 - reason for incompletion]
-
-### Unexpected Wins
-- [Any unexpected progress]
 
 ## Today's Landscape
 ### Fixed Commitments

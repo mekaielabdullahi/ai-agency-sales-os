@@ -1,323 +1,209 @@
-# OBG (One Big Goal) Definition Framework
+# One Big Obsessional Goal (OBG)
+
+## Current OBG
+
+**Goal:** $50k/month revenue consistently for 3+ months
+
+**Timeframe:** November 2025 - Q1 2026
+
+**Success Criteria:**
+- [ ] $50k/month achieved
+- [ ] Maintained for 3 consecutive months
+- [ ] Agency structure operational (sales + architect + developers)
+- [ ] Developer funnel producing talent
+
+**After OBG achieved:** Prioritize YouTube content and inbound lead flow to scale.
 
 ---
 
-## 🎯 What is an OBG?
+## Your Role: Builder → Architect (Progression)
 
-**OBG = One Big Obsessional Goal**
+### Current Phase: Hands-On Builder
+You need to know the ins and outs of client work before you can manage it.
 
-Your OBG is the **single most important objective** you must achieve in the next 90 days that will make everything else easier or unnecessary.
+**Now:**
+- Deliver client projects yourself
+- Build cash flow through direct work
+- Learn every component deeply
+- Develop quality metrics expertise
+- Document what works
 
----
+**Then (after proven delivery):**
+- Scope and price with confidence (because you've done it)
+- Delegate to developers (because you know what good looks like)
+- Manage quality (because you've built the evals)
+- Protect margins (because you know true costs)
 
-## 📋 OBG Characteristics
+### Future Role: The Architect
+- Diagnose business problems
+- Prototype to validate demand
+- Scope, estimate, price
+- Recruit and evaluate developers
+- Manage delivery and quality
+- Train developers (Developer Academy)
 
-A proper OBG must be:
-
-### 1. **Singular**
-- ONE goal, not three
-- ONE obsession, not scattered focus
-- If you have multiple "OBGs", you have zero OBG
-
-### 2. **Measurable**
-- Clear success criteria
-- Quantifiable outcome
-- Unambiguous completion state
-
-### 3. **Time-Bound**
-- 90-day window (one quarter)
-- Specific deadline
-- Urgent enough to command daily attention
-
-### 4. **Constraint-Breaking**
-- Removes your biggest bottleneck
-- Unlocks multiple opportunities
-- Creates leverage for future goals
-
-### 5. **Obsession-Worthy**
-- Important enough to think about daily
-- Meaningful enough to sacrifice for
-- Exciting enough to maintain motivation
+**You earn the Architect role by doing the work first.**
 
 ---
 
-## 🔨 OBG Creation Process
+## Agency Structure
 
-### Step 1: Brain Dump (10 minutes)
-List everything you think is important to achieve:
+### Linh (Sales + Relationships)
+- Finds businesses
+- Opens doors, sets meetings
+- Builds trust
+- Offers diagnostic calls
+- Loops you in when needed
+- Manages client relationships
 
-```
-1. ___________________________________
-2. ___________________________________
-3. ___________________________________
-4. ___________________________________
-5. ___________________________________
-[continue...]
-```
+### Mikael (Outbound + Biz Dev)
+- Moves fast
+- Runs outreach
+- Finds operators
+- Builds relationships
+- Closes smaller deals
+- Supports operations
 
----
-
-### Step 2: The Brutal Question (5 minutes)
-**For each item, ask**: "If I could only achieve ONE of these, which would it be?"
-
-**Your answer**: ___________________________________
-
----
-
-### Step 3: The Constraint Test (5 minutes)
-**Ask**: "What is my biggest constraint right now?"
-
-**Answer**: ___________________________________
-
-**Ask**: "Does my ONE thing break this constraint?"
-
-**Answer**: Yes / No
-
-**If NO**: Reconsider your ONE thing.
+### You (Architect + Estimator + Technical Strategist)
+- Diagnose problems
+- Prototype solutions (vibe coding)
+- Scope and estimate projects
+- Recruit and evaluate developers
+- Price with margin protection
+- Manage delivery and quality
+- Train developers (Developer Academy)
 
 ---
 
-### Step 4: The Leverage Test (5 minutes)
-**Ask**: "If I achieve this ONE thing, what else becomes easier or unnecessary?"
+## The Agency Flow
 
-**Answer**:
-- ___________________________________
-- ___________________________________
-- ___________________________________
+### 1. Sales / Inbound → Understand the Pain
+Linh + Mikael bring leads. You run diagnostic:
+- Why are you frustrated?
+- What broke? What's inefficient?
+- What's costing money/time/energy?
+- Why now?
 
-**If the list is short**: Reconsider your ONE thing.
+**This conversation is billable at $200-500/hr. No more free discovery.**
+
+### 2. You Build a Quick Prototype (Vibe Coding)
+NOT production. Goal: "Do you want THIS or not?"
+- YES → scope and quote
+- NO → they tell you what they actually want
+- NOT EXACT → refine until "YES I WOULD PAY FOR THIS"
+
+**Highest leverage step. Prevents wasted dev time. Gives massive authority.**
+
+### 3. You Scope and Price
+Because YOU understand:
+- What is hard vs easy
+- What is risky vs simple
+- What is expensive vs cheap
+- How long things take
+- Proper architecture
+- What fails and what works
+
+**You determine: Timeline, Tech stack, Complexity, Expected cost**
+
+### 4. You Recruit and Evaluate Developers
+Detect:
+- Do they know what they're talking about?
+- Have they built this before?
+- Do they understand architecture?
+- Are they BSing?
+- Do their estimates make sense?
+- Will they hit deadlines?
+
+If they pass → negotiate their cost.
+
+### 5. You Add Margin + Deliverables
+Example:
+```
+Developer cost:     $4k
+Your margin + mgmt: $4k
+Sales fee:          $2k
+─────────────────────────
+Total to client:    $10k
+
+Developer gets $4k
+You keep $6k
+Agency wins
+Client gets working solution
+```
+
+### 6. You Manage to Completion
+- Timestamp enforcer
+- Deliverables tracker
+- Technical reviewer
+- "Does this actually work?" validator
 
 ---
 
-### Step 5: Make it Measurable (5 minutes)
-Convert your goal into a specific, measurable outcome.
+## The Developer Academy ("I Code My Business")
 
-**Template**:
-```
-Achieve [SPECIFIC METRIC] by [SPECIFIC DATE]
-measured by [SPECIFIC MEASUREMENT METHOD]
-```
+**Your long-term moat.** You're not just finding developers - you're creating a training program that produces them.
 
-**Examples**:
-- ✅ "Launch product to 100 paying customers by March 31"
-- ✅ "Increase MRR to $50K by end of Q2"
-- ✅ "Ship v1.0 with 5 core features by June 15"
-- ❌ "Grow the business" (not specific)
-- ❌ "Be more productive" (not measurable)
-- ❌ "Launch product soon" (no deadline)
+Teach:
+- Automation fundamentals
+- How to build each automation type
+- Real case studies and systems
+- Best practices and architectures
+- Common pitfalls and system design
+- Quote scoping and estimation
+- Cost-based pricing
 
----
+**Developers learn → trust you → want projects → feed into agency ecosystem**
 
-### Step 6: The "Hell Yes" Test (2 minutes)
-**Ask yourself**: "Am I excited to wake up and work on this every day?"
-
-If it's not a "HELL YES", it's not your OBG.
+This is why your agency becomes unstoppable.
 
 ---
 
-## 📝 OBG Template
+## Revenue Path to $50k/month
 
-### Current OBG
-```
-[SPECIFIC, MEASURABLE GOAL]
-```
-
-### Success Criteria
-**Done means**:
-1. ___________________________________
-2. ___________________________________
-3. ___________________________________
-
-### Deadline
-**Must be achieved by**: ___________________________________
-
-### Why This Matters
-**OBG Impact**:
-- ___________________________________
-- ___________________________________
-- ___________________________________
-
-### What It Unlocks
-**Achieving this enables**:
-1. ___________________________________
-2. ___________________________________
-3. ___________________________________
-
-### Main Constraint It Breaks
-**Current bottleneck**: ___________________________________
-**How OBG breaks it**: ___________________________________
+| Source | Target |
+|--------|--------|
+| Client projects (with margin) | $30-40k |
+| Diagnostic calls ($200-500/hr) | $5-10k |
+| Developer Academy (future) | $5-10k |
 
 ---
 
-## 🎯 OBG Examples
+## OBG Alignment Check
 
-### Good OBGs
+For any task, ask:
+```
+Does this contribute to $50k/month revenue?
+1. Does it bring in a client? → YES/NO
+2. Does it close a deal? → YES/NO
+3. Does it improve delivery/margins? → YES/NO
+4. Does it build the developer funnel? → YES/NO
 
-**Example 1: SaaS Startup**
-```
-OBG: Launch MVP to 50 beta users by March 31
-Success: 50 users signed up, using product, providing feedback
-Why: Validates product-market fit, enables fundraising, proves concept
-Unlocks: Series A fundraising, hiring, scaling
-```
-
-**Example 2: Agency Owner**
-```
-OBG: Increase monthly revenue to $50K by June 30
-Success: $50K+ MRR for 2 consecutive months
-Why: Achieves financial sustainability, enables team growth
-Unlocks: Hiring, systems investment, strategic growth
-```
-
-**Example 3: Solo Developer**
-```
-OBG: Ship v1.0 with payment integration by May 15
-Success: Product live, accepting payments, first sale made
-Why: Proves business viability, generates revenue
-Unlocks: Marketing, customer acquisition, feature expansion
+If NO to all → This task is NOT aligned. Eliminate or defer.
 ```
 
 ---
 
-### Bad OBGs (and Why)
+## What's DEFERRED Until OBG Hit
 
-**Bad Example 1**:
-```
-"Improve productivity and launch product and grow revenue"
-```
-**Why it's bad**: Three goals, not ONE. Scattered focus.
+- YouTube content scaling
+- Inbound lead flow optimization
+- Personal brand building
+- Anything that doesn't directly drive revenue
 
-**Bad Example 2**:
-```
-"Make progress on the business"
-```
-**Why it's bad**: Not measurable. Not specific. No deadline.
-
-**Bad Example 3**:
-```
-"Read 10 books and learn 3 programming languages"
-```
-**Why it's bad**: Inputs, not outputs. Learning without application.
+**After 3 months at $50k/mo:** Then focus on content and inbound to scale.
 
 ---
 
-## 🔄 OBG Evolution
+## Next Actions
 
-### When to Change Your OBG
-
-**Change your OBG if**:
-1. ✅ You achieved it (Celebrate! Set new OBG)
-2. ✅ Fundamental assumptions changed (pivot)
-3. ✅ It's proven to be wrong constraint (strategic shift)
-
-**DON'T change your OBG because**:
-1. ❌ It's hard
-2. ❌ You're distracted by new shiny opportunity
-3. ❌ You're scared
-4. ❌ It's taking longer than expected
-
-### OBG vs Tactics Flexibility
-- **OBG**: Fixed (for 90 days)
-- **How you achieve it**: Flexible (experiment daily)
+**With Linh Today:**
+- [ ] Share this clarity
+- [ ] Define roles cleanly
+- [ ] Align incentives
+- [ ] Plan invoice/chatbot MVP delivery
+- [ ] Discuss developer funnel foundation
+- [ ] Set next actions for agency
 
 ---
 
-## 📊 OBG Tracking
-
-### Weekly OBG Progress
-**Week 1**: ____% complete
-**Week 2**: ____% complete
-**Week 3**: ____% complete
-**Week 4**: ____% complete
-[...continue through week 12-13]
-
-### Monthly OBG Assessment
-**Month 1**:
-- Progress: ___________________________________
-- Learnings: ___________________________________
-- Adjustments: ___________________________________
-
-**Month 2**:
-- Progress: ___________________________________
-- Learnings: ___________________________________
-- Adjustments: ___________________________________
-
-**Month 3**:
-- Progress: ___________________________________
-- Learnings: ___________________________________
-- Final push: ___________________________________
-
----
-
-## 🎯 Daily OBG Connection
-
-### Every Day, Ask:
-1. "How does today's ONE THING advance my OBG?"
-2. "Am I on track to hit my OBG?"
-3. "What's the constraint blocking OBG progress?"
-4. "What can I do TODAY to move the needle?"
-
-### Weekly Check:
-**OBG Progress This Week**: ____%
-**What moved the needle**: ___________________________________
-**What didn't**: ___________________________________
-**Next week's focus**: ___________________________________
-
----
-
-## 🚨 OBG Warning Signs
-
-### You DON'T have a real OBG if:
-- [ ] You can't recite it from memory
-- [ ] You don't think about it daily
-- [ ] It doesn't inform your daily decisions
-- [ ] You have multiple "equal priority" goals
-- [ ] You're not measuring progress
-- [ ] You don't know if you're on track
-- [ ] It doesn't excite or scare you
-
-**If any are checked**: Redefine your OBG.
-
----
-
-## 🎬 Take Action Now
-
-### Your OBG Definition (Complete Now)
-
-**My OBG for {{QUARTER}} {{YEAR}}**:
-```
-___________________________________
-___________________________________
-___________________________________
-```
-
-**Deadline**: ___________________________________
-
-**Success Criteria**:
-1. ___________________________________
-2. ___________________________________
-3. ___________________________________
-
-**Why it matters**: ___________________________________
-
-**What it unlocks**: ___________________________________
-
-**Current progress**: ____% (toward OBG)
-
----
-
-## 💡 OBG Principles
-
-1. **"One target, one bullet"** - Focus all energy on one goal
-2. **"Clarity beats perfection"** - Better to pursue clear goal imperfectly than perfect goal unclearly
-3. **"Measure or die"** - If you can't measure it, it's not an OBG
-4. **"90 days or bust"** - Shorter creates urgency, longer loses focus
-5. **"Obsession is a feature, not a bug"** - Healthy obsession drives results
-
----
-
-*"The main thing is to keep the main thing the main thing." - Stephen Covey*
-
-*"If you chase two rabbits, you will not catch either one." - Russian Proverb*
-
-*Last Updated: {{DATE}}*
+**This is what you were built for.**
