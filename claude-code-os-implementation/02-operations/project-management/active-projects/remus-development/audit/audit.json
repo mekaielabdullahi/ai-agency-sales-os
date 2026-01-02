@@ -1,0 +1,278 @@
+{
+  "client": {
+    "name": "Remus Development",
+    "website": "https://www.romandrem.com/",
+    "industry": "Concrete Construction - Land Development",
+    "location": "Phoenix, AZ",
+    "size": "Small (2-3 core team)"
+  },
+  "discovery": {
+    "date": "2025-12-23",
+    "participants": ["Michael Kocourek", "Chris Andrade", "Matthew Kerns", "Trent"],
+    "sources": [
+      "Discovery call transcript (71 min)",
+      "Internal team debrief (17 min)"
+    ]
+  },
+  "team": {
+    "michael_kocourek": {
+      "role": "Owner",
+      "responsibilities": ["Accounting", "Business Development", "Strategic"],
+      "tech_comfort": "Moderate - used Outlook Tasks successfully in previous role",
+      "strengths": [
+        "Internal systems and processes",
+        "Spreadsheet management",
+        "Accounting and financial tracking",
+        "Strategic planning"
+      ],
+      "weaknesses": [
+        "Relationship building (self-admitted: 'I would have gotten right to the business')",
+        "Personal bandwidth limited"
+      ],
+      "optimal_role": "Internal operations, financial oversight, system implementation"
+    },
+    "david_navarez": {
+      "role": "VP of Ops / Superintendent",
+      "responsibilities": ["Field Operations", "All Bidding", "Crew Management"],
+      "experience_years": 40,
+      "compensation": {
+        "current": "$3,500/week",
+        "previous": "$4,500/week",
+        "changed": "~3 weeks ago"
+      },
+      "tech_comfort": "Low - needs explicit Loom video training, 4-5 iterations to learn",
+      "strengths": [
+        "Concrete estimation (40 years experience)",
+        "Field supervision",
+        "Known in the industry (people know him)",
+        "Existing relationships"
+      ],
+      "weaknesses": [
+        "Technology adoption",
+        "Administrative tasks"
+      ],
+      "optimal_role": "Estimation, field delivery, leveraging existing industry relationships"
+    },
+    "chris_andrade": {
+      "role": "Partner (External Support)",
+      "responsibilities": ["Admin support", "Spreadsheet development"],
+      "assets_created": ["Profit calculation spreadsheets with man-hour factors"],
+      "strengths": [
+        "Relationship building (natural at social situations)",
+        "Spreadsheet/tool development",
+        "Admin operations (timesheets, payroll, document management)",
+        "BD outreach (though job site approach failed)"
+      ],
+      "weaknesses": [
+        "Gets pulled into admin when should be doing BD"
+      ],
+      "optimal_role": "External relationship building, BD in social settings, supporting admin systems",
+      "key_quote": "If I was at a bar or something or a restaurant... then that shit is really different"
+    }
+  },
+  "role_optimization": {
+    "current_problem": "Chris got pulled into admin (timesheets, payroll, documents) instead of BD. Michael doing BD but admits he's not naturally good at relationship building.",
+    "recommended_allocation": {
+      "michael": {
+        "focus": "Internal operations, systems, accounting, bid tracking",
+        "reduce": "External relationship BD"
+      },
+      "david": {
+        "focus": "Estimation, field delivery, leverage existing industry relationships for follow-ups",
+        "reduce": "Nothing - already at capacity"
+      },
+      "chris": {
+        "focus": "Relationship-based BD (industry events, social settings, watering holes)",
+        "reduce": "Admin tasks that Michael can handle"
+      }
+    },
+    "insight": "Chris is naturally better at relationship building. Michael is better at systems/internal. Current allocation is backwards - Chris doing admin while Michael does (poorly) BD."
+  },
+  "current_state": {
+    "work_type": "Piecework for other contractors (not winning full contracts yet)",
+    "market_position": "Unknown entity in relationship-driven market",
+    "financial_pressure": "High - struggling to cover overhead"
+  },
+  "systems": {
+    "existing": [
+      {
+        "name": "Microsoft 365",
+        "components": ["Outlook", "Teams (web conf only)", "OneDrive", "CRM (unused)"],
+        "status": "Underutilized"
+      },
+      {
+        "name": "Takeoff Software",
+        "cost": "$750/year",
+        "owner": "David",
+        "status": "Active"
+      },
+      {
+        "name": "Excel Spreadsheets",
+        "purpose": ["Bid calculations", "Bid tracker (15+ statuses)"],
+        "status": "Overly complex"
+      },
+      {
+        "name": "Chris's Profit Spreadsheets",
+        "purpose": ["Man-hour factors", "Per line item profit calculation"],
+        "status": "Existing asset to build on"
+      }
+    ],
+    "missing": [
+      "CRM/Pipeline visibility",
+      "Bid follow-up automation",
+      "Job costing data capture",
+      "BD contact management"
+    ]
+  },
+  "processes": {
+    "bid_creation": {
+      "owner": "David",
+      "status": "Working",
+      "time": "2 hours to 1 week",
+      "notes": "Opaque to Michael until recently"
+    },
+    "bid_follow_up": {
+      "owner": "Nobody",
+      "status": "BROKEN",
+      "planned_solution": "Outlook Tasks"
+    },
+    "field_operations": {
+      "owner": "David",
+      "status": "Working",
+      "notes": "Dual role limits capacity"
+    },
+    "job_costing": {
+      "owner": "David",
+      "status": "PLANNED",
+      "blocker": "Currently piecework, not full contracts"
+    },
+    "bid_tracking": {
+      "owner": "Michael/David",
+      "status": "EXISTS - needs simplification",
+      "issue": "15+ status colors"
+    },
+    "bd_outreach": {
+      "owner": "Michael",
+      "status": "CRITICAL GAP",
+      "failed_approaches": ["Job site cold outreach"],
+      "to_test": [
+        "Industry watering holes (bars/restaurants)",
+        "Association events",
+        "Trade shows",
+        "Supplier networks",
+        "Referral incentives",
+        "LinkedIn warm-up"
+      ]
+    },
+    "bid_outcome_tracking": {
+      "owner": "Nobody",
+      "status": "MISSING",
+      "impact": "Can't learn why bids fail"
+    }
+  },
+  "opportunities": [
+    {
+      "id": 1,
+      "name": "Outlook Tasks Bid Follow-Up",
+      "priority": "P0",
+      "impact": "HIGH",
+      "effort": "LOW",
+      "owner": "Michael",
+      "status": "Planned for next week"
+    },
+    {
+      "id": 2,
+      "name": "Bid Tracker Simplification",
+      "priority": "P0",
+      "impact": "MED-HIGH",
+      "effort": "LOW",
+      "owner": "Michael",
+      "notes": "Build on Chris's existing spreadsheets"
+    },
+    {
+      "id": 3,
+      "name": "Timesheet/Job Costing",
+      "priority": "P1",
+      "impact": "MEDIUM",
+      "effort": "LOW",
+      "owner": "David/Michael",
+      "blocker": "Harder with piecework vs full contracts"
+    },
+    {
+      "id": 4,
+      "name": "CRM/Pipeline System",
+      "priority": "P2",
+      "impact": "HIGH",
+      "effort": "MEDIUM",
+      "owner": "TBD"
+    },
+    {
+      "id": 5,
+      "name": "BD Outreach Strategy & Tools",
+      "priority": "P2",
+      "impact": "HIGH",
+      "effort": "MEDIUM",
+      "owner": "Arise Group",
+      "notes": "Research alternative approaches before automating"
+    },
+    {
+      "id": 6,
+      "name": "Bid Outcome Feedback System",
+      "priority": "P1",
+      "impact": "HIGH",
+      "effort": "LOW-MEDIUM",
+      "owner": "Michael"
+    }
+  ],
+  "not_recommended": [
+    {
+      "name": "Bid Automation / AI Estimation",
+      "reason": "Client resistant - $4M bid error risk too high",
+      "timing": "Way down the road"
+    }
+  ],
+  "key_insights": {
+    "from_discovery": [
+      "Relationship-driven market - they never Google for contractors",
+      "Competitors bidding at zero margin to stay afloat",
+      "David is single point of failure for bids and field",
+      "Michael used Outlook Tasks successfully in previous role"
+    ],
+    "from_internal_discussion": [
+      "David's salary cut from $4,500 to $3,500 three weeks ago",
+      "Chris has existing spreadsheets with man-hour factors - DON'T reinvent",
+      "Job site cold outreach failed - contractors hostile to unsolicited approaches",
+      "Bar/restaurant encounters work better than job site approaches",
+      "Currently doing piecework only - not winning full contracts",
+      "David needs explicit Loom video training (4-5 iterations)"
+    ]
+  },
+  "next_steps": {
+    "client_owned": [
+      "Set up Outlook Tasks for bid follow-up",
+      "Train David (with Loom videos)",
+      "Simplify bid tracker using Chris's spreadsheets"
+    ],
+    "arise_owned": [
+      "Research BD approaches that work in concrete industry",
+      "Draft proposal based on discovery findings",
+      "Schedule follow-up meeting"
+    ],
+    "to_research": [
+      "How successful concrete subs break into new markets",
+      "Industry associations in Phoenix for land development",
+      "Common watering holes for land developers"
+    ]
+  },
+  "metadata": {
+    "created": "2025-12-23",
+    "updated": "2025-12-23",
+    "version": "1.1",
+    "source_files": [
+      "meetings/2025-12-23-discovery/transcript.md",
+      "meetings/2025-12-23-discovery/summary.md",
+      "meetings/2025-12-23-internal-followup/transcript.md",
+      "meetings/2025-12-23-internal-followup/summary.md"
+    ]
+  }
+}

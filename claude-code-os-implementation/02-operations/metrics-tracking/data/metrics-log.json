@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "obg": "$50k/month revenue for 3+ consecutive months",
+    "created": "2024-11-24",
+    "lastUpdated": "2024-11-24"
+  },
+  "monthlyRevenue": [
+    {
+      "month": "2024-11",
+      "target": 50000,
+      "actual": 0,
+      "sources": {
+        "diagnosticCalls": 0,
+        "projectDelivery": 0,
+        "retainers": 0
+      }
+    }
+  ],
+  "weeklyMetrics": [
+    {
+      "weekStart": "2024-11-18",
+      "weekEnd": "2024-11-24",
+      "productivity": {
+        "avgScore": 0,
+        "tier1Completion": 0,
+        "alignmentScore": 0
+      },
+      "revenue": {
+        "collected": 0,
+        "invoiced": 0
+      },
+      "pipeline": {
+        "totalValue": 0,
+        "newLeads": 0,
+        "proposalsSent": 0,
+        "dealsClosed": 0
+      },
+      "projects": {
+        "active": 0,
+        "completed": 0,
+        "health": {
+          "green": 0,
+          "yellow": 0,
+          "red": 0
+        }
+      }
+    }
+  ],
+  "dailyAssessments": [
+    {
+      "date": "2024-11-24",
+      "productivityScore": 0,
+      "taskCompletion": {
+        "tier1": { "planned": 0, "completed": 0 },
+        "tier2": { "planned": 0, "completed": 0 },
+        "tier3": { "planned": 0, "completed": 0 }
+      },
+      "timeAnalysis": {
+        "plannedHours": 0,
+        "actualHours": 0,
+        "focusBlocksPlanned": 0,
+        "focusBlocksCompleted": 0
+      },
+      "scoreBreakdown": {
+        "taskCompletion": 0,
+        "strategicAlignment": 0,
+        "timeEfficiency": 0,
+        "focusQuality": 0
+      },
+      "theOneThing": {
+        "task": "",
+        "completed": false
+      }
+    }
+  ],
+  "pipeline": {
+    "lastUpdated": "2024-11-24",
+    "stages": {
+      "newLeads": [],
+      "qualified": [],
+      "proposalSent": [],
+      "negotiation": [],
+      "readyToClose": []
+    },
+    "summary": {
+      "totalDeals": 0,
+      "totalValue": 0,
+      "weightedValue": 0
+    }
+  },
+  "projects": {
+    "active": [],
+    "incubated": [],
+    "completed": []
+  },
+  "developers": [],
+  "clients": [
+    {
+      "name": "Linh",
+      "projects": ["Invoice automation", "Chatbot"],
+      "status": "active",
+      "totalRevenue": 0
+    },
+    {
+      "name": "Trevor",
+      "projects": ["Brand consultation automation"],
+      "status": "active",
+      "totalRevenue": 0
+    }
+  ],
+  "obgProgress": {
+    "consecutiveMonthsAt50k": 0,
+    "targetMonths": 3,
+    "monthlyHistory": []
+  },
+  "patterns": {
+    "positive": [],
+    "negative": [],
+    "emerging": []
+  }
+}

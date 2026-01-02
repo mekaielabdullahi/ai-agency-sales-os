@@ -1,0 +1,464 @@
+{
+  "business_overview": {
+    "business_name": "S&S Wolf Sheds",
+    "industry": "Retail / Shed Dealership (Graceland Sheds)",
+    "offer_summary": "Dealer for Graceland Sheds operating three lots in Northern Arizona (Tuba City, Flagstaff, Williams). Sells storage sheds, garages, cabins with rent-to-own financing options. Also has GC license via Remus Development for contractor services.",
+    "ideal_customer": "Northern Arizona residents and businesses needing storage solutions. Mix of in-person lot visitors and remote buyers reached via web/social.",
+    "customer_journey_brief": "Customers discover via lot visits, Facebook Marketplace, website, or Google search. On-lot visitors browse ~20 buildings, often leaving without contact captured. Initial contact through lot attendant, phone calls, or online lead forms. Sales process involves pricing discussions, RTO terms explanation, customization options. Order placed through Graceland system, built at plant (6-8 weeks winter, 3-5 weeks spring/summer), inspected by driver Scott, delivered to customer. Post-sale includes warranty support and potential upsell (contractor services, expansions).",
+    "long_term_vision": "Platformizable dealership ops solution across portable buildings, greenhouses, shipping containers, metal buildings, and contractor services. Potential rollout to Graceland dealer network."
+  },
+  "key_stakeholders": {
+    "primary_champion": "Chris Andrade (Son - Agency Lead, Owner/Operator via Remus Development, GC license holder)",
+    "owner": "Sandra 'Sandy' Bomyea (Mom - Owner, sales lead, final decision maker)",
+    "operations": "Scott Bomyer (Dad - Driver, inspections/delivery)",
+    "delivery_partner": "Scott Passmore (Graceland - Hub creation, logistics support)",
+    "marketing": "Alex Bomyea (Website/SEO)",
+    "kayenta_manager": "Eli Gray Eyes (Proposed - Architect, 3 days/week at Kayenta)",
+    "kayenta_staff": "Gray Eyes' Brother (Proposed - Remaining days + Tuba support)",
+    "finishing_work": "Clay (In-house - Office retrofits, insulation, drywall)"
+  },
+  "functions": [
+    {
+      "function_name": "Finance",
+      "current_owner": "Sandra (Owner)",
+      "team_members": ["Matthew (pricing sheets)"],
+      "key_responsibilities": [
+        "Pricing sheets and margin tracking",
+        "Commission structure management (new Graceland structure)",
+        "Daily operating cost tracking (~$400/day estimated)",
+        "RTO/financing terms management through Graceland"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "Difficulty understanding daily operating margins to hire confidently",
+        "Financial clarity gaps making staffing decisions hard"
+      ],
+      "risk_level": "Medium",
+      "notes": "Finance runs through Graceland for order processing. Need better visibility into lot-level profitability."
+    },
+    {
+      "function_name": "Sales",
+      "current_owner": "Sandra (primary), Austin (Tuba City)",
+      "team_members": ["Sandra", "Austin", "Matthew (Williams)"],
+      "key_responsibilities": [
+        "Lot-based sales to walk-in customers",
+        "Phone and online lead handling",
+        "Pricing discussions and customization",
+        "RTO terms explanation",
+        "Closing deals"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "ON-LOT LEAD LEAKAGE: Single attendant cannot capture multiple simultaneous visitors",
+        "Prospects browse and leave without contact captured",
+        "No way to follow up with interested parties who didn't buy",
+        "Time drain answering repetitive questions (pricing, RTO, timelines)",
+        "Both foot traffic AND phone/web leads affected"
+      ],
+      "risk_level": "Critical",
+      "notes": "POST-DISCOVERY UPDATE: On-lot lead leakage is now identified as the #1 pain point, higher priority than paused ads. This drives the QR/slot MVP approach."
+    },
+    {
+      "function_name": "Marketing",
+      "current_owner": "Alex Bomyea",
+      "team_members": ["Alex"],
+      "key_responsibilities": [
+        "Facebook Marketplace daily postings (primary channel)",
+        "Website management (WordPress + Rank Math SEO)",
+        "Limited Instagram presence",
+        "Some Google Ads experiments",
+        "Chambers of Commerce and BBB listings"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "Paused paid ads (~$400/mo) led to traffic collapse",
+        "Previous SEO vendors ($800-$1,200/mo) had unclear ROI - skepticism remains",
+        "Website has broken image rendering and mobile UX problems",
+        "SEO visibility dropped for 'sheds near me' searches",
+        "Limited analytics understanding - uncertain attribution"
+      ],
+      "risk_level": "High",
+      "notes": "POST-DISCOVERY UPDATE: Focus shifted from traffic generation to capture optimization. White-label marketing option via Krista Green discussed ($1k/mo wholesale, $1.2-2.8k resale)."
+    },
+    {
+      "function_name": "Customer Service / Customer Success",
+      "current_owner": "Sandra",
+      "team_members": ["Sandra", "lot managers"],
+      "key_responsibilities": [
+        "Answering customer inquiries",
+        "RTO terms and pricing explanations",
+        "Post-sale support",
+        "Handling complaints from delivery issues"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "Repetitive questions drain time (pricing, RTO, timelines)",
+        "Information already in listings but customers don't find it",
+        "No 24/7 coverage for inquiries",
+        "Customer frustration from delivery/dispatch issues"
+      ],
+      "risk_level": "Medium",
+      "notes": "POST-DISCOVERY UPDATE: Chatbot deprioritized vs QR capture. FAQ automation is Phase 2."
+    },
+    {
+      "function_name": "Operations / Fulfillment / Delivery",
+      "current_owner": "Scott (driver), Graceland (manufacturing)",
+      "team_members": ["Scott", "Parents (delivery ops)", "Graceland dispatch (Chris)"],
+      "key_responsibilities": [
+        "Order submission to Graceland",
+        "Order validation (24-48 hrs by Graceland)",
+        "Plant inspection before delivery (Scott)",
+        "Delivery scheduling and execution",
+        "Custom spec verification"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "DELIVERY FRICTION: Drivers lack site specifics before delivery",
+        "Failed/infeasible deliveries due to site constraints (access roads, clearances)",
+        "NetSuite (Graceland) passes minimal info to dealers",
+        "Dispatch texting/call follow-up failures caused cancellations",
+        "Custom orders occasionally built wrong (12-15% error rate)",
+        "Build errors cause 2+ week delays, odd inventory"
+      ],
+      "risk_level": "High",
+      "notes": "POST-DISCOVERY UPDATE: Delivery handoff artifact (customer-to-driver link with maps/instructions) identified as potential solution. Scott now independent, calls/schedules directly."
+    },
+    {
+      "function_name": "On-Lot Operations",
+      "current_owner": "Lot Attendants",
+      "team_members": ["Austin (Tuba City)", "Matthew (Williams)", "TBD (Flagstaff)"],
+      "key_responsibilities": [
+        "Greeting lot visitors",
+        "Answering questions about inventory",
+        "Capturing visitor contact info",
+        "Managing ~20 buildings per lot",
+        "Coordinating with main office"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "LEAD LEAKAGE: Cannot capture multiple simultaneous visitors",
+        "No system to track who looked at what",
+        "No follow-up mechanism for browsers who leave",
+        "No measurement of traffic vs conversion"
+      ],
+      "risk_level": "Critical",
+      "notes": "POST-DISCOVERY UPDATE: NEW FUNCTION identified. This is the primary focus of the MVP - QR/slot system to enable self-service capture and attendant notification."
+    },
+    {
+      "function_name": "Inventory Management",
+      "current_owner": "Chris/Sandra",
+      "team_members": [],
+      "key_responsibilities": [
+        "Tracking ~20 buildings per lot",
+        "Managing slot positions on lot",
+        "Coordinating with Graceland portal",
+        "Excel-based inventory tracking"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "Excel-driven processes prone to breakage",
+        "Potential external refs/macros in spreadsheets",
+        "No integration between inventory and lead tracking",
+        "Graceland portal is read-only"
+      ],
+      "risk_level": "Medium",
+      "notes": "POST-DISCOVERY UPDATE: NEW FUNCTION identified. Inventory management ties into QR/slot system - each slot maps to current building in that position."
+    },
+    {
+      "function_name": "Admin & Management",
+      "current_owner": "Chris Andrade / Sandra",
+      "team_members": ["Matthew (HR, analytics)", "Chris A (advisor/ops)"],
+      "key_responsibilities": [
+        "Team coordination across 3 lots",
+        "Hiring and HR (Matthew)",
+        "Analytics and reporting (Matthew)",
+        "Strategic planning (Chris)",
+        "300-page 'Source of Truth' document management"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "Difficulty finding quality help",
+        "Lack of clarity on margins makes hiring decisions hard",
+        "300-page SOT document is overwhelming",
+        "Need better dashboards for visibility"
+      ],
+      "risk_level": "Medium",
+      "notes": "POST-DISCOVERY UPDATE: Chris Andrade identified as primary champion. SOT v1 document requires AI processing for MVP extraction."
+    },
+    {
+      "function_name": "IT / Systems",
+      "current_owner": "Alex Bomyea",
+      "team_members": ["Alex"],
+      "key_responsibilities": [
+        "WordPress website management",
+        "Rank Math SEO configuration",
+        "Google Analytics (limited understanding)",
+        "Zoho CRM/business suite",
+        "Some Google Ads tag setup",
+        "Excel spreadsheet management"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "Broken image rendering on website",
+        "Mobile UX problems",
+        "Disconnected systems (website, ads, Facebook, Zoho not unified)",
+        "Excel may have external refs/macros blocking migration",
+        "No AI/chatbot optimization on website"
+      ],
+      "risk_level": "Medium",
+      "notes": "POST-DISCOVERY UPDATE: Website access ready 'whenever'. Need to check Excel dependencies before migrating to Sheets."
+    },
+    {
+      "function_name": "Contractor Services (Upsell)",
+      "current_owner": "Chris Andrade (via Remus Development)",
+      "team_members": [],
+      "key_responsibilities": [
+        "GC license holder for contractor work",
+        "Potential services: pads, septic, access roads",
+        "Site preparation for shed delivery"
+      ],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "No structured path to offer ancillary services",
+        "Losing high-value contractor revenue",
+        "Customer trust gap - don't know services are available"
+      ],
+      "risk_level": "Low",
+      "notes": "POST-DISCOVERY UPDATE: NEW FUNCTION identified. Chris has GC license that could enable significant upsell revenue. Not MVP scope but future opportunity."
+    }
+  ],
+  "overload_and_gaps": {
+    "owner_overload_summary": "Sandra wears multiple hats (sales, customer service, admin). Chris Andrade emerging as strategic driver with platform vision. On-lot attendants are overwhelmed by multi-visitor scenarios. Family business with distributed lot management creates coordination challenges.",
+    "missing_or_weak_functions": [
+      "On-lot lead capture system (NO mechanism to capture multiple simultaneous visitors)",
+      "Inventory-to-lead tracking (no link between who looked at what)",
+      "Traffic analytics (no footfall measurement)",
+      "Delivery site verification (no pre-delivery site assessment)",
+      "Contractor services offer (GC license underutilized)"
+    ],
+    "top_3_risks": [
+      "On-lot lead leakage - visitors browse and leave without capture, no follow-up possible",
+      "Delivery friction - drivers lack site specifics, failed deliveries waste time/cost",
+      "Scope creep - 300-page SOT + platform vision could expand engagement indefinitely"
+    ],
+    "top_3_opportunities": [
+      "QR/Slot capture system - turn passive lot browsing into tracked leads with instant attendant notification",
+      "Platform play - success at S&S could roll out to entire Graceland dealer network",
+      "Contractor services upsell - leverage GC license for pads, septic, access roads"
+    ]
+  },
+  "recommendations": {
+    "mvp_scope": [
+      "QR/Slot system: 20 fixed slot QR codes per lot with backend inventory mapping",
+      "Website intake form with guided flow and instant attendant notifications",
+      "Lead-to-building tracking: link scans to specific inventory",
+      "Basic scan analytics: who looked at what, multi-scan tracking"
+    ],
+    "quick_wins_30_days": [
+      "Deploy QR slot codes at one lot (proof of concept)",
+      "Fix website image rendering issues",
+      "Add intake form with email/SMS notification to attendant",
+      "Set up lead-to-inventory tracking spreadsheet or simple CRM"
+    ],
+    "90_day_priorities": [
+      "Roll out QR system to all 3 lots",
+      "Implement lightweight CRM with customer portfolio tracking",
+      "Add delivery handoff artifact (site specs link for drivers)",
+      "Traffic counting via camera at single entry/exit",
+      "Revisit chatbot/FAQ automation (Phase 2)"
+    ],
+    "deprioritized_from_original": [
+      "AI Chatbot for FAQ automation (now Phase 2+)",
+      "Resume paid ads (capture first, then traffic)",
+      "Full website rebuild (patch first approach)",
+      "Order verification SOP (not MVP scope)"
+    ],
+    "suggested_future_roles_or_partners": [
+      "White-label marketing via Krista Green ($1k/mo wholesale)",
+      "Platform development team for Graceland network rollout",
+      "Analytics partner for traffic counting implementation"
+    ]
+  },
+  "discovery_timeline": {
+    "initial_discovery": "December 22, 2025",
+    "post_discovery_update": "December 28, 2025",
+    "expansion_strategy_meeting": "December 30, 2025",
+    "status": "Scope expanded - accountability system + multi-location ops",
+    "next_sync": "TBD - clarify QR vs accountability priority"
+  },
+  "december_30_expansion": {
+    "new_dealership_hub": {
+      "location": "Kayenta, Arizona",
+      "expansion_target": "Southern Utah (Four Corners area)",
+      "trigger": "Eli Gray Eyes walked into Tuba City lot Dec 30, proposed opening Kayenta",
+      "managers": {
+        "primary": "Eli Gray Eyes (3 days/week, also does architectural work)",
+        "secondary": "Gray Eyes' brother (remaining days, can help at Tuba)"
+      },
+      "lots_available": "Two lots over 1 acre each, already cleaned out and ready",
+      "gray_eyes_offer": "Will secure license and lease via his connections",
+      "operational_target": "End of February / March",
+      "office_setup": {
+        "source": "Use existing building from backyard inventory",
+        "status": "Partially done, already has electrical",
+        "work_needed": "Insulation, drywall finishing",
+        "contractor": "Clay (in-house)",
+        "budget": "$3,000-$4,000 (based on Williams retrofit)"
+      },
+      "security": "Solar-powered camera systems (same as Tuba)",
+      "graceland_support": "Scott Passmore creating Northern Arizona hub for S&S, excited about Utah expansion",
+      "territorial_protection": "25-year exclusive in Tuba City / Navajo Nation (Chris Willie already denied)"
+    },
+    "accountability_system": {
+      "type": "Proprietary app with individual dealer logins",
+      "chris_quote": "This is what I think is how we at least eliminate the issue with dealerships and finding quality help",
+      "daily_checklist": [
+        "Did you get gas today? Do you need gas tomorrow?",
+        "Did you turn the lights on?",
+        "Are the doors shut?",
+        "Did you make sure all keys are put away?",
+        "Did you spend an hour cleaning up the lot?",
+        "Good pictures of buildings",
+        "360 images for website upload",
+        "One social media post per day of favorite building",
+        "Deposit verification (photo before clock-out)",
+        "Security camera sync for arrival/departure"
+      ],
+      "deposit_process": {
+        "payment_methods": ["credit card", "debit card", "cash", "money order", "check"],
+        "cash_handling": "Sandra knows exact amount from system, rep deposits at Wells Fargo",
+        "locations": "Wells Fargo branches in Kayenta and Tuba",
+        "clock_out_rule": "Send picture of deposit before clocking out"
+      },
+      "purpose": [
+        "Address staffing quality issues",
+        "Ensure consistent customer experience across locations",
+        "Create performance metrics for monthly reviews",
+        "Enable bonus incentives tied to compliance + sales",
+        "Foundation for operational how-to guide",
+        "Simplify onboarding and oversight",
+        "Reduce Sandra's driving burden for oversight"
+      ],
+      "sandra_current_method": "Vehicle - driving to each location regularly",
+      "sandra_quote": "Yes, I do. It's called a vehicle. I'm driving my ass off."
+    },
+    "investment": {
+      "total": "$10,000",
+      "phase_1": "$5,000 - First iteration",
+      "phase_2": "$5,000 - Second iteration",
+      "deadline": "February 1st",
+      "sandra_confirmation": "Okay. Yes. (17:22) ... Yes. (17:27)",
+      "expected_roi": {
+        "breakeven": "6 weeks - $10k back",
+        "week_4": "$15,000",
+        "week_6": "$20,000",
+        "chris_vision": "Eventually that 10,000 is going to be made back in a week, two weeks"
+      }
+    },
+    "financial_targets": {
+      "current_monthly_sales": "$20,000",
+      "target_monthly_sales": "$50,000"
+    },
+    "long_term_vision": {
+      "expansion_sequence": ["Arizona", "Utah", "Oregon", "Washington", "Montana", "Idaho"],
+      "goal": "Replicable dealership models with SOPs enabling delegation"
+    },
+    "action_items": {
+      "this_weekend_saturday": [
+        "Sandra + Chris: Site visit to Kayenta (both lots)",
+        "Chris: Bring drone for reconnaissance footage"
+      ],
+      "immediate": [
+        "Gray Eyes: Secure licensing and lease for Kayenta lot",
+        "Sandra: Send lot coordinates to Scott Passmore for hub planning",
+        "Sandra: Send pictures/dimensions of building to Chris for Clay"
+      ],
+      "before_feb_1": [
+        "Clay: Complete office finishing (insulation, drywall, security)",
+        "Team: First $5,000 iteration of accountability system",
+        "Sandra: Open Wells Fargo account for Kayenta deposits"
+      ],
+      "chris_requested": [
+        "Sandra: Set up meeting with Gray Eyes' brother - Chris wants to sit in (even via computer)"
+      ]
+    },
+    "scope_clarification": "CONFIRMED: Accountability system COMPLEMENTS QR capture system. Both are in scope.",
+    "build_sequence": "OPEN QUESTION: QR first, Accountability first, or parallel?"
+  },
+  "partnerships_and_resources": {
+    "archiefab": {
+      "contact": "Archie Fab (James)",
+      "services": "Conceptual design, architectural, permitting, turnkey metal building solutions",
+      "status": "Waiting to meet team",
+      "value": "Handles all metal/container/custom fabrication needs"
+    },
+    "krista_green_white_label": {
+      "service": "Social media management and content",
+      "wholesale_pricing": {
+        "12_posts_month": "$1,000",
+        "8_page_website": "$2,500"
+      },
+      "suggested_resale": {
+        "12_posts_month": "$1,200-$2,800",
+        "8_page_website": "$6,000-$10,000"
+      },
+      "chris_interest": "High - has 30 hours of drone footage and delivery videos ready",
+      "pricing_doc": "https://docs.google.com/document/d/1BDxsLHTvvrQq3ERSLB84EQ98soJD4pgVlAFOwBaFFIE/edit?tab=t.0"
+    },
+    "eus_underground": {
+      "services": "Septic systems",
+      "relationship": "Contractor referral partner"
+    },
+    "remus_development": {
+      "owner": "Chris Andrade",
+      "services": "GC license holder - concrete pads, site prep, access roads",
+      "value": "Enables upsell to shed customers needing contractor work"
+    }
+  },
+  "arizona_graceland_network": {
+    "dealer_count": "~6 key players in Arizona",
+    "chris_relationship": "Knows all 6 personally",
+    "unique_challenges": [
+      "Hard ground (terrain unlike other regions)",
+      "Arizona/New Mexico require extra Graceland investment",
+      "50-mile radius dealer territory rule",
+      "Dealers sometimes infringe on each other's ad territories"
+    ],
+    "rollout_strategy": "Prove value at S&S first, then leverage for network expansion"
+  },
+  "source_of_truth_document": {
+    "name": "SOT v1 - Keys to the Castle",
+    "pages": "~295-300 pages",
+    "created_by": "Chris Andrade",
+    "time_invested": "4 years of work",
+    "structure": "Indexed with table of contents, page numbers for sections",
+    "contents": [
+      "Prompt breakdowns and results",
+      "Master sheets",
+      "Project summary and value proposition",
+      "Marketing research on industry growth",
+      "Engineered question sets for customer profiling",
+      "Full conversation transcripts from development"
+    ],
+    "processing_approach": "AI Studio mind map + embeddings/RAG for semantic search",
+    "links": {
+      "workbook_1": "https://drive.google.com/file/d/1Uhg0XNy_954pVHHTDCAotJJ-9pVl6XXi/view?usp=drive_link",
+      "website_onboarding_demo": "https://ai.studio/apps/drive/1IVAPcSR98Qqt9Fnkz4UZYs_N0ZycrrtN",
+      "mind_map_visualization": "https://notebooklm.google.com/notebook/0d9bc650-b425-424c-a005-25fb11610c71"
+    }
+  },
+  "prototype_demonstrated": {
+    "tool": "Bolt.new",
+    "built_by": "Matthew",
+    "features": [
+      "10% off special offer entry point",
+      "Email/phone capture",
+      "Building type selection",
+      "Size preferences",
+      "Timeline questions",
+      "Schedule consultation CTA"
+    ],
+    "build_time": "Single prompt / one shot",
+    "status": "Proof of concept shown in meeting"
+  }
+}

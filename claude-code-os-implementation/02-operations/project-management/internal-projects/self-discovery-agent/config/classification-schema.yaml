@@ -1,0 +1,251 @@
+# Classification Schema for Self-Discovery Agent
+# Consistent taxonomy for all indexed content
+
+content_types:
+  process:
+    description: Workflows, SOPs, procedures
+    indicators:
+      - "workflow"
+      - "process"
+      - "sop"
+      - "how to"
+      - "steps:"
+      - "procedure"
+
+  project:
+    description: Client or internal project documentation
+    indicators:
+      - "project"
+      - "client"
+      - "deliverable"
+      - "scope"
+      - "timeline"
+
+  meeting:
+    description: Meeting notes, summaries, transcripts
+    indicators:
+      - "meeting"
+      - "transcript"
+      - "summary"
+      - "action items"
+      - "attendees"
+
+  template:
+    description: Reusable templates and frameworks
+    indicators:
+      - "template"
+      - "[placeholder]"
+      - "{{variable}}"
+      - "fill in"
+
+  agent:
+    description: AI agent prompts and configurations
+    indicators:
+      - "agent"
+      - "prompt"
+      - "you are"
+      - "your role"
+      - "instructions"
+
+  config:
+    description: Configuration and settings
+    indicators:
+      - ".yaml"
+      - ".yml"
+      - "config"
+      - "settings"
+
+  documentation:
+    description: Reference docs, guides, explanations
+    indicators:
+      - "guide"
+      - "documentation"
+      - "reference"
+      - "overview"
+
+  planning:
+    description: Plans, roadmaps, objectives
+    indicators:
+      - "plan"
+      - "roadmap"
+      - "objective"
+      - "goal"
+      - "milestone"
+
+business_functions:
+  sales:
+    path_indicators:
+      - "sales"
+      - "lead"
+      - "proposal"
+      - "pipeline"
+    content_indicators:
+      - "prospect"
+      - "close"
+      - "deal"
+      - "revenue"
+
+  operations:
+    path_indicators:
+      - "operations"
+      - "project-management"
+      - "productivity"
+    content_indicators:
+      - "process"
+      - "workflow"
+      - "tracking"
+      - "metrics"
+
+  delivery:
+    path_indicators:
+      - "development"
+      - "delivery"
+      - "growth-engine"
+    content_indicators:
+      - "build"
+      - "deploy"
+      - "implement"
+      - "develop"
+
+  content:
+    path_indicators:
+      - "content-team"
+      - "posts"
+      - "demo"
+    content_indicators:
+      - "video"
+      - "linkedin"
+      - "content"
+      - "media"
+
+  hr:
+    path_indicators:
+      - "hr-department"
+      - "developer-academy"
+    content_indicators:
+      - "recruit"
+      - "hire"
+      - "training"
+      - "evaluation"
+
+  executive:
+    path_indicators:
+      - "executive-office"
+      - "strategic"
+    content_indicators:
+      - "strategy"
+      - "obg"
+      - "vision"
+      - "alignment"
+
+lifecycle_stages:
+  active:
+    path_indicators:
+      - "active-projects"
+      - "active"
+      - "current"
+
+  completed:
+    path_indicators:
+      - "completed"
+      - "done"
+      - "archived"
+
+  deferred:
+    path_indicators:
+      - "deferred"
+      - "paused"
+      - "on-hold"
+
+  incubated:
+    path_indicators:
+      - "incubated"
+      - "pipeline"
+      - "potential"
+
+  archived:
+    path_indicators:
+      - "archive"
+      - "old"
+      - "deprecated"
+
+automation_potential:
+  high:
+    indicators:
+      - Repetitive manual process
+      - Clear input/output
+      - Structured data handling
+      - Frequent execution (daily/weekly)
+      - Multiple handoffs
+    examples:
+      - Meeting summary extraction
+      - Project status aggregation
+      - Daily planning template generation
+      - Revenue tracking updates
+
+  medium:
+    indicators:
+      - Semi-structured process
+      - Requires some judgment
+      - Occasional execution (monthly)
+      - Single domain
+    examples:
+      - Proposal draft generation
+      - Content outline creation
+      - Project scoping assistance
+
+  low:
+    indicators:
+      - Highly contextual
+      - Requires human judgment
+      - Rare execution
+      - Creative/strategic work
+    examples:
+      - Strategy formulation
+      - Client relationship decisions
+      - Pricing negotiations
+
+  none:
+    indicators:
+      - Purely human activity
+      - No digital component
+      - One-time events
+
+reusability:
+  client_facing:
+    description: Directly applicable to client work
+    indicators:
+      - Discovery templates
+      - Scoping frameworks
+      - Industry-agnostic processes
+
+  internal_only:
+    description: Specific to agency operations
+    indicators:
+      - Internal meetings
+      - Partner communications
+      - Agency-specific configs
+
+  both:
+    description: Valuable internally and for clients
+    indicators:
+      - Process documentation patterns
+      - Project management templates
+      - Quality assurance checklists
+
+# Tagging rules
+auto_tags:
+  - name: "needs_action"
+    trigger: "[ ]"  # Unchecked checkbox
+
+  - name: "stale"
+    trigger: "last_modified > 60 days"
+
+  - name: "high_value"
+    trigger: "revenue OR client OR money OR payment"
+
+  - name: "strategic"
+    trigger: "obg OR $50k OR priority"
+
+  - name: "pain_point"
+    trigger: "problem OR issue OR blocker OR friction"

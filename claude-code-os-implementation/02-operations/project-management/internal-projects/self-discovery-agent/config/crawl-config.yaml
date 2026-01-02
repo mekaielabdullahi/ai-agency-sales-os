@@ -1,0 +1,88 @@
+# Self-Discovery Agent Crawl Configuration
+# Defines what to analyze and in what order
+
+workspaces:
+  development-os:
+    root: ~/workspace/ai-agency-development-os
+    description: Operations, project delivery, internal processes
+
+  sales-os:
+    root: ~/workspace/ai-agency-sales-os
+    description: Sales workflows, agentic modules, knowledge base
+
+# Priority 1: Core Operations (analyze first)
+priority_1_core:
+  development-os:
+    - claude-code-os-implementation/02-operations/project-management/active-projects/
+    - claude-code-os-implementation/01-executive-office/strategic-alignment/
+    - claude-code-os-implementation/02-operations/discovery-process/
+    - claude-code-os-implementation/03-ai-growth-engine/development-framework/
+  sales-os:
+    - agentic/modules/
+    - claude-code-os-implementation/06-knowledge-base/
+    - claude-code-os-implementation/07-workflows/
+
+# Priority 2: Historical Context
+priority_2_historical:
+  development-os:
+    - claude-code-os-implementation/02-operations/project-management/completed-projects/
+    - claude-code-os-implementation/02-operations/project-management/incubated-projects/
+    - claude-code-os-implementation/01-executive-office/internal-business-meetings/
+    - claude-code-os-implementation/02-operations/reports/
+  sales-os:
+    - claude-code-os-implementation/06-knowledge-base/case-studies/
+    - docs/
+
+# Priority 3: Templates & Patterns
+priority_3_templates:
+  development-os:
+    - claude-code-os-implementation/02-operations/discovery-process/templates/
+    - claude-code-os-implementation/03-ai-growth-engine/development-framework/templates/
+    - claude-code-os-implementation/04-content-team/templates/
+    - claude-code-os-implementation/01-executive-office/agents/
+    - claude-code-os-implementation/02-operations/productivity-assessment/agents/
+  sales-os:
+    - claude-code-os-implementation/09-templates/
+    - agentic/modules/proposal/
+    - claude-code-os-implementation/05-hr-department/agent-templates/
+
+# Priority 4: Supporting Content
+priority_4_supporting:
+  development-os:
+    - claude-code-os-implementation/04-content-team/
+    - claude-code-os-implementation/05-hr-department/
+    - claude-code-os-implementation/01-executive-office/daily-planning/
+  sales-os:
+    - claude-code-os-implementation/04-content-team/
+    - agentic/extras/
+
+# Files to exclude
+exclude_patterns:
+  - "*/node_modules/*"
+  - "*/.git/*"
+  - "*/venv/*"
+  - "*/__pycache__/*"
+  - "*.pyc"
+  - "*.log"
+  - "*transcript*.md"  # Too verbose for initial analysis
+
+# File types to analyze
+include_extensions:
+  - .md
+  - .yaml
+  - .yml
+  - .json  # For config files only
+
+# Analysis depth settings
+analysis_depth:
+  full_read:
+    - "README.md"
+    - "*PLAN*.md"
+    - "*OVERVIEW*.md"
+    - "*STATUS*.md"
+    - "*-agent.md"
+  summary_only:
+    - "*transcript*.md"
+    - "*log*.md"
+  skip:
+    - "*archived*"

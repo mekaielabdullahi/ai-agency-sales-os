@@ -1,0 +1,161 @@
+{
+  "business_overview": {
+    "business_name": "David Equipment Share",
+    "industry": "Construction Equipment Rental & Sales",
+    "offer_summary": "Equipment rental and sales services for construction companies",
+    "ideal_customer": "Construction companies and contractors needing heavy equipment (per Chris's summary, line 262)",
+    "customer_journey_brief": "UNKNOWN - not detailed in discovery call"
+  },
+  "functions": [
+    {
+      "function_name": "Finance",
+      "current_owner": "UNKNOWN - not discussed",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": [],
+      "risk_level": "UNKNOWN",
+      "notes": "Finance not discussed in discovery call"
+    },
+    {
+      "function_name": "Sales",
+      "current_owner": "David",
+      "team_members": ["David"],
+      "key_responsibilities": ["Customer outreach", "Follow-ups", "Quote generation", "Relationship management"],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "No CRM system (line 22)",
+        "Follow-ups based on memory (line 148)",
+        "Phone contacts not synced to any system (line 82)",
+        "No reminder system (line 76)"
+      ],
+      "risk_level": "High",
+      "notes": "Core pain point from discovery - David explicitly stated 'I don't really have a good process other than David remembering' (line 148)"
+    },
+    {
+      "function_name": "Marketing",
+      "current_owner": "UNKNOWN - not discussed",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": [],
+      "risk_level": "UNKNOWN",
+      "notes": "Marketing not discussed in discovery call"
+    },
+    {
+      "function_name": "Customer Service / Customer Success",
+      "current_owner": "UNKNOWN - likely David",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": [],
+      "risk_level": "UNKNOWN",
+      "notes": "Not discussed in discovery call"
+    },
+    {
+      "function_name": "Operations / Fulfillment / Delivery",
+      "current_owner": "Equipment Share (corporate)",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": [],
+      "risk_level": "UNKNOWN",
+      "notes": "Inferred - David works for Equipment Share"
+    },
+    {
+      "function_name": "Admin & Management",
+      "current_owner": "UNKNOWN",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": [],
+      "risk_level": "UNKNOWN",
+      "notes": "Not discussed in discovery call"
+    },
+    {
+      "function_name": "IT / Systems",
+      "current_owner": "Equipment Share IT",
+      "team_members": [],
+      "key_responsibilities": ["T3 system management"],
+      "estimated_hours_per_week": null,
+      "pain_points": [
+        "No sales-side integration (line 76)",
+        "T3 system doesn't have follow-ups or reminders (line 76)",
+        "Phone contacts can't sync to sales system (line 82)"
+      ],
+      "risk_level": "High",
+      "notes": "T3 system works well for files (line 34: 'most streamlined thing I've ever used') but lacks sales CRM features"
+    },
+    {
+      "function_name": "Legal & Compliance",
+      "current_owner": "UNKNOWN - likely Equipment Share",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": [],
+      "risk_level": "UNKNOWN",
+      "notes": "Not discussed in discovery call"
+    },
+    {
+      "function_name": "Product / R&D / Innovation",
+      "current_owner": "David (seeking solutions)",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": ["Equipment Share building something David thinks is 'trash' (line 208)"],
+      "risk_level": "Medium",
+      "notes": "David actively seeking CRM solution - reason for this discovery call"
+    },
+    {
+      "function_name": "Purchasing / Vendors",
+      "current_owner": "UNKNOWN",
+      "team_members": [],
+      "key_responsibilities": [],
+      "estimated_hours_per_week": null,
+      "pain_points": [],
+      "risk_level": "UNKNOWN",
+      "notes": "Chris mentioned David has 'specialty pricing on equipment used equipment' (line 292) - needs clarification"
+    }
+  ],
+  "overload_and_gaps": {
+    "owner_overload_summary": "David handles sales without CRM support. Hours/week and workload specifics UNKNOWN.",
+    "missing_or_weak_functions": [
+      "Sales Technology - no CRM (explicitly stated)",
+      "Follow-up System - relies on memory (explicitly stated)",
+      "Contact Management - phone not synced (explicitly stated)"
+    ],
+    "top_3_risks": [
+      "Missed follow-ups due to memory-based process (line 148)",
+      "Contacts isolated in phone with no system access (line 82)",
+      "No visibility into sales pipeline (inferred)"
+    ],
+    "top_3_opportunities": [
+      "Phone contact sync to CRM (David's request, line 82)",
+      "Automated follow-up reminders (David's request, line 88)",
+      "AI assistant for backend tasks (David's interest, line 172)"
+    ]
+  },
+  "recommendations": {
+    "quick_wins_30_days": [
+      "Implement phone contact sync with CRM",
+      "Set up basic follow-up reminder system",
+      "Create simple pipeline visibility"
+    ],
+    "90_day_priorities": [
+      "TBD - requires follow-up discovery for scope",
+      "Potential: AI assistant for routine tasks",
+      "Potential: Integration with Equipment Share systems"
+    ],
+    "suggested_future_roles_or_partners": [
+      "TBD - team structure not discussed"
+    ]
+  },
+  "_metadata": {
+    "audit_date": "2025-12-12",
+    "data_source": "Discovery call transcript",
+    "data_completeness": "PARTIAL - quantitative data missing",
+    "follow_up_required": true,
+    "unknowns_documented_in": "discovery-unknowns.md",
+    "notes": "Many fields marked UNKNOWN or null because information was not provided in discovery call. Do NOT fill in estimated values - schedule follow-up to gather actual data."
+  }
+}
