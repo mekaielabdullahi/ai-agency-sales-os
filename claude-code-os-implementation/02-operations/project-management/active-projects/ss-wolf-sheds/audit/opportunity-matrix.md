@@ -428,10 +428,11 @@
 
 | ID | Opportunity | Category | Status |
 |----|-------------|----------|--------|
-| **P1-DB** | **Database Foundation (Firestore)** | **Phase 1** | ★★★★★ **ACTIVE** |
-| **P1-SOP** | **SOP Generator (Operational Playbooks)** | **Phase 1** | ★★★★★ **ACTIVE** |
-| **P1-WEB** | **Website Quick Fixes (Images/SEO)** | **Phase 1** | ★★★★★ **ACTIVE** |
-| **P1-FORM** | **Customer Onboarding Form** | **Phase 1** | ★★★★★ **ACTIVE** |
+| **P1-ROI** | **ROI Assessment + Stakeholder Interviews** | **Phase 1 QUICK WIN** | ★★★★★ **WEEK 1** |
+| **P1-WEB** | **Website Quick Fixes (Images/SEO)** | **Phase 1** | ★★★★★ **WEEK 1** |
+| **P1-DB** | **Database Foundation (Firestore)** | **Phase 1** | ★★★★★ **WEEK 2** |
+| **P1-SOP** | **SOP Generator (Operational Playbooks)** | **Phase 1** | ★★★★★ **WEEK 2** |
+| **P1-FORM** | **Customer Onboarding Form** | **Phase 1** | ★★★★★ **WEEK 2** |
 | P2-OPT | Sheet 3: Optional Features Data | Phase 2 | ⏳ Deferred |
 | MVP-1 | QR/Slot On-Lot Capture System | MVP | ★★★★★ Phase 2 |
 | MVP-2 | Website Intake Form + Notifications | MVP | ★★★★★ → Merged into P1-FORM |
@@ -471,15 +472,54 @@ Chris mentioned several contractor partnerships:
 
 ---
 
-**Last Updated:** January 3, 2026 (Added Phase 1 Lot Assistant PRD mapping)
-**Status:** Phase 1 PRD completed - Database Foundation + Website Quick Wins
-**Next Sync:** TBD - Clarify QR vs Accountability priority
+**Last Updated:** January 3, 2026 (Added ROI Assessment as Phase 1 Quick Win)
+**Status:** Phase 1 restructured - ROI Assessment is Week 1 Quick Win
+**Next Sync:** TBD - Schedule stakeholder interviews
 
 ---
 
 ## Phase 1 Matrix: Lot Assistant Foundation
 
 The Phase 1 PRD for the "Lot Assistant" system mapped to opportunity matrix format.
+
+**Phase 1 Quick Win:** ROI Assessment with Stakeholder Interviews
+
+---
+
+### P1-ROI: ROI Assessment & Stakeholder Interviews (THE QUICK WIN)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Problem Addressed** | Shooting in the dark without baseline metrics; can't prove ROI without knowing starting point; no standardized processes documented |
+| **Solution** | Structured stakeholder interviews to gather financial/operational baseline AND document current processes |
+| **Deliverables** | Completed ROI Calculator, validated CODB, Lead Handling SOP, Lot Operations SOP |
+| **Impact** | Client understands their own numbers; trust built through collaborative discovery; immediate SOP value |
+| **Effort** | LOW - No development; 4 interviews (~90 min total) |
+| **Investment** | Part of Phase 1 ($5,000 initial) |
+| **Dependencies** | Stakeholder availability |
+| **IP Risk** | LOW - Interview process, not proprietary data |
+| **Success Metrics** | All ROI data gaps filled; 2 initial SOPs created; client presents numbers to team |
+| **Priority** | ★★★★★ **WEEK 1 QUICK WIN** |
+
+**Why This Is THE Quick Win:**
+1. **Immediate Value** - Client learns their own business better (valuable even if we did nothing else)
+2. **No Development** - Just structured conversations; can happen immediately
+3. **Builds Trust** - Collaborative discovery, not sales pitch
+4. **Dual Output** - ROI data + SOPs from same interviews
+5. **Foundation for Everything** - All future ROI claims based on THEIR numbers
+
+**Interview → Output Mapping:**
+
+| Stakeholder | Primary Output | Secondary Output |
+|-------------|----------------|------------------|
+| Sandy (Owner) | Revenue, pricing, close rate data | Lead Handling SOP (sales flow) |
+| Matthew (Williams/Analytics) | Operating costs, CODB breakdown | Time tracking baseline |
+| Alex (Website/Social) | Website traffic, lead sources | Repetitive inquiry patterns for SOP |
+| Scott (Driver) | Delivery data, build errors | Lot Operations SOP (delivery prep) |
+
+**See:** [Stakeholder Questions](./stakeholder-questions-roi.md) | [ROI Calculator](./roi-calculator.md)
+
+---
 
 ### P1-DB: Database Foundation (The "Concrete Slab")
 
@@ -597,16 +637,23 @@ The Phase 1 PRD for the "Lot Assistant" system mapped to opportunity matrix form
 
 ### Phase 1 Consolidated Opportunity Summary
 
-| ID | Opportunity | Impact | Effort | Priority |
-|----|-------------|--------|--------|----------|
-| P1-DB | Database Foundation | ★★★★★ | LOW-MED | #1 Foundation |
-| P1-SOP | SOP Generator | ★★★★★ | LOW-MED | #2 Operations |
-| P1-WEB | Website Quick Fixes | ★★★★☆ | LOW | #3 Parallel |
-| P1-FORM | Customer Onboarding Form | ★★★★★ | LOW | #4 Parallel |
+| ID | Opportunity | Impact | Effort | Priority | Week |
+|----|-------------|--------|--------|----------|------|
+| **P1-ROI** | **ROI Assessment + Stakeholder Interviews** | ★★★★★ | **LOW** | **#1 QUICK WIN** | Week 1 |
+| P1-WEB | Website Quick Fixes | ★★★★☆ | LOW | #2 Parallel | Week 1 |
+| P1-DB | Database Foundation | ★★★★★ | LOW-MED | #3 Foundation | Week 2 |
+| P1-SOP | SOP Generator | ★★★★★ | LOW-MED | #4 Operations | Week 2 |
+| P1-FORM | Customer Onboarding Form | ★★★★★ | LOW | #5 Parallel | Week 2 |
 
 **Total Phase 1 Investment:** $5,000 (initial)
 **Timeline:** 2 weeks
 **IP Risk:** LOW across all deliverables
+
+**Quick Win Strategy:**
+- **Week 1:** ROI Assessment (stakeholder interviews) + Website Fixes
+- **Week 2:** Database Foundation + SOP Generator + Onboarding Form
+
+**Key Insight:** ROI Assessment produces BOTH baseline metrics AND initial SOPs (Lead Handling, Lot Operations) from the same interviews.
 
 ---
 
