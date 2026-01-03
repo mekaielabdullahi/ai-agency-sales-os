@@ -26,8 +26,8 @@ Phase 1 establishes the business case and operational foundation before building
               │           │  ★★★★★   │
               ├───────────┼───────────┤
               │           │  P1-DB    │
-         MED  │           │  P1-SOP   │
-              │           │  ★★★★☆   │
+         MED  │           │  ★★★★★   │
+              │           │           │
               └───────────┴───────────┘
 ```
 
@@ -168,48 +168,6 @@ Phase 1 establishes the business case and operational foundation before building
 
 ---
 
-### P1-SOP: SOP Generator
-
-**Status:** ★★★★☆ WEEK 2 OPERATIONS
-
-| Attribute | Detail |
-|-----------|--------|
-| **Problem Addressed** | No standardized procedures across lots; inconsistent customer experience; can't scale operations |
-| **Solution** | AI-assisted SOP generation system with template library for key dealership workflows |
-| **Impact** | HIGH - Consistent operations across all 3 lots; foundation for Kayenta expansion; feeds accountability system |
-| **Effort** | LOW-MEDIUM - 1 week |
-| **Investment** | Part of Phase 1 ($5,000) |
-| **Dependencies** | Understanding of current workflows (from ROI Assessment interviews) |
-| **IP Risk** | LOW - Process documentation |
-| **Timeline** | Week 2 |
-
-#### Deliverables
-
-| SOP Category | Source | Status |
-|--------------|--------|--------|
-| Lead Handling | Sandy/Alex interviews (ROI Assessment) | ⬜ Pending |
-| Lot Operations | Matthew/Scott interviews (ROI Assessment) | ⬜ Pending |
-| Delivery Prep | Additional development | ⬜ Pending |
-| Sales Process | Template + customization | ⬜ Pending |
-| Customer Follow-up | Template + customization | ⬜ Pending |
-
-#### Features
-
-- Template library for common dealership workflows
-- Customizable checklists per lot/role
-- Version control for procedure updates
-- Mobile-accessible for field staff
-- Integrates with accountability system (OPSYS-1)
-
-#### Success Metrics
-
-- [ ] Initial SOPs imported from ROI Assessment
-- [ ] Template structure created
-- [ ] Mobile-accessible view configured
-- [ ] Adoption by lot staff confirmed
-
----
-
 ### P1-FORM: Customer Onboarding Form
 
 **Status:** ★★★★★ WEEK 2 PARALLEL
@@ -261,8 +219,7 @@ Phase 1 establishes the business case and operational foundation before building
 | **P1-ROI** | **ROI Assessment + Stakeholder Interviews** | ★★★★★ | **LOW** | 1 | **#1 QUICK WIN** |
 | **P1-WEB** | **Website Quick Fixes** | ★★★★★ | LOW | 1 | #2 Parallel |
 | **P1-DB** | **Database Foundation** | ★★★★★ | LOW-MED | 2 | #3 Foundation |
-| **P1-SOP** | **SOP Generator** | ★★★★☆ | LOW-MED | 2 | #4 Operations |
-| **P1-FORM** | **Customer Onboarding Form** | ★★★★★ | LOW | 2 | #5 Parallel |
+| **P1-FORM** | **Customer Onboarding Form** | ★★★★★ | LOW | 2 | #4 Parallel |
 
 ---
 
@@ -298,9 +255,8 @@ Day 5:   ROI presentation prep
 ```
 Day 1-2: Firebase setup, data migration start
 Day 2-3: Sheet 1 (Master Data) + Sheet 7 (CODB) population
-Day 3-4: SOP Generator setup, import initial SOPs
-Day 4-5: Onboarding form build + deployment
-Day 5:   Testing + handoff
+Day 3-4: Onboarding form build
+Day 4-5: Form deployment + testing + handoff
 ```
 
 | Task | Owner | Day | Status |
@@ -310,11 +266,9 @@ Day 5:   Testing + handoff
 | Products collection setup | Developer | 1-2 | ⬜ |
 | Sheet 1 data migration | Developer | 2-3 | ⬜ |
 | Sheet 7 CODB population | AriseGroup | 2-3 | ⬜ |
-| SOP template structure | Developer | 3 | ⬜ |
-| Import initial SOPs | AriseGroup | 3-4 | ⬜ |
 | Onboarding form design | Developer | 3 | ⬜ |
-| Form implementation | Developer | 4 | ⬜ |
-| Notifications setup | Developer | 4-5 | ⬜ |
+| Form implementation | Developer | 3-4 | ⬜ |
+| Notifications setup | Developer | 4 | ⬜ |
 | Testing | All | 5 | ⬜ |
 
 ---
@@ -326,7 +280,6 @@ Day 5:   Testing + handoff
 | P1-ROI | LOW | Stakeholder availability | Schedule early, flexible timing |
 | P1-WEB | LOW | Hosting complexity | Document issues, escalate if needed |
 | P1-DB | LOW | Data quality | Strict hygiene rules, validation |
-| P1-SOP | LOW | Adoption resistance | Involve staff in creation |
 | P1-FORM | LOW | Form abandonment | Keep short, progressive disclosure |
 
 ---
@@ -336,9 +289,7 @@ Day 5:   Testing + handoff
 ```
 P1-ROI (Week 1)
     │
-    ├──► P1-DB (Week 2) - CODB data feeds into Sheet 7
-    │
-    └──► P1-SOP (Week 2) - Interview insights become initial SOPs
+    └──► P1-DB (Week 2) - CODB data feeds into Sheet 7
 
 P1-WEB (Week 1)
     │
@@ -357,7 +308,6 @@ P1-DB (Week 2)
 
 - [ ] ROI Calculator fully populated with validated data
 - [ ] CODB verified (not estimated)
-- [ ] 2+ initial SOPs created and reviewed
 - [ ] Website images loading, mobile working
 - [ ] Onboarding form live and capturing leads
 - [ ] Database foundation in place
