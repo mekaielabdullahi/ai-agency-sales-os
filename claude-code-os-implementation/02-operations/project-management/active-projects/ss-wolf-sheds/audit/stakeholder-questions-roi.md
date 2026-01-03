@@ -6,320 +6,318 @@
 
 ---
 
-## Interview Overview
+## Data Already Gathered from Discovery
 
-These questions are designed to gather the specific data points needed to calculate ROI for the Phase 1 investment ($5,000) and full engagement ($10,000). Each stakeholder has questions tailored to their role and knowledge area.
+The following data points have been extracted from discovery meetings (Dec 22, Dec 28, Dec 30, 2025):
 
-**Interview Duration:** 15-20 minutes per stakeholder
-**Method:** Phone, video call, or in-person at lot visit
+### Financial Data
 
----
+| Metric | Value | Source | Confidence |
+|--------|-------|--------|------------|
+| Current monthly revenue | ~$20,000/month | Dec 30 meeting (Chris) | ⚠️ Medium |
+| Target monthly revenue | $50,000/month | Dec 30 meeting (Chris) | ✅ High |
+| Previous paid ads | $400/month | Dec 22 discovery | ✅ High |
+| Previous SEO vendors | $800-$1,200/month | Dec 22 discovery | ⚠️ Medium |
+| Daily operating cost estimate | ~$400/day | Dec 22 discovery | ❓ Unvalidated |
+| Investment committed | $10,000 (phased: $5k + $5k) | Dec 30 meeting (Sandra confirmed) | ✅ High |
+| ROI expectation | $10k back in 6 weeks | Dec 30 meeting | ✅ High |
+| Williams office retrofit cost | ~$3,000 | Dec 30 meeting (Sandra) | ✅ High |
+| Kayenta office retrofit estimate | $3,000-$4,000 | Dec 30 meeting (Chris) | ⚠️ Medium |
+| Marketing ad spend comfort | $2,500/month | Dec 28 meeting | ⚠️ Medium |
 
-## Sandy Bomyea (Owner) - Sales & Financial Data
+### Operations Data
 
-### Revenue & Pricing
+| Metric | Value | Source | Confidence |
+|--------|-------|--------|------------|
+| Number of lots | 3 (Tuba City, Flagstaff, Williams) | Dec 22 discovery | ✅ High |
+| Max buildings per lot | 20 | Dec 28 meeting (Chris) | ✅ High |
+| Build errors per year | 5-6 out of ~40 orders (12-15%) | Dec 22 discovery | ⚠️ Medium |
+| Build lead times (winter) | 6-8 weeks | Dec 22 discovery | ✅ High |
+| Build lead times (spring/summer) | 3-5 weeks | Dec 22 discovery | ✅ High |
+| Lost sale from build error | $24,000 expansion | Dec 22 discovery | ✅ High |
+| Territorial protection | 25 years exclusive (Tuba City/Navajo Nation) | Dec 30 meeting | ✅ High |
+| Historical sales data available | 2-3 years | Dec 28 meeting | ✅ High |
 
-1. **What's your average shed sale price?**
-   - Range from lowest to highest typical sale
-   - Most common price point
+### Lead & Traffic Data
 
-2. **How many sheds do you sell per month on average?**
-   - Across all 3 lots combined
-   - Breakdown by lot if known (Tuba City, Flagstaff, Williams)
+| Metric | Value | Source | Confidence |
+|--------|-------|--------|------------|
+| Lead drop after pausing ads | 75% decline | Dec 22 discovery | ⚠️ Medium |
+| Lot entry/exit | Single entry point (supports counting) | Dec 28 meeting | ✅ High |
+| Current lead capture rate | 0% (no website forms working) | Dec 28 meeting | ✅ High |
+| Close rate baseline | Unknown - not tracked | Dec 28 meeting | ✅ High (we know it's not tracked) |
 
-3. **What's your current monthly revenue?**
-   - December 2025 estimate
-   - Last "good month" for comparison
+### Team Structure (from Dec 22 Discovery)
 
-4. **What's your gross margin per shed sold?**
-   - After paying Graceland, commissions, delivery
-   - If unknown, what's your net profit per shed estimate?
+| Name | Role | Key Responsibilities |
+|------|------|---------------------|
+| Sandra "Sandy" Bomyea | Owner | Sales lead, final decisions, community relationships |
+| Matthew | Williams lot manager | HR, pricing sheets, analytics |
+| Alex Bomyea | Website/SEO | Website, Facebook/Marketplace posting |
+| Austin | Tuba City lot sales | Sales at Tuba City location |
+| Scott | Driver/Inspections | Deliveries, inspections (independent, formerly corporate) |
+| Chris A | Advisor/Ops | SOPs, analytics, expansion planning |
 
-### Lead Flow & Conversion
+### Technology Stack (from Dec 22 Discovery)
 
-5. **How many leads do you get per month currently?**
-   - Phone calls
-   - Walk-ins across all lots
-   - Website inquiries
-   - Facebook messages
+| System | Purpose | Status |
+|--------|---------|--------|
+| WordPress + Rank Math SEO | Website/SEO | Broken embeds, mobile issues |
+| Google Analytics | Web analytics | Limited understanding |
+| Google Ads | Paid search | Tags set up, limited use |
+| Facebook/Marketplace | Primary social | Daily posts |
+| Zoho | CRM/business suite | In use |
+| NetSuite | Orders/dispatch | Graceland-controlled |
+| iMessage | Team communication | Internal comms |
+| Excel | Inventory/slot mapping | In use, may migrate to Sheets |
+| Graceland Portal | Serials/specs/pictures | Read-only access |
 
-6. **What's your close rate?** (leads that become sales)
-   - Out of 10 serious inquiries, how many buy?
+### Expansion Plans (from Dec 30 Meeting)
 
-7. **How long does it take to close a typical sale?**
-   - First contact to signed order
-
-8. **How many leads do you think you're losing?**
-   - People who inquire but never hear back
-   - People who leave the lot without being captured
-
-### Customer Issues
-
-9. **What's your cancellation/refund rate?**
-   - How many orders cancel before delivery?
-   - How many customers request refunds after delivery?
-
-10. **How many customer complaints do you handle per month?**
-    - About delivery
-    - About build quality
-    - About communication
-
----
-
-## Matthew (Williams Lot, HR, Analytics) - Operations & Costs
-
-### Daily Operating Costs
-
-1. **Do you know your daily operating cost?** (Qualification Question)
-   - If yes: What is it?
-   - If no: Let's build it together
-
-2. **What are your monthly fixed costs?**
-
-   | Category | Monthly Amount |
-   |----------|----------------|
-   | Rent/lot fees (all 3 lots) | $ |
-   | Utilities (electric, water, internet) | $ |
-   | Insurance (liability, vehicle, workers comp) | $ |
-   | Vehicle payments/leases | $ |
-   | Software subscriptions (Zoho, etc.) | $ |
-   | Other fixed costs | $ |
-
-3. **What's your monthly payroll?**
-   - Sandy's draw/salary
-   - Matthew's compensation
-   - Alex's compensation
-   - Austin's compensation
-   - Scott's delivery fees
-   - Other labor costs
-
-4. **What are your variable costs per shed?**
-   - Delivery fees paid to Scott
-   - Commission to Graceland
-   - Marketing/advertising spend
-   - Any per-unit costs
-
-### Time Tracking
-
-5. **How many hours per week do you spend on pricing sheets?**
-   - Looking up prices
-   - Creating quotes
-   - Updating inventory
-
-6. **How many hours per week on analytics/reporting?**
-   - Checking Google Analytics
-   - Reviewing ad performance
-   - Manual data compilation
+| Detail | Value |
+|--------|-------|
+| New location | Kayenta, AZ |
+| Target opening | End of February/March 2026 |
+| Lot options | Two lots over 1 acre each, already cleaned |
+| Staffing plan | Eli Gray Eyes (3 days/week), brother (remaining days) |
+| Hub strategy | Scott Passmore creating Northern AZ hub for S&S |
+| Future expansion | AZ → Southern Utah → Oregon → Washington → Montana → Idaho |
 
 ---
 
-## Alex Bomyea (Website, SEO, Facebook) - Digital & Marketing
+## Questions Answered from Discovery
 
-### Website Performance
+### Sandy Bomyea (Owner)
 
-1. **What's your current monthly website traffic?**
-   - Unique visitors per month
-   - Page views per month
-   - Where do you see these numbers?
+**Revenue & Pricing:**
+1. ✅ Current monthly revenue: ~$20,000 (from Dec 30 meeting)
+2. ❓ **STILL NEED:** Average shed sale price
+3. ❓ **STILL NEED:** Monthly unit sales volume
+4. ❓ **STILL NEED:** Gross margin per shed sold
 
-2. **How many website form submissions do you get?**
-   - Contact forms
-   - Quote requests
-   - Currently zero? (confirm)
+**Lead Flow & Conversion:**
+5. ⚠️ Lead volume dropped 75% after pausing $400/month ads (but current absolute numbers unknown)
+6. ❓ **STILL NEED:** Close rate (leads that become sales)
+7. ❓ **STILL NEED:** Time to close a typical sale
+8. ❓ **STILL NEED:** Estimate of lost leads
 
-3. **What's the bounce rate on your site?**
-   - People who leave immediately
-   - Mobile vs desktop difference
-
-4. **How many broken images/pages have you noticed?**
-   - Product pages affected
-   - Which lots/categories?
-
-### Social Media & Advertising
-
-5. **How many Facebook/Marketplace posts per week?**
-   - Time spent creating posts
-   - Engagement levels (likes, comments, shares)
-
-6. **What was your lead volume BEFORE pausing ads?**
-   - Leads per week with $400/month spend
-   - Quality of those leads
-
-7. **How much time do you spend on Facebook messages?**
-   - Hours per day/week
-   - Types of questions asked
-
-8. **What SEO work was the previous vendor doing?**
-   - $800-$1,200/month - what did that include?
-   - Any measurable results?
-
-### Repetitive Inquiries
-
-9. **What are the top 5 questions you answer repeatedly?**
-   - Pricing questions
-   - RTO terms
-   - Delivery timelines
-   - Customization options
-   - Other
-
-10. **How many times per day do you answer these same questions?**
-    - Across Facebook, phone, in-person
+**Customer Issues:**
+9. ❓ **STILL NEED:** Cancellation/refund rate
+10. ❓ **STILL NEED:** Customer complaint volume per month
 
 ---
 
-## Austin (Tuba City Lot) - Location-Specific Data
+### Matthew (Williams Lot, Analytics)
 
-### Lot Performance
+**Daily Operating Costs:**
+1. ⚠️ Daily operating cost estimate: ~$400/day (UNVALIDATED - needs breakdown)
 
-1. **How many walk-ins do you get per week at Tuba City?**
-   - Weekdays vs weekends
-   - Seasonal variation
+   **STILL NEED - Cost Breakdown:**
 
-2. **How many of those walk-ins become leads you can follow up with?**
-   - Do you capture contact info?
-   - How do you track them?
+   | Category | Monthly Amount | Status |
+   |----------|----------------|--------|
+   | Rent/lot fees (all 3 lots) | $ | ❓ Unknown |
+   | Utilities (electric, water, internet) | $ | ❓ Unknown |
+   | Insurance (liability, vehicle, workers comp) | $ | ❓ Unknown |
+   | Vehicle payments/leases | $ | ❓ Unknown |
+   | Software subscriptions (Zoho, etc.) | $ | ❓ Unknown |
+   | Other fixed costs | $ | ❓ Unknown |
 
-3. **What's your close rate at Tuba City specifically?**
-   - Different from other lots?
+2. ❓ **STILL NEED:** Monthly payroll breakdown
+3. ❓ **STILL NEED:** Variable costs per shed
 
-4. **What unique challenges does Tuba City have?**
-   - Navajo Nation specific requirements
-   - Delivery logistics
-   - Payment preferences
-
-### Time Spent
-
-5. **How much time do you spend answering the same questions?**
-   - Hours per week
-   - Most common questions
-
-6. **How do you currently track your leads?**
-   - Paper? Phone? Memory?
+**Time Tracking:**
+4. ❓ **STILL NEED:** Hours per week on pricing sheets
+5. ❓ **STILL NEED:** Hours per week on analytics/reporting
 
 ---
 
-## Scott (Driver, Inspections) - Delivery & Operations
+### Alex Bomyea (Website, SEO, Facebook)
 
-### Delivery Issues
+**Website Performance:**
+1. ❓ **STILL NEED:** Monthly website traffic (visitors, page views)
+2. ✅ Website form submissions: Currently 0 (forms broken/missing)
+3. ❓ **STILL NEED:** Bounce rate
+4. ✅ Broken images/pages: Yes - confirmed as pain point (Dec 22)
 
-1. **How many deliveries do you make per month?**
-   - Successful first-attempt deliveries
-   - Deliveries requiring reschedule
+**Social Media & Advertising:**
+5. ✅ Facebook/Marketplace: Daily posts (from Dec 22)
+6. ⚠️ Lead volume with $400/month ads: "Noticeable uptick" but not quantified
+7. ❓ **STILL NEED:** Time spent on Facebook messages
+8. ✅ Previous SEO work: $800-$1,200/month with "unclear ROI, skepticism remains"
 
-2. **What percentage of deliveries have issues?**
-   - Customer not home
-   - Site not ready
-   - Wrong gate code/directions
-   - Access problems
-
-3. **How much time is lost per failed delivery attempt?**
-   - Drive time wasted
-   - Rescheduling coordination
-
-4. **What information do you wish you had BEFORE delivery?**
-   - Gate codes
-   - Site photos
-   - Hazard warnings
-   - Customer contact
-
-### Build Quality Issues
-
-5. **How often do you find build errors at pickup?**
-   - Wrong door swing
-   - Wrong window placement
-   - Missing features
-   - Out of ~40 orders, how many had issues?
-
-6. **What happens when you find an error?**
-   - Delay duration
-   - Customer communication
-   - Rebuild process
-
-7. **What's the average cost of a build error?**
-   - Direct costs (rebuild labor, materials)
-   - Indirect costs (lost sales, reputation)
-   - That $24k lost expansion sale - were there others?
+**Repetitive Inquiries:**
+9. ✅ Top repetitive questions identified: Pricing, RTO terms, timelines, quotes (Dec 22)
+10. ❓ **STILL NEED:** Frequency (how many times per day)
 
 ---
 
-## Chris A (Advisor) - Strategic & Operational
+### Austin (Tuba City Lot)
 
-### Operations Assessment
+**Lot Performance:**
+1. ❓ **STILL NEED:** Walk-ins per week
+2. ❓ **STILL NEED:** Lead capture from walk-ins
+3. ❓ **STILL NEED:** Tuba City-specific close rate
+4. ✅ Unique challenges: Navajo Nation specific requirements (confirmed Dec 30)
 
-1. **Where do you see the biggest operational waste?**
-   - Time waste
-   - Money waste
-   - Opportunity waste
-
-2. **What processes need SOPs most urgently?**
-   - Lead handling
-   - Order verification
-   - Delivery coordination
-   - Customer onboarding
-
-3. **What's preventing scale to $50k/month?**
-   - Top 3 bottlenecks
-   - What would need to change?
-
-### Expansion Readiness
-
-4. **What infrastructure is needed for Kayenta hub?**
-   - Systems
-   - Processes
-   - People
-
-5. **What accountability gaps exist with multi-location?**
-   - How do you know what each lot is doing?
-   - Lead follow-up tracking
-   - Daily activity verification
+**Time Spent:**
+5. ❓ **STILL NEED:** Hours on repetitive questions
+6. ❓ **STILL NEED:** Current lead tracking method
 
 ---
 
-## Data Collection Template
+### Scott (Driver, Inspections)
 
-Use this summary to track which data has been collected:
+**Delivery Issues:**
+1. ❓ **STILL NEED:** Deliveries per month
+2. ❓ **STILL NEED:** Percentage with issues (reschedules, failures)
+3. ❓ **STILL NEED:** Time lost per failed delivery
+4. ✅ Info needed before delivery: Gate codes, site photos, hazard warnings, customer contact (Dec 28)
 
-| Metric | Source | Value | Collected? |
-|--------|--------|-------|------------|
-| Daily operating cost | Matthew | $ | ☐ |
-| Average shed sale price | Sandy | $ | ☐ |
-| Monthly unit sales | Sandy | # | ☐ |
-| Gross margin per unit | Sandy | $ | ☐ |
-| Hours/week on repetitive inquiries | Alex/Sandy | hrs | ☐ |
-| Hours/week on manual lead tracking | Matthew | hrs | ☐ |
-| Monthly website traffic | Alex | visitors | ☐ |
-| Lead capture rate | Sandy | % | ☐ |
-| Failed delivery rate | Scott | % | ☐ |
-| Build error frequency | Scott | #/year | ☐ |
-| Customer churn rate | Sandy | % | ☐ |
-| Lot visitor traffic (all locations) | Austin/All | #/week | ☐ |
+**Build Quality Issues:**
+5. ✅ Build error frequency: 5-6 out of ~40 orders/year (Dec 22)
+6. ✅ What happens with errors: Rebuilds, 2+ week delays (Dec 22)
+7. ✅ Cost of build error: Lost $24k expansion sale from one error (Dec 22)
+   - ❓ **STILL NEED:** Are there other examples/average cost?
 
 ---
 
-## Interview Schedule
+### Chris A (Advisor)
 
-| Stakeholder | Priority | Best Time | Contact Method |
-|-------------|----------|-----------|----------------|
-| Sandy | HIGH | TBD | Phone/In-person |
-| Matthew | HIGH | TBD | Phone |
-| Alex | MEDIUM | TBD | Phone |
-| Scott | MEDIUM | TBD | Phone |
-| Austin | LOW | TBD | Phone |
-| Chris A | LOW | TBD | Phone |
+**Operations Assessment:**
+1. ✅ Biggest operational waste identified (Dec 28):
+   - On-lot lead leakage (single attendant can't capture multiple visitors)
+   - Lack of lot analytics (no footfall vs close rate data)
+   - Last-mile delivery friction (drivers lack site specifics)
+   - Missed upsell revenue (no structured path for ancillary services)
 
-**Note:** Sandy and Matthew are priority - they have the financial data needed for ROI calculations.
+2. ✅ Processes needing SOPs (Dec 28):
+   - Lead-to-delivery documentation
+   - Checklists at plant pickup
+   - Catch misbuilds before delivery
+   - Daily dealer accountability checklist (Dec 30)
+
+3. ✅ Bottlenecks preventing scale to $50k/month (Dec 30):
+   - No accountability system for multiple locations
+   - Sandra managing by driving ("I'm driving my ass off")
+   - No way to ensure brand standards across locations
+
+**Expansion Readiness:**
+4. ✅ Infrastructure for Kayenta: Building from backyard (electrical done, needs insulation/drywall), security cameras, gated setup (Dec 30)
+
+5. ✅ Accountability gaps (Dec 30):
+   - No daily check-in system
+   - No way to verify tasks completed
+   - No deposit verification process
+   - Security cameras but no systematic monitoring
 
 ---
 
-## After Interviews: Next Steps
+## Remaining Data Gaps (CRITICAL FOR ROI)
 
-1. Transfer all "Value" column data to ROI Calculator
-2. Calculate daily operating cost if not known
-3. Run ROI scenarios (conservative, moderate, aggressive)
-4. Schedule presentation with Sandy using HER numbers
-5. Let the numbers make the case
+These questions MUST be answered before finalizing ROI projections:
+
+### Priority 1 - Financial (Ask Sandy/Matthew)
+
+| Question | Who to Ask | Why It Matters |
+|----------|-----------|----------------|
+| What's your average shed sale price? | Sandy | Calculate revenue per lead |
+| How many sheds do you sell per month? | Sandy | Baseline volume |
+| What's your gross margin per shed? | Sandy/Matthew | Understand profit per sale |
+| Daily operating cost breakdown | Matthew | Validate $400/day estimate |
+| Monthly payroll total | Matthew | Labor cost baseline |
+
+### Priority 2 - Lead Data (Ask Sandy/Alex)
+
+| Question | Who to Ask | Why It Matters |
+|----------|-----------|----------------|
+| How many leads per month currently? | Sandy | Baseline for improvement |
+| What's your close rate? | Sandy | Calculate lead value |
+| How many walk-ins per lot per week? | All lot managers | Lot traffic baseline |
+
+### Priority 3 - Time Tracking (Ask All)
+
+| Question | Who to Ask | Why It Matters |
+|----------|-----------|----------------|
+| Hours/week answering repetitive questions? | Alex/Sandy | Time savings from automation |
+| Hours/week on manual lead tracking? | Matthew | CRM value |
+| Hours/week on pricing lookups? | Matthew | Database tool value |
+
+### Priority 4 - Delivery/Quality (Ask Scott)
+
+| Question | Who to Ask | Why It Matters |
+|----------|-----------|----------------|
+| Deliveries per month? | Scott | Delivery baseline |
+| % of deliveries with issues? | Scott | Failed delivery cost |
+| Other build error examples/costs? | Scott | Validate SOP ROI |
+
+---
+
+## Data Collection Tracking
+
+| Metric | Source | Value | Status |
+|--------|--------|-------|--------|
+| Daily operating cost | Matthew | ~$400/day (unvalidated) | ⚠️ Needs breakdown |
+| Average shed sale price | Sandy | ❓ | ☐ Not asked |
+| Monthly unit sales | Sandy | ❓ | ☐ Not asked |
+| Gross margin per unit | Sandy | ❓ | ☐ Not asked |
+| Hours/week on repetitive inquiries | Alex/Sandy | ❓ | ☐ Not asked |
+| Hours/week on manual lead tracking | Matthew | ❓ | ☐ Not asked |
+| Monthly website traffic | Alex | ❓ | ☐ Not asked |
+| Lead capture rate | Sandy | 0% (confirmed) | ✅ Gathered |
+| Failed delivery rate | Scott | ❓ | ☐ Not asked |
+| Build error frequency | Scott | 5-6/40 orders | ✅ Gathered |
+| Customer churn rate | Sandy | ❓ | ☐ Not asked |
+| Current monthly revenue | Chris | ~$20,000 | ⚠️ Medium confidence |
+| Lot visitor traffic | All | ❓ | ☐ Not asked |
+
+---
+
+## Key Quotes from Discovery (Supporting ROI)
+
+### On Lead Leakage (Dec 28 - Chris)
+> "A lot of the issues that they talked about is, like, sometimes if there's 15 people, or 10 people, or five people at a dealership and we only have one attendant, right? Who's to say that out of that five people, one of them was able to slip away without even being noticed, right? And I'm trying to capture those guys."
+
+### On Build Errors (Dec 22)
+> "~5-6 errors out of ~40 orders last year. Door/window sides/swings built incorrectly. Causes rebuilds adding 2+ weeks. High reputational cost - one lost expansion worth ~$24k via word-of-mouth damage."
+
+### On Managing Multiple Locations (Dec 30 - Sandra)
+> "Yes, I do. It's called a vehicle. I'm driving my ass off."
+
+### On Scaling (Dec 30 - Chris)
+> "But the way we do that is by creating these systems. So then it's just a copy and paste and then we hire the right people."
+
+### On ROI Expectation (Dec 30 - Chris)
+> "So you're going to turn 10,000 back into 10,000 in six weeks... Eventually that 10,000 is going to be made back in a week, two weeks. Now that 10,000 is making you 15,000 in four weeks. 20,000 in six weeks."
+
+### On Traffic Baseline (Dec 28 - Chris)
+> "We have three years or two years worth of historical sales that we can reference off of."
+
+### On Close Rate (Dec 28 - Trent asking Chris)
+> "Do you have any estimate or account of how many people show up and don't buy? A current way to calculate the close versus sale rate?"
+> Chris: "Yeah. No."
+
+---
+
+## Next Steps
+
+1. **Schedule stakeholder calls** - Priority order:
+   - Sandy (30 min) - Financial & lead data
+   - Matthew (20 min) - Operating costs & time tracking
+   - Alex (15 min) - Website & social data
+   - Scott (15 min) - Delivery data
+
+2. **Questions to ask in each call:**
+   - Use the "Priority" sections above
+   - Focus on getting actual numbers, not estimates
+   - Record answers directly in this document
+
+3. **After data gathered:**
+   - Transfer to ROI Calculator
+   - Run conservative, moderate, aggressive scenarios
+   - Present to Sandy with HER numbers
 
 ---
 
 **Last Updated:** January 3, 2026
-**Status:** Template ready - schedule interviews
+**Status:** Populated from discovery - 7 key data gaps remaining
