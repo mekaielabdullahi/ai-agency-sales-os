@@ -428,10 +428,15 @@
 
 | ID | Opportunity | Category | Status |
 |----|-------------|----------|--------|
-| MVP-1 | QR/Slot On-Lot Capture System | MVP | ★★★★★ Active |
-| MVP-2 | Website Intake Form + Notifications | MVP | ★★★★★ Active |
-| MVP-3 | Lead-to-Building Tracking | MVP | ★★★★★ Active |
-| MVP-4 | Website Quick Fixes | MVP | ★★★★☆ Active |
+| **P1-DB** | **Database Foundation (Firestore)** | **Phase 1** | ★★★★★ **ACTIVE** |
+| **P1-SOP** | **SOP Generator (Operational Playbooks)** | **Phase 1** | ★★★★★ **ACTIVE** |
+| **P1-WEB** | **Website Quick Fixes (Images/SEO)** | **Phase 1** | ★★★★★ **ACTIVE** |
+| **P1-FORM** | **Customer Onboarding Form** | **Phase 1** | ★★★★★ **ACTIVE** |
+| P2-OPT | Sheet 3: Optional Features Data | Phase 2 | ⏳ Deferred |
+| MVP-1 | QR/Slot On-Lot Capture System | MVP | ★★★★★ Phase 2 |
+| MVP-2 | Website Intake Form + Notifications | MVP | ★★★★★ → Merged into P1-FORM |
+| MVP-3 | Lead-to-Building Tracking | MVP | ★★★★★ Phase 2 |
+| MVP-4 | Website Quick Fixes | MVP | ★★★★☆ → Merged into P1-WEB |
 | SI-1 | Delivery Handoff Artifact | Strategic | ★★★★☆ Phase 1.5 |
 | SI-2 | Traffic Counting / Analytics | Strategic | ★★★☆☆ Phase 2 |
 | SI-3 | Lightweight CRM | Strategic | ★★★☆☆ Phase 2 |
@@ -466,9 +471,161 @@ Chris mentioned several contractor partnerships:
 
 ---
 
-**Last Updated:** December 31, 2025 (Added Dec 30 expansion meeting)
-**Status:** Scope expanded - multi-location accountability system added
+**Last Updated:** January 3, 2026 (Added Phase 1 Lot Assistant PRD mapping)
+**Status:** Phase 1 PRD completed - Database Foundation + Website Quick Wins
 **Next Sync:** TBD - Clarify QR vs Accountability priority
+
+---
+
+## Phase 1 Matrix: Lot Assistant Foundation
+
+The Phase 1 PRD for the "Lot Assistant" system mapped to opportunity matrix format.
+
+### P1-DB: Database Foundation (The "Concrete Slab")
+
+| Attribute | Detail |
+|-----------|--------|
+| **Problem Addressed** | No centralized source of truth for inventory or overhead costs; data scattered across spreadsheets |
+| **Solution** | Firestore collections for `products`, `financial_inputs`, `sops`, and `leads` with strict data hygiene |
+| **Deliverables** | Master Shed Data (Sheet 1), CODB Calculator (Sheet 7) |
+| **Impact** | Foundation for all subsequent tools (configurator, CRM, dashboards); enables accurate pricing and ROI calculations |
+| **Effort** | Low-Medium - 1 week for initial setup |
+| **Investment** | Part of Phase 1 ($5,000 initial) |
+| **Dependencies** | Firebase/Google Cloud account (CEO-owned), existing inventory data |
+| **IP Risk** | LOW - Generic product catalog structure |
+| **Success Metrics** | All products migrated, clean numerical data, snake_case compliance |
+| **Priority** | ★★★★★ P1 FOUNDATION - Must complete first |
+
+**Data Standards Required:**
+- Pure numbers only (no `$` or commas in price fields)
+- `snake_case` naming convention for all fields
+- CEO owns Firebase account; developers get Editor access only
+
+> **Note:** Sheet 3 (Optional Features Data) moved to Phase 2 to prioritize SOP Generator.
+
+---
+
+### P1-SOP: SOP Generator (Operational Playbooks)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Problem Addressed** | No standardized procedures across lots; inconsistent customer experience; can't scale operations |
+| **Solution** | AI-assisted SOP generation system with template library for key dealership workflows |
+| **Deliverables** | Lead Handling SOP, Lot Operations SOP, Delivery Prep SOP, mobile-accessible checklists |
+| **Impact** | Consistent operations across all 3 lots; foundation for Kayenta expansion; feeds accountability system |
+| **Effort** | Low-Medium - 1-2 weeks |
+| **Investment** | Part of Phase 1 ($5,000 initial) |
+| **Dependencies** | Understanding of current workflows, stakeholder input |
+| **IP Risk** | LOW - Process documentation |
+| **Success Metrics** | SOPs adopted by lot staff, checklist completion rates, reduced operational variance |
+| **Priority** | ★★★★★ P1 CRITICAL - Enables multi-location scaling |
+
+**SOP Categories:**
+
+| Category | Purpose |
+|----------|---------|
+| Lead Handling | Inquiry → Quote workflow |
+| Lot Operations | Daily opening/closing checklists |
+| Sales Process | Customer engagement procedures |
+| Delivery Prep | Pre-delivery verification |
+| Customer Follow-up | Post-sale cadence |
+
+---
+
+### P1-WEB: Website Quick Fixes (Credibility Restoration)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Problem Addressed** | Broken/blank images, broken embeds, mobile layout issues, slow load times, poor local SEO |
+| **Solution** | Image audit and repair, embed fixes, responsive CSS, image compression, Northern AZ schema markup |
+| **Deliverables** | Working product images, fixed embeds, mobile-friendly layouts, faster load times, "sheds near me" visibility |
+| **Impact** | Immediate credibility improvement; better first impression; improved conversion |
+| **Effort** | Low - 1 week |
+| **Investment** | Part of Phase 1 ($5,000 initial) |
+| **Dependencies** | Website admin access, hosting credentials |
+| **IP Risk** | LOW - Standard website maintenance |
+| **Success Metrics** | Zero broken images, mobile UX score improved, page load < 3 seconds |
+| **Priority** | ★★★★★ P1 PARALLEL - Run alongside database work |
+
+**Specific Fixes:**
+
+| Issue | Fix |
+|-------|-----|
+| Blank/broken images | Audit URLs, re-upload assets, fix CDN paths |
+| Broken embeds | Update embed codes, fix HTTPS mixed content |
+| Mobile layout | Responsive CSS, cross-device testing |
+| Slow load | Compress images, lazy loading |
+| Local SEO | Alt text, Northern AZ schema markup |
+
+---
+
+### P1-FORM: Customer Onboarding Form (Lead Capture Gateway)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Problem Addressed** | No guided lead capture on website; visitors leave without contact captured |
+| **Solution** | Mobile-friendly intake form with auto-responder and sales team notifications |
+| **Deliverables** | 9-field lead form, Firestore `leads` collection, email auto-responder, SMS/email notifications to sales |
+| **Impact** | Start building CRM pipeline immediately; capture visitor intent and source |
+| **Effort** | Low - 1 week (can parallel with website fixes) |
+| **Investment** | Part of Phase 1 ($5,000 initial) |
+| **Dependencies** | Website access, Firestore setup (or temp Google Sheet), notification service |
+| **IP Risk** | LOW - Standard form implementation |
+| **Success Metrics** | Form submissions captured, auto-responder working, sales notified within 5 minutes |
+| **Priority** | ★★★★★ P1 CRITICAL - Feeds all future analytics |
+
+**Form Fields:**
+
+| Field | Type | Required |
+|-------|------|----------|
+| `full_name` | Text | Yes |
+| `email` | Email | Yes |
+| `phone` | Phone | Yes |
+| `interested_in` | Dropdown (Shed types) | Yes |
+| `preferred_size` | Dropdown | No |
+| `timeline` | Dropdown (Immediate / 1-3 mo / 3-6 mo / Browsing) | Yes |
+| `how_did_you_hear` | Dropdown (Facebook, Google, Referral, Drove by, Other) | Yes |
+| `message` | Textarea | No |
+| `preferred_lot` | Dropdown (Tuba City, Flagstaff, Williams) | No |
+
+**Placement:**
+- Homepage (above fold)
+- Contact page
+- Product pages (sidebar/footer)
+
+---
+
+### Phase 1 Consolidated Opportunity Summary
+
+| ID | Opportunity | Impact | Effort | Priority |
+|----|-------------|--------|--------|----------|
+| P1-DB | Database Foundation | ★★★★★ | LOW-MED | #1 Foundation |
+| P1-SOP | SOP Generator | ★★★★★ | LOW-MED | #2 Operations |
+| P1-WEB | Website Quick Fixes | ★★★★☆ | LOW | #3 Parallel |
+| P1-FORM | Customer Onboarding Form | ★★★★★ | LOW | #4 Parallel |
+
+**Total Phase 1 Investment:** $5,000 (initial)
+**Timeline:** 2 weeks
+**IP Risk:** LOW across all deliverables
+
+---
+
+### Phase 2 Preview (Deferred from Phase 1)
+
+| ID | Opportunity | Reason Deferred |
+|----|-------------|-----------------|
+| P2-OPT | Sheet 3: Optional Features Data | Prioritized SOP Generator for operational foundation |
+
+---
+
+### Phase 1 → Existing MVP Alignment
+
+| Phase 1 Item | Aligns With | Enhancement |
+|--------------|-------------|-------------|
+| P1-DB (Database) | NEW | Foundation for MVP-1 QR system and configurator |
+| P1-SOP (SOP Generator) | OPSYS-1 | Feeds into Dealer Accountability System |
+| P1-WEB (Website Fixes) | MVP-4 | Expanded scope with SEO and performance |
+| P1-FORM (Onboarding Form) | MVP-2 | Same goal, detailed field requirements |
 
 ---
 
