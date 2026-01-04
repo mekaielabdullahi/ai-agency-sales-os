@@ -35,12 +35,12 @@ The following data points have been extracted from discovery meetings (Dec 3, De
 | Quote time (with AI) | 2 minutes | Target | ✅ High |
 | Production conflicts | 2-3x per week | Process analysis | ⚠️ Medium |
 
-### Team Structure (from Dec 3 Discovery)
+### Team Structure (from Dec 3 & Dec 22 Discovery)
 
 | Name | Role | Key Responsibilities |
 |------|------|---------------------|
-| Kelce | Owner/Only Technician | All repairs, quoting, customer management |
-| Alyssa | Office Manager | Admin, scheduling, customer communication |
+| Kelsey | Owner/Only Technician | All repairs, quoting, field service, customer management |
+| Alyssa | Office Manager | Admin, scheduling, invoicing, customer communication |
 | Joe | Trainee | Learning repairs (currently 10% capable) |
 | Mike | Consultant | Technical advisor |
 | Chris | Partner | Strategic revenue partner (referral source) |
@@ -49,18 +49,30 @@ The following data points have been extracted from discovery meetings (Dec 3, De
 
 | System | Purpose | Status |
 |--------|---------|--------|
-| Jobber | Job management | Primary system |
-| Phone/Voicemail | Customer contact | Manual processing |
+| Jobber | Job management, scheduling, invoicing | Primary system ($350-400/mo) |
+| Vonage | Phone system (IVR) | Being replaced by Quo |
+| Quo | Unified communications | Testing Phase ✅ |
+| QuickBooks | Accounting | New system Jan 1, 2026 |
+| Multiple email inboxes | Customer contact | 206+ unread, chaos |
 | Manual spreadsheets | Inventory tracking | Inefficient |
-| Paper-based | Knowledge transfer | No documentation |
 
-### Top 3 Quick Wins Identified
+### Phase 1 Deliverables (Quick Win Sprint - $5,000)
 
-| Opportunity | Impact | Value/Month | Effort |
-|-------------|--------|-------------|--------|
-| Customer Self-Service Portal | 70% reduction in status calls | $800-1,200 | Low (40-60 hrs) |
-| Payment Automation | 20% faster collections | $600-800 | Low (20-30 hrs) |
-| AI Instant Quoting | 95% faster quotes | $2,400-3,200 | Medium (80-100 hrs) |
+| Deliverable | Problem Solved | Expected Impact |
+|-------------|----------------|-----------------|
+| **Quo Phone System** | Screenshot bombing, phone number confusion, trust erosion | 90%+ communication auto-captured in Jobber |
+| **Email → Jobber Automation** | 206 unread emails, missed customer requests | <20 unread, all requests in Jobber |
+| **Four Core SOPs** | No documented processes, can't train Joe | Consistent service, trainable workflows |
+| **Communication Protocol Guide** | No rules for team communication | Everyone follows same process |
+
+### Phase 2 Roadmap (PlotterOps Transformation - $15-30K)
+
+| Deliverable | Problem Solved | Expected Impact |
+|-------------|----------------|-----------------|
+| **Inventory Management System** | "No fucking clue what we have" - Chris | 90%+ reduction in wasted trips |
+| **Unified Operations Dashboard** | Jobber + QuickBooks + Quo in separate systems | Single view of entire business |
+| **Complete SOP Library** | 25+ years expertise in Kelsey's head | Searchable, trainable knowledge base |
+| **Automated Pricing System** | Manual quote creation from vendor PDFs | Auto-generate customer quotes |
 
 ---
 
