@@ -5,6 +5,7 @@
 **Investment:** $5,000
 **Timeline:** 2 weeks (Month 2)
 **Trigger:** Phase 1 complete, second payment received
+**Framework:** Liam Ottley 3-Step AI Audit (adapted for implementation)
 **Source:** [Phase 1 PRD](../docs-workbook1/PRD-phase-1-database-foundation.md) | [Main Opportunity Matrix](./opportunity-matrix.md)
 
 ---
@@ -15,6 +16,57 @@ Phase 2 builds on the Phase 1 foundation to implement active lead capture and sa
 
 **Phase 1 Delivered:** ROI baseline, website fixes, database foundation, onboarding form
 **Phase 2 Delivers:** On-lot capture system, pricing configurator, CRM pipeline, analytics
+
+---
+
+## Liam Ottley Framework Alignment
+
+This phase maps to **Step 2: Map, Identify & Validate Opportunities** of Liam's 3-Step AI Audit Framework.
+
+| Liam's Framework | Our Implementation | Status |
+|------------------|-------------------|--------|
+| Ops Canvas (3 Engines) | Mapped below | ✅ Added |
+| Opportunity Matrix (2x2) | Impact vs Effort scoring | ✅ Aligned |
+| 4 Quadrants (Quick Wins, Big Swings, etc.) | All Phase 2 = Quick Wins | ✅ Aligned |
+| Validation Workshop | Included at end of Phase 2 | ✅ Planned |
+| Implementation Roadmap | Dependencies mapped | ✅ Aligned |
+
+---
+
+## 3 Engines Mapping (Ops Canvas)
+
+| Engine | Description | Phase 2 Opportunities |
+|--------|-------------|----------------------|
+| **ACQUISITION** | How they find and sign customers | P2-QR (On-Lot Capture), P2-CRM (Pipeline) |
+| **DELIVERY** | How they deliver product/service | P2-OPT (Options Data), P2-PRICE (Configurator) |
+| **SUPPORT** | Customer questions and post-sale | (Phase 3+) |
+
+### Phase 2 Engine Focus: ACQUISITION (Primary) + DELIVERY (Support)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    ACQUISITION ENGINE                           │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
+│  │   QR Scan    │───►│  Lead Form   │───►│     CRM      │      │
+│  │   P2-QR      │    │  (Phase 1)   │    │   P2-CRM     │      │
+│  │  🟡 Time Sink│    │              │    │  🟡 Quality  │      │
+│  │  ★ ANCHOR    │    │              │    │              │      │
+│  └──────────────┘    └──────────────┘    └──────────────┘      │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     DELIVERY ENGINE                             │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
+│  │   Options    │───►│ Configurator │───►│    Quote     │      │
+│  │   P2-OPT     │    │  P2-PRICE    │    │  Generation  │      │
+│  │  🟡 Quality  │    │  🟡 Time Sink│    │              │      │
+│  └──────────────┘    └──────────────┘    └──────────────┘      │
+└─────────────────────────────────────────────────────────────────┘
+
+🟡 = Time Sink or Quality Risk (AI/Automation Opportunity)
+★ = Anchor Deliverable
+```
 
 ---
 
@@ -58,6 +110,8 @@ Before starting Phase 2, confirm:
 ### P2-QR: QR/Slot On-Lot Capture System
 
 **Status:** ★★★★★ PHASE 2 ANCHOR
+**Quadrant:** ⭐ Quick Win (Medium Effort, High Impact)
+**Engine:** ACQUISITION
 
 | Attribute | Detail |
 |-----------|--------|
@@ -104,6 +158,8 @@ Customer walks lot → Scans QR on shed →
 ### P2-PRICE: Pricing Lookup Tool (Configurator)
 
 **Status:** ★★★★★ WEEK 2
+**Quadrant:** ⭐ Quick Win (Medium Effort, High Impact)
+**Engine:** DELIVERY
 
 | Attribute | Detail |
 |-----------|--------|
@@ -149,6 +205,8 @@ User selects Model ID →
 ### P2-CRM: CRM & Sales Pipeline
 
 **Status:** ★★★★☆ WEEK 2
+**Quadrant:** ⭐ Quick Win (Low-Medium Effort, High Impact)
+**Engine:** ACQUISITION
 
 | Attribute | Detail |
 |-----------|--------|
@@ -195,6 +253,8 @@ User selects Model ID →
 ### P2-OPT: Optional Features Data (Sheet 3)
 
 **Status:** ★★★★★ WEEK 1 (Foundation for Pricing Tool)
+**Quadrant:** ⭐ Quick Win (Low Effort, High Impact)
+**Engine:** DELIVERY
 
 | Attribute | Detail |
 |-----------|--------|
@@ -228,12 +288,14 @@ User selects Model ID →
 
 ## Phase 2 Consolidated Summary
 
-| ID | Opportunity | Impact | Effort | Week | Priority |
-|----|-------------|--------|--------|------|----------|
-| **P2-OPT** | Optional Features Data (Sheet 3) | ★★★★★ | LOW | 1 | #1 Foundation |
-| **P2-QR** | QR/Slot On-Lot Capture System | ★★★★★ | MED | 1-2 | #2 ANCHOR |
-| **P2-PRICE** | Pricing Lookup Tool (Configurator) | ★★★★★ | MED | 2 | #3 Tool |
-| **P2-CRM** | CRM & Sales Pipeline | ★★★★☆ | LOW-MED | 2 | #4 Workflow |
+| ID | Opportunity | Quadrant | Engine | Impact | Effort | Week |
+|----|-------------|----------|--------|--------|--------|------|
+| **P2-OPT** | Optional Features Data (Sheet 3) | ⭐ Quick Win | DELIVERY | ★★★★★ | LOW | 1 |
+| **P2-QR** | QR/Slot On-Lot Capture | ⭐ Quick Win | ACQUISITION | ★★★★★ | MED | 1-2 |
+| **P2-PRICE** | Pricing Configurator | ⭐ Quick Win | DELIVERY | ★★★★★ | MED | 2 |
+| **P2-CRM** | CRM & Sales Pipeline | ⭐ Quick Win | ACQUISITION | ★★★★☆ | LOW-MED | 2 |
+
+**All Phase 2 = Quick Wins** (High Impact, achievable in 2-week sprint)
 
 **Total Phase 2 Investment:** $5,000
 **Timeline:** 2 weeks
@@ -354,15 +416,42 @@ P2-QR (Week 1-2)
 
 ---
 
-## ROI Justification
+## ROI Justification (Liam Ottley Method)
 
-**Phase 2 ROI Potential:**
+### Direct Savings (Time × Rate)
 
-| Improvement | Conservative Impact |
-|-------------|---------------------|
-| QR captures 20 additional leads/month | 20 × $5,000 × 25% = $25,000/month |
-| Configurator speeds quotes by 50% | Time savings + faster close |
-| CRM improves follow-up rate | 10% more conversions |
+| Solution | Weekly Hours Saved | Hourly Rate | Annual Savings |
+|----------|-------------------|-------------|----------------|
+| P2-OPT (Options Database) | 2 hrs | $40 | $4,160 |
+| P2-QR (Capture System) | 5 hrs | $40 | $10,400 |
+| P2-PRICE (Configurator) | 4 hrs | $40 | $8,320 |
+| P2-CRM (Pipeline) | 3 hrs | $40 | $6,240 |
+| **TOTAL** | **14 hrs/week** | - | **$29,120** |
+
+### Revenue Uplift (Liam's 50% Rule)
+
+> "50% of time saved goes directly to revenue-generating activities"
+
+| Solution | Time Saved | Revenue Time (50%) | Value/Hour | Annual Uplift |
+|----------|-----------|-------------------|------------|---------------|
+| P2-QR (Lead Capture) | 5 hrs/wk | 2.5 hrs | $500/sale | $65,000* |
+| P2-PRICE (Faster Quotes) | 4 hrs/wk | 2 hrs | $500/sale | $52,000* |
+| P2-CRM (Follow-up) | 3 hrs/wk | 1.5 hrs | $500/sale | $39,000* |
+| **TOTAL** | - | **6 hrs** | - | **$156,000** |
+
+*Assumes 1 additional shed sold per 2 revenue hours @ $500 margin
+
+### Phase 2 ROI Summary (Money Slide Preview)
+
+| Solution | Investment | Direct Savings | Revenue Uplift | Total Value | ROI |
+|----------|-----------|----------------|----------------|-------------|-----|
+| Options Database | $500 | $4,160 | - | $4,160 | 732% |
+| QR Capture System | $2,000 | $10,400 | $65,000 | $75,400 | 3,670% |
+| Pricing Configurator | $1,500 | $8,320 | $52,000 | $60,320 | 3,921% |
+| CRM Pipeline | $1,000 | $6,240 | $39,000 | $45,240 | 4,424% |
+| **TOTAL** | **$5,000** | **$29,120** | **$156,000** | **$185,120** | **3,602%** |
+
+### Conservative Scenario
 
 **If QR system captures just 10 additional leads that convert:**
 ```
@@ -370,6 +459,36 @@ P2-QR (Week 1-2)
 Annual: $150,000 additional revenue
 ROI on $5,000 investment = 2,900%
 ```
+
+---
+
+## Validation Workshop (End of Phase 2)
+
+Before finalizing Phase 2 deliverables, conduct a Validation Workshop with Sandy/Chris.
+
+### Workshop Agenda (30-45 min)
+
+| Topic | Questions | Goal |
+|-------|-----------|------|
+| **QR System Review** | "Is the scan-to-form flow working for your team?" | Confirm adoption |
+| **Configurator Check** | "Are all pricing options accurate? Any missing?" | Validate data |
+| **CRM Pipeline** | "Does the pipeline match how you actually work leads?" | Confirm stages |
+| **Priority Adjustment** | "Based on results so far, what should Phase 3 prioritize?" | Refine roadmap |
+
+### Validation Questions
+
+- [ ] "Did we capture the 80% that matters in Phase 1-2?"
+- [ ] "What surprised you about the implementation?"
+- [ ] "What's missing that you expected to see?"
+- [ ] "How do the ROI numbers compare to your experience?"
+- [ ] "Ready to proceed to Phase 3 (Intelligence & Operations)?"
+
+### Workshop Outputs
+
+1. Confirmed Phase 2 is complete
+2. Any quick fixes needed before Phase 3
+3. Refined priorities for Phase 3
+4. Updated ROI projections based on real data
 
 ---
 
