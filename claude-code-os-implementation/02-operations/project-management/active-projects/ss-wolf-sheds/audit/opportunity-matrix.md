@@ -11,20 +11,33 @@
 
 ### Impact vs Effort Matrix
 
+```mermaid
+quadrantChart
+    title S&S Wolf Sheds - Opportunity Matrix
+    x-axis Low Impact --> High Impact
+    y-axis Low Effort --> High Effort
+    quadrant-1 Strategic Platform
+    quadrant-2 Avoid
+    quadrant-3 Defer
+    quadrant-4 MVP Quick Wins
+
+    MVP-1 QR Capture: [0.85, 0.35]
+    MVP-2 Intake Form: [0.80, 0.20]
+    MVP-3 Lead Tracking: [0.75, 0.30]
+    MVP-4 Website Fixes: [0.65, 0.15]
+    SI-1 Delivery Handoff: [0.70, 0.45]
+    SI-2 Traffic Counting: [0.55, 0.50]
+    TR-1 Dealer Platform: [0.90, 0.85]
+    DEP-1 AI Chatbot: [0.40, 0.55]
 ```
-                          IMPACT
-                    LOW         HIGH
-              ┌───────────┬───────────┐
-         LOW  │           │  MVP      │
-              │  DEFER    │  QUICK    │
-    EFFORT    │           │  WINS     │
-              │           │  ★★★★★   │
-              ├───────────┼───────────┤
-              │           │ STRATEGIC │
-         HIGH │  AVOID    │ PLATFORM  │
-              │           │  ★★★★☆   │
-              └───────────┴───────────┘
-```
+
+**Quadrant Legend:**
+| Quadrant | Location | Priority |
+|----------|----------|----------|
+| ⭐ **MVP Quick Wins** | High Impact, Low Effort | #1 PRIORITY |
+| 🚀 **Strategic Platform** | High Impact, High Effort | Long-term |
+| 👍 **Defer** | Low Impact, Low Effort | Later |
+| 🗑 **Avoid** | Low Impact, High Effort | Skip |
 
 ---
 
@@ -472,7 +485,7 @@ Chris mentioned several contractor partnerships:
 
 ---
 
-**Last Updated:** January 3, 2026 (Added ROI Assessment as Phase 1 Quick Win)
+**Last Updated:** January 4, 2026 (Converted to Mermaid diagrams)
 **Status:** Phase 1 restructured - ROI Assessment is Week 1 Quick Win
 **Next Sync:** TBD - Schedule stakeholder interviews
 
@@ -725,19 +738,23 @@ The Phase 1 PRD for the "Lot Assistant" system mapped to opportunity matrix form
 
 ### Revised Priority Matrix
 
-```
-                          IMPACT
-                    LOW         HIGH
-              ┌───────────┬───────────┐
-         LOW  │           │  QR MVP   │
-              │  DEFER    │  (if      │
-    EFFORT    │           │  still    │
-              │           │  wanted)  │
-              ├───────────┼───────────┤
-              │           │ OPSYS-1   │
-         HIGH │  AVOID    │ Dealer    │
-              │           │ Account.  │
-              └───────────┴───────────┘
+```mermaid
+quadrantChart
+    title December 30 Priority Update
+    x-axis Low Impact --> High Impact
+    y-axis Low Effort --> High Effort
+    quadrant-1 Strategic Systems
+    quadrant-2 Avoid
+    quadrant-3 Defer
+    quadrant-4 Quick Wins
+
+    OPSYS-1 Dealer Accountability: [0.90, 0.75]
+    QR MVP System: [0.85, 0.35]
+    P1-ROI Assessment: [0.80, 0.15]
+    P1-WEB Website Fixes: [0.70, 0.20]
+    P1-DB Database: [0.75, 0.40]
+    P1-SOP Generator: [0.80, 0.40]
+    P1-FORM Onboarding: [0.75, 0.25]
 ```
 
 ### CONFIRMED: Dual-System Scope
