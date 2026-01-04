@@ -119,37 +119,32 @@ Map the business's core operations into three fundamental engines:
 
 #### Ops Canvas Template
 
+```mermaid
+flowchart LR
+    subgraph ACQ["ACQUISITION ENGINE"]
+        direction LR
+        A1["Step 1<br/>Lead Generation"]:::friction --> A2["Step 2<br/>Qualification"]:::friction --> A3["Step 3<br/>Conversion"]:::friction
+    end
+
+    subgraph DEL["DELIVERY ENGINE"]
+        direction LR
+        D1["Step 1<br/>Onboarding"] --> D2["Step 2<br/>Production"] --> D3["Step 3<br/>Handoff"]
+    end
+
+    subgraph SUP["SUPPORT ENGINE"]
+        direction LR
+        S1["Step 1<br/>Intake"] --> S2["Step 2<br/>Resolution"] --> S3["Step 3<br/>Follow-up"]
+    end
+
+    ACQ --> DEL --> SUP
+
+    classDef friction fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    classDef engine fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    ACQUISITION ENGINE                           │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   [Step 1]   │───►│   [Step 2]   │───►│   [Step 3]   │      │
-│  │              │    │              │    │              │      │
-│  │  🟡 Tag if   │    │  🟡 Tag if   │    │  🟡 Tag if   │      │
-│  │  friction    │    │  friction    │    │  friction    │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
 
-┌─────────────────────────────────────────────────────────────────┐
-│                     DELIVERY ENGINE                             │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   [Step 1]   │───►│   [Step 2]   │───►│   [Step 3]   │      │
-│  │              │    │              │    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-
-┌─────────────────────────────────────────────────────────────────┐
-│                     SUPPORT ENGINE                              │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   [Step 1]   │───►│   [Step 2]   │───►│   [Step 3]   │      │
-│  │              │    │              │    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-
-Legend:
-🟡 Time Sink - Tasks that are highly manual, repetitive, consume lots of time
-🟡 Quality Risk - Steps prone to human error or inconsistencies
-```
+**Legend:**
+- **Yellow nodes** = Friction points (Time Sink or Quality Risk)
+- Tag steps that are: highly manual, repetitive, consume lots of time, or prone to human error
 
 **Every yellow-tagged item = potential AI opportunity**
 
@@ -159,20 +154,23 @@ Legend:
 
 Plot each potential AI solution on a 2x2 matrix:
 
+```mermaid
+quadrantChart
+    title Opportunity Matrix
+    x-axis Low Impact --> High Impact
+    y-axis Low Effort --> High Effort
+    quadrant-1 Big Swings
+    quadrant-2 Deprioritize
+    quadrant-3 Nice-to-Haves
+    quadrant-4 Quick Wins
 ```
-                          IMPACT
-                    LOW         HIGH
-              ┌───────────┬───────────┐
-         LOW  │  Nice-to- │   Quick   │
-              │   Haves   │   Wins    │
-    EFFORT    │    👍     │    ⭐     │
-              │           │           │
-              ├───────────┼───────────┤
-              │Deprioritize│   Big    │
-         HIGH │    🗑     │  Swings   │
-              │           │    🚀     │
-              └───────────┴───────────┘
-```
+
+| Quadrant | Location | Icon |
+|----------|----------|------|
+| **Quick Wins** | High Impact, Low Effort | ⭐ |
+| **Big Swings** | High Impact, High Effort | 🚀 |
+| **Nice-to-Haves** | Low Impact, Low Effort | 👍 |
+| **Deprioritize** | Low Impact, High Effort | 🗑 |
 
 #### The Four Quadrants
 
@@ -332,23 +330,39 @@ When working with this agent, you can request:
 
 ## Example Output: Money Slide
 
+```mermaid
+flowchart TB
+    subgraph ROI["CLIENT NAME - ROI SUMMARY"]
+        direction TB
+        INV["Total Investment: $XX,XXX"]
+
+        subgraph VALUE["Annual Value Breakdown"]
+            SAVE["Direct Savings: $XXX,XXX"]
+            REV["Revenue Uplift: $XXX,XXX"]
+        end
+
+        TOTAL["Total Annual Value: $XXX,XXX"]
+
+        subgraph METRICS["Key Metrics"]
+            ROI_PCT["PROJECT ROI: X,XXX%"]
+            PAYBACK["PAYBACK: XX days"]
+        end
+    end
+
+    INV --> VALUE --> TOTAL --> METRICS
+
+    style ROI fill:#f8f9fa,stroke:#343a40,stroke-width:2px
+    style TOTAL fill:#d4edda,stroke:#28a745,stroke-width:2px
+    style ROI_PCT fill:#cce5ff,stroke:#004085,stroke-width:2px
+    style PAYBACK fill:#cce5ff,stroke:#004085,stroke-width:2px
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    [CLIENT NAME] ROI SUMMARY                    │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   Total Investment:        $XX,XXX                              │
-│                                                                 │
-│   Annual Direct Savings:   $XXX,XXX                             │
-│   Annual Revenue Uplift:   $XXX,XXX                             │
-│   ─────────────────────────────────                             │
-│   Total Annual Value:      $XXX,XXX                             │
-│                                                                 │
-│   PROJECT ROI:             X,XXX%                               │
-│   PAYBACK PERIOD:          XX days                              │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+
+**Money Slide Quick Reference:**
+| Metric | Formula |
+|--------|---------|
+| Total Annual Value | Direct Savings + Revenue Uplift |
+| ROI % | ((Annual Value - Investment) / Investment) × 100 |
+| Payback Period | (Investment / Annual Value) × 365 days |
 
 ---
 
@@ -363,5 +377,6 @@ When working with this agent, you can request:
 
 **Source:** Liam Ottley's 3-Step AI Audit Framework (Morningside AI)
 **Adapted for:** AriseGroup.ai Client Audits
-**Version:** 1.0
+**Version:** 1.1 (Mermaid diagrams)
 **Created:** January 4, 2026
+**Updated:** January 4, 2026
