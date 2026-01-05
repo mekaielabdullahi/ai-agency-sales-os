@@ -2,7 +2,7 @@
 # PlotterOps Phase 1: Communication Control System
 
 **Project:** Plotter Mechanix Quick Win Sprint
-**Version:** 1.1
+**Version:** 1.2
 **Date:** January 5, 2026
 **Author:** AriseGroup.ai
 **Status:** Active Development
@@ -26,7 +26,19 @@ Plotter Mechanix, a $600K-$750K/year printer service company, suffers from criti
 
 **Root Cause:** Manual steps between customer contact and Jobber create lag time, errors, and trust erosion.
 
-### 1.3 Investment & Timeline
+### 1.3 Guiding Principle
+
+> **Phase 1 must not make anything worse than the current experience.**
+
+This is the single most critical success factor. Even if processes change and introduce some friction, we must demonstrate clear improvement. If the client perceives things are worse, they won't want us to continue.
+
+**Implications:**
+- Prefer manual processing over automated updates that might create errors
+- Use Jobber Requests inbox as staging area for human review
+- Show the team HOW it's better, even when workflows change
+- Avoid "bad updates" that need to be fixed later
+
+### 1.4 Investment & Timeline
 
 | Attribute | Value |
 |-----------|-------|
@@ -49,8 +61,12 @@ Plotter Mechanix, a $600K-$750K/year printer service company, suffers from criti
 
 **Pain Quantification:**
 - 4-6 interruptions/day
-- ~30+ minutes/day lost to phone tag
+- ~30+ minutes/day lost to phone tag (likely more per internal team assessment)
 - Information loss leads to billing errors, missed follow-ups
+
+**Additional Context (from 2026-01-05 meeting):**
+- Kelsey sometimes does 3-way calls: adds Alyssa to client call, sets phone aside, lets Alyssa talk to client
+- This pattern could be handled by Sona (Phase 2) or smart routing (Phase 1)
 
 **User Quote:**
 > "Every day multiple things come in. Kelsey communicates to Alyssa... she takes notes on that call, then she'll go update Jobber. But some of the stuff will get missed and then they'll be back and forth."
@@ -100,7 +116,17 @@ Implement **Quo** as the unified phone system to:
 3. Auto-sync call data to Jobber client records
 4. Enable async handoffs via voicemail transcription
 
-### 3.2 Phone Number Architecture (Phase 1)
+### 3.2 Phased Capability Rollout
+
+| Phase | Capability | Cost Model |
+|-------|------------|------------|
+| Phase 1 | Traditional IVR routing (replicate Vonage) | Base Quo subscription |
+| Phase 1 | Auto-transcription + Jobber sync | Base Quo subscription |
+| Phase 2 | Sona voice agent for call handling | Credits per call (~$1/call) |
+
+**Key Decision:** Phase 1 uses routing only (no Sona credits). Sona replaces Alyssa's call handling in Phase 2.
+
+### 3.3 Phone Number Architecture (Phase 1)
 
 | # | Number | Purpose | Owner |
 |---|--------|---------|-------|
@@ -109,7 +135,7 @@ Implement **Quo** as the unified phone system to:
 | 3 | Alyssa's Quo Line | TBD - depends on whether she takes client calls | Alyssa |
 | 4 | Nikki | Probably not needed if no client calls | - |
 
-### 3.3 How Each Use Case is Solved
+### 3.4 How Each Use Case is Solved
 
 | Use Case | Current | Solution | Outcome |
 |----------|---------|----------|---------|
@@ -117,7 +143,7 @@ Implement **Quo** as the unified phone system to:
 | UC-2: Initial Client Calls | Manual entry, delays | Quo auto-transcribes + syncs to Jobber | Instant capture, no manual entry |
 | UC-3: Follow-up Calls | Scattered context | All calls logged to client record in Jobber | Full history in one place |
 
-### 3.4 Key Quo Features
+### 3.5 Key Quo Features
 
 | Feature | What It Does | Use Case Solved |
 |---------|--------------|-----------------|
@@ -127,6 +153,36 @@ Implement **Quo** as the unified phone system to:
 | AI Call Summaries | Auto-transcribe calls | UC-1, UC-2, UC-3 |
 | Voicemail Transcription | Async messages auto-transcribed | UC-1 (handoffs) |
 | Unknown Caller Handling | Auto-create Requests for new callers | UC-2 |
+
+### 3.6 Alternative Solution for UC-1 (Under Investigation)
+
+**Option A: Voicemail-Only Quo Line** (Primary)
+- Kelsey calls dedicated number, leaves voicemail
+- Auto-transcribes → Creates Jobber Request
+- Pro: Single point of intake, integrates with existing Quo/Jobber stack
+- Con: Phone friction (dial, wait, speak)
+- **Status:** Needs cost validation
+
+**Option B: ChatGPT/Claude Integration** (Backup)
+- Kelsey already uses ChatGPT
+- Build custom GPT with Jobber integration tool
+- Pro: Two taps, already listening, minimal friction
+- Con: Adds third tool to stack
+- **Status:** Keep in back pocket
+
+**Decision:** Investigate voicemail-only line first. If friction is too high, pivot to ChatGPT option.
+
+### 3.7 Request Inbox Volume Consideration
+
+**New Challenge:** Phase 1 replaces phone calls with Jobber Requests. This creates a new workflow for Alyssa:
+- Before: 4-6 synchronous phone calls/day
+- After: Higher volume of Requests in Jobber inbox
+
+**Mitigations:**
+1. Provide SOP for processing Request queue
+2. Consider "suggested updates" automation (stretch goal)
+3. Define clear process for marking Requests as "done"
+4. Manual-first approach until patterns emerge
 
 ---
 
@@ -144,8 +200,10 @@ Implement **Quo** as the unified phone system to:
 | FR-1.4 | Auto-sync call summaries to Jobber client records | Must Have | Testing |
 | FR-1.5 | Auto-create Jobber Request for unknown callers | Must Have | Testing |
 | FR-1.6 | SMS sync between Quo and Jobber | Must Have | Testing |
-| FR-1.7 | 5-option IVR replicating current Vonage setup | Must Have | Pending |
+| FR-1.7 | IVR replicating current Vonage menu options | Must Have | Pending |
 | FR-1.8 | Voicemail-only line for async handoffs | Should Have | Pending |
+| FR-1.9 | Call routing to appropriate party (Kelsey, Alyssa, Joe, Sona) | Must Have | Pending |
+| FR-1.10 | Contact-based routing (new vs existing client handling) | Should Have | Research |
 
 #### FR-2: Standard Operating Procedures
 
@@ -326,11 +384,28 @@ Implement **Quo** as the unified phone system to:
 
 | Risk | Probability | Impact | Mitigation |
 |------|-------------|--------|------------|
-| Number porting delays | Medium | High | Start A2P early; test in demo; forwarding fallback |
+| Number porting delays | Medium | High | System must be ready BEFORE porting starts; 5-30 day window with no control over exact date |
 | Quo adoption resistance | Medium | High | Demo AI summaries wow factor; incremental training |
 | Jobber API limitations | Low | Medium | Research API Day 1; polling fallback ready |
 | Team overwhelm | Medium | Medium | Train incrementally; one feature at a time |
 | Previous vendor PTSD | High | Medium | Fixed price; concrete deliverables; guarantee |
+| Request inbox overwhelm | Medium | Medium | Provide SOP; manual-first approach; consider suggested updates feature |
+| Perceived regression | High | High | **Critical:** Don't make anything worse; show clear improvement even with workflow changes |
+
+### 9.1 Number Porting Constraints
+
+**Critical Path Item:** Vonage → Quo number porting
+
+| Constraint | Detail |
+|------------|--------|
+| Timeline | 5-30 days (no control over exact date) |
+| Notification | Email updates on porting status/stages |
+| Vonage Access | 2FA sends code to Kelsey's phone |
+| Data Transfer | Call/SMS history does NOT transfer |
+| Readiness | Quo system must be fully configured BEFORE initiating port |
+
+**What Transfers:** Phone number + call/SMS functionality only
+**What Doesn't Transfer:** Carrier registration, call history, previous conversations
 
 ---
 
@@ -350,10 +425,13 @@ Implement **Quo** as the unified phone system to:
 
 ## 11. Open Questions
 
-1. **Voicemail-only line:** Is this higher ROI than email automation for solving UC-1?
+1. **Voicemail-only line cost:** What's the actual cost for a voicemail-only Quo line? (Need validation)
 2. **Alyssa's phone:** Does she need her own Quo line, or just access to view calls/transcripts?
 3. **Nikki:** Confirm she doesn't take client calls (no Quo line needed)
-4. **IVR options:** What are the current 5 Vonage IVR options to replicate?
+4. **IVR options:** What are the current Vonage IVR menu options to replicate?
+5. **Contact-based routing:** Can Quo route differently for new vs existing contacts? (One-way sync to Jobber only)
+6. **Request lifecycle:** How should Jobber Requests be marked "done"? What's the workflow?
+7. **Vonage call history:** Do we need to export any data before canceling? (Likely no value, but confirm)
 
 ---
 
@@ -363,6 +441,7 @@ Implement **Quo** as the unified phone system to:
 |---------|------|--------|---------|
 | 1.0 | 2025-12-28 | AriseGroup.ai | Initial PRD created |
 | 1.1 | 2026-01-05 | AriseGroup.ai | Restructured around use cases; deprioritized email automation; added voicemail-only handoff option |
+| 1.2 | 2026-01-05 | AriseGroup.ai | Added guiding principle ("don't make worse"); phased capability rollout; alternative UC-1 solutions (ChatGPT backup); Request inbox volume consideration; number porting constraints; routing requirements; contact handling questions |
 
 ---
 
