@@ -214,22 +214,6 @@ Implement **Quo** as the unified phone system to:
 | FR-2.3 | PM-OA-003: Service Call Dispatch SOP | Must Have | Pending |
 | FR-2.4 | PM-FS-005: End-of-Job Handoff Template | Must Have | Pending |
 
-**These four "how-to" guides are the heart of daily work.** We'll document them, optimize for efficiency, and train the team on each one.
-
-**FR-2.1: How to Handle a Service Call**
-> The complete process from arrival to job completion and handoff. Helps technicians deliver consistent service every time, building customer trust through reliable quality.
-
-**FR-2.2: Processing Invoices**
-> How Alyssa handles finished jobs from start to finish. Eliminates sticky notes, reduces errors, and speeds up billing so you get paid faster.
-
-**FR-2.3: Sending Out Service Calls (Dispatch)**
-> How we decide who goes where in real-time, based on Kelsey's location and availability. This is the competitive advantage—documented so it's repeatable and scalable.
-
-**FR-2.4: Finishing a Job and Handing It Off**
-> Simple template for async job handoffs—no live calls needed. Saves 30+ minutes daily, eliminates interruptions, and captures details while they're fresh.
-
-**Format:** Clear, easy-to-follow documents with step-by-step instructions, simple diagrams, and short videos for visual learners.
-
 #### FR-3: Communication Protocol
 
 | ID | Requirement | Priority | Status |
