@@ -23,8 +23,8 @@ flowchart TB
             S1B[Build List<br/>20 prospects/week<br/>LinkedIn + Referrals]
             S1C{{TOUCHPOINT: Outreach Message<br/>Personalized DM/Email<br/>Hook → Value → CTA}}
             S1D{{TOUCHPOINT: Response Email<br/>Hot: 1hr / Warm: 4hr}}
-            S1E{{TOUCHPOINT: Follow-Up #1<br/>Day 3 if no response}}
-            S1F{{TOUCHPOINT: Follow-Up #2<br/>Day 7 if no response}}
+            S1E{{TOUCHPOINT: Follow-Up #1<br/>If no response}}
+            S1F{{TOUCHPOINT: Follow-Up #2<br/>If no response}}
             S1A --> S1B --> S1C --> S1D
             S1C -.-> S1E -.-> S1F
         end
@@ -32,38 +32,43 @@ flowchart TB
         subgraph S2["STAGE 2: DISCOVERY CALL"]
             S2A{{TOUCHPOINT: Booking Confirmation<br/>Calendar invite + prep info}}
             S2B{{TOUCHPOINT: Client Intake Form<br/>Collect contacts, pain points<br/>Tech stack, goals}}
-            S2C{{TOUCHPOINT: Reminder Email<br/>24hr before call}}
+            S2C{{TOUCHPOINT: Reminder Email<br/>Before call}}
             S2D[Discovery Call<br/>5 Questions Framework<br/>30-45 minutes]
-            S2E{{TOUCHPOINT: Post-Call Recap<br/>Summary + next steps}}
+            S2E{{TOUCHPOINT: Post-Call Recap<br/>Summary + Audit Offer}}
             S2F{{TOUCHPOINT: No-Show Follow-Up<br/>Reschedule email}}
-            S2A --> S2B --> S2C --> S2D --> S2E
+            S2G{{TOUCHPOINT: Audit Offer Email<br/>First offer into agency}}
+            S2H{{TOUCHPOINT: Audit Follow-Up #1<br/>If no response}}
+            S2I{{TOUCHPOINT: Audit Follow-Up #2<br/>If no response}}
+            S2A --> S2B --> S2C --> S2D --> S2E --> S2G
             S2D -.-> S2F
+            S2G -.-> S2H -.-> S2I
         end
 
-        subgraph S3["STAGE 3: PAID AUDIT"]
-            S3A{{TOUCHPOINT: Audit Invoice<br/>$1,500-3,000}}
+        subgraph S3["STAGE 3: AI AUDIT (First Sale)"]
+            S3A{{TOUCHPOINT: Audit Invoice<br/>Payment link}}
             S3B{{TOUCHPOINT: Audit Kickoff Email<br/>Schedule sessions}}
             S3C[Discovery Sessions<br/>2-4 hours interviews]
             S3D[Business Mapping<br/>10 core functions<br/>Gaps + risks]
             S3E[Opportunity Matrix<br/>Quick Wins vs Strategic<br/>ROI estimates]
-            S3F{{TOUCHPOINT: Deliverables Email<br/>PRD + Roadmap<br/>+ Money Slide}}
-            S3A --> S3B --> S3C --> S3D --> S3E --> S3F
+            S3F[PRD + Roadmap<br/>+ Money Slide]
+            S3G{{TOUCHPOINT: Deliverables Presentation<br/>Present findings + recommend}}
+            S3A --> S3B --> S3C --> S3D --> S3E --> S3F --> S3G
         end
 
-        subgraph S4["STAGE 4: PROPOSAL"]
-            S4A{{TOUCHPOINT: Proposal Email<br/>Within 48 hours}}
-            S4B[Proposal Call<br/>Present + Handle objections]
-            S4C{{TOUCHPOINT: Follow-Up #1<br/>Day 2 post-proposal}}
-            S4D{{TOUCHPOINT: Follow-Up #2<br/>Day 5 post-proposal}}
-            S4E{{TOUCHPOINT: Contract + Invoice<br/>Payment link}}
-            S4F[Deal Closed<br/>Payment confirmed]
+        subgraph S4["STAGE 4: IMPLEMENTATION PROPOSAL"]
+            S4A{{TOUCHPOINT: Proposal Email<br/>Based on Audit findings}}
+            S4B[Proposal Call<br/>Present implementation plan]
+            S4C{{TOUCHPOINT: Follow-Up #1<br/>Post-proposal}}
+            S4D{{TOUCHPOINT: Follow-Up #2<br/>Post-proposal}}
+            S4E{{TOUCHPOINT: Contract + Invoice<br/>Implementation payment}}
+            S4F[Implementation Sold<br/>Payment confirmed]
             S4A --> S4B --> S4E --> S4F
             S4B -.-> S4C -.-> S4D
         end
 
         S1D --> S2A
-        S2E --> S3A
-        S3F --> S4A
+        S2G --> S3A
+        S3G --> S4A
     end
 
     subgraph HANDOFF["STAGE 5: HANDOFF"]
@@ -75,7 +80,7 @@ flowchart TB
         direction TB
 
         subgraph D1["STAGE 6: ONBOARDING"]
-            D1A{{TOUCHPOINT: Welcome Packet<br/>Within 24 hours}}
+            D1A{{TOUCHPOINT: Welcome Packet<br/>After payment}}
             D1B{{TOUCHPOINT: Onboarding Form<br/>Access credentials<br/>Team contacts}}
             D1C{{TOUCHPOINT: Kickoff Invite<br/>60 min call}}
             D1D[Kickoff Call<br/>Map workflows<br/>Confirm scope]
@@ -86,7 +91,7 @@ flowchart TB
         subgraph D2["STAGE 7: BUILD"]
             D2A{{TOUCHPOINT: Architecture Review<br/>Design approval request}}
             D2B[Architecture Call<br/>Client approves design]
-            D2C[Build Phase<br/>Weeks 3-5<br/>Automations + Integrations]
+            D2C[Build Phase<br/>Automations + Integrations]
             D2D{{TOUCHPOINT: Weekly Update<br/>Every Friday<br/>Status + Progress}}
             D2A --> D2B --> D2C --> D2D
         end
@@ -109,9 +114,9 @@ flowchart TB
         direction TB
 
         subgraph P1["STAGE 9: STABILIZE"]
-            P1A{{TOUCHPOINT: Day 7 Check-in<br/>How's it going?}}
-            P1B{{TOUCHPOINT: Day 14 Check-in<br/>Any issues?}}
-            P1C{{TOUCHPOINT: Day 30 Check-in<br/>Full review + feedback}}
+            P1A{{TOUCHPOINT: Check-in #1<br/>How's it going?}}
+            P1B{{TOUCHPOINT: Check-in #2<br/>Any issues?}}
+            P1C{{TOUCHPOINT: Check-in #3<br/>Full review + feedback}}
             P1A --> P1B --> P1C
         end
 
@@ -145,37 +150,40 @@ flowchart TB
 |---|-------|------------|------|-----------|
 | 1 | Outreach | Outreach Message | Email/DM | Template |
 | 2 | Outreach | Response Email | Email | Template |
-| 3 | Outreach | Follow-Up #1 (Day 3) | Email | Auto-send |
-| 4 | Outreach | Follow-Up #2 (Day 7) | Email | Auto-send |
+| 3 | Outreach | Follow-Up #1 | Email | Auto-send |
+| 4 | Outreach | Follow-Up #2 | Email | Auto-send |
 | 5 | Discovery | Booking Confirmation | Email | Auto-send |
 | 6 | Discovery | Client Intake Form | Form | Auto-send |
-| 7 | Discovery | Reminder (24hr) | Email | Auto-send |
-| 8 | Discovery | Post-Call Recap | Email | Template |
+| 7 | Discovery | Reminder | Email | Auto-send |
+| 8 | Discovery | Post-Call Recap + Audit Offer | Email | Template |
 | 9 | Discovery | No-Show Follow-Up | Email | Auto-send |
-| 10 | Audit | Audit Invoice | Invoice | Auto-generate |
-| 11 | Audit | Audit Kickoff Email | Email | Template |
-| 12 | Audit | Deliverables Email | Email | Template |
-| 13 | Proposal | Proposal Email | Email | Template |
-| 14 | Proposal | Follow-Up #1 (Day 2) | Email | Auto-send |
-| 15 | Proposal | Follow-Up #2 (Day 5) | Email | Auto-send |
-| 16 | Proposal | Contract + Invoice | Doc/Invoice | Auto-generate |
-| 17 | Handoff | Welcome Email | Email | Auto-send |
-| 18 | Onboarding | Welcome Packet | Email | Auto-send |
-| 19 | Onboarding | Onboarding Form | Form | Auto-send |
-| 20 | Onboarding | Kickoff Invite | Calendar | Auto-send |
-| 21 | Onboarding | Kickoff Recap | Email | Template |
-| 22 | Build | Architecture Review | Email | Template |
-| 23 | Build | Weekly Update | Email | Template |
-| 24 | Go-Live | UAT Invite | Email | Template |
-| 25 | Go-Live | Training Invite | Calendar | Auto-send |
-| 26 | Go-Live | Go-Live Email | Email | Template |
-| 27 | Go-Live | Training Recording | Email | Auto-send |
-| 28 | Support | Day 7 Check-in | Email | Auto-send |
-| 29 | Support | Day 14 Check-in | Email | Auto-send |
-| 30 | Support | Day 30 Check-in | Email | Auto-send |
-| 31 | Retain | Monthly Check-in | Email | Auto-send |
-| 32 | Retain | Upsell Opportunity | Email | Template |
-| 33 | Retain | Referral Request | Email | Auto-send |
+| 10 | Discovery | Audit Offer Email | Email | Template |
+| 11 | Discovery | Audit Follow-Up #1 | Email | Auto-send |
+| 12 | Discovery | Audit Follow-Up #2 | Email | Auto-send |
+| 13 | Audit (First Sale) | Audit Invoice | Invoice | Auto-generate |
+| 14 | Audit (First Sale) | Audit Kickoff Email | Email | Template |
+| 15 | Audit (First Sale) | Deliverables Presentation | Email | Template |
+| 16 | Implementation Proposal | Proposal Email | Email | Template |
+| 17 | Implementation Proposal | Follow-Up #1 | Email | Auto-send |
+| 18 | Implementation Proposal | Follow-Up #2 | Email | Auto-send |
+| 19 | Implementation Proposal | Contract + Invoice | Doc/Invoice | Auto-generate |
+| 20 | Handoff | Welcome Email | Email | Auto-send |
+| 21 | Onboarding | Welcome Packet | Email | Auto-send |
+| 22 | Onboarding | Onboarding Form | Form | Auto-send |
+| 23 | Onboarding | Kickoff Invite | Calendar | Auto-send |
+| 24 | Onboarding | Kickoff Recap | Email | Template |
+| 25 | Build | Architecture Review | Email | Template |
+| 26 | Build | Weekly Update | Email | Template |
+| 27 | Go-Live | UAT Invite | Email | Template |
+| 28 | Go-Live | Training Invite | Calendar | Auto-send |
+| 29 | Go-Live | Go-Live Email | Email | Template |
+| 30 | Go-Live | Training Recording | Email | Auto-send |
+| 31 | Support | Check-in #1 | Email | Auto-send |
+| 32 | Support | Check-in #2 | Email | Auto-send |
+| 33 | Support | Check-in #3 | Email | Auto-send |
+| 34 | Retain | Monthly Check-in | Email | Auto-send |
+| 35 | Retain | Upsell Opportunity | Email | Template |
+| 36 | Retain | Referral Request | Email | Auto-send |
 
 ---
 
@@ -185,26 +193,26 @@ If the above is too complex, use this simplified version:
 
 ```mermaid
 flowchart LR
-    subgraph SALES["SALES (4 touchpoints each)"]
-        A1[1. OUTREACH<br/>ICP: 5-50 employees<br/>20 prospects/week]
-        A2[2. DISCOVERY<br/>Intake Form → Call<br/>5 Questions]
-        A3[3. AUDIT<br/>$1.5-3K<br/>Biz Map + Matrix + PRD]
-        A4[4. PROPOSAL<br/>Present + Follow-ups<br/>Contract + Invoice]
+    subgraph SALES["SALES"]
+        A1[1. OUTREACH<br/>ICP: 5-50 employees<br/>20 prospects/week<br/>4 touchpoints]
+        A2[2. DISCOVERY<br/>Intake Form → Call<br/>Offer Audit<br/>8 touchpoints]
+        A3[3. AI AUDIT<br/>First Sale<br/>Biz Map + Matrix + PRD<br/>3 touchpoints]
+        A4[4. IMPLEMENTATION<br/>Proposal based on Audit<br/>4 touchpoints]
         A1 --> A2 --> A3 --> A4
     end
 
-    B[5. HANDOFF<br/>Welcome Email<br/>Sales → Delivery]
+    B[5. HANDOFF<br/>Welcome Email<br/>Sales → Delivery<br/>1 touchpoint]
 
-    subgraph DELIVERY["DELIVERY (10 touchpoints)"]
-        C1[6. ONBOARDING<br/>Packet + Form + Kickoff]
-        C2[7. BUILD<br/>Weekly Updates]
-        C3[8. GO-LIVE<br/>UAT + Training + Launch]
+    subgraph DELIVERY["DELIVERY"]
+        C1[6. ONBOARDING<br/>Packet + Form + Kickoff<br/>5 touchpoints]
+        C2[7. BUILD<br/>Weekly Updates<br/>2 touchpoints]
+        C3[8. GO-LIVE<br/>UAT + Training + Launch<br/>4 touchpoints]
         C1 --> C2 --> C3
     end
 
-    subgraph RETAIN["RETAIN (6 touchpoints)"]
-        D1[9. SUPPORT<br/>Day 7, 14, 30 Check-ins]
-        D2[10. SUCCESS<br/>Monthly + Upsell + Referral]
+    subgraph RETAIN["RETAIN"]
+        D1[9. SUPPORT<br/>Post-launch Check-ins<br/>3 touchpoints]
+        D2[10. SUCCESS<br/>Ongoing + Upsell + Referral<br/>3 touchpoints]
         D1 --> D2
     end
 
@@ -228,13 +236,13 @@ flowchart TB
     S1[1. OUTREACH<br/>ICP: 5-50 employees<br/>20 prospects/week<br/>4 TOUCHPOINTS]
     S1 --> S2
 
-    S2[2. DISCOVERY<br/>Intake Form + Call<br/>5 Questions Framework<br/>6 TOUCHPOINTS]
+    S2[2. DISCOVERY<br/>Intake Form + Call<br/>5 Questions + Audit Offer<br/>8 TOUCHPOINTS]
     S2 --> S3
 
-    S3[3. PAID AUDIT<br/>$1.5-3K<br/>Biz Map + Matrix + PRD<br/>3 TOUCHPOINTS]
+    S3[3. AI AUDIT - First Sale<br/>Biz Map + Matrix + PRD<br/>3 TOUCHPOINTS]
     S3 --> S4
 
-    S4[4. PROPOSAL<br/>Present + Follow-ups<br/>Contract + Invoice<br/>4 TOUCHPOINTS]
+    S4[4. IMPLEMENTATION PROPOSAL<br/>Based on Audit findings<br/>4 TOUCHPOINTS]
     S4 --> S5
 
     S5[5. HANDOFF<br/>Welcome Email<br/>Sales → Delivery<br/>1 TOUCHPOINT]
@@ -249,13 +257,13 @@ flowchart TB
     S8[8. GO-LIVE<br/>UAT + Training + Launch<br/>4 TOUCHPOINTS]
     S8 --> S9
 
-    S9[9. SUPPORT<br/>Day 7, 14, 30 Check-ins<br/>3 TOUCHPOINTS]
+    S9[9. SUPPORT<br/>Post-launch Check-ins<br/>3 TOUCHPOINTS]
     S9 --> S10
 
-    S10[10. RETAIN<br/>Monthly + Upsell + Referral<br/>3 TOUCHPOINTS]
+    S10[10. RETAIN<br/>Ongoing + Upsell + Referral<br/>3 TOUCHPOINTS]
     S10 -.->|New Project| S3
 
-    S10 --> SUCCESS((33 TOTAL<br/>TOUCHPOINTS))
+    S10 --> SUCCESS((36 TOTAL<br/>TOUCHPOINTS))
 
     style S1 fill:#bbdefb
     style S2 fill:#bbdefb
