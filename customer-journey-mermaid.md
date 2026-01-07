@@ -1,4 +1,10 @@
-# Customer Journey - Mermaid Format for Miro
+# AriseGroup.ai Customer Journey Map
+
+> Single source of truth for customer experience, touchpoints, and automation opportunities
+
+---
+
+# VISUAL DIAGRAMS FOR MIRO
 
 ## INSTRUCTIONS FOR MIRO:
 1. In Miro, click the **"+" button** or use "/" shortcut
@@ -276,3 +282,286 @@ flowchart TB
     style S9 fill:#ffe0b2
     style S10 fill:#e1bee7
 ```
+
+---
+
+# STAGE-BY-STAGE BREAKDOWN
+
+---
+
+## STAGE 1: OUTREACH
+
+**Phase:** Sales | **Touchpoints:** 4
+
+### Internal Process
+
+| Step | Description |
+|------|-------------|
+| Target ICP | 5-50 employees |
+| Build List | 20 prospects/week via LinkedIn + Referrals |
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 1 | Outreach Message | Email/DM | Template | Personalization framework |
+| 2 | Response Email | Email | Template | Response templates by lead type |
+| 3 | Follow-Up #1 | Email | Auto-send | Follow-up sequence |
+| 4 | Follow-Up #2 | Email | Auto-send | Follow-up sequence |
+
+---
+
+## STAGE 2: DISCOVERY CALL
+
+**Phase:** Sales | **Touchpoints:** 8
+
+### The 5 Questions Framework
+
+| # | Question | Purpose |
+|---|----------|---------|
+| 1 | What is the biggest problem in your business right now? | Identify pain |
+| 2 | How much is this problem costing you per month? | Quantify impact |
+| 3 | How long have you had this problem? | Establish urgency |
+| 4 | If you do nothing, what does the next 6-12 months look like? | Future pain |
+| 5 | If I had a magic wand, what would the perfect solution look like? | Define success |
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 5 | Booking Confirmation | Email | Auto-send | Calendar integration |
+| 6 | Client Intake Form | Form | Auto-send | Form builder |
+| 7 | Reminder Email | Email | Auto-send | Reminder template |
+| 8 | Post-Call Recap + Audit Offer | Email | Template | Recap structure |
+| 9 | No-Show Follow-Up | Email | Auto-send | Reschedule template |
+| 10 | Audit Offer Email | Email | Template | Audit offer pitch |
+| 11 | Audit Follow-Up #1 | Email | Auto-send | Follow-up sequence |
+| 12 | Audit Follow-Up #2 | Email | Auto-send | Follow-up sequence |
+
+---
+
+## STAGE 3: AI AUDIT (First Sale)
+
+**Phase:** Sales | **Touchpoints:** 3
+
+> **This is the entry point to the agency.** The Audit is the first paid engagement after Discovery.
+
+### Audit Deliverables
+
+| Deliverable | Description |
+|-------------|-------------|
+| Business Mapping | 10 core functions, ownership, gaps, risk levels |
+| Opportunity Matrix | Quick Wins vs Strategic vs Transformation, ROI estimates |
+| PRD + Roadmap + Money Slide | Implementation plan with investment breakdown |
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 13 | Audit Invoice | Invoice | Auto-generate | Invoice template |
+| 14 | Audit Kickoff Email | Email | Template | Kickoff scheduling |
+| 15 | Deliverables Presentation | Email | Template | Presentation deck |
+
+---
+
+## STAGE 4: IMPLEMENTATION PROPOSAL
+
+**Phase:** Sales | **Touchpoints:** 4
+
+> **Based on Audit findings.** This is the proposal for the actual implementation work.
+
+### Objection Handling
+
+| Objection | Response |
+|-----------|----------|
+| "No budget" | ROI payback period from audit |
+| "Need to think" | "What would make it a yes?" |
+| "Too expensive" | "You told me it costs $X/month now" |
+| "Tried before" | "What went wrong? What would be different?" |
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 16 | Proposal Email | Email | Template | Proposal template |
+| 17 | Follow-Up #1 | Email | Auto-send | Follow-up sequence |
+| 18 | Follow-Up #2 | Email | Auto-send | Follow-up sequence |
+| 19 | Contract + Invoice | Doc/Invoice | Auto-generate | Contract + invoice |
+
+---
+
+## STAGE 5: HANDOFF
+
+**Phase:** Transition | **Touchpoints:** 1
+
+### Handoff Packet Contents
+
+| Section | Contents |
+|---------|----------|
+| Client Info | Company details, contacts, stakeholders |
+| Pain Points | 3+ documented with impact, root cause, client quotes |
+| Tech Stack | CRM, website, email, booking, payments |
+| Deliverables | 3-4 automations with priorities and dependencies |
+| Timeline | Milestones, investment, payment structure |
+| Risks | Technical, client-side, project risks + mitigation |
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 20 | Welcome Email | Email | Auto-send | Welcome template |
+
+---
+
+## STAGE 6: ONBOARDING
+
+**Phase:** Delivery | **Touchpoints:** 5
+
+### Welcome Packet Contents
+
+- Message from leadership
+- What we promise
+- What we need from you
+- Journey outline
+- Communication framework
+- Response time expectations
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 21 | Welcome Packet | Email | Auto-send | Welcome packet |
+| 22 | Onboarding Form | Form | Auto-send | Onboarding form |
+| 23 | Kickoff Invite | Calendar | Auto-send | Calendar template |
+| 24 | Kickoff Recap | Email | Template | Recap template |
+
+---
+
+## STAGE 7: BUILD
+
+**Phase:** Delivery | **Touchpoints:** 2
+
+### Weekly Update Contents
+
+- Status: Green/Yellow/Red
+- Current phase + progress %
+- Completed this week (3 items)
+- Planned next week (3 items)
+- Action items for client
+- Blockers/risks
+- Next milestones
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 25 | Architecture Review | Email | Template | Review request |
+| 26 | Weekly Update | Email | Template | Update template |
+
+---
+
+## STAGE 8: GO-LIVE
+
+**Phase:** Delivery | **Touchpoints:** 4
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 27 | UAT Invite | Email | Template | UAT instructions |
+| 28 | Training Invite | Calendar | Auto-send | Calendar template |
+| 29 | Go-Live Email | Email | Template | Go-live announcement |
+| 30 | Training Recording | Email | Auto-send | Recording delivery |
+
+---
+
+## STAGE 9: STABILIZE
+
+**Phase:** Support | **Touchpoints:** 3
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 31 | Check-in #1 | Email | Auto-send | Check-in template |
+| 32 | Check-in #2 | Email | Auto-send | Check-in template |
+| 33 | Check-in #3 | Email | Auto-send | Review template |
+
+---
+
+## STAGE 10: RETAIN
+
+**Phase:** Retention | **Touchpoints:** 3
+
+### Touchpoints
+
+| # | Touchpoint | Type | Automation | Template Needed |
+|---|------------|------|------------|-----------------|
+| 34 | Monthly Check-in | Email | Auto-send | Check-in template |
+| 35 | Upsell Opportunity | Email | Template | Upsell pitch |
+| 36 | Referral Request | Email | Auto-send | Referral request |
+
+---
+
+# AUTOMATION SUMMARY
+
+### Automation Breakdown
+
+| Type | Count | % |
+|------|-------|---|
+| Auto-send (fully automated) | 22 | 61% |
+| Template (human sends) | 11 | 31% |
+| Auto-generate (docs/invoices) | 3 | 8% |
+| **Total** | **36** | 100% |
+
+### By Stage
+
+| Stage | Touchpoints | Auto-send | Template | Auto-generate |
+|-------|-------------|-----------|----------|---------------|
+| 1. Outreach | 4 | 2 | 2 | 0 |
+| 2. Discovery | 8 | 5 | 3 | 0 |
+| 3. Audit | 3 | 0 | 2 | 1 |
+| 4. Implementation | 4 | 2 | 1 | 1 |
+| 5. Handoff | 1 | 1 | 0 | 0 |
+| 6. Onboarding | 5 | 3 | 1 | 0 |
+| 7. Build | 2 | 0 | 2 | 0 |
+| 8. Go-Live | 4 | 2 | 2 | 0 |
+| 9. Support | 3 | 3 | 0 | 0 |
+| 10. Retain | 3 | 2 | 1 | 0 |
+
+---
+
+# TEMPLATES NEEDED
+
+### Email Templates (14)
+
+1. Outreach Message (personalization framework)
+2. Response Email (by lead type)
+3. Follow-Up Sequence (Outreach)
+4. Post-Call Recap
+5. Audit Offer Email
+6. Follow-Up Sequence (Audit Offer)
+7. Audit Kickoff Email
+8. Deliverables Presentation
+9. Proposal Email
+10. Follow-Up Sequence (Proposal)
+11. Welcome Email (Handoff)
+12. Kickoff Recap
+13. Architecture Review Request
+14. Weekly Update
+
+### Forms (2)
+
+1. Client Intake Form (pre-discovery)
+2. Onboarding Form (access + contacts)
+
+### Documents (2)
+
+1. Contract Template
+2. Invoice Template
+
+### Calendar Templates (3)
+
+1. Discovery Call Booking
+2. Kickoff Call Invite
+3. Training Session Invite
