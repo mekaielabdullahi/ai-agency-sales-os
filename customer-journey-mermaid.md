@@ -21,53 +21,53 @@
 
 ```mermaid
 flowchart TB
-    subgraph SALES["SALES PHASE"]
+    subgraph SALES["SALES"]
         direction TB
 
-        subgraph S1["STAGE 1: OUTREACH"]
-            S1A[Target ICP<br/>5-50 employees]
-            S1B[Build List<br/>20 prospects/week<br/>LinkedIn + Referrals]
-            S1C{{TOUCHPOINT: Outreach Message<br/>Personalized DM/Email<br/>Hook → Value → CTA}}
-            S1D{{TOUCHPOINT: Response Email<br/>Hot: 1hr / Warm: 4hr}}
-            S1E{{TOUCHPOINT: Follow-Up #1<br/>If no response}}
-            S1F{{TOUCHPOINT: Follow-Up #2<br/>If no response}}
+        subgraph S1["1 OUTREACH"]
+            S1A[Target ICP]
+            S1B[Build List]
+            S1C{{Outreach Msg}}
+            S1D{{Response}}
+            S1E{{Follow-Up 1}}
+            S1F{{Follow-Up 2}}
             S1A --> S1B --> S1C --> S1D
             S1C -.-> S1E -.-> S1F
         end
 
-        subgraph S2["STAGE 2: DISCOVERY CALL"]
-            S2A{{TOUCHPOINT: Booking Confirmation<br/>Calendar invite + prep info}}
-            S2B{{TOUCHPOINT: Client Intake Form<br/>Collect contacts, pain points<br/>Tech stack, goals}}
-            S2C{{TOUCHPOINT: Reminder Email<br/>Before call}}
-            S2D[Discovery Call<br/>5 Questions Framework<br/>30-45 minutes]
-            S2E{{TOUCHPOINT: Post-Call Recap<br/>Summary + Audit Offer}}
-            S2F{{TOUCHPOINT: No-Show Follow-Up<br/>Reschedule email}}
-            S2G{{TOUCHPOINT: Audit Offer Email<br/>First offer into agency}}
-            S2H{{TOUCHPOINT: Audit Follow-Up #1<br/>If no response}}
-            S2I{{TOUCHPOINT: Audit Follow-Up #2<br/>If no response}}
+        subgraph S2["2 DISCOVERY"]
+            S2A{{Booking Confirm}}
+            S2B{{Intake Form}}
+            S2C{{Reminder}}
+            S2D[Discovery Call]
+            S2E{{Post-Call Recap}}
+            S2F{{No-Show Follow-Up}}
+            S2G{{Audit Offer}}
+            S2H{{Audit Follow-Up 1}}
+            S2I{{Audit Follow-Up 2}}
             S2A --> S2B --> S2C --> S2D --> S2E --> S2G
             S2D -.-> S2F
             S2G -.-> S2H -.-> S2I
         end
 
-        subgraph S3["STAGE 3: AI AUDIT (First Sale)"]
-            S3A{{TOUCHPOINT: Audit Invoice<br/>Payment link}}
-            S3B{{TOUCHPOINT: Audit Kickoff Email<br/>Schedule sessions}}
-            S3C[Discovery Sessions<br/>2-4 hours interviews]
-            S3D[Business Mapping<br/>10 core functions<br/>Gaps + risks]
-            S3E[Opportunity Matrix<br/>Quick Wins vs Strategic<br/>ROI estimates]
-            S3F[PRD + Roadmap<br/>+ Money Slide]
-            S3G{{TOUCHPOINT: Deliverables Presentation<br/>Present findings + recommend}}
+        subgraph S3["3 AI AUDIT"]
+            S3A{{Audit Invoice}}
+            S3B{{Kickoff Email}}
+            S3C[Discovery Sessions]
+            S3D[Business Mapping]
+            S3E[Opportunity Matrix]
+            S3F[PRD + Roadmap]
+            S3G{{Deliverables Deck}}
             S3A --> S3B --> S3C --> S3D --> S3E --> S3F --> S3G
         end
 
-        subgraph S4["STAGE 4: IMPLEMENTATION PROPOSAL"]
-            S4A{{TOUCHPOINT: Proposal Email<br/>Based on Audit findings}}
-            S4B[Proposal Call<br/>Present implementation plan]
-            S4C{{TOUCHPOINT: Follow-Up #1<br/>Post-proposal}}
-            S4D{{TOUCHPOINT: Follow-Up #2<br/>Post-proposal}}
-            S4E{{TOUCHPOINT: Contract + Invoice<br/>Implementation payment}}
-            S4F[Implementation Sold<br/>Payment confirmed]
+        subgraph S4["4 PROPOSAL"]
+            S4A{{Proposal Email}}
+            S4B[Proposal Call]
+            S4C{{Follow-Up 1}}
+            S4D{{Follow-Up 2}}
+            S4E{{Contract + Invoice}}
+            S4F[Deal Closed]
             S4A --> S4B --> S4E --> S4F
             S4B -.-> S4C -.-> S4D
         end
@@ -77,38 +77,38 @@ flowchart TB
         S3G --> S4A
     end
 
-    subgraph HANDOFF["STAGE 5: HANDOFF"]
-        H1[Internal: Sales → Delivery<br/>Handoff Packet]
-        H2{{TOUCHPOINT: Welcome Email<br/>Intro to delivery team}}
+    subgraph HANDOFF["5 HANDOFF"]
+        H1[Handoff Packet]
+        H2{{Welcome Email}}
     end
 
-    subgraph DELIVERY["DELIVERY PHASE"]
+    subgraph DELIVERY["DELIVERY"]
         direction TB
 
-        subgraph D1["STAGE 6: ONBOARDING"]
-            D1A{{TOUCHPOINT: Welcome Packet<br/>After payment}}
-            D1B{{TOUCHPOINT: Onboarding Form<br/>Access credentials<br/>Team contacts}}
-            D1C{{TOUCHPOINT: Kickoff Invite<br/>60 min call}}
-            D1D[Kickoff Call<br/>Map workflows<br/>Confirm scope]
-            D1E{{TOUCHPOINT: Kickoff Recap<br/>Action items + timeline}}
+        subgraph D1["6 ONBOARDING"]
+            D1A{{Welcome Packet}}
+            D1B{{Onboarding Form}}
+            D1C{{Kickoff Invite}}
+            D1D[Kickoff Call]
+            D1E{{Kickoff Recap}}
             D1A --> D1B --> D1C --> D1D --> D1E
         end
 
-        subgraph D2["STAGE 7: BUILD"]
-            D2A{{TOUCHPOINT: Architecture Review<br/>Design approval request}}
-            D2B[Architecture Call<br/>Client approves design]
-            D2C[Build Phase<br/>Automations + Integrations]
-            D2D{{TOUCHPOINT: Weekly Update<br/>Every Friday<br/>Status + Progress}}
+        subgraph D2["7 BUILD"]
+            D2A{{Architecture Review}}
+            D2B[Architecture Call]
+            D2C[Build Phase]
+            D2D{{Weekly Update}}
             D2A --> D2B --> D2C --> D2D
         end
 
-        subgraph D3["STAGE 8: GO-LIVE"]
-            D3A{{TOUCHPOINT: UAT Invite<br/>Testing instructions}}
-            D3B[User Acceptance Testing<br/>Client tests system]
-            D3C{{TOUCHPOINT: Training Invite<br/>2 hours scheduled}}
-            D3D[Training Session<br/>Live walkthrough]
-            D3E{{TOUCHPOINT: Go-Live Email<br/>System is LIVE}}
-            D3F{{TOUCHPOINT: Training Recording<br/>+ Documentation}}
+        subgraph D3["8 GO-LIVE"]
+            D3A{{UAT Invite}}
+            D3B[UAT Testing]
+            D3C{{Training Invite}}
+            D3D[Training Session]
+            D3E{{Go-Live Email}}
+            D3F{{Training Recording}}
             D3A --> D3B --> D3C --> D3D --> D3E --> D3F
         end
 
@@ -116,20 +116,20 @@ flowchart TB
         D2D --> D3A
     end
 
-    subgraph SUPPORT["SUPPORT & RETENTION"]
+    subgraph SUPPORT["SUPPORT"]
         direction TB
 
-        subgraph P1["STAGE 9: STABILIZE"]
-            P1A{{TOUCHPOINT: Check-in #1<br/>How's it going?}}
-            P1B{{TOUCHPOINT: Check-in #2<br/>Any issues?}}
-            P1C{{TOUCHPOINT: Check-in #3<br/>Full review + feedback}}
+        subgraph P1["9 STABILIZE"]
+            P1A{{Check-in 1}}
+            P1B{{Check-in 2}}
+            P1C{{Check-in 3}}
             P1A --> P1B --> P1C
         end
 
-        subgraph P2["STAGE 10: RETAIN"]
-            P2A{{TOUCHPOINT: Monthly Check-in<br/>ROI review}}
-            P2B{{TOUCHPOINT: Upsell Opportunity<br/>Phase 2 proposal}}
-            P2C{{TOUCHPOINT: Referral Request<br/>Case study + testimonial}}
+        subgraph P2["10 RETAIN"]
+            P2A{{Monthly Check-in}}
+            P2B{{Upsell}}
+            P2C{{Referral Request}}
             P2A --> P2B --> P2C
         end
 
@@ -147,6 +147,12 @@ flowchart TB
     style DELIVERY fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
     style SUPPORT fill:#fff3e0,stroke:#f57c00,stroke-width:2px
 ```
+
+### Diagram Key
+- **Hexagons {{}}** = Customer Touchpoints (automation opportunities)
+- **Rectangles []** = Internal processes
+- **Solid arrows** = Main flow
+- **Dotted arrows** = Conditional paths
 
 ---
 
@@ -195,30 +201,28 @@ flowchart TB
 
 ## ALTERNATIVE: SIMPLER LINEAR VERSION
 
-If the above is too complex, use this simplified version:
-
 ```mermaid
 flowchart LR
     subgraph SALES["SALES"]
-        A1[1. OUTREACH<br/>ICP: 5-50 employees<br/>20 prospects/week<br/>4 touchpoints]
-        A2[2. DISCOVERY<br/>Intake Form → Call<br/>Offer Audit<br/>8 touchpoints]
-        A3[3. AI AUDIT<br/>First Sale<br/>Biz Map + Matrix + PRD<br/>3 touchpoints]
-        A4[4. IMPLEMENTATION<br/>Proposal based on Audit<br/>4 touchpoints]
+        A1[1 OUTREACH<br/>4 touchpoints]
+        A2[2 DISCOVERY<br/>8 touchpoints]
+        A3[3 AI AUDIT<br/>3 touchpoints]
+        A4[4 PROPOSAL<br/>4 touchpoints]
         A1 --> A2 --> A3 --> A4
     end
 
-    B[5. HANDOFF<br/>Welcome Email<br/>Sales → Delivery<br/>1 touchpoint]
+    B[5 HANDOFF<br/>1 touchpoint]
 
     subgraph DELIVERY["DELIVERY"]
-        C1[6. ONBOARDING<br/>Packet + Form + Kickoff<br/>5 touchpoints]
-        C2[7. BUILD<br/>Weekly Updates<br/>2 touchpoints]
-        C3[8. GO-LIVE<br/>UAT + Training + Launch<br/>4 touchpoints]
+        C1[6 ONBOARDING<br/>5 touchpoints]
+        C2[7 BUILD<br/>2 touchpoints]
+        C3[8 GO-LIVE<br/>4 touchpoints]
         C1 --> C2 --> C3
     end
 
     subgraph RETAIN["RETAIN"]
-        D1[9. SUPPORT<br/>Post-launch Check-ins<br/>3 touchpoints]
-        D2[10. SUCCESS<br/>Ongoing + Upsell + Referral<br/>3 touchpoints]
+        D1[9 SUPPORT<br/>3 touchpoints]
+        D2[10 RETAIN<br/>3 touchpoints]
         D1 --> D2
     end
 
@@ -233,43 +237,43 @@ flowchart LR
 
 ---
 
-## THIRD OPTION: VERTICAL TIMELINE WITH TOUCHPOINT COUNTS
+## VERTICAL TIMELINE
 
 ```mermaid
 flowchart TB
     START((START)) --> S1
 
-    S1[1. OUTREACH<br/>ICP: 5-50 employees<br/>20 prospects/week<br/>4 TOUCHPOINTS]
+    S1[1 OUTREACH - 4 TP]
     S1 --> S2
 
-    S2[2. DISCOVERY<br/>Intake Form + Call<br/>5 Questions + Audit Offer<br/>8 TOUCHPOINTS]
+    S2[2 DISCOVERY - 8 TP]
     S2 --> S3
 
-    S3[3. AI AUDIT - First Sale<br/>Biz Map + Matrix + PRD<br/>3 TOUCHPOINTS]
+    S3[3 AI AUDIT - 3 TP]
     S3 --> S4
 
-    S4[4. IMPLEMENTATION PROPOSAL<br/>Based on Audit findings<br/>4 TOUCHPOINTS]
+    S4[4 PROPOSAL - 4 TP]
     S4 --> S5
 
-    S5[5. HANDOFF<br/>Welcome Email<br/>Sales → Delivery<br/>1 TOUCHPOINT]
+    S5[5 HANDOFF - 1 TP]
     S5 --> S6
 
-    S6[6. ONBOARDING<br/>Packet + Form + Kickoff<br/>5 TOUCHPOINTS]
+    S6[6 ONBOARDING - 5 TP]
     S6 --> S7
 
-    S7[7. BUILD<br/>Architecture + Weekly Updates<br/>2 TOUCHPOINTS]
+    S7[7 BUILD - 2 TP]
     S7 --> S8
 
-    S8[8. GO-LIVE<br/>UAT + Training + Launch<br/>4 TOUCHPOINTS]
+    S8[8 GO-LIVE - 4 TP]
     S8 --> S9
 
-    S9[9. SUPPORT<br/>Post-launch Check-ins<br/>3 TOUCHPOINTS]
+    S9[9 SUPPORT - 3 TP]
     S9 --> S10
 
-    S10[10. RETAIN<br/>Ongoing + Upsell + Referral<br/>3 TOUCHPOINTS]
+    S10[10 RETAIN - 3 TP]
     S10 -.->|New Project| S3
 
-    S10 --> SUCCESS((36 TOTAL<br/>TOUCHPOINTS))
+    S10 --> SUCCESS((36 TOTAL))
 
     style S1 fill:#bbdefb
     style S2 fill:#bbdefb
@@ -282,6 +286,8 @@ flowchart TB
     style S9 fill:#ffe0b2
     style S10 fill:#e1bee7
 ```
+
+TP = Touchpoints
 
 ---
 
