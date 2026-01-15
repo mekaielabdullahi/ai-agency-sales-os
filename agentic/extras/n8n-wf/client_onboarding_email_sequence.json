@@ -1,0 +1,353 @@
+{
+  "name": "Client Onboarding Email Sequence",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Client Onboarding Email Sequence\n\nThis workflow sends automated emails when a client pays:\n\n1. **Trigger**: Notion database status changes to \"Paid\"\n2. **Gratitude Email**: Sent immediately\n3. **Wait**: 5 minute delay\n4. **Next Steps Email**: Sent with calendar link\n5. **Update Notion**: Mark onboarding started\n\n### Configuration Required:\n- Notion API credentials\n- Notion database ID (update in trigger node)\n- Gmail OAuth2 credentials\n- Calendar link (update in email template)\n- Your name and email signature",
+        "width": 400,
+        "height": 280
+      },
+      "id": "sticky-note",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-300, -100]
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "simple": false,
+        "databaseId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "YOUR_NOTION_DATABASE_ID"
+        },
+        "filterType": "formula",
+        "formula": "={{Status = \"Paid\" and Onboarding Started = empty}}"
+      },
+      "id": "notion-trigger",
+      "name": "Watch for Paid Clients",
+      "type": "n8n-nodes-base.notionTrigger",
+      "typeVersion": 1,
+      "position": [0, 200],
+      "credentials": {
+        "notionApi": {
+          "id": "notion-api-cred",
+          "name": "Notion API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"client_name\": \"{{ $json.properties['Client Name'].title[0]?.plain_text || $json.properties['Name'].title[0]?.plain_text || 'there' }}\",\n  \"client_first_name\": \"{{ ($json.properties['Client Name'].title[0]?.plain_text || $json.properties['Name'].title[0]?.plain_text || 'there').split(' ')[0] }}\",\n  \"client_email\": \"{{ $json.properties['Email'].email || $json.properties['Client Email'].email || '' }}\",\n  \"project_type\": \"{{ $json.properties['Project Type']?.select?.name || 'automation project' }}\",\n  \"notion_page_id\": \"{{ $json.id }}\",\n  \"calendar_link\": \"https://calendly.com/YOUR_CALENDAR_LINK/logistics-onboarding\"\n}",
+        "options": {}
+      },
+      "id": "extract-client-data",
+      "name": "Extract Client Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "email-exists",
+              "leftValue": "={{ $json.client_email }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-email",
+      "name": "Email Exists?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "sendTo": "={{ $json.client_email }}",
+        "subject": "=Thanks {{ $json.client_first_name }}!",
+        "emailType": "text",
+        "message": "=Hey {{ $json.client_first_name }},\n\nThanks for taking care of that invoice so promptly.\n\nI'm really excited that we get to work together and to nail this for you.\n\nI'll send onboarding instructions and a calendar link in a moment so we can book a quick setup call.\n\nAppreciate your business.\n\nMatt",
+        "options": {}
+      },
+      "id": "send-gratitude-email",
+      "name": "Send Gratitude Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [660, 100],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail-oauth-cred",
+          "name": "Gmail OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 5,
+        "unit": "minutes"
+      },
+      "id": "wait-5-min",
+      "name": "Wait 5 Minutes",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [880, 100]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "sendTo": "={{ $('Extract Client Data').item.json.client_email }}",
+        "subject": "=Next steps for your project",
+        "emailType": "text",
+        "message": "=Hey {{ $('Extract Client Data').item.json.client_first_name }},\n\nHere's what happens next:\n\n1. Book your onboarding call\nThis is a quick 15-20 minute call where we'll get all the technical stuff sorted - logins, platform access, any two-factor codes. It's the #1 thing that speeds up projects.\n\nBook here: {{ $('Extract Client Data').item.json.calendar_link }}\n\n2. Before the call (optional but helpful)\nIf you want to get a head start, think about which platforms you currently use:\n- CRM (GoHighLevel, HubSpot, etc.)\n- Email marketing tools\n- Scheduling/booking systems\n- Any other tools we'll be connecting\n\nDon't worry about setting anything up yourself - we'll walk through everything together on the call.\n\n3. What we're doing on our end\n- Setting up your project workspace\n- Creating your dedicated Slack channel\n- Prepping the technical architecture\n\nQuestions? Just reply to this email.\n\nTalk soon,\nMatt",
+        "options": {}
+      },
+      "id": "send-next-steps-email",
+      "name": "Send Next Steps Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [1100, 100],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail-oauth-cred",
+          "name": "Gmail OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $('Extract Client Data').item.json.notion_page_id }}"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Onboarding Started",
+              "dateValue": "={{ $now.toISO() }}",
+              "type": "date"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "update-notion",
+      "name": "Update Notion - Onboarding Started",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [1320, 100],
+      "credentials": {
+        "notionApi": {
+          "id": "notion-api-cred",
+          "name": "Notion API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://your-n8n-instance.com/webhook/slack-onboarding",
+        "authentication": "none",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"type\": \"view_submission\",\n  \"view\": {\n    \"state\": {\n      \"values\": {\n        \"client_slug_block\": { \"client_slug\": { \"value\": \"{{ $('Extract Client Data').item.json.client_first_name.toLowerCase().replace(/\\\\s+/g, '-') }}\" } },\n        \"display_name_block\": { \"display_name\": { \"value\": \"{{ $('Extract Client Data').item.json.client_name }}\" } },\n        \"client_email_block\": { \"client_email\": { \"value\": \"{{ $('Extract Client Data').item.json.client_email }}\" } }\n      }\n    }\n  },\n  \"user\": { \"id\": \"system\", \"name\": \"Automation\" }\n}",
+        "options": {}
+      },
+      "id": "trigger-slack-channels",
+      "name": "Trigger Slack Channel Creation (Optional)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1540, 100],
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "new-clients"
+        },
+        "messageType": "block",
+        "blocksUi": "={\n  \"blocks\": [\n    {\n      \"type\": \"section\",\n      \"text\": {\n        \"type\": \"mrkdwn\",\n        \"text\": \":moneybag: *New client payment received!*\"\n      }\n    },\n    {\n      \"type\": \"section\",\n      \"fields\": [\n        {\n          \"type\": \"mrkdwn\",\n          \"text\": \"*Client:*\\n{{ $('Extract Client Data').item.json.client_name }}\"\n        },\n        {\n          \"type\": \"mrkdwn\",\n          \"text\": \"*Email:*\\n{{ $('Extract Client Data').item.json.client_email }}\"\n        }\n      ]\n    },\n    {\n      \"type\": \"section\",\n      \"text\": {\n        \"type\": \"mrkdwn\",\n        \"text\": \":white_check_mark: Gratitude email sent\\n:white_check_mark: Next steps email sent\\n:clock3: Waiting for client to book logistics call\"\n      }\n    }\n  ]\n}",
+        "otherOptions": {}
+      },
+      "id": "notify-team-slack",
+      "name": "Notify Team in Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [1760, 100],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "new-clients"
+        },
+        "text": "=:warning: Client {{ $json.client_name }} paid but has no email address in Notion. Please add their email to send onboarding emails.",
+        "otherOptions": {}
+      },
+      "id": "no-email-warning",
+      "name": "Warn - No Email",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [660, 300],
+      "credentials": {
+        "slackApi": {
+          "id": "slack-api-cred",
+          "name": "Slack API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Watch for Paid Clients": {
+      "main": [
+        [
+          {
+            "node": "Extract Client Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Client Data": {
+      "main": [
+        [
+          {
+            "node": "Email Exists?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Email Exists?": {
+      "main": [
+        [
+          {
+            "node": "Send Gratitude Email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Warn - No Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Gratitude Email": {
+      "main": [
+        [
+          {
+            "node": "Wait 5 Minutes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 5 Minutes": {
+      "main": [
+        [
+          {
+            "node": "Send Next Steps Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Next Steps Email": {
+      "main": [
+        [
+          {
+            "node": "Update Notion - Onboarding Started",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Notion - Onboarding Started": {
+      "main": [
+        [
+          {
+            "node": "Trigger Slack Channel Creation (Optional)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Trigger Slack Channel Creation (Optional)": {
+      "main": [
+        [
+          {
+            "node": "Notify Team in Slack",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": [
+    {
+      "name": "onboarding"
+    },
+    {
+      "name": "client"
+    }
+  ]
+}
