@@ -17,11 +17,15 @@ The following data points have been extracted from discovery meetings (Dec 22, D
 | Annual revenue | $600K-$750K/year | Dec 22 discovery | Medium |
 | Phase 1 investment | $5,000 (fixed) | Jan 5 PRD | High |
 | Timeline | 30 days | Jan 5 PRD | High |
-| Jobber subscription | $379/month | Dec 29 session | High |
-| Current phone system | Vonage | Dec 22 discovery | High |
+| Jobber subscription | $379/month (Teams, Grow tier) | Dec 22 onboarding | High |
+| Jobber Receptionist | +$99/month (optional add-on) | Dec 22 onboarding | High |
+| Current phone system | Vonage (main number) + Kelsey's cell | Dec 22 onboarding | High |
 | Target phone system | Quo | Jan 5 PRD | High |
-| Quo estimated cost | $69-99/month | Jan 5 PRD | Medium |
+| Quo base cost | $69/month (or $32/month promo) | Dec 22 onboarding | High |
 | Vonage current cost | Unknown | - | Not gathered |
+| Previous vendor (Malik) | Spent $7K+, failed to deliver | Dec 3 discovery | High |
+| QuickBooks reconciliation error | $700K discrepancy (fixed) | Dec 3 discovery | High |
+| Rental revenue example | $35K from one customer/year | Dec 22 discovery | High |
 
 ### Operations Data
 
@@ -33,6 +37,8 @@ The following data points have been extracted from discovery meetings (Dec 22, D
 | Phone tag calls/day | 4-6 | Jan 5 PRD | High |
 | Alyssa manual entry time | 1.5 hrs/day | Jan 5 PRD | Estimate |
 | Kelsey handoff time | 0.5 hrs/day | Jan 5 PRD | Estimate |
+| Inefficiency opportunity | 35+ hrs/week | Dec 3 discovery | Medium |
+| Target time savings | 10+ hrs/week for Kelsey | Dec 11 coaching | Medium |
 
 ### Pain Points (from PRD)
 
@@ -56,11 +62,26 @@ The following data points have been extracted from discovery meetings (Dec 22, D
 
 | System | Purpose | Status |
 |--------|---------|--------|
-| Jobber | Field service CRM | Active - $379/month |
-| Vonage | Current phone system | To be replaced by Quo |
-| Quo | Target phone system | Phase 1 implementation |
-| QuickBooks | Accounting | Had $700K reconciliation error |
+| Jobber | Field service CRM | Active - $379/month (Teams, Grow tier) |
+| Vonage | Current IVR phone system | To be replaced by Quo |
+| Quo | Target phone system | Phase 1 implementation - $69/mo (or $32 promo) |
+| QuickBooks | Accounting | Had $700K reconciliation error (fixed); new system Jan 1 |
 | Personal phones | Business calls | Problem - mixed personal/business |
+| Shopify | POS for walk-in sales | Active |
+| Multiple emails | service@, sales@, supplies@, info@ | Active - need consolidation strategy |
+
+### Vonage IVR Menu (to replicate in Quo)
+
+| Option | Routes To | Phone Number |
+|--------|-----------|--------------|
+| 1 - Service | Kelsey | 602-722-XXXX (his cell) |
+| 2 - Supplies | Alyssa | Her number |
+| 3 - Sales | Kelsey | Same as Service |
+| 4 - Printing | Joe | His number |
+| 5 - Accounting | Nikki (wife) | Her number |
+| 0 - Reception | Office phone | Rings at shop |
+
+*Source: Dec 22 onboarding transcript [1:09:58-1:16:43]*
 
 ### Strategic Context (from Discovery)
 
@@ -68,10 +89,12 @@ The following data points have been extracted from discovery meetings (Dec 22, D
 |--------|-------|
 | Kelsey goal | Move to Pinetop (needs time back) |
 | Joe development | Training to handle more solo calls |
-| Previous vendor | Malik (incomplete project, has project folder) |
-| Nikki initial stance | Skeptical - converted to excited |
-| Referral potential | 5+ contacts if we deliver |
+| Previous vendor | Malik - spent $7K+, incomplete project, Nikki has folder |
+| Nikki initial stance | Asked clarifying question about SOW protection (Dec 22) |
+| Referral potential | 5+ contacts if we deliver (Chris's first referral - P0 priority) |
 | Guarantee | "If by day 30 you dont feel you have substantially more clarity and at least one live change that makes your day easier, we keep working until you do" |
+| Trust gap quote | "I dont fully trust that everything is in there" (re: Jobber) |
+| Training need | No SOPs exist; Joe training takes 1-2 weeks per person |
 
 ### ROI Projections (from PRD)
 
@@ -203,14 +226,15 @@ These questions MUST be answered before finalizing ROI projections:
 
 ### Priority 1 - Phone System (Blocks Go-Live)
 
-| Question | Who to Ask | Why It Matters |
-|----------|-----------|----------------|
-| What carrier owns business phone number? (VoIP/landline/wireless?) | Kelsey | Number porting - entire project go-live |
-| Bundled services on phone line? (internet/fax?) | Kelsey | Porting timeline estimation |
-| Phone provider account #, PIN | Alyssa | Start porting request |
-| Open to dedicated business number for transcription? | Kelsey | Personal vs business data separation |
-| Current Vonage IVR menu options to replicate? | Kelsey/Alyssa | IVR configuration |
-| Current Vonage monthly cost? | Nikki/Alyssa | Calculate actual savings |
+| Question | Who to Ask | Why It Matters | Status |
+|----------|-----------|----------------|--------|
+| What carrier owns business phone number? (VoIP/landline/wireless?) | Kelsey | Number porting - entire project go-live | **Vonage for IVR; Kelsey's cell is main** |
+| Bundled services on phone line? (internet/fax?) | Kelsey | Porting timeline estimation | Not asked |
+| Phone provider account #, PIN | Alyssa | Start porting request | **✅ HAVE IT** |
+| Open to dedicated business number for transcription? | Kelsey | Personal vs business data separation | Not asked |
+| Current Vonage IVR menu options to replicate? | Kelsey/Alyssa | IVR configuration | **Documented above; need Vonage login to verify (2FA)** |
+| Current Vonage monthly cost? | Nikki/Alyssa | Calculate actual savings | Not asked |
+| Single primary business number decision | Kelsey/Nikki | Must choose ONE number for business | **CRITICAL - needs discussion** |
 
 ### Priority 2 - Time Validation (ROI Calculator)
 
@@ -252,23 +276,27 @@ These questions MUST be answered before finalizing ROI projections:
 
 | Metric | Source | Value | Status |
 |--------|--------|-------|--------|
-| Phone carrier type | Kelsey/Alyssa | Unknown | Not asked |
+| Phone carrier type | Kelsey/Alyssa | **Vonage IVR + Kelsey's cell** | ✅ Gathered (Dec 22) |
 | Bundled services | Kelsey/Alyssa | Unknown | Not asked |
-| Account #/PIN for porting | Alyssa | Unknown | Not asked |
+| Account #/PIN for porting | Alyssa | **Have it** | ✅ Gathered |
 | Vonage current cost | Nikki/Alyssa | Unknown | Not asked |
-| Vonage IVR options | Kelsey/Alyssa | Unknown | Not asked |
+| Vonage IVR options | Kelsey/Alyssa | **5 options documented** | ✅ Gathered (Dec 22) |
 | Alyssa manual entry time | Alyssa | 1.5 hrs/day | Needs validation |
 | Kelsey handoff time | Kelsey | 0.5 hrs/day | Needs validation |
 | Screenshot handoffs/week | Alyssa | 20+ | Needs validation |
 | Daily operating cost | Nikki | Unknown | Not asked |
 | Average service call revenue | Kelsey | Unknown | Not asked |
-| Joe solo call capability | Joe | Unknown | Not asked |
+| Joe solo call capability | Joe | **In training, can't handle complex yet** | Partially gathered |
 | Voicemail volume | Kelsey/Alyssa | Unknown | Not asked |
 | Spam call volume | Alyssa | Unknown | Not asked |
-| Malik project folder | Nikki | Unknown | Not asked |
+| Malik project folder | Nikki | **Nikki has it** | ✅ Confirmed (Dec 3) |
+| Previous vendor spend | Known | **$7K+ to Malik, failed** | ✅ Gathered |
 | Referral contacts (5+) | Nikki | Mentioned | Needs specifics |
 | Annual revenue | Kelsey | $600K-$750K | Needs validation |
-| Jobber subscription | Known | $379/month | Gathered |
+| Jobber subscription | Known | **$379/month (Teams, Grow)** | ✅ Gathered |
+| Quo cost | Known | **$69/mo base ($32 promo)** | ✅ Gathered |
+| QuickBooks error | Known | **$700K reconciliation (fixed)** | ✅ Gathered |
+| Total inefficiency | Discovery | **35+ hrs/week** | Medium confidence |
 
 ---
 
@@ -322,5 +350,5 @@ These questions MUST be answered before finalizing ROI projections:
 
 ---
 
-**Last Updated:** January 5, 2026
-**Status:** Initial structure - Key phone system and time validation data gaps remaining
+**Last Updated:** January 6, 2026
+**Status:** Updated with data from Dec 3-22 meeting transcripts. IVR menu documented. Key remaining gaps: Vonage cost, account/PIN for porting, time validation.

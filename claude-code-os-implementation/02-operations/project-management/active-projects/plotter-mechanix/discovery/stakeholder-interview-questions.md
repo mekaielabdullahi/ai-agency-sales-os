@@ -1,14 +1,14 @@
 # Plotter Mechanix - Stakeholder Interview Questions
 
 **Created:** December 29, 2025
-**Updated:** January 5, 2026
+**Updated:** December 29, 2025
 **Purpose:** Deep discovery questions for each stakeholder to establish baseline metrics AND unblock development
 
 ---
 
 ## 🚨 PRIORITY: Development-Blocking Questions
 
-**These questions MUST be answered this week to unblock development work.**
+**These 9 questions MUST be answered this week to unblock development work.**
 
 ### Questions for Kelce (5)
 
@@ -31,14 +31,6 @@
 | A3 | How many calls currently go to voicemail? | AI answering cost-benefit analysis |
 | A4 | What happens with internal team calls (Kelce↔Alyssa)? | Preventing garbage Jobber records |
 
-### Questions for Nikki (3)
-
-| # | Question | What's Blocked |
-|---|----------|----------------|
-| N1 | Do you have Malik's project folder? Can we review what was built? | Avoiding duplicate work, understanding past failures |
-| N2 | What went wrong with Malik from your perspective? | Understanding expectations, avoiding same mistakes |
-| N3 | Do you take any client calls or need a business phone line? | Quo phone number architecture |
-
 ### What Gets Unblocked When Answered
 
 | Feature | Blocked By | Ready When |
@@ -49,8 +41,6 @@
 | Spam Filtering Config | A2 | Answered |
 | Internal Call Handling | A4 | Answered |
 | **Data Architecture** | **K5** | **If YES → clean system; If NO → build filtering** |
-| **Past Project Review** | **N1, N2** | **Both answered** |
-| **Phone Architecture** | **N3** | **Answered** |
 
 ---
 
@@ -164,61 +154,6 @@ We're **shooting in the dark** with what to build. These questions establish the
 
 ---
 
-## Stakeholder: Nikki (Co-Owner / Bookkeeping)
-
-**Role:** Co-owner (Kelsey's wife), bookkeeping, QuickBooks, financial oversight
-**Key Context:** Started skeptical of our engagement, converted to excited. Has 5+ referral contacts if we deliver.
-
-### 🚨 BLOCKING QUESTIONS (Must Answer to Unblock Development)
-
-| # | Question | What's Blocked |
-|---|----------|----------------|
-| N1 | Do you have Malik's project folder? Can we review what was built? | Avoiding duplicate work, understanding past failures |
-| N2 | What went wrong with Malik from your perspective? | Understanding expectations, avoiding same mistakes |
-| N3 | Do you take any client calls or need a business phone line? | Quo phone number architecture |
-
-### Bookkeeping & QuickBooks (Her Domain)
-- [ ] How many hours per week do you spend on bookkeeping?
-- [ ] What's the current state of QuickBooks? (They had a $700K reconciliation error)
-- [ ] How does information flow from Jobber → QuickBooks today?
-- [ ] What manual data entry do you do between systems?
-- [ ] How often do invoices get lost or delayed?
-- [ ] What's the accounts receivable situation? (Outstanding invoices)
-
-### Daily Operating Cost Collection
-- [ ] What's the monthly rent for the shop?
-- [ ] What are the average monthly utilities (electric, gas, water, internet)?
-- [ ] How many employees and what's the total monthly payroll?
-- [ ] What's the monthly liability/building insurance cost?
-- [ ] How many trucks and what's the monthly cost per truck (payment, fuel, maintenance)?
-- [ ] What software subscriptions does the company have? (Check for duplicates\!)
-
-**Goal:** Get Nikki to fill out the Daily Operating Cost spreadsheet so we can calculate their baseline.
-
-### Decision-Making & Business Perspective
-- [ ] What was your initial concern about this project? (She started skeptical)
-- [ ] What changed your mind? (Understanding her conversion helps with referrals)
-- [ ] What would success look like to you specifically?
-- [ ] What's one thing that would make your job significantly easier?
-
-### Communication & Phase 1 Needs
-- [ ] Do you handle any customer-facing calls?
-- [ ] How do you currently communicate with Kelsey during the day?
-- [ ] Would you benefit from having visibility into the Jobber Request inbox?
-- [ ] What information do you wish you had access to that you don't today?
-
-### Time Tracking
-- [ ] How many hours per week do you spend on each major task?
-- [ ] What's the most repetitive part of your day?
-- [ ] How often do you have to look up the same information multiple times?
-
-### Referral Potential (After Delivery)
-- [ ] Who are the 5+ contacts you mentioned as potential referrals?
-- [ ] What industries are they in?
-- [ ] What would we need to deliver for you to feel confident making introductions?
-
----
-
 ## Baseline Metrics We Need (ROI Calculator Inputs)
 
 ### Labor Metrics
@@ -227,7 +162,6 @@ We're **shooting in the dark** with what to build. These questions establish the
 | Kelce hours/week on service calls | ___ | ___ | $___ |
 | Kelce hours/week on admin | ___ | ___ | $___ |
 | Alyssa hours/week on scheduling | ___ | ___ | $___ |
-| Nikki hours/week on bookkeeping | ___ | ___ | $___ |
 | Joe solo call capability | ___% | ___% | $___ |
 
 ### Financial Metrics
@@ -269,12 +203,6 @@ We're **shooting in the dark** with what to build. These questions establish the
 - Tool and information needs
 - Shadowing opportunity?
 
-### Session 4: Nikki Financial Deep Dive (45-60 min)
-- QuickBooks current state review
-- Daily operating cost collection
-- Expectations and success criteria
-- Referral potential discussion
-
 ---
 
 ## Post-Discovery: ROI Calculator
@@ -306,6 +234,27 @@ Once we have these numbers, we can build a simple spreadsheet that shows:
 
 ---
 
+## Nikki-Specific Questions (Office/Admin)
+
+Based on Dec 29 session discussion:
+
+### Daily Operating Cost Collection
+- [ ] What's the monthly rent for the shop?
+- [ ] What are the average monthly utilities (electric, gas, water, internet)?
+- [ ] How many employees and what's the total monthly payroll?
+- [ ] What's the monthly liability/building insurance cost?
+- [ ] How many trucks and what's the monthly cost per truck (payment, fuel, maintenance)?
+- [ ] What software subscriptions does the company have? (Check for duplicates!)
+
+**Goal:** Get Nikki to fill out the Daily Operating Cost spreadsheet so we can calculate their baseline.
+
+### Time Tracking
+- [ ] How many hours per week do you spend on each major task?
+- [ ] What's the most repetitive part of your day?
+- [ ] How often do you have to look up the same information multiple times?
+
+---
+
 ## ROI Calculator Spreadsheet
 
 **Action Item:** Share draft ROI calculator spreadsheet with Nikki & Alyssa during their interviews.
@@ -320,6 +269,63 @@ The spreadsheet should include:
 - Inventory/materials estimate
 
 **Chris's insight from Dec 29:** "For us to do our jobs, we need at least this. We're not asking for personal financial information. I just need you to answer these simple, basic operational costs for us to gauge what your daily operating cost is."
+
+---
+
+## Website/Inventory Listing Workflow (Gap Identified)
+
+**Context:** Discovery revealed Joe is "posting printer listings online" and getting out-of-state calls, but no workflow documented. Malik's failed project was supposed to auto-sync inventory to Shopify. Need to understand current manual process before automating.
+
+### Questions for Joe (Primary - handles listings)
+
+| # | Question | Why We Need This |
+|---|----------|------------------|
+| J1 | Walk me through creating a listing from start to finish - what triggers it, what steps do you take? | Map the full workflow |
+| J2 | Where do you get the product information (specs, model numbers, condition)? | Identify data sources |
+| J3 | How do you take/gather photos for listings? Phone? Camera? Who edits them? | Photo workflow |
+| J4 | How is pricing determined for used equipment? Who decides the price? | Pricing authority/process |
+| J5 | How long does it take to create one listing start to finish? | Time baseline for ROI |
+| J6 | How many listings do you create per week/month? | Volume baseline |
+| J7 | What platforms do you post to? (Shopify only? eBay? Facebook Marketplace? Craigslist?) | Channel mapping |
+| J8 | What's the most frustrating part of creating listings? | Pain point identification |
+| J9 | Do you have to enter the same information in multiple places? Where? | Duplicate work identification |
+
+### Questions for Alyssa (Secondary - may touch inventory/pricing)
+
+| # | Question | Why We Need This |
+|---|----------|------------------|
+| A-INV1 | When Joe creates a listing, do you have to update QuickBooks or Jobber separately? | Integration gap |
+| A-INV2 | How do you track which inventory is listed for sale vs being used for service? | Inventory status tracking |
+| A-INV3 | When something sells on the website, what's your process? | Order fulfillment workflow |
+| A-INV4 | How do you know what inventory is available to list? | Inventory visibility |
+
+### Questions for Kelce (Decision-maker context)
+
+| # | Question | Why We Need This |
+|---|----------|------------------|
+| K-INV1 | How do you decide what equipment to refurbish vs sell as-is vs use for parts? | Decision criteria |
+| K-INV2 | Who determines the final price for used equipment? | Pricing authority |
+| K-INV3 | What's your vision for the online sales side of the business? Scale it? Maintain it? | Strategic priority |
+
+### What Gets Unblocked When Answered
+
+| Opportunity | Blocked By | Ready When |
+|-------------|------------|------------|
+| Shopify automation | J1, J2, J9 | Workflow mapped |
+| Photo workflow optimization | J3 | Process understood |
+| Pricing tool/calculator | J4, K-INV2 | Rules documented |
+| Multi-platform posting | J7 | Channels identified |
+| Inventory-to-listing pipeline | A-INV2, A-INV4 | Status tracking understood |
+
+### Baseline Metrics Needed
+
+| Metric | Current | Target | Notes |
+|--------|---------|--------|-------|
+| Time per listing | ___ min | ___ min | J5 |
+| Listings per month | ___ | ___ | J6 |
+| Platforms used | ___ | ___ | J7 |
+| Duplicate data entry points | ___ | 1 | J9, A-INV1 |
+| Days from "ready to sell" to "listed" | ___ | ___ | Process efficiency |
 
 ---
 
