@@ -18,15 +18,35 @@
 
 ## P0 - Revenue Critical (DO FIRST)
 
-### Trevor Bradford - IDEA Brand Coach Website
-**Client:** Trevor Bradford
-**Project Type:** Client deliverable (PAYING CLIENT)
+### Plotter Mechanix - Inventory Management System
+**Client:** David (via Chris partnership)
+**Project Type:** Client deliverable (PAYING CLIENT - $5K Phase 1 paid)
 **AutoClaude Work:** [To be assessed]
-**Current State:** In development, needs to reach professional beta-testing state
+**Current State:** Discovery phase, Phase 1 in progress
 
 **Review Status:**
-- [ ] Manual testing complete
-- [ ] Gaps identified
+- [ ] Discovery deliverables assessed
+- [ ] Phase 1 scope confirmed
+- [ ] Delivery roadmap defined
+
+**Gaps to Close:**
+- [ ] [List gaps after review]
+
+**Delivery Target:** [Set date]
+
+**Next Session:** [Schedule review/test session]
+
+---
+
+### S&S Wolf Sheds - Website + Operations
+**Client:** Sandra Bomyea
+**Project Type:** Client deliverable (PAYING CLIENT - $10K committed)
+**AutoClaude Work:** [To be assessed]
+**Current State:** Discovery complete, sprint scoping needed
+
+**Review Status:**
+- [ ] Discovery processed
+- [ ] Sprint 1 scope defined
 - [ ] Delivery roadmap defined
 
 **Gaps to Close:**
@@ -40,28 +60,7 @@
 
 ## P1 - Revenue Enabling (DO SECOND)
 
-### Invoice & Receipts Processing Automation
-**Client:** Linh / Internal (Demo asset)
-**Project Type:** Internal tool + sales demo
-**AutoClaude Work:** [To be assessed]
-**Current State:** Built, needs cleanup and evaluation
-
-**Review Status:**
-- [ ] Manual testing with real data
-- [ ] Accuracy evaluation complete
-- [ ] Edge cases identified
-- [ ] Demo-ready assessment
-
-**Gaps to Close:**
-- [ ] [List gaps after review]
-
-**Delivery Target:** [Set date]
-
-**Next Session:** [Schedule review/test session]
-
----
-
-### [Other P1 Projects - Add as discovered]
+### [P1 Projects - Add as discovered]
 
 ---
 
@@ -88,10 +87,8 @@
 ## Discovery Phase (Not Yet Inventoried)
 
 **Projects to assess and add above:**
-- [ ] Goldfinch data annotation project
-- [ ] Concrete CEO automation
-- [ ] Plotter Mechanix deliverables
-- [ ] AI education events
+- [ ] Concrete CEO automation (incubated)
+- [ ] AI education events (incubated)
 - [ ] [Other projects worked on]
 
 **Action:** Go through AutoClaude output, identify all projects touched, add to appropriate priority section above.
@@ -132,12 +129,12 @@
 
 ## Weekly Delivery Goals
 
-### Week of Dec 23-29, 2025
-**Goal:** Ship at least 1 project by Dec 31
+### Week of Jan 6-12, 2026
+**Goal:** Define sprint scopes for active projects
 
 **Targets:**
-- [ ] Trevor website → Professional beta state
-- [ ] Invoice automation → Demo ready
+- [ ] Plotter Mechanix Phase 1 → Progress assessment
+- [ ] S&S Wolf Sheds → Sprint 1 scope defined
 - [ ] [Other priority deliveries]
 
 **Actual Delivered:**
@@ -145,7 +142,7 @@
 
 ---
 
-### Week of Dec 30-Jan 5, 2026
+### Week of Jan 13-19, 2026
 **Goal:** [Set goal]
 
 **Targets:**
@@ -211,5 +208,5 @@
 
 ---
 
-**Last Updated:** 2025-12-25 9:15 AM
-**Next Review:** [Set date for weekly tracker review]
+**Last Updated:** 2026-01-10
+**Next Review:** Weekly

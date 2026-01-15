@@ -24,7 +24,7 @@ All work must drive toward this. Everything else is deferred.
 
 ## Priority Hierarchy
 
-**Full Roadmap:** [P1-P5 Strategic Roadmap](../../02-operations/project-management/active-projects/antsavvy/ROADMAP-P1-P5.md)
+**Full Roadmap:** See ROADMAP-P1-P5.md in relevant project folder
 
 ### P0: Revenue-Generating Activities (Non-Negotiable)
 
@@ -37,9 +37,9 @@ All work must drive toward this. Everything else is deferred.
 - Collect payments
 
 **Active P0 Projects:**
-- **Plotter Mechanix Case Study** - First proof of concept for 3-tier engagement model (Free Audit → Low-Cost → Scale)
-- **SOP Creation Service** - NEW: Productized offering (audio → SOP in 48 hours, $500-750 per SOP)
-- Trevor Brand Coach Demo - PAYING CLIENT ($1,000 paid)
+- **Plotter Mechanix** - First proof of concept for 3-tier engagement model ($5K Phase 1 paid)
+- **S&S Wolf Sheds** - Multi-location operations + website rebuild ($10K committed)
+- **SOP Creation Service** - Productized offering (audio → SOP in 48 hours, $500-750 per SOP)
 
 **New Revenue Model (Dec 10-11 Partner Meetings):**
 - **3-Tier Engagement:** Free initial audit → Low-cost entry ($3-5K) → Scale ($10K+/month)
@@ -111,11 +111,10 @@ All work must drive toward this. Everything else is deferred.
 
 **Demo videos and case studies that help close deals.**
 
-**Active/Due (Dec 10-11 Meetings):**
-- [ ] **Trevor Brand Coach Demo** - OVERDUE, paying client waiting
-- [ ] **Eric Scratch & Win Demo** - 4+ days overdue
-- [ ] **Plotter Mechanix Transformation Demo** - Showcase SOP creation process (Matthew)
-- [ ] **Case Study: Plotter Mechanix** - First flagship client (end of December)
+**Active/Due:**
+- [ ] **Plotter Mechanix Transformation Demo** - Showcase SOP creation process
+- [ ] **Case Study: Plotter Mechanix** - First flagship client
+- [ ] **S&S Wolf Sheds Case Study** - Multi-location operations transformation
 
 **Framework:**
 - Demo videos of working automations

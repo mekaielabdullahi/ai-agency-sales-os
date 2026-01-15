@@ -4,7 +4,7 @@
 
 **Prepared For:** Sandy Williams, S&S Wolf Sheds
 **Prepared By:** Arise AI Group LLC
-**Date:** January 4, 2026
+**Date:** January 10, 2026 (Revised)
 
 ---
 
@@ -15,7 +15,7 @@ S&S Wolf Sheds is a family-owned portable building company serving Northern Ariz
 1. **No baseline metrics** — Operating on estimates, can't prove ROI
 2. **Website credibility issues** — Broken images, mobile problems losing visitors
 3. **Scattered data** — No single source of truth for inventory or costs
-4. **Zero lead capture** — Website visitors leave without being tracked
+4. **No lead qualification** — Visitors aren't pre-qualified, wasting time on bad-fit leads
 
 **Phase 1 establishes the foundation** before building advanced systems. You can't automate chaos—first we need clean data, validated metrics, and basic infrastructure.
 
@@ -23,8 +23,8 @@ S&S Wolf Sheds is a family-owned portable building company serving Northern Ariz
 |---|---|
 | **Investment:** | $5,000 |
 | **Timeline:** | 2 weeks |
-| **Potential Annual Value:** | $172,330 |
-| **Projected ROI:** | 3,347% |
+| **Potential Annual Value:** | $176,830 |
+| **Projected ROI:** | 3,437% |
 
 ---
 
@@ -48,9 +48,9 @@ Inventory and pricing data lives in multiple spreadsheets with inconsistent form
 - Time wasted searching for information
 - No foundation for automation
 
-### Problem 4: Losing Every Website Visitor
+### Problem 4: Basic Lead Capture Missing Qualification
 
-Your website has **0% lead capture rate**. Visitors leave without any way to follow up. When you paused ads, leads dropped 75%—because there's no system to capture organic interest.
+Your current contact form captures basic info, but visitors leave without being qualified. When you paused ads, leads dropped 75%—because there's no system to capture and qualify organic interest. You're missing the opportunity to ask: "Do you need a shed, garage, or shipping container? Do you need road grading? Do you need dirt hauled in?"
 
 ---
 
@@ -71,9 +71,10 @@ We interview your key people to gather real numbers:
 
 ### Deliverable 2: Initial SOPs
 
-From the interviews, we document two critical processes:
+From the interviews, we document your critical processes:
 - **Lead Handling SOP** — How inquiries should flow from first contact to sale
 - **Lot Operations SOP** — Standard procedures for lot management
+- Additional SOPs as identified during assessment
 
 ### Deliverable 3: Website Quick Fixes
 
@@ -95,17 +96,23 @@ We set up a clean, centralized data system:
 
 **Data Standards:** snake_case naming, pure numbers (no `$` symbols in data fields).
 
-### Deliverable 5: Customer Onboarding Form
+*Platform selection (Google Sheets, Airtable, or other) determined after evaluation of your specific needs.*
 
-A mobile-friendly form that captures:
+### Deliverable 5: Lead Qualification System
+
+Transform your existing contact form into an interactive "Find which shed is best for you" questionnaire:
 - Name, email, phone
-- What they're interested in
-- Timeline (ready to buy vs. browsing)
-- How they found you
+- **Product type needed** — Shed, garage, or shipping container?
+- **Installation requirements** — Road grading needed? Dirt hauled in?
+- **Timeline** — Ready to buy vs. browsing
+- **How they found you** — Attribution tracking
 
 **Deployed on:** Homepage, contact page, product pages
 
-**Result:** Sales team notified within 5 minutes of every submission.
+**Result:**
+- Sales team notified within 5 minutes of every submission
+- Pre-qualified leads with installation requirements known upfront
+- Reduce wasted $150 assessment visits on distant/unsuitable properties
 
 ### Deliverable 6: Validation Workshop
 
@@ -129,7 +136,7 @@ At the end of Week 1, we review findings together and confirm priorities before 
 
 | Day | Activity |
 |-----|----------|
-| 1 | Firebase account setup (you create, we configure) |
+| 1 | Database platform setup (you create account, we configure) |
 | 2-3 | Data migration, CODB population |
 | 3-4 | Form build and testing |
 | 5 | Deployment and handoff |
@@ -145,7 +152,7 @@ At the end of Week 1, we review findings together and confirm priorities before 
 | ROI Assessment & Interviews | $1,500 |
 | Website Quick Fixes | $1,000 |
 | Database Foundation | $1,500 |
-| Customer Onboarding Form | $1,000 |
+| Lead Qualification System | $1,000 |
 
 ### Projected Returns
 
@@ -154,10 +161,10 @@ At the end of Week 1, we review findings together and confirm priorities before 
 | ROI Assessment (prevents 1 build error) | $24,000 | — | $24,000 |
 | Website Fixes | TBD | $36,500 | $36,500 |
 | Database Foundation | $2,080 | $73,000 | $75,080 |
-| Onboarding Form | — | $36,750 | $36,750 |
-| **TOTAL** | **$26,080** | **$146,250** | **$172,330** |
+| Lead Qualification System | $4,500 | $36,750 | $41,250 |
+| **TOTAL** | **$30,580** | **$146,250** | **$176,830** |
 
-**ROI: 3,347%** | **Payback: ~11 days**
+**ROI: 3,437%** | **Payback: ~10 days**
 
 *Based on discovery data. Revenue uplift assumes 50% of saved time applied to sales activities.*
 
@@ -173,7 +180,7 @@ These numbers come from your own team:
 
 > **Lead drop after pausing ads:** 75% decline
 
-> **Current lead capture rate:** 0%
+> **Current lead qualification:** Basic form only—no pre-qualification
 
 > **Target revenue:** $50,000/month (currently ~$20,000)
 
@@ -185,10 +192,10 @@ These numbers come from your own team:
 
 - Validated business metrics (not estimates)
 - CODB confirmed
-- 2 documented SOPs
+- Initial SOPs documented
 - Website that looks professional and works on mobile
 - Centralized database you own
-- Lead capture form live and notifying your team
+- Lead qualification system live and notifying your team
 - Foundation for Phase 2+ automation
 
 ---
