@@ -158,6 +158,27 @@ Based on current stage, run:
 - [ ] [Next command]
 ```
 
+## Pipeline Visualization
+
+Auto-generate a visual of where this prospect is in the pipeline:
+
+```mermaid
+flowchart LR
+    subgraph Pipeline
+        R[1. Research] --> S[2. Score]
+        S --> O[3. Outreach]
+        O --> D[4. Discovery]
+        D --> P[5. Proposal]
+        P --> F[6. Follow-up]
+    end
+
+    style [CURRENT_STAGE] fill:#22c55e,color:#fff
+```
+
+**Saved to**: ./diagrams/YYYY-MM-DD-[company]-pipeline.mmd
+
+---
+
 ## Quick Pipeline Check
 
 To check where a prospect is in the pipeline:

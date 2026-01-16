@@ -1,0 +1,72 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#3b82f6', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1d4ed8', 'lineColor': '#64748b', 'secondaryColor': '#22c55e', 'tertiaryColor': '#f59e0b'}}}%%
+
+flowchart TB
+    subgraph Executive["01 - EXECUTIVE OFFICE"]
+        DP[Daily Planner]
+        WS[Weekly Strategist]
+        MR[Monthly Reviewer]
+        OT[One-Thing Agent]
+    end
+
+    subgraph Operations["02 - OPERATIONS"]
+        PA[Productivity Assessor]
+        MA[Metrics Analyst]
+        PM[Project Manager]
+    end
+
+    subgraph Growth["03 - AI GROWTH ENGINE"]
+        CA[Client Analyzer]
+        LS[Lead Scorer]
+        PG[Proposal Generator]
+        MN[Meeting Notes]
+    end
+
+    subgraph Content["04 - CONTENT TEAM"]
+        CD[Content Director]
+        HS[Hook Specialist]
+        SM[Social Media]
+        EC[Email Copywriter]
+        ED[Editor]
+    end
+
+    subgraph HR["05 - HR DEPARTMENT"]
+        PR[Purpose Refiner]
+        KR[Knowledge Researcher]
+        PO[Process Optimizer]
+        PAR[Prompt Architect]
+        QA[QA Agent]
+    end
+
+    subgraph Workflows["INTEGRATION WORKFLOWS"]
+        MOR[/morning]
+        EVE[/evening]
+        WW[/weekly-workflow]
+        SP[/sales-pipeline]
+        CP[/content-pipeline]
+    end
+
+    %% Connections
+    Executive --> Operations
+    Operations --> Growth
+    Operations --> Content
+    HR --> Executive
+    HR --> Operations
+    HR --> Growth
+    HR --> Content
+
+    MOR --> DP
+    EVE --> PA
+    WW --> WS
+    SP --> CA
+    SP --> LS
+    SP --> PG
+    CP --> CD
+    CP --> HS
+    CP --> ED
+
+    style Executive fill:#3b82f6,color:#fff
+    style Operations fill:#22c55e,color:#fff
+    style Growth fill:#f59e0b,color:#fff
+    style Content fill:#ec4899,color:#fff
+    style HR fill:#8b5cf6,color:#fff
+    style Workflows fill:#64748b,color:#fff

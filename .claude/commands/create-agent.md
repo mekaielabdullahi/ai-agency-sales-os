@@ -141,9 +141,24 @@ Test across 4 dimensions:
 
 ---
 
+### ARCHITECTURE DIAGRAM
+
+```mermaid
+[Auto-generated class/flowchart diagram showing:
+- Agent structure
+- Input/output flows
+- Integration points with other agents
+- Department placement]
+```
+
+**Saved to**: ./diagrams/YYYY-MM-DD-[agent-name]-architecture.mmd
+
+---
+
 ### DEPLOYMENT
 
 **Save Location**: claude-code-os-implementation/[department]/agents/
 **Filename**: [agent-name]-agent.md
 **Integration Points**: [How it connects to other agents]
+**Diagram**: ./diagrams/[agent-name]-architecture.mmd
 ```

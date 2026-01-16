@@ -186,5 +186,24 @@ Before deciding, confirm:
 
 ---
 
+## DECISION TREE
+
+```mermaid
+flowchart TD
+    D{Decision} --> A[Option A]
+    D --> B[Option B]
+    A --> A1[Best Case: outcome]
+    A --> A2[Worst Case: outcome]
+    B --> B1[Best Case: outcome]
+    B --> B2[Worst Case: outcome]
+
+    style A fill:#22c55e
+    style B fill:#3b82f6
+```
+
+**Saved to**: ./diagrams/YYYY-MM-DD-decision-[name].mmd
+
+---
+
 *"A good decision made quickly is better than a perfect decision made too late."*
 ```
