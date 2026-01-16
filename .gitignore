@@ -12,5 +12,6 @@ Thumbs.db
 .env
 .env.local
 
-# Claude Code
-.claude/
+# Claude Code - Keep commands shared, ignore sensitive files
+.claude/logs/
+.claude/*.local.json
