@@ -1,0 +1,105 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#e3f2fd', 'primaryTextColor': '#1565c0', 'primaryBorderColor': '#1565c0', 'lineColor': '#333', 'secondaryColor': '#fff3e0', 'tertiaryColor': '#f5f5f5'}}}%%
+
+flowchart TB
+    subgraph CLIENT["👤 CLIENT TOUCHPOINTS"]
+        CAL[Calendly<br/>Booking Links]
+        EMAIL_IN[Email<br/>Inbox]
+        SLACK_CLIENT[Slack<br/>Client Channel]
+        GMEET[Google Meet<br/>Video Calls]
+        WA[WhatsApp<br/>Quick Comms]
+    end
+
+    subgraph NOTION["📊 NOTION - Central Hub"]
+        subgraph CRM_DB["CRM Database"]
+            CONTACT[Contact Record<br/>Type: Lead/Client]
+        end
+        subgraph PROJ_DB["Projects Database"]
+            PROJECT[Project Record<br/>Status Flow]
+        end
+        subgraph SUPPORT_DB["Supporting DBs"]
+            PROPOSALS[Proposals]
+            TASKS[Tasks]
+            DELIVERABLES[Deliverables]
+            DOCS[Documents]
+            INVOICES[Invoices]
+        end
+    end
+
+    subgraph PAYMENTS["💳 PAYMENTS"]
+        STRIPE[Stripe<br/>Invoices & Webhooks]
+    end
+
+    subgraph AUTOMATION["⚙️ n8n AUTOMATION ENGINE"]
+        subgraph AGENTS["Claude Code Agents"]
+            PROP_AGENT[Proposal Agent]
+            ONBOARD_AGENT[Onboarding Agent]
+            COMM_AGENT[Communication Agent]
+            PM_AGENT[PM Agent]
+            SEC_AGENT[Security Agent]
+        end
+        WEBHOOK[Webhook Handler]
+        SCHEDULER[Scheduler]
+    end
+
+    subgraph COMMS["📧 COMMUNICATION"]
+        GMAIL[Gmail API<br/>Formal Emails]
+        SLACK_API[Slack API<br/>Channels & Messages]
+    end
+
+    subgraph SECURITY["🔐 SECURITY"]
+        VAULT[1Password/Bitwarden<br/>Credential Vault]
+    end
+
+    subgraph AI["🤖 AI"]
+        CLAUDE[Claude API<br/>Content Generation]
+    end
+
+    %% Client Journey Flow
+    CAL -->|Books Discovery| CONTACT
+    CAL -->|Creates| PROJECT
+
+    %% Proposal Flow
+    PROJECT -->|Status=Qualified| PROP_AGENT
+    PROP_AGENT -->|Pulls Notes| PROJECT
+    PROP_AGENT -->|Generates| CLAUDE
+    CLAUDE -->|Returns| PROP_AGENT
+    PROP_AGENT -->|Creates Draft| PROPOSALS
+    PROP_AGENT -->|Notifies| SLACK_API
+    PROPOSALS -->|Human Approves| GMAIL
+    GMAIL -->|Sends| EMAIL_IN
+    PROP_AGENT -->|Updates| PROJECT
+
+    %% Payment Flow
+    STRIPE -->|payment_intent.succeeded| WEBHOOK
+    WEBHOOK -->|Triggers| ONBOARD_AGENT
+
+    %% Onboarding Flow
+    ONBOARD_AGENT -->|Updates Status| PROJECT
+    ONBOARD_AGENT -->|Updates Type| CONTACT
+    ONBOARD_AGENT -->|Sends Gratitude| GMAIL
+    ONBOARD_AGENT -->|Creates Channels| SLACK_API
+    SLACK_API -->|Invites| SLACK_CLIENT
+    ONBOARD_AGENT -->|Notifies Team| SLACK_API
+
+    %% Logistics Flow
+    GMEET -->|Logistics Call| SEC_AGENT
+    SEC_AGENT -->|Stores Creds| VAULT
+    SEC_AGENT -->|Logs Access| PROJECT
+
+    %% Execution Flow
+    SCHEDULER -->|2x Weekly| COMM_AGENT
+    COMM_AGENT -->|Monitors| SLACK_CLIENT
+    COMM_AGENT -->|Drafts Updates| SLACK_API
+    COMM_AGENT -->|Sends Summary| GMAIL
+
+    %% PM Flow
+    PM_AGENT -->|Tracks| TASKS
+    PM_AGENT -->|Monitors| DELIVERABLES
+    PM_AGENT -->|Alerts| SLACK_API
+
+    %% Delivery Flow
+    DELIVERABLES -->|All Complete| PM_AGENT
+    PM_AGENT -->|Generates Report| DOCS
+    PM_AGENT -->|Updates Status| PROJECT
+    PM_AGENT -->|Triggers| SEC_AGENT
+    SEC_AGENT -->|Revokes| VAULT
