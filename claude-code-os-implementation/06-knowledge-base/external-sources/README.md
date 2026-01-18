@@ -35,6 +35,9 @@ Book notes and implementation ideas
 ### `/threads-posts/`
 Viral threads, LinkedIn posts, content that contains tactical gold
 
+### `/youtube/`
+Video transcripts, tutorials, and interviews - with raw-transcripts and processed subfolders
+
 ### `/conversations/`
 Insights from conversations with mentors, peers, clients
 
