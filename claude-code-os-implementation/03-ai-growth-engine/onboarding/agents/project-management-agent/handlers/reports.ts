@@ -1,0 +1,199 @@
+/**
+ * Delivery Report Generator for Project Management Agent
+ */
+
+import { Project, WinCondition, createDeliveryReport } from './notion';
+
+export interface DeliveryReport {
+  project_id: string;
+  project_name: string;
+  client_name: string;
+  delivery_date: string;
+  project_duration: string;
+  win_conditions: WinConditionSummary[];
+  metrics: Record<string, string>;
+  handoff_checklist: HandoffItem[];
+  recommendations: string[];
+}
+
+export interface WinConditionSummary {
+  name: string;
+  description: string;
+  status: string;
+  evidence_link?: string;
+}
+
+export interface HandoffItem {
+  item: string;
+  completed: boolean;
+}
+
+/**
+ * Generate delivery report for a completed project
+ */
+export async function generateDeliveryReport(
+  project: Project,
+  winConditions: WinCondition[]
+): Promise<DeliveryReport> {
+  console.log(`[Reports] Generating delivery report for ${project.name}`);
+
+  const report: DeliveryReport = {
+    project_id: project.id,
+    project_name: project.name,
+    client_name: project.client_name,
+    delivery_date: new Date().toISOString().split('T')[0],
+    project_duration: calculateDuration(project.start_date, new Date().toISOString()),
+    win_conditions: winConditions.map((wc) => ({
+      name: wc.name,
+      description: wc.description,
+      status: wc.status,
+      evidence_link: wc.evidence_link,
+    })),
+    metrics: {},
+    handoff_checklist: [
+      { item: 'System walkthrough video provided', completed: false },
+      { item: 'SOP documentation delivered', completed: false },
+      { item: 'Client trained on usage', completed: false },
+      { item: 'Support transition explained', completed: false },
+      { item: 'Access credentials documented', completed: false },
+    ],
+    recommendations: [],
+  };
+
+  // Generate markdown content
+  const content = formatDeliveryReport(report);
+
+  // Create in Notion
+  await createDeliveryReport({
+    project_id: project.id,
+    project_name: project.name,
+    client_name: project.client_name,
+    content,
+  });
+
+  return report;
+}
+
+/**
+ * Format delivery report as markdown
+ */
+function formatDeliveryReport(report: DeliveryReport): string {
+  const lines: string[] = [];
+
+  lines.push(`# Delivery Report: ${report.client_name} - ${report.project_name}`);
+  lines.push('');
+  lines.push(`**Delivery Date:** ${report.delivery_date}`);
+  lines.push(`**Project Duration:** ${report.project_duration}`);
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  lines.push('## Executive Summary');
+  lines.push('');
+  lines.push(
+    `This report confirms the successful completion of all agreed win conditions for the **${report.project_name}** project. All deliverables have been implemented, tested, and documented.`
+  );
+  lines.push('');
+  lines.push(`**Outcome:** All ${report.win_conditions.length} win conditions achieved.`);
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  lines.push('## Win Conditions Achieved');
+  lines.push('');
+  lines.push('| # | Condition | Status | Evidence |');
+  lines.push('|---|-----------|--------|----------|');
+
+  report.win_conditions.forEach((wc, index) => {
+    const evidenceLink = wc.evidence_link ? `[View](${wc.evidence_link})` : 'Pending';
+    lines.push(`| ${index + 1} | ${wc.name} | ${wc.status} | ${evidenceLink} |`);
+  });
+
+  lines.push('');
+
+  // Detailed conditions
+  lines.push('### Detailed Win Condition Evidence');
+  lines.push('');
+
+  report.win_conditions.forEach((wc, index) => {
+    lines.push(`#### Condition ${index + 1}: ${wc.name}`);
+    lines.push('');
+    lines.push(`**What was delivered:**`);
+    lines.push(wc.description || '_Description pending_');
+    lines.push('');
+    if (wc.evidence_link) {
+      lines.push(`**Evidence:** [View](${wc.evidence_link})`);
+      lines.push('');
+    }
+    lines.push('---');
+    lines.push('');
+  });
+
+  lines.push('## Handoff Checklist');
+  lines.push('');
+
+  report.handoff_checklist.forEach((item) => {
+    const checkbox = item.completed ? '[x]' : '[ ]';
+    lines.push(`- ${checkbox} ${item.item}`);
+  });
+
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  lines.push('## Recommended Next Steps');
+  lines.push('');
+  lines.push('Based on project outcomes and observed opportunities, we recommend:');
+  lines.push('');
+  lines.push('1. _Recommendations to be added based on project specifics_');
+  lines.push('2. _Additional optimization opportunities_');
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  lines.push('## Client Approval');
+  lines.push('');
+  lines.push(
+    'By acknowledging this report, client confirms all win conditions have been satisfactorily met and the project is complete.'
+  );
+  lines.push('');
+  lines.push('| Role | Name | Date | Signature |');
+  lines.push('|------|------|------|-----------|');
+  lines.push('| Client Representative | | | |');
+  lines.push('| Project Lead | | | |');
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+  lines.push('*Report generated by AriseGroup.ai Project Management Agent*');
+  lines.push(`*Generated: ${new Date().toISOString()}*`);
+
+  return lines.join('\n');
+}
+
+/**
+ * Calculate duration between two dates
+ */
+function calculateDuration(startDate: string, endDate: string): string {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+  const days = Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+
+  if (days < 7) {
+    return `${days} days`;
+  } else if (days < 30) {
+    const weeks = Math.ceil(days / 7);
+    return `${weeks} week${weeks > 1 ? 's' : ''}`;
+  } else {
+    const months = Math.ceil(days / 30);
+    return `${months} month${months > 1 ? 's' : ''}`;
+  }
+}
+
+/**
+ * Export delivery report as PDF (placeholder)
+ */
+export async function exportReportAsPDF(reportId: string): Promise<string> {
+  // Would integrate with PDF generation service
+  console.log(`[Reports] Exporting report ${reportId} as PDF`);
+  return `https://reports.arisegroup.ai/${reportId}.pdf`;
+}
