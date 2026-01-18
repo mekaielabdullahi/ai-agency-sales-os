@@ -1,0 +1,354 @@
+# Project Management Agent
+
+**Type:** Claude Code Agent
+**Status:** Specification
+**Created:** 2026-01-18
+
+---
+
+## Purpose
+
+Track project timelines, monitor win conditions, alert on delays, and auto-generate delivery reports when all conditions are met.
+
+---
+
+## Trigger
+
+- **Scheduled:** Daily at 9am PT (timeline check)
+- **Event-based:** Win condition status change in Notion
+- **Manual:** Delivery report generation request
+
+---
+
+## Responsibilities
+
+### 1. Track Project Timeline
+- Compare current date against project milestones
+- Calculate days remaining for each phase
+- Identify tasks overdue by > 24 hours
+
+### 2. Alert on Delays
+- Send Slack notification when task overdue
+- Escalate if overdue > 48 hours
+- Suggest timeline adjustment if pattern detected
+
+### 3. Monitor Win Conditions
+- Track status of each win condition per project
+- Calculate overall project completion percentage
+- Flag blocked conditions requiring action
+
+### 4. Generate Delivery Reports
+- Trigger when all win conditions = "Complete"
+- Compile evidence for each condition
+- Generate formatted report
+- Save to project folder and Notion
+
+---
+
+## Inputs
+
+| Input | Source | Required |
+|-------|--------|----------|
+| Project Data | Notion Projects DB | Yes |
+| Task/Milestone Data | Notion Tasks DB | Yes |
+| Win Conditions | Notion Win Conditions DB | Yes |
+| Evidence Links | Notion/Project folder | Yes |
+| Team Members | Notion | No |
+
+---
+
+## Outputs
+
+| Output | Destination | Format |
+|--------|-------------|--------|
+| Delay Alert | Slack #ops + project channel | Notification |
+| Progress Summary | Notion project record | Updated fields |
+| Delivery Report | Project folder + Notion | Markdown + PDF |
+| Completion Notification | Slack + Email | Notification |
+
+---
+
+## Win Condition Tracking
+
+### Status Options
+| Status | Description |
+|--------|-------------|
+| `Not Started` | Work hasn't begun |
+| `In Progress` | Actively being worked |
+| `Complete` | Done with evidence attached |
+| `Blocked` | Cannot proceed (needs action) |
+
+### Win Condition Fields
+```yaml
+win_condition:
+  id: string
+  project_id: string
+  name: string
+  description: string
+  status: enum[Not Started, In Progress, Complete, Blocked]
+  evidence_required: string
+  evidence_link: url (optional)
+  completed_date: date (optional)
+  blocker_reason: string (optional)
+```
+
+### Tracking Logic
+
+```
+[Daily at 9am PT]
+        │
+        ▼
+[Get Active Projects]
+        │
+        ▼
+[For Each Project]
+        │
+        ├──▶ [Get Win Conditions]
+        │           │
+        │           ▼
+        │    [Calculate Completion %]
+        │           │
+        │           ▼
+        │    [If 100% Complete]
+        │           │
+        │           └──▶ [Trigger Delivery Report]
+        │
+        ├──▶ [Get Tasks/Milestones]
+        │           │
+        │           ▼
+        │    [Check for Overdue]
+        │           │
+        │           ▼
+        │    [If Overdue > 24h]
+        │           │
+        │           └──▶ [Send Alert]
+        │
+        ▼
+[Update Project Summary in Notion]
+```
+
+---
+
+## Delivery Report Generation
+
+### Trigger
+- All win conditions for project = "Complete"
+- OR manual trigger via command
+
+### Report Structure
+
+```markdown
+# Delivery Report: {{client_name}} - {{project_name}}
+
+**Delivery Date:** {{date}}
+**Project Duration:** {{start_date}} - {{end_date}}
+**Days to Completion:** {{duration_days}}
+
+---
+
+## Executive Summary
+
+This report confirms the successful completion of all agreed win conditions
+for the {{project_name}} project. All deliverables have been implemented,
+tested, and documented as specified.
+
+---
+
+## Win Conditions Achieved
+
+| # | Condition | Status | Evidence |
+|---|-----------|--------|----------|
+{{#each win_conditions}}
+| {{@index + 1}} | {{name}} | ✅ Complete | [View]({{evidence_link}}) |
+{{/each}}
+
+---
+
+## Deliverables Summary
+
+### Systems Built
+{{#each deliverables.systems}}
+- **{{name}}**: {{description}}
+{{/each}}
+
+### Documentation Provided
+{{#each deliverables.docs}}
+- {{name}} - [Link]({{url}})
+{{/each}}
+
+### Training Completed
+{{#each deliverables.training}}
+- {{type}}: {{date}}
+{{/each}}
+
+---
+
+## Metrics
+
+| Metric | Value |
+|--------|-------|
+{{#each metrics}}
+| {{name}} | {{value}} |
+{{/each}}
+
+---
+
+## Handoff Checklist
+
+- [x] System walkthrough video provided
+- [x] SOP documentation delivered
+- [x] Client trained on usage
+- [x] Support transition explained
+- [x] Credentials transferred to client vault
+
+---
+
+## Recommended Next Steps
+
+Based on project outcomes, we recommend:
+
+{{#each recommendations}}
+{{@index + 1}}. {{this}}
+{{/each}}
+
+---
+
+## Client Approval
+
+By acknowledging this report, client confirms all win conditions
+have been satisfactorily met.
+
+| Role | Name | Date | Signature |
+|------|------|------|-----------|
+| Client | | | |
+| Project Lead | | | |
+
+---
+
+*Report generated by AriseGroup.ai Project Management Agent*
+*Generated: {{generated_date}}*
+```
+
+### Generation Process
+
+```
+[Trigger: All Win Conditions Complete]
+        │
+        ▼
+[Verify All Conditions Have Evidence]
+        │
+        ├── Missing Evidence? ──▶ [Alert: "Evidence needed for X"]
+        │
+        ▼
+[Gather All Data]
+        │
+        ├── Win Conditions + Evidence
+        ├── Project Metrics
+        ├── Deliverables List
+        └── Training Records
+        │
+        ▼
+[Generate Report via Claude]
+        │
+        ▼
+[Save as Markdown to Project Folder]
+        │
+        ▼
+[Export to PDF]
+        │
+        ▼
+[Attach to Notion Project Record]
+        │
+        ▼
+[Notify: "Delivery report ready for {{project}}"]
+```
+
+---
+
+## Delay Alerts
+
+### Alert Thresholds
+| Overdue By | Alert Level | Recipients |
+|------------|-------------|------------|
+| 24 hours | Warning | Project lead |
+| 48 hours | Escalation | Project lead + ops |
+| 72+ hours | Critical | All + client communication |
+
+### Alert Format
+
+```
+:warning: PROJECT DELAY ALERT
+
+Project: {{project_name}}
+Task: {{task_name}}
+Due Date: {{due_date}}
+Overdue By: {{days_overdue}} days
+
+Assigned: {{assignee}}
+Blocker: {{blocker_reason or "Not specified"}}
+
+Action: Update task status or adjust timeline
+Link: {{notion_link}}
+```
+
+---
+
+## Implementation
+
+### Notion Database Schema
+
+**Projects DB**
+```yaml
+fields:
+  - name: Name (title)
+  - client: Relation → Clients
+  - status: Select [Active, Completed, On Hold]
+  - start_date: Date
+  - target_end_date: Date
+  - actual_end_date: Date
+  - completion_percent: Formula (from win conditions)
+  - delivery_report: File
+```
+
+**Win Conditions DB**
+```yaml
+fields:
+  - name: Name (title)
+  - project: Relation → Projects
+  - description: Text
+  - status: Select [Not Started, In Progress, Complete, Blocked]
+  - evidence_required: Text
+  - evidence_link: URL
+  - completed_date: Date
+```
+
+---
+
+## Error Handling
+
+| Error | Action |
+|-------|--------|
+| Missing evidence for condition | Alert, do not generate report |
+| Notion API timeout | Retry 3x, log failure |
+| PDF generation fails | Deliver markdown, retry PDF |
+
+---
+
+## Monitoring
+
+| Metric | Target | Alert Threshold |
+|--------|--------|-----------------|
+| Daily scan completion | 100% | Any failure |
+| Delay alerts sent | 100% overdue tasks | Missed alert |
+| Reports generated | 100% completed projects | Missing report |
+| Report accuracy | 100% | Any error |
+
+---
+
+## Dependencies
+
+- Notion API with database access
+- Claude Code for report generation
+- PDF export capability (Notion export or external)
+- Slack API for notifications
+- File storage for reports

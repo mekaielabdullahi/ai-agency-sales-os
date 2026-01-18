@@ -383,6 +383,162 @@ Example: `Acme Corp - GoHighLevel - Admin Login`
 
 ---
 
+## SECTION 5.1: 1Password Integration Protocol
+
+### Vault Structure
+
+```
+AriseGroup Vault
+├── Active Clients
+│   ├── Client - Acme Corp
+│   │   ├── CRM (GoHighLevel Admin)
+│   │   ├── Website (WordPress Admin)
+│   │   ├── Email (Mailchimp API)
+│   │   └── Payment (Stripe Keys)
+│   └── Client - Beta Inc
+│       └── ...
+├── Archived Clients
+│   └── Client - Old Project (Read-Only)
+└── Internal Tools
+    └── Team credentials
+```
+
+### Role-Based Access Matrix
+
+| Role | Access Level | What They See | Duration |
+|------|--------------|---------------|----------|
+| **Project Lead** | Full | All client credentials | Project duration |
+| **Developer** | Limited | Assigned platforms only | Task duration |
+| **Contractor** | Temporary | Specific items only | Max 7 days |
+| **Client** | Owner | Their own vault folder | Permanent |
+
+### 1Password CLI Commands
+
+**Create client vault:**
+```bash
+op vault create "Client - {{client_name}}"
+```
+
+**Grant team member access:**
+```bash
+op vault user grant \
+  --vault "Client - {{client_name}}" \
+  --user "{{email}}" \
+  --permissions "view_items"
+```
+
+**Revoke access:**
+```bash
+op vault user revoke \
+  --vault "Client - {{client_name}}" \
+  --user "{{email}}"
+```
+
+**List vault access (for audit):**
+```bash
+op vault user list --vault "Client - {{client_name}}"
+```
+
+### Credential Expiry Monitoring
+
+The Security Agent monitors for:
+- **OAuth tokens** expiring within 30 days
+- **API keys** without expiry (flag for review)
+- **Unused credentials** (no access > 30 days)
+
+Alert format:
+```
+:key: CREDENTIAL EXPIRY WARNING
+Credential: Make.com OAuth Token
+Client: Acme Corp
+Expires: 2026-02-15 (28 days)
+Action: Renew via client
+```
+
+### Access Audit Log
+
+All credential events are logged:
+
+```json
+{
+  "event_id": "uuid",
+  "timestamp": "2026-01-18T12:00:00Z",
+  "event_type": "access_granted",
+  "vault_name": "Client - Acme Corp",
+  "item_name": "GoHighLevel Admin",
+  "actor": "security-agent",
+  "target_user": "developer@arisegroup.ai",
+  "role": "developer",
+  "reason": "Project assignment",
+  "expires": "2026-02-18T12:00:00Z"
+}
+```
+
+Logs stored in Notion "Credential Audit Log" database.
+
+### Revocation Checklist (Project Close)
+
+When project status → Completed:
+
+- [ ] Security Agent triggered automatically
+- [ ] All team access to client vault revoked
+- [ ] Access audit log generated
+- [ ] Vault moved to "Archived Clients"
+- [ ] Client notified of revocation
+- [ ] Credential rotation recommended to client
+
+**Timeline:** Revocation within 24 hours of project close
+
+---
+
+## SECTION 5.2: Live 2FA Handling Protocol
+
+### Why This Matters
+
+2FA is the #1 logistics blocker for automation projects. Handle it ALL during the Logistics Onboarding Call.
+
+### Call Script Block (Add to Logistics Call)
+
+**Say:**
+> "Now we're going to handle any two-factor authentication. This is the #1 thing that slows down projects - needing to interrupt you at random times for codes. Let's knock it all out now."
+
+### 2FA Handling Process
+
+1. **Open first platform requiring 2FA**
+2. **Initiate login/connection**
+3. **Say:** "You should receive a text or email now - what's the code?"
+4. **Enter code immediately** (codes expire in 30-60 seconds)
+5. **Confirm connection successful**
+6. **Repeat for all platforms**
+
+### Platforms Commonly Requiring 2FA
+
+| Platform | 2FA Type | Notes |
+|----------|----------|-------|
+| Make.com | Email | Verification on new connection |
+| Google Workspace | OAuth | May prompt on API connection |
+| Slack | OAuth | First connection only |
+| Stripe | SMS/App | Dashboard login |
+| HubSpot | SMS/Email | API key generation |
+| Meta Business | SMS/App | Page connections |
+
+### If 2FA Fails
+
+1. Try alternate method (app authenticator vs SMS)
+2. If still blocked, document and schedule 15-min follow-up
+3. Never let 2FA become a multi-day blocker
+4. Worst case: Client shares screen and completes connection themselves
+
+### Success Criteria
+
+By end of Logistics Call:
+- [ ] All platforms connected
+- [ ] All 2FA completed
+- [ ] Zero outstanding credential requests
+- [ ] Client says "What else do you need?" Answer: "Nothing!"
+
+---
+
 ### Credential Lifecycle
 
 **Phase 1: Collection**

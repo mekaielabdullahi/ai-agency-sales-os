@@ -22,23 +22,95 @@
 
 By **[completion date]**, the following will be delivered and operational:
 
-### Deliverables Checklist
+### Deliverables Checklist (Enhanced Specificity)
 
-- [ ] **[Deliverable 1]**
-  - Description: [What this is]
-  - Acceptance criteria: [How we know it's done]
+Each deliverable must include: **What, When, Integrations, Documentation, Training**
 
-- [ ] **[Deliverable 2]**
-  - Description: [What this is]
-  - Acceptance criteria: [How we know it's done]
+---
 
-- [ ] **[Deliverable 3]**
-  - Description: [What this is]
-  - Acceptance criteria: [How we know it's done]
+#### Condition 1: [Name]
 
-- [ ] **[Deliverable 4]**
-  - Description: [What this is]
-  - Acceptance criteria: [How we know it's done]
+**What you will have:**
+[Specific deliverable - be concrete, not vague]
+- Example: "Completed Airtable database with 15 custom fields"
+- NOT: "A database"
+
+**How it operates:**
+[Schedule, triggers, operating hours]
+- Example: "Automatically populates Mon-Fri, 7am-7pm PT"
+- Example: "Triggers within 30 seconds of form submission"
+
+**Integrations included:**
+[What connects to what]
+- [ ] [Platform A] → [Platform B] connection
+- [ ] [Notification channel] alerts for [trigger]
+- [ ] [API] integration configured
+
+**Documentation provided:**
+- [ ] System walkthrough video (Loom, < 10 min)
+- [ ] Written SOP document (Google Doc/Notion)
+- [ ] Troubleshooting guide for common issues
+
+**Training included:**
+- [ ] Live walkthrough session (30 min)
+- [ ] Q&A period
+- [ ] 30-day support window for questions
+
+**Status:** [ ] Not Started  [ ] In Progress  [ ] Complete  [ ] Blocked
+
+---
+
+#### Condition 2: [Name]
+
+**What you will have:**
+[Specific deliverable]
+
+**How it operates:**
+[Schedule/triggers]
+
+**Integrations included:**
+- [ ] [Integration 1]
+- [ ] [Integration 2]
+
+**Documentation provided:**
+- [ ] Walkthrough video
+- [ ] SOP document
+- [ ] Troubleshooting guide
+
+**Training included:**
+- [ ] Live walkthrough
+- [ ] Q&A period
+- [ ] Support window
+
+**Status:** [ ] Not Started  [ ] In Progress  [ ] Complete  [ ] Blocked
+
+---
+
+#### Condition 3: [Name]
+
+**What you will have:**
+[Specific deliverable]
+
+**How it operates:**
+[Schedule/triggers]
+
+**Integrations included:**
+- [ ] [Integration 1]
+- [ ] [Integration 2]
+
+**Documentation provided:**
+- [ ] Walkthrough video
+- [ ] SOP document
+- [ ] Troubleshooting guide
+
+**Training included:**
+- [ ] Live walkthrough
+- [ ] Q&A period
+- [ ] Support window
+
+**Status:** [ ] Not Started  [ ] In Progress  [ ] Complete  [ ] Blocked
+
+---
 
 ### System State at Completion
 
