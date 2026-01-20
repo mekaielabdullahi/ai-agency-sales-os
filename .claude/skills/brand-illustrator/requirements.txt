@@ -1,0 +1,10 @@
+# AriseGroup.ai Brand Illustrator Dependencies
+
+# Google Gemini API client
+google-generativeai>=0.8.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Image processing
+Pillow>=10.0.0
