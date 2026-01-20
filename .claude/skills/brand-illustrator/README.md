@@ -21,14 +21,20 @@ cd .claude/skills/brand-illustrator
 pip install -r requirements.txt
 ```
 
-### 2. Configure API Key
+### 2. Configure API Keys (Optional)
 
+**No API key needed for testing!** Pollinations.ai works without any setup.
+
+For production use or higher quality:
 ```bash
 cp .env.example .env
-# Edit .env and add your Gemini API key
+# Edit .env and add your API keys (all optional)
 ```
 
-Get your API key at: https://aistudio.google.com/app/apikey
+Get API keys at:
+- **Gemini**: https://aistudio.google.com/app/apikey
+- **Hugging Face**: https://huggingface.co/settings/tokens (free)
+- **Together AI**: https://api.together.xyz/settings/api-keys (free $5 credits)
 
 ### 3. Use the Skill
 
@@ -106,6 +112,39 @@ brand-illustrator/
 | Presentation | 1920 x 1080 | Slides |
 | Website Section | 1200 x 800 | Web pages |
 
+## Image Generation Providers
+
+The skill supports multiple providers with automatic fallback:
+
+| Provider | API Key | Models | Best For |
+|----------|---------|--------|----------|
+| **Gemini** | Required | 2.0 Flash | High quality, paid |
+| **Pollinations** | None! | Flux | Free testing, no setup |
+| **Hugging Face** | Optional | FLUX, SDXL, SD 1.5 | Free tier, many models |
+| **Together AI** | Required | FLUX Schnell | Free $5 credits |
+
+### Provider Selection
+
+```bash
+# Quick test - no API key needed!
+python scripts/generate.py --project "test" --provider pollinations --prompt-text "A robot"
+
+# Auto mode (default): Try all providers in order
+python scripts/generate.py --project "test" --provider auto
+
+# Force specific provider
+python scripts/generate.py --project "test" --provider gemini
+python scripts/generate.py --project "test" --provider huggingface
+python scripts/generate.py --project "test" --provider together
+```
+
+### Fallback Order (Auto Mode)
+
+1. **Gemini** (if GEMINI_API_KEY set)
+2. **Pollinations** (always available, no key)
+3. **Hugging Face** (always available, key optional)
+4. **Together AI** (if TOGETHER_API_KEY set)
+
 ## Manual Generation
 
 You can also run the script directly:
@@ -126,15 +165,26 @@ python scripts/generate.py \
   --prompt "path/to/prompt.md"
 ```
 
+With free provider (no setup):
+
+```bash
+# Use Pollinations - works immediately, no API key!
+python scripts/generate.py \
+  --project "2026-01-19-my-illustration" \
+  --provider pollinations \
+  --prompt-text "Your prompt here"
+```
+
 ## Troubleshooting
 
-### "API key not found"
-Create `.env` file with your `GEMINI_API_KEY`
-
 ### "No image generated"
-- Check API key has image generation access
-- Verify Gemini image generation is available in your region
-- Check API quota
+- Try `--provider pollinations` (free, no API key needed)
+- Check your internet connection
+- If using Gemini, verify API quota hasn't been exceeded
+
+### "Hugging Face models loading"
+- Wait 20-30 seconds and try again
+- Set HF_API_KEY for higher rate limits
 
 ### "Module not found"
 Run `pip install -r requirements.txt`

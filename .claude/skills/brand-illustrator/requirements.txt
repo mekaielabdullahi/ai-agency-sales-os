@@ -1,10 +1,16 @@
 # AriseGroup.ai Brand Illustrator Dependencies
 
-# Google Gemini API client
+# Google Gemini API client (optional - for Gemini provider)
 google-generativeai>=0.8.0
+
+# HTTP requests for free providers (Pollinations, Hugging Face, Together AI)
+requests>=2.31.0
 
 # Environment variable management
 python-dotenv>=1.0.0
 
 # Image processing
 Pillow>=10.0.0
+
+# Slack integration for team approval (optional)
+slack_sdk>=3.0.0
