@@ -1,0 +1,31 @@
+{
+  "description": "Common Notion targets for quick sync",
+  "targets": {
+    "internal-projects": {
+      "id": "2ede7406-6c7d-815a-8988-db6b23fad418",
+      "name": "Internal Projects",
+      "icon": "🔧",
+      "use_for": "Internal documentation, guides, system docs"
+    }
+  },
+  "recently_created": [
+    {
+      "title": "Brand Illustration System v2.0",
+      "id": "2eee7406-6c7d-81ed-8ca8-d5f087d47ef2",
+      "parent": "internal-projects",
+      "created": "2026-01-20"
+    },
+    {
+      "title": "AriseGroup Brand Guidelines",
+      "id": "2eee7406-6c7d-8159-9e1b-f7f9f351ba62",
+      "parent": "internal-projects",
+      "created": "2026-01-20"
+    },
+    {
+      "title": "Brand Illustrator - Complete System Guide",
+      "id": "2eee7406-6c7d-814b-80ed-e8c6dbb3920f",
+      "parent": "internal-projects",
+      "created": "2026-01-20"
+    }
+  ]
+}
