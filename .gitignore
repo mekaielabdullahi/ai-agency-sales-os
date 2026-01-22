@@ -17,3 +17,8 @@ Thumbs.db
 
 # Auto Claude data directory
 .auto-claude/
+
+# Google API credentials (sensitive)
+agentic/modules/google/credentials.json
+agentic/modules/google/service_account.json
+agentic/modules/google/token.json
