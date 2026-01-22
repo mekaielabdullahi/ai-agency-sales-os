@@ -144,16 +144,42 @@ python3 modules/google/docs_proposal.py --company "[COMPANY]" --contact "[NAME]"
 
 If Google Docs API not available, outputs formatted markdown to copy/paste.
 
-### Step 7: Create Follow-up Tasks
+### Step 7: Update Contact Status (AUTOMATED)
 
-After generating outreach, create tasks:
+After generating the email, automatically update the contact in Notion:
 
-1. **Immediate:** "Send outreach email to [Name]" - Due: Today
-2. **Follow-up 1:** "Follow up with [Name] if no response" - Due: +3 days
-3. **Follow-up 2:** "Second follow-up with [Name]" - Due: +7 days
-4. **Track:** "Update [Name] contact status in CRM" - Due: +14 days
+```bash
+cd agentic && python3 modules/notion/tool/update_contact.py \
+    --contact-id "[CONTACT_ID]" \
+    --outreach "[EMAIL_SUBJECT]"
+```
 
-**Note:** Display tasks for manual entry in Notion.
+This automatically:
+- Sets contact Type to "Outreach Sent"
+- Updates Last Contacted to today
+- Adds note with email subject and outreach type
+
+### Step 8: Create Follow-up Tasks (AUTOMATED)
+
+Automatically create follow-up tasks in Notion Tasks database:
+
+```bash
+cd agentic && python3 modules/notion/tool/create_follow_up.py \
+    --contact "[CONTACT_NAME]" \
+    --contact-id "[CONTACT_ID]" \
+    --email "[EMAIL]" \
+    --outreach-type cold
+```
+
+Default sequence created:
+1. **+3 days:** "Follow up with [Name] if no response" (High priority)
+2. **+7 days:** "Second follow up with [Name]" (Medium priority)
+3. **+14 days:** "Final follow up / nurture decision for [Name]" (Low priority)
+
+Custom sequence:
+```bash
+python3 modules/notion/tool/create_follow_up.py --contact "Brian" --custom-days 2,5,10
+```
 
 ## Output Format
 
@@ -182,13 +208,19 @@ After generating outreach, create tasks:
 ## Gmail Draft Status
 ✅ Draft created - Open: [Gmail Drafts Link]
 
-## Follow-up Tasks
-☐ Review and send email draft
-☐ Follow up in 3 days if no response
-☐ Second follow up in 7 days
+## Notion Updates (AUTOMATED)
+✅ Contact status → "Outreach Sent"
+✅ Last Contacted → Today
+✅ Note added with email subject
 
-## Proposal Draft
-[If requested, show location or inline]
+## Follow-up Tasks Created (AUTOMATED)
+✅ +3 days: Follow up with [Name] if no response (High)
+✅ +7 days: Second follow up with [Name] (Medium)
+✅ +14 days: Final follow up / nurture decision (Low)
+
+## Next Steps
+☐ Review and send email draft in Gmail
+☐ Tasks will auto-remind you for follow-ups
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -222,12 +254,22 @@ After generating outreach, create tasks:
 
 ## Integration Points
 
-- **Notion Contacts:** Read lead info
+- **Notion Contacts:** Read lead info + UPDATE status after outreach
 - **Notion Transcripts:** Fetch Fireflies recordings & team meetings
-- **Notion Tasks:** Create follow-up tasks (if write access)
+- **Notion Tasks:** AUTO-CREATE follow-up tasks (3, 7, 14 day sequence)
 - **WebFetch:** Research company website
 - **Gmail API:** Create email drafts directly
 - **Google Docs:** Create proposals (or markdown fallback)
+
+## Automation Summary
+
+| Action | Tool | Trigger |
+|--------|------|---------|
+| Fetch lead info | `fetch_lead.py` | Start of workflow |
+| Search transcripts | `fetch_transcripts.py` | After lead fetch |
+| Create email draft | `gmail_draft.py` | After email generated |
+| Update contact status | `update_contact.py` | After email created |
+| Create follow-up tasks | `create_follow_up.py` | After status updated |
 
 ## Quick Actions
 
