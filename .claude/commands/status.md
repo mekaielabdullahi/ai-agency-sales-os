@@ -28,27 +28,70 @@ Scan `claude-code-os-implementation/02-operations/project-management/active-proj
 - Check README.md for phase indicators
 - Check most recent meeting date
 
-### 2. Open Action Items
+### 2. Notion Tasks (Primary Source)
 
-Scan across all projects for uncompleted action items:
+**Use Notion MCP to pull tasks from the Tasks database.**
 
-```markdown
-## Open Action Items ([COUNT])
+**Database:** `collection://2d5e7406-6c7d-8151-bdda-000b46294153`
+**Database URL:** https://www.notion.so/2d5e74066c7d810ea1bec35b71fdf23b
 
-### P0 - Do Today
-- [ ] [Task] | Project: [NAME] | Owner: [OWNER]
-
-### P1 - This Week
-- [ ] [Task] | Project: [NAME] | Owner: [OWNER]
-
-### P2 - Backlog
-- [ ] [Task] | Project: [NAME] | Owner: [OWNER]
+**Query active tasks using Notion search:**
 ```
+Search in data_source_url: collection://2d5e7406-6c7d-8151-bdda-000b46294153
+Filter: Status is NOT "Done" AND Status is NOT "Cancelled"
+```
+
+**Display format:**
+```markdown
+## Notion Tasks ([COUNT])
+
+### 🔥 Urgent
+| Task | Project | Due | Assigned |
+|------|---------|-----|----------|
+| [Task Name] | [Project] | [Due Date] | [Person] |
+
+### 🟠 High Priority
+| Task | Project | Due | Assigned |
+|------|---------|-----|----------|
+
+### 🟡 In Progress
+| Task | Project | Due | Assigned |
+|------|---------|-----|----------|
+
+### ⬜ Not Started
+| Task | Project | Due | Assigned |
+|------|---------|-----|----------|
+
+### 🟣 Blocked
+| Task | Project | Due | Assigned |
+|------|---------|-----|----------|
+```
+
+**Task Schema Reference:**
+- **Status**: Not started, In progress, Blocked, To Review, Done, Cancelled
+- **Priority**: Urgent, High, Medium, Low
+- **Project**: Relation to Projects database
+- **Due Date**: Date field
+- **Assigned To**: Person field
+
+**Sort Order:**
+1. Priority (Urgent → High → Medium → Low)
+2. Due Date (soonest first)
+3. Status (Blocked → In Progress → Not Started)
+
+### 2b. Local Action Items (Backup)
+
+Also scan local project folders for any action items not yet in Notion:
 
 **Sources:**
 - `meetings/*/action-items.md`
 - `status/active-items.md`
 - `01-executive-office/internal-business-meetings/action-items/active-items.md`
+
+If local items found that aren't in Notion, flag them:
+```
+⚠️ [X] local action items not synced to Notion
+```
 
 ### 3. Content Queue
 
@@ -133,11 +176,29 @@ Display all sections in a single, scannable output. Use emoji indicators:
 🔨 Wolf Sheds          | Discovery      | P1 | 2 days ago
 📋 AriseGroup Internal | Ongoing        | P2 | This week
 
-## Open Action Items (7)
-🔥 P0: Finalize API spec for PlotterMechanix
-📅 P1: Schedule Wolf Sheds discovery call #2
-📅 P1: Review proposal draft
-...
+## Notion Tasks (12 open)
+
+🔥 URGENT (2)
+• Finalize API spec for PlotterMechanix | Due: Today | @Trent
+• Review voice agent demo | Due: Today | @Mekaiel
+
+🟠 HIGH (3)
+• Schedule Wolf Sheds discovery call #2 | Due: Jan 24 | @Chris
+• Complete proposal revisions | Due: Jan 25 | @Mekaiel
+• Set up n8n webhook for onboarding | Due: Jan 26 | @Trent
+
+🔵 IN PROGRESS (4)
+• Build lot assistant prototype | Wolf Sheds | @Trent
+• Content calendar for Q1 | AriseGroup | @Mekaiel
+• Voice routing implementation | PlotterMechanix | @Trent
+• Discovery synthesis | Randy Tech | @Chris
+
+⬜ NOT STARTED (2)
+• Create onboarding email templates | Due: Jan 28
+• Document API endpoints | Due: Jan 30
+
+🟣 BLOCKED (1)
+• Deploy to production | Waiting on: DNS config
 
 ## Content Queue (2)
 📝 AI Time Savings post | Draft | Jan 19 | LinkedIn
@@ -148,13 +209,13 @@ Discovery: 2 | Proposal: 1 | Active: 3 | Completed: 1
 
 ## System Health
 ✅ Git: Clean
-✅ Notion: Connected
+✅ Notion: Connected (12 tasks synced)
 ⚠️ Weekly Report: 5 days ago (run /weekly-report)
 
 ## Suggested Actions
-1. 🔥 Complete PlotterMechanix API spec (P0)
-2. 📊 Run /weekly-report (overdue)
-3. 📝 Review AI Time Savings content draft
+1. 🔥 Finalize API spec (Urgent, due today)
+2. 🔥 Review voice agent demo (Urgent, due today)
+3. 📊 Run /weekly-report (overdue)
 ```
 
 ## Integration
