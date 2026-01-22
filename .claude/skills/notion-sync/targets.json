@@ -6,6 +6,27 @@
       "name": "Internal Projects",
       "icon": "🔧",
       "use_for": "Internal documentation, guides, system docs"
+    },
+    "weekly-reports": {
+      "id": "PENDING_SETUP",
+      "name": "Weekly Reports",
+      "icon": "📊",
+      "use_for": "Weekly report archives from /weekly-report skill",
+      "note": "Create this page in Notion and update ID here"
+    },
+    "ai-audits": {
+      "id": "PENDING_SETUP",
+      "name": "AI Audit Reports",
+      "icon": "🔍",
+      "use_for": "Completed AI audit reports from /comprehensive-ai-audit skill",
+      "note": "Create this page in Notion and update ID here"
+    },
+    "content-queue": {
+      "id": "PENDING_SETUP",
+      "name": "Content Queue",
+      "icon": "📝",
+      "use_for": "Brand content drafts awaiting approval",
+      "note": "Create this page in Notion and update ID here"
     }
   },
   "recently_created": [

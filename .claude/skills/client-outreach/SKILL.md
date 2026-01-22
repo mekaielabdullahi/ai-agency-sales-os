@@ -8,14 +8,21 @@ description: Manage systematic client outreach, sales conversations, discovery c
 ## Purpose
 Systematic client acquisition and pipeline management for AI agency sales, optimized for high-quality personalized outreach and conversion.
 
+> **Quick Response Mode:** For inbound leads that need immediate response, use `/speed-to-lead` command instead. It's a streamlined version of this skill optimized for < 5 minute turnaround.
+
 ## When to Use This Skill
-- Planning outreach campaigns
+- Planning outreach campaigns (proactive)
 - Drafting personalized messages (LinkedIn, email)
 - Managing discovery calls
 - Tracking prospect pipeline
 - Converting leads to clients
 - Running AI Readiness Audits
 - Creating proposals and roadmaps
+
+## When to Use /speed-to-lead Instead
+- New inbound lead just arrived
+- Need response in < 5 minutes
+- Single lead, not campaign planning
 
 ## Core Framework: The Outreach Funnel
 

@@ -244,6 +244,30 @@ A successful comprehensive audit includes:
 - ✅ Phased roadmap (30/90/180 days)
 - ✅ Executive summary and presentation outline ready
 - ✅ Implementation-ready (can hand off to build team)
+- ✅ Report synced to Notion (optional)
+
+---
+
+## Notion Sync (Optional)
+
+After completing the audit, offer to sync the final report to Notion for client handoff and permanent reference.
+
+**Trigger:** User says "sync to Notion" or audit is marked complete
+
+**Process:**
+1. Generate markdown report from `audit.json` (executive summary + key findings)
+2. Use the notion-sync skill to upload
+3. Target: "AI Audit Reports" page (see `.claude/skills/notion-sync/targets.json`)
+
+```bash
+python .claude/skills/notion-sync/scripts/notion_upload.py \
+  --file "<project_path>/audit-report.md" \
+  --page-id "<ai-audits-parent-id>" \
+  --title "AI Audit - [CLIENT_NAME] - [DATE]" \
+  --icon "🔍"
+```
+
+**Output:** Notion page URL for sharing with client
 
 ---
 

@@ -1,0 +1,29 @@
+{
+  "description": "Dashboard targets and configuration",
+  "period": "2026-Q1",
+  "targets": {
+    "monthly_revenue": 25000,
+    "active_clients": 3,
+    "pipeline_value": 75000,
+    "content_per_month": 8,
+    "discovery_calls_per_week": 2,
+    "proposals_per_month": 4,
+    "close_rate_target": 0.25
+  },
+  "thresholds": {
+    "green": 0.9,
+    "yellow": 0.7,
+    "red": 0.5
+  },
+  "data_sources": {
+    "projects": "claude-code-os-implementation/02-operations/project-management/active-projects/",
+    "weekly_reports": "claude-code-os-implementation/02-operations/weekly-reports/",
+    "content": ".claude/skills/brand-illustrator/projects/",
+    "action_items": "claude-code-os-implementation/01-executive-office/internal-business-meetings/action-items/"
+  },
+  "notifications": {
+    "slack_channel": "#arisegroup-internal",
+    "weekly_summary": true,
+    "alert_on_red": true
+  }
+}

@@ -128,6 +128,31 @@ Create a markdown report at:
 
 After generating the report file, post a condensed summary to Slack.
 
+### Step 5: Sync to Notion (Optional)
+
+After posting to Slack, offer to sync the report to Notion for permanent reference.
+
+**Auto-sync Trigger:** If user says "/weekly-report --sync" or "weekly report and sync to Notion"
+
+**Notion Sync Process:**
+1. Use the notion-sync skill's upload script
+2. Target: "Weekly Reports" page (ID in targets.json)
+3. Page title: `Weekly Report - [DATE]`
+4. Icon: 📊
+
+```bash
+python .claude/skills/notion-sync/scripts/notion_upload.py \
+  --file "claude-code-os-implementation/02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md" \
+  --page-id "<weekly-reports-parent-id>" \
+  --title "Weekly Report - [DATE]" \
+  --icon "📊"
+```
+
+**Slack Confirmation:** After Notion sync, update Slack message with:
+```
+:white_check_mark: Report synced to Notion: [NOTION_URL]
+```
+
 **Slack Message Format:**
 ```
 :clipboard: *Weekly Report - [DATE]*
@@ -199,6 +224,7 @@ Extract:
 
 - **Report file:** `claude-code-os-implementation/02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md`
 - **Slack channel:** Use default configured channel or prompt user
+- **Notion page:** Weekly Reports parent page (when --sync flag used)
 
 ## Example Execution
 
