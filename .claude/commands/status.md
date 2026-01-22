@@ -30,12 +30,28 @@ Scan `claude-code-os-implementation/02-operations/project-management/active-proj
 
 ### 2. Notion Tasks (Primary Source)
 
-**Use Notion MCP to pull tasks from the Tasks database.**
+**Fetch tasks directly from Notion using the agentic module.**
 
-**Database:** `collection://2d5e7406-6c7d-8151-bdda-000b46294153`
+**Database ID:** `2d5e7406-6c7d-8151-bdda-000b46294153`
 **Database URL:** https://www.notion.so/2d5e74066c7d810ea1bec35b71fdf23b
 
-**Query active tasks using Notion search:**
+**Run the fetch_tasks script to get live tasks:**
+```bash
+cd agentic && ./run modules/notion/tool/fetch_tasks.py
+```
+
+This script:
+- Queries the Tasks database directly via Notion API
+- Filters out Done and Cancelled tasks
+- Groups by Priority (Urgent, High) and Status (In Progress, Blocked, Not Started)
+- Formats output for the status display
+
+**Setup Required:**
+1. Copy `agentic/.env.example` to `agentic/.env`
+2. Add your NOTION_API_KEY (get from https://www.notion.so/my-integrations)
+3. Make sure the integration has access to your Tasks database
+
+**Alternative: If Notion MCP is connected, use notion-search tool:**
 ```
 Search in data_source_url: collection://2d5e7406-6c7d-8151-bdda-000b46294153
 Filter: Status is NOT "Done" AND Status is NOT "Cancelled"
