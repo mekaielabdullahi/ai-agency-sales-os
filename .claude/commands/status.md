@@ -32,7 +32,7 @@ Scan `claude-code-os-implementation/02-operations/project-management/active-proj
 
 **Fetch tasks directly from Notion using the agentic module.**
 
-**Database ID:** `2d5e7406-6c7d-8151-bdda-000b46294153`
+**Database ID:** `2d5e7406-6c7d-810e-a1be-c35b71fdf23b`
 **Database URL:** https://www.notion.so/2d5e74066c7d810ea1bec35b71fdf23b
 
 **Run the fetch_tasks script to get live tasks:**

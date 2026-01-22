@@ -3,13 +3,11 @@
 Fetch Tasks from Notion Tasks Database
 
 Quick script to pull all active tasks from the Tasks database for /status command.
+Uses requests directly to avoid notion-client version issues.
 
 Usage:
-    ./run modules/notion/tool/fetch_tasks.py
-    ./run modules/notion/tool/fetch_tasks.py --format markdown
-    ./run modules/notion/tool/fetch_tasks.py --format json
-
-Output: Tasks grouped by priority and status
+    python3 modules/notion/tool/fetch_tasks.py
+    python3 modules/notion/tool/fetch_tasks.py --format json
 """
 
 import sys
@@ -19,21 +17,59 @@ import argparse
 from datetime import datetime
 from typing import Dict, List, Any
 
-# Add parent path for imports
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+try:
+    import requests
+except ImportError:
+    print("Installing requests...")
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests", "-q"])
+    import requests
 
-from dotenv import load_dotenv
-load_dotenv()
+# Load from .env file if exists
+def load_env():
+    env_path = os.path.join(os.path.dirname(__file__), '..', '..', '..', '.env')
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    key, value = line.split('=', 1)
+                    os.environ.setdefault(key.strip(), value.strip())
 
-# Tasks database ID
-TASKS_DATABASE_ID = "2d5e7406-6c7d-8151-bdda-000b46294153"
+load_env()
+
+# Configuration
+NOTION_API_KEY = os.getenv("NOTION_API_KEY", "")
+TASKS_DATABASE_ID = "2d5e7406-6c7d-810e-a1be-c35b71fdf23b"
+NOTION_VERSION = "2022-06-28"
+
+
+def notion_request(method: str, endpoint: str, data: Dict = None) -> Dict:
+    """Make a request to Notion API."""
+    if not NOTION_API_KEY:
+        raise ValueError("NOTION_API_KEY not configured. Set it in agentic/.env file.")
+
+    url = f"https://api.notion.com/v1/{endpoint}"
+    headers = {
+        "Authorization": f"Bearer {NOTION_API_KEY}",
+        "Notion-Version": NOTION_VERSION,
+        "Content-Type": "application/json"
+    }
+
+    if method == "GET":
+        response = requests.get(url, headers=headers)
+    else:
+        response = requests.post(url, headers=headers, json=data or {})
+
+    if response.status_code != 200:
+        error = response.json().get("message", response.text)
+        raise Exception(f"Notion API error ({response.status_code}): {error}")
+
+    return response.json()
 
 
 def fetch_active_tasks() -> List[Dict]:
     """Fetch all active tasks (not Done or Cancelled) from Notion."""
-    from tool.notion_api import NotionClient
-
-    client = NotionClient()
 
     # Filter: Status is NOT Done AND NOT Cancelled
     filter_obj = {
@@ -59,13 +95,26 @@ def fetch_active_tasks() -> List[Dict]:
         {"property": "Due Date", "direction": "ascending"}
     ]
 
-    results = client.query_database_all(
-        database_id=TASKS_DATABASE_ID,
-        filter=filter_obj,
-        sorts=sorts
-    )
+    all_results = []
+    start_cursor = None
 
-    return results
+    while True:
+        data = {
+            "filter": filter_obj,
+            "sorts": sorts,
+            "page_size": 100
+        }
+        if start_cursor:
+            data["start_cursor"] = start_cursor
+
+        response = notion_request("POST", f"databases/{TASKS_DATABASE_ID}/query", data)
+        all_results.extend(response.get("results", []))
+
+        if not response.get("has_more"):
+            break
+        start_cursor = response.get("next_cursor")
+
+    return all_results
 
 
 def extract_task_info(task: Dict) -> Dict:
@@ -104,8 +153,7 @@ def extract_task_info(task: Dict) -> Dict:
     if "Project" in props:
         project_prop = props["Project"].get("relation", [])
         if project_prop:
-            # Just note that there's a linked project
-            project = f"[Linked: {len(project_prop)}]"
+            project = f"[{len(project_prop)} linked]"
 
     # Assigned To (people)
     assigned = []
@@ -116,12 +164,6 @@ def extract_task_info(task: Dict) -> Dict:
             if name:
                 assigned.append(name)
 
-    # Description
-    description = ""
-    if "Description" in props:
-        desc_prop = props["Description"].get("rich_text", [])
-        description = "".join(t.get("plain_text", "") for t in desc_prop)
-
     return {
         "id": task.get("id", ""),
         "url": task.get("url", ""),
@@ -130,8 +172,7 @@ def extract_task_info(task: Dict) -> Dict:
         "priority": priority,
         "due_date": due_date,
         "project": project,
-        "assigned": assigned,
-        "description": description[:100] if description else ""
+        "assigned": assigned
     }
 
 
@@ -211,16 +252,19 @@ def format_markdown(tasks: List[Dict]) -> str:
             lines.append(f"• {t['name']}")
         lines.append("")
 
-    # Not Started (limit to 5)
-    not_started_display = [t for t in not_started if t not in urgent and t not in high]
-    if not_started_display:
-        lines.append(f"⬜ NOT STARTED ({len(not_started_display)})")
-        for t in not_started_display[:5]:
+    # Not Started (exclude those already shown in urgent/high)
+    not_started_other = [t for t in not_started if t not in urgent and t not in high]
+    if not_started_other:
+        lines.append(f"⬜ NOT STARTED ({len(not_started_other)})")
+        for t in not_started_other[:5]:
             due = format_due_date(t['due_date'])
             lines.append(f"• {t['name']} | Due: {due}")
-        if len(not_started_display) > 5:
-            lines.append(f"  ... and {len(not_started_display) - 5} more")
+        if len(not_started_other) > 5:
+            lines.append(f"  ... and {len(not_started_other) - 5} more")
         lines.append("")
+
+    if len(extracted) == 0:
+        lines.append("✅ No open tasks!")
 
     return "\n".join(lines)
 
