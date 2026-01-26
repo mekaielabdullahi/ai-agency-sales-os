@@ -8,21 +8,21 @@ description: Manage systematic client outreach, sales conversations, discovery c
 ## Purpose
 Systematic client acquisition and pipeline management for AI agency sales, optimized for high-quality personalized outreach and conversion.
 
-> **Quick Response Mode:** For inbound leads that need immediate response, use `/speed-to-lead` command instead. It's a streamlined version of this skill optimized for < 5 minute turnaround.
+> **For individual leads:** Use `/outreach` to process a specific lead. Works with direct input OR pulls from Notion. Creates Gmail drafts and follow-up tasks when configured.
 
 ## When to Use This Skill
 - Planning outreach campaigns (proactive)
-- Drafting personalized messages (LinkedIn, email)
+- Reference for email/message templates
 - Managing discovery calls
 - Tracking prospect pipeline
 - Converting leads to clients
 - Running AI Readiness Audits
 - Creating proposals and roadmaps
 
-## When to Use /speed-to-lead Instead
-- New inbound lead just arrived
-- Need response in < 5 minutes
-- Single lead, not campaign planning
+## When to Use /outreach Instead
+- Processing a specific lead (direct input or from Notion)
+- Need email + LinkedIn message drafted
+- Want automation (Gmail draft, Notion tasks)
 
 ## Core Framework: The Outreach Funnel
 
