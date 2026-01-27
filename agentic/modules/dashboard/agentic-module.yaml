@@ -1,0 +1,27 @@
+name: dashboard
+version: "1.0.0"
+description: "Comprehensive dashboard system for agency metrics - Executive, Sales, Marketing, Financial, Operations, and Support dashboards"
+type: bundled
+
+files:
+  tools:
+    - tool/dashboard_api.py
+    - tool/collectors/notion_collector.py
+    - tool/collectors/file_collector.py
+    - tool/generators/executive_dashboard.py
+    - tool/generators/operations_dashboard.py
+    - tool/formatters/markdown_formatter.py
+    - tool/formatters/slack_formatter.py
+  runbooks:
+    - runbook/dashboard_management.md
+  commands:
+    - commands/dashboard.md
+
+python_requires:
+  - requests
+  - python-dotenv
+  - notion-client
+
+env_vars:
+  - NOTION_API_KEY
+  - SLACK_BOT_TOKEN

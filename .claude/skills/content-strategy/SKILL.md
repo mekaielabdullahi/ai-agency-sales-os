@@ -8,6 +8,35 @@ description: Plan and create LinkedIn content for AI agency sales and build-in-p
 ## Purpose
 Strategic LinkedIn content creation for AI agency positioning and build-in-public credibility, optimized for engagement and client acquisition.
 
+## FIRST: Fetch Notion Context
+
+**Before creating any content, ALWAYS run this command to fetch current context:**
+
+```bash
+cd /Users/mekaielabdullahi/Desktop/ai-agency-sales-os/agentic && python3 modules/notion/tool/fetch_content_context.py --days 14
+```
+
+This pulls:
+- **Active client projects** - For case studies and build updates
+- **Recent meeting transcripts** - For insights and learnings
+- **Current tasks** - What we're actively working on
+- **Notes/documents** - Strategy and planning context
+
+**Use this context to:**
+1. Build narratives around active work (not just announcements)
+2. Create educational content from real experiences
+3. Tie content to specific projects/milestones
+4. Generate authentic build-in-public updates
+
+**Filter by pillar if needed:**
+```bash
+python3 modules/notion/tool/fetch_content_context.py --pillar education
+python3 modules/notion/tool/fetch_content_context.py --pillar consulting
+python3 modules/notion/tool/fetch_content_context.py --pillar development
+```
+
+---
+
 ## When to Use This Skill
 - Planning weekly/monthly content calendars
 - Drafting LinkedIn posts
@@ -25,23 +54,51 @@ Strategic LinkedIn content creation for AI agency positioning and build-in-publi
 
 ## 1. Content Strategy Overview
 
-### Content Pillars for AriseGroup.ai
+### The Three Business Pillars
 
-**Pillar 1: Build-in-Public Journey** (40% of content)
+All content should align with one of AriseGroup.ai's three core pillars:
+
+**Pillar 1: Education** (35% of content)
+- Training and workshops
+- Guides and tutorials
+- How-to content and frameworks
+- Learning resources
+- Knowledge sharing from real projects
+- Example: "Here's how we approached X problem for a client..."
+
+**Pillar 2: Consulting** (35% of content)
+- AI audits and assessments
+- Strategy and roadmapping
+- Advisory insights
+- Discovery call learnings (anonymized)
+- Industry observations
+- Example: "After 10 AI audits, here's the pattern we keep seeing..."
+
+**Pillar 3: Development** (30% of content)
+- Build-in-public updates
+- Implementation case studies
+- Integration and automation wins
+- Agent development progress
+- Technical deep-dives
+- Example: "Just deployed an N8N integration that saves 4 hours/week..."
+
+### Legacy Content Pillars (Reference)
+
+**Build-in-Public Journey**
 - Building Claude Code OS
 - System validation and testing
 - Real results and metrics
 - Honest failures and learnings
 - Meta-moments (using AI to build AI systems)
 
-**Pillar 2: AI Adoption Insights** (30% of content)
+**AI Adoption Insights**
 - Systematic vs. ad-hoc AI adoption
 - Framework-based implementation
 - Common mistakes and solutions
 - Strategic AI alignment
 - ROI and business value
 
-**Pillar 3: Productivity & Systems** (20% of content)
+**Productivity & Systems**
 - Productivity frameworks
 - Operating system design
 - Process optimization
@@ -54,6 +111,37 @@ Strategic LinkedIn content creation for AI agency positioning and build-in-publi
 - Discovery call insights
 - Market learnings
 - Industry observations
+
+### Transforming Notion Context into Content
+
+When you fetch Notion context, use this framework to convert it into compelling content:
+
+**From Active Projects:**
+- Extract the problem being solved → Educational hook
+- Identify technical approach → Development content
+- Note client outcomes → Case study material
+- Find the "aha moment" → Build-in-public update
+
+**From Meeting Transcripts:**
+- Client pain points mentioned → Relatable content hooks
+- Questions asked repeatedly → FAQ/educational series
+- Objections overcome → Framework content
+- Wins celebrated → Social proof posts
+
+**From Tasks/Active Work:**
+- Group related tasks → "Currently building..." updates
+- Completed milestones → Progress/results posts
+- Blockers/challenges → Honest learning posts
+- New approaches tried → Methodology content
+
+**Content Transformation Example:**
+
+*Notion context:* "Plotter Mechanix Phase 1 - Quo to Jobber Integration deployed"
+
+*Transformed content angles:*
+- **Education**: "How we approach client integrations (3-step framework)"
+- **Consulting**: "The discovery process that led to this solution"
+- **Development**: "Just shipped: N8N integration saving 4hrs/week"
 
 ### Posting Frequency
 
@@ -762,9 +850,25 @@ Building in public means sharing the messy middle, not just the wins.
 ## 13. Integration with Other Systems
 
 ### Connects With:
+- **Notion Workspace**: Auto-fetches projects, transcripts, tasks, and notes for content context
 - **Weekly Planning**: Content schedule in weekly roadmap
 - **Client Outreach**: Posts attract inbound leads
 - **Executive Office**: Content serves OBG (revenue through positioning)
+
+### Notion Integration:
+```bash
+# Fetch all context (default)
+python3 modules/notion/tool/fetch_content_context.py
+
+# Filter by pillar
+python3 modules/notion/tool/fetch_content_context.py --pillar education
+python3 modules/notion/tool/fetch_content_context.py --pillar consulting
+python3 modules/notion/tool/fetch_content_context.py --pillar development
+
+# Adjust lookback period
+python3 modules/notion/tool/fetch_content_context.py --days 7
+python3 modules/notion/tool/fetch_content_context.py --days 30
+```
 
 ### Feeds Into:
 - Lead generation (inbound inquiries from posts)
@@ -806,12 +910,35 @@ Effective content strategy has:
 
 ---
 
+## Content Creation Workflow
+
+**Step 1: Fetch Notion Context (Auto)**
+```bash
+cd /Users/mekaielabdullahi/Desktop/ai-agency-sales-os/agentic && python3 modules/notion/tool/fetch_content_context.py --days 14
+```
+
+**Step 2: Review Context**
+- What projects are active?
+- What recent conversations had insights?
+- What are we actively working on?
+
+**Step 3: Select Pillar & Angle**
+- Education: Teaching from experience
+- Consulting: Sharing strategic insights
+- Development: Build-in-public updates
+
+**Step 4: Draft Content**
+Use templates and frameworks from this skill.
+
+---
+
 **Ready to create content?**
 
-Tell me:
-1. What's the topic or update?
-2. What type of post? (Build update, framework, case study, etc.)
-3. What's the key message or takeaway?
-4. Any specific metrics or results to include?
+I'll automatically fetch your Notion context first, then ask:
 
-I'll help you draft a high-performing LinkedIn post using this framework.
+1. Which **pillar**? (Education / Consulting / Development)
+2. Which **content opportunity** from Notion looks interesting?
+3. What's the **key message or takeaway**?
+4. Any **specific metrics** to include?
+
+I'll draft a high-performing LinkedIn post using real context from your active work.
