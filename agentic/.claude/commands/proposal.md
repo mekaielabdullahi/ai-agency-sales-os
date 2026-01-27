@@ -1,0 +1,1 @@
+../../modules/proposal/commands/proposal.md

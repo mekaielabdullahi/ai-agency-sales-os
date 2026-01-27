@@ -1,0 +1,1 @@
+../../modules/notion/commands/notion-search.md

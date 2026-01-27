@@ -1,0 +1,1 @@
+../../modules/demo-deploy/commands/demo-deploy.md

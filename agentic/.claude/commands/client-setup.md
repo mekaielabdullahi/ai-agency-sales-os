@@ -1,0 +1,1 @@
+../../modules/client-onboarding/commands/client-setup.md

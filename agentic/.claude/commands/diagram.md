@@ -1,0 +1,1 @@
+../../modules/diagrams/commands/diagram.md

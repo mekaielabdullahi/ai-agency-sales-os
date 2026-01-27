@@ -1,0 +1,1 @@
+../../modules/sop/commands/extract-sop.md
