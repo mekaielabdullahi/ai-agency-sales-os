@@ -1,0 +1,61 @@
+{
+  "name": "Daily Content Reminder",
+  "nodes": [
+    {
+      "id": "schedule-trigger",
+      "name": "Every Morning 9am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 9,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "slack-message",
+      "name": "Post Content Prompt",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [220, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#general"
+        },
+        "messageType": "text",
+        "text": ":writing_hand: *Daily Content Prompt*\n\nWhat did you work on yesterday?\n\n• What problem did you solve?\n• What did you learn?\n• What would help someone else?\n\nDraft a quick LinkedIn post about it!",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Every Morning 9am": {
+      "main": [
+        [
+          {
+            "node": "Post Content Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

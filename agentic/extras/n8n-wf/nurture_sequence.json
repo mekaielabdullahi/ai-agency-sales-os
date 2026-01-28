@@ -1,0 +1,132 @@
+{
+  "name": "Stage-Based Nurture Sequence",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "name": "Nurture Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "nurture-trigger",
+      "parameters": {
+        "path": "nurture-trigger",
+        "httpMethod": "POST",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      }
+    },
+    {
+      "id": "extract-lead",
+      "name": "Extract Lead Info",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const payload = $input.first().json;\n\nconst name = payload.name || 'there';\nconst email = payload.email || '';\nconst company = payload.company || '';\nconst industry = payload.industry || 'business';\nconst painPoints = payload.pain_points || payload.painPoints || '';\nconst stage = payload.stage || 'day3'; // day3, day7, day14, day30\nconst context = payload.context || payload.discovery_notes || '';\n\nconst stageConfig = {\n  day3: {\n    label: 'Day 3 - Quick Value',\n    prompt: 'Write a short value-add email sharing a relevant automation tip or case study. Keep it helpful, not salesy. 100 words max.',\n    subject_prefix: 'Quick thought on'\n  },\n  day7: {\n    label: 'Day 7 - Industry Insight', \n    prompt: 'Write an email sharing an industry-relevant insight about AI/automation trends. Position AriseGroup as thought leaders. Include a subtle CTA to continue the conversation. 150 words max.',\n    subject_prefix: 'Interesting trend in'\n  },\n  day14: {\n    label: 'Day 14 - Case Study',\n    prompt: 'Write an email referencing a (hypothetical but realistic) success story relevant to their industry. Include specific metrics like time saved or revenue impact. Soft CTA to schedule a follow-up. 150 words max.',\n    subject_prefix: 'How a similar company'\n  },\n  day30: {\n    label: 'Day 30 - Check-in',\n    prompt: 'Write a friendly check-in email. Reference their original pain points. Offer something new — a free mini-audit, updated pricing, or new capability. Clear but low-pressure CTA. 100 words max.',\n    subject_prefix: 'Still thinking about'\n  }\n};\n\nconst config = stageConfig[stage] || stageConfig.day3;\n\nreturn [{\n  json: {\n    name,\n    email,\n    company,\n    industry,\n    painPoints: Array.isArray(painPoints) ? painPoints.join(', ') : String(painPoints),\n    stage,\n    stageLabel: config.label,\n    aiPrompt: config.prompt,\n    subjectPrefix: config.subject_prefix,\n    context\n  }\n}];"
+      }
+    },
+    {
+      "id": "ai-generate-nurture",
+      "name": "AI Generate Nurture Email",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [440, 0],
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "prompt": "You are writing a nurture email for AriseGroup.ai, an AI automation agency.\n\nLead: {{$json.name}} at {{$json.company}} ({{$json.industry}})\nPain Points: {{$json.painPoints}}\nStage: {{$json.stageLabel}}\nContext from Discovery: {{$json.context}}\n\nINSTRUCTIONS: {{$json.aiPrompt}}\n\nRULES:\n- Sound human, not like a template\n- Reference their specific situation when possible\n- No over-promising\n- Sign off as Mikael from AriseGroup\n\nFormat:\nSUBJECT: {{$json.subjectPrefix}} [complete the subject]\n\n[email body]",
+        "options": {
+          "temperature": 0.8
+        }
+      }
+    },
+    {
+      "id": "parse-nurture",
+      "name": "Parse Email Draft",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const output = $input.first().json;\nconst text = output.text || output.content || output.message || JSON.stringify(output);\n\nlet subject = 'Following up — AriseGroup';\nlet body = text;\n\nconst subjectMatch = text.match(/SUBJECT:\\s*(.+?)\\n/);\nif (subjectMatch) {\n  subject = subjectMatch[1].trim();\n  body = text.replace(/SUBJECT:\\s*.+?\\n/, '').trim();\n}\n\nreturn [{\n  json: {\n    subject,\n    body,\n    name: $('Extract Lead Info').first().json.name,\n    email: $('Extract Lead Info').first().json.email,\n    company: $('Extract Lead Info').first().json.company,\n    stage: $('Extract Lead Info').first().json.stageLabel\n  }\n}];"
+      }
+    },
+    {
+      "id": "slack-review",
+      "name": "Queue for Review",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [880, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":seedling: *Nurture Email Ready for Review*\n\n*Lead:* {{$json.name}} ({{$json.company}})\n*Stage:* {{$json.stage}}\n*To:* {{$json.email}}\n\n---\n*Subject:* {{$json.subject}}\n\n{{$json.body}}\n\n---\n:point_right: Review and send, or react with :x: to skip this touchpoint.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Nurture Trigger": {
+      "main": [
+        [
+          {
+            "node": "Extract Lead Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Lead Info": {
+      "main": [
+        [
+          {
+            "node": "AI Generate Nurture Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Generate Nurture Email": {
+      "main": [
+        [
+          {
+            "node": "Parse Email Draft",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Email Draft": {
+      "main": [
+        [
+          {
+            "node": "Queue for Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

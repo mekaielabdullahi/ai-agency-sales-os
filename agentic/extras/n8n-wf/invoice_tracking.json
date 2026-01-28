@@ -1,0 +1,269 @@
+{
+  "name": "Invoice Generation & Payment Tracking",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "name": "Contract Signed Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "contract-signed",
+      "parameters": {
+        "path": "contract-signed",
+        "httpMethod": "POST",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      }
+    },
+    {
+      "id": "extract-contract",
+      "name": "Extract Contract Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const payload = $input.first().json;\n\nconst clientName = payload.client_name || payload.name || 'Client';\nconst company = payload.company || '';\nconst email = payload.email || payload.client_email || '';\nconst amount = payload.amount || payload.total || payload.invoice_amount || 0;\nconst currency = payload.currency || 'USD';\nconst services = payload.services || payload.description || 'AI Automation Services';\nconst paymentTerms = payload.payment_terms || 'Net 30';\nconst projectName = payload.project_name || payload.project || '';\nconst invoiceNumber = `ARG-${new Date().getFullYear()}-${String(Date.now()).slice(-4)}`;\n\nconst dueDate = new Date();\nconst termDays = parseInt(paymentTerms.replace(/\\D/g, '')) || 30;\ndueDate.setDate(dueDate.getDate() + termDays);\n\nreturn [{\n  json: {\n    clientName,\n    company,\n    email,\n    amount: Number(amount).toLocaleString('en-US', { style: 'currency', currency }),\n    amountRaw: amount,\n    currency,\n    services,\n    paymentTerms,\n    projectName,\n    invoiceNumber,\n    issuedDate: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),\n    dueDate: dueDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),\n    dueDateISO: dueDate.toISOString()\n  }\n}];"
+      }
+    },
+    {
+      "id": "slack-invoice-created",
+      "name": "Notify Invoice Created",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [440, -150],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":receipt: *New Invoice Generated*\n\n*Client:* {{$json.clientName}} ({{$json.company}})\n*Invoice #:* {{$json.invoiceNumber}}\n*Amount:* {{$json.amount}}\n*Services:* {{$json.services}}\n*Terms:* {{$json.paymentTerms}}\n*Due:* {{$json.dueDate}}\n\n:point_right: Review and send invoice to {{$json.email}}",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    },
+    {
+      "id": "send-invoice-email",
+      "name": "Send Invoice Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [440, 0],
+      "parameters": {
+        "fromEmail": "mikael@arisegroup.ai",
+        "toEmail": "={{ $json.email }}",
+        "subject": "Invoice {{$json.invoiceNumber}} - AriseGroup AI",
+        "emailType": "html",
+        "html": "<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\n  <h2 style=\"color: #1a1a2e;\">Invoice from AriseGroup</h2>\n  \n  <p>Hi {{$json.clientName}},</p>\n  \n  <p>Thank you for choosing AriseGroup! Here are the details for your project:</p>\n  \n  <div style=\"background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;\">\n    <table style=\"width: 100%; border-collapse: collapse;\">\n      <tr><td style=\"padding: 8px 0; color: #666;\">Invoice #</td><td style=\"padding: 8px 0; font-weight: bold;\">{{$json.invoiceNumber}}</td></tr>\n      <tr><td style=\"padding: 8px 0; color: #666;\">Issued</td><td style=\"padding: 8px 0;\">{{$json.issuedDate}}</td></tr>\n      <tr><td style=\"padding: 8px 0; color: #666;\">Due Date</td><td style=\"padding: 8px 0;\">{{$json.dueDate}}</td></tr>\n      <tr><td style=\"padding: 8px 0; color: #666;\">Services</td><td style=\"padding: 8px 0;\">{{$json.services}}</td></tr>\n      <tr style=\"border-top: 2px solid #ddd;\"><td style=\"padding: 12px 0; color: #666; font-size: 18px;\">Total</td><td style=\"padding: 12px 0; font-weight: bold; font-size: 18px;\">{{$json.amount}}</td></tr>\n    </table>\n  </div>\n  \n  <p>Payment is due by <strong>{{$json.dueDate}}</strong>.</p>\n  \n  <p>If you have any questions about this invoice, just reply to this email.</p>\n  \n  <p>Best,<br><strong>Mikael — AriseGroup</strong></p>\n</div>"
+      }
+    },
+    {
+      "id": "wait-7-days",
+      "name": "Wait 7 Days",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [660, 0],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 7,
+        "unit": "days",
+        "limitWaitTime": false
+      }
+    },
+    {
+      "id": "reminder-7",
+      "name": "7-Day Reminder",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [880, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":bell: *Payment Reminder — 7 Days*\n\nInvoice *{{$json.invoiceNumber}}* for *{{$json.clientName}}* ({{$json.amount}}) was sent 7 days ago.\n*Due:* {{$json.dueDate}}\n\n:point_right: Check if payment received. If not, consider a gentle follow-up email.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    },
+    {
+      "id": "wait-14-days",
+      "name": "Wait 7 More Days",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1100, 0],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 7,
+        "unit": "days",
+        "limitWaitTime": false
+      }
+    },
+    {
+      "id": "reminder-14",
+      "name": "14-Day Reminder",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [1320, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":warning: *Payment Overdue — 14 Days*\n\nInvoice *{{$json.invoiceNumber}}* for *{{$json.clientName}}* ({{$json.amount}}) is now 14 days old.\n*Due:* {{$json.dueDate}}\n\n:point_right: Send formal payment follow-up to {{$json.email}}.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    },
+    {
+      "id": "wait-30-days",
+      "name": "Wait 16 More Days",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1540, 0],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 16,
+        "unit": "days",
+        "limitWaitTime": false
+      }
+    },
+    {
+      "id": "reminder-30",
+      "name": "30-Day Escalation",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [1760, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":rotating_light: *Payment Escalation — 30 Days*\n\nInvoice *{{$json.invoiceNumber}}* for *{{$json.clientName}}* ({{$json.amount}}) is *30 days old* and past due.\n\n:point_right: Escalate. Call or send final notice to {{$json.email}}.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Contract Signed Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract Contract Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Contract Data": {
+      "main": [
+        [
+          {
+            "node": "Notify Invoice Created",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send Invoice Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Invoice Email": {
+      "main": [
+        [
+          {
+            "node": "Wait 7 Days",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 7 Days": {
+      "main": [
+        [
+          {
+            "node": "7-Day Reminder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "7-Day Reminder": {
+      "main": [
+        [
+          {
+            "node": "Wait 7 More Days",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 7 More Days": {
+      "main": [
+        [
+          {
+            "node": "14-Day Reminder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "14-Day Reminder": {
+      "main": [
+        [
+          {
+            "node": "Wait 16 More Days",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 16 More Days": {
+      "main": [
+        [
+          {
+            "node": "30-Day Escalation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

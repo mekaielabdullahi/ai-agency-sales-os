@@ -1,0 +1,196 @@
+{
+  "name": "Pre-Meeting What to Expect Sequence",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "name": "Calendar Booking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "calendar-booking",
+      "parameters": {
+        "path": "calendar-booking",
+        "httpMethod": "POST",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      }
+    },
+    {
+      "id": "extract-booking",
+      "name": "Extract Booking Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const payload = $input.first().json;\n\n// Adapt to your calendar tool's webhook format\n// Works with Cal.com, Calendly, or custom payloads\nconst booking = payload.payload || payload.data || payload;\n\nconst name = booking.name || booking.inviteeName || booking.attendee_name || 'there';\nconst email = booking.email || booking.inviteeEmail || booking.attendee_email || '';\nconst meetingTime = booking.startTime || booking.event_start_time || booking.scheduled_at || '';\nconst meetingTitle = booking.title || booking.eventName || booking.event_type || 'Discovery Call';\nconst zoomLink = booking.meetingUrl || booking.location || booking.video_link || '';\n\n// Calculate time-based triggers\nlet meetingDate = null;\nlet reminderTime = null;\nlet questionnaireTime = null;\n\nif (meetingTime) {\n  meetingDate = new Date(meetingTime);\n  reminderTime = new Date(meetingDate.getTime() - (1 * 60 * 60 * 1000)); // 1 hour before\n  questionnaireTime = new Date(meetingDate.getTime() - (24 * 60 * 60 * 1000)); // 24 hours before\n}\n\nconst friendlyDate = meetingDate ? meetingDate.toLocaleDateString('en-US', {\n  weekday: 'long', month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'\n}) : 'your scheduled time';\n\nreturn [{\n  json: {\n    name,\n    email,\n    meetingTime,\n    meetingTitle,\n    zoomLink,\n    friendlyDate,\n    reminderTime: reminderTime ? reminderTime.toISOString() : null,\n    questionnaireTime: questionnaireTime ? questionnaireTime.toISOString() : null\n  }\n}];"
+      }
+    },
+    {
+      "id": "slack-notify-team",
+      "name": "Notify Team",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [440, -150],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":calendar: *New Discovery Call Booked!*\n\n*{{$json.name}}* ({{$json.email}})\n*When:* {{$json.friendlyDate}}\n*Meeting:* {{$json.meetingTitle}}\n\nPre-meeting sequence activated. Confirmation email sent.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    },
+    {
+      "id": "confirmation-email",
+      "name": "Send Confirmation Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [440, 0],
+      "parameters": {
+        "fromEmail": "mikael@arisegroup.ai",
+        "toEmail": "={{ $json.email }}",
+        "subject": "What to Expect on Our Call - AriseGroup",
+        "emailType": "html",
+        "html": "<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\n  <h2 style=\"color: #1a1a2e;\">Hey {{$json.name}}! 👋</h2>\n  \n  <p>Thanks for booking a discovery call with us. We're looking forward to learning about your business on <strong>{{$json.friendlyDate}}</strong>.</p>\n  \n  <h3 style=\"color: #16213e;\">Here's what to expect:</h3>\n  \n  <ol style=\"line-height: 1.8;\">\n    <li><strong>Quick Intro</strong> — We'll get to know each other and understand your business</li>\n    <li><strong>Process Deep-Dive</strong> — We'll walk through your current workflows and identify bottlenecks</li>\n    <li><strong>Automation Opportunities</strong> — We'll highlight where AI and automation can save you time</li>\n    <li><strong>Next Steps</strong> — If it's a fit, we'll outline a clear path forward</li>\n  </ol>\n  \n  <p>The call typically takes <strong>30-45 minutes</strong>. No prep needed on your end, but if you'd like to get the most out of our time, think about:</p>\n  \n  <ul style=\"line-height: 1.8;\">\n    <li>Which tasks eat up the most time in your week?</li>\n    <li>What processes feel repetitive or manual?</li>\n    <li>Where do things fall through the cracks?</li>\n  </ul>\n  \n  <p>We'll send you a quick prep questionnaire 24 hours before the call to make sure we hit the ground running.</p>\n  \n  <p style=\"margin-top: 30px;\">See you soon,<br><strong>Mikael & The AriseGroup Team</strong></p>\n</div>"
+      }
+    },
+    {
+      "id": "wait-for-questionnaire",
+      "name": "Wait Until 24h Before",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [660, 0],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 1,
+        "unit": "days",
+        "limitWaitTime": false
+      }
+    },
+    {
+      "id": "questionnaire-email",
+      "name": "Send Prep Questionnaire",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [880, 0],
+      "parameters": {
+        "fromEmail": "mikael@arisegroup.ai",
+        "toEmail": "={{ $json.email }}",
+        "subject": "Quick Prep for Tomorrow's Call — 3 Questions",
+        "emailType": "html",
+        "html": "<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\n  <h2 style=\"color: #1a1a2e;\">Hey {{$json.name}} 👋</h2>\n  \n  <p>Your discovery call is <strong>tomorrow</strong>! To make sure we use our time wisely, could you take 2 minutes to answer these?</p>\n  \n  <div style=\"background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;\">\n    <p><strong>1. What does your company do?</strong><br>\n    <em>One sentence is perfect.</em></p>\n    \n    <p><strong>2. What's the most time-consuming task in your week?</strong><br>\n    <em>The thing you wish someone else could handle.</em></p>\n    \n    <p><strong>3. Have you tried automating anything before?</strong><br>\n    <em>Even if it didn't work out — we'd love to know.</em></p>\n  </div>\n  \n  <p>Just hit reply with your answers. No formatting needed.</p>\n  \n  <p>This helps us come prepared with relevant examples and ideas specific to your business.</p>\n  \n  <p>Talk tomorrow!<br><strong>Mikael</strong></p>\n</div>"
+      }
+    },
+    {
+      "id": "wait-for-reminder",
+      "name": "Wait Until 1h Before",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1100, 0],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 23,
+        "unit": "hours",
+        "limitWaitTime": false
+      }
+    },
+    {
+      "id": "reminder-email",
+      "name": "Send 1h Reminder",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1320, 0],
+      "parameters": {
+        "fromEmail": "mikael@arisegroup.ai",
+        "toEmail": "={{ $json.email }}",
+        "subject": "See you in 1 hour! 🚀",
+        "emailType": "html",
+        "html": "<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\n  <h2 style=\"color: #1a1a2e;\">Almost time, {{$json.name}}!</h2>\n  \n  <p>Just a quick reminder — our call is in <strong>1 hour</strong>.</p>\n  \n  <div style=\"background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;\">\n    <p>📅 <strong>{{$json.friendlyDate}}</strong></p>\n    <p>🔗 <strong><a href=\"{{$json.zoomLink}}\">Join the call here</a></strong></p>\n  </div>\n  \n  <p>See you soon!<br><strong>Mikael</strong></p>\n</div>"
+      }
+    }
+  ],
+  "connections": {
+    "Calendar Booking Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract Booking Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Booking Data": {
+      "main": [
+        [
+          {
+            "node": "Notify Team",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send Confirmation Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Confirmation Email": {
+      "main": [
+        [
+          {
+            "node": "Wait Until 24h Before",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait Until 24h Before": {
+      "main": [
+        [
+          {
+            "node": "Send Prep Questionnaire",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Prep Questionnaire": {
+      "main": [
+        [
+          {
+            "node": "Wait Until 1h Before",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait Until 1h Before": {
+      "main": [
+        [
+          {
+            "node": "Send 1h Reminder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": "Tally Lead Notification",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "name": "Tally Form Submitted",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "tally-lead",
+      "parameters": {
+        "path": "tally-lead",
+        "httpMethod": "POST",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      }
+    },
+    {
+      "id": "extract-fields",
+      "name": "Extract Form Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Tally webhook payload structure\nconst payload = $input.first().json;\n\n// Extract form data from Tally's structure\nconst data = payload.data || {};\nconst fields = data.fields || [];\n\n// Build a map of field labels to values\nconst formData = {};\nfields.forEach(field => {\n  const label = field.label || field.key || 'Unknown';\n  let value = field.value;\n  \n  // Handle different field types\n  if (Array.isArray(value)) {\n    value = value.join(', ');\n  } else if (typeof value === 'object' && value !== null) {\n    value = JSON.stringify(value);\n  }\n  \n  formData[label] = value || 'Not provided';\n});\n\n// Try to extract common fields\nconst name = formData['Name'] || formData['Full Name'] || formData['Your name'] || formData['name'] || 'Unknown';\nconst email = formData['Email'] || formData['Email address'] || formData['email'] || 'Not provided';\nconst company = formData['Company'] || formData['Company name'] || formData['Business'] || formData['company'] || 'Not provided';\nconst message = formData['Message'] || formData['How can we help?'] || formData['Details'] || formData['message'] || '';\n\n// Build field list for Slack message\nconst fieldList = Object.entries(formData)\n  .map(([key, val]) => `• *${key}:* ${val}`)\n  .join('\\n');\n\nreturn [{\n  json: {\n    name,\n    email,\n    company,\n    message,\n    fieldList,\n    formName: data.formName || payload.eventType || 'Tally Form',\n    submittedAt: payload.createdAt || new Date().toISOString(),\n    responseId: data.responseId || 'N/A'\n  }\n}];"
+      }
+    },
+    {
+      "id": "slack-notification",
+      "name": "Notify Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [440, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "block",
+        "blocksUi": {
+          "blocksValues": [
+            {
+              "type": "header",
+              "text": {
+                "type": "plain_text",
+                "text": ":sparkles: New Lead from Website!",
+                "emoji": true
+              }
+            },
+            {
+              "type": "section",
+              "text": {
+                "type": "mrkdwn",
+                "text": "*{{$json.name}}* just submitted a form"
+              }
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "section",
+              "fields": [
+                {
+                  "type": "mrkdwn",
+                  "text": "*Email:*\n{{$json.email}}"
+                },
+                {
+                  "type": "mrkdwn",
+                  "text": "*Company:*\n{{$json.company}}"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "text": {
+                "type": "mrkdwn",
+                "text": "*All Form Fields:*\n{{$json.fieldList}}"
+              }
+            },
+            {
+              "type": "context",
+              "elements": [
+                {
+                  "type": "mrkdwn",
+                  "text": "Form: {{$json.formName}} | Submitted: {{$json.submittedAt}}"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Tally Form Submitted": {
+      "main": [
+        [
+          {
+            "node": "Extract Form Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Form Data": {
+      "main": [
+        [
+          {
+            "node": "Notify Slack",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

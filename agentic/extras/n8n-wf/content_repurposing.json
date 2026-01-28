@@ -1,0 +1,193 @@
+{
+  "name": "Meeting Transcript to Content Engine",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "name": "Meeting Transcript Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "content-repurpose",
+      "parameters": {
+        "path": "content-repurpose",
+        "httpMethod": "POST",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      }
+    },
+    {
+      "id": "extract-transcript",
+      "name": "Extract Meeting Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const payload = $input.first().json;\n\nconst meeting = payload.data || payload;\n\nconst title = meeting.title || meeting.meeting_title || 'Team Meeting';\nconst transcript = meeting.transcript || meeting.sentences || '';\nconst summary = meeting.summary || meeting.overview || '';\nconst participants = meeting.participants || meeting.attendees || [];\nconst date = meeting.date || meeting.dateString || new Date().toISOString();\n\nlet transcriptText = '';\nif (typeof transcript === 'string') {\n  transcriptText = transcript;\n} else if (Array.isArray(transcript)) {\n  transcriptText = transcript.map(s => `${s.speaker_name || 'Speaker'}: ${s.text || s.raw_text || ''}`).join('\\n');\n}\n\n// Truncate for AI\nif (transcriptText.length > 5000) {\n  transcriptText = transcriptText.substring(0, 5000) + '\\n[truncated]';\n}\n\nconst participantNames = Array.isArray(participants)\n  ? participants.map(p => p.name || p.displayName || p.email || '').join(', ')\n  : String(participants);\n\nreturn [{\n  json: {\n    title,\n    transcriptText,\n    summary,\n    participantNames,\n    date\n  }\n}];"
+      }
+    },
+    {
+      "id": "ai-linkedin",
+      "name": "Generate LinkedIn Post",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [440, -200],
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "prompt": "You are a LinkedIn content writer for AriseGroup.ai, an AI automation agency. Based on this meeting transcript, write a LinkedIn post.\n\nMeeting: {{$json.title}}\nSummary: {{$json.summary}}\n\nTranscript:\n{{$json.transcriptText}}\n\nRULES:\n- Extract ONE compelling insight, tool tip, or lesson learned\n- Write in first person as an AI automation practitioner\n- Use a strong hook in the first line (pattern interrupt)\n- Keep it 100-150 words\n- End with a question to drive engagement\n- Include 3-5 relevant hashtags\n- Tone: authentic, builder-mindset, no corporate fluff\n- Do NOT mention the meeting or that this came from a call",
+        "options": {
+          "temperature": 0.8
+        }
+      }
+    },
+    {
+      "id": "ai-tweet",
+      "name": "Generate Tweet Thread",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [440, 0],
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "prompt": "Based on this meeting transcript, write a 3-tweet thread for X/Twitter.\n\nMeeting: {{$json.title}}\nSummary: {{$json.summary}}\n\nTranscript:\n{{$json.transcriptText}}\n\nRULES:\n- Tweet 1: Bold statement or surprising insight (hook)\n- Tweet 2: The proof/example/how-to\n- Tweet 3: Takeaway + CTA\n- Each tweet MAX 280 characters\n- Format as TWEET 1: / TWEET 2: / TWEET 3:\n- Tone: direct, punchy, practitioner voice\n- Do NOT mention the meeting",
+        "options": {
+          "temperature": 0.8
+        }
+      }
+    },
+    {
+      "id": "ai-newsletter",
+      "name": "Generate Newsletter Snippet",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [440, 200],
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "prompt": "Based on this meeting transcript, write a newsletter section for AriseGroup's email list.\n\nMeeting: {{$json.title}}\nSummary: {{$json.summary}}\n\nTranscript:\n{{$json.transcriptText}}\n\nRULES:\n- Write a section titled with the key topic\n- 150-200 words\n- Teaching angle: what we learned and why it matters\n- Include a practical tip the reader can use immediately\n- End with a soft CTA (reply to learn more, book a call, etc.)\n- Format with a clear TITLE: and BODY:\n- Do NOT mention the meeting",
+        "options": {
+          "temperature": 0.7
+        }
+      }
+    },
+    {
+      "id": "combine-content",
+      "name": "Combine All Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const items = $input.all();\n\nconst linkedin = items[0]?.json?.text || items[0]?.json?.content || 'Error generating LinkedIn post';\nconst tweets = items[1]?.json?.text || items[1]?.json?.content || 'Error generating tweets';\nconst newsletter = items[2]?.json?.text || items[2]?.json?.content || 'Error generating newsletter';\n\nconst meetingTitle = $('Extract Meeting Content').first().json.title;\nconst meetingDate = $('Extract Meeting Content').first().json.date;\n\nreturn [{\n  json: {\n    meetingTitle,\n    meetingDate,\n    linkedin,\n    tweets,\n    newsletter\n  }\n}];"
+      }
+    },
+    {
+      "id": "slack-content",
+      "name": "Post Content for Review",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [880, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":studio_microphone: *Content Generated from Meeting*\n\n*Source:* {{$json.meetingTitle}} ({{$json.meetingDate}})\n\n━━━━━━━━━━━━━━━━━━━━━━━━\n:linkedin: *LinkedIn Post*\n━━━━━━━━━━━━━━━━━━━━━━━━\n{{$json.linkedin}}\n\n━━━━━━━━━━━━━━━━━━━━━━━━\n:bird: *Tweet Thread*\n━━━━━━━━━━━━━━━━━━━━━━━━\n{{$json.tweets}}\n\n━━━━━━━━━━━━━━━━━━━━━━━━\n:email: *Newsletter Snippet*\n━━━━━━━━━━━━━━━━━━━━━━━━\n{{$json.newsletter}}\n\n━━━━━━━━━━━━━━━━━━━━━━━━\n:point_right: React :white_check_mark: to approve for publishing, or :pencil2: for edits needed.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Meeting Transcript Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract Meeting Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Meeting Content": {
+      "main": [
+        [
+          {
+            "node": "Generate LinkedIn Post",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate Tweet Thread",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate Newsletter Snippet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate LinkedIn Post": {
+      "main": [
+        [
+          {
+            "node": "Combine All Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Tweet Thread": {
+      "main": [
+        [
+          {
+            "node": "Combine All Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Newsletter Snippet": {
+      "main": [
+        [
+          {
+            "node": "Combine All Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

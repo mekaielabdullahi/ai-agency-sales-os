@@ -6,17 +6,17 @@
     {
       "id": "title",
       "type": "text",
-      "x": 350,
+      "x": 258.66015625,
       "y": 20,
-      "width": 500,
-      "height": 45,
+      "width": 710.71484375,
+      "height": 44.800000000000004,
       "text": "AriseGroup.ai Content Strategy Framework",
       "fontSize": 28,
       "fontFamily": 1,
       "textAlign": "center",
       "strokeColor": "#1e1e1e",
-      "version": 1,
-      "versionNonce": 1,
+      "version": 48,
+      "versionNonce": 1352380975,
       "index": "a0",
       "isDeleted": false,
       "fillStyle": "solid",
@@ -36,8 +36,9 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "AriseGroup.ai Content Strategy Framework",
-      "autoResize": true,
-      "lineHeight": 1.6
+      "autoResize": false,
+      "lineHeight": 1.6,
+      "updated": 1769538856730
     },
     {
       "id": "subtitle",
@@ -73,7 +74,8 @@
       "containerId": null,
       "originalText": "Build-in-Public + Thought Leadership → Client Acquisition",
       "autoResize": true,
-      "lineHeight": 1.8
+      "lineHeight": 1.8,
+      "updated": 1769538743816
     },
     {
       "id": "pillars-section-label",
@@ -109,7 +111,8 @@
       "containerId": null,
       "originalText": "THE THREE BUSINESS PILLARS",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743816
     },
     {
       "id": "pillar1-bg",
@@ -122,7 +125,9 @@
       "strokeColor": "#1971c2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 4,
       "index": "a3",
@@ -136,7 +141,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743816
     },
     {
       "id": "pillar1-title",
@@ -172,7 +178,8 @@
       "containerId": null,
       "originalText": "EDUCATION (35%)",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743816
     },
     {
       "id": "pillar1-content",
@@ -208,7 +215,8 @@
       "containerId": null,
       "originalText": "→ Training & workshops\n→ Guides & tutorials\n→ How-to content\n→ Frameworks shared\n→ Knowledge from projects",
       "autoResize": true,
-      "lineHeight": 2
+      "lineHeight": 2,
+      "updated": 1769538743816
     },
     {
       "id": "pillar2-bg",
@@ -221,7 +229,9 @@
       "strokeColor": "#f08c00",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 7,
       "index": "a6",
@@ -235,7 +245,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743816
     },
     {
       "id": "pillar2-title",
@@ -271,7 +282,8 @@
       "containerId": null,
       "originalText": "CONSULTING (35%)",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743816
     },
     {
       "id": "pillar2-content",
@@ -307,7 +319,8 @@
       "containerId": null,
       "originalText": "→ AI audits & assessments\n→ Strategy & roadmapping\n→ Advisory insights\n→ Discovery call learnings\n→ Industry observations",
       "autoResize": true,
-      "lineHeight": 2
+      "lineHeight": 2,
+      "updated": 1769538743816
     },
     {
       "id": "pillar3-bg",
@@ -320,7 +333,9 @@
       "strokeColor": "#7950f2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 10,
       "index": "a9",
@@ -334,7 +349,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743816
     },
     {
       "id": "pillar3-title",
@@ -370,7 +386,8 @@
       "containerId": null,
       "originalText": "DEVELOPMENT (30%)",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743816
     },
     {
       "id": "pillar3-content",
@@ -406,7 +423,8 @@
       "containerId": null,
       "originalText": "→ Build-in-public updates\n→ Implementation case studies\n→ Integration & automation wins\n→ Agent development progress\n→ Technical deep-dives",
       "autoResize": true,
-      "lineHeight": 2
+      "lineHeight": 2,
+      "updated": 1769538743816
     },
     {
       "id": "workflow-label",
@@ -442,7 +460,8 @@
       "containerId": null,
       "originalText": "CONTENT CREATION WORKFLOW",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743816
     },
     {
       "id": "step1-bg",
@@ -455,7 +474,9 @@
       "strokeColor": "#2f9e44",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 14,
       "index": "aD",
@@ -469,7 +490,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743816
     },
     {
       "id": "step1-title",
@@ -505,7 +527,8 @@
       "containerId": null,
       "originalText": "1. FETCH CONTEXT",
       "autoResize": true,
-      "lineHeight": 2.08
+      "lineHeight": 2.08,
+      "updated": 1769538743816
     },
     {
       "id": "step1-content",
@@ -541,7 +564,8 @@
       "containerId": null,
       "originalText": "Notion API pull:\n• Active projects\n• Meeting transcripts\n• Recent tasks\n• Notes/docs",
       "autoResize": true,
-      "lineHeight": 1.4
+      "lineHeight": 1.4,
+      "updated": 1769538743816
     },
     {
       "id": "arrow1",
@@ -552,7 +576,16 @@
       "height": 0,
       "strokeColor": "#2f9e44",
       "strokeWidth": 2,
-      "points": [[0, 0], [40, 0]],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "version": 1,
@@ -573,7 +606,9 @@
       "link": null,
       "locked": false,
       "startBinding": null,
-      "endBinding": null
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "updated": 1769538743817
     },
     {
       "id": "step2-bg",
@@ -586,7 +621,9 @@
       "strokeColor": "#1971c2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 18,
       "index": "aH",
@@ -600,7 +637,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "step2-title",
@@ -636,7 +674,8 @@
       "containerId": null,
       "originalText": "2. SELECT PILLAR",
       "autoResize": true,
-      "lineHeight": 2.08
+      "lineHeight": 2.08,
+      "updated": 1769538743817
     },
     {
       "id": "step2-content",
@@ -672,7 +711,8 @@
       "containerId": null,
       "originalText": "Choose focus:\n• Education (teach)\n• Consulting (advise)\n• Development (build)\nMatch to context",
       "autoResize": true,
-      "lineHeight": 1.4
+      "lineHeight": 1.4,
+      "updated": 1769538743817
     },
     {
       "id": "arrow2",
@@ -683,7 +723,16 @@
       "height": 0,
       "strokeColor": "#1971c2",
       "strokeWidth": 2,
-      "points": [[0, 0], [40, 0]],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "version": 1,
@@ -704,7 +753,9 @@
       "link": null,
       "locked": false,
       "startBinding": null,
-      "endBinding": null
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "updated": 1769538743817
     },
     {
       "id": "step3-bg",
@@ -717,7 +768,9 @@
       "strokeColor": "#f08c00",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 22,
       "index": "aL",
@@ -731,7 +784,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "step3-title",
@@ -767,7 +821,8 @@
       "containerId": null,
       "originalText": "3. CRAFT HOOK",
       "autoResize": true,
-      "lineHeight": 2.08
+      "lineHeight": 2.08,
+      "updated": 1769538743817
     },
     {
       "id": "step3-content",
@@ -803,7 +858,8 @@
       "containerId": null,
       "originalText": "7 Hook Types:\n• Curiosity gap\n• Contrarian\n• Bold declaration\n• Timeline/data",
       "autoResize": true,
-      "lineHeight": 1.4
+      "lineHeight": 1.4,
+      "updated": 1769538743817
     },
     {
       "id": "arrow3",
@@ -814,7 +870,16 @@
       "height": 0,
       "strokeColor": "#f08c00",
       "strokeWidth": 2,
-      "points": [[0, 0], [40, 0]],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "version": 1,
@@ -835,7 +900,9 @@
       "link": null,
       "locked": false,
       "startBinding": null,
-      "endBinding": null
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "updated": 1769538743817
     },
     {
       "id": "step4-bg",
@@ -848,7 +915,9 @@
       "strokeColor": "#7950f2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 26,
       "index": "aP",
@@ -862,7 +931,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "step4-title",
@@ -898,7 +968,8 @@
       "containerId": null,
       "originalText": "4. DRAFT & PUBLISH",
       "autoResize": true,
-      "lineHeight": 2.08
+      "lineHeight": 2.08,
+      "updated": 1769538743817
     },
     {
       "id": "step4-content",
@@ -934,7 +1005,8 @@
       "containerId": null,
       "originalText": "LinkedIn post:\n• 250-350 words\n• CTA included\n• 4-6 hashtags\n• Engagement hour",
       "autoResize": true,
-      "lineHeight": 1.4
+      "lineHeight": 1.4,
+      "updated": 1769538743817
     },
     {
       "id": "posting-label",
@@ -970,7 +1042,8 @@
       "containerId": null,
       "originalText": "POSTING CADENCE",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743817
     },
     {
       "id": "tue-box",
@@ -983,7 +1056,9 @@
       "strokeColor": "#1971c2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 30,
       "index": "aT",
@@ -997,7 +1072,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "tue-text",
@@ -1033,7 +1109,8 @@
       "containerId": null,
       "originalText": "TUESDAY\nMain Post #1\n9:00 AM EST",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "wed-box",
@@ -1047,7 +1124,9 @@
       "fillStyle": "solid",
       "strokeStyle": "dashed",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 32,
       "index": "aV",
@@ -1060,7 +1139,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "wed-text",
@@ -1096,7 +1176,8 @@
       "containerId": null,
       "originalText": "WEDNESDAY\nBridge Post\n(Optional)",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "thu-box",
@@ -1109,7 +1190,9 @@
       "strokeColor": "#1971c2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 34,
       "index": "aX",
@@ -1123,7 +1206,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "thu-text",
@@ -1159,7 +1243,8 @@
       "containerId": null,
       "originalText": "THURSDAY\nMain Post #2\n9:00 AM EST",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "fri-box",
@@ -1173,7 +1258,9 @@
       "fillStyle": "solid",
       "strokeStyle": "dashed",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 36,
       "index": "aZ",
@@ -1186,7 +1273,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "fri-text",
@@ -1222,7 +1310,8 @@
       "containerId": null,
       "originalText": "FRIDAY\nWeekly Recap\n(Optional)",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "daily-box",
@@ -1235,7 +1324,9 @@
       "strokeColor": "#e03131",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 38,
       "index": "ab",
@@ -1249,7 +1340,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "daily-text",
@@ -1285,7 +1377,8 @@
       "containerId": null,
       "originalText": "DAILY\nEngagement\n10-15 comments",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "hooks-label",
@@ -1321,7 +1414,8 @@
       "containerId": null,
       "originalText": "THE 7 HOOK TYPES",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743817
     },
     {
       "id": "hook1",
@@ -1334,7 +1428,9 @@
       "strokeColor": "#1971c2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 41,
       "index": "ae",
@@ -1348,7 +1444,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "hook1-text",
@@ -1384,7 +1481,8 @@
       "containerId": null,
       "originalText": "DATA\n\"87% of...\"\n",
       "autoResize": true,
-      "lineHeight": 1.16
+      "lineHeight": 1.16,
+      "updated": 1769538743817
     },
     {
       "id": "hook2",
@@ -1397,7 +1495,9 @@
       "strokeColor": "#f08c00",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 43,
       "index": "ag",
@@ -1411,7 +1511,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "hook2-text",
@@ -1447,7 +1548,8 @@
       "containerId": null,
       "originalText": "TIMELINE\n\"Week 1...\"",
       "autoResize": true,
-      "lineHeight": 1.75
+      "lineHeight": 1.75,
+      "updated": 1769538743817
     },
     {
       "id": "hook3",
@@ -1460,7 +1562,9 @@
       "strokeColor": "#7950f2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 45,
       "index": "ai",
@@ -1474,7 +1578,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "hook3-text",
@@ -1510,7 +1615,8 @@
       "containerId": null,
       "originalText": "CONTRARIAN\n\"Most fail...\"",
       "autoResize": true,
-      "lineHeight": 1.75
+      "lineHeight": 1.75,
+      "updated": 1769538743817
     },
     {
       "id": "hook4",
@@ -1523,7 +1629,9 @@
       "strokeColor": "#2f9e44",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 47,
       "index": "ak",
@@ -1537,7 +1645,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "hook4-text",
@@ -1573,7 +1682,8 @@
       "containerId": null,
       "originalText": "STORY\n\"I spent 30m...\"",
       "autoResize": true,
-      "lineHeight": 1.75
+      "lineHeight": 1.75,
+      "updated": 1769538743817
     },
     {
       "id": "hook5",
@@ -1586,7 +1696,9 @@
       "strokeColor": "#e03131",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 49,
       "index": "am",
@@ -1600,7 +1712,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "hook5-text",
@@ -1636,7 +1749,8 @@
       "containerId": null,
       "originalText": "BOLD\n\"You don't need...\"",
       "autoResize": true,
-      "lineHeight": 1.75
+      "lineHeight": 1.75,
+      "updated": 1769538743817
     },
     {
       "id": "hook6",
@@ -1649,7 +1763,9 @@
       "strokeColor": "#1971c2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 51,
       "index": "ao",
@@ -1663,7 +1779,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "hook6-text",
@@ -1699,7 +1816,8 @@
       "containerId": null,
       "originalText": "QUESTION\n\"What's worse?\"",
       "autoResize": true,
-      "lineHeight": 1.75
+      "lineHeight": 1.75,
+      "updated": 1769538743817
     },
     {
       "id": "hook7",
@@ -1712,7 +1830,9 @@
       "strokeColor": "#f08c00",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 53,
       "index": "aq",
@@ -1726,7 +1846,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "hook7-text",
@@ -1762,7 +1883,8 @@
       "containerId": null,
       "originalText": "PATTERN\n\"Built 3 this week\"",
       "autoResize": true,
-      "lineHeight": 1.75
+      "lineHeight": 1.75,
+      "updated": 1769538743817
     },
     {
       "id": "metrics-label",
@@ -1798,7 +1920,8 @@
       "containerId": null,
       "originalText": "SUCCESS METRICS",
       "autoResize": true,
-      "lineHeight": 1.875
+      "lineHeight": 1.875,
+      "updated": 1769538743817
     },
     {
       "id": "good-bg",
@@ -1811,7 +1934,9 @@
       "strokeColor": "#2f9e44",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 56,
       "index": "at",
@@ -1825,7 +1950,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "good-title",
@@ -1861,7 +1987,8 @@
       "containerId": null,
       "originalText": "GOOD PERFORMANCE",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "good-content",
@@ -1897,7 +2024,8 @@
       "containerId": null,
       "originalText": "→ 50+ reactions\n→ 10+ comments\n→ 5+ shares\n→ 3%+ engagement",
       "autoResize": true,
-      "lineHeight": 1.375
+      "lineHeight": 1.375,
+      "updated": 1769538743817
     },
     {
       "id": "great-bg",
@@ -1910,7 +2038,9 @@
       "strokeColor": "#2f9e44",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 59,
       "index": "aw",
@@ -1924,7 +2054,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "great-title",
@@ -1960,7 +2091,8 @@
       "containerId": null,
       "originalText": "GREAT PERFORMANCE",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "great-content",
@@ -1996,7 +2128,8 @@
       "containerId": null,
       "originalText": "→ 100+ reactions\n→ 20+ comments\n→ 10+ shares\n→ 5%+ engagement",
       "autoResize": true,
-      "lineHeight": 1.375
+      "lineHeight": 1.375,
+      "updated": 1769538743817
     },
     {
       "id": "convert-bg",
@@ -2009,7 +2142,9 @@
       "strokeColor": "#e03131",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 62,
       "index": "az",
@@ -2023,7 +2158,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "convert-title",
@@ -2059,7 +2195,8 @@
       "containerId": null,
       "originalText": "CONVERSION GOAL",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "convert-content",
@@ -2095,7 +2232,8 @@
       "containerId": null,
       "originalText": "→ 1+ DM inquiry\n→ Discovery call booked\n→ Content → Client\n→ Build trust pipeline",
       "autoResize": true,
-      "lineHeight": 1.375
+      "lineHeight": 1.375,
+      "updated": 1769538743817
     },
     {
       "id": "philosophy-bg",
@@ -2108,7 +2246,9 @@
       "strokeColor": "#7950f2",
       "fillStyle": "solid",
       "roughness": 1,
-      "roundness": { "type": 3 },
+      "roundness": {
+        "type": 3
+      },
       "version": 1,
       "versionNonce": 65,
       "index": "b02",
@@ -2122,7 +2262,8 @@
       "frameId": null,
       "boundElements": [],
       "link": null,
-      "locked": false
+      "locked": false,
+      "updated": 1769538743817
     },
     {
       "id": "philosophy-title",
@@ -2158,7 +2299,8 @@
       "containerId": null,
       "originalText": "BUILD-IN-PUBLIC PHILOSOPHY",
       "autoResize": true,
-      "lineHeight": 1.82
+      "lineHeight": 1.82,
+      "updated": 1769538743817
     },
     {
       "id": "philosophy-content",
@@ -2194,7 +2336,8 @@
       "containerId": null,
       "originalText": "Document the journey\nDeliver real value\nDemonstrate expertise\nAttract ideal clients",
       "autoResize": true,
-      "lineHeight": 1.375
+      "lineHeight": 1.375,
+      "updated": 1769538743817
     },
     {
       "id": "footer",
@@ -2230,7 +2373,8 @@
       "containerId": null,
       "originalText": "AriseGroup.ai Content Strategy | January 2026",
       "autoResize": true,
-      "lineHeight": 2.08
+      "lineHeight": 2.08,
+      "updated": 1769538743817
     }
   ],
   "appState": {

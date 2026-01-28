@@ -1,0 +1,132 @@
+{
+  "name": "15-Min Post-Call Follow-Up",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "name": "Fireflies Transcript Ready",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "fireflies-followup",
+      "parameters": {
+        "path": "fireflies-followup",
+        "httpMethod": "POST",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      }
+    },
+    {
+      "id": "extract-transcript",
+      "name": "Extract Transcript Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const payload = $input.first().json;\n\n// Fireflies webhook payload\nconst meeting = payload.data || payload;\n\nconst title = meeting.title || meeting.meeting_title || 'Discovery Call';\nconst transcript = meeting.transcript || meeting.sentences || '';\nconst summary = meeting.summary || meeting.overview || '';\nconst actionItems = meeting.action_items || meeting.actionItems || [];\nconst participants = meeting.participants || meeting.attendees || [];\nconst duration = meeting.duration || meeting.duration_minutes || 0;\nconst date = meeting.date || meeting.dateString || new Date().toISOString();\n\n// Get transcript text\nlet transcriptText = '';\nif (typeof transcript === 'string') {\n  transcriptText = transcript;\n} else if (Array.isArray(transcript)) {\n  transcriptText = transcript.map(s => `${s.speaker_name || 'Speaker'}: ${s.text || s.raw_text || ''}`).join('\\n');\n}\n\n// Truncate to ~4000 chars for AI processing\nif (transcriptText.length > 4000) {\n  transcriptText = transcriptText.substring(0, 4000) + '\\n[transcript truncated]';\n}\n\nconst participantNames = Array.isArray(participants)\n  ? participants.map(p => p.name || p.displayName || p.email || 'Unknown').join(', ')\n  : String(participants);\n\nconst actionItemList = Array.isArray(actionItems)\n  ? actionItems.map(a => typeof a === 'string' ? a : a.text || a.description || '').join('\\n- ')\n  : String(actionItems);\n\nreturn [{\n  json: {\n    title,\n    transcriptText,\n    summary,\n    actionItemList,\n    participantNames,\n    duration,\n    date\n  }\n}];"
+      }
+    },
+    {
+      "id": "ai-generate-followup",
+      "name": "AI Generate Follow-Up",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [440, 0],
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "prompt": "You are a follow-up email writer for AriseGroup.ai, an AI automation agency. Write a personalized follow-up email based on this discovery call.\n\nRULES:\n- Be warm, professional, concise\n- Reference specific things discussed (pain points, tools mentioned, workflows)\n- NO over-promising — be honest about what automation can do\n- Include clear next steps\n- Keep it under 200 words\n- Sign off as Mikael from AriseGroup\n\nMeeting: {{$json.title}}\nParticipants: {{$json.participantNames}}\nDuration: {{$json.duration}} minutes\n\nSummary:\n{{$json.summary}}\n\nKey Action Items:\n- {{$json.actionItemList}}\n\nTranscript Excerpt:\n{{$json.transcriptText}}\n\n---\n\nWrite the follow-up email. Format as:\nSUBJECT: [subject line]\n\n[email body]",
+        "options": {
+          "temperature": 0.7
+        }
+      }
+    },
+    {
+      "id": "parse-email",
+      "name": "Parse AI Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const output = $input.first().json;\nconst text = output.text || output.content || output.message || JSON.stringify(output);\n\n// Parse subject and body\nlet subject = 'Great chatting — next steps from AriseGroup';\nlet body = text;\n\nconst subjectMatch = text.match(/SUBJECT:\\s*(.+?)\\n/);\nif (subjectMatch) {\n  subject = subjectMatch[1].trim();\n  body = text.replace(/SUBJECT:\\s*.+?\\n/, '').trim();\n}\n\n// Convert newlines to <br> for HTML email\nconst htmlBody = body.replace(/\\n/g, '<br>');\n\nreturn [{\n  json: {\n    subject,\n    body,\n    htmlBody,\n    meetingTitle: $('Extract Transcript Data').first().json.title,\n    participantNames: $('Extract Transcript Data').first().json.participantNames\n  }\n}];"
+      }
+    },
+    {
+      "id": "slack-review",
+      "name": "Send to Slack for Review",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [880, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":zap: *15-Min Follow-Up Ready for Review*\n\n*Meeting:* {{$json.meetingTitle}}\n*Participants:* {{$json.participantNames}}\n\n---\n*Subject:* {{$json.subject}}\n\n{{$json.body}}\n\n---\n:point_right: Review and send from your email. Draft generated automatically from transcript.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Fireflies Transcript Ready": {
+      "main": [
+        [
+          {
+            "node": "Extract Transcript Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Transcript Data": {
+      "main": [
+        [
+          {
+            "node": "AI Generate Follow-Up",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Generate Follow-Up": {
+      "main": [
+        [
+          {
+            "node": "Parse AI Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse AI Output": {
+      "main": [
+        [
+          {
+            "node": "Send to Slack for Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

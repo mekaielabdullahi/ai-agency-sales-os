@@ -1,0 +1,167 @@
+{
+  "name": "Proposal Assembly & Review Pipeline",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "name": "Start Proposal Request",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "proposal-request",
+      "parameters": {
+        "path": "proposal-request",
+        "httpMethod": "POST",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      }
+    },
+    {
+      "id": "extract-client",
+      "name": "Extract Client Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const payload = $input.first().json;\n\nconst clientName = payload.client_name || payload.name || 'Client';\nconst company = payload.company || 'Company';\nconst email = payload.email || '';\nconst painPoints = payload.pain_points || payload.painPoints || [];\nconst services = payload.services || payload.service_tier || 'Custom';\nconst budget = payload.budget || 'TBD';\nconst discoveryNotes = payload.discovery_notes || payload.notes || '';\nconst industry = payload.industry || 'General';\n\nconst painPointsList = Array.isArray(painPoints) ? painPoints.join(', ') : String(painPoints);\n\nreturn [{\n  json: {\n    clientName,\n    company,\n    email,\n    painPoints: painPointsList,\n    services,\n    budget,\n    discoveryNotes,\n    industry,\n    requestedAt: new Date().toISOString()\n  }\n}];"
+      }
+    },
+    {
+      "id": "ai-generate-proposal",
+      "name": "AI Draft Proposal",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [440, 0],
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "prompt": "You are a proposal writer for AriseGroup.ai, an AI automation agency. Generate a proposal draft.\n\nClient: {{$json.clientName}}\nCompany: {{$json.company}}\nIndustry: {{$json.industry}}\nPain Points: {{$json.painPoints}}\nServices Requested: {{$json.services}}\nBudget: {{$json.budget}}\nDiscovery Notes: {{$json.discoveryNotes}}\n\nWrite a structured proposal with these sections:\n\n1. EXECUTIVE SUMMARY (2-3 sentences, reference their specific pain points)\n2. UNDERSTANDING YOUR CHALLENGES (bullet points of what we heard)\n3. PROPOSED SOLUTION (specific automations we'll build, tied to their pain points)\n4. IMPLEMENTATION TIMELINE (phased approach: Phase 1 quick wins, Phase 2 core automation, Phase 3 optimization)\n5. INVESTMENT (reference their budget range, provide value framing)\n6. NEXT STEPS (clear call to action)\n\nBe specific to their industry and pain points. No generic filler. Keep total under 500 words.",
+        "options": {
+          "temperature": 0.7
+        }
+      }
+    },
+    {
+      "id": "notify-tech-review",
+      "name": "Route to Technical Review",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [660, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":page_facing_up: *Proposal Draft Ready — Technical Review Needed*\n\n*Client:* {{$('Extract Client Data').first().json.clientName}} ({{$('Extract Client Data').first().json.company}})\n*Services:* {{$('Extract Client Data').first().json.services}}\n*Budget:* {{$('Extract Client Data').first().json.budget}}\n\n---\n{{$json.text}}\n\n---\n:hammer_and_wrench: *@Matthew* — Please review technical feasibility.\n:clock4: *SLA: 4 hours*\n\nReact with :white_check_mark: when approved or :x: with comments.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    },
+    {
+      "id": "wait-tech-review",
+      "name": "Wait for Tech Review",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [880, 0],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 4,
+        "unit": "hours",
+        "limitWaitTime": false
+      }
+    },
+    {
+      "id": "notify-final-review",
+      "name": "Route to Final Review",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [1100, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#new-clients"
+        },
+        "messageType": "text",
+        "text": ":briefcase: *Proposal Ready for Final Review*\n\n*Client:* {{$('Extract Client Data').first().json.clientName}} ({{$('Extract Client Data').first().json.company}})\n\n:point_right: *@Chris* — Final review and send.\n:clock4: *SLA: 4 hours*\n\nApprove and send to client, or flag changes needed.",
+        "otherOptions": {
+          "mrkdwn": true
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Start Proposal Request": {
+      "main": [
+        [
+          {
+            "node": "Extract Client Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Client Data": {
+      "main": [
+        [
+          {
+            "node": "AI Draft Proposal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Draft Proposal": {
+      "main": [
+        [
+          {
+            "node": "Route to Technical Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route to Technical Review": {
+      "main": [
+        [
+          {
+            "node": "Wait for Tech Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait for Tech Review": {
+      "main": [
+        [
+          {
+            "node": "Route to Final Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
