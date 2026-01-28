@@ -110,7 +110,7 @@ PDF cautions against obsessing over retainers and recurring revenue at the expen
 | Deliverable | Optimistic Annual Value | Realistic Year 1 Capture | Adoption Risk Factor |
 |-------------|-------------------------|--------------------------|----------------------|
 | **Training System** | $96,800 | $48,400 (50%) | **HIGH** - Kelsey behavior change required |
-| **Equipment CRM** | $67,000 | $53,600 (80%) | **LOW** - Passive system, high value |
+| **Equipment Management** | $67,000 | $53,600 (80%) | **LOW** - Passive system, high value |
 | **Ply Enhancements** | $48,000 | $33,600 (70%) | **MED** - Megan already driving Ply |
 | **Integration Work** | $20,000 | $18,000 (90%) | **LOW** - Automated, no behavior change |
 | **TOTAL** | **$231,800** | **$153,600** | |
@@ -154,7 +154,7 @@ From Jan 5, 2026 transcript with Megan (Nikki's sister):
 |-------------|------------|
 | Discovery Interviews (Megan, Andrew) | Included |
 | Training System Build | $4,000 |
-| Equipment CRM | $2,000 |
+| Equipment Management | $2,000 |
 | Ply Enhancement Layer | $2,500 |
 | Integration Work | $1,500 |
 
@@ -202,7 +202,7 @@ From Jan 5, 2026 transcript with Megan (Nikki's sister):
 |-------------|------------|---------------------|
 | Discovery & Gap Analysis | $3,000 | Leverage Megan's work, identify true gaps |
 | Training System (Video Capture) | $12,000 | Core scalability unlock |
-| Equipment CRM + Service Contracts | $8,000 | High-value, low-adoption-risk |
+| Equipment Management (evaluate + implement) | $8,000 | High-value, low-adoption-risk |
 | Ply Enhancement Layer | $5,000 | Used parts tracking, Quo integration |
 | Integration & Automation | $4,000 | Workflow orchestration |
 | **TOTAL** | **$32,000** | |
@@ -267,7 +267,7 @@ From Jan 5, 2026 transcript with Megan (Nikki's sister):
 |-------------|------------|---------------------|
 | Discovery & Megan Collaboration | $4,000 | Formal interview, SOP audit, gap analysis |
 | Training System (Premium Production) | $18,000 | Chris filming, 25-30 video library, knowledge base |
-| Equipment CRM + Service Contracts | $10,000 | Complete database, contract eligibility matrix |
+| Equipment Management (evaluate + implement + integrate) | $10,000 | Platform selection, database, contract eligibility matrix |
 | Ply Enhancement Layer | $8,000 | Used parts tracking, Quo integration, custom config |
 | Integration & Orchestration | $5,000 | All systems connected, workflow automation |
 | **TOTAL** | **$45,000** | |
@@ -359,7 +359,7 @@ Difference: $6,440 below formula (10% discount)
 |-------------|------------|------------|
 | Discovery & Megan Collaboration | $5,000 | 9% |
 | Training System (Premium) | $20,000 | 36% |
-| Equipment CRM + Contracts | $12,000 | 22% |
+| Equipment Management + Contracts | $12,000 | 22% |
 | Ply Enhancement + Used Parts | $10,000 | 18% |
 | Integration & Orchestration | $8,000 | 15% |
 | **TOTAL** | **$55,000** | 100% |
@@ -448,7 +448,7 @@ Difference: $6,440 below formula (10% discount)
 > "Kelsey, we've identified **$153,600 in measurable Year 1 value** from this work. Let me show you how we arrived at this number:
 >
 > - Training system: Saves you $48k/year by reducing training time and enabling new hires
-> - Equipment CRM: Generates $54k/year through better contracts and proactive maintenance
+> - Equipment management platform: Generates $54k/year through better contracts and proactive maintenance
 > - Ply enhancements: Recovers $34k/year from used parts and eliminating interruptions
 > - Integration work: Saves Alyssa $18k/year in manual data entry
 >
@@ -484,7 +484,7 @@ Difference: $6,440 below formula (10% discount)
 >
 > Every deliverable has a clear ROI metric:
 > - Training videos → Track Kelsey's training hours saved
-> - Equipment CRM → Track contracts won/avoided
+> - Equipment management platform → Track contracts won/avoided
 > - Ply enhancements → Track used parts revenue
 >
 > We'll review every 30 days. If the metrics aren't moving, we adjust. That's the difference between effort-based and value-based pricing."
@@ -493,7 +493,7 @@ Difference: $6,440 below formula (10% discount)
 
 **Response:**
 > "Absolutely. We can structure this as:
-> - Phase 2A: Equipment CRM + Ply Enhancements ($22k)
+> - Phase 2A: Equipment Management Platform + Ply Enhancements ($22k)
 > - Phase 2B: Training System + Integration ($23k)
 >
 > Each phase has clear deliverables and ROI metrics. Start with Phase 2A, validate the value, then move to Phase 2B. Total investment stays $45k, but it's staged."
@@ -539,7 +539,7 @@ Difference: $6,440 below formula (10% discount)
 - SOP enforcement mechanisms (if Megan's already exist)
 
 **Low-Adoption-Risk Items to Keep:**
-- Equipment CRM (passive, high value)
+- Equipment management platform (passive, high value; using off-the-shelf reduces build risk)
 - Ply enhancements (Megan already driving)
 - Integrations (automated)
 
@@ -642,7 +642,7 @@ Difference: $6,440 below formula (10% discount)
 | "Do we have X?" interruptions | 10+/day | 5/day | 2/day | 0-1/day |
 | Joe solo-capable jobs | 10% | 20% | 30% | 40% |
 | SOPs compliance rate | Unknown | Baseline | 60% | 80%+ |
-| Equipment records in CRM | 0 | Top 20 | Top 50 | All active |
+| Equipment records in platform | 0 | Top 20 | Top 50 | All active |
 | Used parts value tracked | $0 | $2k | $5k | $10k+ |
 
 ---
@@ -673,29 +673,65 @@ Difference: $6,440 below formula (10% discount)
 
 ---
 
-## Pricing Decision Tree
+## Tiered Options (NEW - Jan 28, 2026)
+
+Based on team feedback and Jan 27 Kelsey call insights, a 3-tier approach has been developed:
+
+### Why Tiers?
+- Kelsey's direct quote: *"I don't even know how I'm gonna pay you, but I will."* -- Cash flow is tight despite revenue growth
+- Revenue trajectory is HIGHER than assumed ($100k+ more than prior year, targeting $1.2M-$1.7M), but cash flow lags revenue
+- Single-price proposals feel like "take it or leave it" -- tiers let the client self-select
+- Lower tiers still deliver high value (not throwaway options)
+
+### Tier Structure
+
+| Tier | Investment | Annual ROI | ROI % | Payback | Value:Price |
+|------|-----------|-----------|-------|---------|-------------|
+| **Foundation** | $15,000 | $37,600 | 251% | ~5 months | 2.5:1 |
+| **Growth Engine** | $28,000 | $77,600 | 277% | ~4.3 months | 2.8:1 |
+| **Full Scale** | $47,000 | $116,600 | 248% | ~4.8 months | 3.3:1 |
+
+### Revenue Trajectory Impact on ROI
+If Kelsey's revenue is actually trending toward $1.2M (not the assumed $600k):
+- 5% customer retention improvement = $60k/year (was $30k)
+- Training time at higher hourly value = proportionally more savings
+- Scaling bottleneck is MORE expensive to ignore
+- **Don't update ROI numbers yet** -- validate during data collection. But the case is getting STRONGER.
+
+### Payment Structures
+- **Foundation:** 50/50 ($7,500 / $7,500) or full upfront
+- **Growth Engine:** 50/50 ($14,000 / $14,000)
+- **Full Scale:** 50/50 ($23,500 / $23,500) or phased (2A/2B)
+
+*All tiers designed to be accessible given cash flow sensitivity.*
+
+See `to-review/TEAM-REVIEW-FEEDBACK.md` for full tier breakdown and deliverables per tier.
+
+---
+
+## Pricing Decision Tree (Updated)
 
 ```
 START: What's the primary constraint?
 │
 ├─ Budget confirmed >$40k?
-│  ├─ YES → Aggressive Hybrid ($45k) ⭐ RECOMMENDED
+│  ├─ YES → Full Scale ($47k) ⭐ RECOMMENDED
 │  └─ NO → Continue
 │
-├─ Budget confirmed $30k-40k?
-│  ├─ YES → Conservative Hybrid ($32k)
+├─ Budget confirmed $25k-40k?
+│  ├─ YES → Growth Engine ($28k)
 │  └─ NO → Continue
 │
-├─ Budget <$30k but ROI-literate client?
-│  ├─ YES → Pitch $45k with phased payment
+├─ Budget $15k-25k?
+│  ├─ YES → Foundation ($15k) -- still delivers 251% ROI
 │  └─ NO → Continue
 │
-├─ Client price-sensitive AND time-sensitive?
-│  ├─ YES → Cost-Plus ($10k) - NOT RECOMMENDED
-│  └─ NO → Aggressive Hybrid ($45k) with negotiation to $38k
+├─ Budget <$15k?
+│  ├─ YES → Discuss phased Foundation with smaller upfront
+│  └─ NO → Present all 3 tiers, let client self-select
 │
-└─ Strong trust + sophisticated client?
-   └─ YES → Premium Value-Based ($55k)
+└─ Strong trust + sophisticated client + cash available?
+   └─ YES → Present Full Scale with confidence
 ```
 
 **PDF Decision Rule (Page 25):** "When in doubt, price higher. You can always negotiate down. You can never negotiate up."
@@ -777,7 +813,12 @@ START: What's the primary constraint?
 
 ---
 
-### Equipment CRM ROI
+### Equipment Management Platform ROI
+
+> **Implementation Note:** The $10k allocation for equipment management may shift from custom build to platform licensing + integration work. If an off-the-shelf platform is selected (Miracle Service, Field Force Tracker, BlueFolder), the cost breakdown changes:
+> - **Off-the-shelf:** Lower integration build cost (~$4-6k) + ongoing SaaS subscription (~$50-200/mo)
+> - **Custom build:** Full $10k build cost, no ongoing SaaS, but higher maintenance burden
+> - The $10k investment allocation stays the same either way -- it covers evaluation, implementation, data migration, and custom integrations (Jobber, Quo, Ply bridge, chat agent)
 
 **Revenue Protection (Service Contracts):**
 - Avoid bad contracts (PK Associates example): $5k-10k/year
@@ -790,9 +831,9 @@ START: What's the primary constraint?
 - Conservative: $12,000/year
 
 **Customer Retention (5% increase):**
-- 5% of $600k revenue = $30,000/year
+- 5% of $700-800k revenue = $35,000-$40,000/year (was $30k at $600k estimate; if $1.2M target achieved = $60k/year)
 
-**Total Equipment CRM Value:** $47,000/year
+**Total Equipment Management Value:** $47,000/year
 **Adoption Risk (Low - passive system):** 80% capture = **$37,600/year**
 
 ---
@@ -838,7 +879,7 @@ START: What's the primary constraint?
 | Deliverable | Optimistic | Conservative (Risk-Adjusted) |
 |-------------|------------|------------------------------|
 | Training System | $39,000/yr | $10,500/yr (50% discount) |
-| Equipment CRM | $47,000/yr | $37,600/yr (80% capture) |
+| Equipment Management | $47,000/yr | $37,600/yr (80% capture) |
 | Ply Enhancements | $30,000/yr | $21,000/yr (70% capture) |
 | Integration Work | $4,900/yr | $4,400/yr (90% capture) |
 | **TOTAL** | **$120,900/yr** | **$73,500/yr** |

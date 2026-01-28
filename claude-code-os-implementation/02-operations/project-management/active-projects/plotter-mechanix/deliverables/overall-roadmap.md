@@ -2,8 +2,8 @@
 
 **Project:** PlotterOps Transformation
 **Client:** Plotter Mechanix (Kelsey Andrade, Phoenix AZ)
-**Last Updated:** December 23, 2025
-**Status:** Phase 1 in progress
+**Last Updated:** January 28, 2026
+**Status:** Phase 1 Deployed - Quo-Jobber integration live, IVR routing configured. Phase 2 internal review in progress.
 
 ---
 
@@ -39,13 +39,13 @@
 - Multi-tech operations
 - Lucid Motors ready (200 cuts/day)
 - PlotterOps as product (industry SaaS)
-- Chris at Pine Top on his balcony
+- Kelsey at Pine Top on his balcony
 - "All you have to do is just make phone calls and get paid"
 
 ---
 
 ## Phase 1: Communication Control & Jobber Trust
-**Status:** In Progress (Week 1 Testing)
+**Status:** Deployed -- Quo-Jobber integration live, IVR routing configured, Kelsey chose Quo as default phone
 **Timeline:** 4 weeks (Dec 23 - Jan 20, 2026)
 **Investment:** $5,000 Quick Win Sprint
 
@@ -202,9 +202,16 @@
 ---
 
 ## Phase 2: Inventory Visibility & Operations Dashboard
-**Status:** Planning / Not Yet Scoped
-**Estimated Timeline:** 8-12 weeks
-**Estimated Investment:** $15,000-$30,000 (TBD after Phase 1)
+**Status:** Internal review in progress (Jan 28, 2026)
+**Estimated Timeline:** 4-6 weeks
+**Estimated Investment:** $15,000-$47,000 (3 tier options -- see offer/phase-2/to-review/)
+**Design Constraint:** Voice-friendly / dyslexia-accessible interfaces required (Kelsey's UX needs)
+
+> **Key Distinction: Equipment vs Inventory**
+> Phase 2 addresses TWO separate tracking needs:
+> - **Inventory/Consumables** (Ply) = Plotter Mechanix's own stock: printheads, inks, paper, belts, maintenance kits. Megan is implementing Ply (getply.com) for this -- parts tracking, truck stock, purchase orders, barcode scanning, Jobber integration.
+> - **Customer Equipment** (Equipment Management Platform) = printers, plotters, cutters at customer locations. Tracked by serial number, model, service history, contracts. We will evaluate off-the-shelf solutions (Miracle Service, Field Force Tracker, BlueFolder) before considering a custom build.
+> - **Legacy: Capsule CRM** = Kelsey still paying ~$30/mo for old customer contact database not migrated to Jobber. Data to be audited and migrated during Phase 2.
 
 ### Built on Phase 1 Foundation
 
@@ -217,7 +224,10 @@ Phase 1 creates the infrastructure to enable Phase 2:
 ### The Core Problem
 
 **Inventory Blindness:**
-> "No fucking clue what we have" - Chris
+> "No fucking clue what we have" - Kelsey
+
+**Customer Equipment Blindness:**
+> Service history in Kelsey's head, no database of customer equipment at their locations
 
 **Impact:**
 - Wasted trips (start job, realize no parts, reschedule)
@@ -226,6 +236,8 @@ Phase 1 creates the infrastructure to enable Phase 2:
 - Can't plan routes effectively
 - Can't hire second tech (no inventory system)
 - Blocks Lucid Motors contract (200 cuts/day scale)
+- Can't identify service contract eligible customers (no equipment records)
+- Reactive service only (no proactive maintenance)
 
 ### Potential Deliverables (To Be Scoped)
 
@@ -268,7 +280,7 @@ If parts missing: Alert + suggest purchase
      ↓
 Generate next-day route with confirmed parts
      ↓
-SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
+SMS to Kelsey: "Tomorrow's plan - all parts confirmed ✓"
 ```
 
 **Value:** Eliminate "hope I have the right parts" uncertainty
@@ -285,8 +297,9 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 - New leads
 
 **Role-Based Views:**
-- Chris: Field operations + strategic metrics
+- Kelsey: Field operations + strategic metrics
 - Alyssa: Admin queue + invoicing + inventory
+- Andrew: Supplies, sales, customer follow-ups
 - Joe: Assigned jobs + training checklist
 
 **Mobile Optimized:** Pine Top balcony vision
@@ -312,7 +325,7 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 - Tagged by equipment type, skill level, scenario
 - Mobile-accessible for field reference
 
-**Goal:** Capture Chris's 25+ years expertise in searchable format
+**Goal:** Capture Kelsey's 25+ years expertise in searchable format
 
 #### 2.5 Automated Pricing System
 **Problem:** Vendor quotes arrive via email (PDFs), manual process to apply markup and generate customer quotes
@@ -361,7 +374,7 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 | Second tech scalability | Ready to hire |
 
 **Qualitative:**
-- Chris confident in job planning night before
+- Kelsey confident in job planning night before
 - Alyssa knows inventory status without asking
 - Joe can check parts availability independently
 - Foundation ready for Lucid Motors contract
@@ -438,13 +451,13 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 - Customer lifetime value
 
 #### 3.4 Industry Platform ("PlotterOps")
-**Chris's Vision:**
+**Kelsey's Vision:**
 > "You're putting the money in to build this system, this ecosystem that we are going to turn into Plotter Mechanics software down the road." - Matthew
 
 **Productization Opportunity:**
 - Package PlotterOps as industry SaaS
 - License to other printer service businesses
-- Chris becomes consultant/thought leader
+- Kelsey becomes consultant/thought leader
 - Recurring revenue from software licenses
 - Scale impact beyond Phoenix
 
@@ -453,7 +466,7 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 2. Deploy to 1-2 pilot customers (validate generalization)
 3. Build SaaS infrastructure (multi-tenant)
 4. Go-to-market strategy
-5. Chris: operator → industry platform CEO
+5. Kelsey: operator → industry platform CEO
 
 ### Success Vision
 
@@ -461,11 +474,11 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 > "Sitting at Pine Top drinking on your coffee in the mornings on your balcony... all you have to do is just make phone calls and get paid." - Client vision
 
 **Impact Outcome:**
-> "My heart is, I want to do something financially... I want to start and help kids, dude." - Chris
+> "My heart is, I want to do something financially... I want to start and help kids, dude." - Kelsey
 
 **Business Outcome:**
 - System operates Plotter Mechanix autonomously
-- Chris focuses on strategic growth, not daily firefighting
+- Kelsey focuses on strategic growth, not daily firefighting
 - Multiple revenue streams (service + software licensing)
 - Industry leadership position
 - Foundation for social impact goals
@@ -484,25 +497,25 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 - Niche industry with high expertise barrier
 - Small businesses struggling with same problems
 - No dominant software solution
-- Chris's expertise is differentiator
+- Kelsey's expertise is differentiator
 
 **Potential:**
 - SaaS platform for printer service industry
-- Training/certification program (Chris's knowledge scaled)
+- Training/certification program (Kelsey's knowledge scaled)
 - Equipment supplier partnerships
 - Parts marketplace
 - Industry conference/community
 
 ### Impact Goals
 
-**Chris's "Why":**
+**Kelsey's "Why":**
 - Financial freedom to focus on kids/community
 - Share knowledge (training next generation)
 - Scale impact beyond Phoenix
 - Build something bigger than one business
 
 **Trent's Role:**
-> "I'm just trying to get you there. I want to get you there and I want to play a role in that legacy." - Trent to Chris
+> "I'm just trying to get you there. I want to get you there and I want to play a role in that legacy." - Trent to Kelsey
 
 ---
 
@@ -537,7 +550,7 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 
 **GO Decision Criteria:**
 - [ ] Plotter Mechanix operating smoothly at scale
-- [ ] Chris's role shifted from operator to strategic
+- [ ] Kelsey's role shifted from operator to strategic
 - [ ] Interest from other businesses validated
 - [ ] Platform architecture generalizable
 - [ ] Market research supports opportunity
@@ -548,8 +561,8 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 
 | Phase | Status | Timeline | Investment | ROI |
 |-------|--------|----------|------------|-----|
-| Phase 1 | In Progress | 4 weeks | $5,000 | 17-25x ($1,750/mo value) |
-| Phase 2 | Planning | 8-12 weeks | $15K-$30K (TBD) | TBD (based on P1 data) |
+| Phase 1 | Deployed | 4 weeks | $5,000 | 17-25x ($1,750/mo value) |
+| Phase 2 | Internal Review | 4-6 weeks | $15K-$47K (3 tiers) | 248%+ Year 1 ROI |
 | Phase 3 | Conceptual | 6-12 months | TBD | TBD |
 | Phase 4+ | Vision | Multi-year | TBD | Platform/licensing revenue |
 
@@ -559,25 +572,24 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 
 ---
 
-## Current Status: Week 1 Testing
+## Current Status: Phase 1 Deployed, Phase 2 Internal Review
 
-**Active Tasks:**
-- Testing Quo-Jobber integration quality
-- Validating iOS default calling functionality
-- Assessing call transcript usefulness
-- Testing email parsing and spam filtering
-- Documenting findings for GO/NO-GO decision
+**Phase 1 Outcomes:**
+- Quo-Jobber integration deployed and live
+- IVR call routing configured (5-extension menu: Service→Kelsey, Supplies→Andrew, Sales→Andrew, Printing→Joe, Accounting→Nikki)
+- Kelsey adopted Quo as default phone app
+- Kelsey proactively telling customers about call recording
 
-**Next Milestone:**
-- End of Week 1: GO/NO-GO decision on Option 4c
-- If GO: Proceed to Week 2 (Quo configuration)
-- If NO-GO: Pivot to alternative approach
+**Phase 2 Status (Jan 28, 2026):**
+- Internal team review of 3-tier proposal in progress
+- Updated with Jan 27 Kelsey call insights (revenue trajectory, dyslexia constraint, team updates)
+- Validation phase planned before client presentation
 
-**Access Confirmed:**
-- Quo account created (Kelsey)
-- Matthew has Quo access
-- Matthew has Jobber access
-- Ready to begin testing immediately
+**Team Updates (from Jan 27 call):**
+- Andrew: Fully operational (not ramping) on supplies/sales
+- Joe: More capable than assumed (Apache Rental solo, 10yr cutter experience)
+- Steve: Permanently off table (personal issues). Pivoting to Michael Maloney / subcontractor model
+- Market tailwind: HP competitors on credit hold, driving demand to Kelsey
 
 ---
 
@@ -631,8 +643,8 @@ SMS to Chris: "Tomorrow's plan - all parts confirmed ✓"
 
 ---
 
-**Last Updated:** December 23, 2025
-**Next Review:** End of Week 1 Testing (Dec 30, 2025)
+**Last Updated:** January 28, 2026
+**Next Review:** After Phase 2 team review completion
 **Document Owner:** Trent (Architect)
 
 ---

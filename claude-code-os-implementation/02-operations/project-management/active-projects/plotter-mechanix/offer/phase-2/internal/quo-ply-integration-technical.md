@@ -4,6 +4,13 @@
 **Purpose:** Explain what "see inventory during calls" actually means
 **Investment:** Part of $8,000 Ply Enhancement Layer
 
+> **Two Data Sources During Calls**
+> This integration involves TWO distinct lookups:
+> 1. **Ply (inventory/consumables):** "Do we have X in stock?" -- checks Plotter Mechanix's own parts, inks, printheads, maintenance kits
+> 2. **Equipment Management Platform (customer devices):** "What equipment does this customer have?" -- checks customer printers/plotters at their locations (serial #s, service history, contracts)
+>
+> Ply handles #1. The equipment platform (evaluated and selected as a separate deliverable) handles #2. Both feed into the chat agent and call context display.
+
 ---
 
 ## The Problem (Current State)
@@ -30,6 +37,20 @@
 - Can't quote accurately on first call = callbacks
 
 **Annual Cost:** ~$62,500/year in Kelsey's time wasted (10 interruptions/day × 5 min × $300/hr × 250 days)
+
+---
+
+## UX Constraint: Kelsey's Dyslexia
+
+**Critical design requirement from Jan 27 call:** Kelsey explicitly described difficulty with new software: *"I can't learn on the fly with software I've never seen before. I can't even see the buttons on the screen."* His dyslexia makes traditional UI approaches high-risk.
+
+**Implications for this integration:**
+- Chat agent / voice interface is validated as the RIGHT approach (accessibility, not just efficiency)
+- Any inventory lookup must be conversational or extremely simple
+- Kelsey's Siri texting interest confirms strong voice-first user buy-in
+- Andrew is an additional user of inventory lookup (not just Alyssa) -- he's fully operational on supplies
+
+**IVR routing context:** 5-extension menu now defined (Service→Kelsey, Supplies→Andrew, Sales→Andrew, Printing→Joe, Accounting→Nikki). Integration must account for call routing context -- when a supplies call comes in, the chat agent should surface supply-relevant inventory, not service parts.
 
 ---
 
@@ -90,11 +111,12 @@ Quo Call Start Webhook
     ↓
 N8N Workflow
     ↓
-Jobber API (get customer + equipment from jobs)
+Jobber API (get customer from jobs)
     ↓
-Ply API (search inventory for common parts)
+├── Equipment Platform API (get customer devices, service history)
+├── Ply API (search consumables/inventory for common parts)
     ↓
-Quo Custom Panel/Widget (display inventory)
+Quo Custom Panel/Widget (display both equipment + inventory)
 ```
 
 **Challenge:** Does Quo support custom panels/widgets? Need to research Quo API.
@@ -177,26 +199,37 @@ Just make Ply aware of WHO is calling:
 
 ## Customer Context Integration
 
+**Two Systems, One View:**
+
+When a customer calls, the chat agent / call context display pulls from TWO sources:
+
+| Question | Data Source | System |
+|----------|------------|--------|
+| "What equipment does this customer have?" | Equipment management platform | Customer devices at their location |
+| "Do we have parts in stock for their equipment?" | Ply | Our consumables/inventory |
+
 **Smart Pre-Loading:**
 
-When customer calls, auto-display THEIR common parts:
+When customer calls, auto-display context from both systems:
 
 **Example: ABC Graphics calls**
 
-Equipment CRM knows ABC Graphics has:
+**From Equipment Platform** (customer devices at their location):
 - HP DesignJet T730 (Serial: ABC123, installed 2022)
 - Canon iPF9400 (Serial: XYZ789, installed 2019)
 
-Ply integration pre-loads:
-- ✅ HP T730 Maintenance Kit - 2 in stock
-- ✅ HP T730 Printhead - 1 in stock
-- ❌ Canon iPF9400 Ink (Black) - Out of stock, ETA Jan 28
-- ✅ Canon iPF9400 Maintenance Kit - 3 in stock
+**From Ply** (our inventory/consumables for their equipment):
+- HP T730 Maintenance Kit - 2 in stock
+- HP T730 Printhead - 1 in stock
+- Canon iPF9400 Ink (Black) - Out of stock, ETA Jan 28
+- Canon iPF9400 Maintenance Kit - 3 in stock
 
-**Alyssa sees this BEFORE customer even asks.**
+**Alyssa sees BOTH before the customer even asks.**
 
 **Result:** She can proactively say:
 > "Hi ABC Graphics! I see you have the T730 and the iPF9400. We have maintenance kits in stock for both if you need them."
+
+**The key distinction:** Ply answers "Do we have X in stock?" (our consumables). The equipment platform answers "What devices does this customer have?" (their equipment). Both are needed during calls.
 
 ---
 
@@ -254,7 +287,7 @@ Ply integration pre-loads:
 - [ ] N8N workflow: Quo call → Customer lookup → Equipment identification
 - [ ] Ply API connector in N8N (or polling mechanism)
 - [ ] Build inventory lookup interface (web app or Quo panel)
-- [ ] Connect Equipment CRM → Common parts pre-loading logic
+- [ ] Connect Equipment platform → Common parts pre-loading logic
 - [ ] Test with sample customer data
 
 ### Week 4: Test & Refine
@@ -349,15 +382,18 @@ AI copilot:
 │ Equipment: HP T730, Canon iPF9400                          │
 ├─────────────────────────────────────────────────────────────┤
 │ ┌─────────────────────────────────────────────────────────┐ │
-│ │ 📦 INVENTORY (Ply Integration)                          │ │
+│ │ CUSTOMER EQUIPMENT (Equipment Platform)                   │ │
+│ │ HP DesignJet T730 (Serial: ABC123, 2022)                │ │
+│ │ Canon iPF9400 (Serial: XYZ789, 2019)                    │ │
 │ │                                                           │ │
-│ │ Search: [HP T730 maintenance________] 🔍                │ │
+│ │ INVENTORY/CONSUMABLES (Ply)                              │ │
+│ │ Search: [HP T730 maintenance________]                    │ │
 │ │                                                           │ │
-│ │ Common Parts for This Customer:                          │ │
-│ │ ✅ HP T730 Maintenance Kit - 2 in stock (Bin A3) $145   │ │
-│ │ ✅ HP T730 Printhead - 1 in stock (Bin B1) $280          │ │
-│ │ ❌ Canon iPF9400 Ink (Black) - Out of stock, ETA Jan 28 │ │
-│ │ ✅ Canon iPF9400 Maintenance Kit - 3 in stock (Bin A5)  │ │
+│ │ Parts for This Customer's Equipment:                     │ │
+│ │ HP T730 Maintenance Kit - 2 in stock (Bin A3) $145      │ │
+│ │ HP T730 Printhead - 1 in stock (Bin B1) $280            │ │
+│ │ Canon iPF9400 Ink (Black) - Out of stock, ETA Jan 28    │ │
+│ │ Canon iPF9400 Maintenance Kit - 3 in stock (Bin A5)     │ │
 │ │                                                           │ │
 │ │ [View Full Inventory] [Add to Quote]                    │ │
 │ └─────────────────────────────────────────────────────────┘ │

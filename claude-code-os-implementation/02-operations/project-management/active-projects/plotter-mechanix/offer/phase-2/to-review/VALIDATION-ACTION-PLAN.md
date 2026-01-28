@@ -33,7 +33,7 @@
 | **Alyssa's "Do we have X?" interruptions** | 10/day × 5 min | 🔴 LOW | 5-day tally log | Alyssa |
 | **Alyssa's email processing time** | Unknown | 🔴 LOW | 5-day time tracking | Alyssa |
 | **Alyssa's context-switching time** | Unknown | 🔴 LOW | 5-day tracking | Alyssa |
-| **Business annual revenue** | $600k estimate | 🔴 LOW | Financial records | Kelsey/Nikki |
+| **Business annual revenue** | $700-800k est (trending $1.2M-$1.7M target) | 🟡 MEDIUM | Financial records -- ask for 2025 actual + 2026 YTD | Kelsey/Nikki |
 | **Service contract eligible customers** | 20 estimate | 🔴 LOW | Jobber data analysis | Matthew |
 | **Ply implementation status** | Unknown % | 🔴 LOW | Megan interview | Matthew/Linh |
 | **Used parts inventory value** | $50k estimate | 🟡 MEDIUM | Megan interview | Matthew/Linh |
@@ -47,6 +47,17 @@
 | Equipment lookup time | Unknown | 5-day tracking | Alyssa |
 | Joe's onboarding timeline | 4-6 weeks estimate | Kelsey interview | Matthew/Chris |
 | Kelsey's actual billable rate | $300/hr estimate | Confirm with Kelsey | Matthew/Chris |
+
+### Equipment Management Platform Evaluation (Must Complete Before Phase 2 Build)
+
+| Task | Details | Method | Owner |
+|------|---------|--------|-------|
+| **Evaluate off-the-shelf equipment platforms** | Research Miracle Service, Field Force Tracker, BlueFolder, IndusTrack, and custom build option | Demo/trial each platform, compare features vs. Plotter Mechanix needs | Matthew/Trent |
+| **Confirm Ply = consumables/inventory only** | Ask Kelsey/Megan: "Does Ply track any customer equipment at their locations, or only your own inventory/consumables?" | Megan interview (Section 3, add question) | Matthew |
+| **Audit Capsule CRM data** | Kelsey still paying ~$30/mo for Capsule with legacy customer contacts not migrated to Jobber. What data exists? Where should it go? | Ask Kelsey: "What contacts exist in Capsule? Should they migrate to Jobber, the equipment management platform, or both?" | Matthew/Chris |
+| **Evaluate platform integration capabilities** | Can the selected platform integrate with Jobber, Quo, chat agents via API? | Technical review during platform evaluation | Matthew/Trent |
+
+> **Reframe:** The Equipment CRM investment ($8k-$10k in the proposal) covers platform evaluation, selection, implementation, and custom integrations -- not necessarily a ground-up custom build. If an off-the-shelf platform fits, integration cost may be lower but adds ongoing SaaS cost.
 
 ---
 
@@ -381,26 +392,36 @@ TOTAL: ____ hours/week
 
 **Section 3: Gaps & Needs (15 min)**
 
-10. **What does Ply NOT handle that the business needs?**
-    - Equipment serial #s and service history?
+10. **Confirm: Does Ply handle ONLY inventory/consumables (your own stock), or does it also track customer equipment at their locations?**
+    - We need to confirm: Ply = parts, inks, printheads, paper, belts, maintenance kits (your consumables)
+    - Customer equipment (printers/plotters at customer sites, serial numbers, service history) = separate system
+    - This distinction affects what we build vs. what we buy
+
+11. **What does Ply NOT handle that the business needs?**
+    - Customer equipment serial #s and service history? (Expected: Ply does NOT do this)
     - Used parts from parted machines?
     - Printer-specific workflows?
 
-11. **What's the biggest challenge you're facing with Ply?**
+12. **What's the biggest challenge you're facing with Ply?**
     - Data entry? Configuration? Training?
 
-12. **How do you track used parts from parted machines?**
+13. **How do you track used parts from parted machines?**
     - Any system for this now?
     - Estimate of value in used parts inventory?
 
-13. **How does pricing get updated in Ply?**
+14. **How does pricing get updated in Ply?**
     - Manual entry from vendor emails?
     - Any automation?
 
-14. **What would make Ply work better for Plotter Mechanix?**
+15. **What would make Ply work better for Plotter Mechanix?**
     - Custom categories?
     - Different workflows?
     - Better integration with other tools?
+
+16. **Are you aware of Kelsey's Capsule CRM account?**
+    - Still paying ~$30/mo
+    - Has legacy customer contacts not in Jobber
+    - Should this data be migrated somewhere?
 
 ---
 
@@ -437,26 +458,28 @@ TOTAL: ____ hours/week
 
 ---
 
-**Section 1: Supplies Vision (15 min)**
+**Section 1: Supplies Operations (15 min)**
 
-1. **What's your vision for the supplies side of the business?**
-   - Revenue target?
-   - Customer segments?
-   - Product lines?
+*Note: Andrew is fully operational (email, Quo, Jobber, all inbox access, working for free until revenue). Focus on validating what's working and identifying gaps, not understanding his vision.*
 
-2. **Walk us through your ideal sales process**
-   - How do you want leads to come in?
+1. **Now that you're live, what's working well?**
+   - What tools are you using daily?
+   - Where are you spending most of your time?
+   - What's the sales pipeline looking like?
+
+2. **Walk us through a typical day handling supplies/sales**
+   - How do leads come in now?
    - Quote/pricing process?
-   - Order fulfillment?
+   - Order fulfillment flow?
 
-3. **What's unique about supplies vs. service parts?**
-   - Different vendors?
-   - Different customers?
-   - Different pricing strategy?
+3. **What's NOT working or slowing you down?**
+   - Tool gaps?
+   - Information you can't find quickly?
+   - Handoff friction with Kelsey/Alyssa?
 
-4. **What's your timeline for ramping up supplies?**
-   - When will you be actively selling?
-   - How much time are you dedicating to this?
+4. **What rare parts sourcing capabilities do you bring?**
+   - Kelsey mentioned you can source things others can't
+   - Which suppliers/networks do you tap?
 
 ---
 
@@ -529,8 +552,9 @@ TOTAL: ____ hours/week
    - Weeks until he was 50% productive?
    - How many hours did you invest total?
 
-3. **If you hired Steve tomorrow, how long would onboarding take?**
+3. **If you hired Michael Maloney or another tech, how long would onboarding take?**
    - Same as Joe or faster (because you know what to teach now)?
+   - How is the subcontractor model working (former Plotter Doctors employee)?
 
 ---
 
@@ -541,8 +565,13 @@ TOTAL: ____ hours/week
    - Is $300/hr accurate or should we use different number?
 
 5. **Annual revenue confirmation**
-   - Is $600k accurate for 2024/2025?
+   - Jan 27 call: $100k+ more than prior year, targeting $1.2M-$1.7M. Can we get 2025 actual + 2026 YTD?
    - What's the revenue goal for 2026?
+
+5b. **How is call volume (7+/day) affecting your available time for training/adoption?**
+   - Is there bandwidth to learn new tools?
+   - How do you prefer to interact with software? (voice, simple screens, chat?)
+   - *Context: Kelsey mentioned dyslexia -- we want to ensure any system we build is easy to use*
 
 6. **How many hours/week do you want to work long-term?**
    - Currently: ____
@@ -564,6 +593,13 @@ TOTAL: ____ hours/week
 9. **Do you track equipment serial numbers anywhere?**
    - Spreadsheet? Jobber? Memory?
    - How do you remember customer equipment?
+   - _Note: This is about customer equipment at their locations (printers, plotters, cutters) -- not your own parts inventory (that's Ply)_
+
+10. **Capsule CRM -- what's in there?**
+    - You're still paying ~$30/mo for Capsule
+    - What customer contacts or data is in Capsule that isn't in Jobber?
+    - Should we migrate that data to Jobber or the new equipment management platform?
+    - Can we cancel Capsule once data is migrated?
 
 **Closing:**
 - Thank you for time tracking
@@ -672,7 +708,7 @@ Most common equipment in job notes:
 4. Epson: ____ jobs
 5. Other: ____ jobs
 
-This informs Equipment CRM setup.
+This informs equipment management platform setup.
 ```
 
 4. **Average Job Value**
@@ -697,7 +733,7 @@ This helps estimate impact of efficiency improvements.
 | Email processing time | Unknown | ____ hrs/week | N/A | $____ /year |
 | Context switching time | Unknown | ____ min/day | N/A | $____ /year |
 | Contract eligible customers | 20 | ____ | ____% | $____ /year |
-| Annual revenue | $600k | $____ k | ____% | Context |
+| Annual revenue | $700-800k (was $600k est) | $____ k | ____% | Context |
 | Used parts inventory | $50k | $____ k | ____% | $____ /year |
 
 **Updated ROI Calculation:**
@@ -705,7 +741,7 @@ This helps estimate impact of efficiency improvements.
 | Deliverable | Original ROI | Validated ROI | Change |
 |-------------|-------------|---------------|--------|
 | Training System | $39,000/year | $____ /year | ____% |
-| Equipment CRM | $37,600/year | $____ /year | ____% |
+| Equipment Management | $37,600/year | $____ /year | ____% |
 | Chat Agent | $25,000/year | $____ /year | ____% |
 | Email Automation | $15,000/year | $____ /year | ____% |
 | **TOTAL** | **$116,600/year** | **$____ /year** | ____% |

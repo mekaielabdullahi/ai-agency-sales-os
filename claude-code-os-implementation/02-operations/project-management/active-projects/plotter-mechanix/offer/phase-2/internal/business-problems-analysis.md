@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-**Current State:** ~$600k revenue, 2-3 technicians, owner-operator model
+**Current State:** ~$700-800k revenue (trending toward $1.2M-$1.7M target), 2-3 technicians + subcontractors, owner-operator model
 **10x Vision:** $6M revenue, 20-30 technicians, systematized operations
 
 **The Question:** What problems prevent you from scaling 10x?
@@ -21,9 +21,14 @@
 5. **Customer Intelligence** (service history scattered)
 
 **Current Initiatives (Already Underway):**
-- ✅ **Andrew:** Ramping up supplies side with domain knowledge
+- ✅ **Andrew:** Fully operational on supplies/sales -- email, Quo, Jobber, all inbox access (not ramping -- live)
 - ✅ **Megan:** Setting up Ply for inventory management
-- ✅ **Phase 1:** Quo→Jobber workflow reducing Kelsey/Alyssa handoff friction
+- ✅ **Phase 1:** Quo-Jobber integration deployed and working. Kelsey chose Quo as default phone.
+- ✅ **IVR:** 5-extension call routing configured (Service→Kelsey, Supplies→Andrew, Sales→Andrew, Printing→Joe, Accounting→Nikki)
+
+**Critical UX Constraint:** Kelsey has dyslexia -- *"I can't learn on the fly with software I've never seen before. I can't even see the buttons on the screen."* Any Phase 2 system must be voice-friendly, conversational, or extremely simple.
+
+**Market Tailwind:** HP competitors on credit hold, supply chain issues driving demand to Kelsey's independent service. Window of opportunity to scale.
 
 **Phase 2 Role:** Support these initiatives + fill the gaps + validate ROI
 
@@ -35,8 +40,9 @@
 
 | Metric | Current (1x) |
 |--------|--------------|
-| Revenue | ~$600,000/year |
-| Technicians | 2-3 (Kelsey, Joe, potential Steve) |
+| Revenue | ~$700-800k/year (trending $1.2M-$1.7M target; did $100k+ more than prior year) |
+| Technicians | 2-3 (Kelsey, Joe, subcontractors -- former Plotter Doctors employee for overflow) |
+| Supplies/Sales | Andrew (fully operational -- email, Quo, Jobber, all inbox access. Working for free until revenue) |
 | Admin | 1 (Alyssa) |
 | Service calls/week | ~20-30 |
 | Customers | ~100-200 active |
@@ -84,7 +90,7 @@
 - Kelsey trains every technician personally
 - All expertise in Kelsey's head
 - 5 hours/week training Joe
-- Can't hire Steve (no bandwidth to train)
+- Steve permanently off table (personal issues); pivoting to Michael Maloney or subcontractor model
 
 **The 10x Problem (What Breaks):**
 - Need to train 20+ techs
@@ -142,10 +148,10 @@
 
 **Our Solution:** Unified Chat Agent
 - Single interface for ALL data queries
-- Tool access to: Ply, Quo, Jobber, QuickBooks, Equipment CRM
+- Tool access to: Ply (inventory/consumables), Equipment platform (customer devices), Quo, Jobber, QuickBooks
 - Anyone at company can ask:
   - "Do we have HP 730 ink in stock?" → Queries Ply
-  - "Show me ABC Graphics service history" → Queries Equipment CRM + Jobber
+  - "Show me ABC Graphics service history" → Queries Equipment platform + Jobber
   - "What's our revenue this month?" → Queries QuickBooks
   - "Are there any open POs for Canon parts?" → Queries email + Jobber
 
@@ -199,11 +205,12 @@
 **What Ply Doesn't Do (Our Opportunity):**
 | Gap | Our Solution |
 |-----|--------------|
-| Equipment serial #s & service history | Equipment CRM |
+| Customer equipment at their locations (serial #s, service history) | Equipment management platform (evaluate & implement) |
 | Used parts from parted machines | Used parts tracking module |
-| Quo call context (inventory during calls) | Chat agent Ply integration |
+| Quo call context (consumables visibility during calls) | Chat agent Ply integration |
 | Printer-specific workflow needs | Custom Ply configuration support |
 | Vendor pricing email extraction | Email automation |
+| Legacy customer contacts (Capsule CRM) | Data audit and migration |
 
 **How We Support Megan:**
 1. Interview to understand Ply implementation status
@@ -270,15 +277,22 @@
 
 ### Problem 5: Customer Intelligence Gap
 
+> **Equipment vs Inventory Distinction**
+> This problem is about **customer equipment at their locations** (printers, plotters, cutters -- tracked by serial number, model, service history, contracts). This is NOT about Plotter Mechanix's own parts inventory (printheads, inks, paper, belts) -- that's handled by Ply. These are fundamentally different systems:
+> - **Equipment** = customer devices at customer sites (HP DesignJet T730 at ABC Graphics)
+> - **Inventory/Consumables** = your own stock (HP T730 maintenance kits on your shelf) -- Ply handles this
+> - **Ply (getply.com)** = inventory/consumables only. Parts tracking, truck stock, purchase orders, barcode scanning, Jobber integration. Does NOT track customer equipment.
+
 **The 1x Problem:**
-- Equipment service history in Kelsey's head
-- No central database of customer equipment (serial #s, models, install dates)
+- Customer equipment service history in Kelsey's head
+- No central database of customer equipment at their locations (serial #s, models, install dates)
 - Can't identify service contract eligible customers
 - Reactive service only (no proactive maintenance)
 - Manual lookup during customer calls
+- Legacy customer contacts in Capsule CRM (~$30/mo) not migrated to Jobber
 
 **The 10x Problem (What Breaks):**
-- 2,000 customers = impossible to remember histories
+- 2,000 customers = impossible to remember equipment histories
 - Miss proactive maintenance revenue (20% of potential)
 - Sign bad service contracts (no history to evaluate)
 - Customer churn from reactive-only service
@@ -287,28 +301,44 @@
 **Annual Cost at 1x:** $30,000-50,000/year (missed contract revenue + churn)
 **Annual Cost at 10x:** $300,000-500,000/year
 
-**Current Initiative:** None (Ply tracks parts, not customer equipment)
+**Current Initiative:** None (Ply tracks consumables/inventory, not customer equipment)
 
-**Our Solution:** Equipment CRM
+**Our Solution:** Evaluate and Implement Equipment Management Platform
+
+Rather than building a custom Equipment CRM from scratch, we will **research and evaluate purpose-built equipment management solutions** for the printer/plotter service industry, then build custom integrations around the selected platform.
+
+**Known off-the-shelf options to evaluate:**
+- **Miracle Service** -- 30+ years in printer service industry, meter billing, managed print services
+- **Field Force Tracker** -- printer/copier specific field service management
+- **BlueFolder** -- equipment tracking with serial numbers and service history
+- **IndusTrack** -- field service equipment management
+- **Custom build** -- only if no off-the-shelf platform fits
+
+**What the selected platform provides:**
 - Customer equipment database (serial #s, models, install dates)
 - Maintenance history log (what was done, when, by whom, parts used)
 - Service contract eligibility scoring
 - Proactive maintenance reminders
+
+**What we build (integrations):**
 - Integration with Jobber (link equipment to jobs)
+- Integration with Quo (surface customer equipment context during calls)
+- Integration with Ply (bridge: link customer equipment to consumables in stock)
 - Accessible via Chat agent during calls
+- Capsule CRM data migration (legacy customer contacts)
 
 **Example Use Case:**
 
 **Customer calls:** "My HP T730 is showing an error."
 
-**Alyssa sees in Chat agent:**
+**Alyssa sees in Chat agent (data from two systems):**
 ```
-📞 ABC Graphics calling
-🔧 Equipment: HP T730 (Serial: ABC123, Installed: 2022)
-📅 Last Service: Jan 15, 2026 (Maintenance kit replacement)
-🔔 Meter Reading: 45,000 prints (due for service at 50,000)
-💰 Service Contract: Eligible (3+ services/year, equipment value $8k)
-📦 Parts in stock: ✅ T730 maintenance kit, ✅ Printhead
+ABC Graphics calling
+[From Equipment Platform] Equipment: HP T730 (Serial: ABC123, Installed: 2022)
+[From Equipment Platform] Last Service: Jan 15, 2026 (Maintenance kit replacement)
+[From Equipment Platform] Meter Reading: 45,000 prints (due for service at 50,000)
+[From Equipment Platform] Service Contract: Eligible (3+ services/year, equipment value $8k)
+[From Ply] Parts in stock: T730 maintenance kit, Printhead
 ```
 
 **ROI Validation:**
@@ -326,10 +356,11 @@
 ### Andrew's Supplies Initiative
 
 **What Andrew is Doing:**
-- Ramping up supplies side of business
-- Leveraging domain knowledge from years in industry
-- Building vendor relationships
-- Establishing pricing/margin strategy
+- Fully operational -- email (andrew@plottermechanics.com), Quo, Jobber, all inbox access
+- Working for free until revenue comes in (no pie to slice yet)
+- Leveraging domain knowledge from years in industry (rare parts sourcing expertise)
+- Handling supplies, sales, and customer follow-ups independently
+- Collaborating with Alyssa on Jobber quoting
 
 **How We Support (Not Replace):**
 - Interview Andrew to understand his vision and process
@@ -348,17 +379,21 @@
 ### Megan's Ply Initiative
 
 **What Megan is Doing:**
-- Implementing Ply for inventory management
+- Implementing Ply for inventory and consumables management (printheads, inks, paper, belts, maintenance kits)
 - Setting up Jobber sync
 - Configuring categories and workflows
 - Training team on Ply usage
+- Ply handles: parts tracking, truck stock, purchase orders, barcode scanning
+
+**Ply Scope (Important):** Ply is an inventory/consumables platform. It tracks what Plotter Mechanix owns and stocks. It does NOT track customer equipment at customer locations -- that's a separate system (see Equipment Management Platform under Problem 5).
 
 **How We Support (Not Replace):**
 - Interview Megan to understand implementation status
+- Confirm Ply scope: consumables/inventory only, not customer equipment
 - Fill gaps Ply doesn't cover:
-  - Equipment CRM (customer equipment history)
+  - Customer equipment tracking (separate equipment management platform)
   - Used parts tracking (parted machines)
-  - Quo call context integration (inventory visibility during calls)
+  - Quo call context integration (consumables visibility during calls)
   - Email automation (vendor pricing extraction)
 - Work WITH Ply (via API), not build competing system
 - Help with custom configuration for printer-specific needs
@@ -367,6 +402,22 @@
 - Duplicate what Ply already does
 - Replace Megan's role
 - Build custom inventory system (Ply is that system)
+- Confuse inventory (Ply) with customer equipment tracking (separate platform)
+
+---
+
+### Capsule CRM (Legacy Data Source)
+
+**What Capsule Contains:**
+- Old customer contacts not yet migrated to Jobber
+- Kelsey still paying ~$30/mo
+- Data needs to be audited and migrated as part of Phase 2
+
+**Phase 2 Action:**
+- Audit what contacts/data exist in Capsule
+- Determine migration destination (Jobber for contacts, equipment platform for device records)
+- Migrate data and cancel Capsule subscription
+- Saves ~$360/year in unnecessary SaaS cost
 
 ---
 
@@ -393,7 +444,7 @@
 | Deliverable | Investment | Supports Which Initiative | ROI/Year |
 |-------------|------------|---------------------------|----------|
 | **1. Training System** | $18,000 | Kelsey's scaling vision | $39,000 |
-| **2. Equipment CRM** | $10,000 | Customer intelligence (new) | $37,600 |
+| **2. Equipment Management (evaluate + implement)** | $10,000 | Customer intelligence (new) | $37,600 |
 | **3. Unified Chat Agent** | $10,000 | Information flow + Megan's Ply | $25,000 |
 | **4. Email Automation** | $5,000 | Communication overload | $15,000 |
 | **5. Integration Work** | $4,000 | Connect all initiatives | Efficiency |
@@ -421,19 +472,24 @@
 - Training videos: 0 → 25-30
 - New tech onboarding time: 4-6 weeks → 2-3 weeks
 - Kelsey training time: 5 hrs/week → 2.5 hrs/week
-- Ready to hire Steve: No → Yes
+- Ready to scale team: No → Yes (Michael Maloney, subcontractors, or next hire)
 
 ---
 
-#### 2. Equipment CRM ($10,000)
+#### 2. Equipment Management Platform ($10,000)
 **Problem:** Customer intelligence gap (Problem #5)
 
+**Approach:** Evaluate and implement the best equipment management solution for printer/plotter service, then build custom integrations. Research off-the-shelf options (Miracle Service, Field Force Tracker, BlueFolder) before considering custom build.
+
 **Deliverables:**
-- Customer equipment database (serial #s, models, install dates, meter readings)
+- Platform evaluation report with recommendation
+- Selected platform implemented and configured
+- Customer equipment data populated (serial #s, models, install dates, meter readings)
 - Maintenance history log (linked to Jobber jobs)
 - Service contract eligibility scoring
 - Proactive maintenance reminder system
-- Integration with Jobber and Chat agent
+- Custom integrations: Jobber, Quo, Ply (consumables bridge), Chat agent
+- Capsule CRM data audit and migration
 
 **Success Metrics:**
 - Equipment records: 0 → Top 50 customers (Week 3) → All active (Week 6)
@@ -447,11 +503,11 @@
 **Problem:** Information flow silos (Problem #2)
 
 **Tool Access:**
-- Ply (inventory queries)
+- Ply (inventory/consumables queries -- "Do we have X in stock?")
+- Equipment platform (customer device history -- "What equipment does ABC Graphics have?")
 - Quo (call logs, customer context)
 - Jobber (jobs, invoices, customers)
 - QuickBooks (financial data)
-- Equipment CRM (service history)
 - Email system (vendor communications)
 
 **Key Features:**
@@ -461,9 +517,10 @@
 - Works on desktop and mobile
 
 **Example Queries:**
-- "Do we have HP 730 ink in stock?" → Queries Ply
+- "Do we have HP 730 ink in stock?" → Queries Ply (inventory/consumables)
+- "What equipment does ABC Graphics have?" → Queries Equipment platform (customer devices)
 - "What's our revenue this month?" → Queries QuickBooks
-- "Show me ABC Graphics equipment" → Queries Equipment CRM
+- "Show me ABC Graphics service history" → Queries Equipment platform + Jobber
 - "Are there any open POs for Canon parts?" → Queries email + Jobber
 - "What jobs does Joe have tomorrow?" → Queries Jobber
 
@@ -507,10 +564,10 @@
 | From | To | Purpose |
 |------|-----|---------|
 | Quo call webhooks | Chat agent | Auto-populate customer context |
-| Equipment CRM | Jobber | Link equipment to jobs |
-| Ply API | Chat agent | Inventory queries |
+| Equipment platform | Jobber | Link customer equipment to jobs |
+| Ply API | Chat agent | Inventory/consumables queries |
 | Email system | Ply | Vendor pricing updates |
-| Equipment CRM | Chat agent | Service history queries |
+| Equipment platform | Chat agent | Customer equipment & service history queries |
 | Jobber | Chat agent | Job/invoice lookups |
 
 **Success Metrics:**
@@ -594,7 +651,7 @@
 | Information Access | Unified chat agent | ✅ Scales to any team size | Ready |
 | Inventory Management | Ply + enhancements | ✅ Scales to 10,000 SKUs | Ready |
 | Communication Flow | Email automation | ✅ Scales to 1,000+ emails/day | Ready |
-| Customer Intelligence | Equipment CRM | ✅ Scales to 2,000+ customers | Ready |
+| Customer Intelligence | Equipment management platform | ✅ Scales to 2,000+ customers | Ready |
 
 ---
 
@@ -608,7 +665,7 @@
 
 **Timeline:** 4-6 weeks
 - Week 1: Discovery (Megan/Andrew interviews, data validation, architecture)
-- Week 2-3: Build (Training videos, Equipment CRM, Chat agent foundation)
+- Week 2-3: Build (Training videos, Equipment platform implementation, Chat agent foundation)
 - Week 4-5: Integration (Email automation, Ply API, all systems connected)
 - Week 6: Polish & training (optional - team onboarding, documentation, refinement)
 
