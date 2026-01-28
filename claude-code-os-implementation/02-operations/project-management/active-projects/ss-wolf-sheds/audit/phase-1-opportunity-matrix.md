@@ -4,7 +4,6 @@
 **Phase:** 1 of 4 - Foundation Sprint
 **Investment:** $5,000
 **Timeline:** 2 weeks
-**Framework:** Liam Ottley 3-Step AI Audit (adapted for implementation)
 **Source:** [Phase 1 PRD](../docs-workbook1/PRD-phase-1-database-foundation.md)
 
 ---
@@ -12,59 +11,6 @@
 ## Executive Summary
 
 Phase 1 establishes the business case and operational foundation before building advanced systems. The **ROI Assessment** is the quick win that delivers immediate value while producing the baseline metrics needed for all future phases.
-
----
-
-## Liam Ottley Framework Alignment
-
-This phase maps to **Step 1: Discovery Interviews** of Liam's 3-Step AI Audit Framework.
-
-| Liam's Framework | Our Implementation | Status |
-|------------------|-------------------|--------|
-| Stakeholder Interviews (30,000-ft view) | Sandy + Matthew interviews | ✅ Planned |
-| End-User Interviews (ground-level) | Alex + Scott interviews | ✅ Planned |
-| 3-5 interviews, 30-45 min each | 4 interviews (~90 min total) | ✅ Aligned |
-| Record calls with permission | Use Fathom/Fireflies.ai | ✅ Planned |
-| 80/20 listening rule | Documented in best practices | ✅ Added |
-| Ops Canvas (3 Engines) | Mapped below | ✅ Added |
-| Validation Workshop | End of Week 1 with Sandy | ✅ Added |
-
----
-
-## 3 Engines Mapping (Ops Canvas)
-
-Per Liam's framework, all opportunities map to one of three business engines:
-
-| Engine | Description | Phase 1 Opportunities |
-|--------|-------------|----------------------|
-| **ACQUISITION** | How they find and sign customers | P1-WEB (Website), P1-FORM (Lead Capture) |
-| **DELIVERY** | How they deliver product/service | P1-DB (Inventory Foundation) |
-| **SUPPORT** | Customer questions and post-sale | (Phase 3+) |
-
-### Phase 1 Engine Focus: ACQUISITION + DELIVERY Foundation
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    ACQUISITION ENGINE                           │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   Website    │───►│  Lead Form   │───►│     CRM      │      │
-│  │   P1-WEB     │    │   P1-FORM    │    │  (Phase 2)   │      │
-│  │  🟡 Time Sink│    │  🟡 Quality  │    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                     DELIVERY ENGINE                             │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │  Inventory   │───►│   Pricing    │───►│   Delivery   │      │
-│  │    P1-DB     │    │  (Phase 2)   │    │  (Phase 3)   │      │
-│  │  🟡 Quality  │    │              │    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-
-🟡 = Time Sink or Quality Risk (AI/Automation Opportunity)
-```
 
 ---
 
@@ -94,8 +40,6 @@ Per Liam's framework, all opportunities map to one of three business engines:
 ### P1-ROI: ROI Assessment & Stakeholder Interviews
 
 **Status:** ★★★★★ WEEK 1 QUICK WIN
-**Quadrant:** ⭐ Quick Win (Low Effort, High Impact)
-**Engine:** Cross-functional (feeds all engines)
 
 | Attribute | Detail |
 |-----------|--------|
@@ -107,26 +51,6 @@ Per Liam's framework, all opportunities map to one of three business engines:
 | **Dependencies** | Stakeholder availability |
 | **IP Risk** | LOW - Interview process, not proprietary data |
 | **Timeline** | Week 1 |
-
-#### Interview Structure (Liam Ottley Method)
-
-| Type | Interviewee | Role | Focus | Duration |
-|------|-------------|------|-------|----------|
-| **Stakeholder** | Sandy (Owner) | Leadership | 30,000-ft view: Revenue, goals, strategic challenges | 30 min |
-| **Stakeholder** | Matthew (Williams) | Operations | 30,000-ft view: Costs, processes, bottlenecks | 20 min |
-| **End-User** | Alex (Website) | Ground-level | Daily reality: Traffic, inquiries, frustrations | 15 min |
-| **End-User** | Scott (Driver) | Ground-level | Daily reality: Delivery issues, build errors | 15 min |
-
-#### Interview Best Practices (Liam's Rules)
-
-| Rule | Description |
-|------|-------------|
-| **80/20 Listening** | You talk 20%, they talk 80%. Your job is to understand, not pitch. |
-| **Record Everything** | Use Fathom or Fireflies.ai. Get explicit permission first. |
-| **Ask "Why?" Repeatedly** | When you find a pain point, dig deeper: "Why is it done that way?" |
-| **Focus on Problems** | Don't suggest solutions yet. Understand the pain first. |
-| **Get Specific Numbers** | "How long?" "How many?" "How often?" Vague answers don't build ROI. |
-| **Capture Exact Quotes** | Write down powerful statements verbatim for presentations. |
 
 #### Deliverables
 
@@ -140,7 +64,6 @@ Per Liam's framework, all opportunities map to one of three business engines:
 | CODB Validation | Daily operating cost breakdown verified | ⬜ Pending |
 | Lead Handling SOP | Process documentation from interviews | ⬜ Pending |
 | Lot Operations SOP | Process documentation from interviews | ⬜ Pending |
-| **Validation Workshop** | Co-creation session with Sandy to review findings | ⬜ Pending |
 
 #### Why This Is THE Quick Win
 
@@ -152,35 +75,18 @@ Per Liam's framework, all opportunities map to one of three business engines:
 
 #### Interview → Output Mapping
 
-| Stakeholder | Type | Duration | ROI Output | SOP Output |
-|-------------|------|----------|------------|------------|
-| Sandy (Owner) | Stakeholder | 30 min | Revenue, pricing, close rate | Lead Handling SOP |
-| Matthew (Williams) | Stakeholder | 20 min | Operating costs, CODB | Time tracking baseline |
-| Alex (Website) | End-User | 15 min | Website traffic, lead sources | Repetitive inquiry patterns |
-| Scott (Driver) | End-User | 15 min | Delivery data, build errors | Lot Operations SOP |
-
-#### Validation Workshop (End of Week 1)
-
-Per Liam's framework, after interviews we **validate findings with stakeholders** before finalizing.
-
-**Attendees:** Sandy, Chris (if available)
-**Duration:** 30-45 minutes
-**Format:** Collaborative review, not a pitch
-
-**Questions to Ask:**
-- "Looking at these pain points, which resonate most strongly?"
-- "Are there any hidden complexities we might have missed?"
-- "Which improvements would your team embrace vs. resist?"
-- "Does this align with your priorities for the next 6-12 months?"
-
-**Outcome:** Agreed-upon priorities before presenting final roadmap.
+| Stakeholder | Duration | ROI Output | SOP Output |
+|-------------|----------|------------|------------|
+| Sandy (Owner) | 30 min | Revenue, pricing, close rate | Lead Handling SOP |
+| Matthew (Williams) | 20 min | Operating costs, CODB | Time tracking baseline |
+| Alex (Website) | 15 min | Website traffic, lead sources | Repetitive inquiry patterns |
+| Scott (Driver) | 15 min | Delivery data, build errors | Lot Operations SOP |
 
 #### Success Metrics
 
 - [ ] All 7 data gaps in ROI Calculator filled
 - [ ] CODB validated (currently $400/day estimate)
-- [ ] 2 initial SOPs created
-- [ ] Validation workshop completed with Sandy
+- [ ] Initial SOPs created (count TBD based on assessment)
 - [ ] ROI presentation prepared for Sandy
 
 **See:** [Stakeholder Questions](./stakeholder-questions-roi.md) | [ROI Calculator](./roi-calculator.md)
@@ -190,8 +96,6 @@ Per Liam's framework, after interviews we **validate findings with stakeholders*
 ### P1-WEB: Website Quick Fixes
 
 **Status:** ★★★★★ WEEK 1 PARALLEL
-**Quadrant:** ⭐ Quick Win (Low Effort, High Impact)
-**Engine:** ACQUISITION
 
 | Attribute | Detail |
 |-----------|--------|
@@ -226,17 +130,15 @@ Per Liam's framework, after interviews we **validate findings with stakeholders*
 ### P1-DB: Database Foundation
 
 **Status:** ★★★★★ WEEK 2 FOUNDATION
-**Quadrant:** ⭐ Quick Win (Medium Effort, High Impact)
-**Engine:** DELIVERY
 
 | Attribute | Detail |
 |-----------|--------|
 | **Problem Addressed** | No centralized source of truth for inventory or overhead costs; data scattered across spreadsheets |
-| **Solution** | Firestore collections for `products`, `financial_inputs`, `sops`, and `leads` with strict data hygiene |
+| **Solution** | Centralized data storage for `products`, `financial_inputs`, `sops`, and `leads` with strict data hygiene (platform TBD - evaluate options before committing) |
 | **Impact** | HIGH - Foundation for all subsequent tools (configurator, CRM, dashboards); enables accurate pricing |
 | **Effort** | LOW-MEDIUM - 1 week for initial setup |
 | **Investment** | Part of Phase 1 ($5,000) |
-| **Dependencies** | Firebase/Google Cloud account (CEO-owned), existing inventory data |
+| **Dependencies** | CEO-owned account on chosen platform, existing inventory data |
 | **IP Risk** | LOW - Generic product catalog structure |
 | **Timeline** | Week 2 |
 
@@ -246,8 +148,8 @@ Per Liam's framework, after interviews we **validate findings with stakeholders*
 |-----------|-------------|--------|
 | Sheet 1: Master Shed Data | Centralized inventory with model_id, prices, specs | ⬜ Pending |
 | Sheet 7: CODB Calculator | Fixed/variable costs, daily operating cost | ⬜ Pending |
-| Firebase Setup | CEO-owned account, developer Editor access | ⬜ Pending |
-| Data Migration | Products and financial inputs to Firestore | ⬜ Pending |
+| Database Platform Selection | Evaluate options (Google Sheets initially, then migrate as needed) | ⬜ Pending |
+| Data Migration | Products and financial inputs to centralized storage | ⬜ Pending |
 
 #### Data Standards
 
@@ -266,62 +168,75 @@ Per Liam's framework, after interviews we **validate findings with stakeholders*
 
 ---
 
-### P1-FORM: Customer Onboarding Form
+### P1-FORM: Lead Qualification Form Enhancement
 
 **Status:** ★★★★★ WEEK 2 PARALLEL
-**Quadrant:** ⭐ Quick Win (Low Effort, High Impact)
-**Engine:** ACQUISITION
 
 | Attribute | Detail |
 |-----------|--------|
-| **Problem Addressed** | No guided lead capture on website; visitors leave without contact captured; 0% current capture rate |
-| **Solution** | Mobile-friendly intake form with auto-responder and sales team notifications |
-| **Impact** | HIGH - Start building CRM pipeline immediately; capture visitor intent and source |
+| **Problem Addressed** | Existing contact form captures basic info but doesn't qualify leads or help customers find the right product; no data collected to build ideal customer profile |
+| **Solution** | Enhanced "Find which product is best for you" questionnaire that qualifies leads AND collects baseline customer data; includes family-business trust messaging per Sandy's requirement |
+| **Impact** | HIGH - Build ideal customer profile; qualify leads before sales engagement; increase form engagement through value-first approach |
 | **Effort** | LOW - 3-5 days |
 | **Investment** | Part of Phase 1 ($5,000) |
-| **Dependencies** | Website access, Firestore setup (or temp Google Sheet), notification service |
+| **Dependencies** | Website access, database setup (or temp Google Sheet), notification service |
 | **IP Risk** | LOW - Standard form implementation |
 | **Timeline** | Week 2 |
 
-#### Form Fields
+#### Form Enhancement Strategy
+
+Transform from simple contact form to interactive lead qualifier:
+1. **"Find which product is best for you"** - Value-first CTA
+2. **Qualification questions** - Help customer AND qualify lead
+3. **Trust messaging** - "We're a family-owned business..." per Sandy's requirement
+4. **Incentive option** - Consider free coffee from local Flagstaff shop
+
+#### Qualification Questions (4-7 max)
+
+| Field | Type | Purpose |
+|-------|------|---------|
+| `product_type` | Dropdown (Shed, Garage, Metal Building, Greenhouse, Shipping Container) | Product qualification |
+| `intended_use` | Dropdown (Storage, Workshop, Living Space, Business, Other) | Need understanding |
+| `property_access` | Dropdown (Easy access, Tight turns, Unsure) | Delivery qualification |
+| `additional_services` | Multi-select (Road grading, Septic, Dirt hauling, None) | Upsell identification |
+| `timeline` | Dropdown (Immediate / 1-3 mo / 3-6 mo / Browsing) | Lead priority |
+| `preferred_size` | Dropdown | Product matching |
+| `preferred_lot` | Dropdown (Tuba City, Flagstaff, Williams) | Location routing |
+
+#### Contact Fields (after qualification)
 
 | Field | Type | Required |
 |-------|------|----------|
 | `full_name` | Text | Yes |
 | `email` | Email | Yes |
 | `phone` | Phone | Yes |
-| `interested_in` | Dropdown (Shed types) | Yes |
-| `preferred_size` | Dropdown | No |
-| `timeline` | Dropdown (Immediate / 1-3 mo / 3-6 mo / Browsing) | Yes |
 | `how_did_you_hear` | Dropdown (Facebook, Google, Referral, Drove by, Other) | Yes |
 | `message` | Textarea | No |
-| `preferred_lot` | Dropdown (Tuba City, Flagstaff, Williams) | No |
 
 #### Placement
 
-- Homepage (above fold CTA)
+- Homepage: "Find which product is best for you" (above fold CTA)
 - Contact page
 - Product pages (sidebar/footer)
 
 #### Success Metrics
 
-- [ ] Form submissions captured
+- [ ] Form submissions captured with qualification data
 - [ ] Auto-responder working
-- [ ] Sales notified within 5 minutes
-- [ ] First leads captured
+- [ ] Sales notified within 5 minutes with lead score/qualification
+- [ ] Baseline customer data collected for profile building
+- [ ] First qualified leads captured
 
 ---
 
 ## Consolidated Summary
 
-| ID | Opportunity | Quadrant | Engine | Impact | Effort | Week |
-|----|-------------|----------|--------|--------|--------|------|
-| **P1-ROI** | **ROI Assessment + Interviews** | ⭐ Quick Win | All | ★★★★★ | LOW | 1 |
-| **P1-WEB** | **Website Quick Fixes** | ⭐ Quick Win | Acquisition | ★★★★★ | LOW | 1 |
-| **P1-DB** | **Database Foundation** | ⭐ Quick Win | Delivery | ★★★★★ | LOW-MED | 2 |
-| **P1-FORM** | **Customer Onboarding Form** | ⭐ Quick Win | Acquisition | ★★★★★ | LOW | 2 |
-
-**All Phase 1 opportunities are Quick Wins** - High Impact, Low-Medium Effort.
+| ID | Opportunity | Impact | Effort | Week | Priority |
+|----|-------------|--------|--------|------|----------|
+| **P1-ROI** | **ROI Assessment + Stakeholder Interviews** | ★★★★★ | **LOW** | 1 | **#1 QUICK WIN** |
+| **P1-WEB** | **Website Quick Fixes** | ★★★★★ | LOW | 1 | #2 Parallel |
+| **P1-DB** | **Database Foundation** | ★★★★★ | LOW-MED | 2 | #3 Foundation |
+| **P1-FORM** | **Lead Qualification Form Enhancement** | ★★★★★ | LOW | 2 | #4 Parallel |
 
 ---
 
@@ -355,20 +270,21 @@ Day 5:   ROI presentation prep
 ### Week 2: Foundation
 
 ```
-Day 1-2: Firebase setup, data migration start
+Day 1-2: Database platform setup, data migration start
 Day 2-3: Sheet 1 (Master Data) + Sheet 7 (CODB) population
-Day 3-4: Onboarding form build
+Day 3-4: Lead qualification form build
 Day 4-5: Form deployment + testing + handoff
 ```
 
 | Task | Owner | Day | Status |
 |------|-------|-----|--------|
-| Firebase account setup | Sandy (CEO) | 1 | ⬜ |
+| Database platform selection | AriseGroup + Sandy | 1 | ⬜ |
+| CEO account setup | Sandy (CEO) | 1 | ⬜ |
 | Developer access config | AriseGroup | 1 | ⬜ |
 | Products collection setup | Developer | 1-2 | ⬜ |
 | Sheet 1 data migration | Developer | 2-3 | ⬜ |
 | Sheet 7 CODB population | AriseGroup | 2-3 | ⬜ |
-| Onboarding form design | Developer | 3 | ⬜ |
+| Lead qualification form design | Developer | 3 | ⬜ |
 | Form implementation | Developer | 3-4 | ⬜ |
 | Notifications setup | Developer | 4 | ⬜ |
 | Testing | All | 5 | ⬜ |
@@ -411,7 +327,7 @@ P1-DB (Week 2)
 - [ ] ROI Calculator fully populated with validated data
 - [ ] CODB verified (not estimated)
 - [ ] Website images loading, mobile working
-- [ ] Onboarding form live and capturing leads
+- [ ] Lead qualification form live and capturing qualified leads
 - [ ] Database foundation in place
 - [ ] Client (Sandy) confident in baseline numbers
 
@@ -424,72 +340,31 @@ P1-DB (Week 2)
 
 ---
 
-## ROI Justification (Liam Ottley Method)
+## ROI Justification (From Discovery)
 
-### Known Reference Points (From Discovery)
+**Known Reference Points:**
 
 | Factor | Value | Source |
 |--------|-------|--------|
 | Build error cost | $24,000 lost sale | Dec 22 Discovery |
 | Build error frequency | 5-6 per 40 orders/year | Dec 22 Discovery |
 | Lead drop after pausing ads | 75% decline | Dec 22 Discovery |
-| Current lead capture rate | 0% | Dec 28 Meeting |
+| Current form status | Basic contact form exists, no qualification | Jan 3 Review |
 | Current monthly revenue | ~$20,000 | Dec 30 Meeting |
 | Target monthly revenue | $50,000 | Dec 30 Meeting |
-| Average shed sale | ~$5,000 | Dec 22 Discovery |
-| Close rate (estimated) | 25% | To be validated |
 
-### Part 1: Direct Cost Savings (Liam's Method)
+**Phase 1 ROI Potential:**
 
-| Improvement | Calculation | Annual Impact |
-|-------------|-------------|---------------|
-| SOPs prevent 1 build error | 1 error × $24,000 | **$24,000** |
-| Website fixes reduce bounce | (Unmeasured until baseline) | TBD |
-| Database reduces pricing errors | (Estimated 2 hrs/week saved) | **$2,080** |
-
-**Total Direct Savings:** $26,080/year
-
-### Part 2: Revenue Uplift (Liam's Method)
-
-This is the "hidden opportunity" - time saved becomes revenue-generating time.
-
-```
-Step 1: Calculate Hours Saved
-- Form automation saves: 5 hrs/week (manual lead tracking)
-- Website fixes save: 2 hrs/week (fixing issues, explaining broken images)
-- Database saves: 2 hrs/week (pricing lookups)
-- TOTAL: 9 hrs/week saved
-
-Step 2: Estimate Reallocated Hours (50% to revenue activities)
-- 9 hrs × 50% = 4.5 hrs/week available for sales
-
-Step 3: Calculate Revenue Value Per Hour
-- Average sale: $5,000
-- Hours to close a deal: ~2 hrs (lot visit + follow-up)
-- Value per hour: $5,000 ÷ 2 = $2,500/hr
-
-Step 4: Calculate Annual Revenue Uplift
-- 4.5 hrs × $2,500 × 52 weeks = $585,000 potential
-- Conservative (25% of potential): $146,250/year
-```
-
-**Revenue Uplift (Conservative):** $146,250/year
-
-### Phase 1 ROI Summary (Money Slide Preview)
-
-| Solution | Investment | Direct Savings | Revenue Uplift | Total Value | ROI |
-|----------|-----------|----------------|----------------|-------------|-----|
-| ROI Assessment | $1,500 | $24,000 | - | $24,000 | 1,500% |
-| Website Fixes | $1,000 | TBD | $36,500 | $36,500 | 3,550% |
-| Database Foundation | $1,500 | $2,080 | $73,000 | $75,080 | 4,905% |
-| Onboarding Form | $1,000 | - | $36,750 | $36,750 | 3,575% |
-| **TOTAL** | **$5,000** | **$26,080** | **$146,250** | **$172,330** | **3,347%** |
-
-*Note: Revenue uplift is POTENTIAL - requires validation with actual data from interviews.*
+| Improvement | Conservative Impact |
+|-------------|---------------------|
+| SOPs prevent 1 build error | $24,000 saved |
+| Qualified leads vs unqualified | Better close rate, less wasted time |
+| Ideal customer profile data | Target marketing for March/April campaigns |
+| Website fixes improve conversion | Unmeasured until baseline set |
 
 **Total Phase 1 Investment:** $5,000
-**Potential Annual Impact:** $172,330 (conservative)
-**ROI:** 3,347% (to be validated with actual data)
+**Potential Annual Impact:** $50,000+ (conservative)
+**ROI:** 900%+ (to be validated with actual data)
 
 ---
 
@@ -502,6 +377,15 @@ Step 4: Calculate Annual Revenue Uplift
 
 ---
 
-**Last Updated:** January 3, 2026
+**Last Updated:** January 3, 2026 (post-review)
 **Status:** Ready for execution
 **Next Action:** Schedule stakeholder interviews
+
+---
+
+## Revision History
+
+| Date | Version | Changes | Source |
+|------|---------|---------|--------|
+| Jan 3, 2026 | 1.1 | P1-FORM: Changed from "0% capture" to form enhancement/lead qualifier; P1-DB: Removed Firebase reference, platform TBD; P1-ROI: SOP count now flexible | Jan 3 Team Review Huddle |
+| Jan 3, 2026 | 1.0 | Initial creation | Discovery synthesis |

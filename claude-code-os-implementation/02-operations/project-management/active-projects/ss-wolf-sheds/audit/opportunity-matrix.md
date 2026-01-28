@@ -11,33 +11,20 @@
 
 ### Impact vs Effort Matrix
 
-```mermaid
-quadrantChart
-    title S&S Wolf Sheds - Opportunity Matrix
-    x-axis Low Impact --> High Impact
-    y-axis Low Effort --> High Effort
-    quadrant-1 Strategic Platform
-    quadrant-2 Avoid
-    quadrant-3 Defer
-    quadrant-4 MVP Quick Wins
-
-    MVP-1 QR Capture: [0.85, 0.35]
-    MVP-2 Intake Form: [0.80, 0.20]
-    MVP-3 Lead Tracking: [0.75, 0.30]
-    MVP-4 Website Fixes: [0.65, 0.15]
-    SI-1 Delivery Handoff: [0.70, 0.45]
-    SI-2 Traffic Counting: [0.55, 0.50]
-    TR-1 Dealer Platform: [0.90, 0.85]
-    DEP-1 AI Chatbot: [0.40, 0.55]
 ```
-
-**Quadrant Legend:**
-| Quadrant | Location | Priority |
-|----------|----------|----------|
-| ⭐ **MVP Quick Wins** | High Impact, Low Effort | #1 PRIORITY |
-| 🚀 **Strategic Platform** | High Impact, High Effort | Long-term |
-| 👍 **Defer** | Low Impact, Low Effort | Later |
-| 🗑 **Avoid** | Low Impact, High Effort | Skip |
+                          IMPACT
+                    LOW         HIGH
+              ┌───────────┬───────────┐
+         LOW  │           │  MVP      │
+              │  DEFER    │  QUICK    │
+    EFFORT    │           │  WINS     │
+              │           │  ★★★★★   │
+              ├───────────┼───────────┤
+              │           │ STRATEGIC │
+         HIGH │  AVOID    │ PLATFORM  │
+              │           │  ★★★★☆   │
+              └───────────┴───────────┘
+```
 
 ---
 
@@ -441,16 +428,10 @@ quadrantChart
 
 | ID | Opportunity | Category | Status |
 |----|-------------|----------|--------|
-| **P1-ROI** | **ROI Assessment + Stakeholder Interviews** | **Phase 1 QUICK WIN** | ★★★★★ **WEEK 1** |
-| **P1-WEB** | **Website Quick Fixes (Images/SEO)** | **Phase 1** | ★★★★★ **WEEK 1** |
-| **P1-DB** | **Database Foundation (Firestore)** | **Phase 1** | ★★★★★ **WEEK 2** |
-| **P1-SOP** | **SOP Generator (Operational Playbooks)** | **Phase 1** | ★★★★★ **WEEK 2** |
-| **P1-FORM** | **Customer Onboarding Form** | **Phase 1** | ★★★★★ **WEEK 2** |
-| P2-OPT | Sheet 3: Optional Features Data | Phase 2 | ⏳ Deferred |
-| MVP-1 | QR/Slot On-Lot Capture System | MVP | ★★★★★ Phase 2 |
-| MVP-2 | Website Intake Form + Notifications | MVP | ★★★★★ → Merged into P1-FORM |
-| MVP-3 | Lead-to-Building Tracking | MVP | ★★★★★ Phase 2 |
-| MVP-4 | Website Quick Fixes | MVP | ★★★★☆ → Merged into P1-WEB |
+| MVP-1 | QR/Slot On-Lot Capture System | MVP | ★★★★★ Active |
+| MVP-2 | Website Intake Form + Notifications | MVP | ★★★★★ Active |
+| MVP-3 | Lead-to-Building Tracking | MVP | ★★★★★ Active |
+| MVP-4 | Website Quick Fixes | MVP | ★★★★☆ Active |
 | SI-1 | Delivery Handoff Artifact | Strategic | ★★★★☆ Phase 1.5 |
 | SI-2 | Traffic Counting / Analytics | Strategic | ★★★☆☆ Phase 2 |
 | SI-3 | Lightweight CRM | Strategic | ★★★☆☆ Phase 2 |
@@ -485,207 +466,9 @@ Chris mentioned several contractor partnerships:
 
 ---
 
-**Last Updated:** January 4, 2026 (Converted to Mermaid diagrams)
-**Status:** Phase 1 restructured - ROI Assessment is Week 1 Quick Win
-**Next Sync:** TBD - Schedule stakeholder interviews
-
----
-
-## Phase 1 Matrix: Lot Assistant Foundation
-
-The Phase 1 PRD for the "Lot Assistant" system mapped to opportunity matrix format.
-
-**Phase 1 Quick Win:** ROI Assessment with Stakeholder Interviews
-
----
-
-### P1-ROI: ROI Assessment & Stakeholder Interviews (THE QUICK WIN)
-
-| Attribute | Detail |
-|-----------|--------|
-| **Problem Addressed** | Shooting in the dark without baseline metrics; can't prove ROI without knowing starting point; no standardized processes documented |
-| **Solution** | Structured stakeholder interviews to gather financial/operational baseline AND document current processes |
-| **Deliverables** | Completed ROI Calculator, validated CODB, Lead Handling SOP, Lot Operations SOP |
-| **Impact** | Client understands their own numbers; trust built through collaborative discovery; immediate SOP value |
-| **Effort** | LOW - No development; 4 interviews (~90 min total) |
-| **Investment** | Part of Phase 1 ($5,000 initial) |
-| **Dependencies** | Stakeholder availability |
-| **IP Risk** | LOW - Interview process, not proprietary data |
-| **Success Metrics** | All ROI data gaps filled; 2 initial SOPs created; client presents numbers to team |
-| **Priority** | ★★★★★ **WEEK 1 QUICK WIN** |
-
-**Why This Is THE Quick Win:**
-1. **Immediate Value** - Client learns their own business better (valuable even if we did nothing else)
-2. **No Development** - Just structured conversations; can happen immediately
-3. **Builds Trust** - Collaborative discovery, not sales pitch
-4. **Dual Output** - ROI data + SOPs from same interviews
-5. **Foundation for Everything** - All future ROI claims based on THEIR numbers
-
-**Interview → Output Mapping:**
-
-| Stakeholder | Primary Output | Secondary Output |
-|-------------|----------------|------------------|
-| Sandy (Owner) | Revenue, pricing, close rate data | Lead Handling SOP (sales flow) |
-| Matthew (Williams/Analytics) | Operating costs, CODB breakdown | Time tracking baseline |
-| Alex (Website/Social) | Website traffic, lead sources | Repetitive inquiry patterns for SOP |
-| Scott (Driver) | Delivery data, build errors | Lot Operations SOP (delivery prep) |
-
-**See:** [Stakeholder Questions](./stakeholder-questions-roi.md) | [ROI Calculator](./roi-calculator.md)
-
----
-
-### P1-DB: Database Foundation (The "Concrete Slab")
-
-| Attribute | Detail |
-|-----------|--------|
-| **Problem Addressed** | No centralized source of truth for inventory or overhead costs; data scattered across spreadsheets |
-| **Solution** | Firestore collections for `products`, `financial_inputs`, `sops`, and `leads` with strict data hygiene |
-| **Deliverables** | Master Shed Data (Sheet 1), CODB Calculator (Sheet 7) |
-| **Impact** | Foundation for all subsequent tools (configurator, CRM, dashboards); enables accurate pricing and ROI calculations |
-| **Effort** | Low-Medium - 1 week for initial setup |
-| **Investment** | Part of Phase 1 ($5,000 initial) |
-| **Dependencies** | Firebase/Google Cloud account (CEO-owned), existing inventory data |
-| **IP Risk** | LOW - Generic product catalog structure |
-| **Success Metrics** | All products migrated, clean numerical data, snake_case compliance |
-| **Priority** | ★★★★★ P1 FOUNDATION - Must complete first |
-
-**Data Standards Required:**
-- Pure numbers only (no `$` or commas in price fields)
-- `snake_case` naming convention for all fields
-- CEO owns Firebase account; developers get Editor access only
-
-> **Note:** Sheet 3 (Optional Features Data) moved to Phase 2 to prioritize SOP Generator.
-
----
-
-### P1-SOP: SOP Generator (Operational Playbooks)
-
-| Attribute | Detail |
-|-----------|--------|
-| **Problem Addressed** | No standardized procedures across lots; inconsistent customer experience; can't scale operations |
-| **Solution** | AI-assisted SOP generation system with template library for key dealership workflows |
-| **Deliverables** | Lead Handling SOP, Lot Operations SOP, Delivery Prep SOP, mobile-accessible checklists |
-| **Impact** | Consistent operations across all 3 lots; foundation for Kayenta expansion; feeds accountability system |
-| **Effort** | Low-Medium - 1-2 weeks |
-| **Investment** | Part of Phase 1 ($5,000 initial) |
-| **Dependencies** | Understanding of current workflows, stakeholder input |
-| **IP Risk** | LOW - Process documentation |
-| **Success Metrics** | SOPs adopted by lot staff, checklist completion rates, reduced operational variance |
-| **Priority** | ★★★★★ P1 CRITICAL - Enables multi-location scaling |
-
-**SOP Categories:**
-
-| Category | Purpose |
-|----------|---------|
-| Lead Handling | Inquiry → Quote workflow |
-| Lot Operations | Daily opening/closing checklists |
-| Sales Process | Customer engagement procedures |
-| Delivery Prep | Pre-delivery verification |
-| Customer Follow-up | Post-sale cadence |
-
----
-
-### P1-WEB: Website Quick Fixes (Credibility Restoration)
-
-| Attribute | Detail |
-|-----------|--------|
-| **Problem Addressed** | Broken/blank images, broken embeds, mobile layout issues, slow load times, poor local SEO |
-| **Solution** | Image audit and repair, embed fixes, responsive CSS, image compression, Northern AZ schema markup |
-| **Deliverables** | Working product images, fixed embeds, mobile-friendly layouts, faster load times, "sheds near me" visibility |
-| **Impact** | Immediate credibility improvement; better first impression; improved conversion |
-| **Effort** | Low - 1 week |
-| **Investment** | Part of Phase 1 ($5,000 initial) |
-| **Dependencies** | Website admin access, hosting credentials |
-| **IP Risk** | LOW - Standard website maintenance |
-| **Success Metrics** | Zero broken images, mobile UX score improved, page load < 3 seconds |
-| **Priority** | ★★★★★ P1 PARALLEL - Run alongside database work |
-
-**Specific Fixes:**
-
-| Issue | Fix |
-|-------|-----|
-| Blank/broken images | Audit URLs, re-upload assets, fix CDN paths |
-| Broken embeds | Update embed codes, fix HTTPS mixed content |
-| Mobile layout | Responsive CSS, cross-device testing |
-| Slow load | Compress images, lazy loading |
-| Local SEO | Alt text, Northern AZ schema markup |
-
----
-
-### P1-FORM: Customer Onboarding Form (Lead Capture Gateway)
-
-| Attribute | Detail |
-|-----------|--------|
-| **Problem Addressed** | No guided lead capture on website; visitors leave without contact captured |
-| **Solution** | Mobile-friendly intake form with auto-responder and sales team notifications |
-| **Deliverables** | 9-field lead form, Firestore `leads` collection, email auto-responder, SMS/email notifications to sales |
-| **Impact** | Start building CRM pipeline immediately; capture visitor intent and source |
-| **Effort** | Low - 1 week (can parallel with website fixes) |
-| **Investment** | Part of Phase 1 ($5,000 initial) |
-| **Dependencies** | Website access, Firestore setup (or temp Google Sheet), notification service |
-| **IP Risk** | LOW - Standard form implementation |
-| **Success Metrics** | Form submissions captured, auto-responder working, sales notified within 5 minutes |
-| **Priority** | ★★★★★ P1 CRITICAL - Feeds all future analytics |
-
-**Form Fields:**
-
-| Field | Type | Required |
-|-------|------|----------|
-| `full_name` | Text | Yes |
-| `email` | Email | Yes |
-| `phone` | Phone | Yes |
-| `interested_in` | Dropdown (Shed types) | Yes |
-| `preferred_size` | Dropdown | No |
-| `timeline` | Dropdown (Immediate / 1-3 mo / 3-6 mo / Browsing) | Yes |
-| `how_did_you_hear` | Dropdown (Facebook, Google, Referral, Drove by, Other) | Yes |
-| `message` | Textarea | No |
-| `preferred_lot` | Dropdown (Tuba City, Flagstaff, Williams) | No |
-
-**Placement:**
-- Homepage (above fold)
-- Contact page
-- Product pages (sidebar/footer)
-
----
-
-### Phase 1 Consolidated Opportunity Summary
-
-| ID | Opportunity | Impact | Effort | Priority | Week |
-|----|-------------|--------|--------|----------|------|
-| **P1-ROI** | **ROI Assessment + Stakeholder Interviews** | ★★★★★ | **LOW** | **#1 QUICK WIN** | Week 1 |
-| P1-WEB | Website Quick Fixes | ★★★★☆ | LOW | #2 Parallel | Week 1 |
-| P1-DB | Database Foundation | ★★★★★ | LOW-MED | #3 Foundation | Week 2 |
-| P1-SOP | SOP Generator | ★★★★★ | LOW-MED | #4 Operations | Week 2 |
-| P1-FORM | Customer Onboarding Form | ★★★★★ | LOW | #5 Parallel | Week 2 |
-
-**Total Phase 1 Investment:** $5,000 (initial)
-**Timeline:** 2 weeks
-**IP Risk:** LOW across all deliverables
-
-**Quick Win Strategy:**
-- **Week 1:** ROI Assessment (stakeholder interviews) + Website Fixes
-- **Week 2:** Database Foundation + SOP Generator + Onboarding Form
-
-**Key Insight:** ROI Assessment produces BOTH baseline metrics AND initial SOPs (Lead Handling, Lot Operations) from the same interviews.
-
----
-
-### Phase 2 Preview (Deferred from Phase 1)
-
-| ID | Opportunity | Reason Deferred |
-|----|-------------|-----------------|
-| P2-OPT | Sheet 3: Optional Features Data | Prioritized SOP Generator for operational foundation |
-
----
-
-### Phase 1 → Existing MVP Alignment
-
-| Phase 1 Item | Aligns With | Enhancement |
-|--------------|-------------|-------------|
-| P1-DB (Database) | NEW | Foundation for MVP-1 QR system and configurator |
-| P1-SOP (SOP Generator) | OPSYS-1 | Feeds into Dealer Accountability System |
-| P1-WEB (Website Fixes) | MVP-4 | Expanded scope with SEO and performance |
-| P1-FORM (Onboarding Form) | MVP-2 | Same goal, detailed field requirements |
+**Last Updated:** December 31, 2025 (Added Dec 30 expansion meeting)
+**Status:** Scope expanded - multi-location accountability system added
+**Next Sync:** TBD - Clarify QR vs Accountability priority
 
 ---
 
@@ -738,23 +521,19 @@ The Phase 1 PRD for the "Lot Assistant" system mapped to opportunity matrix form
 
 ### Revised Priority Matrix
 
-```mermaid
-quadrantChart
-    title December 30 Priority Update
-    x-axis Low Impact --> High Impact
-    y-axis Low Effort --> High Effort
-    quadrant-1 Strategic Systems
-    quadrant-2 Avoid
-    quadrant-3 Defer
-    quadrant-4 Quick Wins
-
-    OPSYS-1 Dealer Accountability: [0.90, 0.75]
-    QR MVP System: [0.85, 0.35]
-    P1-ROI Assessment: [0.80, 0.15]
-    P1-WEB Website Fixes: [0.70, 0.20]
-    P1-DB Database: [0.75, 0.40]
-    P1-SOP Generator: [0.80, 0.40]
-    P1-FORM Onboarding: [0.75, 0.25]
+```
+                          IMPACT
+                    LOW         HIGH
+              ┌───────────┬───────────┐
+         LOW  │           │  QR MVP   │
+              │  DEFER    │  (if      │
+    EFFORT    │           │  still    │
+              │           │  wanted)  │
+              ├───────────┼───────────┤
+              │           │ OPSYS-1   │
+         HIGH │  AVOID    │ Dealer    │
+              │           │ Account.  │
+              └───────────┴───────────┘
 ```
 
 ### CONFIRMED: Dual-System Scope

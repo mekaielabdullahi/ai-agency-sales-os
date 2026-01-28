@@ -148,48 +148,51 @@ S&S Wolf Sheds operates as dealers for Graceland Sheds with three lots in Northe
 - [Discovery Meeting Summary](./meetings/2025-12-22-discovery/summary.md)
 - [Post-Discovery Working Session](./meetings/2025-12-28-post-discovery/summary.md)
 - [Expansion Strategy Meeting (Dec 30)](./meetings/2025-12-30-expansion-strategy/summary.md)
+- [Phase 1 Review (Jan 3)](./meetings/2026-01-03-phase1-review/summary.md)
+- [Deliverables Roadmap (Jan 20)](./meetings/2026-01-20-deliverables-roadmap/summary.md)
 - [Quick Win Sprint Options](./planning/quick-win-options.md)
 - [Opportunity Matrix](./audit/opportunity-matrix.md)
 
 ---
 
-## Recent Updates (December 30, 2025)
+## Recent Updates (January 20, 2026)
 
-### Scope Expansion: Multi-Location Operations
-Meeting revealed significant expansion of project scope:
+### Phase 1 MVP: Lot Assistant Defined
+Technical requirements finalized for digital transformation:
 
-| Original Focus | Expanded Focus |
-|----------------|----------------|
-| QR/Slot lead capture | **Dealer Accountability App** |
-| Single-lot optimization | **Multi-location management** |
-| Website fixes | **Expansion infrastructure (Kayenta hub)** |
+| Component | Description |
+|-----------|-------------|
+| **QR Lot Assistant** | On-site lead capture via QR codes on each shed |
+| **Giveaway Incentive** | Free mini-shed delivery (~$2.5k value) for Name/Phone |
+| **Data-Driven Ads** | Cross-reference 3yr sales data with Meta performance |
+| **Man-Hour Factor** | ROI model to quantify efficiency gains |
+| **Hub Vision** | Starlink + generator for 24/7 self-sufficient dealerships |
 
 ### Key Developments
-1. **New Dealership Hub** - Kayenta, AZ with Southern Utah expansion by early 2024
-2. **Daily Accountability System** - Proprietary app for dealer rep management
-3. **$10k Investment** - Phased ($5k + $5k) with 6-week ROI expectation
-4. **Target Revenue** - Scale from $20k/mo to $50k/mo
-
-### Scope Confirmed
-**Both systems complement each other:**
-- QR/Slot Capture System (lead capture & tracking)
-- Dealer Accountability App (ops management & scaling)
+1. **Lead Capture Focus** - Visitors leave acre-plus lots without engaging; QR codes solve this
+2. **Ad Strategy Shift** - From "shotgunning" $400/mo to targeted data-driven campaigns
+3. **Graceland Gap Management** - Automated post-sale follow-ups to catch fulfillment issues
+4. **Infrastructure Play** - Starlink/power hubs could become revenue stream for other dealers
 
 ### Immediate Action Items
-- [ ] Define MVP for accountability checklist app
-- [ ] Coordinate phased budget ($5k initial by Feb 1)
-- [ ] Site visits for Kayenta expansion (drone footage)
+- [ ] Draft giveaway lead-gen plan (prize/terms/promo/tracking)
+- [ ] Build MVP QR lead form with attendant alerts
+- [ ] Define designated parking + signage for lots
+- [ ] Document post-contract delivery timeline
+- [ ] Evaluate Starlink security trailer hub feasibility
+- [ ] Finish man-hour/CX factor model
+- [ ] Schedule gamma presentation for updated proposal
 
 ---
 
 ## Next Actions
 
-1. Define accountability app MVP requirements
-2. Prioritize build sequence (QR first? Accountability first? Parallel?)
-3. Get data access: website admin, analytics, Zoho, ad accounts
-4. Support Kayenta expansion planning as needed
+1. Matthew to update SNS proposal with new technical requirements
+2. Chris to finalize Man-Hour Factor ROI model
+3. Trent to analyze lead-gen strategies and AI tools for marketing
+4. Chris & Matthew to schedule gamma presentation
 
 ---
 
 **Created:** December 28, 2025
-**Last Updated:** December 31, 2025
+**Last Updated:** January 20, 2026

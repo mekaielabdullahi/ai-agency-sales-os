@@ -5,7 +5,6 @@
 **Investment:** $5,000
 **Timeline:** 2 weeks (Month 2)
 **Trigger:** Phase 1 complete, second payment received
-**Framework:** Liam Ottley 3-Step AI Audit (adapted for implementation)
 **Source:** [Phase 1 PRD](../docs-workbook1/PRD-phase-1-database-foundation.md) | [Main Opportunity Matrix](./opportunity-matrix.md)
 
 ---
@@ -14,59 +13,8 @@
 
 Phase 2 builds on the Phase 1 foundation to implement active lead capture and sales workflow tools. The focus shifts from "understanding the business" (Phase 1) to "capturing and converting leads" (Phase 2).
 
-**Phase 1 Delivered:** ROI baseline, website fixes, database foundation, onboarding form
-**Phase 2 Delivers:** On-lot capture system, pricing configurator, CRM pipeline, analytics
-
----
-
-## Liam Ottley Framework Alignment
-
-This phase maps to **Step 2: Map, Identify & Validate Opportunities** of Liam's 3-Step AI Audit Framework.
-
-| Liam's Framework | Our Implementation | Status |
-|------------------|-------------------|--------|
-| Ops Canvas (3 Engines) | Mapped below | ✅ Added |
-| Opportunity Matrix (2x2) | Impact vs Effort scoring | ✅ Aligned |
-| 4 Quadrants (Quick Wins, Big Swings, etc.) | All Phase 2 = Quick Wins | ✅ Aligned |
-| Validation Workshop | Included at end of Phase 2 | ✅ Planned |
-| Implementation Roadmap | Dependencies mapped | ✅ Aligned |
-
----
-
-## 3 Engines Mapping (Ops Canvas)
-
-| Engine | Description | Phase 2 Opportunities |
-|--------|-------------|----------------------|
-| **ACQUISITION** | How they find and sign customers | P2-QR (On-Lot Capture), P2-CRM (Pipeline) |
-| **DELIVERY** | How they deliver product/service | P2-OPT (Options Data), P2-PRICE (Configurator) |
-| **SUPPORT** | Customer questions and post-sale | (Phase 3+) |
-
-### Phase 2 Engine Focus: ACQUISITION (Primary) + DELIVERY (Support)
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    ACQUISITION ENGINE                           │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   QR Scan    │───►│  Lead Form   │───►│     CRM      │      │
-│  │   P2-QR      │    │  (Phase 1)   │    │   P2-CRM     │      │
-│  │  🟡 Time Sink│    │              │    │  🟡 Quality  │      │
-│  │  ★ ANCHOR    │    │              │    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                     DELIVERY ENGINE                             │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   Options    │───►│ Configurator │───►│    Quote     │      │
-│  │   P2-OPT     │    │  P2-PRICE    │    │  Generation  │      │
-│  │  🟡 Quality  │    │  🟡 Time Sink│    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-
-🟡 = Time Sink or Quality Risk (AI/Automation Opportunity)
-★ = Anchor Deliverable
-```
+**Phase 1 Delivered:** ROI baseline, website fixes, database foundation, lead qualification form
+**Phase 2 Delivers:** On-lot capture system, pricing configurator, CRM pipeline, SOP generator tool
 
 ---
 
@@ -77,8 +25,9 @@ Before starting Phase 2, confirm:
 - [ ] All Phase 1 deliverables complete
 - [ ] ROI Calculator populated with validated data
 - [ ] Website fixes live and working
-- [ ] Onboarding form capturing leads
-- [ ] Database foundation in Firestore
+- [ ] Lead qualification form capturing and qualifying leads
+- [ ] Database foundation in place
+- [ ] Initial SOPs created from stakeholder interviews
 - [ ] Second payment ($5,000) received
 - [ ] Sandy/Chris approve Phase 2 scope
 
@@ -110,8 +59,6 @@ Before starting Phase 2, confirm:
 ### P2-QR: QR/Slot On-Lot Capture System
 
 **Status:** ★★★★★ PHASE 2 ANCHOR
-**Quadrant:** ⭐ Quick Win (Medium Effort, High Impact)
-**Engine:** ACQUISITION
 
 | Attribute | Detail |
 |-----------|--------|
@@ -158,8 +105,6 @@ Customer walks lot → Scans QR on shed →
 ### P2-PRICE: Pricing Lookup Tool (Configurator)
 
 **Status:** ★★★★★ WEEK 2
-**Quadrant:** ⭐ Quick Win (Medium Effort, High Impact)
-**Engine:** DELIVERY
 
 | Attribute | Detail |
 |-----------|--------|
@@ -205,8 +150,6 @@ User selects Model ID →
 ### P2-CRM: CRM & Sales Pipeline
 
 **Status:** ★★★★☆ WEEK 2
-**Quadrant:** ⭐ Quick Win (Low-Medium Effort, High Impact)
-**Engine:** ACQUISITION
 
 | Attribute | Detail |
 |-----------|--------|
@@ -253,8 +196,6 @@ User selects Model ID →
 ### P2-OPT: Optional Features Data (Sheet 3)
 
 **Status:** ★★★★★ WEEK 1 (Foundation for Pricing Tool)
-**Quadrant:** ⭐ Quick Win (Low Effort, High Impact)
-**Engine:** DELIVERY
 
 | Attribute | Detail |
 |-----------|--------|
@@ -286,20 +227,78 @@ User selects Model ID →
 
 ---
 
+### P2-SOP: SOP Generator Tool
+
+**Status:** ★★★★★ WEEK 2 (Recurring Revenue Opportunity)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Problem Addressed** | Business can't scale without documented processes; Phase 1 created initial SOPs manually; no way to create/update SOPs independently |
+| **Solution** | Client-owned SOP generator tool (Claude skill or custom solution) that allows them to create and maintain their own SOPs |
+| **Impact** | HIGH - Enables business scaling, self-service process documentation, recurring support revenue |
+| **Effort** | LOW-MEDIUM - 3-5 days |
+| **Investment** | Part of Phase 2 ($5,000) |
+| **Dependencies** | Initial SOPs from Phase 1 as templates |
+| **IP Risk** | MEDIUM - Proprietary tool methodology |
+| **Timeline** | Week 2 |
+
+#### How It Works (from Jan 3 Meeting)
+
+```
+Client records daily tasks (voice/text) →
+    → System processes input
+    → Generates draft SOP
+    → Client reviews/edits
+    → SOP saved to database
+    → Updates can be made anytime
+```
+
+#### Platform Options Discussed
+
+| Platform | Pros | Cons |
+|----------|------|------|
+| Claude Desktop + Skills | Already available, powerful | Requires Claude subscription |
+| ChatGPT Custom GPT | Client may already have | Less integration capability |
+| Custom Solution | Full control | Higher development cost |
+
+#### Recurring Revenue Insight
+
+> "They're not gonna know how to iterate upon it. Like when they need to add another feature or function. They're not gonna know how to do that" - Trent (Jan 3 Meeting)
+
+This creates ongoing support/enhancement opportunities.
+
+#### Deliverables
+
+| Component | Description | Status |
+|-----------|-------------|--------|
+| SOP Generator Tool | Claude skill or custom implementation | ⬜ Pending |
+| Template Library | Based on Phase 1 SOPs | ⬜ Pending |
+| User Guide | How to use the generator | ⬜ Pending |
+| Training Session | Walkthrough with client | ⬜ Pending |
+
+#### Success Metrics
+
+- [ ] Tool deployed and accessible to client
+- [ ] Client successfully generates first SOP independently
+- [ ] Template library populated with Phase 1 SOPs
+- [ ] Training completed with key stakeholders
+
+---
+
 ## Phase 2 Consolidated Summary
 
-| ID | Opportunity | Quadrant | Engine | Impact | Effort | Week |
-|----|-------------|----------|--------|--------|--------|------|
-| **P2-OPT** | Optional Features Data (Sheet 3) | ⭐ Quick Win | DELIVERY | ★★★★★ | LOW | 1 |
-| **P2-QR** | QR/Slot On-Lot Capture | ⭐ Quick Win | ACQUISITION | ★★★★★ | MED | 1-2 |
-| **P2-PRICE** | Pricing Configurator | ⭐ Quick Win | DELIVERY | ★★★★★ | MED | 2 |
-| **P2-CRM** | CRM & Sales Pipeline | ⭐ Quick Win | ACQUISITION | ★★★★☆ | LOW-MED | 2 |
-
-**All Phase 2 = Quick Wins** (High Impact, achievable in 2-week sprint)
+| ID | Opportunity | Impact | Effort | Week | Priority |
+|----|-------------|--------|--------|------|----------|
+| **P2-OPT** | Optional Features Data (Sheet 3) | ★★★★★ | LOW | 1 | #1 Foundation |
+| **P2-QR** | QR/Slot On-Lot Capture System | ★★★★★ | MED | 1-2 | #2 ANCHOR |
+| **P2-PRICE** | Pricing Lookup Tool (Configurator) | ★★★★★ | MED | 2 | #3 Tool |
+| **P2-CRM** | CRM & Sales Pipeline | ★★★★☆ | LOW-MED | 2 | #4 Workflow |
+| **P2-SOP** | SOP Generator Tool | ★★★★★ | LOW-MED | 2 | #5 Scale Enabler |
 
 **Total Phase 2 Investment:** $5,000
 **Timeline:** 2 weeks
 **IP Risk:** LOW-MEDIUM
+**Recurring Revenue:** SOP Generator creates ongoing support opportunities
 
 ---
 
@@ -331,6 +330,7 @@ Day 4-5: Scan tracking + testing
 ```
 Day 1-2: Pricing configurator build
 Day 2-3: CRM pipeline setup
+Day 3:   SOP Generator tool setup
 Day 3-4: Integration testing
 Day 4:   QR deployment to lots
 Day 5:   Training + handoff
@@ -343,9 +343,11 @@ Day 5:   Training + handoff
 | Quote generation | Developer | 2-3 | ⬜ |
 | CRM pipeline structure | Developer | 2-3 | ⬜ |
 | Lead routing logic | Developer | 3 | ⬜ |
+| SOP Generator tool setup | Developer | 3 | ⬜ |
+| SOP template library | AriseGroup | 3-4 | ⬜ |
 | Integration testing | All | 3-4 | ⬜ |
 | QR deployment (3 lots) | Sandy/Team | 4 | ⬜ |
-| Staff training | AriseGroup | 5 | ⬜ |
+| Staff training (tools + SOP gen) | AriseGroup | 5 | ⬜ |
 | Handoff | All | 5 | ⬜ |
 
 ---
@@ -416,42 +418,15 @@ P2-QR (Week 1-2)
 
 ---
 
-## ROI Justification (Liam Ottley Method)
+## ROI Justification
 
-### Direct Savings (Time × Rate)
+**Phase 2 ROI Potential:**
 
-| Solution | Weekly Hours Saved | Hourly Rate | Annual Savings |
-|----------|-------------------|-------------|----------------|
-| P2-OPT (Options Database) | 2 hrs | $40 | $4,160 |
-| P2-QR (Capture System) | 5 hrs | $40 | $10,400 |
-| P2-PRICE (Configurator) | 4 hrs | $40 | $8,320 |
-| P2-CRM (Pipeline) | 3 hrs | $40 | $6,240 |
-| **TOTAL** | **14 hrs/week** | - | **$29,120** |
-
-### Revenue Uplift (Liam's 50% Rule)
-
-> "50% of time saved goes directly to revenue-generating activities"
-
-| Solution | Time Saved | Revenue Time (50%) | Value/Hour | Annual Uplift |
-|----------|-----------|-------------------|------------|---------------|
-| P2-QR (Lead Capture) | 5 hrs/wk | 2.5 hrs | $500/sale | $65,000* |
-| P2-PRICE (Faster Quotes) | 4 hrs/wk | 2 hrs | $500/sale | $52,000* |
-| P2-CRM (Follow-up) | 3 hrs/wk | 1.5 hrs | $500/sale | $39,000* |
-| **TOTAL** | - | **6 hrs** | - | **$156,000** |
-
-*Assumes 1 additional shed sold per 2 revenue hours @ $500 margin
-
-### Phase 2 ROI Summary (Money Slide Preview)
-
-| Solution | Investment | Direct Savings | Revenue Uplift | Total Value | ROI |
-|----------|-----------|----------------|----------------|-------------|-----|
-| Options Database | $500 | $4,160 | - | $4,160 | 732% |
-| QR Capture System | $2,000 | $10,400 | $65,000 | $75,400 | 3,670% |
-| Pricing Configurator | $1,500 | $8,320 | $52,000 | $60,320 | 3,921% |
-| CRM Pipeline | $1,000 | $6,240 | $39,000 | $45,240 | 4,424% |
-| **TOTAL** | **$5,000** | **$29,120** | **$156,000** | **$185,120** | **3,602%** |
-
-### Conservative Scenario
+| Improvement | Conservative Impact |
+|-------------|---------------------|
+| QR captures 20 additional leads/month | 20 × $5,000 × 25% = $25,000/month |
+| Configurator speeds quotes by 50% | Time savings + faster close |
+| CRM improves follow-up rate | 10% more conversions |
 
 **If QR system captures just 10 additional leads that convert:**
 ```
@@ -459,36 +434,6 @@ P2-QR (Week 1-2)
 Annual: $150,000 additional revenue
 ROI on $5,000 investment = 2,900%
 ```
-
----
-
-## Validation Workshop (End of Phase 2)
-
-Before finalizing Phase 2 deliverables, conduct a Validation Workshop with Sandy/Chris.
-
-### Workshop Agenda (30-45 min)
-
-| Topic | Questions | Goal |
-|-------|-----------|------|
-| **QR System Review** | "Is the scan-to-form flow working for your team?" | Confirm adoption |
-| **Configurator Check** | "Are all pricing options accurate? Any missing?" | Validate data |
-| **CRM Pipeline** | "Does the pipeline match how you actually work leads?" | Confirm stages |
-| **Priority Adjustment** | "Based on results so far, what should Phase 3 prioritize?" | Refine roadmap |
-
-### Validation Questions
-
-- [ ] "Did we capture the 80% that matters in Phase 1-2?"
-- [ ] "What surprised you about the implementation?"
-- [ ] "What's missing that you expected to see?"
-- [ ] "How do the ROI numbers compare to your experience?"
-- [ ] "Ready to proceed to Phase 3 (Intelligence & Operations)?"
-
-### Workshop Outputs
-
-1. Confirmed Phase 2 is complete
-2. Any quick fixes needed before Phase 3
-3. Refined priorities for Phase 3
-4. Updated ROI projections based on real data
 
 ---
 
@@ -516,3 +461,12 @@ Before finalizing Phase 2 deliverables, conduct a Validation Workshop with Sandy
 **Last Updated:** January 3, 2026
 **Status:** Ready for Phase 1 completion
 **Next Action:** Complete Phase 1 → Begin Phase 2
+
+---
+
+## Revision History
+
+| Date | Version | Changes | Source |
+|------|---------|---------|--------|
+| Jan 3, 2026 | 1.1 | Added P2-SOP (SOP Generator Tool) as new deliverable; Updated P1 references to "Lead Qualification Form"; Added recurring revenue insight | Jan 3 Team Review Huddle |
+| Jan 3, 2026 | 1.0 | Initial creation | Phase planning |

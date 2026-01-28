@@ -5,7 +5,6 @@
 **Investment:** TBD (estimate $7,500-$15,000)
 **Timeline:** 3-4 weeks (Month 4+)
 **Trigger:** Phase 3 complete, Kayenta expansion operational, all systems stable
-**Framework:** Liam Ottley 3-Step AI Audit (adapted for implementation)
 **Source:** [PRD-lot-assistant.md](../docs-workbook1/PRD-lot-assistant.md)
 
 ---
@@ -18,58 +17,6 @@ Phase 4 transforms S&S Wolf Sheds from a single-business solution into a scalabl
 **Phase 2 Delivered:** QR capture system, pricing configurator, CRM pipeline
 **Phase 3 Delivered:** Financial dashboards, delivery intelligence, accountability system
 **Phase 4 Delivers:** Full cloud migration, intelligent automation, dealer platform
-
----
-
-## Liam Ottley Framework Alignment
-
-Phase 4 represents the **Transformation & Scale** stage - moving from client implementation to platform creation.
-
-| Liam's Framework | Our Implementation | Status |
-|------------------|-------------------|--------|
-| Ops Canvas (3 Engines) | All engines optimized, new platform engine | ✅ Added |
-| Opportunity Matrix (2x2) | All High Impact / High Effort (Big Swings) | ✅ Aligned |
-| 4 Quadrants | Big Swings for transformation | ✅ Aligned |
-| ROI Money Slide | Platform ROI + recurring revenue | ✅ Planned |
-| Final Presentation | Complete project summary | ✅ Planned |
-
----
-
-## 3 Engines Mapping (Ops Canvas)
-
-| Engine | Description | Phase 4 Opportunities |
-|--------|-------------|----------------------|
-| **ACQUISITION** | How they find and sign customers | P4-GEOFENCE (Automated follow-up) |
-| **DELIVERY** | How they deliver product/service | P4-FIREBASE (Platform foundation) |
-| **SUPPORT** | Customer questions and post-sale | P4-PLATFORM (Multi-tenant support) |
-| **PLATFORM** | New engine: Scalable dealer network | P4-PLATFORM, P4-EXPAND |
-
-### Phase 4 Engine Focus: PLATFORM (New Engine)
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     PLATFORM ENGINE (NEW)                       │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   Firebase   │───►│ Multi-Tenant │───►│   Dealer     │      │
-│  │   Migration  │    │   Platform   │    │   Network    │      │
-│  │  P4-FIREBASE │    │  P4-PLATFORM │    │  P4-EXPAND   │      │
-│  │  🚀 FOUNDATION│    │  🚀 TRANSFORM│    │  🚀 SCALE    │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│              INTELLIGENT AUTOMATION LAYER                       │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │  Geofence    │───►│   Trigger    │───►│   Nurture    │      │
-│  │  Detection   │    │   Logic      │    │   Sequence   │      │
-│  │ P4-GEOFENCE  │    │              │    │              │      │
-│  │  🚀 AUTOMATE │    │              │    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-
-🚀 = Big Swing (High Effort, High Impact, Transformational)
-```
 
 ---
 
@@ -118,8 +65,6 @@ Phase 4 represents the **Transformation & Scale** stage - moving from client imp
 ### P4-FIREBASE: Full Firebase Migration
 
 **Status:** ★★★★★ PHASE 4 FOUNDATION
-**Quadrant:** 🚀 Big Swing (High Effort, High Impact)
-**Engine:** DELIVERY → PLATFORM
 
 | Attribute | Detail |
 |-----------|--------|
@@ -180,8 +125,6 @@ Firebase Security Rules:
 ### P4-GEOFENCE: Intelligent Geofence Triggers
 
 **Status:** ★★★★★ WEEK 2-3 (Automation Layer)
-**Quadrant:** 🚀 Big Swing (High Effort, High Impact)
-**Engine:** ACQUISITION (Automated)
 
 | Attribute | Detail |
 |-----------|--------|
@@ -251,8 +194,6 @@ Customer arrives at lot →
 ### P4-PLATFORM: Graceland Dealer Network Platform
 
 **Status:** ★★★★☆ WEEK 3-4 (Scale Strategy)
-**Quadrant:** 🚀 Big Swing (High Effort, High Impact)
-**Engine:** PLATFORM
 
 | Attribute | Detail |
 |-----------|--------|
@@ -331,8 +272,6 @@ Graceland Dealer Platform
 ### P4-EXPAND: Multi-Location Scaling Support
 
 **Status:** ★★★☆☆ OPTIONAL (if Kayenta successful)
-**Quadrant:** 🤔 Nice-to-Have (Medium Effort, Medium Impact)
-**Engine:** PLATFORM
 
 | Attribute | Detail |
 |-----------|--------|
@@ -358,14 +297,12 @@ Graceland Dealer Platform
 
 ## Phase 4 Consolidated Summary
 
-| ID | Opportunity | Quadrant | Engine | Impact | Effort | Week |
-|----|-------------|----------|--------|--------|--------|------|
-| **P4-FIREBASE** | Firebase Migration | 🚀 Big Swing | PLATFORM | ★★★★★ | HIGH | 1-2 |
-| **P4-GEOFENCE** | Geofence Triggers | 🚀 Big Swing | ACQUISITION | ★★★★★ | HIGH | 2-3 |
-| **P4-PLATFORM** | Dealer Platform | 🚀 Big Swing | PLATFORM | ★★★★☆ | HIGH | 3-4 |
-| P4-EXPAND | Multi-Location | 🤔 Nice-to-Have | PLATFORM | ★★★☆☆ | MED | Optional |
-
-**Phase 4 = Transformation Phase:** 3 Big Swings + 1 Nice-to-Have
+| ID | Opportunity | Impact | Effort | Week | Priority |
+|----|-------------|--------|--------|------|----------|
+| **P4-FIREBASE** | Full Firebase Migration | ★★★★★ | HIGH | 1-2 | #1 Foundation |
+| **P4-GEOFENCE** | Intelligent Geofence Triggers | ★★★★★ | HIGH | 2-3 | #2 Automation |
+| **P4-PLATFORM** | Graceland Dealer Platform | ★★★★☆ | HIGH | 3-4 | #3 Scale |
+| P4-EXPAND | Multi-Location Support | ★★★☆☆ | MED | Optional | If budget |
 
 **Total Phase 4 Investment:** $7,500-$15,000 (TBD based on platform scope)
 **Timeline:** 3-4 weeks
@@ -490,91 +427,6 @@ Kayenta Expansion
 
 ---
 
-## ROI Justification (Liam Ottley Method)
-
-### Direct Savings (Time × Rate)
-
-| Solution | Weekly Hours Saved | Hourly Rate | Annual Savings |
-|----------|-------------------|-------------|----------------|
-| P4-FIREBASE (Unified API) | 6 hrs | $40 | $12,480 |
-| P4-GEOFENCE (Auto follow-up) | 10 hrs | $40 | $20,800 |
-| P4-PLATFORM (Admin efficiency) | 8 hrs | $40 | $16,640 |
-| **TOTAL** | **24 hrs/week** | - | **$49,920** |
-
-### Revenue Uplift (Liam's 50% Rule)
-
-> "50% of time saved goes directly to revenue-generating activities"
-
-| Solution | Impact Type | Calculation | Annual Uplift |
-|----------|------------|-------------|---------------|
-| P4-GEOFENCE (Recovered leads) | New revenue | 20 recovered/mo × $500 × 12 | $120,000 |
-| P4-PLATFORM (New dealers) | Recurring | 5 dealers × $1,000/mo × 12 | $60,000 |
-| P4-EXPAND (Kayenta success) | Scale | 50% of S&S revenue on 2nd lot | $150,000* |
-| **TOTAL** | - | - | **$330,000** |
-
-*Conservative estimate of Kayenta producing 50% of Flagstaff volume
-
-### Phase 4 ROI Summary (Money Slide Preview)
-
-| Solution | Investment | Direct Savings | Revenue Uplift | Total Value | ROI |
-|----------|-----------|----------------|----------------|-------------|-----|
-| Firebase Migration | $3,500 | $12,480 | - | $12,480 | 257% |
-| Geofence System | $4,000 | $20,800 | $120,000 | $140,800 | 3,420% |
-| Dealer Platform | $5,000 | $16,640 | $60,000 | $76,640 | 1,433% |
-| Multi-Location | $2,500 | - | $150,000 | $150,000 | 5,900% |
-| **TOTAL** | **$15,000** | **$49,920** | **$330,000** | **$379,920** | **2,433%** |
-
----
-
-## Full Project ROI Summary (Money Slide)
-
-### Complete 4-Phase Investment Analysis
-
-| Phase | Investment | Direct Savings | Revenue Uplift | Total Value |
-|-------|-----------|----------------|----------------|-------------|
-| Phase 1 (Foundation) | $5,000 | $26,080 | $146,250 | $172,330 |
-| Phase 2 (Lead Capture) | $5,000 | $29,120 | $156,000 | $185,120 |
-| Phase 3 (Intelligence) | $7,500 | $31,200 | $192,000 | $223,200 |
-| Phase 4 (Platform) | $15,000 | $49,920 | $330,000 | $379,920 |
-| **TOTAL PROJECT** | **$32,500** | **$136,320** | **$824,250** | **$960,570** |
-
-### ROI Summary
-
-```
-Total Investment:      $32,500
-Direct Cost Savings:   $136,320/year
-Revenue Uplift:        $824,250/year
-Total Annual Value:    $960,570
-
-PROJECT ROI:           2,855%
-PAYBACK PERIOD:        12 days
-```
-
----
-
-## Final Presentation (Complete Project)
-
-When Phase 4 is complete, deliver a final presentation to Sandy/Chris covering the complete transformation.
-
-### Presentation Outline (5 Slides - Liam's Method)
-
-| Slide | Content |
-|-------|---------|
-| **1. Scope & Objectives** | What we set out to do, what we delivered |
-| **2. Opportunity Matrix** | All opportunities across 4 phases, quadrant distribution |
-| **3. Roadmap Summary** | Phase-by-phase journey, key milestones |
-| **4. Deep Dive: Top 3** | QR System, Accountability App, Dealer Platform |
-| **5. ROI Money Slide** | The table above - full investment/value breakdown |
-
-### Key Talking Points
-
-1. **Transformation Journey**: From spreadsheets → scalable platform
-2. **ROI Reality Check**: "Do these numbers match your experience?"
-3. **Platform Future**: Graceland network opportunity
-4. **Ongoing Partnership**: Maintenance, support, expansion options
-
----
-
 ## Related Documents
 
 - [Phase 1 Opportunity Matrix](./phase-1-opportunity-matrix.md)
@@ -582,7 +434,6 @@ When Phase 4 is complete, deliver a final presentation to Sandy/Chris covering t
 - [Phase 3 Opportunity Matrix](./phase-3-opportunity-matrix.md)
 - [Main PRD](../docs-workbook1/PRD-lot-assistant.md)
 - [ROI Calculator](./roi-calculator.md)
-- [Money Slide Template](./money-slide-template.md)
 
 ---
 

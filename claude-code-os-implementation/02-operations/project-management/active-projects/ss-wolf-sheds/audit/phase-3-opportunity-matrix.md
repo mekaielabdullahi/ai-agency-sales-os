@@ -5,7 +5,6 @@
 **Investment:** TBD (estimate $5,000-$10,000)
 **Timeline:** 2-3 weeks (Month 3)
 **Trigger:** Phase 2 complete, QR system generating data
-**Framework:** Liam Ottley 3-Step AI Audit (adapted for implementation)
 **Source:** [PRD-lot-assistant.md](../docs-workbook1/PRD-lot-assistant.md)
 
 ---
@@ -14,69 +13,14 @@
 
 Phase 3 transforms raw data into actionable intelligence and solves the "last-mile" delivery problem. This phase also introduces the Dealer Accountability App to support multi-location expansion (Kayenta hub).
 
-**Phase 1 Delivered:** ROI baseline, website fixes, database foundation
-**Phase 2 Delivered:** QR capture system, pricing configurator, CRM pipeline
-**Phase 3 Delivers:** Financial dashboards, delivery intelligence, accountability system
+**Phase 1 Delivered:** ROI baseline, website fixes, database foundation, lead qualification form
+**Phase 2 Delivered:** QR capture system, pricing configurator, CRM pipeline, SOP generator tool
+**Phase 3 Delivers:** Financial dashboards, delivery intelligence, accountability system, ideal customer profile analytics
 
----
-
-## Liam Ottley Framework Alignment
-
-This phase maps to **Step 3: Present & Close** of Liam's 3-Step AI Audit Framework, demonstrating clear ROI and expanding operational intelligence.
-
-| Liam's Framework | Our Implementation | Status |
-|------------------|-------------------|--------|
-| Ops Canvas (3 Engines) | All 3 engines now covered | ✅ Added |
-| Opportunity Matrix (2x2) | Impact vs Effort scoring | ✅ Aligned |
-| 4 Quadrants | Quick Wins + Big Swings | ✅ Aligned |
-| ROI Money Slide | Full ROI breakdown below | ✅ Planned |
-| Validation Workshop | Post-Phase 3 review | ✅ Planned |
-
----
-
-## 3 Engines Mapping (Ops Canvas)
-
-| Engine | Description | Phase 3 Opportunities |
-|--------|-------------|----------------------|
-| **ACQUISITION** | How they find and sign customers | (Covered in Phase 1-2) |
-| **DELIVERY** | How they deliver product/service | P3-DELIVERY (Delivery Intel), P3-ACCOUNT (Accountability) |
-| **SUPPORT** | Customer questions and post-sale | P3-DASHBOARD (Analytics), P3-ANALYTICS (Traffic) |
-
-### Phase 3 Engine Focus: DELIVERY (Primary) + SUPPORT (Emerging)
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     DELIVERY ENGINE                             │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │   Customer   │───►│   Driver     │───►│   Delivery   │      │
-│  │   Profile    │    │   Access     │    │   Complete   │      │
-│  │  P3-DELIVERY │    │  P3-DELIVERY │    │              │      │
-│  │  🟡 Quality  │    │  🟡 Info Gap │    │              │      │
-│  │  ★ PRIORITY  │    │              │    │              │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-│                                                                 │
-│  ┌──────────────┐    ┌──────────────┐                          │
-│  │  Checklist   │───►│   Deposit    │                          │
-│  │  Compliance  │    │   Tracking   │                          │
-│  │  P3-ACCOUNT  │    │  P3-ACCOUNT  │                          │
-│  │  🟡 Quality  │    │  🟡 Cash Gap │                          │
-│  └──────────────┘    └──────────────┘                          │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                     SUPPORT ENGINE                              │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
-│  │  Financial   │───►│   Marketing  │───►│   Traffic    │      │
-│  │   KPIs       │    │   ROI        │    │   Analysis   │      │
-│  │ P3-DASHBOARD │    │ P3-DASHBOARD │    │ P3-ANALYTICS │      │
-│  │  🟡 Blind    │    │  🟡 Guess    │    │  🟡 Unknown  │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
-└─────────────────────────────────────────────────────────────────┘
-
-🟡 = Time Sink, Quality Risk, or Knowledge Gap (AI/Automation Opportunity)
-★ = Priority Deliverable
-```
+**Timeline Context (from Jan 3 Meeting):**
+- **March/April:** Major ad campaigns planned - need systems ready to capture and qualify leads
+- **4th of July Sale:** Major event - want full system operational and data-informed by then
+- Data collection from Phase 1 form provides 2-3 months of baseline before campaigns
 
 ---
 
@@ -120,8 +64,6 @@ This phase maps to **Step 3: Present & Close** of Liam's 3-Step AI Audit Framewo
 ### P3-DELIVERY: Customer Profile & Delivery Intelligence (Sheet 5)
 
 **Status:** ★★★★★ PHASE 3 PRIORITY
-**Quadrant:** ⭐ Quick Win (Medium Effort, High Impact)
-**Engine:** DELIVERY
 
 | Attribute | Detail |
 |-----------|--------|
@@ -180,8 +122,6 @@ Delivery assigned → System generates unique link →
 ### P3-DASHBOARD: Financial Performance Dashboard (Sheet 6)
 
 **Status:** ★★★★☆ WEEK 1-2
-**Quadrant:** ⭐ Quick Win (Low-Medium Effort, High Impact)
-**Engine:** SUPPORT
 
 | Attribute | Detail |
 |-----------|--------|
@@ -236,8 +176,6 @@ Delivery assigned → System generates unique link →
 ### P3-ACCOUNT: Dealer Accountability App
 
 **Status:** ★★★★★ WEEK 2 (Critical for Expansion)
-**Quadrant:** 🚀 Big Swing (Medium-High Effort, High Impact)
-**Engine:** DELIVERY
 
 | Attribute | Detail |
 |-----------|--------|
@@ -298,11 +236,63 @@ Delivery assigned → System generates unique link →
 
 ---
 
+### P3-ICP: Ideal Customer Profile Analytics
+
+**Status:** ★★★★★ WEEK 2 (Marketing Optimization)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Problem Addressed** | No understanding of who the ideal customer is; can't target marketing effectively; don't know which customers buy multiple sheds, biggest purchases, best to work with |
+| **Solution** | Analytics dashboard using baseline data collected from lead qualification form + purchase data to identify ideal customer profile |
+| **Impact** | HIGH - Target marketing for March/April campaigns, improve ad ROI, focus sales efforts |
+| **Effort** | LOW-MEDIUM - 3-5 days |
+| **Investment** | Part of Phase 3 |
+| **Dependencies** | Lead qualification form data from Phase 1, CRM data from Phase 2 |
+| **IP Risk** | MEDIUM - Proprietary customer insights |
+| **Timeline** | Week 2 |
+
+#### Data Sources (from Jan 3 Meeting)
+
+> "You should probably collect those questions from every single person that buys a shed, so that when you see these are how they answered it, and they bought this... they were our ideal purchase" - Trent
+
+| Data Source | Insights |
+|-------------|----------|
+| Lead Qualification Form | Product type, intended use, property access, timeline |
+| CRM Pipeline | Close rate by lead type, time to close |
+| Purchase History | Average order value, repeat buyers, referral sources |
+| Lot Data | Which locations convert best, walk-in vs online |
+
+#### Ideal Customer Profile Dimensions
+
+| Dimension | Questions Answered |
+|-----------|-------------------|
+| **Demographics** | Who buys? Where are they located? |
+| **Product Fit** | What product types do they buy? What sizes? |
+| **Buying Behavior** | How quickly do they decide? What's their budget? |
+| **Delivery Fit** | Easy access properties? Rural vs suburban? |
+| **Value** | Who buys multiple? Who refers others? |
+
+#### Deliverables
+
+| Component | Description | Status |
+|-----------|-------------|--------|
+| ICP Dashboard | Visual profile of ideal customer | ⬜ Pending |
+| Segment Analysis | Group customers by behavior | ⬜ Pending |
+| Lead Scoring Model | Score new leads against ICP | ⬜ Pending |
+| Marketing Recommendations | Target audience for March/April ads | ⬜ Pending |
+
+#### Success Metrics
+
+- [ ] ICP clearly defined with data backing
+- [ ] Lead scoring working on new leads
+- [ ] Marketing recommendations ready for March campaigns
+- [ ] Measurable improvement in ad targeting
+
+---
+
 ### P3-ANALYTICS: Traffic & Conversion Analytics
 
 **Status:** ★★★☆☆ OPTIONAL (if budget allows)
-**Quadrant:** 🤔 Nice-to-Have (Medium Effort, Medium Impact)
-**Engine:** SUPPORT
 
 | Attribute | Detail |
 |-----------|--------|
@@ -328,17 +318,17 @@ Delivery assigned → System generates unique link →
 
 ## Phase 3 Consolidated Summary
 
-| ID | Opportunity | Quadrant | Engine | Impact | Effort | Week |
-|----|-------------|----------|--------|--------|--------|------|
-| **P3-DELIVERY** | Delivery Intelligence | ⭐ Quick Win | DELIVERY | ★★★★★ | MED | 1 |
-| **P3-DASHBOARD** | Financial Dashboard | ⭐ Quick Win | SUPPORT | ★★★★☆ | LOW-MED | 1-2 |
-| **P3-ACCOUNT** | Accountability App | 🚀 Big Swing | DELIVERY | ★★★★★ | MED-HIGH | 2 |
-| P3-ANALYTICS | Traffic Counting | 🤔 Nice-to-Have | SUPPORT | ★★★☆☆ | MED | Optional |
-
-**Phase 3 Mix:** 2 Quick Wins + 1 Big Swing + 1 Nice-to-Have
+| ID | Opportunity | Impact | Effort | Week | Priority |
+|----|-------------|--------|--------|------|----------|
+| **P3-DELIVERY** | Customer Profile & Delivery Intel | ★★★★★ | MED | 1 | #1 Operations |
+| **P3-DASHBOARD** | Financial Performance Dashboard | ★★★★☆ | LOW-MED | 1-2 | #2 Intelligence |
+| **P3-ACCOUNT** | Dealer Accountability App | ★★★★★ | MED-HIGH | 2 | #3 Expansion |
+| **P3-ICP** | Ideal Customer Profile Analytics | ★★★★★ | LOW-MED | 2 | #4 Marketing |
+| P3-ANALYTICS | Traffic Counting | ★★★☆☆ | MED | Optional | If budget |
 
 **Total Phase 3 Investment:** $5,000-$10,000 (TBD based on accountability app scope)
 **Timeline:** 2-3 weeks
+**Critical Milestone:** ICP analysis ready for March/April ad campaigns
 
 ---
 
@@ -356,16 +346,20 @@ Delivery assigned → System generates unique link →
 | Dashboard visualization | Developer | 4-5 | ⬜ |
 | Testing | All | 5 | ⬜ |
 
-### Week 2: Accountability App
+### Week 2: Accountability App + ICP Analytics
 
 | Task | Owner | Day | Status |
 |------|-------|-----|--------|
 | App architecture design | Developer | 1 | ⬜ |
 | Rep login system | Developer | 1-2 | ⬜ |
 | Daily checklist UI | Developer | 2-3 | ⬜ |
+| ICP data analysis | AriseGroup | 2-3 | ⬜ |
 | Photo upload system | Developer | 3 | ⬜ |
 | Deposit tracking | Developer | 3-4 | ⬜ |
+| ICP dashboard build | Developer | 3-4 | ⬜ |
+| Lead scoring model | Developer | 4 | ⬜ |
 | Manager dashboard | Developer | 4 | ⬜ |
+| Marketing recommendations | AriseGroup | 4-5 | ⬜ |
 | Testing + training | All | 5 | ⬜ |
 
 ---
@@ -424,82 +418,10 @@ P3-ACCOUNT (Week 2)
 
 ---
 
-## ROI Justification (Liam Ottley Method)
-
-### Direct Savings (Time × Rate)
-
-| Solution | Weekly Hours Saved | Hourly Rate | Annual Savings |
-|----------|-------------------|-------------|----------------|
-| P3-DELIVERY (Delivery Intel) | 4 hrs | $40 | $8,320 |
-| P3-DASHBOARD (KPI Analytics) | 3 hrs | $40 | $6,240 |
-| P3-ACCOUNT (Accountability) | 8 hrs* | $40 | $16,640 |
-| **TOTAL** | **15 hrs/week** | - | **$31,200** |
-
-*Sandra no longer driving to check on lots daily
-
-### Revenue Uplift (Liam's 50% Rule)
-
-> "50% of time saved goes directly to revenue-generating activities"
-
-| Solution | Time Saved | Revenue Time (50%) | Value/Hour | Annual Uplift |
-|----------|-----------|-------------------|------------|---------------|
-| P3-DELIVERY (No failed deliveries) | 4 hrs/wk | 2 hrs | $500/redeliv | $52,000* |
-| P3-DASHBOARD (Optimize marketing) | 3 hrs/wk | 1.5 hrs | 10% better ROAS | $36,000** |
-| P3-ACCOUNT (Scale to Kayenta) | 8 hrs/wk | 4 hrs | $500/sale | $104,000*** |
-| **TOTAL** | - | - | - | **$192,000** |
-
-*Assumes 2 failed deliveries/month avoided @ $250 each + time cost
-**Assumes $30K/month ad spend with 10% improvement
-***Kayenta expansion enabled = additional lot revenue
-
-### Phase 3 ROI Summary (Money Slide Preview)
-
-| Solution | Investment | Direct Savings | Revenue Uplift | Total Value | ROI |
-|----------|-----------|----------------|----------------|-------------|-----|
-| Delivery Intelligence | $2,000 | $8,320 | $52,000 | $60,320 | 2,916% |
-| Financial Dashboard | $1,500 | $6,240 | $36,000 | $42,240 | 2,716% |
-| Accountability App | $4,000 | $16,640 | $104,000 | $120,640 | 2,916% |
-| Traffic Analytics | $2,500 | - | TBD | TBD | Optional |
-| **TOTAL** | **$7,500** | **$31,200** | **$192,000** | **$223,200** | **2,876%** |
-
----
-
-## Validation Workshop (End of Phase 3)
-
-Before moving to Phase 4 (Platform Migration), conduct a comprehensive Validation Workshop.
-
-### Workshop Agenda (45-60 min)
-
-| Topic | Questions | Goal |
-|-------|-----------|------|
-| **Delivery System** | "Has Scott adopted the driver links? Any delivery failures since?" | Confirm adoption |
-| **Dashboard Review** | "Are the KPIs accurate? What decisions have you made using them?" | Validate utility |
-| **Accountability App** | "How is rep compliance? Ready to deploy at Kayenta?" | Confirm expansion readiness |
-| **ROI Check** | "Do these savings/uplift numbers match your experience?" | Validate ROI claims |
-
-### Critical Validation Questions
-
-- [ ] "Is the delivery failure rate measurably lower?"
-- [ ] "Can you see marketing ROI clearly in the dashboard?"
-- [ ] "Are reps completing checklists without resistance?"
-- [ ] "Is Sandra's lot-checking time reduced as expected?"
-- [ ] "Are you confident enough to expand to Kayenta with these systems?"
-
-### Workshop Outputs
-
-1. Phase 3 completion confirmed
-2. Kayenta expansion greenlight
-3. Validated ROI numbers for Phase 4 proposal
-4. Any quick fixes before Phase 4
-5. Refined Phase 4 priorities
-
----
-
 ## Related Documents
 
 - [Phase 1 Opportunity Matrix](./phase-1-opportunity-matrix.md)
 - [Phase 2 Opportunity Matrix](./phase-2-opportunity-matrix.md)
-- [Phase 4 Opportunity Matrix](./phase-4-opportunity-matrix.md)
 - [Main PRD](../docs-workbook1/PRD-lot-assistant.md)
 - [Dec 30 Meeting Summary](../meetings/2025-12-30-expansion-strategy/summary.md)
 
@@ -508,3 +430,12 @@ Before moving to Phase 4 (Platform Migration), conduct a comprehensive Validatio
 **Last Updated:** January 3, 2026
 **Status:** Ready for Phase 2 completion
 **Next Action:** Complete Phase 2 → Begin Phase 3
+
+---
+
+## Revision History
+
+| Date | Version | Changes | Source |
+|------|---------|---------|--------|
+| Jan 3, 2026 | 1.1 | Added P3-ICP (Ideal Customer Profile Analytics); Added timeline context for March/April campaigns and 4th of July; Updated Phase 1/2 delivered items | Jan 3 Team Review Huddle |
+| Jan 3, 2026 | 1.0 | Initial creation | Phase planning |
