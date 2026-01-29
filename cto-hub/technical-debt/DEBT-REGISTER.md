@@ -1,6 +1,6 @@
 # Technical Debt Register
 
-Last Updated: 2026-01-22
+Last Updated: 2026-01-29
 
 ## Overview
 
@@ -26,6 +26,8 @@ This register tracks known technical debt across the AI Agency Sales OS. Items a
 | ID | Description | Location | Impact | Effort | Added |
 |----|-------------|----------|--------|--------|-------|
 | TD-003 | Duplicate templates in client-outreach & speed-to-lead | Commands/Skills | Maintenance burden | Low | 2026-01-22 |
+| TD-004 | 8 n8n workflow exports untracked in git | `agentic/extras/n8n-wf/*.json` | Not version controlled | Low | 2026-01-29 |
+| TD-005 | Slack bot/user tokens expired | `agentic/.env` | Blocks Slack + client-onboarding | Low | 2026-01-29 |
 
 ### P3 - Low Priority
 
