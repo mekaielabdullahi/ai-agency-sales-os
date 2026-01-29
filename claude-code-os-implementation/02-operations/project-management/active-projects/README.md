@@ -54,7 +54,7 @@ This includes:
 - Actively building, managing, or delivering
 - **Payment status:** Invoiced or will be upon delivery
 
-**Example:** S&S Wolf Sheds website rebuild → Active (in delivery phase)
+**Example:** Ascension Capital invoice automation → Active (in delivery phase)
 
 ### 4. **Completed - Awaiting Payment** (Active)
 - Work delivered, invoice sent
@@ -99,10 +99,10 @@ This includes:
 
 | Project | Client | Type | Status | Value | Priority |
 |---------|--------|------|--------|-------|----------|
-| [Plotter Mechanix](./plotter-mechanix/) | David | SaaS Development | 🟡 Discovery | $5K-$50K | P0 |
-| [S&S Wolf Sheds](./ss-wolf-sheds/) | Sandra | Website + Operations | 🟡 In Progress | $10K | P0 |
+| [Plotter Mechanix](./plotter-mechanix/) | David | SaaS Development | 🟡 Discovery | TBD | P0 |
+| [Idea Framework Website](./idea-framework-website/) | Trevor | Website Build | 🟡 In Progress | $XXX | P0 |
 
-**Total Active Revenue Pipeline:** $15K+ committed
+**Total Active Revenue Pipeline:** TBD (active revenue committed)
 
 ---
 

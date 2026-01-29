@@ -1,0 +1,1727 @@
+{
+  "client_id": "maples-apothecary",
+  "created_date": "2026-01-16",
+  "last_updated": "2026-01-16",
+  "audit_status": "in_progress",
+  "data_completeness": "partial",
+
+  "audit_brief": {
+    "company_name": "Maples Apothecary",
+    "industry": "Specialty Retail / Horticulture",
+    "company_size": "Owner-operated with 1 part-time helper",
+    "location": "Oldtown Yuma, AZ",
+    "revenue": null,
+    "revenue_note": "Not provided - owners reinvest all profits, only taking 2 car payments",
+
+    "products_services": [
+      "Rare imported houseplants",
+      "Taxidermied insects in frames",
+      "Plant care classes and workshops",
+      "Soil, pots, and plant care supplies"
+    ],
+
+    "ideal_customer_profile": "Yuma residents interested in houseplants, especially those who value unique/rare specimens and support local businesses",
+
+    "sales_model": "Brick-and-mortar retail with occasional plant classes",
+
+    "tech_stack": {
+      "pos_system": "Square",
+      "social_media": ["Instagram", "Facebook"],
+      "marketing_tools": "ChatGPT ($20/mo) for content creation",
+      "accounting": "QuickBooks (behind on reconciliation)",
+      "website": "Basic landing page, not functional for e-commerce",
+      "crm": null,
+      "email_marketing": null
+    },
+
+    "current_ai_usage": "ChatGPT for creating marketing flyers and content (~15 min per piece)",
+
+    "business_goals": [
+      {
+        "goal": "Increase customer awareness in Yuma",
+        "metric": null,
+        "note": "Owner stated: 'If I could get my ad in front of everyone in Yuma, I could turn this into a legitimate career'"
+      },
+      {
+        "goal": "Hire qualified employee",
+        "metric": "$20/hr target wage",
+        "note": "Need someone with plant knowledge AND customer service skills"
+      },
+      {
+        "goal": "Scale plant production",
+        "metric": null,
+        "note": "Has 5,000-6,000 sq ft basement available for expansion"
+      }
+    ],
+
+    "budget_constraints": {
+      "monthly_budget": null,
+      "note": "Business is bootstrapped, reinvesting all profits. Recent $250 Instagram ad campaign was a test."
+    },
+
+    "timeline_constraints": null,
+
+    "in_scope_processes": [
+      "Marketing and customer acquisition",
+      "Daily store operations",
+      "Inventory management",
+      "Plant import and acclimation",
+      "Employee onboarding and training"
+    ],
+
+    "out_of_scope_processes": [
+      "Accounting/bookkeeping (friend helping)",
+      "Website rebuild (low priority per discussion)"
+    ],
+
+    "key_stakeholders": [
+      {
+        "name": "Toby",
+        "role": "Owner/Operator",
+        "decision_authority": "Primary decision maker"
+      },
+      {
+        "name": "Susie",
+        "role": "Co-owner/Wife",
+        "decision_authority": "Partner in decisions"
+      }
+    ],
+
+    "discovery_source": "Discovery call via Chris Andrade (childhood friend of Toby)"
+  },
+
+  "current_state_maps": [
+    {
+      "process_id": "CSM-001",
+      "process_name": "Customer Acquisition",
+      "process_owner": "Toby",
+      "trigger": "Potential customer becomes aware of shop",
+      "frequency": "Ongoing",
+      "priority": "critical",
+
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Potential customer in Yuma (doesn't know shop exists)",
+          "actor": "Customer",
+          "system": null,
+          "duration": null,
+          "pain_point": "Primary bottleneck - most Yuma residents unaware of shop"
+        },
+        {
+          "step_number": 2,
+          "description": "Customer either discovers shop (walk-in, social media) or never discovers",
+          "actor": "Customer",
+          "system": "Instagram/Facebook or word of mouth",
+          "duration": null,
+          "pain_point": "No systematic outreach, relies on organic discovery"
+        },
+        {
+          "step_number": 3,
+          "description": "Customer enters shop, is amazed by experience",
+          "actor": "Customer",
+          "system": null,
+          "duration": null,
+          "pain_point": null,
+          "note": "Every new customer says 'I didn't know this building existed' and 'Holy shit, this place is awesome'"
+        },
+        {
+          "step_number": 4,
+          "description": "Customer browses, may purchase, may leave without contact captured",
+          "actor": "Customer/Toby",
+          "system": "Square POS",
+          "duration": null,
+          "pain_point": "No email/SMS capture for non-purchasers"
+        }
+      ],
+
+      "systems_involved": ["Instagram", "Facebook", "Square POS"],
+
+      "pain_points": [
+        {
+          "id": "PP-001",
+          "description": "Customers don't know shop exists despite being in revitalized downtown area",
+          "severity": "critical",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Daily - owner hears this every single day",
+          "source": "Client quote: 'Every single day I hear I didn't know this building existed'"
+        },
+        {
+          "id": "PP-002",
+          "description": "No systematic marketing or outreach program",
+          "severity": "high",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Ongoing",
+          "source": "Client confirmed no email marketing, no scheduling tools, ad-hoc posting"
+        },
+        {
+          "id": "PP-003",
+          "description": "Instagram growth stalled without paid campaigns",
+          "severity": "medium",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Ongoing",
+          "source": "Client grew from 2200 to 2600 followers with $250 ad spend over 3 weeks"
+        }
+      ],
+
+      "metrics": {
+        "instagram_followers": 2600,
+        "google_reviews": 44,
+        "ad_spend_test": {
+          "amount": 250,
+          "duration": "3 weeks",
+          "result": "400 new followers"
+        },
+        "viral_post_result": "Sold more taxidermy frames in 2 weeks than prior 3 months"
+      }
+    },
+
+    {
+      "process_id": "CSM-002",
+      "process_name": "Inventory Management",
+      "process_owner": "Toby",
+      "trigger": "Shipment arrives or sale occurs",
+      "frequency": "Daily for sales, periodic for shipments (~350 plants per import)",
+      "priority": "high",
+
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Receive shipment of plants (typically 350 per import order)",
+          "actor": "Toby",
+          "system": null,
+          "duration": null,
+          "pain_point": null
+        },
+        {
+          "step_number": 2,
+          "description": "Manually enter inventory into Square by species and size (4\", 6\", 8\")",
+          "actor": "Toby",
+          "system": "Square POS",
+          "duration": null,
+          "pain_point": "Frequently forgotten, leading to inventory drift"
+        },
+        {
+          "step_number": 3,
+          "description": "Process sales through Square",
+          "actor": "Toby or helper",
+          "system": "Square POS",
+          "duration": null,
+          "pain_point": null
+        },
+        {
+          "step_number": 4,
+          "description": "Discover discrepancies (e.g., 'negative 6 on hand but I see 5 on shelf')",
+          "actor": "Toby",
+          "system": "Square POS",
+          "duration": null,
+          "pain_point": "Manual reconciliation required"
+        },
+        {
+          "step_number": 5,
+          "description": "Spend time correcting inventory records",
+          "actor": "Toby",
+          "system": "Square POS",
+          "duration": "10 hours/month",
+          "pain_point": "Time wasted on corrections instead of revenue-generating activities"
+        }
+      ],
+
+      "systems_involved": ["Square POS"],
+
+      "pain_points": [
+        {
+          "id": "PP-004",
+          "description": "Inventory entry frequently forgotten when orders arrive",
+          "severity": "high",
+          "time_cost": "10 hours/month",
+          "revenue_impact": null,
+          "frequency": "Every shipment",
+          "source": "Client stated: 'plenty of times you'll go in there and it says negative six of these on hand, but I see five of them out'"
+        },
+        {
+          "id": "PP-005",
+          "description": "Time spent on inventory reconciliation",
+          "severity": "medium",
+          "time_cost": "10 hours/month",
+          "revenue_impact": null,
+          "frequency": "Monthly",
+          "source": "Client confirmed 10 hours/month on corrections"
+        }
+      ],
+
+      "metrics": {
+        "monthly_correction_time": "10 hours",
+        "owner_hourly_value": 75,
+        "implied_monthly_cost": 750,
+        "note": "Owner valued their time at $75/hr during call"
+      }
+    },
+
+    {
+      "process_id": "CSM-003",
+      "process_name": "Plant Import and Acclimation",
+      "process_owner": "Toby",
+      "trigger": "Need to restock inventory",
+      "frequency": "Periodic (each cycle is 2 months)",
+      "priority": "medium",
+
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Source plants from US suppliers or international (has APHIS import license)",
+          "actor": "Toby",
+          "system": null,
+          "duration": null,
+          "pain_point": null
+        },
+        {
+          "step_number": 2,
+          "description": "Optimize order mix to reduce shipping cost per plant (target: ~$2/plant)",
+          "actor": "Toby",
+          "system": null,
+          "duration": null,
+          "pain_point": null,
+          "note": "Mix of 25 rare + 325 small plants = 350 total per order"
+        },
+        {
+          "step_number": 3,
+          "description": "Receive shipment in basement 10x10 grow tent",
+          "actor": "Toby",
+          "system": null,
+          "duration": null,
+          "pain_point": null
+        },
+        {
+          "step_number": 4,
+          "description": "Daily monitoring during 2-month acclimation period",
+          "actor": "Toby",
+          "system": "Manual observation",
+          "duration": null,
+          "pain_point": "Most vulnerable state for plants, requires daily attention"
+        },
+        {
+          "step_number": 5,
+          "description": "Move acclimated plants to retail floor",
+          "actor": "Toby",
+          "system": null,
+          "duration": null,
+          "pain_point": null
+        }
+      ],
+
+      "systems_involved": ["Manual process"],
+
+      "pain_points": [
+        {
+          "id": "PP-006",
+          "description": "Manual watering and monitoring is time-consuming",
+          "severity": "medium",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Daily during acclimation",
+          "source": "Client described manual process with wire racks and nursery flats"
+        },
+        {
+          "id": "PP-007",
+          "description": "Cannot delegate without training - plants die if overwatered",
+          "severity": "high",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Ongoing",
+          "source": "Client: 'if they sit there and overwater my plants back to back, they're all going to die'"
+        }
+      ],
+
+      "metrics": {
+        "plants_per_cycle": 350,
+        "acclimation_period": "2 months",
+        "grow_tent_size": "10x10 feet",
+        "automation_cost_estimate": {
+          "low": 1500,
+          "high": 5000,
+          "note": "Client estimate: $1,500 hardware for DIY, <$5,000 turnkey"
+        },
+        "target_maintenance_time": {
+          "daily": "1 hour",
+          "weekly_pest_control": "1 hour additional"
+        }
+      }
+    },
+
+    {
+      "process_id": "CSM-004",
+      "process_name": "Daily Store Operations",
+      "process_owner": "Toby",
+      "trigger": "Store opens",
+      "frequency": "28 hours/week (Tues-Sat 11-5, Sun 12-4)",
+      "priority": "high",
+
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Open store (lights, displays, plants check)",
+          "actor": "Toby or helper",
+          "system": null,
+          "duration": null,
+          "pain_point": "No documented checklist, relies on memory"
+        },
+        {
+          "step_number": 2,
+          "description": "Handle customer service and sales",
+          "actor": "Toby or helper",
+          "system": "Square POS",
+          "duration": null,
+          "pain_point": null
+        },
+        {
+          "step_number": 3,
+          "description": "Water plants as needed",
+          "actor": "Toby or helper",
+          "system": "Manual",
+          "duration": null,
+          "pain_point": "Critical task - easy to over/under water without training"
+        },
+        {
+          "step_number": 4,
+          "description": "Create and post marketing content",
+          "actor": "Toby",
+          "system": "ChatGPT, Instagram, Facebook",
+          "duration": "~15 min per piece",
+          "pain_point": "Ad-hoc, no schedule, not consistently done"
+        },
+        {
+          "step_number": 5,
+          "description": "Close store",
+          "actor": "Toby or helper",
+          "system": null,
+          "duration": null,
+          "pain_point": "No documented procedure"
+        }
+      ],
+
+      "systems_involved": ["Square POS", "ChatGPT", "Instagram", "Facebook"],
+
+      "pain_points": [
+        {
+          "id": "PP-008",
+          "description": "No SOPs or checklists for daily operations",
+          "severity": "high",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Daily",
+          "source": "Client acknowledged need for SOPs, mentioned firefighting-style procedures"
+        },
+        {
+          "id": "PP-009",
+          "description": "Cannot delegate marketing tasks without playbook",
+          "severity": "high",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Daily",
+          "source": "Discussed need for employee to take photos and post content"
+        },
+        {
+          "id": "PP-010",
+          "description": "Marketing content creation is inconsistent",
+          "severity": "medium",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Should be daily, currently ad-hoc",
+          "source": "Owner doing DIY marketing when time permits"
+        }
+      ],
+
+      "metrics": {
+        "weekly_operating_hours": 28,
+        "setup_close_time": "~2 hours/week",
+        "current_staff_cost": "$10/hr (1 day/week)",
+        "target_employee_wage": "$20/hr"
+      }
+    },
+
+    {
+      "process_id": "CSM-005",
+      "process_name": "Plant Classes",
+      "process_owner": "Toby",
+      "trigger": "Scheduled class date",
+      "frequency": "Periodic (not on regular schedule)",
+      "priority": "medium",
+
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Develop curriculum (one-time per class type)",
+          "actor": "Toby",
+          "system": "ChatGPT",
+          "duration": "A few hours initial setup",
+          "pain_point": null
+        },
+        {
+          "step_number": 2,
+          "description": "Promote on social media",
+          "actor": "Toby",
+          "system": "Instagram",
+          "duration": null,
+          "pain_point": "Ad-hoc promotion"
+        },
+        {
+          "step_number": 3,
+          "description": "Host 2-hour class at venue",
+          "actor": "Toby",
+          "system": null,
+          "duration": "2 hours",
+          "pain_point": null
+        },
+        {
+          "step_number": 4,
+          "description": "Upsell plants and supplies to attendees",
+          "actor": "Toby",
+          "system": null,
+          "duration": null,
+          "pain_point": null
+        }
+      ],
+
+      "systems_involved": ["ChatGPT", "Instagram"],
+
+      "pain_points": [
+        {
+          "id": "PP-011",
+          "description": "Classes not on regular schedule",
+          "severity": "low",
+          "time_cost": null,
+          "revenue_impact": null,
+          "frequency": "Ongoing",
+          "source": "Classes held ad-hoc rather than systematically"
+        }
+      ],
+
+      "metrics": {
+        "largest_class": {
+          "attendees": 27,
+          "price_per_person": 30,
+          "total_revenue": 810
+        },
+        "smaller_class": {
+          "attendees": 12,
+          "price_per_person": 30,
+          "total_revenue": 360
+        },
+        "venue_cost": {
+          "current": "Free (neighbor venue)",
+          "future_estimate": "$150-200"
+        },
+        "class_types": [
+          "Propagation/transfer techniques",
+          "Mushroom growing",
+          "Plant care basics"
+        ],
+        "free_plant_experiment": "Tested without free giveaway - still sold out, only 1 of 27 asked about it"
+      }
+    }
+  ],
+
+  "ai_opportunity_matrix": [
+    {
+      "opportunity_id": "OPP-001",
+      "name": "Marketing Playbook + Automated Content System",
+      "category": "Marketing Automation",
+      "type": "AI-assist",
+      "linked_pain_points": ["PP-002", "PP-009", "PP-010"],
+      "linked_process": "CSM-001",
+
+      "description": "Create systematic marketing playbook with AI-assisted content generation. Employee takes 2-3 photos daily, uploads to designated folder, AI generates Instagram/Facebook posts on schedule.",
+
+      "impact": "high",
+      "impact_justification": "Primary bottleneck is customer awareness. $250 ad spend proved Instagram works. Systematic approach will compound.",
+
+      "effort": "low",
+      "effort_justification": "Playbook documentation + simple automation. Owner already uses ChatGPT for content.",
+
+      "speed_to_value": "1-2 weeks",
+
+      "data_requirements": [
+        "Access to Instagram/Facebook accounts",
+        "Photo upload workflow",
+        "Brand voice documentation"
+      ],
+
+      "risks": [
+        {
+          "risk": "Employee doesn't follow playbook",
+          "mitigation": "Checklist + accountability tracking"
+        },
+        {
+          "risk": "Content quality varies",
+          "mitigation": "Templates and examples in playbook"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 500,
+        "high": 1000
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "TBD - requires baseline traffic/conversion data",
+
+      "priority_score": 9,
+      "priority_calculation": "Impact(high=3) × 2 + Feasibility(high=3) = 9"
+    },
+
+    {
+      "opportunity_id": "OPP-002",
+      "name": "Google Reviews Automation System",
+      "category": "Customer Engagement",
+      "type": "Automation",
+      "linked_pain_points": ["PP-001"],
+      "linked_process": "CSM-001",
+
+      "description": "Automated review collection with QR code at POS. Customer scans, leaves review, enters monthly plant raffle. System tracks entries and selects winner.",
+
+      "impact": "high",
+      "impact_justification": "Owner's manual campaign generated 20+ reviews in 2 weeks (24→44). Automation makes this continuous.",
+
+      "effort": "low",
+      "effort_justification": "QR code + simple form + tracking spreadsheet or tool",
+
+      "speed_to_value": "1 week",
+
+      "data_requirements": [
+        "Google Business Profile access",
+        "QR code generation",
+        "Entry tracking system"
+      ],
+
+      "risks": [
+        {
+          "risk": "Low scan adoption",
+          "mitigation": "Incentive (plant raffle) already proven effective"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 300,
+        "high": 500
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "TBD - qualitatively: continuous social proof building",
+
+      "priority_score": 9,
+      "priority_calculation": "Impact(high=3) × 2 + Feasibility(high=3) = 9"
+    },
+
+    {
+      "opportunity_id": "OPP-003",
+      "name": "Daily Operations SOPs + Digital Checklists",
+      "category": "Operations",
+      "type": "Process Documentation + Light Automation",
+      "linked_pain_points": ["PP-008", "PP-007"],
+      "linked_process": "CSM-004",
+
+      "description": "Create comprehensive SOPs for open/close, watering, inventory entry, marketing tasks. Laminated checklists plus optional digital tracking for accountability.",
+
+      "impact": "high",
+      "impact_justification": "Enables delegation to new employee. Owner explicitly mentioned wanting 'firefighting-style' SOPs.",
+
+      "effort": "low",
+      "effort_justification": "ChatGPT can draft, owner reviews, print and laminate",
+
+      "speed_to_value": "1 week",
+
+      "data_requirements": [
+        "Owner walkthrough of current procedures",
+        "Plant watering requirements by species/section"
+      ],
+
+      "risks": [
+        {
+          "risk": "SOPs become outdated",
+          "mitigation": "Quarterly review cycle"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 200,
+        "high": 400
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "TBD - enables $20/hr employee vs $75/hr owner time",
+
+      "priority_score": 9,
+      "priority_calculation": "Impact(high=3) × 2 + Feasibility(high=3) = 9"
+    },
+
+    {
+      "opportunity_id": "OPP-004",
+      "name": "Inventory Entry Reminder System",
+      "category": "Operations",
+      "type": "Automation",
+      "linked_pain_points": ["PP-004", "PP-005"],
+      "linked_process": "CSM-002",
+
+      "description": "Simple reminder system triggered when shipments arrive. Could be as simple as checklist step or automated notification when supplier emails arrive.",
+
+      "impact": "medium",
+      "impact_justification": "Saves 10 hours/month in corrections (~$750 at owner rate)",
+
+      "effort": "low",
+      "effort_justification": "Part of SOP or simple email trigger",
+
+      "speed_to_value": "1 week",
+
+      "data_requirements": [
+        "Shipment notification source (email, calendar, etc.)"
+      ],
+
+      "risks": [
+        {
+          "risk": "Reminder ignored",
+          "mitigation": "Include in daily checklist accountability"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 100,
+        "high": 200
+      },
+
+      "estimated_monthly_value": {
+        "value": 750,
+        "note": "Based on 10 hrs/month × $75/hr owner valuation from call"
+      },
+
+      "roi": "Payback in first month if implemented",
+
+      "priority_score": 7,
+      "priority_calculation": "Impact(medium=2) × 2 + Feasibility(high=3) = 7"
+    },
+
+    {
+      "opportunity_id": "OPP-005",
+      "name": "Grow Tent Automation System",
+      "category": "Operations",
+      "type": "Physical Automation + Monitoring",
+      "linked_pain_points": ["PP-006", "PP-007"],
+      "linked_process": "CSM-003",
+
+      "description": "Drip irrigation with timers, recycling reservoir, optional moisture sensors. Reduces daily monitoring to 1 hour and enables delegation with checklist.",
+
+      "impact": "high",
+      "impact_justification": "Enables production scaling and delegation. Owner stated target is 1 hr/day maintenance.",
+
+      "effort": "medium",
+      "effort_justification": "Hardware installation, some DIY work. Owner estimated 1-2 days setup.",
+
+      "speed_to_value": "2-3 weeks",
+
+      "data_requirements": [
+        "Grow tent specifications",
+        "Water source access",
+        "Electrical access"
+      ],
+
+      "risks": [
+        {
+          "risk": "System malfunction",
+          "mitigation": "Daily check included in SOP, backup manual watering"
+        },
+        {
+          "risk": "Installation issues",
+          "mitigation": "Start with basic timer/drip, add sensors later"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 1500,
+        "high": 2000,
+        "note": "Client estimate: $1,500 hardware DIY"
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "TBD - enables production scaling and delegation",
+
+      "priority_score": 7,
+      "priority_calculation": "Impact(high=3) × 2 + Feasibility(medium=2) = 8, adjusted to 7 due to hardware dependency"
+    },
+
+    {
+      "opportunity_id": "OPP-006",
+      "name": "Employee Onboarding Package",
+      "category": "HR/Training",
+      "type": "Documentation + Process",
+      "linked_pain_points": ["PP-007", "PP-008", "PP-009"],
+      "linked_process": "CSM-004",
+
+      "description": "Comprehensive onboarding kit for incoming volunteer (niece's boyfriend): training schedule, SOPs, plant care guides, accountability system, 90-day progression plan.",
+
+      "impact": "high",
+      "impact_justification": "De-risks volunteer period, accelerates productivity. Volunteer already committed to 3 months free.",
+
+      "effort": "medium",
+      "effort_justification": "Builds on SOPs (OPP-003), adds training curriculum and progression milestones.",
+
+      "speed_to_value": "2-3 weeks",
+
+      "data_requirements": [
+        "Completed SOPs (OPP-003)",
+        "Owner's plant care knowledge",
+        "Store procedures"
+      ],
+
+      "risks": [
+        {
+          "risk": "Employee not good fit",
+          "mitigation": "3-month volunteer trial period already planned"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 1000,
+        "high": 1500
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "TBD - enables 28+ hrs/week of freed owner time",
+
+      "priority_score": 7,
+      "priority_calculation": "Impact(high=3) × 2 + Feasibility(medium=2) = 8, adjusted to 7 due to OPP-003 dependency"
+    },
+
+    {
+      "opportunity_id": "OPP-007",
+      "name": "Class Scheduling and Promotion System",
+      "category": "Revenue",
+      "type": "Process + Light Automation",
+      "linked_pain_points": ["PP-011"],
+      "linked_process": "CSM-005",
+
+      "description": "Create regular class schedule (e.g., monthly), automated promotion sequence, registration system, and post-class follow-up for reviews/referrals.",
+
+      "impact": "medium",
+      "impact_justification": "Classes already profitable ($810 from 27 people). Systematizing creates predictable revenue stream.",
+
+      "effort": "low",
+      "effort_justification": "Curriculum exists, just needs scheduling and promotion sequence",
+
+      "speed_to_value": "2 weeks",
+
+      "data_requirements": [
+        "Existing curriculum templates",
+        "Venue availability",
+        "Historical class performance"
+      ],
+
+      "risks": [
+        {
+          "risk": "Low attendance",
+          "mitigation": "Test with monthly frequency, adjust based on demand"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 500,
+        "high": 1000
+      },
+
+      "estimated_monthly_value": {
+        "low": 360,
+        "high": 810,
+        "note": "Based on 12-27 attendees at $30/person"
+      },
+
+      "roi": "Positive within 1-2 classes",
+
+      "priority_score": 7,
+      "priority_calculation": "Impact(medium=2) × 2 + Feasibility(high=3) = 7"
+    },
+
+    {
+      "opportunity_id": "OPP-008",
+      "name": "Square Analytics Utilization",
+      "category": "Business Intelligence",
+      "type": "Training/Process",
+      "linked_pain_points": [],
+      "linked_process": "CSM-002",
+
+      "description": "1-hour walkthrough of Square analytics features (top sellers, categories, trends). Establish weekly review habit for data-driven decisions.",
+
+      "impact": "low",
+      "impact_justification": "Data is already there, just underutilized. Quick knowledge transfer.",
+
+      "effort": "very_low",
+      "effort_justification": "1-2 hour training session",
+
+      "speed_to_value": "Same day",
+
+      "data_requirements": [
+        "Square account access"
+      ],
+
+      "risks": [],
+
+      "estimated_investment": {
+        "low": 100,
+        "high": 200
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "Qualitative - better inventory and pricing decisions",
+
+      "priority_score": 5,
+      "priority_calculation": "Impact(low=1) × 2 + Feasibility(high=3) = 5"
+    },
+
+    {
+      "opportunity_id": "OPP-009",
+      "name": "Website E-commerce Integration",
+      "category": "Revenue",
+      "type": "Development",
+      "linked_pain_points": ["PP-001"],
+      "linked_process": "CSM-001",
+
+      "description": "Integrate Square inventory with website for online rare plant sales. Target out-of-town buyers who recognize below-market pricing.",
+
+      "impact": "medium",
+      "impact_justification": "Opens new revenue channel. Visitors from Vegas note prices are 'cheap' compared to their market.",
+
+      "effort": "medium",
+      "effort_justification": "Website development, inventory sync, shipping logistics",
+
+      "speed_to_value": "4-6 weeks",
+
+      "data_requirements": [
+        "Website access",
+        "Square API access",
+        "Shipping cost structure"
+      ],
+
+      "risks": [
+        {
+          "risk": "Shipping logistics complex",
+          "mitigation": "Start with local delivery only"
+        },
+        {
+          "risk": "Inventory accuracy issues",
+          "mitigation": "Fix OPP-004 first"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 2500,
+        "high": 4000
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "TBD - requires demand validation",
+
+      "priority_score": 5,
+      "priority_calculation": "Impact(medium=2) × 2 + Feasibility(medium=2) = 6, adjusted to 5 due to dependencies"
+    },
+
+    {
+      "opportunity_id": "OPP-010",
+      "name": "Basement Production Facility Expansion",
+      "category": "Operations/Growth",
+      "type": "Infrastructure",
+      "linked_pain_points": [],
+      "linked_process": "CSM-003",
+
+      "description": "Negotiate with landlord for full basement access (~5,000-6,000 sq ft). Install multiple grow tents for massive production scaling.",
+
+      "impact": "high",
+      "impact_justification": "Owner: 'I'd be a production powerhouse down here'",
+
+      "effort": "high",
+      "effort_justification": "Landlord negotiation, buildout, significant capital",
+
+      "speed_to_value": "3-6 months",
+
+      "data_requirements": [
+        "Business plan for landlord",
+        "Production capacity projections",
+        "Revenue projections"
+      ],
+
+      "risks": [
+        {
+          "risk": "Landlord declines",
+          "mitigation": "Present ROI-based business case"
+        },
+        {
+          "risk": "Capital requirements",
+          "mitigation": "Phase expansion, prove single tent first"
+        }
+      ],
+
+      "estimated_investment": {
+        "low": 10000,
+        "high": 15000,
+        "monthly_rent": 1000,
+        "note": "Owner estimate: '$1,000/month rent plus buildout'"
+      },
+
+      "estimated_monthly_value": null,
+      "roi": "TBD - transformational but requires proof of concept first",
+
+      "priority_score": 4,
+      "priority_calculation": "Impact(high=3) × 2 + Feasibility(low=1) = 7, adjusted to 4 due to capital and timing"
+    }
+  ],
+
+  "target_state_designs": [
+    {
+      "design_id": "TSD-001",
+      "linked_opportunity": "OPP-001",
+      "name": "Marketing Playbook + Automated Content System",
+
+      "solution_summary": "A comprehensive marketing playbook that enables any employee to capture and publish consistent social media content. The system includes daily photo requirements, AI-assisted caption generation, and scheduled posting. This transforms marketing from ad-hoc owner activity to systematic delegated process.",
+
+      "systems_involved": [
+        "Instagram",
+        "Facebook",
+        "ChatGPT or Claude",
+        "Photo upload folder (Google Drive or similar)",
+        "Optional: Later.com or Buffer for scheduling"
+      ],
+
+      "ai_components": [
+        {
+          "name": "Caption Generator",
+          "purpose": "Generate engaging captions from plant photos and brief descriptions",
+          "technology": "ChatGPT API or manual ChatGPT usage",
+          "inputs": ["Photo", "Plant species", "Key features"],
+          "outputs": ["Instagram caption with hashtags", "Facebook post text"]
+        }
+      ],
+
+      "user_journeys": [
+        {
+          "actor": "Employee",
+          "steps": [
+            "Morning: Take 2-3 photos of interesting plants/displays",
+            "Upload to designated folder with brief description",
+            "Check off on daily checklist"
+          ]
+        },
+        {
+          "actor": "Owner or designated marketer",
+          "steps": [
+            "Weekly: Review uploaded photos",
+            "Generate captions using AI template",
+            "Schedule posts for the week",
+            "Review engagement metrics"
+          ]
+        }
+      ],
+
+      "data_flow": "Employee photos → Shared folder → AI caption generation → Scheduled posting → Engagement tracking",
+
+      "governance": [
+        "Owner approves posts initially, delegates after comfort",
+        "Brand voice guidelines in playbook",
+        "Weekly review of engagement metrics"
+      ],
+
+      "success_metrics": [
+        {
+          "metric": "Posts per week",
+          "target": "7+ (daily)",
+          "baseline": "Inconsistent, when owner has time"
+        },
+        {
+          "metric": "Follower growth",
+          "target": "100+ per month",
+          "baseline": "~130/month with $250 ad spend"
+        },
+        {
+          "metric": "Engagement rate",
+          "target": "TBD after baseline",
+          "baseline": "Not currently tracked"
+        }
+      ]
+    },
+
+    {
+      "design_id": "TSD-002",
+      "linked_opportunity": "OPP-003",
+      "name": "Daily Operations SOP System",
+
+      "solution_summary": "Comprehensive Standard Operating Procedures covering all daily operations: opening, closing, plant watering, inventory entry, customer service, and marketing tasks. Delivered as laminated checklists for in-store use plus digital backup. Enables confident delegation to new employee.",
+
+      "systems_involved": [
+        "Laminated physical checklists",
+        "Google Docs or Notion for digital versions",
+        "Optional: Simple checklist app for accountability"
+      ],
+
+      "ai_components": [
+        {
+          "name": "SOP Generator",
+          "purpose": "Draft initial SOP documents from owner walkthrough",
+          "technology": "ChatGPT or Claude",
+          "inputs": ["Owner verbal description", "Task requirements", "Plant care specifications"],
+          "outputs": ["Formatted SOP documents", "Lamination-ready checklists"]
+        }
+      ],
+
+      "user_journeys": [
+        {
+          "actor": "Employee opening store",
+          "steps": [
+            "Grab laminated 'Opening Checklist'",
+            "Complete each step in order",
+            "Mark completion time",
+            "Note any issues for owner"
+          ]
+        },
+        {
+          "actor": "Employee watering plants",
+          "steps": [
+            "Follow section-by-section watering guide",
+            "Check soil moisture before watering",
+            "Log any plant health concerns",
+            "Complete watering checklist"
+          ]
+        }
+      ],
+
+      "data_flow": "SOP documents → Laminated checklists → Daily completion → Weekly owner review",
+
+      "governance": [
+        "Owner reviews completed checklists weekly",
+        "Quarterly SOP review and update",
+        "Employee feedback incorporated"
+      ],
+
+      "success_metrics": [
+        {
+          "metric": "Checklist completion rate",
+          "target": "100% daily",
+          "baseline": "No checklists exist"
+        },
+        {
+          "metric": "Plant survival rate",
+          "target": ">95%",
+          "baseline": "Not currently tracked"
+        },
+        {
+          "metric": "Inventory accuracy",
+          "target": "<2 discrepancies/week",
+          "baseline": "Frequent discrepancies (negative inventory counts)"
+        }
+      ]
+    },
+
+    {
+      "design_id": "TSD-003",
+      "linked_opportunity": "OPP-002",
+      "name": "Google Reviews Automation System",
+
+      "solution_summary": "Automated review collection system using QR code at point of sale. Customers scan, leave Google review, and automatically enter monthly plant raffle. System tracks entries and simplifies winner selection.",
+
+      "systems_involved": [
+        "Google Business Profile",
+        "QR code (printed, placed at register)",
+        "Simple form or landing page",
+        "Entry tracking (Google Sheet or Airtable)"
+      ],
+
+      "ai_components": [],
+
+      "user_journeys": [
+        {
+          "actor": "Customer at checkout",
+          "steps": [
+            "Employee mentions review raffle",
+            "Customer scans QR code",
+            "Customer leaves Google review",
+            "Customer enters name/email on form",
+            "Automatic entry into raffle"
+          ]
+        },
+        {
+          "actor": "Owner monthly",
+          "steps": [
+            "Review new entries",
+            "Select random winner",
+            "Announce on social media",
+            "Award plant to winner"
+          ]
+        }
+      ],
+
+      "data_flow": "QR scan → Review prompt → Entry form → Tracking sheet → Monthly drawing",
+
+      "governance": [
+        "Monthly raffle on consistent date",
+        "Clear rules communicated",
+        "Winner announced publicly for social proof"
+      ],
+
+      "success_metrics": [
+        {
+          "metric": "New reviews per month",
+          "target": "10+",
+          "baseline": "20 in 2 weeks with manual campaign"
+        },
+        {
+          "metric": "Google rating",
+          "target": "Maintain 4.5+ stars",
+          "baseline": "Current rating not provided"
+        }
+      ]
+    },
+
+    {
+      "design_id": "TSD-004",
+      "linked_opportunity": "OPP-005",
+      "name": "Grow Tent Automation System",
+
+      "solution_summary": "Automated irrigation system for 10x10 grow tent reducing daily maintenance from undefined hours to approximately 1 hour. Includes drip irrigation with timers, recycling reservoir, and simple monitoring. Enables delegation to trained employee with checklist.",
+
+      "systems_involved": [
+        "Drip irrigation tubing and emitters",
+        "Timer controllers",
+        "Reservoir with pump",
+        "Optional: moisture sensors",
+        "Maintenance checklist"
+      ],
+
+      "ai_components": [],
+
+      "user_journeys": [
+        {
+          "actor": "Employee daily",
+          "steps": [
+            "Check system is running (visual inspection)",
+            "Verify reservoir levels",
+            "Walk through tent checking plant health",
+            "Log any concerns on checklist",
+            "Total time: ~1 hour"
+          ]
+        },
+        {
+          "actor": "Owner weekly",
+          "steps": [
+            "Review employee logs",
+            "Conduct pest management inspection",
+            "Adjust timer settings if needed",
+            "Plan transplants to retail floor"
+          ]
+        }
+      ],
+
+      "data_flow": "Timer schedule → Automated watering → Employee daily check → Owner weekly review",
+
+      "governance": [
+        "Daily checklist required",
+        "Owner trains employee on plant health indicators",
+        "Emergency procedures documented"
+      ],
+
+      "success_metrics": [
+        {
+          "metric": "Daily maintenance time",
+          "target": "1 hour",
+          "baseline": "Undefined (currently manual)"
+        },
+        {
+          "metric": "Plant survival during acclimation",
+          "target": ">90%",
+          "baseline": "Not tracked"
+        },
+        {
+          "metric": "Delegation success",
+          "target": "Employee can manage independently",
+          "baseline": "Owner-only currently"
+        }
+      ]
+    },
+
+    {
+      "design_id": "TSD-005",
+      "linked_opportunity": "OPP-006",
+      "name": "Employee Onboarding Package",
+
+      "solution_summary": "Comprehensive 90-day onboarding program for new employee (niece's boyfriend volunteering initially). Includes training schedule, plant care curriculum, accountability system, and clear progression milestones from volunteer to paid employee.",
+
+      "systems_involved": [
+        "Training manual (printed + digital)",
+        "All SOPs from TSD-002",
+        "Daily/weekly checklist system",
+        "Progress tracking (simple spreadsheet)"
+      ],
+
+      "ai_components": [
+        {
+          "name": "Training Content Generator",
+          "purpose": "Create plant care training materials from owner knowledge",
+          "technology": "ChatGPT or Claude",
+          "inputs": ["Owner expertise", "Plant care requirements", "Common mistakes"],
+          "outputs": ["Training modules", "Quick reference guides", "Quiz questions"]
+        }
+      ],
+
+      "user_journeys": [
+        {
+          "actor": "New employee Week 1",
+          "steps": [
+            "Complete orientation training",
+            "Shadow owner for all tasks",
+            "Begin using checklists with supervision",
+            "Learn top 10 plant species care"
+          ]
+        },
+        {
+          "actor": "Employee Month 2-3",
+          "steps": [
+            "Operate independently with daily check-in",
+            "Handle routine customer interactions",
+            "Manage watering schedule independently",
+            "Begin marketing content contribution"
+          ]
+        }
+      ],
+
+      "data_flow": "Training modules → Daily checklists → Weekly reviews → Progress milestones → Paid position decision",
+
+      "governance": [
+        "Weekly 1:1 with owner",
+        "30/60/90 day milestone reviews",
+        "Clear criteria for paid position transition"
+      ],
+
+      "success_metrics": [
+        {
+          "metric": "Time to independent operation",
+          "target": "4 weeks",
+          "baseline": "N/A (no prior employee)"
+        },
+        {
+          "metric": "Checklist completion rate",
+          "target": "100%",
+          "baseline": "N/A"
+        },
+        {
+          "metric": "Customer satisfaction",
+          "target": "No complaints",
+          "baseline": "Owner-only service currently"
+        }
+      ]
+    }
+  ],
+
+  "roadmap": {
+    "total_timeline": "12 weeks",
+    "total_effort_hours": null,
+    "total_monthly_value": null,
+    "roi_break_even": "TBD - requires baseline metrics",
+
+    "phases": [
+      {
+        "phase_id": "P1",
+        "name": "Foundation - Quick Wins",
+        "duration": "Weeks 1-2",
+        "focus": "Enable delegation and systematic marketing",
+
+        "initiatives": [
+          {
+            "opportunity_id": "OPP-001",
+            "name": "Marketing Playbook + Content System",
+            "deliverables": [
+              "Marketing playbook document",
+              "Photo upload workflow",
+              "Caption templates",
+              "Posting schedule"
+            ],
+            "kpis": ["Daily posts established", "Employee trained on photos"],
+            "dependencies": [],
+            "owner": "Agency + Toby",
+            "effort_hours": 15,
+            "investment": {"low": 500, "high": 1000}
+          },
+          {
+            "opportunity_id": "OPP-002",
+            "name": "Google Reviews Automation",
+            "deliverables": [
+              "QR code printed and placed",
+              "Landing page/form created",
+              "Tracking sheet setup",
+              "Raffle process documented"
+            ],
+            "kpis": ["System live", "First entries captured"],
+            "dependencies": [],
+            "owner": "Agency + Toby",
+            "effort_hours": 8,
+            "investment": {"low": 300, "high": 500}
+          },
+          {
+            "opportunity_id": "OPP-003",
+            "name": "Daily Operations SOPs",
+            "deliverables": [
+              "Opening checklist",
+              "Closing checklist",
+              "Watering guide by section",
+              "Inventory entry procedure",
+              "Laminated versions"
+            ],
+            "kpis": ["All checklists complete", "Employee using daily"],
+            "dependencies": [],
+            "owner": "Agency + Toby",
+            "effort_hours": 10,
+            "investment": {"low": 200, "high": 400}
+          },
+          {
+            "opportunity_id": "OPP-004",
+            "name": "Inventory Entry Reminder",
+            "deliverables": [
+              "Reminder system (part of SOP)",
+              "Shipment logging procedure"
+            ],
+            "kpis": ["Zero missed shipment entries"],
+            "dependencies": ["OPP-003"],
+            "owner": "Agency + Toby",
+            "effort_hours": 2,
+            "investment": {"low": 100, "high": 200}
+          }
+        ],
+
+        "phase_investment": {"low": 1100, "high": 2100},
+        "phase_value": null,
+        "phase_value_note": "Enables delegation, systematic marketing, and ~$750/month savings on inventory corrections"
+      },
+
+      {
+        "phase_id": "P2",
+        "name": "Scale Enablement",
+        "duration": "Weeks 3-6",
+        "focus": "Enable employee, automate production, systematize revenue streams",
+
+        "initiatives": [
+          {
+            "opportunity_id": "OPP-006",
+            "name": "Employee Onboarding Package",
+            "deliverables": [
+              "Training manual",
+              "Plant care curriculum",
+              "30/60/90 day milestones",
+              "Accountability tracking"
+            ],
+            "kpis": ["Employee trained and operating independently"],
+            "dependencies": ["OPP-003 complete"],
+            "owner": "Agency + Toby",
+            "effort_hours": 20,
+            "investment": {"low": 1000, "high": 1500}
+          },
+          {
+            "opportunity_id": "OPP-005",
+            "name": "Grow Tent Automation",
+            "deliverables": [
+              "Irrigation system installed",
+              "Timer programming complete",
+              "Maintenance checklist",
+              "Employee trained"
+            ],
+            "kpis": ["Daily maintenance under 1 hour", "System reliable"],
+            "dependencies": ["OPP-003 complete", "Employee available"],
+            "owner": "Toby + Agency guidance",
+            "effort_hours": 16,
+            "investment": {"low": 1500, "high": 2000}
+          },
+          {
+            "opportunity_id": "OPP-007",
+            "name": "Class Scheduling System",
+            "deliverables": [
+              "Monthly class calendar",
+              "Promotion sequence",
+              "Registration system",
+              "Post-class follow-up"
+            ],
+            "kpis": ["Monthly class scheduled", "Registration flowing"],
+            "dependencies": [],
+            "owner": "Agency + Toby",
+            "effort_hours": 10,
+            "investment": {"low": 500, "high": 1000}
+          },
+          {
+            "opportunity_id": "OPP-008",
+            "name": "Square Analytics Training",
+            "deliverables": [
+              "Training session completed",
+              "Weekly review habit established"
+            ],
+            "kpis": ["Owner reviewing data weekly"],
+            "dependencies": [],
+            "owner": "Agency",
+            "effort_hours": 2,
+            "investment": {"low": 100, "high": 200}
+          }
+        ],
+
+        "phase_investment": {"low": 3100, "high": 4700},
+        "phase_value": null,
+        "phase_value_note": "Frees owner time via employee, enables production scaling, adds predictable class revenue ($360-810/class)"
+      },
+
+      {
+        "phase_id": "P3",
+        "name": "Revenue Expansion",
+        "duration": "Weeks 7-12",
+        "focus": "New revenue channels and growth preparation",
+
+        "initiatives": [
+          {
+            "opportunity_id": "OPP-009",
+            "name": "Website E-commerce Integration",
+            "deliverables": [
+              "E-commerce functionality live",
+              "Square inventory synced",
+              "Shipping/local delivery configured",
+              "Product photography uploaded"
+            ],
+            "kpis": ["First online sale", "Inventory accuracy maintained"],
+            "dependencies": ["OPP-004 effective (inventory accuracy)"],
+            "owner": "Agency + Toby",
+            "effort_hours": 40,
+            "investment": {"low": 2500, "high": 4000}
+          }
+        ],
+
+        "phase_investment": {"low": 2500, "high": 4000},
+        "phase_value": null,
+        "phase_value_note": "Opens new market (out-of-town buyers who recognize below-market pricing)"
+      }
+    ],
+
+    "future_phases": [
+      {
+        "name": "Basement Production Expansion",
+        "opportunity_id": "OPP-010",
+        "trigger": "Single tent automation proven successful, business plan approved by landlord",
+        "estimated_investment": {"low": 10000, "high": 15000},
+        "note": "Transformational opportunity - 5,000-6,000 sq ft production facility"
+      },
+      {
+        "name": "Import/Export Business Development",
+        "trigger": "Thailand/Vietnam trip in April, direct supplier relationships established",
+        "note": "Owner has APHIS import license, interested in long-term export opportunity"
+      }
+    ]
+  },
+
+  "report_outline": {
+    "executive_summary": {
+      "current_state": "Maples Apothecary is a specialty plant and exotic goods shop in Oldtown Yuma with an excellent in-store experience but significant customer awareness challenges. Owner Toby operates the business with minimal staff, handling all operations personally.",
+      "key_findings": [
+        "Primary bottleneck is customer awareness - 'every day I hear I didn't know this building existed'",
+        "Recent $250 Instagram ad test proved marketing works (400 new followers, viral post drove 3 months of frame sales in 2 weeks)",
+        "No SOPs or checklists prevent delegation, keeping owner tied to all operations",
+        "10 hours/month lost to inventory correction (~$750 at owner's $75/hr valuation)",
+        "Potential employee identified (volunteer for 3 months, plant-passionate, detail-oriented)"
+      ],
+      "opportunity_summary": "10 opportunities identified across marketing, operations, and revenue. Top priorities: marketing playbook, operations SOPs, and review automation - all low-effort, high-impact.",
+      "projected_impact": "TBD - requires baseline metrics. Qualitatively: enables delegation, systematic marketing presence, production scaling capability.",
+      "roi_summary": "Cannot calculate - baseline metrics required for traffic, conversion, and time allocation"
+    },
+
+    "sections": [
+      {
+        "title": "Business Context",
+        "content": "Industry overview, company profile, stakeholders, business goals"
+      },
+      {
+        "title": "Current State Analysis",
+        "content": "5 process maps covering customer acquisition, inventory, plant operations, daily ops, and classes"
+      },
+      {
+        "title": "Pain Points & Opportunities",
+        "content": "11 pain points identified, 10 opportunities scored and prioritized"
+      },
+      {
+        "title": "Target State Designs",
+        "content": "5 detailed solution designs for top opportunities"
+      },
+      {
+        "title": "Implementation Roadmap",
+        "content": "12-week phased approach: Foundation (2 weeks), Scale Enablement (4 weeks), Revenue Expansion (6 weeks)"
+      },
+      {
+        "title": "Investment & ROI",
+        "content": "Phase 1: $1,100-$2,100 | Phase 2: $3,100-$4,700 | Phase 3: $2,500-$4,000 | ROI: TBD"
+      },
+      {
+        "title": "Next Steps",
+        "content": "Select engagement option, schedule kickoff, begin Phase 1"
+      }
+    ]
+  },
+
+  "presentation_outline": [
+    {
+      "slide": 1,
+      "title": "Maples Apothecary AI Audit",
+      "purpose": "Title slide",
+      "talking_points": ["Prepared for Toby", "January 2026"]
+    },
+    {
+      "slide": 2,
+      "title": "The Challenge",
+      "purpose": "Frame the core problem",
+      "talking_points": [
+        "'Every single day I hear I didn't know this building existed'",
+        "Excellent shop experience, awareness is the bottleneck",
+        "Owner doing everything, can't scale"
+      ]
+    },
+    {
+      "slide": 3,
+      "title": "What's Working",
+      "purpose": "Acknowledge wins",
+      "talking_points": [
+        "$250 Instagram test: 400 new followers",
+        "Viral insect post: 3 months of frame sales in 2 weeks",
+        "Review raffle: 20+ new reviews in 2 weeks",
+        "Classes: $810 from 27 attendees"
+      ]
+    },
+    {
+      "slide": 4,
+      "title": "Current State Analysis",
+      "purpose": "Show understanding of operations",
+      "talking_points": [
+        "5 key processes mapped",
+        "11 pain points identified",
+        "10 hours/month on inventory corrections",
+        "No SOPs = can't delegate"
+      ]
+    },
+    {
+      "slide": 5,
+      "title": "Top Opportunities",
+      "purpose": "Show prioritized opportunities",
+      "talking_points": [
+        "Marketing Playbook + Content System",
+        "Google Reviews Automation",
+        "Daily Operations SOPs",
+        "All: High impact, Low effort"
+      ]
+    },
+    {
+      "slide": 6,
+      "title": "Recommended Roadmap",
+      "purpose": "Show phased approach",
+      "talking_points": [
+        "Phase 1 (Weeks 1-2): Foundation - $1,100-$2,100",
+        "Phase 2 (Weeks 3-6): Scale Enablement - $3,100-$4,700",
+        "Phase 3 (Weeks 7-12): Revenue Expansion - $2,500-$4,000"
+      ]
+    },
+    {
+      "slide": 7,
+      "title": "Phase 1 Detail",
+      "purpose": "Zoom into quick wins",
+      "talking_points": [
+        "Marketing playbook so employee can post",
+        "Review QR code at register",
+        "SOPs for all daily operations",
+        "Result: Delegation enabled, systematic marketing started"
+      ]
+    },
+    {
+      "slide": 8,
+      "title": "Investment & Value",
+      "purpose": "Present pricing options",
+      "talking_points": [
+        "Phase 1 only: $1,100-$2,100",
+        "Full engagement: $6,700-$10,800",
+        "Value: Freed owner time, systematic growth, production scaling"
+      ]
+    },
+    {
+      "slide": 9,
+      "title": "Next Steps",
+      "purpose": "Call to action",
+      "talking_points": [
+        "Select engagement option",
+        "Schedule kickoff call",
+        "Begin Phase 1 implementation"
+      ]
+    }
+  ],
+
+  "notes": [
+    {
+      "date": "2026-01-16",
+      "author": "Audit Agent",
+      "note": "Initial audit created from discovery call transcript. Toby's audio came through Chris's microphone - speaker identification based on context."
+    },
+    {
+      "date": "2026-01-16",
+      "author": "Audit Agent",
+      "note": "Strong relationship context: Chris Andrade is Toby's childhood best friend since 5th/6th grade. High trust engagement."
+    },
+    {
+      "date": "2026-01-16",
+      "author": "Audit Agent",
+      "note": "Potential employee identified: niece's boyfriend, described as 'autistic enough to be detail-oriented', passionate about horticulture, willing to volunteer 3 months."
+    }
+  ],
+
+  "unknowns": [
+    "Monthly revenue (owners reinvest all, only take car payments)",
+    "Daily operating costs (rent, utilities, insurance)",
+    "Current customer count / traffic",
+    "Website analytics / traffic",
+    "Customer lifetime value",
+    "Average transaction size",
+    "Current time spent on various activities",
+    "Plant survival rate during acclimation",
+    "Google review average rating",
+    "Class conversion rate (attendees who become customers)"
+  ],
+
+  "attachments": {
+    "discovery_transcript": "meetings/transcript.md",
+    "discovery_summary": "meetings/summary.md",
+    "process_map_markdown": "audit/process-map.md",
+    "opportunity_matrix_markdown": "audit/opportunity-matrix.md"
+  },
+
+  "_metadata": {
+    "data_sources": [
+      {
+        "type": "discovery_call_transcript",
+        "date": "2026-01-16",
+        "participants": ["Chris Andrade", "Toby (Maples Apothecary)", "Matthew Kerns"],
+        "note": "Toby's audio came through Chris's microphone"
+      }
+    ],
+    "assumptions_made": [
+      {
+        "assumption": "Owner values time at $75/hr for ROI calculations",
+        "source": "Chris stated this during call",
+        "needs_validation": false
+      },
+      {
+        "assumption": "Volunteer employee will be available as discussed",
+        "source": "Toby mentioned niece's boyfriend committed",
+        "needs_validation": true
+      }
+    ],
+    "follow_up_required": [
+      "Quantitative discovery call for baseline metrics (revenue, traffic, time allocation)",
+      "Confirm volunteer employee start date",
+      "Get Square data export for sales analysis",
+      "Website access for e-commerce assessment"
+    ],
+    "data_completeness": "partial",
+    "audit_agent_version": "1.1"
+  }
+}
