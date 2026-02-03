@@ -1,6 +1,6 @@
 # Technical Debt Register
 
-Last Updated: 2026-02-03
+Last Updated: 2026-01-29
 
 ## Overview
 
@@ -14,25 +14,20 @@ This register tracks known technical debt across the AI Agency Sales OS. Items a
 
 ## Active Debt
 
-### P0 - Critical
-
-| ID | Description | Location | Impact | Effort | Added |
-|----|-------------|----------|--------|--------|-------|
-| TD-004 | Agentic .env not configured | `agentic/.env` | Blocks ALL module functionality | Low | 2026-02-03 |
-
 ### P1 - High Priority
 
 | ID | Description | Location | Impact | Effort | Added |
 |----|-------------|----------|--------|--------|-------|
 | TD-001 | Notion sync targets need page IDs | `.claude/skills/notion-sync/targets.json` | Can't auto-sync reports | Low | 2026-01-22 |
 | TD-002 | TypeScript onboarding agents not deployed | `03-ai-growth-engine/onboarding/agents/` | Agents are specs only | High | 2026-01-22 |
-| TD-005 | Google module undocumented | `agentic/modules/google/` | Missing from module inventory | Low | 2026-02-03 |
 
 ### P2 - Medium Priority
 
 | ID | Description | Location | Impact | Effort | Added |
 |----|-------------|----------|--------|--------|-------|
 | TD-003 | Duplicate templates in client-outreach & speed-to-lead | Commands/Skills | Maintenance burden | Low | 2026-01-22 |
+| TD-004 | 8 n8n workflow exports untracked in git | `agentic/extras/n8n-wf/*.json` | Not version controlled | Low | 2026-01-29 |
+| TD-005 | Slack bot/user tokens expired | `agentic/.env` | Blocks Slack + client-onboarding | Low | 2026-01-29 |
 
 ### P3 - Low Priority
 
