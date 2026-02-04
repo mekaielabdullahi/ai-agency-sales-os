@@ -1,8 +1,18 @@
 # Phase 2 To-Review Folder
 
-**Status:** Ready for internal team review
+**Status:** ✅ Joe's validation COMPLETED - See final-proposal folder
 **Created:** January 24, 2026
-**Next Action:** Mekaiel, Trent, Chris, and Matthew review, then launch validation phase (2-3 weeks before Phase 2 start)
+**Updated:** January 31, 2026
+**Next Action:** Present validated proposal to Kelsey/Nikki
+
+## 🎯 IMPORTANT UPDATE
+
+**Joe's interview validated our assumptions and INCREASED the ROI potential.**
+See `/offer/phase-2/final-proposal/` for the updated proposal with:
+- Validated metrics from Joe (20-30 hrs/week training, not 5)
+- Shopify-Jobber fix quantified (2-3 under-deliveries/month)
+- Updated ROI: $85-185k/year (was $68-160k)
+- HIGH confidence levels replacing LOW estimates
 
 ---
 
@@ -11,8 +21,8 @@
 ### 1. PHASE-2-PROPOSAL.md
 **Audience:** Kelsey, Nikki, Megan (final decision makers)
 **Purpose:** Clean client-facing proposal with 10x scale framework
-**Investment:** $47,000
-**Expected ROI:** $116,600/year (248% return, 4.8 month payback)
+**Investment:** $15,000 - $47,000 (3 tier options)
+**Expected ROI:** $37,600 - $116,600/year (248%+ return, 4-5 month payback)
 
 **Key Sections:**
 - Executive Summary (10x scale test)
@@ -117,12 +127,14 @@
 
 ## Key Decisions Made
 
-### Pricing: $47,000
+### Pricing: $15,000 - $47,000 (3 Tiers)
 **Rationale:**
-- AAA framework: $153,600 (Year 1 ROI) ÷ 2.5 = $61,440 recommended
-- Our price: $47,000 (below formula to account for vendor fatigue)
-- Value-to-price ratio: 3.3:1 (client gets $3.30 per $1 invested)
-- Exceeds industry standard 2.5:1 ratio
+- NEW: Tiered pricing options required per team feedback (see TEAM-REVIEW-FEEDBACK.md)
+- NEW: Jan 27 Kelsey call provides updated business context (revenue higher, payment sensitivity confirmed)
+- Foundation ($15k): Equipment CRM standalone - lowest risk, highest standalone ROI (251%)
+- Growth ($28k): + Chat Agent + Email Automation - solves daily operations (277%)
+- Full Scale ($47k): + Training System - complete scaling infrastructure (248%)
+- All tiers exceed AAA framework 2.5:1 value-to-price target
 
 ### Timeline: 4-6 Weeks
 **Rationale:**
@@ -165,7 +177,7 @@
 7. Where do you track customer relationships?
 
 ### For Kelsey/Nikki (Financial):
-8. What's the actual annual revenue? (estimated $600k)
+8. What's the actual annual revenue? (Jan 27: ~$700-800k, targeting $1.2M-$1.7M -- confirm with financials)
 9. What's your Phase 2 budget ceiling?
 10. What pain points are MOST urgent to solve?
 
@@ -200,8 +212,9 @@
 ## Files Referenced
 
 ### In This Folder (to-review/):
-- `PHASE-2-PROPOSAL.md` - Client-facing proposal
+- `PHASE-2-PROPOSAL.md` - Client-facing proposal (updated with tiered pricing + Jan 27 context)
 - `VALIDATION-ACTION-PLAN.md` - Internal validation playbook
+- `TEAM-REVIEW-FEEDBACK.md` - Team review feedback with tiered pricing options and Jan 27 call insights
 
 ### In Parent Folder (offer/phase-2/):
 - `PHASE-2-PLAN.md` - Technical implementation plan
@@ -232,11 +245,11 @@
 - ✅ All 5 deliverables working as specified
 - ✅ Team trained and confident using systems
 - ✅ ROI targets hit within 90 days
-- ✅ Ready to hire Steve (new technician)
+- ✅ Ready to scale team (Michael Maloney, subcontractors, or next hire)
 - ✅ Phase 3 pipeline identified ($20k-80k potential)
 
 ---
 
-*Last Updated: January 24, 2026*
+*Last Updated: January 28, 2026*
 *Owner: Matthew Kerns*
 *Status: Ready for validation phase kickoff*

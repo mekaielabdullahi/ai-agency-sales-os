@@ -27,26 +27,39 @@
 
 ### High Priority (Must Validate Before Phase 2)
 
-| Variable | Current Assumption | Confidence | Method | Owner |
-|----------|-------------------|------------|--------|-------|
-| **Kelsey's training time** | 5 hrs/week | 🔴 LOW | 5-day time tracking | Kelsey |
-| **Alyssa's "Do we have X?" interruptions** | 10/day × 5 min | 🔴 LOW | 5-day tally log | Alyssa |
-| **Alyssa's email processing time** | Unknown | 🔴 LOW | 5-day time tracking | Alyssa |
-| **Alyssa's context-switching time** | Unknown | 🔴 LOW | 5-day tracking | Alyssa |
-| **Business annual revenue** | $700-800k est (trending $1.2M-$1.7M target) | 🟡 MEDIUM | Financial records -- ask for 2025 actual + 2026 YTD | Kelsey/Nikki |
-| **Service contract eligible customers** | 20 estimate | 🔴 LOW | Jobber data analysis | Matthew |
-| **Ply implementation status** | Unknown % | 🔴 LOW | Megan interview | Matthew/Linh |
-| **Used parts inventory value** | $50k estimate | 🟡 MEDIUM | Megan interview | Matthew/Linh |
+| Variable | Current Assumption | Confidence | Method | Owner | Status |
+|----------|-------------------|------------|--------|-------|--------|
+| **Kelsey's training time** | ~~5 hrs/week~~ **20-30 hrs/week × 3 months** | 🟢 HIGH | ✅ VALIDATED by Joe interview | Joe | **COMPLETED** |
+| **Knowledge base need** | ~~10% calls need help~~ **20% major, 10-15% minor** | 🟢 HIGH | ✅ VALIDATED by Joe interview | Joe | **COMPLETED** |
+| **Shopify-Jobber mismatch** | ~~Unknown~~ **2-3 under-deliveries/month** | 🟢 HIGH | ✅ VALIDATED by Joe interview | Joe | **COMPLETED** |
+| **Morning coordination time** | ~~Unknown~~ **1.5-2 hours daily** | 🟢 HIGH | ✅ VALIDATED by Joe interview | Joe | **COMPLETED** |
+| **Alyssa's email processing time** | Unknown | 🔴 LOW | 5-day time tracking | Alyssa | Pending |
+| **Alyssa's context-switching time** | Unknown | 🔴 LOW | 5-day tracking | Alyssa | Pending |
+| **Business annual revenue** | $700-800k est (trending $1.2M-$1.7M target) | 🟡 MEDIUM | Financial records -- ask for 2025 actual + 2026 YTD | Kelsey/Nikki | Pending |
+| **Service contract eligible customers** | 20 estimate | 🔴 LOW | Jobber data analysis | Matthew | Pending |
+| **Ply implementation status** | Unknown % | 🔴 LOW | Megan interview | Matthew/Linh | Pending |
+| **Used parts inventory value** | $50k estimate | 🟡 MEDIUM | Megan interview | Matthew/Linh | Pending |
+
+### ✅ COMPLETED - Joe's Interview Validation (January 28, 2026)
+
+**Key Validated Metrics:**
+- **Training Time:** 20-30 hours/week for first 3 months (was 5 hrs/week estimate)
+- **Knowledge Gap:** 20% of calls need major help, 10-15% need minor guidance
+- **Shopify-Jobber Issue:** 2-3 under-deliveries monthly, each requiring 2-hour fix
+- **Morning Coordination:** 1.5-2 hours daily, routes change 4 out of 5 days
+- **Learning Preference:** Videos preferred over live training (better retention)
+- **Tech Proficiency:** 70-80% confident on HP, needs help with solvents/Epson/UV
+- **Field Support Need:** Wants mobile RAG agent for instant answers
 
 ### Medium Priority (Should Validate for Stronger Case)
 
-| Variable | Current Assumption | Method | Owner |
-|----------|-------------------|--------|-------|
-| Customer churn rate | Unknown | Jobber analysis | Matthew |
-| Alyssa's manual data entry time | Unknown | 5-day tracking | Alyssa |
-| Equipment lookup time | Unknown | 5-day tracking | Alyssa |
-| Joe's onboarding timeline | 4-6 weeks estimate | Kelsey interview | Matthew/Chris |
-| Kelsey's actual billable rate | $300/hr estimate | Confirm with Kelsey | Matthew/Chris |
+| Variable | Current Assumption | Method | Owner | Status |
+|----------|-------------------|--------|-------|--------|
+| Customer churn rate | Unknown | Jobber analysis | Matthew | Pending |
+| Alyssa's manual data entry time | Unknown | 5-day tracking | Alyssa | Pending |
+| Equipment lookup time | Unknown | 5-day tracking | Alyssa | Pending |
+| ~~Joe's onboarding timeline~~ | ~~4-6 weeks estimate~~ **3 months validated** | ✅ Joe interview | Joe | **COMPLETED** |
+| Kelsey's actual billable rate | $300/hr estimate | Confirm with Kelsey | Matthew/Chris | Pending |
 
 ### Equipment Management Platform Evaluation (Must Complete Before Phase 2 Build)
 
