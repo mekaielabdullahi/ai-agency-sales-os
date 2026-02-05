@@ -1,0 +1,28 @@
+# Agentic Module Manifest
+# https://github.com/arisegroup/agentic-workspaces
+
+name: client-feedback
+version: 1.0.0
+description: Client feedback management system - submit, triage, and track client testing feedback via Notion database with automated workflows
+
+# Module type: bundled = tool + runbook + commands together
+type: bundled
+
+# Files to install (relative paths in this repo -> workspace locations)
+files:
+  tool: tool/feedback_api.py
+  runbook: runbook/feedback_management.md
+
+# Dependencies on other modules (checked but not auto-installed)
+requires:
+  - notion
+
+# Python package dependencies (merged into workspace requirements.txt)
+python_requires:
+  - notion-client>=2.0
+  - python-dotenv
+
+# Environment variables required (added to .env.example)
+env_vars:
+  - NOTION_API_KEY
+  - CLIENT_FEEDBACK_DB_ID

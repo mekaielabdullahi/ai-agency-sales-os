@@ -140,7 +140,79 @@ After automated setup completes:
    - Fill in team roster
    - Update key dates
 
-3. **Optional**: Set up Workflow Builder automation for guest welcome (manual in Slack UI)
+3. **Create Client Feedback Portal** (see Portal Setup below)
+
+4. **Optional**: Set up Workflow Builder automation for guest welcome (manual in Slack UI)
+
+---
+
+## Client Feedback Portal Setup
+
+Each client gets a Notion portal page for submitting and tracking feedback during testing.
+
+### 1. Create Portal Page
+
+In Notion:
+1. Navigate to the Client Portals section
+2. Duplicate the portal template page
+3. Rename to `{Client Name} - Feedback Portal`
+4. Update the page header with client name
+
+### 2. Add Filtered Database View
+
+1. In the portal page, create a linked database view from "Client Feedback"
+2. Set filter: `Company = {Client Company}`
+3. Configure visible properties (client-facing only):
+   - Feedback ID
+   - Title
+   - Request Type
+   - Severity
+   - Status
+   - Response
+   - Created
+4. Hide internal properties:
+   - Internal Notes
+   - Assigned To
+   - Priority (team-assigned)
+   - Resolution Summary (or make visible)
+
+### 3. Add Feedback Form
+
+1. In the portal page, add a Form view from the Client Feedback database
+2. Configure form fields:
+   - Title (required)
+   - Request Type (required)
+   - Severity (required)
+   - Description (required)
+   - Steps to Reproduce (optional, show for Bug type)
+   - Attachments (optional)
+3. Pre-fill Company relation via form URL parameter
+4. Hide: Status, Priority, Internal Notes, Assigned To
+
+### 4. Share Portal with Client
+
+1. Click Share on the portal page
+2. Invite client email as Notion guest
+3. Set permission: "Can view" (or "Can edit" if they need to add comments)
+4. Client receives email invitation to access portal
+
+### 5. Add Portal Link to Slack Canvas
+
+Update the client channel canvas with the portal link:
+- Add "Feedback Portal" to Quick Links section
+- Include brief instructions: "Submit bugs and requests here"
+
+### Portal Checklist
+
+```
+[ ] Portal page created from template
+[ ] Filtered database view configured
+[ ] Form view added with correct fields
+[ ] Company pre-fill working
+[ ] Portal shared with client guest
+[ ] Portal link added to Slack canvas
+[ ] Client notified of feedback process
+```
 
 ---
 
@@ -196,3 +268,4 @@ Ensure the `#new-clients` channel exists. Use `--notify-channel` to specify a di
 ## Related Directives
 
 - `runbooks/slack_management.md` - General Slack operations (channel management, messages, pins)
+- `runbooks/feedback_management.md` - Client feedback triage and response workflow

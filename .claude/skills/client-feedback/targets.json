@@ -1,0 +1,59 @@
+{
+  "description": "Client Feedback system configuration and targets",
+  "databases": {
+    "client-feedback": {
+      "id": "PENDING_SETUP",
+      "name": "Client Feedback",
+      "icon": "📋",
+      "use_for": "Main client feedback database",
+      "note": "Create database in Notion and update ID here, then add to .env as CLIENT_FEEDBACK_DB_ID"
+    }
+  },
+  "status_options": [
+    "Submitted",
+    "Triaging",
+    "Needs Info",
+    "In Progress",
+    "Responded",
+    "Resolved",
+    "Closed"
+  ],
+  "type_options": [
+    "Urgent Issue",
+    "Bug",
+    "Change Request",
+    "Enhancement",
+    "Question"
+  ],
+  "severity_options": [
+    "Critical",
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "priority_options": [
+    "Urgent",
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "sla_targets": {
+    "critical": {
+      "first_response_hours": 2,
+      "resolution_hours": 24
+    },
+    "high": {
+      "first_response_hours": 8,
+      "resolution_hours": 72
+    },
+    "medium": {
+      "first_response_hours": 24,
+      "resolution_hours": 168
+    },
+    "low": {
+      "first_response_hours": 48,
+      "resolution_hours": 336
+    }
+  },
+  "client_portals": []
+}
