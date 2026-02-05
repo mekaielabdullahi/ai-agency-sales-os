@@ -6,6 +6,20 @@ Hashtags on LinkedIn serve two purposes: discovery and positioning. We use them 
 
 ---
 
+## Target Audience
+
+Our hashtags should help us get discovered by:
+
+| Audience | Who They Are | What They Search |
+|----------|--------------|------------------|
+| **Service Business Owners** | HVAC, plumbers, electricians, repair shops, trades | Operations, efficiency, scaling |
+| **Small Business Owners** | Owner-operators with 2-20 employees | Growth, time savings, systems |
+| **Founders & CEOs** | Tech-forward leaders at growing companies | AI transformation, strategy |
+| **Operations Managers** | Process & efficiency responsible | Workflows, automation, SOPs |
+| **AI-Native Professionals** | Early adopters building with AI | AI tools, implementation, adoption |
+
+---
+
 ## Hashtag Tiers
 
 ### Tier 1: Brand Hashtag (Always Use)
@@ -18,13 +32,52 @@ Hashtags on LinkedIn serve two purposes: discovery and positioning. We use them 
 
 ---
 
-### Tier 2: Core Topic Hashtags (Pick 1-2)
+### Tier 2: Audience-Targeted Hashtags (Pick 1-2)
+
+**For Service Business Owners:**
+| Primary | Alternatives |
+|---------|--------------|
+| #ServiceBusiness | #FieldService |
+| #TradesLife | #Contractor |
+| #SmallBusinessOwner | #FamilyBusiness |
+
+**For Small Business Owners (General):**
+| Primary | Alternatives |
+|---------|--------------|
+| #SmallBusinessOwner | #SmallBusiness |
+| #SmallBusinessTips | #SMB |
+| #BusinessOwnerLife | #EntrepreneurLife |
+
+**For Founders & CEOs:**
+| Primary | Alternatives |
+|---------|--------------|
+| #FounderLife | #StartupFounder |
+| #CEOmindset | #Leadership |
+| #ScaleUp | #GrowthMindset |
+
+**For Operations Managers:**
+| Primary | Alternatives |
+|---------|--------------|
+| #Operations | #OperationsManagement |
+| #ProcessImprovement | #BusinessOps |
+| #Efficiency | #Workflows |
+
+**For AI-Native Professionals:**
+| Primary | Alternatives |
+|---------|--------------|
+| #AIAdoption | #AIImplementation |
+| #BuildWithAI | #AITools |
+| #AIForBusiness | #PracticalAI |
+
+---
+
+### Tier 3: Topic Hashtags (Pick 1-2)
 
 | Category | Primary Hashtag | Alternatives |
 |----------|----------------|--------------|
-| AI General | #AIforBusiness | #ArtificialIntelligence |
+| AI General | #AIforBusiness | #PracticalAI |
 | Automation | #BusinessAutomation | #WorkflowAutomation |
-| SMB Focus | #SmallBusinessGrowth | #SMBTech |
+| SMB Focus | #SmallBusinessGrowth | #SmallBusinessTips |
 | Efficiency | #BusinessEfficiency | #Productivity |
 | Transformation | #DigitalTransformation | #BusinessTransformation |
 | Strategy | #AIStrategy | #TechStrategy |
@@ -178,27 +231,37 @@ FORMULA:
 
 ## Hashtag Sets by Content Theme
 
-### Business Efficiency Theme
+### Service Business Content
 ```
-#AriseWithAI #BusinessEfficiency #BusinessAutomation #Productivity
-```
-
-### AI Audit Theme
-```
-#AriseWithAI #AIforBusiness #AIReadiness #ProcessImprovement
+#AriseWithAI #ServiceBusiness #SmallBusinessOwner #BusinessAutomation
 ```
 
-### Transformation Theme
+### Knowledge/Training Content (One Technician Problem)
 ```
-#AriseWithAI #DigitalTransformation #BusinessGrowth #AIforBusiness
-```
-
-### Time Savings Theme
-```
-#AriseWithAI #BusinessAutomation #TimeSavings #SmallBusinessGrowth
+#AriseWithAI #SmallBusinessOwner #Operations #AIAdoption
 ```
 
-### Strategy Theme
+### Efficiency/Time Savings Content
 ```
-#AriseWithAI #AIStrategy #FutureOfWork #BusinessStrategy
+#AriseWithAI #SmallBusinessTips #Efficiency #BusinessAutomation
+```
+
+### AI Implementation Content
+```
+#AriseWithAI #AIAdoption #PracticalAI #SmallBusinessOwner
+```
+
+### Founder/CEO Content
+```
+#AriseWithAI #FounderLife #ScaleUp #AIStrategy
+```
+
+### Operations Content
+```
+#AriseWithAI #Operations #ProcessImprovement #Workflows
+```
+
+### Build-in-Public Content
+```
+#AriseWithAI #BuildWithAI #AIImplementation #SmallBusinessTips
 ```
