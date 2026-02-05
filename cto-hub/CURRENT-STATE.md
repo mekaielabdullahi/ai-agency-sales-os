@@ -1,56 +1,68 @@
 # Current System State - AI Agency Sales OS
 
-**Last Synced:** 2026-01-29
+**Last Synced:** 2026-02-05
 **Synced By:** Claude Code (CTO Sync)
-**Next Sync:** 2026-02-05
+**Next Sync:** 2026-02-12
 
 ---
 
 ## Quick Stats
 
-| Component | Count | Status | Change (since Jan 27) |
-|-----------|-------|--------|--------|
-| **Skills** | 11 | ✅ All operational | — |
+| Component | Count | Status | Change (since Jan 29) |
+|-----------|-------|--------|----------------------|
+| **Skills** | 12 | ✅ All operational | ↑1 new |
 | **Commands** | 9 | ✅ All functional | — |
-| **Agentic Modules** | 13 | ✅ Deployed | — |
+| **Agentic Modules** | 14 | ✅ Deployed | ↑1 new |
 | **Defined Agents** | 23 | ⚠️ Specs only (3 documented) | — |
-| **Active Projects** | 9 | ✅ In delivery | — |
-| **Python Tools** | 27 | ✅ Operational | — |
-| **n8n Workflows** | 8 | ⚠️ Exported, untracked | ↑8 new |
+| **Active Projects** | 10 | ✅ In delivery | ↑1 new |
+| **Python Tools** | 28 | ✅ Operational | ↑1 new |
+| **n8n Workflows** | 8 | ⚠️ Exported, untracked | — |
 
 ---
 
-## Recent Changes (Since Last Sync: 2026-01-27)
+## Recent Changes (Since Last Sync: 2026-01-29)
 
 ### Added
-- ✅ Plotter Mechanix Phase 2 proposal updates (pulled from Matthew's repo)
-- ✅ Joe interview v2.1 -- complete Phase 2 restructure (30 questions, 7 priorities)
-- ✅ SS Wolf Sheds updates synced from Matthew's repo
-- ✅ 8 n8n workflow exports (content repurposing, daily reminder, invoice tracking, nurture sequence, post-call followup, pre-meeting sequence, proposal assembly, tally lead notification)
+- ✅ **client-feedback** skill & module — Notion-based client testing feedback workflow
+- ✅ **SALES-OUTREACH-2026-02-05.md** — Master outreach file with 11 contacts, scripts, tracking
+- ✅ **One Technician Problem** LinkedIn post project — brand-illustrator output
+- ✅ Kelsey ROI interview guide — 30-question stakeholder interview for Plotter Mechanix
+- ✅ Hashtag strategy update — target audience focus for content
+- ✅ Presale execution playbook — lead to close with timing and nurture sequences
+- ✅ S&S Wolf Sheds Phase 1 PRD — QR Lead Capture System
+- ✅ 3 new Excalidraw diagrams (client-engagement-playbook, sales-pipeline-flowchart, team-roles-delivery-flow)
 
 ### Modified
-- 📝 Joe interview -- added daily workflow, tech background, AI champion sections; removed Michael Maloney references
-- 📝 Plotter Mechanix Phase 2 proposal -- equipment vs inventory distinction, tiered pricing ($15k/$28k/$47k), ROI confidence ranges, Equipment CRM reframed as evaluate & select
-- 📝 SS Wolf Sheds -- new deliverables folder, Jan 20 & 27 meeting notes, SNS offer framework, streamlined opportunity matrices
-- 📝 Dashboard architecture Excalidraw diagram
-- 📝 Content strategy Excalidraw diagram
+- 📝 Plotter Mechanix — multiple Phase 2 proposal versions, meeting transcripts, Joe insights
+- 📝 Brand-illustrator — hashtag strategy updated
+- 📝 Agentic commands — 24 commands modified (formatting updates)
 
-### Commits (Since Jan 27)
+### Commits (Since Jan 29)
 ```
-529e1f0 docs: Update Joe interview for Phase 2 -- daily workflow, tech background, AI champion
-4df1060 sync: Pull Plotter Mechanix Phase 2 proposal updates from Matthew's repo
-32fb21d sync: Add n8n workflows, update diagrams and CTO state
-11898fc sync: Pull ss-wolf-sheds updates from Matthew's repo
+af61929 docs: Add sales outreach master file with contact scripts and tracking
+c1bf9c8 feat(content): Add One Technician Problem LinkedIn post project
+2ac5b9c feat(content): Update hashtag strategy with target audience focus
+6effa30 docs: Add Kelsey ROI interview guide for Feb 2026
+70e3147 sync: Pull plotter-mechanix updates from Matthew's dev OS
+5f58e01 Revert "feat: Add Matthew Kerns' repos for project integrations"
+d5c5f4c feat: Add Matthew Kerns' repos for project integrations
+704a7dc docs: Add comprehensive Kelsey ROI interview questions
+9bc0de0 Add S&S Wolf Sheds Phase 1 PRD - QR Lead Capture System
+5f6ae81 Move PRD to docs/ and diagrams to diagrams/
+9da44c0 Add Enhanced Onboarding PRD (docx) with Notion schema + system architecture diagrams
+a41d15e Merge pull request #2 from claude/document-client-touchpoints
+95f3bf3 docs: Add presale execution playbook
 ```
 
 ---
 
-## Skills Overview (11)
+## Skills Overview (12)
 
 | Skill | Purpose | Status | Notes |
 |-------|---------|--------|-------|
 | **brand-illustrator** | Generate branded content (images + copy) | ✅ Active | Warm Tech style |
 | **business-functions-mapping** | Map operations to AI opportunities | ✅ Active | |
+| **client-feedback** | Manage client testing feedback via Notion | ✅ **NEW** | Needs CLIENT_FEEDBACK_DB_ID |
 | **client-outreach** | Systematic outreach & pipeline management | ✅ Active | |
 | **comprehensive-ai-audit** | Full paid AI audit workflow | ✅ Active | |
 | **content-strategy** | LinkedIn content planning & creation | ✅ Active | Notion integrated |
@@ -79,10 +91,11 @@
 
 ---
 
-## Agentic Modules (13)
+## Agentic Modules (14)
 
 | Module | Tools | Env Configured | Status | Notes |
 |--------|-------|----------------|--------|-------|
+| **client-feedback** | 1 | ⚠️ Needs DB ID | ✅ **NEW** | Notion feedback workflow |
 | **client-onboarding** | Templates | ⚠️ Needs Slack | ⚠️ Blocked | Depends on slack module |
 | **dashboard** | 7 | ✅ | ✅ | Collectors, generators, formatters |
 | **demo-deploy** | 1 | ✅ | ✅ | Depends on infrastructure |
@@ -99,13 +112,14 @@
 
 ---
 
-## Active Projects (9)
+## Active Projects (10)
 
 | Project | Type | Status | Priority | Recent Activity |
 |---------|------|--------|----------|-----------------|
-| **plotter-mechanix** | Client | Phase 2 Proposal | P0 | Phase 2 proposal updated, Joe interview restructured |
+| **plotter-mechanix** | Client | Phase 2 Proposal | P0 | Kelsey ROI interview guide, Joe insights, multiple proposal versions |
 | **remus-development** | Client | Discovery | P0 | — |
-| **ss-wolf-sheds** | Client | Active/Expanded | P1 | Jan 20 & 27 meeting notes, SNS offer framework synced |
+| **ss-wolf-sheds** | Client | Active/Expanded | P1 | Phase 1 PRD for QR Lead Capture |
+| **xigent** | Client | Discovery | P1 | Added to active projects |
 | **aaa-diy-pod** | Network | Active | P2 | Chat summary documented |
 | **arisegroup-internal** | Internal | Ongoing | P2 | Missing README |
 | **arisegroup-ai** | Internal | Discovery | P2 | — |
@@ -134,7 +148,8 @@
 
 | Variable | Configured | Module | Status |
 |----------|------------|--------|--------|
-| NOTION_API_KEY | ✅ | notion | Valid |
+| NOTION_API_KEY | ✅ | notion, client-feedback | Valid |
+| CLIENT_FEEDBACK_DB_ID | ❌ | client-feedback | **Needs setup** |
 | SLACK_BOT_TOKEN | 🔴 | slack | Expired |
 | SLACK_USER_TOKEN | 🔴 | slack | Expired |
 | OPENAI_API_KEY | ✅ | diagrams, sop | Valid |
@@ -152,13 +167,13 @@
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Git | ⚠️ | Uncommitted files: docx, excalidraw, 8 n8n workflows untracked |
+| Git | ⚠️ | 26 modified files, 7 untracked (incl. client-feedback, diagrams) |
 | Notion API | ✅ | Connected as "MEKAIEL's CC (bot)" |
-| Slack | 🔴 | Token expired -- needs refresh |
+| Slack | 🔴 | Token expired — needs refresh |
 | Gmail | ✅ | Working via MCP |
 | n8n | ✅ | MCP server + 8 exported workflows |
-| Agentic Modules | ✅ | 27 Python tools operational |
-| Matthew Remote | ✅ | Synced to e3a017e (Jan 29 fetch) |
+| Agentic Modules | ✅ | 28 Python tools operational |
+| Matthew Remote | ✅ | Last sync: Jan 29 |
 
 ---
 
@@ -166,10 +181,11 @@
 
 | Priority | Count | Top Item |
 |----------|-------|----------|
-| P1 | 2 | Notion sync targets need page IDs |
-| P1 | — | TypeScript agents not deployed |
-| P2 | 1 | Duplicate templates in outreach skills |
-| P2 | — | Slack token needs refresh |
+| P1 | 3 | Slack token expired — blocks client-onboarding |
+| P1 | — | CLIENT_FEEDBACK_DB_ID not configured |
+| P1 | — | Notion sync targets need page IDs |
+| P2 | 2 | TypeScript agents not deployed |
+| P2 | — | 26 modified files need commit decision |
 | P2 | — | n8n workflow JSONs untracked in git |
 | P3 | 0 | — |
 
@@ -177,33 +193,51 @@ See full register: `cto-hub/technical-debt/DEBT-REGISTER.md`
 
 ---
 
+## Uncommitted Changes
+
+**Modified (26 files):**
+- 24× agentic/.claude/commands/*.md (formatting)
+- agentic/agentic-index.yaml
+- agentic/modules/client-onboarding/runbook/client_onboarding.md
+
+**Untracked (7 items):**
+- .claude/skills/client-feedback/ ← **NEW SKILL**
+- agentic/modules/client-feedback/ ← **NEW MODULE**
+- agentic/modules/notion/tool/__pycache__/
+- diagrams/client-engagement-playbook.excalidraw
+- diagrams/sales-pipeline-flowchart.excalidraw
+- diagrams/team-roles-delivery-flow.excalidraw
+
+---
+
 ## Recommendations
 
 ### Immediate (This Week)
-1. **Refresh Slack token** at api.slack.com/apps -- blocks client-onboarding module
-2. **Commit n8n workflows** -- 8 JSON files in `agentic/extras/n8n-wf/` are untracked
-3. **Commit/clean** modified files (docx, excalidraw diagrams, agentic/run)
+1. **Commit client-feedback** skill & module — ready for use once DB ID configured
+2. **Commit diagrams** — 3 new Excalidraw files untracked
+3. **Refresh Slack token** at api.slack.com/apps — blocks client-onboarding module
+4. **Configure CLIENT_FEEDBACK_DB_ID** in .env for new feedback workflow
 
 ### This Sprint
-4. **Schedule Joe interview** -- Phase 2 validation depends on it (30 questions ready)
-5. Review TypeScript agent deployment strategy
-6. Test end-to-end content pipeline (brand-illustrator -> publish)
-7. Run `/weekly-report` for week ending Jan 31
+5. Complete Kelsey ROI interview for Plotter Mechanix Phase 2 validation
+6. Review/commit 26 modified agentic command files
+7. Test end-to-end content pipeline (brand-illustrator → publish)
+8. Execute sales outreach using SALES-OUTREACH-2026-02-05.md
 
 ### This Month
-8. Configure Notion page IDs for auto-sync (TD-001)
-9. Consolidate duplicate outreach templates (TD-003)
-10. Document Plotter Mechanix Phase 1 lessons learned
-11. Create agent deployment infrastructure for TypeScript agents (TD-002)
+9. Configure Notion page IDs for auto-sync (TD-001)
+10. Deploy TypeScript onboarding agents (TD-002)
+11. Consolidate duplicate outreach templates (TD-003)
+12. Document Plotter Mechanix Phase 1 lessons learned
 
 ---
 
 ## Session Log Reference
 
 Latest sessions:
-- `2026-01-29-cto-sync.md` - This sync
-- `2026-01-27-cto-sync.md` - Previous sync
-- `2026-01-22-cto-hub-setup.md` - Initial CTO Hub creation
+- `2026-02-05-cto-sync.md` - This sync
+- `2026-01-29-cto-sync.md` - Previous sync
+- `2026-01-27-cto-sync.md` - Earlier sync
 
 ---
 
