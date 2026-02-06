@@ -133,17 +133,73 @@ Scoping AI projects for service businesses → AriseGroup.ai
 
 ---
 
+## 2026-02-06
+
+### Draft 3: The 4 Hidden Time Drains in Industrial Service Companies (Education Pillar)
+
+**Status:** Draft
+**Pillar:** Education
+**Type:** Framework / Insight
+**Source:** ASI engagement patterns + industrial service vertical research
+**Full Copy:** `.claude/skills/brand-illustrator/projects/2026-02-06-industrial-ai-adoption-framework/post-copy.md`
+
+---
+
+Hook: "Industrial service companies lose 20+ hours a week to coordination."
+Framework: 4 hidden time drains (quote handoff, dispatch, service triage, project visibility)
+CTA: "What's the coordination bottleneck in your operation?" + DM "audit"
+Posting: Tuesday 9AM EST
+
+---
+
+### Draft 4: Scaling Without Systems (Consulting Pillar)
+
+**Status:** Draft
+**Pillar:** Consulting
+**Type:** Lessons from the field / Pattern recognition
+**Source:** ASI-profile patterns across $5-10M industrial/field service companies
+**Full Copy:** `.claude/skills/brand-illustrator/projects/2026-02-06-scaling-without-systems/post-copy.md`
+
+---
+
+Hook: "Every $5-10M company hits the same wall."
+Pattern: Revenue climbs, operations crack -- 5 specific cracks identified
+CTA: "What's the one process keeping you stuck?"
+Posting: Thursday 9AM EST
+
+---
+
+### ASI Case Study Angle (Prospective)
+
+**Status:** Pre-engagement framework
+**Type:** Case study narrative planning
+**Source:** ASI prospect profile
+**Full Doc:** `.claude/skills/brand-illustrator/projects/2026-02-06-asi-case-study-angle/case-study-narrative.md`
+
+---
+
+Headline: "How a $7M Industrial Automation Company Systematized Operations Without Slowing Down"
+Story arc: Growth > Discovery > Phased Fix > Results
+Unique angle: Even automation companies need to automate their own operations
+Key metrics defined for tracking from day 1
+
+---
+
 ## Content Ideas Backlog
 
-From Notion context (2026-01-26):
+From Notion context (2026-01-26) + ASI engagement (2026-02-06):
 
 | Topic | Pillar | Angle | Status |
 |-------|--------|-------|--------|
 | Plotter Mechanix integration | Development | Deployment process, rollback planning | Drafted |
 | Wolf Sheds PRD | Consulting | Scoping framework for service businesses | Drafted |
+| Industrial AI 4 time drains | Education | Framework for field service companies | Drafted |
+| Scaling without systems | Consulting | $5-10M growth ceiling pattern | Drafted |
+| ASI case study | All | Prospective case study narrative | Pre-engagement |
 | Exigent deal closing | Consulting | Sales strategy, urgency creation | Not started |
 | Integration rollback planning | Education | Why every automation needs a safety net | Not started |
 | Revenue/pricing adjustments | Consulting | Navigating scope changes with clients | Not started |
+| Automation company irony | Education | Companies that build automation but don't automate themselves | Not started |
 
 ---
 
