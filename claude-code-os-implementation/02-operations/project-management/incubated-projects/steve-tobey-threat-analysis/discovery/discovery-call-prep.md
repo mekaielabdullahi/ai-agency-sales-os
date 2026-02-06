@@ -18,19 +18,6 @@
 
 ---
 
-## Your Unfair Advantage on This Call
-
-**Mekaiel, you ARE the credibility on this one.** Your background is the opener:
-- 10 years IT in DoD/Pentagon/Security
-- Air Force 3D X1X technician, supported Ramstein (NATO HQ)
-- Pentagon system admin & system engineering (2 years)
-- Department of State: security system integrations for 15 U.S. embassies
-- MIT Research Engineering: network security
-
-You're not just an AI agency selling to a defense company. **You're a former defense insider who built an AI operating system.** Lead with that.
-
----
-
 ## Pre-Call Checklist
 
 - [ ] Research Steve on LinkedIn (role, background, unit history)
@@ -47,6 +34,55 @@ You're not just an AI agency selling to a defense company. **You're a former def
 > "Steve, thanks for taking the time. Before we get into it - I want you to know this isn't a generic AI pitch. I spent 10 years in DoD, Pentagon, and State Department security infrastructure. I built security systems for 15 U.S. embassies. So when you tell me about operational security needs, I'm not learning - I'm listening from experience."
 
 > "I've got about 30 minutes blocked. I want to ask you 5 questions to really understand what you need. If there's a fit, we'll talk about next steps. If not, I'll point you in the right direction. Sound good?"
+
+---
+
+## Getting to Know Steve & the Business
+
+Before diving into the 5 Questions framework, open it up and let Steve talk. These are conversational — not an interrogation. Let him paint the full picture first.
+
+### About Steve
+- "Steve, give me your background — how did you end up building this company?"
+- "What's your role day-to-day? Are you running ops, leading missions, or more on the business side?"
+- "What's your vision for where this company is headed in the next 1-2 years?"
+
+### About the Company
+- "Walk me through what you guys actually do — from the time a client reaches out to mission complete."
+- "How is the company structured? How many people are on the team and what are the key roles?"
+- "Who are your clients today? Governments, NGOs, churches directly, private organizations?"
+- "How long have you been operating? How did the team come together?"
+- "What sets you apart from other private security firms doing similar work?"
+
+### Current Operations
+- "Walk me through a typical week for you and your team — what does the workflow look like?"
+- "How are you managing communications right now? Email, phone, group chats, something else?"
+- "Where does information get lost or bottlenecked?"
+- "How does intel flow between your inner circle today? Is it structured or ad-hoc?"
+- "What tools or platforms are you using right now to run the business?"
+
+### The Nigeria Mission Work
+- "Tell me more about the church group rescue work in Nigeria — how did that start?"
+- "Who are you working with on the ground? Local contacts, partner organizations, government liaisons?"
+- "How are you currently connecting with churches and mission organizations that need your help?"
+- "What does a typical engagement look like — from first contact to deploying a team?"
+- "How many of these missions are you running right now? What's the capacity?"
+
+### Needs & Challenges (Open-Ended)
+- "What's working well in the business right now that you want to protect?"
+- "If you could fix three things in your operations tomorrow, what would they be?"
+- "What's keeping you up at night about the business?"
+- "You mentioned communication channels and outreach — what prompted you to look for help with those specifically?"
+- "Have you tried to solve either of these problems before? What happened?"
+- "What does success look like for you 6 months from now?"
+
+### Decision-Making & Stakeholders
+- "Who else is involved in decisions like this on your end?"
+- "Is there a budget conversation we need to have, or is this something you can greenlight?"
+- "What's your timeline — is this urgent or more of a 'when we get to it' thing?"
+
+---
+
+> **Transition to the 5 Questions:** Once Steve has laid out the landscape, narrow in: *"Really appreciate you walking me through all of that. Let me ask you 5 specific questions so I can really zero in on where we can help..."*
 
 ---
 
