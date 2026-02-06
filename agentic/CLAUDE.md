@@ -1,5 +1,11 @@
 # Agentic Workspace
 
+This workspace is part of the **AriseGroup.ai Agent Team** architecture. See the root `CLAUDE.md` for team structure, teammate definitions (`.claude/agents/`), and cross-team communication patterns.
+
+When operating as a teammate, your modules and tools are scoped to your domain. Consult `agentic-index.yaml` to find the right module, then follow the 3-layer architecture below.
+
+---
+
 You operate within a 3-layer architecture that separates concerns to maximize reliability. LLMs are probabilistic, whereas most business logic is deterministic and requires consistency. This system fixes that mismatch.
 
 ## The 3-Layer Architecture
