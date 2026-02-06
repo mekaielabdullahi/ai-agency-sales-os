@@ -6,6 +6,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the **AI Agency Sales OS** - an AI-powered Business Operating System for AriseGroup.ai, an AI transformation consulting agency. The repository contains strategic frameworks, sales systems, content strategies, and operational documentation for systematic AI adoption consulting.
 
+## Agent Team Architecture
+
+This repo uses **Claude Code Agent Teams** for orchestration. See the root `CLAUDE.md` for the full team structure.
+
+### Teammates
+
+| Teammate | Agent Definition | Domain |
+|----------|-----------------|--------|
+| **Sales** | `.claude/agents/sales-teammate.md` | Outreach, pipeline, proposals, leads |
+| **Audit** | `.claude/agents/audit-teammate.md` | AI audits, business mapping, roadmaps |
+| **Content** | `.claude/agents/content-teammate.md` | LinkedIn, brand, publishing, strategy |
+| **Ops** | `.claude/agents/ops-teammate.md` | Dashboard, planning, onboarding, infra |
+
+### Enabling
+
+Agent teams are enabled via `.claude_settings.json`:
+```json
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  }
+}
+```
+
 ## Architecture
 
 ### Core Directories
@@ -22,26 +46,30 @@ This is the **AI Agency Sales OS** - an AI-powered Business Operating System for
   - `08-technical-architecture/` - System design and integrations
   - `09-templates/` - Reusable prompts and agent templates
   - `10-implementation-roadmap/` - Phased rollout plans
+- **`/agentic/`** - 3-layer module system (runbooks, orchestration, tools)
 - **`/docs/`** - Setup guides and documentation
 - **`/.claude/skills/`** - Claude Code skills for specialized workflows
+- **`/.claude/agents/`** - Agent team teammate definitions
+- **`/.claude/commands/`** - Slash commands
 
 ## Claude Code Skills
 
-The repository has 5 custom skills configured in `.claude/skills/`. Use these for specialized tasks:
-
-| Skill | Use When |
-|-------|----------|
-| `business-functions-mapping` | Analyzing organizations, mapping operations, conducting AI Readiness Audits |
-| `client-outreach` | Planning outreach campaigns, drafting LinkedIn/email messages, managing sales pipeline |
-| `comprehensive-ai-audit` | Running full paid audits using the structured audit.json workflow |
-| `content-strategy` | Planning content calendars, drafting LinkedIn posts, creating hooks |
-| `weekly-planning` | Creating strategic weekly plans and roadmaps |
-
-Invoke skills by name when the user's request matches the skill's purpose.
+| Skill | Teammate | Use When |
+|-------|----------|----------|
+| `client-outreach` | Sales | Planning outreach campaigns, drafting messages, managing pipeline |
+| `outreach` | Sales | Processing individual leads with Gmail drafts and Notion tasks |
+| `comprehensive-ai-audit` | Audit | Running full paid audits using the structured audit.json workflow |
+| `business-functions-mapping` | Audit | Analyzing organizations, mapping operations, AI Readiness Audits |
+| `content-strategy` | Content | Planning content calendars, drafting LinkedIn posts, creating hooks |
+| `brand-illustrator` | Content | Generating branded illustrations and post copy |
+| `publish` | Content | Publishing approved content to LinkedIn |
+| `dashboard` | Ops | Weekly reviews, strategic planning, executive overview |
+| `weekly-planning` | Ops | Creating strategic weekly plans and roadmaps |
+| `weekly-report` | Ops | Generating weekly progress reports |
+| `client-feedback` | Ops | Managing client feedback |
+| `notion-sync` | Ops | Syncing data with Notion |
 
 ## Core Principles
-
-The system operates on 4 foundational principles:
 
 1. **Entropy Principle** - Accept imperfection, focus on what matters
 2. **Zero Friction** - Remove barriers to create sustainable discipline
@@ -57,7 +85,7 @@ The system operates on 4 foundational principles:
 
 ## Repository Type
 
-This is a **documentation and framework repository** - no build commands, tests, or linting. The "code" here is markdown documentation, strategic frameworks, prompt templates, and operational guides.
+This is a **documentation and framework repository** - no build commands, tests, or linting. The "code" here is markdown documentation, strategic frameworks, prompt templates, and operational guides. The `agentic/` directory contains Python tools run via `./run`.
 
 ## Working with Client Audits
 
