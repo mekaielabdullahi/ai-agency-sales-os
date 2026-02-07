@@ -1,0 +1,30 @@
+name: notebooklm
+version: 0.1.0
+description: NotebookLM automation via unofficial Python CLI
+
+dependencies:
+  python:
+    - notebooklm-py>=0.1.0
+
+env_vars:
+  required: []
+  optional:
+    - GOOGLE_AUTH_TOKEN  # Set after running `notebooklm auth`
+
+commands:
+  - notebooklm-create    # Create a new notebook
+  - notebooklm-upload    # Upload sources to notebook
+  - notebooklm-query     # Run query against notebook
+  - notebooklm-process   # Full pipeline: create + upload + query
+
+triggers:
+  - type: file_watch
+    path: "*/meetings/**/transcript.md"
+    action: notebooklm-process --workflow=meeting-transcript
+
+  - type: schedule
+    cron: "0 8 * * 1"  # Monday 8am
+    action: notebooklm-process --workflow=weekly-content-batch
+
+status: prototype
+warning: Uses undocumented Google APIs - may break without notice

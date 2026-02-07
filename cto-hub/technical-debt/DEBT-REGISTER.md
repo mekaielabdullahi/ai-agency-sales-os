@@ -1,6 +1,6 @@
 # Technical Debt Register
 
-Last Updated: 2026-01-29
+Last Updated: 2026-02-03
 
 ## Overview
 
@@ -20,6 +20,7 @@ This register tracks known technical debt across the AI Agency Sales OS. Items a
 |----|-------------|----------|--------|--------|-------|
 | TD-001 | Notion sync targets need page IDs | `.claude/skills/notion-sync/targets.json` | Can't auto-sync reports | Low | 2026-01-22 |
 | TD-002 | TypeScript onboarding agents not deployed | `03-ai-growth-engine/onboarding/agents/` | Agents are specs only | High | 2026-01-22 |
+| TD-006 | Missing agentic .env file | `agentic/` | Blocks all agentic module integrations | Low | 2026-02-03 |
 
 ### P2 - Medium Priority
 
@@ -28,11 +29,13 @@ This register tracks known technical debt across the AI Agency Sales OS. Items a
 | TD-003 | Duplicate templates in client-outreach & speed-to-lead | Commands/Skills | Maintenance burden | Low | 2026-01-22 |
 | TD-004 | 8 n8n workflow exports untracked in git | `agentic/extras/n8n-wf/*.json` | Not version controlled | Low | 2026-01-29 |
 | TD-005 | Slack bot/user tokens expired | `agentic/.env` | Blocks Slack + client-onboarding | Low | 2026-01-29 |
+| TD-007 | TODOs in onboarding agent handlers | `onboarding/agents/*/handlers/*.ts` | PDF attach & Slack invite incomplete | Low | 2026-02-03 |
 
 ### P3 - Low Priority
 
 | ID | Description | Location | Impact | Effort | Added |
 |----|-------------|----------|--------|--------|-------|
+| TD-008 | Deprecated code references in 3 files | Various (cto-sync, engineering-standards, classification-schema) | Code hygiene | Low | 2026-02-03 |
 
 ## Resolved Debt
 

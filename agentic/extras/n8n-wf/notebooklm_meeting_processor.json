@@ -1,0 +1,161 @@
+{
+  "name": "NotebookLM Meeting Processor",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "notebooklm-trigger",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300],
+      "webhookId": "notebooklm-meeting"
+    },
+    {
+      "parameters": {
+        "operation": "watch",
+        "path": "/path/to/meetings",
+        "events": ["add"],
+        "filePattern": "**/transcript.md"
+      },
+      "id": "file-watch",
+      "name": "Watch for Transcripts",
+      "type": "n8n-nodes-base.localFileTrigger",
+      "typeVersion": 1,
+      "position": [250, 500],
+      "notes": "Alternative trigger: watch for new transcript files"
+    },
+    {
+      "parameters": {
+        "command": "notebooklm create \"{{ $json.client }}-{{ $now.format('YYYY-MM-DD') }}\" --json"
+      },
+      "id": "create-notebook",
+      "name": "Create Notebook",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "command": "notebooklm upload {{ $json.notebook_id }} {{ $json.transcript_path }} --json"
+      },
+      "id": "upload-transcript",
+      "name": "Upload Transcript",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [750, 300]
+    },
+    {
+      "parameters": {
+        "command": "notebooklm chat {{ $json.notebook_id }} --prompt \"Extract all action items with clear owners and deadlines\" --format markdown"
+      },
+      "id": "query-actions",
+      "name": "Extract Action Items",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1000, 200]
+    },
+    {
+      "parameters": {
+        "command": "notebooklm chat {{ $json.notebook_id }} --prompt \"What concerns did the client raise that weren't fully addressed?\" --format markdown"
+      },
+      "id": "query-concerns",
+      "name": "Extract Concerns",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1000, 400]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "combined_output",
+              "value": "# Meeting Summary\\n\\n## Action Items\\n{{ $node['Extract Action Items'].json.stdout }}\\n\\n## Client Concerns\\n{{ $node['Extract Concerns'].json.stdout }}"
+            }
+          ]
+        }
+      },
+      "id": "combine-outputs",
+      "name": "Combine Outputs",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "resource": "page",
+        "operation": "create",
+        "databaseId": "={{ $json.notion_db_id }}",
+        "title": "Meeting Summary - {{ $json.client }} - {{ $now.format('YYYY-MM-DD') }}",
+        "content": "={{ $json.combined_output }}"
+      },
+      "id": "notion-create",
+      "name": "Create Notion Page",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [1500, 300],
+      "notes": "Optional: Push to Notion"
+    },
+    {
+      "parameters": {
+        "channel": "#client-updates",
+        "text": "📝 Meeting processed for {{ $json.client }}\\n\\nAction items extracted and saved to Notion.\\n\\nKey concerns flagged: {{ $json.concern_count }}"
+      },
+      "id": "slack-notify",
+      "name": "Slack Notification",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [1500, 500],
+      "notes": "Optional: Notify team"
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [{"node": "Create Notebook", "type": "main", "index": 0}]
+      ]
+    },
+    "Create Notebook": {
+      "main": [
+        [{"node": "Upload Transcript", "type": "main", "index": 0}]
+      ]
+    },
+    "Upload Transcript": {
+      "main": [
+        [
+          {"node": "Extract Action Items", "type": "main", "index": 0},
+          {"node": "Extract Concerns", "type": "main", "index": 0}
+        ]
+      ]
+    },
+    "Extract Action Items": {
+      "main": [
+        [{"node": "Combine Outputs", "type": "main", "index": 0}]
+      ]
+    },
+    "Extract Concerns": {
+      "main": [
+        [{"node": "Combine Outputs", "type": "main", "index": 0}]
+      ]
+    },
+    "Combine Outputs": {
+      "main": [
+        [
+          {"node": "Create Notion Page", "type": "main", "index": 0},
+          {"node": "Slack Notification", "type": "main", "index": 0}
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["notebooklm", "automation", "meetings"],
+  "triggerCount": 1,
+  "updatedAt": "2026-02-03T00:00:00.000Z",
+  "versionId": "1"
+}
