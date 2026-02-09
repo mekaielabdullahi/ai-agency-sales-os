@@ -1,0 +1,29 @@
+{
+  "stale_lead_days": 7,
+  "meeting_lookback_days": 7,
+  "priority_order": ["Urgent", "High", "Medium", "Low"],
+  "status_exclude": ["Done", "Cancelled"],
+  "max_tasks_shown": 15,
+  "pages": {
+    "sales": "2d5e7406-6c7d-80e7-8e3c-c69b188d5f19",
+    "sales_pipeline": "2d5e7406-6c7d-816f-9bac-f24aec6461ce"
+  },
+  "databases": {
+    "tasks": {
+      "page_id": "2fce7406-6c7d-8076-ae6f-f40c4ccb8bc7",
+      "data_source": "collection://2d5e7406-6c7d-8151-bdda-000b46294153"
+    },
+    "projects": {
+      "page_id": "2d5e7406-6c7d-81c2-b56d-df1a684fc501",
+      "data_source": "collection://2d5e7406-6c7d-8167-bb16-000b3ec34789"
+    },
+    "meetings": {
+      "page_id": "2fce7406-6c7d-8026-8e5f-ea5ef0d95c5b",
+      "data_source": "collection://2d5e7406-6c7d-81c3-a4eb-000b0a3fe028"
+    },
+    "contacts": {
+      "page_id": "2d5e7406-6c7d-81df-8d4c-cd22971fc807",
+      "data_source": "collection://2d5e7406-6c7d-818c-bc3d-000b38dab7e4"
+    }
+  }
+}
