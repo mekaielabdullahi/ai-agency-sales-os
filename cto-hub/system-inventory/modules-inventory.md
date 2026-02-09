@@ -1,7 +1,7 @@
 # Agentic Modules Inventory
 
-**Last Updated:** 2026-02-05
-**Total Modules:** 14
+**Last Updated:** 2026-02-09
+**Total Modules:** 15
 
 ---
 
@@ -9,7 +9,7 @@
 
 | # | Module | Tools | Env Status | Operational | Notes |
 |---|--------|-------|------------|-------------|-------|
-| 1 | client-feedback | 1 | ⚠️ Missing DB ID | ⚠️ | NEW - Notion feedback workflow |
+| 1 | client-feedback | 1 | ⚠️ Missing DB ID | ⚠️ | Notion feedback workflow |
 | 2 | client-onboarding | 0 | 🔴 Slack expired | 🔴 | Blocked by slack |
 | 3 | dashboard | 7 | ✅ | ✅ | Full suite |
 | 4 | demo-deploy | 1 | ✅ | ✅ | Dokploy |
@@ -19,16 +19,17 @@
 | 8 | md-export | 2 | ✅ | ✅ | Google Docs + Word |
 | 9 | n8n | 1 | ✅ | ✅ | MCP server |
 | 10 | notion | 1 | ✅ | ✅ | Content context |
-| 11 | proposal | 2 | ✅ | ✅ | Google Slides |
-| 12 | slack | 1 | 🔴 Expired | 🔴 | Needs token refresh |
-| 13 | sop | 2 | ✅ | ✅ | Transcription + SOP |
-| 14 | ssh | 1 | ✅ | ✅ | Remote commands |
+| 11 | notebooklm | 1 | ⚠️ Needs auth | ⚠️ NEW | Meeting processor prototype |
+| 12 | proposal | 2 | ✅ | ✅ | Google Slides |
+| 13 | slack | 1 | 🔴 Expired | 🔴 | Needs token refresh |
+| 14 | sop | 2 | ✅ | ✅ | Transcription + SOP |
+| 15 | ssh | 1 | ✅ | ✅ | Remote commands |
 
 ---
 
 ## Module Details
 
-### client-feedback (NEW)
+### client-feedback
 - **Location:** agentic/modules/client-feedback/
 - **Tool:** feedback_api.py
 - **Runbook:** feedback_management.md
@@ -80,6 +81,16 @@
 - **Tool:** fetch_content_context
 - **Env Required:** NOTION_API_KEY
 
+### notebooklm (NEW)
+- **Location:** agentic/modules/notebooklm/
+- **Tool:** notebooklm_client.py
+- **Commands:** notebooklm-process
+- **Env Required:** GOOGLE_AUTH_TOKEN (optional, set after `notebooklm auth`)
+- **Status:** Prototype - uses undocumented Google APIs
+- **Triggers:** File watch on transcript.md, weekly Monday 8am batch
+- **n8n Workflow:** notebooklm_meeting_processor.json
+- **Integration doc:** cto-hub/workflows/notebooklm-integration.md
+
 ### proposal
 - **Location:** agentic/modules/proposal/
 - **Tools:** Google Slides generation
@@ -104,12 +115,13 @@
 
 ## Blocked Modules
 
-1. **slack** — Token expired, needs refresh
+1. **slack** — Token expired, needs refresh (TD-005)
 2. **client-onboarding** — Depends on slack
 3. **client-feedback** — Missing CLIENT_FEEDBACK_DB_ID
+4. **notebooklm** — Prototype, needs GOOGLE_AUTH_TOKEN
 
 ---
 
 ## Python Tool Count
 
-Total: 28 tools across 14 modules
+Total: 29 tools across 15 modules (↑1 from notebooklm)

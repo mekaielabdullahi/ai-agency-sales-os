@@ -1,6 +1,6 @@
 # Skills Inventory
 
-**Last Updated:** 2026-02-05
+**Last Updated:** 2026-02-09
 **Total Skills:** 12
 
 ---
@@ -11,7 +11,7 @@
 |---|-------|----------|--------|--------------|
 | 1 | brand-illustrator | .claude/skills/brand-illustrator/ | ✅ Active | OpenAI API |
 | 2 | business-functions-mapping | .claude/skills/business-functions-mapping/ | ✅ Active | None |
-| 3 | client-feedback | .claude/skills/client-feedback/ | ⚠️ New | Notion API, CLIENT_FEEDBACK_DB_ID |
+| 3 | client-feedback | .claude/skills/client-feedback/ | ⚠️ Needs DB ID | Notion API, CLIENT_FEEDBACK_DB_ID |
 | 4 | client-outreach | .claude/skills/client-outreach/ | ✅ Active | Gmail MCP |
 | 5 | comprehensive-ai-audit | .claude/skills/comprehensive-ai-audit/ | ✅ Active | None |
 | 6 | content-strategy | .claude/skills/content-strategy/ | ✅ Active | Notion API |
@@ -30,12 +30,13 @@
 - **Purpose:** Generate branded content (illustrations + copy)
 - **Style:** Warm Tech aesthetic
 - **Outputs:** PNG images, post copy, hashtags
+- **Recent:** Discovery Process post (Feb 6), One Technician Problem post (Feb 5)
 
 ### business-functions-mapping
 - **Purpose:** Map business operations to AI opportunities
 - **Outputs:** Function maps, opportunity matrices
 
-### client-feedback (NEW)
+### client-feedback
 - **Purpose:** Manage client testing feedback via Notion database
 - **Commands:** query, triage, respond, resolve, stats
 - **Requires:** CLIENT_FEEDBACK_DB_ID in .env
@@ -58,7 +59,7 @@
 
 ### notion-sync
 - **Purpose:** Push markdown to Notion
-- **Status:** Partial - needs page IDs configured
+- **Status:** Partial - needs page IDs configured (TD-001)
 
 ### outreach
 - **Purpose:** Universal lead outreach
@@ -81,5 +82,5 @@
 
 ## Issues
 
-1. **notion-sync** needs page IDs for full functionality
+1. **notion-sync** needs page IDs for full functionality (TD-001)
 2. **client-feedback** needs CLIENT_FEEDBACK_DB_ID configured
