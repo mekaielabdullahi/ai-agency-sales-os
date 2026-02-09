@@ -12,7 +12,7 @@
 
 Capture baseline metrics across ALL business areas to:
 1. Validate Phase 2 ROI projections with real numbers
-2. Identify hidden costs and time sinks
+2. Identify hidden costs and time sinks/
 3. Quantify the "Kelsey bottleneck" in dollars
 4. Establish before/after measurement points
 
