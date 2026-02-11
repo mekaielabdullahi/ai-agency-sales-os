@@ -1,0 +1,525 @@
+{
+  "metadata": {
+    "source": "Mekaiel's Fireflies Meetings (Notion)",
+    "data_source_url": "collection://2eae7406-6c7d-8125-82e6-000b0f74d0b4",
+    "last_updated": "2026-02-10",
+    "total_meetings": 55
+  },
+  "categories": {
+    "active_clients": ["plotter-mechanix", "ss-wolf-sheds"],
+    "incubated_projects": ["steve-tobey-hawkwood"],
+    "internal_syncs": ["arise-standup", "arise-sync", "arise-morning-sync"],
+    "external_networking": ["aaa-pod", "auditflo-beta", "agents-of-change"]
+  },
+  "meetings": [
+    {
+      "id": "304e7406-6c7d-816d-a984-f91c4636c7af",
+      "title": "Feb 10, 06:44 PM",
+      "date": "2026-02-11",
+      "type": "Fireflies.ai",
+      "category": "misc",
+      "participants": [],
+      "gist": "",
+      "notion_url": "https://www.notion.so/304e74066c7d816da984f91c4636c7af"
+    },
+    {
+      "id": "303e7406-6c7d-81cc-a19a-e7d28deb2130",
+      "title": "Arise AI Group - Follow Up (Steve Tobey)",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "incubated_project",
+      "project": "steve-tobey-hawkwood",
+      "participants": ["Chris", "Matthew", "Mekaiel", "Steve"],
+      "gist": "Discovery call with Steve Tobey from Secure Mission Partners/Hawkwood. Discussed $150K funding for hostage rescue mission, donor engagement strategy, AI workflow improvements. Follow-up scheduled for next Tuesday.",
+      "key_topics": ["Donor Strategy", "Secure Mission Partners", "Budget $7K-$10K initial", "OPSEC Requirements"],
+      "notion_url": "https://www.notion.so/303e74066c7d81cca19ae7d28deb2130",
+      "transcript_url": "https://app.fireflies.ai/view/01KH44M0E8GG1KS5KNY23QFCYE"
+    },
+    {
+      "id": "303e7406-6c7d-8151-b3c3-f0a58094ee44",
+      "title": "Arise AI Group - Follow Up (Steve Tobey) - Earlier Session",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "incubated_project",
+      "project": "steve-tobey-hawkwood",
+      "participants": ["Chris", "Trent", "Matthew", "Mekaiel", "Steve"],
+      "gist": "Initial discovery with Steve. Discussed funding strategy ($150K for 300 hostages), operational security, encrypted comms via Signal, AI solutions for donor management.",
+      "notion_url": "https://www.notion.so/303e74066c7d8151b3c3f0a58094ee44",
+      "transcript_url": "https://app.fireflies.ai/view/01KGV2WCCJB1G5W4HGEB46F8DP"
+    },
+    {
+      "id": "303e7406-6c7d-81e4-8445-da09277cb087",
+      "title": "AuditFlo Beta: Weekly Roundtable",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "external_networking",
+      "participants": ["Emil Visser", "Beta Users"],
+      "gist": "AuditFlo beta testing roundtable. Reports reduced from 70 to 7 slides for clarity.",
+      "notion_url": "https://www.notion.so/303e74066c7d81e48445da09277cb087"
+    },
+    {
+      "id": "303e7406-6c7d-8195-8aed-cf41e8a25152",
+      "title": "Arise Sync",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Team"],
+      "notion_url": "https://www.notion.so/303e74066c7d81958aedcf41e8a25152"
+    },
+    {
+      "id": "303e7406-6c7d-81b6-a36c-e7723e606dd0",
+      "title": "Arise AI Group - Follow Up",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Chris", "Matthew"],
+      "gist": "Technical readiness check. New camera setup confirmed, internet connectivity issues addressed.",
+      "notion_url": "https://www.notion.so/303e74066c7d81b6a36ce7723e606dd0"
+    },
+    {
+      "id": "303e7406-6c7d-81d8-8bd7-d077adeb3254",
+      "title": "Plotter Offer Refinement Block",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "active_client",
+      "project": "plotter-mechanix",
+      "participants": ["Team"],
+      "gist": "Refinement of Plotter Phase 2 offer. Public tools page creation, testimonial updates, Kelsey video upload.",
+      "notion_url": "https://www.notion.so/303e74066c7d81d88bd7d077adeb3254"
+    },
+    {
+      "id": "303e7406-6c7d-8165-9aec-e745c77c1508",
+      "title": "Plotter Offer Refinement Block",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "active_client",
+      "project": "plotter-mechanix",
+      "participants": ["Matthew Kerns", "Team"],
+      "gist": "Transcript database development. Centralized 47 transcripts for search. Testimonial video upload planned.",
+      "notion_url": "https://www.notion.so/303e74066c7d81659aece745c77c1508"
+    },
+    {
+      "id": "303e7406-6c7d-81b2-8618-ed2e2af032c1",
+      "title": "Lead Priority Review",
+      "date": "2026-02-10",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Chris Andrade", "Team"],
+      "gist": "High-priority lead focus on 2-3 critical leads. New lead temperature system (hot/warm/cold) developed.",
+      "notion_url": "https://www.notion.so/303e74066c7d81b28618ed2e2af032c1"
+    },
+    {
+      "id": "302e7406-6c7d-8112-9b71-ffd9fa11747e",
+      "title": "Meeting with Plotter: Kelsey",
+      "date": "2026-02-09",
+      "type": "Fireflies.ai",
+      "category": "active_client",
+      "project": "plotter-mechanix",
+      "participants": ["Chris", "Kelsey"],
+      "gist": "Client update with Kelsey. Service call efficiency at 15/week @ $175 avg. Job management issues with Quo. 2023 revenue $850K, targeting $1M. Printing expansion under Mighty Picks LLC.",
+      "key_metrics": {
+        "service_calls_weekly": 15,
+        "avg_call_value": 175,
+        "revenue_2023": 850000,
+        "revenue_target_2024": 1000000
+      },
+      "notion_url": "https://www.notion.so/302e74066c7d81129b71ffd9fa11747e",
+      "transcript_url": "https://app.fireflies.ai/view/01KH1RGNPDJR17JTPK6919HJHM"
+    },
+    {
+      "id": "302e7406-6c7d-8172-8137-dde16d0d732b",
+      "title": "Meeting with Plotter: Kelsey",
+      "date": "2026-02-09",
+      "type": "Fireflies.ai",
+      "category": "active_client",
+      "project": "plotter-mechanix",
+      "participants": ["Chris", "Fred", "Mekaiel", "Kelsey"],
+      "gist": "Service operations deep dive. 15 weekly calls could triple to 9 daily with expansion. Technician training 3 months to 75% independence. Revenue $850K last year.",
+      "notion_url": "https://www.notion.so/302e74066c7d81728137dde16d0d732b",
+      "transcript_url": "https://app.fireflies.ai/view/01KH1QBWAEVPK4PQVG2FB4F4TD"
+    },
+    {
+      "id": "302e7406-6c7d-81c5-b03e-e21cf7f6b93d",
+      "title": "Arise Sync",
+      "date": "2026-02-09",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Trent", "Chris", "Matthew", "Mekaiel", "Katrina"],
+      "gist": "Phase 2 planning: prioritize supply/inventory with PLY integration. Pipeline has 40 leads. Centralized ticketing system needed.",
+      "notion_url": "https://www.notion.so/302e74066c7d81c5b03ee21cf7f6b93d",
+      "transcript_url": "https://app.fireflies.ai/view/01KGXBGH6KYX4TPKXE0BXR8QZ6"
+    },
+    {
+      "id": "302e7406-6c7d-81df-9347-ce5e828e22e4",
+      "title": "Arise Sync",
+      "date": "2026-02-09",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Trent", "Chris", "Matthew", "Mekaiel", "Katrina"],
+      "gist": "Closing deals focus. Free audits worth $2K for hesitant leads. Phase 1 fixes by Wednesday, then Phase 2.",
+      "notion_url": "https://www.notion.so/302e74066c7d81df9347ce5e828e22e4",
+      "transcript_url": "https://app.fireflies.ai/view/01KH28PJ5MW4QGGX80G2WD816A"
+    },
+    {
+      "id": "302e7406-6c7d-81e8-8760-d3b395982531",
+      "title": "Arise Standup",
+      "date": "2026-02-09",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Team"],
+      "gist": "Free audit offer replaces $30K option. Focus on qualifying client budgets.",
+      "notion_url": "https://www.notion.so/302e74066c7d81e88760d3b395982531"
+    },
+    {
+      "id": "302e7406-6c7d-8138-99fb-fbd98e8df188",
+      "title": "Arise Standup",
+      "date": "2026-02-09",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Team"],
+      "gist": "Free limited-scope audit to attract clients. Wallet checks to confirm willingness.",
+      "notion_url": "https://www.notion.so/302e74066c7d813899fbfbd98e8df188"
+    },
+    {
+      "id": "302e7406-6c7d-81a5-92d8-fbc0b14319c3",
+      "title": "ROI Interview Prep",
+      "date": "2026-02-09",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "participants": ["Team"],
+      "gist": "ROI data crucial before Phase 2. Target: close 2 of 3 deals. Prep for Steve discovery call Tuesday.",
+      "notion_url": "https://www.notion.so/302e74066c7d81a592d8fbc0b14319c3"
+    },
+    {
+      "id": "301e7406-6c7d-81ea-ae70-d3f1c629986c",
+      "title": "SNS Phase One Planning",
+      "date": "2026-02-08",
+      "type": "Fireflies.ai",
+      "category": "active_client",
+      "project": "ss-wolf-sheds",
+      "participants": ["Mekaiel", "Matthew", "Trent"],
+      "gist": "SNS $10K proposal split into 4x $2K weekly iterations. $500 audit + $1,500 QR code MVP for April campaign.",
+      "key_decisions": ["$2K quick win audit", "Man-week pricing at $3K", "30-day sprint payments"],
+      "notion_url": "https://www.notion.so/301e74066c7d81eaae70d3f1c629986c",
+      "transcript_url": "https://app.fireflies.ai/view/01KGZCP924SNE108M5CF3WZ89F"
+    },
+    {
+      "id": "301e7406-6c7d-81fe-8e01-d6dec7b70718",
+      "title": "Mekaiel and Otto Petersen",
+      "date": "2026-02-08",
+      "type": "Fireflies.ai",
+      "category": "external_networking",
+      "participants": ["Mekaiel", "Otto Petersen"],
+      "notion_url": "https://www.notion.so/301e74066c7d81fe8e01d6dec7b70718"
+    },
+    {
+      "id": "301e7406-6c7d-81b9-b516-ddd24d847822",
+      "title": "Internal Planning",
+      "date": "2026-02-08",
+      "type": "Fireflies.ai",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/301e74066c7d81b9b516ddd24d847822"
+    },
+    {
+      "id": "300e7406-6c7d-81d3-b12c-ffe5b0ec5f7e",
+      "title": "Arise Sync",
+      "date": "2026-02-07",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/300e74066c7d81d3b12cffe5b0ec5f7e"
+    },
+    {
+      "id": "2ffe7406-6c7d-8194-b828-c8327386263d",
+      "title": "Arise Standup",
+      "date": "2026-02-06",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "participants": ["Mekaiel", "Trent", "Matthew"],
+      "gist": "Presentation streamlined to 5 slides. Discovery call framework developed. Lead generation tools (Apify, Clay) explored.",
+      "key_decisions": ["5-slide presentation", "Discovery questions framework", "SOP finalization priority"],
+      "notion_url": "https://www.notion.so/2ffe74066c7d8194b828c8327386263d",
+      "transcript_url": "https://app.fireflies.ai/view/Arise-Standup::01KGSKFW85NYXKXN7GX0YN40K9"
+    },
+    {
+      "id": "2ffe7406-6c7d-8149-8d84-d56adb6fd0cb",
+      "title": "Arise Sync",
+      "date": "2026-02-06",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Task tracking moving to centralized database. Lead database standardization in Notion.",
+      "notion_url": "https://www.notion.so/2ffe74066c7d81498d84d56adb6fd0cb"
+    },
+    {
+      "id": "2ffe7406-6c7d-81f2-9125-d0df1a136a37",
+      "title": "Arise Sync",
+      "date": "2026-02-06",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "participants": ["Mekaiel", "Trent", "Chris", "Matthew", "Katrina"],
+      "gist": "Sales call restructuring: pair salesperson + technical expert. 5-question discovery framework. Educational content documentation.",
+      "key_decisions": ["Sales calls in pairs", "Discovery call template standardized", "Education pillar development"],
+      "notion_url": "https://www.notion.so/2ffe74066c7d81f29125d0df1a136a37",
+      "transcript_url": "https://app.fireflies.ai/view/Arise-Sync::01KGQYYFWC3DAZT9V433301B8W"
+    },
+    {
+      "id": "2ffe7406-6c7d-81f6-9bbb-f0c1f781ff00",
+      "title": "Arise Sync",
+      "date": "2026-02-06",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2ffe74066c7d81f69bbbf0c1f781ff00"
+    },
+    {
+      "id": "2ffe7406-6c7d-8140-91a8-c57661749249",
+      "title": "Communications Strategy",
+      "date": "2026-02-06",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Enhanced communications and outreach strategies. Member introductions during outreach.",
+      "notion_url": "https://www.notion.so/2ffe74066c7d814091a8c57661749249"
+    },
+    {
+      "id": "2ffe7406-6c7d-81e2-9dbe-f33062f79d30",
+      "title": "Internal Meeting",
+      "date": "2026-02-06",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2ffe74066c7d81e29dbef33062f79d30"
+    },
+    {
+      "id": "2fee7406-6c7d-81af-94a0-e12534c73936",
+      "title": "Agents of Change",
+      "date": "2026-02-05",
+      "type": "Google Meet",
+      "category": "external_networking",
+      "notion_url": "https://www.notion.so/2fee7406-6c7d-81af-94a0-e12534c73936"
+    },
+    {
+      "id": "2fee7406-6c7d-8155-967f-c9ed6b22bcdf",
+      "title": "Arise Standup",
+      "date": "2026-02-05",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Content strategy refinement. Three-pillar strategy: development, consultancy, education. Outreach calls blocking.",
+      "notion_url": "https://www.notion.so/2fee74066c7d8155967fc9ed6b22bcdf"
+    },
+    {
+      "id": "2fee7406-6c7d-81ca-929c-e661059350c3",
+      "title": "Arise Standup",
+      "date": "2026-02-05",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2fee74066c7d81ca929ce661059350c3"
+    },
+    {
+      "id": "2fee7406-6c7d-81db-818e-d95a6b124f20",
+      "title": "Arise Standup",
+      "date": "2026-02-05",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Audio issues impacted meeting. Matthew finalizing written work.",
+      "notion_url": "https://www.notion.so/2fee74066c7d81db818ed95a6b124f20"
+    },
+    {
+      "id": "2fee7406-6c7d-810c-a05f-f552d08afb52",
+      "title": "Arise Standup",
+      "date": "2026-02-05",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2fee74066c7d810ca05ff552d08afb52"
+    },
+    {
+      "id": "2fde7406-6c7d-8179-b319-f68cfbb3a4a6",
+      "title": "Arise Standup",
+      "date": "2026-02-04",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2fde74066c7d8179b319f68cfbb3a4a6"
+    },
+    {
+      "id": "2fde7406-6c7d-8173-b190-fde787c43070",
+      "title": "Arise Standup",
+      "date": "2026-02-04",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2fde74066c7d8173b190fde787c43070"
+    },
+    {
+      "id": "2fde7406-6c7d-8196-bd60-dbcbbf8dd326",
+      "title": "Internal Planning",
+      "date": "2026-02-04",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2fde74066c7d8196bd60dbcbbf8dd326"
+    },
+    {
+      "id": "2fce7406-6c7d-81c9-a469-f05c2a670a62",
+      "title": "Team Roles Strategy",
+      "date": "2026-02-03",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Chris and Matthew lead sales. Mekaiel and Trent manage development. February goal: 1-2 discovery calls/audits daily.",
+      "notion_url": "https://www.notion.so/2fce74066c7d81c9a469f05c2a670a62"
+    },
+    {
+      "id": "2fce7406-6c7d-8185-950c-da6d7df4c52d",
+      "title": "Lead Scheduling",
+      "date": "2026-02-03",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Aggressively schedule 20-25 leads. Target 1-2 discovery calls daily. Reclaim + Notion integration.",
+      "notion_url": "https://www.notion.so/2fce74066c7d8185950cda6d7df4c52d"
+    },
+    {
+      "id": "2fce7406-6c7d-8157-977b-cc6e8fb7601e",
+      "title": "Scheduling Follow-up",
+      "date": "2026-02-03",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Confirming availability for follow-up discussions via Zoom or in-person.",
+      "notion_url": "https://www.notion.so/2fce74066c7d8157977bcc6e8fb7601e"
+    },
+    {
+      "id": "2fce7406-6c7d-8172-a554-ef4a847ca83a",
+      "title": "Informal Check-in",
+      "date": "2026-02-03",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Informal check-ins to foster relaxed atmosphere.",
+      "notion_url": "https://www.notion.so/2fce74066c7d8172a554ef4a847ca83a"
+    },
+    {
+      "id": "2fce7406-6c7d-810c-848e-c9c7afd6b273",
+      "title": "Sales Pipeline Focus",
+      "date": "2026-02-03",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Prioritize scheduling calls and managing leads. Notion Calendar implementation.",
+      "notion_url": "https://www.notion.so/2fce74066c7d810c848ec9c7afd6b273"
+    },
+    {
+      "id": "2fbe7406-6c7d-81ff-850c-c8a01fefc955",
+      "title": "Tool Integration Review",
+      "date": "2026-02-02",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Integration gaps in meeting transcription tools. Need for Fathom connector.",
+      "notion_url": "https://www.notion.so/2fbe74066c7d81ff850cc8a01fefc955"
+    },
+    {
+      "id": "2fbe7406-6c7d-813b-ae2c-c021a6d3d813",
+      "title": "Arise Sync",
+      "date": "2026-02-02",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2fbe74066c7d813bae2cc021a6d3d813"
+    },
+    {
+      "id": "2fbe7406-6c7d-8166-8c3e-f67d2f58b719",
+      "title": "Arise Sync",
+      "date": "2026-02-02",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2fbe74066c7d81668c3ef67d2f58b719"
+    },
+    {
+      "id": "2f8e7406-6c7d-81b2-8c33-c60b3742de94",
+      "title": "AAA POD Meetup",
+      "date": "2026-01-30",
+      "type": "Google Meet",
+      "category": "external_networking",
+      "notion_url": "https://www.notion.so/2f8e74066c7d81b28c33c60b3742de94"
+    },
+    {
+      "id": "2f8e7406-6c7d-81c7-badc-eeae84c2ce0b",
+      "title": "Arise Sync",
+      "date": "2026-01-30",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "gist": "Huddle format adopted (15-20 min). 100 daily email leads target. Shared agenda form.",
+      "notion_url": "https://www.notion.so/2f8e74066c7d81c7badceeae84c2ce0b"
+    },
+    {
+      "id": "2f5e7406-6c7d-815f-967e-fa18e44431a1",
+      "title": "Arise Sync",
+      "date": "2026-01-27",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2f5e74066c7d815f967efa18e44431a1"
+    },
+    {
+      "id": "2f5e7406-6c7d-8147-8184-f1ac233a1e08",
+      "title": "Arise Sync",
+      "date": "2026-01-27",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "notion_url": "https://www.notion.so/2f5e74066c7d81478184f1ac233a1e08"
+    },
+    {
+      "id": "2f1e7406-6c7d-81e8-a7db-e57118a164c7",
+      "title": "Arise Sync",
+      "date": "2026-01-23",
+      "type": "Google Meet",
+      "category": "internal_sync",
+      "participants": ["Chris Andrade", "Mekaiel Abdullahi", "Trent Christopher", "Matthew Kerns"],
+      "gist": "Exigent deal focus - close by Feb 1. AI opportunity measurement system. Contact syncing deployment. SNS Phase 1 development.",
+      "key_decisions": ["Exigent Feb 1 deadline", "Point-based AI opportunity system", "Joe interview preparation"],
+      "notion_url": "https://www.notion.so/2f1e74066c7d81e8a7dbe57118a164c7",
+      "transcript_url": "https://app.fireflies.ai/view/Arise-Sync::01KFHH8PCJ90HM3YB2C0G1AVYF"
+    },
+    {
+      "id": "2eae7406-6c7d-819f-9a89-cac9ccc6e723",
+      "title": "Plotter: Call Handling Strategy",
+      "date": "2026-01-16",
+      "type": "Google Meet",
+      "category": "active_client",
+      "project": "plotter-mechanix",
+      "participants": ["Alyssa", "Kelsey", "Trent"],
+      "gist": "Centralized call handling through Alyssa. Standardized script. Kelsey focuses on technical work. Workload management for sustainability.",
+      "key_decisions": ["Alyssa handles all calls", "Call recording for coaching", "Kelsey reduced call volume"],
+      "notion_url": "https://www.notion.so/2eae74066c7d819f9a89cac9ccc6e723",
+      "transcript_url": "https://app.fireflies.ai/view/vsy-pmtx-rwi::01KF3QF895YKB07XJVTZ6QDFZD"
+    },
+    {
+      "id": "2eae7406-6c7d-8107-8568-c3e39cfae326",
+      "title": "AI Sales Strategy & SNS Audit Planning",
+      "date": "2025-12-30",
+      "type": "Google Meet",
+      "category": "active_client",
+      "project": "ss-wolf-sheds",
+      "participants": ["Chris Andrade", "Mekaiel Abdullahi", "Matthew Kerns"],
+      "gist": "AI sales scaling via AAA beta. $10K minimum audits. SNS Wolfsheds 6-8 week audit. Digital SOP app development.",
+      "key_decisions": ["$10K minimum pricing", "SNS as audit client", "Checklist app development"],
+      "notion_url": "https://www.notion.so/2eae74066c7d81078568c3e39cfae326",
+      "transcript_url": "https://app.fireflies.ai/view/mekaiel-arisegroup-ai-Tue-30-Dec-2025-15-44-53-UTC-Untitled::01KDQYY0E3FNMYSR5659N2QCVB"
+    },
+    {
+      "id": "2ebe7406-6c7d-812a-8665-f7673e48b95a",
+      "title": "Ply Integration Planning",
+      "date": "2026-01-18",
+      "type": "Google Meet",
+      "category": "active_client",
+      "project": "plotter-mechanix",
+      "gist": "Ply app integration within 30 days for inventory management. SOP video production proposed.",
+      "notion_url": "https://www.notion.so/2ebe74066c7d812a8665f7673e48b95a"
+    },
+    {
+      "id": "2ebe7406-6c7d-8150-8f98-e8e11cd09820",
+      "title": "Randy",
+      "date": "2026-01-20",
+      "type": "Google Meet",
+      "category": "external_networking",
+      "participants": ["Randy"],
+      "notion_url": "https://www.notion.so/2ebe74066c7d81508f98e8e11cd09820"
+    },
+    {
+      "id": "2ebe7406-6c7d-81b7-bb3b-f5c807c22cc8",
+      "title": "Randy",
+      "date": "2026-01-18",
+      "type": "Google Meet",
+      "category": "external_networking",
+      "participants": ["Randy"],
+      "notion_url": "https://www.notion.so/2ebe74066c7d81b7bb3bf5c807c22cc8"
+    }
+  ]
+}
