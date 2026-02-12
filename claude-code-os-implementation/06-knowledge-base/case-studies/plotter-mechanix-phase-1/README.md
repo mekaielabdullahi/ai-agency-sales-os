@@ -1,6 +1,10 @@
 # Plotter Mechanix Phase 1 Case Study - Video Package
 
-Complete video editor brief package for 3 self-contained video outputs.
+## Editor Handoff Package
+
+Complete video editor brief package for 3 videos.
+
+**For Video Editor:** Start with the EDITOR-CONTEXT files. They have everything you need in simple language.
 
 ---
 
@@ -18,43 +22,51 @@ Complete video editor brief package for 3 self-contained video outputs.
 
 ## The 3 Videos
 
-| Video | Duration | Purpose | Placement | Brief |
-|-------|----------|---------|-----------|-------|
-| **Kelsey Testimonial** | 45 seconds | Social proof, trust builder | Website hero + testimonials + social | [VIDEO-1-TESTIMONIAL-45SEC.md](./VIDEO-1-TESTIMONIAL-45SEC.md) |
-| **AriseGroup Intro** | 2-3 minutes | Who we are, what we do | YouTube channel trailer | [VIDEO-2-ARISEGROUP-INTRO.md](./VIDEO-2-ARISEGROUP-INTRO.md) |
-| **Full Case Study** | 20-30 minutes | Complete transformation story | YouTube flagship content | [VIDEO-3-CASE-STUDY-FULL.md](./VIDEO-3-CASE-STUDY-FULL.md) |
+| Video | Duration | Purpose |
+|-------|----------|---------|
+| **Video 1: Kelsey Testimonial** | 45 seconds | Trust builder for website + social |
+| **Video 2: AriseGroup Intro** | 2-3 minutes | YouTube channel trailer |
+| **Video 3: Full Case Study** | 20-30 minutes | YouTube flagship content |
 
 ---
 
 ## Documents in This Folder
 
-| Document | Purpose |
-|----------|---------|
-| [VIDEO-1-TESTIMONIAL-45SEC.md](./VIDEO-1-TESTIMONIAL-45SEC.md) | 45-second testimonial brief (self-contained) |
-| [VIDEO-2-ARISEGROUP-INTRO.md](./VIDEO-2-ARISEGROUP-INTRO.md) | 2-3 minute intro brief (self-contained) |
-| [VIDEO-3-CASE-STUDY-FULL.md](./VIDEO-3-CASE-STUDY-FULL.md) | Full case study brief (self-contained) |
-| [FOOTAGE-TRACKER.md](./FOOTAGE-TRACKER.md) | Track and locate all required footage by video |
-| [GRAPHICS-REQUIREMENTS.md](./GRAPHICS-REQUIREMENTS.md) | Visual assets needed, organized by video |
-| [QUOTE-EXTRACTION-GUIDE.md](./QUOTE-EXTRACTION-GUIDE.md) | Find specific quotes from transcripts |
+| Document | What Is It |
+|----------|------------|
+| [EDITOR-CONTEXT-VIDEO-1.md](./EDITOR-CONTEXT-VIDEO-1.md) | Simple guide for 45-second testimonial |
+| [EDITOR-CONTEXT-VIDEO-2.md](./EDITOR-CONTEXT-VIDEO-2.md) | Simple guide for AriseGroup intro video |
+| [EDITOR-CONTEXT-VIDEO-3.md](./EDITOR-CONTEXT-VIDEO-3.md) | Complete guide for full case study |
+| [QUOTE-BANK.md](./QUOTE-BANK.md) | All quotes organized BEFORE/AFTER with emotions |
+| [VISUAL-GLOSSARY.md](./VISUAL-GLOSSARY.md) | What each system looks like (Quo, Jobber, N8N) |
+| [FOOTAGE-FINDER.md](./FOOTAGE-FINDER.md) | How to find and download footage from Fireflies |
+| [GRAPHICS-REQUIREMENTS.md](./GRAPHICS-REQUIREMENTS.md) | Visual assets needed for each video |
+
+**Total: 8 files including this README**
+
+---
+
+## Where to Start
+
+1. **Read your video's EDITOR-CONTEXT file first** (Video 1, 2, or 3)
+2. **Use FOOTAGE-FINDER.md** to locate clips in Fireflies
+3. **Check QUOTE-BANK.md** for quote emotions and context
+4. **Reference VISUAL-GLOSSARY.md** for system screenshots
+5. **See GRAPHICS-REQUIREMENTS.md** for text overlays and animations
 
 ---
 
 ## Production Status
 
 ### Video 1: 45-Second Testimonial
-- [ ] Kelsey Feb 9 footage located
+- [ ] Kelsey footage located from Jan 27 meeting
 - [ ] Shop B-roll from Chris obtained
-- [ ] Graphics created (lower third, ROI stats, end card)
+- [ ] Graphics created
 - [ ] First cut completed
-- [ ] Multi-platform exports (website, LinkedIn, Instagram)
 
 ### Video 2: AriseGroup Intro
-- [ ] Chris partner recording completed
-- [ ] Trent partner recording completed
-- [ ] Matthew partner recording completed
-- [ ] Mekaiel partner recording completed
-- [ ] Methodology diagram animation created
-- [ ] Background music selected/licensed
+- [ ] Partner intro recordings completed
+- [ ] Methodology diagram created
 - [ ] First cut completed
 
 ### Video 3: Full Case Study
@@ -62,9 +74,6 @@ Complete video editor brief package for 3 self-contained video outputs.
 - [ ] B-roll footage compiled
 - [ ] Graphics package created
 - [ ] First cut completed
-- [ ] Review and revisions
-- [ ] Final export
-- [ ] YouTube upload and optimization
 
 ---
 
@@ -72,65 +81,53 @@ Complete video editor brief package for 3 self-contained video outputs.
 
 ```
 YouTube Case Study (Video 3)
-         ↓
-AriseGroup Intro (Video 2) ← YouTube Channel Trailer
-         ↓
-  AriseGroup.ai Website ← Kelsey Testimonial (Video 1)
-         ↓
+         |
+AriseGroup Intro (Video 2) <-- YouTube Channel Trailer
+         |
+  AriseGroup.ai Website <-- Kelsey Testimonial (Video 1)
+         |
    Free Discovery Call
-         ↓
-    Client Engagement
 ```
-
----
-
-## Target Audience
-
-- **Primary (75%):** Business owners with operational bottlenecks
-- **Secondary (25%):** Developers/builders curious about AI automation
 
 ---
 
 ## Key Messages
 
 1. **Outcome-focused:** Lead with results, not technical features
-2. **ROI framing:** Investment → Return (e.g., "$5K → $73K")
-3. **Accessible:** Avoid being "too smart" - speak to business owners
-4. **Human element:** Show the process alongside the technical work
+2. **ROI framing:** Investment to Return (e.g., "$5K to $73K")
+3. **Accessible:** Speak to business owners, not tech people
+4. **Human element:** Show the process and the people
 
 ---
 
-## Brand Colors (Reference)
+## Brand Colors
 
-| Color | Hex Code | Usage |
-|-------|----------|-------|
-| Navy | #1E3A5F | Primary backgrounds |
-| Amber | #F59E0B | Accent highlights |
+| Color | Code | Where to Use |
+|-------|------|--------------|
+| Navy (dark blue) | #1E3A5F | Backgrounds |
+| Amber (orange) | #F59E0B | Highlights |
 | Gold | #D4AF37 | Premium accents |
 | Teal | #0D9488 | Secondary accents |
 | White | #FFFFFF | Text on dark backgrounds |
 
 ---
 
-## Related Project Files
+## Language Guidelines
 
-The source material for this case study lives in the active project folder:
-```
-02-operations/project-management/active-projects/plotter-mechanix/
-├── discovery/           # Discovery meeting transcripts
-├── meetings/           # All meeting recordings/summaries
-├── deliverables/       # Project deliverables and proposals
-├── audit/              # AI audit and opportunity matrix
-└── planning/           # PRDs and implementation plans
-```
+**DO:**
+- Use short sentences (max 15 words)
+- Use simple words
+- Explain emotions clearly
+- Use bullet points
+
+**DON'T:**
+- Use business terms without explanation
+- Use idioms
+- Write long paragraphs
 
 ---
 
-## Editor Handoff Checklist
+## Questions?
 
-When handing off to video editor, verify:
-- [ ] Each video brief is self-contained (editor needs no other docs)
-- [ ] Footage sources are specific (file paths or "need to capture")
-- [ ] Graphics specs include exact colors, fonts, dimensions
-- [ ] No footage conflicts between videos (same clip not overused)
-- [ ] Music licensing requirements are clear
+If something is not clear, ask Mekaiel.
+It is better to ask than to guess.
