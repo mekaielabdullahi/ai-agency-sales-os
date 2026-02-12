@@ -1,32 +1,54 @@
-# AriseGroup Case Study Video: Plotter Mechanix Phase 1
+# Video 3: Plotter Mechanix Full Case Study
 
-## Strategic Context (from Harsha Strategy Session - Feb 11)
-
-**Channel Strategy:**
-- AriseGroup YouTube = ONE flagship video explaining mission + partner roles
-- This case study IS that flagship video
-- Individual partners (Matthew, Chris, Trent, Mekaiel) have separate content channels
-- **Funnel:** This video → AriseGroup website → consultation booking
-
-**Content Philosophy:**
-- **Outcome-focused communication** - lead with business results, not technical features
-- Frame everything as: Investment → Return (e.g., "$5K → $73K")
-- Avoid being "too smart for your own good" - make it accessible to business owners
-- Show the human element alongside the technical process
+**Self-Contained Brief for Video Editor**
 
 ---
 
 ## Video Overview
 
-**Title Options (Outcome-Focused):**
+| Field | Value |
+|-------|-------|
+| **Duration** | 20-30 minutes |
+| **Purpose** | Flagship YouTube content - full transformation story |
+| **Viewer Emotion** | "This is exactly the process I need" |
+| **Placement** | YouTube main content |
+
+---
+
+## Related Videos
+
+This case study is part of a 3-video package:
+- **Video 1:** 45-second Kelsey Testimonial - see VIDEO-1-TESTIMONIAL-45SEC.md
+- **Video 2:** AriseGroup Intro (2-3 minutes) - see VIDEO-2-ARISEGROUP-INTRO.md
+- **Video 3:** This file (Full Case Study)
+
+**Important Footage Notes:**
+- Kelsey testimonial clips used here should be DIFFERENT from those in Video 1
+- This video should reference Video 2 (AriseGroup Intro) for "who we are" context
+- End with "Subscribe for Phase 2" hook
+
+---
+
+## Strategic Context
+
+**Channel Strategy:**
+- AriseGroup YouTube = ONE flagship video explaining mission + partner roles
+- This case study IS that flagship video
+- **Funnel:** This video → AriseGroup website → consultation booking
+
+**Content Philosophy:**
+- **Outcome-focused communication** - lead with business results, not technical features
+- Frame everything as: Investment → Return (e.g., "$5K → $73K")
+- Avoid being "too smart" - make it accessible to business owners
+- Show the human element alongside the technical process
+
+---
+
+## Title Options (Outcome-Focused)
+
 - "We Turned $5,000 Into $73,000 Annual Savings (Full Case Study)"
 - "How We Saved a $750K Business 35+ Hours a Week"
 - "From Chaos to Control: The AriseGroup Process"
-
-**Format:** Long-form case study (20-35 minutes)
-**Purpose:** AriseGroup's flagship YouTube video - explains who we are through showing what we do
-**Target Audience:** Business owners with operational bottlenecks (75%), developers curious about AI automation (25%)
-**Footage Sources:** Discovery meetings, sales meetings, internal meetings, testimonial clips
 
 ---
 
@@ -37,6 +59,8 @@
 
 **Footage:** Kelsey testimonial clip (Feb 9, 2026)
 > "The inbound stuff is working amazing, bro. I'm starting to trust it. When I take a call, by the time I get off the phone, within seconds, it's like 'you have an opportunity, a new request' and Alyssa gets it."
+
+**Note:** Use a DIFFERENT take of this quote than Video 1 if multiple takes exist. Or use a different powerful quote from the same interview.
 
 **Text Overlay:**
 - $5K Investment → $73K Annual Value
@@ -204,7 +228,9 @@ AUTO-CREATES JOBBER REQUEST → TEAM NOTIFIED (seconds)
 #### Section 3A: The Testimonial (16:00 - 19:00)
 **Footage:** Kelsey ROI interview (Feb 9, 2026) - THIS IS YOUR MONEY SHOT
 
-**Key Kelsey Quotes:**
+**Note:** Use DIFFERENT clips than Video 1. Find additional powerful quotes from the same interview.
+
+**Key Kelsey Quotes (choose clips not used in Video 1):**
 > "The inbound stuff is working amazing, bro. I'm starting to trust it."
 
 > "When I take a call, by the time I get off the phone, within seconds, it's like 'you have an opportunity, a new request' and Alyssa gets it."
@@ -323,6 +349,9 @@ AUTO-CREATES JOBBER REQUEST → TEAM NOTIFIED (seconds)
 4. **Results** - Measure and prove value
 5. **Iteration** - Phase 1 reveals Phase 2
 
+**Reference to Video 2:**
+> "Want to know more about who we are? Watch our channel intro."
+
 **Introduce the Partners (Who We Are):**
 - Brief intro of each partner's specialty
 - Matthew: Software development, AI automation
@@ -337,7 +366,7 @@ AUTO-CREATES JOBBER REQUEST → TEAM NOTIFIED (seconds)
 - "If you're a business owner drowning in operational chaos..."
 - "Book a free discovery call at AriseGroup.ai"
 - Comment: "What's YOUR biggest operational bottleneck?"
-- Subscribe for Phase 2 results video
+- **Subscribe for Phase 2 results video** (key hook)
 
 **End Card:**
 - AriseGroup logo + website URL prominently displayed
@@ -352,7 +381,7 @@ AUTO-CREATES JOBBER REQUEST → TEAM NOTIFIED (seconds)
 ### Footage Priority List
 | Priority | Source | Content Needed |
 |----------|--------|----------------|
-| 1 | Kelsey Feb 9 interview | Testimonial quotes, "amazing" moment |
+| 1 | Kelsey Feb 9 interview | Testimonial quotes (DIFFERENT from Video 1) |
 | 2 | Discovery meetings Dec 3/17 | Pain point expressions, problem setup |
 | 3 | Joe interview Jan 28 | Growth story, capability proof |
 | 4 | Kelsey Jan 27 interview | "Bread on the Water" vision |
@@ -425,3 +454,15 @@ AUTO-CREATES JOBBER REQUEST → TEAM NOTIFIED (seconds)
 - "We don't build blindly - we understand their workflow first"
 - "Find the highest ROI opportunity BEFORE building"
 - "Build the RIGHT thing, not just A thing"
+
+---
+
+## Brand Colors Reference
+
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| Navy | #1E3A5F | Primary backgrounds |
+| Amber | #F59E0B | Accent highlights |
+| Gold | #D4AF37 | Premium accents |
+| Teal | #0D9488 | Secondary accents |
+| White | #FFFFFF | Text on dark backgrounds |
