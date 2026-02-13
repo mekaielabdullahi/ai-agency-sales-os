@@ -1,36 +1,61 @@
 # Phase 2: PlotterOps Transformation - Roadmap
 
-**Status:** Planning / Not Yet Scoped
-**Depends On:** Phase 1 completion and success validation
-**Last Updated:** December 23, 2025
+**Status:** Validation in Progress - Joe's interview COMPLETED
+**Depends On:** Phase 1 deployed; validation phase active
+**Last Updated:** January 31, 2026
 
 ---
 
 ## Important Notice
 
-⚠️ **This is a roadmap, not a proposal.**
+⚠️ **This roadmap is now validated with Joe's stakeholder interview data.**
 
-Phase 2 scope, pricing, and timeline are NOT finalized. This document outlines potential deliverables based on:
-- Client's stated long-term vision
-- Problems identified during Phase 1 discovery
-- Foundation laid by Phase 1 infrastructure
+A formal 3-tier proposal ($15k / $28k / $47k) has been updated with validated insights.
+See `offer/phase-2/final-proposal/` for the updated proposal with Joe's validated metrics.
 
-**Next Steps:**
-1. Complete Phase 1
-2. Validate value and trust
-3. Use Phase 1 data to scope Phase 2 precisely
-4. Create formal Phase 2 proposal with fixed price and timeline
+**✅ VALIDATED Context (Jan 28, 2026 - Joe's Interview):**
+- **Training burden:** 20-30 hrs/week × 3 months (not 5 hrs/week estimate)
+- **Knowledge gaps:** 20% of calls need major help, 10-15% minor guidance
+- **Shopify-Jobber broken:** 2-3 under-deliveries monthly due to unit mismatch
+- **Morning coordination:** 1.5-2 hours daily, routes change 4/5 days
+- **Mobile need:** Joe wants RAG agent for field queries
+- **Learning preference:** Videos over live training
+
+**Updated Context (Jan 27, 2026 call):**
+- Revenue is ~$700-800k (NOT $600k), trending toward $1.2M-$1.7M target
+- Andrew is fully operational on supplies/sales (not "ramping up")
+- Steve is permanently off table; pivoting to Michael Maloney / subcontractor model
+- Kelsey's dyslexia = hard UX constraint (voice-friendly / simple interfaces required)
+- Subcontractor network forming (former Plotter Doctors employee, Michael Maloney)
+- Tiered pricing in development to accommodate cash flow sensitivity
 
 ---
 
+## Joe's Validation - Priority Adjustments
+
+### NEW Priority Order (Based on Joe's Interview):
+1. **Fix Shopify-Jobber Integration** (Week 1) - 2-3 under-deliveries/month
+2. **Training System with Videos** - 20-30 hrs/week burden validated
+3. **Knowledge Base/RAG Agent** - 30% of calls need help
+4. **Equipment Management** - Missing customer equipment lists
+5. **Morning Coordination Tools** - 1.5-2 hours daily chaos
+
+### Immediate Wins Identified:
+- Shopify unit conversion automation (box vs roll)
+- Video tutorials for Joe's weak areas (solvents, Epson, UV)
+- Mobile RAG agent for field queries
+- Tech expertise mapping for better routing
+
 ## Overview
 
-Phase 2 transforms Plotter Mechanix from reactive firefighting to proactive operations. The core focus: **inventory visibility and unified operations dashboard**.
+Phase 2 transforms Plotter Mechanix from reactive firefighting to proactive operations. The core focus has shifted from **inventory visibility** to **knowledge transfer and operational intelligence** based on Joe's validation.
 
 **Built on Phase 1 Foundation:**
-- Communication captured automatically (Quo + Email automation)
+- Communication captured automatically (Quo-Jobber integration deployed and live)
 - Jobber trusted as source of truth
 - Team workflow optimized for efficiency
+- IVR routing configured (5-extension menu)
+- Kelsey adopted Quo as default phone; strong platform buy-in
 - Data collection infrastructure in place
 
 ### Core Problem Statement
@@ -171,8 +196,9 @@ Each system is a separate login, separate view.
 - Joe: Assigned jobs + training checklist
 
 **Mobile Optimization:**
-- Accessible from Chris's phone in field
+- Accessible from Kelsey's phone in field
 - Quick-check during morning coffee (Pine Top vision)
+- Voice-friendly / simple interface (Kelsey's dyslexia constraint)
 
 #### Questions to Answer
 
@@ -337,7 +363,7 @@ AI extracts action items from calls:
 
 ### Qualitative Outcomes
 
-- [ ] Chris confident in job planning night before
+- [ ] Kelsey confident in job planning night before
 - [ ] Alyssa knows inventory status without asking
 - [ ] Joe can check parts availability independently
 - [ ] Foundation ready for Lucid Motors contract (200 cuts/day)
@@ -349,7 +375,7 @@ AI extracts action items from calls:
 
 **NOT FINAL - Illustrative only**
 
-Phase 2 likely in range of $15,000-$30,000 depending on:
+Phase 2 pricing: $15,000-$47,000 (3-tier options now in internal review). Range depends on:
 - Scope selected (2A, 2B, 2C components)
 - Integration complexity (especially QuickBooks new system)
 - Custom development vs off-the-shelf solutions
@@ -503,6 +529,6 @@ Even during Phase 1, we'll be:
 
 ---
 
-*This is a living roadmap. Expect significant changes as we complete Phase 1 and gather real-world data.*
+*This roadmap is now supplemented by a formal 3-tier Phase 2 proposal. See offer/phase-2/to-review/ for details.*
 
-**Last Updated:** December 23, 2025
+**Last Updated:** January 28, 2026
