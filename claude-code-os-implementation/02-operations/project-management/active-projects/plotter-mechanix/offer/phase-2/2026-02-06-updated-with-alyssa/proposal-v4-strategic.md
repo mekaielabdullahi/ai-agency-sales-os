@@ -2,18 +2,8 @@
 ## From Service Business to Knowledge Business
 
 **Date:** February 6, 2026
-**Updated:** February 9, 2026 (Kelsey ROI Interview)
 **Prepared For:** Kelsey Hartzell, Plotter Mechanix
 **Prepared By:** AI Agency Development Team
-
----
-
-## Phase 1 Validation: It's Working
-
-> *"The inbound stuff is working amazing, bro. I'm starting to trust it. When I take a call, by the time I get off the phone, within seconds, it's like 'you have an opportunity, a new request' and Alyssa gets it."*
-> — **Kelsey, Feb 9, 2026**
-
-Phase 1 laid the foundation. Kelsey trusts the system. Now Phase 2 multiplies the impact.
 
 ---
 
@@ -25,11 +15,6 @@ Transform Plotter Mechanix from a service business dependent on Kelsey's hands t
 - **Today:** Kelsey = Full-time technician + Part-time business owner
 - **Tomorrow:** Kelsey = Plotter repair consultant + Knowledge center owner
 - **Result:** Get paid for your brain, not just your time
-
-**Kelsey's Real Vision (Feb 9, 2026):**
-> *"Once I get freed up from this thing and get this thing running efficiently, I'm going to start a ministry called Bread on the Water."*
-
-This isn't just about Pinetop. It's about freedom to serve. Kelsey wants to run houseboat retreats for fatherless kids. He already has the houseboats and the nonprofit. What he needs is a business that runs without him.
 
 **The Operational Reality:**
 Alyssa spends 20-25 hours/week processing communications that turn into supplier orders, customer quotes, job updates, and parts research. This isn't "email management" - it's running your entire operation through fragmented communication channels.
@@ -50,23 +35,12 @@ Alyssa spends 20-25 hours/week processing communications that turn into supplier
 
 ### The Consultant Model
 
-**Kelsey Is Already Doing This (Feb 9, 2026):**
-> *"At the end of the day, you make more money as a consultant. I'm a solutions provider, not a salesman."*
-
-A client just brought Kelsey in to **consult WITH the printer manufacturer** on a diagnosis. He's already a consultant - he's just not charging for it separately.
-
 **Kelsey as Plotter Repair Consultant:**
-1. **Diagnostic Calls:** Premium rate for expertise
+1. **Diagnostic Calls:** $300-500/hr for expertise
 2. **Tech Oversight:** Managing 3-5 service techs
 3. **Complex Problems Only:** Let techs handle routine
 4. **Training Revenue:** Certify techs (yours and others)
 5. **Remote Consulting:** Diagnose via video/photos
-
-**Current Service Rate:** $75/hr (validated Feb 9)
-**Consultation Rate Potential:** $150-300/hr for expertise-only calls
-
-**Quote:**
-> *"People say you're paid more than my attorney. I say, yeah, but I'll be done in 2 hours. Your attorney will take 6 months."*
 
 **Service Tech Fulfillment:**
 - Routine maintenance (70% of calls)
@@ -106,8 +80,8 @@ Week 9+: Contributing new knowledge
 **ROI on Training System:**
 - Current: 120-200 hours of Kelsey per tech
 - Future: 30-50 hours of Kelsey per tech
-- Value: $6,750-$11,250 saved per hire (at $75/hr)
-- With 2-3 hires/year: **$13,500-$33,750 annual savings**
+- Value: $21,000-$35,000 saved per hire
+- With 2-3 hires/year: **$42,000-$105,000 annual savings**
 
 ---
 
@@ -155,7 +129,7 @@ Week 9+: Contributing new knowledge
 - Enable tech independence faster
 - Create training revenue stream
 - Build sellable IP asset
-- **ROI: $13,500-$33,750/year** (at validated $75/hr)
+- **ROI: $42,000-$105,000/year**
 
 ---
 
@@ -237,42 +211,34 @@ Week 9+: Contributing new knowledge
 | Parts ordering time | 45 min per order | Alyssa Part 2 | Feb 6, 2026 |
 | Training time per tech | 120-200 hours total | Joe interview | Jan 28, 2026 |
 | Morning coordination | 1.5-2 hrs/day | Joe interview | Jan 28, 2026 |
-| Kelsey billable rate | $75/hr | Kelsey ROI Interview | Feb 9, 2026 |
-| Phone interruptions per service call | 1-2 calls (10-15 min each) | Kelsey ROI Interview | Feb 9, 2026 |
-| Weekly time lost to interruptions | 12.5 hrs | Kelsey ROI Interview | Feb 9, 2026 |
+| Kelsey billable rate | $175/hr + $75 trip | Jobber | Confirmed |
 | Help calls from Joe | 30% need Kelsey | Joe interview | Jan 28, 2026 |
 
-### Financial Calculations (Updated Feb 9, 2026)
+### Financial Calculations
 
 **Kelsey's Time Value:**
-- Validated hourly rate: $75/hr (confirmed by Kelsey)
-- Weekly hours lost to interruptions: 12.5 hrs
-- Annual cost of interruptions: 12.5 × $75 × 52 = **$48,750**
+- Revenue goal: $1.2M-$1.7M
+- Working hours: 2,600/year (50 hrs/week)
+- Effective rate: $462-$654/hr gross
+- Opportunity cost: $300-$375/hr net
 
 **Training System ROI:**
-- Current cost per tech: 120-200 hrs × $75 = $9,000-$15,000
-- With system: 30-50 hrs × $75 = $2,250-$3,750
-- Savings per tech: $6,750-$11,250
-- Annual (2-3 techs): **$13,500-$33,750**
+- Current cost per tech: 120-200 hrs × $175 = $21,000-$35,000
+- With system: 30-50 hrs × $175 = $5,250-$8,750
+- Savings per tech: $15,750-$26,250
+- Annual (2-3 techs): **$31,500-$78,750**
 
 **Alyssa Efficiency ROI:**
 - Hours recovered: 10-15/week
 - At $25/hr (estimated): $250-$375/week
 - Annual value: **$13,000-$19,500**
 
-**Interruption Recovery ROI:**
-- Current weekly loss: 12.5 hrs × $75 = $937.50
-- 50% reduction target: $468.75/week recovered
-- Annual value: **$24,375**
-
-**Total Annual Value Created (Conservative):**
-- Interruption reduction (50%): $24,375
-- Training efficiency: $13,500-$33,750
+**Total Annual Value Created:**
+- Kelsey time freed: $156,000-$234,000
+- Training efficiency: $31,500-$78,750
 - Alyssa productivity: $13,000-$19,500
-- Operations optimization: $5,000-$8,000
-- **Total: $55,875-$85,625**
-
-*Note: Previous estimates used aspirational consultation rates. These calculations use Kelsey's validated $75/hr service rate for conservative projections.*
+- Operations optimization: $5,500-$8,250
+- **Total: $206,000-$340,500**
 
 ---
 
@@ -355,7 +321,7 @@ Week 9+: Contributing new knowledge
 ### The February Reality
 - You're hiring 2 new techs
 - That's 200-400 hours of your time
-- Worth $15,000-$30,000 in lost revenue (at $75/hr)
+- Worth $35,000-$70,000 in lost revenue
 - Every month delayed = more training burden
 
 ### The Growth Ceiling
@@ -367,11 +333,11 @@ Without Phase 2, you're stuck at:
 
 ### The Opportunity
 With Phase 2, you unlock:
-- Consultant rates ($150-300/hr) vs service rates ($75/hr)
+- Consultant rates ($300-500/hr) vs service rates ($175/hr)
 - Multiple revenue streams (service + training + consulting)
 - Scalable growth through certified techs
 - Sellable business asset (documented knowledge)
-- Freedom to launch Bread on the Water
+- That Pinetop cabin dream
 
 ---
 
@@ -404,10 +370,10 @@ With Phase 2, you unlock:
    - Growth: Build knowledge systems
    - Full Scale: Complete transformation
 
-2. **Metrics validated (Feb 9, 2026)**
-   - Kelsey's rate: $75/hr ✅
-   - Weekly interruption loss: 12.5 hrs ✅
-   - Alyssa's rate: ~$25/hr (estimated)
+2. **Validate remaining metrics**
+   - Confirm Alyssa's hourly rate
+   - Verify 2025 revenue baseline
+   - Pull service call volumes
 
 3. **Begin Week 1 quick wins**
    - Immediate fixes while planning rollout
@@ -423,9 +389,8 @@ This isn't about email management or basic automation. It's about transforming P
 - Transform: Build a scalable knowledge business
 
 **Investment:** $15,000-$42,000 (one-time)
-**Return:** $56,000-$86,000 (annual, conservative)
-**Payback:** 3-6 months
-**First-Year ROI:** 133-373%
+**Return:** $206,000-$340,000 (annual)
+**Payback:** 3-5 months
 
 ---
 

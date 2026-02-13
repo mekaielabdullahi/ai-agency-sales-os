@@ -149,26 +149,43 @@ TOTAL:                            ___ hrs/wk
 
 ---
 
-## Section 5: Quo/Phone System Questions (5 min)
+## Section 5: Phase 1 System Feedback (5 min)
 
-### New System Readiness
+### Quo-Jobber Integration Experience
 
-| # | Question | Why It Matters | Answer |
-|---|----------|----------------|--------|
-| Q1 | If ALL calls came through one phone system with transcripts, would that help? | Single channel value | |
-| Q2 | If calls auto-created Jobber Requests with AI summaries, what info would you need to act on them? | Request completeness | |
-| Q3 | Would you prefer a queue of Requests to process vs. live phone calls? | Workflow preference | |
-| Q4 | How would you want to mark a call summary as "handled"? | Completion workflow | |
-| Q5 | If Kelsey's field updates auto-appeared in Jobber (no call needed), how much time would that save? | Automation value | ___ hrs/wk |
+| # | Question | What It Reveals | Answer |
+|---|----------|-----------------|--------|
+| Q1 | Are you seeing Requests auto-populate in Jobber from Quo calls? | System working | Yes / No / Sometimes |
+| Q2 | How accurate are the AI call summaries? (1-10 scale) | Summary quality | ___ /10 |
+| Q3 | What's usually missing or wrong in the summaries? | Improvement areas | |
+| Q4 | Are contact names showing up correctly, or do you still see "[phone numbers]"? | Name extraction working | |
+| Q5 | How many minutes does it save you per call compared to Kelsey calling you? | Time savings realized | ___ min/call |
 
-### Call Routing Preferences
+### Impact on Kelsey Handoffs
+
+| # | Question | What It Reveals | Answer |
+|---|----------|-----------------|--------|
+| Q6 | Since Quo went live, have Kelsey's update calls to you decreased? | Handoff reduction | Yes / No / Same |
+| Q7 | If yes, how many fewer calls per day from Kelsey? | Quantified impact | ___ fewer/day |
+| Q8 | Do you still need to call Kelsey back to clarify things from the Requests? | Completeness | ___ times/wk |
+| Q9 | What info is still missing that makes you call Kelsey anyway? | Gap identification | |
+
+### What's Working / What's Not
 
 | # | Question | Answer |
 |---|----------|--------|
-| Q6 | Should new customer calls go to you first or Kelsey? | |
-| Q7 | Should existing customer calls go to you first? | |
-| Q8 | What should happen if you don't answer in 4 rings? | |
-| Q9 | Do you want visibility into Kelsey's calls even if you don't handle them? | |
+| Q10 | What do you like MOST about the new system? | |
+| Q11 | What's the most frustrating thing about it? | |
+| Q12 | If you could change ONE thing about how Requests appear, what would it be? | |
+| Q13 | Are there call types that aren't being captured properly? | |
+
+### Phase 2 Wishlist
+
+| # | Question | Answer |
+|---|----------|--------|
+| Q14 | Now that calls are captured, what's your NEXT biggest time waster? | |
+| Q15 | Would text message capture into Jobber help you? How much? | |
+| Q16 | Would voicemail transcription help? | |
 
 ---
 
@@ -267,7 +284,7 @@ TOTAL:                            ___ hrs/wk
 - [ ] Calculate Kelsey handoff cost
 - [ ] Calculate parts ordering time
 - [ ] Validate email consolidation savings
-- [ ] Document Quo/call routing preferences
+- [ ] Document Phase 1 system feedback
 - [ ] Calculate total ROI potential
 - [ ] Identify magic wand priority
 - [ ] Update master ROI calculator with Alyssa's numbers
@@ -281,12 +298,12 @@ TOTAL:                            ___ hrs/wk
 2.
 3.
 
-### Automation Priorities:
-1.
-2.
-3.
+### Phase 1 Feedback Summary:
+1. What's working:
+2. What's not working:
+3. Missing features:
 
-### Quo System Requirements:
+### Automation Priorities:
 1.
 2.
 3.
@@ -310,5 +327,5 @@ TOTAL:                            ___ hrs/wk
 ---
 
 **Created:** January 27, 2026
-**Last Updated:** January 27, 2026
-**Version:** 1.0
+**Last Updated:** February 4, 2026
+**Version:** 2.0 (Updated Section 5 for Phase 1 feedback)
