@@ -6,17 +6,31 @@
 
 ---
 
-## The Business Transformation
+## The Promise
 
-Phase 2 enables a dual expansion: Kelsey scales the service business while Andrew launches the vinyl printing supply chain. The systems we build support both simultaneously.
+> **In 6 weeks, we give Alyssa back 20 hours per week and eliminate the "confused hours" that cost Kelsey $91,000/year in lost productivity—so Plotter Mechanix can scale from 15 to 45+ weekly calls without adding headcount.**
 
-### The Partnership Structure
+Every milestone exists to make this true. Every deliverable is measured against it.
 
-**Kelsey's Domain:** Service operations—from 15 to 45+ weekly calls, enabled by automation that frees you from firefighting
+---
 
-**Andrew's Domain:** Supply chain & vinyl printing—$5K PPG investment (10-year warranty product), upstream/downstream fulfillment, 5% revenue share model
+## The Math (Before We Go Further)
 
-**The Foundation:** Automated systems that eliminate bottlenecks and create capacity for both growth paths
+| Current State | After Phase 2 |
+|---------------|---------------|
+| Alyssa: 25-30 hrs/week on email, quotes, coordination | **20+ hours recovered** |
+| Kelsey: 30 "confused hours" per week | **10+ hours back to revenue work** |
+| Contacts: 15,000 scattered across 4 systems | **One source of truth (Jobber)** |
+| Quote process: 15 min each | **5 min each (66% faster)** |
+
+**ROI in plain English:**
+- Alyssa's recovered time @ $30/hr = **$31,200/year**
+- Kelsey's recovered time @ $175/hr = **$91,000/year**
+- Combined annual value: **$122,200** (conservative)
+- Phase 2 investment: **$28,000**
+- **Payback: ~67 days**
+
+*Even if we only hit 50% of targets, you're still profitable in under 6 months.*
 
 ---
 
@@ -58,9 +72,11 @@ Phase 2 enables a dual expansion: Kelsey scales the service business while Andre
 
 ## The 6-Week Transformation
 
-We're building 5 interconnected systems that work together to eliminate these bottlenecks. Here's what you get and when you get it:
+Three paid milestones. One included bonus. Each with clear success criteria.
 
-### Milestone 1: Foundation (Weeks 1-2)
+---
+
+### Milestone 1: Foundation (Weeks 1-2) — $10,000
 
 **What We're Building:**
 - Complete workflow analysis with Alyssa and Kelsey
@@ -68,7 +84,7 @@ We're building 5 interconnected systems that work together to eliminate these bo
 - Design the central request inbox architecture
 - Plan contact database unification strategy
 
-**Specific Deliverables You Receive:**
+**Specific Deliverables:**
 
 | Deliverable | Description |
 |------------|-------------|
@@ -78,11 +94,11 @@ We're building 5 interconnected systems that work together to eliminate these bo
 | **Technical Spec Document** | 5-10 page blueprint: system architecture, API connections, automation rules |
 | **Week 1-2 Demo Session** | 60-minute walkthrough of findings with Kelsey and Alyssa |
 
-**Milestone Gate:** Technical spec approved before any build work begins
+**Success Looks Like:** Technical spec approved, baseline metrics documented (Alyssa's current hours on email, quote processing time, contact lookup time). This becomes the measuring stick for everything else.
 
 ---
 
-### Milestone 2: Core Systems (Weeks 3-4)
+### Milestone 2: Core Systems (Weeks 3-4) — $10,000
 
 **What We're Building:**
 - Central Request Inbox: All emails, texts, Facebook leads flow into one place for Alyssa to triage
@@ -90,7 +106,7 @@ We're building 5 interconnected systems that work together to eliminate these bo
 - Contact Sync: Jobber becomes the single source of truth, syncing to QuickBooks
 - Knowledge Base: AI-powered search across all your manuals and documentation
 
-**Specific Deliverables You Receive:**
+**Specific Deliverables:**
 
 | Deliverable | Description |
 |------------|-------------|
@@ -101,165 +117,111 @@ We're building 5 interconnected systems that work together to eliminate these bo
 | **Sona AI Knowledge Base** | 50+ indexed documents (manuals, SOPs, troubleshooting guides) searchable by voice or text |
 | **Staging Environment Access** | Test all systems before go-live - click around, break things, give feedback |
 
-**Milestone Gate:** All systems tested and approved in staging before production deployment
+**Success Looks Like:** Quote processing time drops to 5 minutes or less (verified by Alyssa). All 4 contact systems syncing without manual intervention. Knowledge base answers 80%+ of common questions without Kelsey.
 
 ---
 
-### Milestone 3: Go Live (Weeks 5-6)
+### Milestone 3: Go Live (Weeks 5-6) — $8,000
 
 **What We're Building:**
 - Enhanced Request Form: Smart form that captures complete customer info upfront
 - Production deployment: All systems connected to live Jobber and Quo
 - Team training: Hands-on sessions with Alyssa on new workflows
 - WhatsApp knowledge group: Team communication hub for sharing tips
-- Video training library: Recorded walkthroughs for every system
 
-**Specific Deliverables You Receive:**
+**Specific Deliverables:**
 
 | Deliverable | Description |
 |------------|-------------|
 | **Smart Request Form** | Embedded on website, auto-routes to correct team member based on request type |
 | **Production Systems Live** | All automations connected to real Jobber, Quo, QuickBooks data |
-| **Training Video Library** | 15 videos covering specific workflows (see list below) |
+| **Training Video Library** | 15 videos covering specific workflows |
 | **WhatsApp Knowledge Group** | Setup complete, initial content seeded, team onboarded |
 | **30-Day Support Package** | Response within 4 business hours, up to 10 hours of adjustments included |
 | **Operations Runbook** | Written procedures for Alyssa covering all new systems |
 
-**Training Video Library (15 Topics):**
-
-1. Morning Dashboard Walkthrough
-2. Processing New Requests from Central Inbox
-3. Creating Quotes in Quo (Optimized Workflow)
-4. Pushing Quotes to Jobber
-5. Handling Second-Call Opportunities
-6. Using the Contact Search (Finding the Real "Mary")
-7. Adding/Updating Customer Records
-8. Deposit Notification System
-9. Knowledge Base Search (Finding Answers Fast)
-10. Voice Search in Sona AI
-11. Facebook Lead Processing
-12. Email-to-Job Workflow
-13. WhatsApp Team Communication
-14. Weekly Report Generation
-15. Troubleshooting Common Issues
-
-**Milestone Gate:** 3-day Kelsey absence test - business runs smoothly without constant interruptions
+**Success Looks Like:** Alyssa's tracked inbox/coordination time drops by at least 60% within 30 days of launch (measured against Milestone 1 baseline). Kelsey can be absent for 3 days without constant phone interruptions.
 
 ---
 
-## 3 Ways to Move Forward
+### Included: SOPs & Ongoing Training (Normally $10,000)
 
-All three options include the same core systems. The difference is how deep we go and how fast we move:
+At no additional cost, you also receive:
 
-| | **Fast Track** | **Complete (Recommended)** | **Premium** |
-|---|---|---|---|
-| **Investment** | $15,000 | **$28,000** | $45,000 |
-| **Timeline** | 4 weeks | **6 weeks** | 8 weeks |
-| **Who This Is For** | *Testing the vision - want quick wins and immediate relief* | ***Committed to scale - ready to build the full foundation*** | *All-in on 10x - building a sellable business asset* |
+- **15 Training Videos** covering every workflow
+- **Operations Runbook** for Alyssa
+- **WhatsApp Knowledge Group** for team communication
+- **30-Day Post-Launch Support** (up to 10 hours of adjustments)
 
-### Feature Comparison
-
-| Feature | Fast Track | Complete | Premium |
-|---------|-----------|----------|---------|
-| **Request Inbox** | Quo calls only | **All channels** (email, SMS, Facebook, phone) | All channels + AI auto-routing (system categorizes requests without human review) |
-| **Quote Speed Up** | Basic shortcuts (manual steps reduced) | **Semi-automated** (40-60% of steps automated, human confirms) | Highly automated (60-80% automated, human approves final) |
-| **Contact Sync** | Jobber + Quo only | **All 4 systems unified** (Capsule, Jobber, QuickBooks, Outlook) | All 4 + historical data migration (25 years of records cleaned) |
-| **Knowledge Base** | 5 documents indexed (choose business OR technical) | **50+ documents** (all manuals, SOPs, troubleshooting guides) | Comprehensive + voice interface (ask questions out loud, get answers) |
-| **Training Videos** | 5 core workflows | **15-video library** | 30+ custom procedures (including technician training) |
-| **Custom Integrations** | - | - | 1 custom integration included (e.g., Ply platform connection) |
-| **Analytics Dashboard** | - | - | Real-time operations dashboard (daily metrics at a glance) |
-| **Support After Launch** | 15 days | **30 days** | 60 days + dedicated Slack channel |
-
-### Payment Schedule by Option
-
-| Payment | Fast Track ($15K) | Complete ($28K) | Premium ($45K) |
-|---------|------------------|-----------------|----------------|
-| **Kickoff** | $7,500 (Week 1) | $10,000 (Week 1) | $15,000 (Week 1) |
-| **Mid-Project** | $7,500 (Week 3) | $10,000 (Week 3) | $15,000 (Week 4) |
-| **Final** | - | $8,000 (Week 6) | $15,000 (Week 8) |
+This is normally a separate $10,000 package. It's included because we want these systems to stick—not just launch.
 
 ---
 
-## What This Gets You: ROI Analysis
+## The Guarantee
 
-### Time Savings Breakdown (Complete Option)
+> **If we don't hit at least a 50% reduction in Alyssa's email/coordination time within 60 days of go-live (measured against your Milestone 1 baseline), we'll work up to 60 additional days at no extra cost until we do.**
 
-| Who | Hours Saved/Week | Rate | Annual Value | Assumptions |
-|-----|-----------------|------|--------------|-------------|
-| **Alyssa** | 20 hrs | $30/hr | **$31,200** | Quote processing (8 hrs), inbox management (6 hrs), contact lookups (4 hrs), coordination (2 hrs) |
-| **Kelsey** | 10 hrs | $175/hr | **$91,000** | Based on billable rate; includes time answering repeat questions, managing chaos, morning coordination |
+You've already seen the Phase 1 results. We're not asking you to take a leap of faith—we're asking you to let us prove it again.
 
-**Kelsey's 30 Confused Hours → 30 Productive Hours:**
-- Conservative estimate: Recover 10 hrs/week (33% of confused time)
-- At service rate ($175/hr): $91,000/year
-- At opportunity cost (consulting at $375/hr): $195,000/year potential
+---
 
-### Revenue Opportunity
+## Investment Summary
 
-| Source | Annual Value | How We Calculated |
-|--------|--------------|-------------------|
-| **More service calls possible** | $58,240 | 10 additional calls/week × $112 average × 52 weeks |
-| **Andrew's vinyl infrastructure** | $15,000 | Systems to support supplies launch (conservative) |
-| **Fewer mistakes** | $12,000 | Duplicate jobs, wrong contacts, missed quotes (industry average 2-3% error cost) |
+| Milestone | Investment | When |
+|-----------|-----------|------|
+| **Milestone 1:** Foundation | $10,000 | Week 1 |
+| **Milestone 2:** Core Systems | $10,000 | Week 3 |
+| **Milestone 3:** Go Live | $8,000 | Week 5 |
+| **Included:** SOPs & Training | $0 (normally $10k) | Weeks 5-6 |
+| **Total** | **$28,000** | 6 weeks |
 
-### Total Value Summary
+**Payment triggers:** Each payment is due when the milestone begins, not when it ends. You see the value building before each payment.
 
-| Scenario | Time Savings | Revenue Gains | Total Annual Value |
-|----------|--------------|---------------|-------------------|
-| **Conservative** | $92,200 | $60,000 | **$152,200** |
-| **Expected (Complete)** | $122,200 | $85,240 | **$207,440** |
-| **Optimistic** | $152,200 | $120,000 | **$272,200** |
+---
 
-### ROI Metrics (Complete Option - $28,000 Investment)
+## The ROI Reality Check
 
-| Metric | Conservative | Expected | Optimistic |
-|--------|--------------|----------|------------|
-| **ROI** | 444% | **641%** | 872% |
-| **Payback Period** | 67 days | **49 days** | 37 days |
-| **3-Year Value** | $456,600 | $622,320 | $816,600 |
+| Metric | Conservative | Expected |
+|--------|--------------|----------|
+| **Annual Value Created** | $152,200 | $207,440 |
+| **ROI** | 444% | 641% |
+| **Payback Period** | 67 days | 49 days |
+| **3-Year Value** | $456,600 | $622,320 |
 
-**The Bottom Line:** Even the conservative scenario pays back in under 3 months. The expected case? Investment returns in 49 days.
-
-### The Partnership Multiplier
-
-Andrew's $250K annual baseline value × 5x technology multiplier = $1.25M partnership potential. These systems enable both service scaling AND vinyl supply chain launch simultaneously.
+**The math in one sentence:** Even at conservative estimates, Phase 2 pays for itself in about 2 months and returns 4-6x your investment annually.
 
 ---
 
 ## Next Steps
 
-### 1. Choose Your Option
+### 1. Confirm the Fit
 
-| If You Want... | Choose |
-|----------------|--------|
-| Quick relief, test the vision | Fast Track ($15K) |
-| Full foundation, maximum ROI | **Complete ($28K)** ← Recommended |
-| Sellable business, 10x path | Premium ($45K) |
+Review this proposal. If the pain points match your reality and the success criteria make sense, we're aligned.
 
-### 2. Quick Discovery Call
+### 2. 30-Minute Kickoff Call
 
-30 minutes with Kelsey and Alyssa to confirm priorities and walk through Week 1 kickoff plan.
+Quick call with Kelsey and Alyssa to confirm priorities and walk through Week 1.
 
 ### 3. Week 1 Starts
 
-We begin with workflow mapping and system design. First milestone delivery (architecture diagram + contact audit) ships by end of Week 2.
+We begin with workflow mapping. First deliverable (Alyssa's baseline time audit) ships within 5 days.
 
 ---
 
-## Verification Checklist
+## Before We Start
 
-Before we start, we'll confirm:
+We'll confirm:
 
 - [ ] Pain points above match your reality
-- [ ] Deliverables for each milestone are what you expect
+- [ ] Success criteria for each milestone are what you'd measure
 - [ ] ROI assumptions are reasonable for your business
-- [ ] Tier selection fits your goals and timeline
 - [ ] Payment schedule works for cash flow
+- [ ] Guarantee terms are clear
 
 ---
 
 *The foundation is proven. The vision is clear.*
 
-**Let's build your liberation timeline.**
+**Phase 2 turns 30 confused hours into 30 productive hours.**
 
-**Goal:** Turn those 30 confused hours into 30 productive hours.
+**Guarantee: We hit the targets or we keep working until we do.**
