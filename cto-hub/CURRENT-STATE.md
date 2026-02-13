@@ -1,50 +1,52 @@
 # Current System State - AI Agency Sales OS
 
-**Last Synced:** 2026-02-12
+**Last Synced:** 2026-02-13
 **Synced By:** Claude Code (CTO Sync)
-**Next Sync:** 2026-02-19
+**Next Sync:** 2026-02-20
 
 ---
 
 ## Quick Stats
 
-| Component | Count | Status | Change (since Feb 9) |
+| Component | Count | Status | Change (since Feb 12) |
 |-----------|-------|--------|----------------------|
-| **Skills** | 12 | ✅ All operational | — |
+| **Skills** | 13 | ✅ All operational | +1 (tasks skill was missed) |
 | **System Commands** | 9 | ✅ All functional | — |
 | **Agentic Commands** | 25 | ✅ All functional | — |
 | **Agentic Modules** | 15 | ✅ Deployed | — |
-| **Defined Agents** | ~30 | ⚠️ Specs only (3 documented) | Refined count (was 23) |
+| **Defined Agents** | ~30 | ⚠️ Specs only (3 documented) | — |
 | **Active Projects** | 8 | ✅ In delivery | — |
 | **Incubated Projects** | 5 | ✅ Pipeline building | — |
-| **Internal Projects** | 3 | ✅ Ongoing | — |
+| **Internal Projects** | 5 | ✅ Ongoing | +2 (audit-beta-application, checklist-app-requirements missed) |
 | **Python Tools** | 29 | ✅ Operational | — |
-| **n8n Workflows** | 15 | ⚠️ Exported, untracked | Corrected count (was 9) |
+| **n8n Workflows** | 15 | ⚠️ Exported, untracked | — |
 | **Git Branches** | 7 remote | ⚠️ Stale branches | — |
 
 ---
 
-## Recent Changes (Since Last Sync: 2026-02-09)
+## Recent Changes (Since Last Sync: 2026-02-12)
 
 ### No New Commits
 
-The system has been stable for 3 days since the Feb 9 sync. No code changes committed.
+System stable since the Feb 12 sync. No code changes committed.
 
 ### Corrections Applied This Sync
-- **Agent count refined:** Deep scan found ~30 agents across all categories (previously documented as 23). Added agents-inventory.md with full breakdown.
-- **n8n workflow count corrected:** 15 workflow exports found (previously documented as 9). TD-004 originally said 8 — now significantly outdated.
-- **Command count clarified:** 9 system commands + 25 agentic module commands = 34 total. Previous sync conflated these.
-- **New inventory files created:** agents-inventory.md, integrations-inventory.md
+
+- **Skills count corrected: 13, not 12** — The `/tasks` skill (committed Feb 9, `14fab1f`) was missed by the Feb 12 sync. Now added to inventory.
+- **Internal projects corrected: 5, not 3** — `audit-beta-application` and `checklist-app-requirements` were not documented in previous syncs.
+- **gamma-discovery-deck-prompt.md resolved** — Was flagged as untracked since Feb 5; now committed (`13281a6`). Removed from issues.
+- **TD-004 updated** — n8n workflow count corrected from "8" to "15" in DEBT-REGISTER.md.
+- **DEBT-REGISTER.md timestamp refreshed** — Was stale at 2026-02-03 (10 days), now updated to 2026-02-13.
 
 ### Still Unaddressed (Carried Over)
-- `gamma-discovery-deck-prompt.md` still untracked (flagged Feb 9)
+
 - `__pycache__/` still not in .gitignore (flagged Feb 9)
-- Slack token still expired (flagged Jan 29)
+- Slack token still expired (flagged Jan 29 — now 15+ days)
 - CLIENT_FEEDBACK_DB_ID still not configured
 
 ---
 
-## Skills Overview (12)
+## Skills Overview (13)
 
 | Skill | Purpose | Status | Notes |
 |-------|---------|--------|-------|
@@ -58,6 +60,7 @@ The system has been stable for 3 days since the Feb 9 sync. No code changes comm
 | **notion-sync** | Push markdown to Notion | ⚠️ Partial | Needs page IDs (TD-001) |
 | **outreach** | Universal lead outreach (Gmail + Notion) | ✅ Active | Graceful fallbacks |
 | **publish** | Post content to LinkedIn | ✅ Active | |
+| **tasks** | Notion task dashboard (tasks, leads, projects) | ✅ Active | Added Feb 9 |
 | **weekly-planning** | Strategic weekly plans | ✅ Active | |
 | **weekly-report** | Auto-generate weekly reports | ✅ Active | |
 
@@ -109,7 +112,7 @@ The system has been stable for 3 days since the Feb 9 sync. No code changes comm
 
 | Project | Type | Status | Priority | Recent Activity |
 |---------|------|--------|----------|-----------------|
-| **plotter-mechanix** | Client | Phase 2 Proposal | P0 | Kelsey ROI interview pending |
+| **plotter-mechanix** | Client | Phase 2 Proposal | P0 | ROI validated ($75/hr), video production plan, Gamma deck |
 | **remus-development** | Client | Discovery | P0 | — |
 | **ss-wolf-sheds** | Client | Active/Expanded | P1 | Phase 1 PRD for QR Lead Capture |
 | **xigent** | Client | Discovery | P1 | — |
@@ -122,17 +125,19 @@ The system has been stable for 3 days since the Feb 9 sync. No code changes comm
 
 | Project | Type | Status | Recent Activity |
 |---------|------|--------|-----------------|
-| **steve-tobey-threat-analysis** | Lead | Discovery Done | Discovery call Feb 6, followup sent, brief deck (Hawkwood LLC) |
+| **steve-tobey-threat-analysis** | Lead | Discovery Done | Discovery call Feb 6, followup prep Feb 11 (Hawkwood LLC) |
 | **concrete-ceo** | Lead | Pre-Discovery | — |
 | **david-equipment-share** | Lead | Pre-Discovery | — |
 | **dennis-consulting** | Lead | Pre-Discovery | Intro meeting Dec 15 documented |
 | **infinity-vault-website** | Lead | Pre-Discovery | — |
 
-### Internal Projects (3)
+### Internal Projects (5)
 
 | Project | Location | Status |
 |---------|----------|--------|
 | agency-operations-dashboard | internal-projects/ | Active |
+| audit-beta-application | internal-projects/ | Planning |
+| checklist-app-requirements | internal-projects/ | Planning |
 | customer-journey-automation | internal-projects/ | Planning |
 | self-discovery-agent | internal-projects/ | Spec |
 
@@ -164,8 +169,8 @@ The system has been stable for 3 days since the Feb 9 sync. No code changes comm
 | NOTION_API_KEY | ✅ | notion, client-feedback, dashboard | Valid |
 | CLIENT_FEEDBACK_DB_ID | ❌ | client-feedback | **Needs setup** |
 | GOOGLE_AUTH_TOKEN | ❌ | notebooklm | **Needs `notebooklm auth`** |
-| SLACK_BOT_TOKEN | 🔴 | slack, client-onboarding | Expired |
-| SLACK_USER_TOKEN | 🔴 | slack, client-onboarding | Expired |
+| SLACK_BOT_TOKEN | 🔴 | slack, client-onboarding | Expired (15+ days) |
+| SLACK_USER_TOKEN | 🔴 | slack, client-onboarding | Expired (15+ days) |
 | OPENAI_API_KEY | ✅ | diagrams, sop | Valid |
 | GOOGLE_SLIDES_TEMPLATE_ID | ✅ | proposal | Valid |
 | GOOGLE_FOLDER_ID | ✅ | md-export | Valid |
@@ -182,9 +187,9 @@ The system has been stable for 3 days since the Feb 9 sync. No code changes comm
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Git | ✅ | Clean working tree (2 untracked files) |
+| Git | ✅ | Clean working tree (1 untracked: __pycache__) |
 | Notion API | ✅ | Connected as "MEKAIEL's CC (bot)" |
-| Slack | 🔴 | Token expired — needs refresh (21+ days) |
+| Slack | 🔴 | Token expired — needs refresh (15+ days) |
 | Gmail | ✅ | Working via MCP |
 | n8n | ✅ | MCP server + 15 exported workflows |
 | Agentic Modules | ✅ | 29 Python tools operational |
@@ -201,20 +206,22 @@ The system has been stable for 3 days since the Feb 9 sync. No code changes comm
 | P1 | — | TypeScript agents not deployed (TD-002) |
 | P1 | — | Missing agentic .env file (TD-006) |
 | P2 | 4 | Duplicate outreach templates (TD-003) |
-| P2 | — | n8n workflow exports untracked — now 15 files (TD-004) |
+| P2 | — | n8n workflow exports untracked — 15 files (TD-004, updated) |
 | P2 | — | Slack tokens expired (TD-005) |
 | P2 | — | TODOs in onboarding agent handlers (TD-007) |
 | P3 | 1 | Deprecated code references (TD-008) |
 
-**0 items resolved since last sync.** See full register: `cto-hub/technical-debt/DEBT-REGISTER.md`
+**0 items resolved since register created (Jan 22).** See full register: `cto-hub/technical-debt/DEBT-REGISTER.md`
 
 ---
 
 ## Untracked/Uncommitted
 
-**Untracked (2 items):**
+**Untracked (1 item):**
 - `agentic/modules/notion/tool/__pycache__/` — should be gitignored
-- `claude-code-os-implementation/03-ai-growth-engine/all-projects/templates/gamma-discovery-deck-prompt.md` — **needs commit**
+
+**Resolved:**
+- ~~`gamma-discovery-deck-prompt.md`~~ — committed as `13281a6`
 
 **Stale Remote Branches (cleanup candidates):**
 - `origin/bold-shockley`
@@ -229,36 +236,34 @@ The system has been stable for 3 days since the Feb 9 sync. No code changes comm
 
 ### Immediate (This Week)
 
-1. **Schedule Kelsey ROI interview** — Phase 2 proposal for Plotter Mechanix still blocked on validated numbers
-2. **Commit gamma-discovery-deck-prompt.md** — Untracked since Feb 5+
-3. **Add `__pycache__/` to .gitignore** — Prevents Python cache clutter in git status
-4. **Refresh Slack token** at api.slack.com/apps — 21+ days expired, blocks client-onboarding
+1. **Advance Plotter Mechanix Phase 2** — ROI validated, Gamma deck ready, push for proposal sign-off
+2. **Add `__pycache__/` to .gitignore** — Prevents Python cache clutter in git status
+3. **Refresh Slack token** at api.slack.com/apps — 15+ days expired, blocks client-onboarding
+4. **Follow up Steve Tobey / Hawkwood LLC** — Followup prep done Feb 11, advance to proposal
 
 ### This Sprint
 
-5. **Follow up Steve Tobey / Hawkwood LLC** — Discovery call done Feb 6, brief deck sent, advance to proposal
-6. **Configure CLIENT_FEEDBACK_DB_ID** in .env for feedback workflow
-7. **Test notebooklm module** — Run `notebooklm auth` and process a test transcript
-8. **Update TD-004** — n8n workflow count now 15 (was 8 when logged)
-9. **Clean up stale remote branches** — 5 branches likely deletable
-10. **Run /weekly-report** — No report generated this week yet
+5. **Configure CLIENT_FEEDBACK_DB_ID** in .env for feedback workflow
+6. **Test notebooklm module** — Run `notebooklm auth` and process a test transcript
+7. **Clean up stale remote branches** — 5 branches likely deletable
+8. **Resolve at least 1 TD item** — 0 items resolved since register created Jan 22
 
 ### This Month
 
-11. Configure Notion page IDs for auto-sync (TD-001)
-12. Deploy TypeScript onboarding agents (TD-002)
-13. Consolidate duplicate outreach templates (TD-003)
-14. Document Plotter Mechanix Phase 1 lessons learned
-15. Evaluate Agent Teams branch for merge to main
+9. Configure Notion page IDs for auto-sync (TD-001)
+10. Deploy TypeScript onboarding agents (TD-002)
+11. Consolidate duplicate outreach templates (TD-003)
+12. Document Plotter Mechanix Phase 1 lessons learned
+13. Evaluate Agent Teams branch for merge to main
 
 ---
 
 ## Session Log Reference
 
 Latest sessions:
-- `2026-02-12-cto-sync.md` - This sync
-- `2026-02-09-cto-sync.md` - Previous sync
-- `2026-02-05-cto-sync.md` - Earlier sync
+- `2026-02-13-cto-sync.md` - This sync
+- `2026-02-12-cto-sync.md` - Previous sync
+- `2026-02-09-cto-sync.md` - Earlier sync
 
 ---
 

@@ -1,6 +1,6 @@
 # Agents Inventory
 
-**Last Updated:** 2026-02-12
+**Last Updated:** 2026-02-13
 **Total Defined Agents:** ~30
 **Fully Documented (Markdown):** 3
 **TypeScript Agents:** 4 (undeployed)

@@ -1,7 +1,7 @@
 # Skills Inventory
 
-**Last Updated:** 2026-02-12
-**Total Skills:** 12
+**Last Updated:** 2026-02-13
+**Total Skills:** 13
 
 ---
 
@@ -20,7 +20,8 @@
 | 9 | outreach | .claude/skills/outreach/ | ✅ Active | Gmail MCP, Notion API |
 | 10 | publish | .claude/skills/publish/ | ✅ Active | LinkedIn, Chrome MCP |
 | 11 | weekly-planning | .claude/skills/weekly-planning/ | ✅ Active | None |
-| 12 | weekly-report | .claude/skills/weekly-report/ | ✅ Active | Notion API |
+| 12 | tasks | .claude/skills/tasks/ | ✅ Active | Notion API |
+| 13 | weekly-report | .claude/skills/weekly-report/ | ✅ Active | Notion API |
 
 ---
 
@@ -75,6 +76,11 @@
 - **Purpose:** Strategic weekly plans with daily breakdowns and energy management
 - **Integrations:** Executive Office systems
 
+### tasks
+- **Purpose:** Pull Notion tasks, leads, projects, and meetings into a prioritized dashboard
+- **Commands:** `/tasks`, `/tasks today`, `/tasks overdue`, `/tasks [project]`, `/tasks update`
+- **Integrations:** Notion API (Tasks DB, Leads DB, Projects DB, Meetings DB)
+
 ### weekly-report
 - **Purpose:** Auto-generate weekly progress reports from project folders
 - **Integrations:** Project file system, Slack, Notion (optional sync)
@@ -85,7 +91,7 @@
 
 | Integration | Skills Using It |
 |-------------|-----------------|
-| **Notion** | client-feedback, client-outreach, content-strategy, dashboard, notion-sync, outreach, publish, weekly-report |
+| **Notion** | client-feedback, client-outreach, content-strategy, dashboard, notion-sync, outreach, publish, tasks, weekly-report |
 | **LinkedIn** | brand-illustrator, client-outreach, content-strategy, outreach, publish |
 | **Gmail** | client-outreach, outreach |
 | **Slack** | dashboard, publish, weekly-report |
