@@ -101,7 +101,7 @@ Three paid milestones. One included bonus. Each with clear success criteria.
 ### Milestone 2: Core Systems (Weeks 3-4) — $10,000
 
 **What We're Building:**
-- Central Request Inbox: All emails, texts, Facebook leads flow into one place for Alyssa to triage
+- Central Request Inbox: All emails, texts, website leads flow into one place for Alyssa to triage
 - Quote Speed Up: Streamlined Quo→Jobber workflow with smart shortcuts and deposit notifications
 - Contact Sync: Jobber becomes the single source of truth, syncing to QuickBooks
 - Knowledge Base: AI-powered search across all your manuals and documentation
@@ -110,7 +110,7 @@ Three paid milestones. One included bonus. Each with clear success criteria.
 
 | Deliverable | Description |
 |------------|-------------|
-| **Central Request Inbox** | Make.com/n8n automation deployed - all channels (email, SMS, Facebook, phone) feeding one dashboard |
+| **Central Request Inbox** | Make.com/n8n automation deployed - all channels (email, SMS, website leads) feeding one dashboard |
 | **Quote Workflow Automation** | Quo→Jobber process reduced from 15 min → 5 min per quote (66% time savings) |
 | **Second-Call Job Creation** | Automated detection: when a follow-up call is a NEW opportunity, prompts Alyssa to create separate job |
 | **Contact Sync Engine** | Jobber as master database, bi-directional sync to QuickBooks, duplicate merge rules active |
