@@ -11,12 +11,12 @@
 
 **Event Title**:
 ```
-The Process-First Approach to AI: What Every Business Owner Must Understand
+AI Didn't Fail. Your Systems Did.
 ```
 
 **Subtitle** (Tagline):
 ```
-A 90-minute live workshop for founders who want to adopt AI systematically—without the chaos, confusion, or wasted investment.
+A 90-minute live workshop for business owners who tried AI tools and got nowhere. No recording. No replay. Just answers.
 ```
 
 **Organizer**: AriseGroup.ai
@@ -25,7 +25,7 @@ A 90-minute live workshop for founders who want to adopt AI systematically—wit
 
 **Event Category**: Business & Professional > Business
 
-**Tags**: AI, automation, small business, operations, efficiency, artificial intelligence, business strategy
+**Tags**: AI for business, Business automation, Small business AI, Process improvement, SOP creation, ChatGPT business, AI implementation, Operations efficiency, Business systems, AI strategy workshop
 
 ---
 
@@ -96,18 +96,68 @@ Founder of AriseGroup.ai. Helps small businesses systematically adopt AI through
 **Format**: Live Zoom webinar (interactive)
 **Price**: Free
 
-**Limited to 40 registrations** to keep it interactive.
-
----
-
-### Can't make it live?
-
-Register anyway—all registrants receive the replay link.
+**Limited to 150 registrations** to keep it interactive.
 
 ---
 
 *Questions? Email mekaiel@arisegroup.ai*
 ```
+
+---
+
+## Eventbrite Ads (Paid Promotion)
+
+**Budget**: $25/day
+**Expected Fill Time**: ~1 week
+**Total Spend**: $170-188
+
+**Setup**:
+1. Create event first (all details complete)
+2. Go to Marketing > Eventbrite Ads
+3. Set daily budget: $25
+4. Target: Business professionals, entrepreneurs
+5. Location: US (or specific markets)
+
+**Action Items**:
+- Monitor daily registrations
+- Manually STOP ads when 150 cap reached
+- Don't overspend - ads auto-continue otherwise
+
+**ROI**: 150 qualified leads for <$200 = ~$1.25/lead
+
+---
+
+## Frequently Asked Questions
+
+**1. Who is this workshop for?**
+Business owners and operators (20-100 employees) who want to use AI but don't know where to start—or have tried and failed.
+
+**2. Do I need technical experience?**
+No. We focus on business processes, not coding. If you can use email, you can follow along.
+
+**3. Will there be a recording?**
+No. This is a live-only event. We do this intentionally to create an interactive experience with Q&A and breakout rooms.
+
+**4. What AI tools will you cover?**
+We focus on the framework, not specific tools. But we'll demo ChatGPT, Claude, and simple automations.
+
+**5. Is this a sales pitch?**
+No. You'll learn a complete framework. At the end, we offer a free AI Readiness Audit for those who want personalized help.
+
+**6. How interactive is it?**
+Very. We do live exercises, Q&A throughout, and breakout room discussions.
+
+**7. What should I prepare?**
+Think about your biggest operational frustration. We'll work on it during the session.
+
+**8. Can I ask questions?**
+Yes. Chat is open the entire time, and we have dedicated Q&A segments.
+
+**9. What if I can't make the time?**
+This is live-only, no recording. If you can't make it, wait for our next event.
+
+**10. What's the next step after the workshop?**
+You can implement on your own using our framework, or book a free 30-minute AI Readiness Audit for personalized guidance.
 
 ---
 
@@ -120,7 +170,7 @@ Register anyway—all registrants receive the replay link.
 - Show remaining quantity: Yes (creates urgency)
 - Ticket sales end: 1 hour before event
 
-**Capacity**: 40 registrations
+**Capacity**: 150 registrations
 
 ---
 

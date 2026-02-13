@@ -10,7 +10,7 @@
 
 | Email | Timing | Subject | Purpose |
 |-------|--------|---------|---------|
-| 1 | Same day (4hr) | Replay + Resources | Thank you, value delivery |
+| 1 | Same day (4hr) | Thank You + Resources | Thank you for joining live |
 | 2 | Day 3 | Quick Win | Industry-specific quick win |
 | 3 | Day 5 | Case Study | Social proof, results |
 | 4 | Day 7 | Audit Reminder | Direct conversion ask |
@@ -18,23 +18,21 @@
 
 ---
 
-## Email 1: Thank You + Replay (Same Day, 4 hours after event)
+## Email 1: Thank You + Resources (Same Day, 4 hours after event)
 
-**Subject**: Workshop replay + the resources you requested
+**Subject**: Thanks for joining live—here are your resources
 
 **Body**:
 ```
 Hi {{first_name}},
 
-Thank you for joining today's "Process-First Approach to AI" workshop!
+Thank you for showing up live to today's "AI Didn't Fail. Your Systems Did." workshop!
 
-Here's everything you need:
+Being there in real-time matters. You participated in the exercises, asked questions, and did the work alongside other business owners. That's how real learning happens.
 
-**WORKSHOP REPLAY:**
-{{replay_link}}
-(Available for 7 days)
+Here are the resources we promised:
 
-**RESOURCES:**
+**YOUR WORKSHOP MATERIALS:**
 - Business Functions Self-Audit Worksheet: {{worksheet_link}}
 - AI Opportunity Matrix Template: {{matrix_link}}
 - Quick Win Checklist: {{checklist_link}}
@@ -303,7 +301,7 @@ P.S. No more emails on this topic after today. But I'll keep sharing insights on
 
 ### No-Show Email 1 (Same day, 4 hours after event)
 
-**Subject**: Missed you today—here's the replay
+**Subject**: Missed you today—here's what to do next
 
 **Body**:
 ```
@@ -313,40 +311,45 @@ I noticed you couldn't make it to today's workshop.
 
 No worries—life happens.
 
-Here's everything you missed:
+As you know, this was a live-only event (no recording). But here's how you can still get value:
 
-**WORKSHOP REPLAY:** {{replay_link}}
-(Available for 7 days)
+**OPTION 1: GRAB THE RESOURCES**
 
-**KEY TAKEAWAYS:**
-1. Why 70% of AI projects fail (and the one thing that prevents it)
-2. The 10 Business Functions framework
-3. How to find YOUR AI quick wins
+You can still do the self-audit exercise on your own:
+- Business Functions Self-Audit Worksheet: {{worksheet_link}}
+- AI Opportunity Matrix Template: {{matrix_link}}
+- Quick Win Checklist: {{checklist_link}}
 
-**RESOURCES:** {{resources_link}}
+Block 2 hours and work through them. You'll identify your top AI opportunities.
 
-If you watch the replay and have questions, just reply.
+**OPTION 2: GET IT LIVE (30 MIN)**
 
-Or if you'd rather skip to the personalized version:
-Free AI Readiness Audit: {{calendly_link}}
+Book a free AI Readiness Audit with me. It's the personalized version of what we covered in the workshop—tailored to YOUR business.
+
+Book here: {{calendly_link}}
+
+**OPTION 3: CATCH THE NEXT ONE**
+
+We'll be running this workshop again. Reply "notify me" and I'll make sure you're first to know.
 
 Mekaiel
 ```
 
 ### No-Show Email 2 (Day 7)
 
-**Subject**: Still relevant? (AI workshop follow-up)
+**Subject**: Still interested in AI for your business?
 
 **Body**:
 ```
 Hi {{first_name}},
 
-Quick check-in on the workshop replay I sent.
+Quick check-in from last week's workshop you registered for.
 
 If AI for your business is still on your radar, I'm happy to:
 
-A) Answer questions about the content (just reply)
-B) Do a live version just for you (30-min audit call)
+A) Answer questions about the framework (just reply)
+B) Do a live walkthrough just for you (30-min audit call): {{calendly_link}}
+C) Notify you about our next workshop (reply "notify me")
 
 If it's not a priority right now, totally fine. I'll stop following up.
 
@@ -367,12 +370,12 @@ Mekaiel
 ### Variables Required
 - `{{first_name}}` - From registration
 - `{{industry}}` - From registration question
-- `{{replay_link}}` - Manual (Zoom recording link)
 - `{{worksheet_link}}` - Google Drive / Notion link
 - `{{matrix_link}}` - Google Drive / Notion link
 - `{{checklist_link}}` - Google Drive / Notion link
 - `{{calendly_link}}` - Audit booking link
 - `{{linkedin_link}}` - Mekaiel's LinkedIn
+- `{{resources_link}}` - Combined resources page (optional)
 
 ### Stop Conditions
 - If recipient books audit -> Stop sequence

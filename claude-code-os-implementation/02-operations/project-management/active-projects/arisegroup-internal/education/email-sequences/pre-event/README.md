@@ -184,7 +184,7 @@ P.S. First 5 attendees to book during the session get a free 30-min AI Readiness
 
 ## Email 5: Final Reminder (Day 7 / Event Day)
 
-**Subject**: Starting in 2 hours: [Process-First AI Workshop]
+**Subject**: LIVE in 2 hours - No recording, no replay
 
 **Body**:
 ```
@@ -192,11 +192,17 @@ Hi {{first_name}},
 
 We're starting in 2 hours.
 
+**IMPORTANT: This will NOT be recorded.**
+
+We're doing live exercises, breakout room discussions, and real-time Q&A. That only works when everyone's there together.
+
+If you can't make it, you'll miss it. There's no replay.
+
 **Join here:** {{zoom_link}}
 
 **Quick reminders:**
 - Have your "most frustrating process" ready
-- We'll be doing a live self-audit exercise
+- We're doing a live self-audit exercise + breakout rooms
 - First 5 to book get a free AI Readiness Audit
 
 See you at {{event_time}},
@@ -205,7 +211,7 @@ Mekaiel
 
 ---
 
-Can't make it? Reply and I'll send you the replay.
+Can't make it today? Reply "notify me" and I'll let you know about our next workshop.
 ```
 
 ---

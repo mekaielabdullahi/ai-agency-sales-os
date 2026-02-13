@@ -98,12 +98,15 @@ Post-Event Sequence (5 emails / 14 days)
 
 | Metric | Target | Why |
 |--------|--------|-----|
-| Registrations | 30-40 | Quality over volume |
-| Attendance rate | 50-60% | Smaller, committed audience |
+| Registrations | 150 | Scarcity cap, bigger list |
+| Attendance rate | 10-15% | Realistic for free events |
+| Attendees | 15-25 | Same outcome, larger list |
 | Chat engagement | 70%+ | High engagement = high intent |
 | Audit bookings | 5-8 | 25-40% conversion target |
 | Audit -> Paid | 2+ closes | Pipeline validation |
 | Post-event NPS | 8+ | Quality indicator |
+| Ad spend | $170-188 | Eventbrite Ads budget |
+| Cost per lead | ~$1.25 | 150 leads for <$200 |
 
 ### Quarterly KPIs
 
@@ -121,11 +124,12 @@ Post-Event Sequence (5 emails / 14 days)
 
 ### Required Integrations
 1. **Eventbrite** -> Event hosting, ticketing, registration
-2. **Zapier** -> Automation hub
-3. **Notion** -> Lead database (CRM)
-4. **Gmail** -> Email sequences (or Mailchimp/ConvertKit)
-5. **Calendly** -> Audit booking
-6. **Zoom** -> Virtual event hosting
+2. **Eventbrite Ads** -> Paid promotion ($25/day, $170-188 total)
+3. **Zapier** -> Automation hub
+4. **Notion** -> Lead database (CRM)
+5. **Gmail** -> Email sequences (or Mailchimp/ConvertKit)
+6. **Calendly** -> Audit booking
+7. **Zoom** -> Virtual event hosting
 
 ### Automation Workflow
 ```

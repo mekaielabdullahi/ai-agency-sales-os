@@ -3,8 +3,9 @@
 **Event Date**: Week of February 24-28, 2026 (TBD with Katrina)
 **Format**: 90-minute Virtual Workshop (Zoom)
 **Price**: Free
-**Target Registration**: 30-40 attendees
-**Goal**: Validate event model, book 5-8 audits
+**Target Registration**: 150 attendees
+**Target Attendance**: 15-25 (10-15% of registrations)
+**Goal**: Validate event model, book 5-8 audits, build email list
 
 ---
 
@@ -145,6 +146,25 @@
 | 65:00-70:00 | Demo 1: Email automation |
 | 70:00-75:00 | Demo 2: Document generation |
 
+---
+
+### Breakout Room Discussion (10 min) - Mekaiel + Katrina
+
+| Time | Content |
+|------|---------|
+| 75:00-78:00 | Breakout room setup + prompt |
+| 78:00-83:00 | Small group discussion (3-4 per room) |
+| 83:00-85:00 | Return + share highlights |
+
+**Breakout Prompt**:
+> "Share with your group: What's the ONE process you identified as your biggest AI opportunity? What's stopping you from implementing it?"
+
+**Room Setup**:
+- Auto-assign 3-4 participants per room
+- 5 minutes discussion time
+- Hosts float between rooms
+- Return to main session for highlights
+
 **Demo 1: Email Classification & Response**
 - Show n8n workflow
 - "This used to take me 45 min/day, now takes 5 min"
@@ -160,12 +180,12 @@
 
 ---
 
-### Offer + Q&A (15 min) - Mekaiel + Katrina
+### Offer + Q&A (5 min) - Mekaiel + Katrina
 
 | Time | Content |
 |------|---------|
-| 75:00-80:00 | The Offer |
-| 80:00-90:00 | Q&A |
+| 85:00-87:00 | The Offer |
+| 87:00-90:00 | Q&A |
 
 **The Offer**:
 > "If what you learned today resonated, I want to offer something. For the first 5 people who book today, I'm offering a complimentary 30-minute AI Readiness Audit.
@@ -231,6 +251,7 @@
 | Day | Action | Owner |
 |-----|--------|-------|
 | D-14 | Eventbrite live, first promotion | Mekaiel + Katrina |
+| D-14 | **Start Eventbrite Ads ($25/day)** | Mekaiel |
 | D-12 | LinkedIn post #1 (problem-focused) | Mekaiel |
 | D-10 | Email to existing list | Mekaiel |
 | D-8 | Katrina promotes to her network | Katrina |
@@ -238,7 +259,7 @@
 | D-5 | LinkedIn Live announcement (if doing Tier 0) | Mekaiel |
 | D-3 | LinkedIn post #3 (FOMO/last chance) | Mekaiel |
 | D-2 | Reminder email to registrants | Auto |
-| D-1 | Final reminder email | Auto |
+| D-1 | Final reminder email + **STOP ads if 150 reached** | Auto / Mekaiel |
 | D-0 | Event day! | Both |
 
 ### LinkedIn Post Themes
@@ -265,7 +286,7 @@
 - [ ] Test Zoom 30 min before
 - [ ] Slides loaded
 - [ ] Chat monitors (if applicable)
-- [ ] Recording enabled
+- [ ] Breakout rooms configured (3-4 per room)
 - [ ] Handout links ready to paste
 - [ ] Calendly link ready to paste
 - [ ] Water, notes, quiet space
@@ -273,7 +294,7 @@
 ### Post-Event
 - [ ] Download attendee list from Eventbrite
 - [ ] Update Notion: Attended vs No-Show
-- [ ] Send replay email (within 4 hours)
+- [ ] Send thank-you email with resources (within 4 hours) - NO replay
 - [ ] Trigger post-event sequence
 - [ ] Review chat for questions/insights
 - [ ] Debrief with Katrina (D+1 or D+2)
@@ -284,12 +305,14 @@
 
 | Metric | Target | Notes |
 |--------|--------|-------|
-| Registrations | 30-40 | Quality > quantity |
-| Attendance | 50-60% | 15-24 attendees |
+| Registrations | 150 | Scarcity cap |
+| Attendance | 10-15% | 15-25 attendees |
 | Chat engagement | 70%+ | Most attendees participate |
 | Audit bookings | 5-8 | Within 48 hours |
 | NPS/feedback | 8+ average | Post-event survey |
 | Audit -> conversion | 2+ | Within 30 days |
+| Ad spend | $170-188 | Eventbrite Ads |
+| Cost per lead | ~$1.25 | ROI metric |
 
 ---
 
