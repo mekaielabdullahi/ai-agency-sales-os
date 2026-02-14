@@ -26,22 +26,40 @@
 
 ## Recent Changes (Since Last Sync: 2026-02-12)
 
-### No New Commits
+### Commits Today (Feb 13)
 
-System stable since the Feb 12 sync. No code changes committed.
+5 commits focused on Plotter Mechanix Phase 2 proposal:
 
-### Corrections Applied This Sync
+| Commit | Description |
+|--------|-------------|
+| `98d6451` | feat(plotter-mechanix): Add Phase 2 roadmap diagram |
+| `aa44272` | feat(plotter-mechanix): Polish Phase 2 proposal with $100M Offers framework |
+| `9ee5979` | feat(plotter-mechanix): Apply $100M Offers framework to proposal and diagram |
+| `24c8e35` | fix(plotter-mechanix): Update diagram with conservative ROI, remove Facebook |
+| `47412ae` | fix(plotter-mechanix): Final diagram polish with emails/texts/website channels |
+
+**Key Deliverables:**
+- **Polished Proposal:** `phase-2-proposal-2026-02-13-polished.md` - Complete rewrite using $100M Offers framework
+- **Excalidraw Diagram:** `diagrams/plotter-phase2-roadmap.excalidraw` - Visual roadmap for client presentation
+
+### $100M Offers Framework Applied
+- Dominant promise with specific numbers ($91K/year, 20 hrs/week)
+- Success criteria per milestone (measurable outcomes)
+- Clean pricing story ($10K + $10K + $8K + included $10K bonus)
+- Risk reversal guarantee (50% reduction or 60 extra days free)
+- Conservative ROI: 336%, 67-day payback, $122K annual value
+
+### Inventory Corrections (This Sync)
 
 - **Skills count corrected: 13, not 12** — The `/tasks` skill (committed Feb 9, `14fab1f`) was missed by the Feb 12 sync. Now added to inventory.
 - **Internal projects corrected: 5, not 3** — `audit-beta-application` and `checklist-app-requirements` were not documented in previous syncs.
 - **gamma-discovery-deck-prompt.md resolved** — Was flagged as untracked since Feb 5; now committed (`13281a6`). Removed from issues.
 - **TD-004 updated** — n8n workflow count corrected from "8" to "15" in DEBT-REGISTER.md.
-- **DEBT-REGISTER.md timestamp refreshed** — Was stale at 2026-02-03 (10 days), now updated to 2026-02-13.
 
 ### Still Unaddressed (Carried Over)
 
 - `__pycache__/` still not in .gitignore (flagged Feb 9)
-- Slack token still expired (flagged Jan 29 — now 15+ days)
+- Slack token still expired (flagged Jan 29) — **now 21+ days**
 - CLIENT_FEEDBACK_DB_ID still not configured
 
 ---
@@ -112,7 +130,7 @@ System stable since the Feb 12 sync. No code changes committed.
 
 | Project | Type | Status | Priority | Recent Activity |
 |---------|------|--------|----------|-----------------|
-| **plotter-mechanix** | Client | Phase 2 Proposal | P0 | ROI validated ($75/hr), video production plan, Gamma deck |
+| **plotter-mechanix** | Client | Phase 2 Ready | P0 | Polished proposal + diagram complete, ROI validated ($75/hr) |
 | **remus-development** | Client | Discovery | P0 | — |
 | **ss-wolf-sheds** | Client | Active/Expanded | P1 | Phase 1 PRD for QR Lead Capture |
 | **xigent** | Client | Discovery | P1 | — |
@@ -236,9 +254,9 @@ System stable since the Feb 12 sync. No code changes committed.
 
 ### Immediate (This Week)
 
-1. **Advance Plotter Mechanix Phase 2** — ROI validated, Gamma deck ready, push for proposal sign-off
+1. **Send Plotter Phase 2 proposal to Kelsey** — Polished proposal + diagram ready for delivery
 2. **Add `__pycache__/` to .gitignore** — Prevents Python cache clutter in git status
-3. **Refresh Slack token** at api.slack.com/apps — 15+ days expired, blocks client-onboarding
+3. **Refresh Slack token** at api.slack.com/apps — 21+ days expired, blocks client-onboarding
 4. **Follow up Steve Tobey / Hawkwood LLC** — Followup prep done Feb 11, advance to proposal
 
 ### This Sprint
