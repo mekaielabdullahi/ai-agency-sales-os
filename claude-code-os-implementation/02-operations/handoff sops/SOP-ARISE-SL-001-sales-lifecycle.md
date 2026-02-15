@@ -64,13 +64,20 @@ graph TD
     end
 
     H1 --> D
-    F --> H2{{"HANDOFF 2<br/>Discovery pkg + Confirm"}}
+    F --> H2{{"HANDOFF 2<br/>Proposal Work Begins"}}
 
-    subgraph TRENT[" TRENT — Coordinator "]
-        G[Build & Deliver Proposal] --> H[Negotiate & Close]
+    subgraph PROPOSAL[" MEKAIEL + TRENT — Proposal & Close "]
+        G1[Mekaiel: Presentation/Proposal/SOW]
+        G2[Matthew: Criteria]
+        G1 --> G3[Collaborate on Scope]
+        G2 --> G3
+        G3 --> G4[Trent + Matthew Review]
+        G4 --> G5[Present to Client]
+        G5 --> H[Negotiate & Close]
     end
 
-    H2 --> G
+    H2 --> G1
+    H2 --> G2
     H --> H3{{"HANDOFF 3<br/>Kickoff Meeting"}}
     H --> REV[/"Revenue $$"/]
 
@@ -117,14 +124,23 @@ graph TD
 
 ---
 
-### Stage 3: Proposal & Close (Trent)
+### Stage 3: Proposal & Close (Mekaiel + Trent)
 
-| Step | Action | Output |
-|------|--------|--------|
-| 3.1 | Build proposal | Proposal document |
-| 3.2 | Deliver proposal | Proposal presented to client |
-| 3.3 | Negotiate terms | Agreed terms |
-| 3.4 | Close deal | Signed contract/SOW |
+| Step | Owner | Action | Output |
+|------|-------|--------|--------|
+| 3.1 | Mekaiel | Create presentation | Full transformation vision with milestones |
+| 3.2 | Mekaiel | Create proposal | Current phase scope only |
+| 3.3 | Matthew | Create criteria | Acceptance criteria + work criteria |
+| 3.4 | Mekaiel + Matthew | Collaborate on scope | Aligned scope with criteria |
+| 3.5 | Trent + Matthew | Review technical scope | Technical validation |
+| 3.6 | Mekaiel + Trent | Present to client | Proposal delivered (joint) |
+| 3.7 | Mekaiel + Trent | Negotiate & close | Agreed terms (joint) |
+| 3.8 | Mekaiel | Create SOW | Signed contract |
+
+**Key clarifications:**
+- **Presentation** = Full transformation vision, broken into milestones
+- **Proposal** = Current phase/milestone scope only
+- **SOW** = Contract for current phase
 
 **Exit criteria:** Contract signed, kickoff meeting scheduled
 
@@ -276,13 +292,20 @@ graph TD
     end
 
     H1 --> D
-    F --> H2{{"HANDOFF 2<br/>Discovery pkg + Confirm"}}
+    F --> H2{{"HANDOFF 2<br/>Proposal Work Begins"}}
 
-    subgraph TRENT[" TRENT — Coordinator "]
-        G[Build & Deliver Proposal] --> H[Negotiate & Close]
+    subgraph PROPOSAL[" MEKAIEL + TRENT — Proposal & Close "]
+        G1[Mekaiel: Presentation/Proposal/SOW]
+        G2[Matthew: Criteria]
+        G1 --> G3[Collaborate on Scope]
+        G2 --> G3
+        G3 --> G4[Trent + Matthew Review]
+        G4 --> G5[Present to Client]
+        G5 --> H[Negotiate & Close]
     end
 
-    H2 --> G
+    H2 --> G1
+    H2 --> G2
     H --> H3{{"HANDOFF 3<br/>Kickoff Meeting"}}
     H --> REV[/"Revenue $$"/]
 

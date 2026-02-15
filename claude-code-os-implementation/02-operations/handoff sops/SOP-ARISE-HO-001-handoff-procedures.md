@@ -37,8 +37,8 @@ Everyone can help close deals. But at each handoff, ownership transfers clearly 
 | Handoff | From | To | Trigger |
 |---------|------|-----|---------|
 | Handoff 1 | Chris | Mekaiel | Discovery call scheduled |
-| Handoff 2 | Mekaiel | Trent | Lead qualified, opportunity matrix complete |
-| Handoff 3 | Trent | Matthew | Deal closed, contract signed |
+| Handoff 2 | Mekaiel | Proposal Work | Lead qualified, opportunity matrix complete |
+| Handoff 3 | Mekaiel + Trent | Matthew | Deal closed, contract signed |
 
 ---
 
@@ -51,7 +51,9 @@ graph LR
     end
 
     subgraph H2[" HANDOFF 2 "]
-        C[Mekaiel] -->|Lead Qualified| D[Trent]
+        C[Mekaiel] -->|Lead Qualified| D[Proposal Work]
+        D --> D1[Mekaiel: Proposal pkg]
+        D --> D2[Matthew: Criteria]
     end
 
     subgraph DQ[" DISQUALIFICATION "]
@@ -60,7 +62,7 @@ graph LR
     end
 
     subgraph H3[" HANDOFF 3 "]
-        H[Trent] -->|Deal Closed| I[Matthew]
+        H[Mekaiel + Trent] -->|Deal Closed| I[Matthew]
     end
 ```
 
@@ -118,11 +120,13 @@ Mekaiel must reply with confirmation within 4 business hours. If no confirmation
 
 ---
 
-## Handoff 2: Mekaiel → Trent
+## Handoff 2: Mekaiel → Proposal Work Begins
 
 ### Trigger
 
 Lead qualified AND opportunity matrix complete.
+
+**Note:** This handoff triggers parallel proposal work—NOT a handoff to Trent. Trent is looped in at the scope review stage, not at this handoff.
 
 ### Actions
 
@@ -130,8 +134,9 @@ Lead qualified AND opportunity matrix complete.
 |------|-------|--------|---------|
 | 1 | Mekaiel | Complete opportunity matrix | Notion |
 | 2 | Mekaiel | Post handoff notification with discovery package | Slack #sales |
-| 3 | Trent | Confirm receipt and review | Slack reply |
-| 4 | Mekaiel | Update lead status in Notion | Notion |
+| 3 | Mekaiel | Start proposal package (presentation, proposal, SOW) | — |
+| 4 | Matthew | Start creating criteria (acceptance + work criteria) | — |
+| 5 | Mekaiel | Update lead status in Notion | Notion |
 
 ### Required Information (Discovery Package)
 
@@ -152,7 +157,7 @@ Mekaiel must provide the following before handoff:
 ### Handoff Message Template
 
 ```
-**HANDOFF 2: Lead Qualified for Proposal**
+**HANDOFF 2: Lead Qualified — Proposal Work Starting**
 
 **Company:** [Company Name]
 **Contact:** [Name] - [Title]
@@ -168,12 +173,16 @@ Mekaiel must provide the following before handoff:
 **Discovery Notes:** [Link]
 **Notion Record:** [Link]
 
-@Trent please confirm receipt
+**Next Steps:**
+- @Mekaiel starting proposal package (presentation, proposal, SOW)
+- @Matthew please start on acceptance/work criteria
+
+Note: Trent will be looped in at scope review stage.
 ```
 
 ### Confirmation Required
 
-Trent must reply with confirmation within 4 business hours. If no confirmation, Mekaiel follows up via DM.
+Matthew must confirm criteria work within 4 business hours. If no confirmation, Mekaiel follows up via DM.
 
 ---
 
@@ -238,25 +247,25 @@ Even disqualified leads need a handoff notification so the team stays informed:
 
 ---
 
-## Handoff 3: Trent → Matthew
+## Handoff 3: Mekaiel + Trent → Matthew
 
 ### Trigger
 
-Deal closed AND contract signed.
+Deal closed AND contract signed (by Mekaiel).
 
 ### Actions
 
 | Step | Owner | Action | Channel |
 |------|-------|--------|---------|
-| 1 | Trent | Confirm contract signed | Notion |
-| 2 | Trent | Schedule kickoff meeting with client + Matthew | Calendar |
-| 3 | Trent | Post handoff notification with project package | Slack #delivery |
+| 1 | Mekaiel | Confirm contract signed | Notion |
+| 2 | Mekaiel + Trent | Schedule kickoff meeting with client + Matthew | Calendar |
+| 3 | Mekaiel | Post handoff notification with project package | Slack #delivery |
 | 4 | Matthew | Confirm receipt | Slack reply |
 | 5 | Matthew | Review materials before kickoff | — |
 
 ### Required Information (Project Package)
 
-Trent must provide the following before handoff:
+Mekaiel must provide the following before handoff (with Trent's sign-off):
 
 | Item | Description | Required |
 |------|-------------|----------|
@@ -314,17 +323,19 @@ Use this checklist to verify handoffs are complete:
 - [ ] Handoff message posted in Slack
 - [ ] Confirmation received from Mekaiel
 
-### Handoff 2 (Mekaiel → Trent)
+### Handoff 2 (Mekaiel → Proposal Work)
 - [ ] Discovery call completed
 - [ ] Discovery notes/transcript documented
 - [ ] Opportunity matrix complete
 - [ ] Qualification decision made and documented
 - [ ] Handoff message posted in Slack
-- [ ] Confirmation received from Trent
+- [ ] Mekaiel started proposal package
+- [ ] Matthew confirmed criteria work started
 
-### Handoff 3 (Trent → Matthew)
-- [ ] Contract signed
-- [ ] Milestone presentation created
+### Handoff 3 (Mekaiel + Trent → Matthew)
+- [ ] Contract/SOW signed (Mekaiel)
+- [ ] Milestone presentation created (Mekaiel)
+- [ ] Criteria document complete (Matthew)
 - [ ] Client contacts documented
 - [ ] Kickoff meeting scheduled
 - [ ] Handoff message posted in Slack
@@ -380,7 +391,9 @@ graph LR
     end
 
     subgraph H2[" HANDOFF 2 "]
-        C[Mekaiel] -->|Lead Qualified| D[Trent]
+        C[Mekaiel] -->|Lead Qualified| D[Proposal Work]
+        D --> D1[Mekaiel: Proposal pkg]
+        D --> D2[Matthew: Criteria]
     end
 
     subgraph DQ[" DISQUALIFICATION "]
@@ -389,7 +402,7 @@ graph LR
     end
 
     subgraph H3[" HANDOFF 3 "]
-        H[Trent] -->|Deal Closed| I[Matthew]
+        H[Mekaiel + Trent] -->|Deal Closed| I[Matthew]
     end
 ```
 

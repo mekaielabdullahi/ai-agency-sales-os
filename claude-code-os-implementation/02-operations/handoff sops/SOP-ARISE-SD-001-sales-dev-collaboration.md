@@ -108,6 +108,58 @@ sequenceDiagram
 
 ---
 
+## Proposal Creation Workflow
+
+After discovery is complete, Mekaiel and Matthew work in parallel to create the proposal package.
+
+### Ownership Table
+
+| Deliverable | Owner | Collaborates With |
+|-------------|-------|-------------------|
+| Presentation | Mekaiel | — |
+| Proposal | Mekaiel | Matthew (criteria) |
+| SOW | Mekaiel | Matthew (criteria) |
+| Criteria (acceptance/work) | Matthew | Mekaiel |
+| Technical scope review | Trent + Matthew | — |
+| Client presentation | Mekaiel + Trent (joint) | — |
+| Negotiation & close | Mekaiel + Trent (joint) | — |
+
+### Key Definitions
+
+- **Presentation** = Full transformation vision, broken into milestones
+- **Proposal** = Current phase/milestone scope only
+- **SOW** = Contract for current phase
+- **Criteria** = Acceptance criteria + work criteria for deliverables
+
+### Workflow
+
+```
+Discovery Complete (Mekaiel)
+         ↓
+┌────────────────────────────────────────────┐
+│  PARALLEL WORK                             │
+│                                            │
+│  Mekaiel:                 Matthew:         │
+│  - Draft presentation     - Create criteria│
+│  - Draft proposal         - Define scope   │
+│  - Draft SOW                               │
+└────────────────────────────────────────────┘
+         ↓
+Mekaiel + Matthew collaborate on scope/criteria
+         ↓
+Trent + Matthew review technical criteria & scope
+         ↓
+Finalize proposal package
+         ↓
+Mekaiel + Trent present to client (joint)
+         ↓
+Mekaiel + Trent negotiate & close (joint)
+```
+
+**Note:** Trent is looped in at the scope review stage, not at handoff 2.
+
+---
+
 ## Information Flow: Developers ← Sales
 
 ### What Developers Need FROM Sales
@@ -173,6 +225,9 @@ Send this to the client after discovery call to gather technical details:
 | Tech stack recommendation | Tools/platforms we'd use | Before proposal | Written recommendation |
 | Risk assessment | What could go wrong or delay | Before proposal | Risk list |
 | Complexity rating | Simple / Medium / Complex | After discovery | Verbal or written |
+| Acceptance criteria | How we'll know deliverables are complete | During proposal creation | Criteria document |
+| Work criteria | Detailed criteria for each deliverable | During proposal creation | Criteria document |
+| Scope collaboration | Joint session to align scope with criteria | Before proposal finalized | Meeting + notes |
 
 ### Developer Review Document
 
