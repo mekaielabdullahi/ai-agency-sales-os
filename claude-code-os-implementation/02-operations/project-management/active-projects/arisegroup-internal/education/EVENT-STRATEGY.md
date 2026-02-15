@@ -19,7 +19,7 @@ Events become our top-of-funnel feeding into the existing sales process: **Free 
 | Tier | Format | Duration | Price | Purpose | Frequency |
 |------|--------|----------|-------|---------|-----------|
 | **Tier 0** | LinkedIn Live | 30-45 min | Free | Brand awareness, list building | Weekly |
-| **Tier 1** | Virtual Workshop | 90 min | Free | Education + qualification | Bi-weekly |
+| **Tier 1** | Virtual Networking | 75 min | Free | Community + qualification | Bi-weekly |
 | **Tier 2** | Virtual Intensive | 3 hours | $47-97 | Deep education + conversion | Monthly |
 | **Tier 3** | In-Person (w/ Katrina) | 3-4 hours | $197-297 | High-touch + conversion | Quarterly |
 
@@ -94,19 +94,19 @@ Post-Event Sequence (5 emails / 14 days)
 
 ## Success Metrics
 
-### Per-Event Targets (Tier 1 Pilot)
+### Per-Event Targets (Tier 1 Networking Pilot)
 
 | Metric | Target | Why |
 |--------|--------|-----|
-| Registrations | 150 | Scarcity cap, bigger list |
-| Attendance rate | 10-15% | Realistic for free events |
-| Attendees | 15-25 | Same outcome, larger list |
-| Chat engagement | 70%+ | High engagement = high intent |
-| Audit bookings | 5-8 | 25-40% conversion target |
+| Registrations | 50 | Intimate networking cap |
+| Attendance rate | 50-70% | Networking = higher show rate |
+| Attendees | 25-35 | Quality over quantity |
+| Cameras on | 60%+ | Real connection |
+| Audit bookings | 3-5 | Warmer leads from networking |
 | Audit -> Paid | 2+ closes | Pipeline validation |
-| Post-event NPS | 8+ | Quality indicator |
-| Ad spend | $170-188 | Eventbrite Ads budget |
-| Cost per lead | ~$1.25 | 150 leads for <$200 |
+| Post-event NPS | 8+ | "Would you come again?" |
+| Ad spend | ~$100-125 | Eventbrite Ads budget |
+| Cost per lead | ~$2-2.50 | Higher quality leads |
 
 ### Quarterly KPIs
 
