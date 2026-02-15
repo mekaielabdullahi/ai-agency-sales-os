@@ -22,3 +22,6 @@ Thumbs.db
 agentic/modules/google/credentials.json
 agentic/modules/google/service_account.json
 agentic/modules/google/token.json
+
+# Team communications (private)
+shared-resources/team-context/whatsapp-exports/

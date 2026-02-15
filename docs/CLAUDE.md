@@ -73,3 +73,11 @@ Client audit files use the `audit.json` schema. When conducting comprehensive au
 - LinkedIn posts follow the hook-body-CTA structure
 - Outreach uses personalized templates with ICP targeting (20-500 employees, $2M-50M revenue)
 - Discovery calls use the Q1-Q5 framework from `/arisegroup/sales/`
+
+## Monthly Maintenance Tasks
+
+- [ ] **WhatsApp Export** (1st of each month)
+  - Export "AAA Agency" WhatsApp chat
+  - Select "Without Media" for text-only export
+  - Unzip and store `_chat.txt` in `shared-resources/team-context/whatsapp-exports/YYYY-MM/`
+  - Full media exports stored locally if needed for reference
