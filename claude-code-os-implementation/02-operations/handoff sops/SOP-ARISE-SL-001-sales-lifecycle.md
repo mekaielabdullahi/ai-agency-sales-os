@@ -14,16 +14,34 @@ Define the complete sales lifecycle for Arise AI Group, from initial lead identi
 
 ---
 
+## Key Principle
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│     EVERYONE HELPS.  ONE PERSON OWNS.                   │
+│                                                         │
+│     Owner = accountable for stage completion            │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
+
+Everyone on the team can (and should) help close deals. But at each stage, ONE person owns the outcome. Ownership transfers at each handoff.
+
+---
+
 ## Scope
 
 **Applies to:** All Arise AI Group team members involved in sales and delivery
 
-| Role | Person | Primary Responsibility |
-|------|--------|------------------------|
-| Lead Gen | Chris | Identify prospects, make contact, log in Notion, schedule discovery |
-| Discovery | Mekaiel | Conduct discovery calls, qualify leads, build opportunity matrix |
-| Coordinator | Trent | Build proposals, negotiate, close deals, monitor all stages |
-| Operations | Matthew | Project delivery and execution |
+| Role | Person | Primary Responsibility | Also Helps With |
+|------|--------|------------------------|-----------------|
+| Lead Gen | Chris | Identify prospects, make contact, log in Notion, schedule discovery | Nurture sequences |
+| Discovery | Mekaiel | Conduct discovery calls, qualify leads, build opportunity matrix | All client calls |
+| Coordinator | Trent | Build proposals, negotiate, close deals, monitor all stages | All stages |
+| Operations | Matthew | Project delivery and execution | **Sales support: technical scoping + estimates** |
+
+**Note:** Matthew actively participates in sales by providing technical input during proposal and close phases.
 
 ---
 
@@ -197,6 +215,33 @@ graph LR
 ```
 
 Revenue is recognized upon contract signing (CLOSED WON). Project delivery follows revenue recognition.
+
+---
+
+## When Stuck: Escalation Path
+
+When a decision stalls or ownership is unclear:
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│   1. Group Discussion (Slack thread or huddle)          │
+│              ↓                                          │
+│   2. Trent Decides (if no consensus in 24h)             │
+│              ↓                                          │
+│   3. Daily Standup (surface for team visibility)        │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
+
+| Situation | Action |
+|-----------|--------|
+| Unclear who owns a lead | Trent assigns owner |
+| Disagreement on qualification | Mekaiel makes call, Trent can override |
+| Resource conflict | Matthew + Trent resolve |
+| Timeline pressure | Escalate to daily standup |
+
+**Rule:** Don't let decisions stall. When in doubt, Trent decides.
 
 ---
 

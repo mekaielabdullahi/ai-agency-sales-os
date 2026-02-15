@@ -14,49 +14,73 @@ Define how sales and development teams collaborate throughout the sales process.
 
 ---
 
-## Scope
+## Key Principle
 
-**Applies to:** Sales team (Chris, Mekaiel, Trent) and Operations/Development team (Matthew + developers)
+```
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│     EVERYONE HELPS.  ONE PERSON OWNS.                   │
+│                                                         │
+│     Matthew = Sales Support + Delivery                  │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
 
-**Key principle:** 1 sales rep + 1 developer on EACH client-facing call.
+Everyone on the team joins client calls to help close deals. Matthew provides technical scoping and estimates during sales, PLUS handles delivery after close.
 
 ---
 
-## Joint Discovery Process
+## Scope
 
-### Why Joint Calls?
+**Applies to:** All team members (Chris, Mekaiel, Trent, Matthew)
+
+**Reality:** Everyone participates in sales. Roles are flexible, ownership is clear.
+
+---
+
+## Joint Client Calls
+
+### Why Everyone Joins?
 
 | Problem (Before) | Solution (Now) |
 |------------------|----------------|
-| Sales promises features devs can't build | Developer catches issues in real-time |
+| Sales promises features devs can't build | Matthew catches issues in real-time |
 | Multiple follow-up calls to clarify tech | Technical questions answered immediately |
-| Proposals lack accurate effort estimates | Developer hears requirements firsthand |
-| Sales doesn't understand technical constraints | Knowledge transfer happens naturally |
+| Proposals lack accurate effort estimates | Matthew hears requirements firsthand |
+| Handoffs lose context | Everyone has context from the call |
+| Decisions stall waiting for info | All perspectives available immediately |
 
-### Call Staffing Requirements
+### Call Staffing: All Hands on Deck
 
-| Call Type | Sales Rep | Developer | Required |
-|-----------|-----------|-----------|----------|
-| Discovery call | Mekaiel | Assigned dev | Yes |
-| Follow-up call (technical) | Mekaiel or Trent | Assigned dev | Yes |
-| Proposal presentation | Trent | Assigned dev (optional) | Recommended |
-| Closing call | Trent | Assigned dev (on standby) | Optional |
-| Kickoff meeting | Trent | Matthew + assigned dev | Yes |
+**Current reality:** Everyone joins client calls to help close deals. Specific roles depend on the call type:
 
-### Developer Role on Calls
+| Call Type | Owner (Leads the Call) | Also Joins | Purpose |
+|-----------|------------------------|------------|---------|
+| Discovery call | Mekaiel | Chris, Trent, Matthew | Qualify, scope, build relationship |
+| Follow-up call | Mekaiel or Trent | Matthew | Clarify tech, answer questions |
+| Proposal presentation | Trent | Matthew | Present solution, discuss feasibility |
+| Closing call | Trent | Matthew (standby) | Negotiate, close |
+| Kickoff meeting | Trent + Matthew | — | Transfer to delivery |
 
-**DO:**
+**Note:** Not everyone MUST attend every call, but everyone CAN. The owner leads; others support.
+
+### Matthew's Role on Sales Calls
+
+Matthew wears two hats: **Sales Support** during the sales process, **Delivery Lead** after close.
+
+**During Sales Calls — DO:**
 - Listen for technical requirements, integrations, existing systems
 - Ask clarifying technical questions
 - Flag feasibility concerns in real-time
 - Take notes on technical details
-- Provide rough complexity assessment after the call
+- Provide rough complexity/hours assessment after the call
+- Support the sales team's positioning
 
-**DON'T:**
-- Commit to timelines or pricing
+**During Sales Calls — DON'T:**
+- Commit to timelines or pricing (that's Trent's call)
 - Promise specific features
 - Get into deep technical weeds that lose the client
-- Contradict sales rep (discuss offline if there's disagreement)
+- Contradict the sales lead (discuss offline if there's disagreement)
 
 ### Call Flow
 

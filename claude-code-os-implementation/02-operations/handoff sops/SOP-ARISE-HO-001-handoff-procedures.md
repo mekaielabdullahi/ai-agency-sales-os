@@ -14,6 +14,22 @@ Define the three critical handoff points in the Arise AI Group sales process. Cl
 
 ---
 
+## Key Principle
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│     EVERYONE HELPS.  ONE PERSON OWNS.                   │
+│                                                         │
+│     Handoff = Ownership Transfer                        │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
+
+Everyone can help close deals. But at each handoff, ownership transfers clearly from one person to another. The new owner is accountable for the lead until the next handoff.
+
+---
+
 ## Scope
 
 **Applies to:** All team members involved in sales handoffs
@@ -316,13 +332,30 @@ Use this checklist to verify handoffs are complete:
 
 ---
 
-## Escalation
+## When Stuck: Escalation Path
 
-If a handoff is stuck (no confirmation after follow-up DM):
+If a handoff is stuck or ownership is unclear:
 
-1. Escalate to Trent (or to the other coordinator if Trent is the blocker)
-2. Discuss in next daily standup
-3. Trent resolves the blocker
+```
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│   1. Group Discussion (Slack thread or huddle)          │
+│              ↓                                          │
+│   2. Trent Decides (if no consensus in 24h)             │
+│              ↓                                          │
+│   3. Daily Standup (surface for team visibility)        │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
+
+| Situation | Action |
+|-----------|--------|
+| No confirmation after follow-up DM | Escalate to Trent |
+| Unclear who should own a lead | Trent assigns owner |
+| Handoff blocked by missing info | Surface in daily standup |
+| Priority conflict | Matthew + Trent resolve |
+
+**Rule:** Don't let handoffs stall. When in doubt, Trent decides.
 
 ---
 
