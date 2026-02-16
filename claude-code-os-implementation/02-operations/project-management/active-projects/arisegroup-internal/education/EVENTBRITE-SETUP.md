@@ -1,7 +1,7 @@
 # Eventbrite Setup Guide
 
-**Purpose**: Configure Eventbrite for AI networking event lead funnel
-**Event Type**: Free Virtual Networking Event
+**Purpose**: Configure Eventbrite for AI workshop lead funnel
+**Event Type**: Free Virtual Workshop
 
 ---
 
@@ -11,28 +11,28 @@
 
 **Event Title**:
 ```
-AI Didn't Work For You Either? Let's Talk.
+AI Didn't Fail. Your Systems Did.
 ```
 
 **Subtitle** (Tagline):
 ```
-A virtual networking event for business owners who tried AI and got nowhere. Meet others facing the same challenges. No pitch. No recording. Just real conversation.
+A 90-minute live workshop for business owners who tried AI tools and got nowhere. No recording. No replay. Just answers.
 ```
 
 **Organizer**: AriseGroup.ai
 
-**Event Type**: Networking Event
+**Event Type**: Workshop / Class
 
-**Event Category**: Business & Professional > Networking
+**Event Category**: Business & Professional > Professional Development
 
-**Tags**: AI for business, Business networking, Small business owners, Entrepreneur community, AI implementation, Business operations, Founder networking, AI struggles, Business community, Peer learning
+**Tags**: AI for business, Business automation, Small business AI, Process improvement, SOP creation, ChatGPT business, AI implementation, Operations efficiency, Business systems, AI strategy workshop
 
 ---
 
 ### Event Description (Copy)
 
 ```markdown
-## You're not the only one struggling with AI.
+## AI didn't fail you. But something did.
 
 Every week, another "AI will change everything" headline. Another tool promising to 10x your productivity. Another founder on LinkedIn claiming they automated their entire business.
 
@@ -40,45 +40,46 @@ Meanwhile, you tried ChatGPT. You signed up for that automation tool. Maybe you 
 
 And... nothing stuck.
 
-**You're not alone. And this event is proof.**
+**The problem wasn't AI. The problem was you didn't have systems to apply it to.**
 
 ---
 
-### This is NOT a workshop. This is a conversation.
+### This is NOT another AI hype session.
 
-We're gathering business owners who are in the same boat—curious about AI, frustrated by the hype, and looking for real answers from people who get it.
+This is a 90-minute working workshop where you'll learn the exact framework we use to help businesses implement AI successfully—and why most fail before they even start.
 
-**What happens:**
+**What you'll do:**
 
-- **Introductions**: Meet other founders facing the same challenges
-- **Small group discussions**: Get into breakout rooms with 4-5 peers
-- **Hot seat sessions**: Volunteer to share your specific challenge and get live feedback
-- **Honest Q&A**: No sales pitch—just real talk about what's working and what's not
+- **Learn the Framework**: Understand why 70% of AI projects fail (and how to avoid it)
+- **Map Your Business**: Use our 10 Business Functions model to audit your operations
+- **Find Your Opportunities**: Identify the 2-3 places where AI will actually make a difference
+- **See Real Demos**: Watch specific automations in action
+- **Get Your Questions Answered**: Live Q&A throughout + breakout room discussions
 
 ---
 
-### This event is for you if:
+### This workshop is for you if:
 
+- You run a business with 20-100 employees
 - You've tried AI tools but couldn't make them stick
 - You're tired of generic advice that doesn't fit your business
-- You want to meet other business owners dealing with the same struggles
-- You learn better from peers than from "experts"
+- You want a framework, not another tool recommendation
 
 ---
 
 ### What you'll walk away with:
 
-1. Connections with other founders who actually understand your challenges
-2. At least one actionable idea from someone who's faced similar problems
-3. Clarity on whether AI is even the right solution for your situation
-4. Optional: A free 30-min AI Readiness Audit if you want personalized help
+1. A complete self-audit of your business operations
+2. Your top 2-3 AI opportunities (prioritized)
+3. A framework you can use forever—not just another tool
+4. Optional: A free 30-min AI Readiness Audit for personalized guidance
 
 ---
 
 ### Your hosts:
 
 **Mekaiel Abdullahi** - AI Implementation Specialist
-Founder of AriseGroup.ai. Has helped dozens of small businesses figure out where AI actually fits—and where it doesn't. Hosts these sessions to learn what real business owners are struggling with.
+Founder of AriseGroup.ai. Has helped dozens of small businesses figure out where AI actually fits—and where it doesn't. Built the Process-First framework after seeing too many failed AI projects.
 
 **Katrina [Last Name]** - Entrepreneur Educator
 [Brief bio from Katrina]
@@ -89,11 +90,11 @@ Founder of AriseGroup.ai. Has helped dozens of small businesses figure out where
 
 **Date**: [Event Date]
 **Time**: [Event Time] [Timezone]
-**Duration**: 75 minutes
-**Format**: Live Zoom (interactive, cameras encouraged)
+**Duration**: 90 minutes
+**Format**: Live Zoom with exercises and breakout rooms
 **Price**: Free
 
-**Limited to 50 spots** to keep conversations meaningful.
+**Limited to 150 spots** — this creates an intimate learning environment while building our community.
 
 ---
 
@@ -117,44 +118,44 @@ Founder of AriseGroup.ai. Has helped dozens of small businesses figure out where
 
 **Action Items**:
 - Monitor daily registrations
-- Manually STOP ads when 50 cap reached
+- Manually STOP ads when 150 cap reached
 - Don't overspend - ads auto-continue otherwise
 
-**ROI**: 50 qualified leads for <$200 = ~$4/lead (higher quality, networking format)
+**ROI**: 150 qualified leads for <$200 = ~$1.25/lead
 
 ---
 
 ## Frequently Asked Questions
 
-**1. Who is this event for?**
-Business owners and operators who have tried AI tools and struggled to make them work. If you've felt frustrated, confused, or left behind by the AI hype—you'll fit right in.
+**1. Who is this workshop for?**
+Business owners and operators (20-100 employees) who want to use AI but don't know where to start—or have tried and failed.
 
-**2. Is this a webinar or presentation?**
-No. This is a networking event. You'll spend most of your time in conversation with other business owners, not listening to someone talk at you.
+**2. Do I need technical experience?**
+No. We focus on business processes, not coding. If you can use email, you can follow along.
 
 **3. Will there be a recording?**
-No. This is live-only. We want people to speak openly, which means no recordings.
+No. This is a live-only event. We do this intentionally to create an interactive experience with Q&A and breakout rooms.
 
-**4. Do I need to have my camera on?**
-Encouraged but not required. Networking works better when people can see each other, but we won't force it.
+**4. What AI tools will you cover?**
+We focus on the framework, not specific tools. But we'll demo ChatGPT, Claude, and simple automations.
 
 **5. Is this a sales pitch?**
-No. We host these to connect with business owners and understand what you're actually struggling with. At the end, we mention our free AI Readiness Audit for anyone who wants personalized help—but there's no pressure.
+No. You'll learn a complete framework. At the end, we offer a free AI Readiness Audit for those who want personalized help.
 
-**6. What if I'm not good at networking?**
-We structure the conversations so you're not just awkwardly making small talk. You'll be in small groups (4-5 people) discussing specific topics. Much easier than traditional networking.
+**6. How interactive is it?**
+Very. We do live exercises, Q&A throughout, and breakout room discussions.
 
 **7. What should I prepare?**
-Think about: What AI tool did you try? What happened? What do you wish worked? That's your conversation starter.
+Think about your biggest operational frustration. We'll work on it during the session.
 
-**8. Will I actually meet people I can stay connected with?**
-That's the goal. We encourage exchanging LinkedIn connections. Many attendees continue conversations after the event.
+**8. Can I ask questions?**
+Yes. Chat is open the entire time, and we have dedicated Q&A segments.
 
 **9. What if I can't make the time?**
-This is live-only. Sign up for the next one—we're planning to make this recurring.
+This is live-only, no recording. If you can't make it, wait for our next event.
 
-**10. What's the next step after the event?**
-Up to you. Some people just take their new connections and go. Others book a free 30-minute AI Readiness Audit if they want personalized guidance on their specific situation.
+**10. What's the next step after the workshop?**
+You can implement on your own using our framework, or book a free 30-minute AI Readiness Audit for personalized guidance.
 
 ---
 
@@ -167,7 +168,7 @@ Up to you. Some people just take their new connections and go. Others book a fre
 - Show remaining quantity: Yes (creates urgency)
 - Ticket sales end: 1 hour before event
 
-**Capacity**: 50 registrations
+**Capacity**: 150 registrations
 
 ---
 

@@ -1,19 +1,19 @@
-# Pilot Event: AI Networking for Business Owners
+# Pilot Event: Process-First AI Workshop
 
 **Event Date**: Week of February 24-28, 2026 (TBD with Katrina)
-**Format**: 75-minute Virtual Networking Event (Zoom)
+**Format**: 90-minute Virtual Workshop (Zoom)
 **Price**: Free
-**Target Registration**: 50 attendees
-**Target Attendance**: 25-35 (50-70% for networking format)
-**Goal**: Build community, generate audit leads, validate networking model
+**Target Registration**: 150 attendees
+**Target Attendance**: 15-25 (10-15% for free events)
+**Goal**: Educate, qualify leads, generate audit bookings, build email list
 
 ---
 
 ## Event Details
 
-**Title**: "AI Didn't Work For You Either? Let's Talk."
+**Title**: "AI Didn't Fail. Your Systems Did."
 
-**Subtitle**: A virtual networking event for business owners who tried AI and got nowhere. Meet others facing the same challenges.
+**Subtitle**: A 90-minute live workshop for business owners who tried AI tools and got nowhere. No recording. No replay. Just answers.
 
 **Hosts**:
 - **Mekaiel Abdullahi** - AI Implementation Specialist, AriseGroup.ai
@@ -24,187 +24,232 @@
 ## Target Audience
 
 **Primary**:
-- Business owners who tried AI tools and got frustrated
+- Business owners (20-100 employees) who tried AI tools and got nowhere
 - Founders feeling left behind by the AI hype
 - Service-based business owners (agencies, consultants, coaches)
 
 **Secondary**:
 - Operations managers curious about AI
 - Nonprofit leaders overwhelmed by options
-- Anyone tired of generic AI advice
+- Anyone tired of generic AI advice that doesn't fit their business
 
 **What Unites Them**:
-- Tried ChatGPT or another AI tool
-- Didn't stick or didn't get results they expected
-- Want to talk to others in the same boat
-- Looking for real answers, not more hype
+- Tried ChatGPT or another AI tool—nothing stuck
+- Want a framework, not another tool recommendation
+- Ready to learn, not just network
+- Looking for actionable answers, not hype
 
 ---
 
-## Run of Show (75 Minutes)
+## Run of Show (90 Minutes)
 
-### Opening (10 min) - Mekaiel + Katrina
+### Curriculum Overview
+
+| Segment | Time | Content | Owner |
+|---------|------|---------|-------|
+| Hook + Problem | 15 min | Why 70% of AI projects fail | Katrina (opening) + Mekaiel |
+| Framework | 15 min | The 10 Business Functions model | Mekaiel |
+| Interactive Exercise | 20 min | Self-audit: Map YOUR business functions | Mekaiel |
+| AI Opportunity Matrix | 15 min | Where AI fits (THE "aha moment") | Mekaiel |
+| Breakout Discussion | 10 min | Small group discussion on opportunities | Both |
+| Quick Wins Demo | 10 min | Show 2-3 specific automations | Mekaiel |
+| Offer + Q&A | 5 min | Free AI Readiness Audit CTA | Mekaiel + Katrina |
+
+---
+
+### Opening: Hook + Problem (15 min)
 
 | Time | Content | Owner |
 |------|---------|-------|
 | 0:00-3:00 | Welcome + ground rules | Mekaiel |
-| 3:00-7:00 | "Why we're here" - the AI struggle is real | Katrina |
-| 7:00-10:00 | How tonight works + icebreaker prompt | Mekaiel |
+| 3:00-10:00 | "Why we're here" - entrepreneurship context, process-thinking mindset | Katrina |
+| 10:00-15:00 | Why 70% of AI projects fail (stat + story) | Mekaiel |
 
 **Ground Rules**:
-- Cameras encouraged (better networking)
-- This is a conversation, not a webinar
-- No recordings - speak freely
-- Exchange LinkedIn connections
+- This is interactive—participate in chat and exercises
+- No recording—speak freely, ask questions
+- Come away with a framework, not just information
 
-**Icebreaker Prompt** (drop in chat):
-> "In one sentence: What AI tool did you try, and what happened?"
+**Key Message** (minute 12):
+> "You don't have an AI problem. You have a systems problem. AI just exposed it."
 
 ---
 
-### Speed Intros in Breakouts (15 min) - Round 1
+### Framework: The 10 Business Functions Model (15 min)
 
 | Time | Content |
 |------|---------|
-| 10:00-12:00 | Breakout room setup |
-| 12:00-23:00 | Small groups (4-5 people) |
-| 23:00-25:00 | Return to main room |
+| 15:00-20:00 | Introduce the 10 Functions |
+| 20:00-25:00 | Quick examples of each |
+| 25:00-30:00 | Why this matters for AI adoption |
+
+**The 10 Functions**:
+1. Revenue generation
+2. Operations/delivery
+3. Admin/finance
+4. HR/team
+5. Customer service
+6. Marketing/content
+7. Sales/BD
+8. Leadership/strategy
+9. Legal/compliance
+10. IT/infrastructure
+
+---
+
+### Interactive Exercise: Self-Audit (20 min)
+
+| Time | Content |
+|------|---------|
+| 30:00-33:00 | Introduce exercise + share worksheet |
+| 33:00-48:00 | Attendees complete self-audit (15 min) |
+| 48:00-50:00 | Quick share: "Which function surprised you?" |
+
+**Exercise Prompt**:
+> "For each function, rate yourself 1-5: How much of YOUR time goes here vs. how optimized is it?"
+
+**Chat Drop** (minute 30):
+> WORKSHEET: [Link to Business Functions Self-Audit]
+
+---
+
+### AI Opportunity Matrix (15 min)
+
+| Time | Content |
+|------|---------|
+| 50:00-55:00 | Introduce the matrix |
+| 55:00-60:00 | Map functions to AI opportunities |
+| 60:00-65:00 | Identify YOUR 2-3 priorities |
+
+**THE "AHA MOMENT"** (minute 55):
+> "You don't need AI everywhere. You need it in the 2-3 places where you're leaking time and money every day. Let me show you how to find those places in YOUR business."
+
+---
+
+### Breakout Discussion (10 min)
+
+| Time | Content |
+|------|---------|
+| 65:00-67:00 | Breakout room setup |
+| 67:00-73:00 | Small groups (4-5 people) |
+| 73:00-75:00 | Return to main room |
 
 **Breakout Prompt**:
-> "Go around the room. 2 minutes each: Name, business, what AI thing you tried, what happened."
+> "Share your top 2-3 AI opportunities with your group. Get their reaction. Do they see it differently?"
 
 **Room Setup**:
 - Auto-assign 4-5 per room
-- 11 minutes total
+- 6 minutes total
 - Hosts float between rooms
 
 ---
 
-### Hot Seat Sessions (20 min) - Mekaiel + Katrina
+### Quick Wins Demo (10 min)
 
 | Time | Content |
 |------|---------|
-| 25:00-30:00 | Hot seat #1 |
-| 30:00-35:00 | Hot seat #2 |
-| 35:00-40:00 | Hot seat #3 |
-| 40:00-45:00 | Hot seat #4 |
+| 75:00-80:00 | Demo 1: AI-assisted meeting notes |
+| 80:00-85:00 | Demo 2: Client communication automation |
 
-**Format**:
-1. Ask for volunteers in chat: "Who wants to share their AI challenge?"
-2. Pick 4 people
-3. Each gets 5 min:
-   - 2 min: Explain their situation
-   - 3 min: Group feedback + host input
-4. Keep it conversational, not lecture-y
-
-**Host Role**:
-- Mekaiel: Offer specific tactical suggestions
-- Katrina: Offer mindset/prioritization perspective
-- Encourage peer input from attendees
+**Demos** (live or screen share):
+1. Meeting notes: Fireflies.ai or Claude for summarization
+2. Email drafting: Claude prompt for response generation
+3. (Bonus) Simple Zapier automation
 
 ---
 
-### Deep Dive Breakouts (15 min) - Round 2
+### Offer + Q&A (5 min)
 
 | Time | Content |
 |------|---------|
-| 45:00-47:00 | Breakout room setup |
-| 47:00-58:00 | Small groups (4-5 people) |
-| 58:00-60:00 | Return to main room |
+| 85:00-87:00 | The offer |
+| 87:00-90:00 | Final Q&A + close |
 
-**Breakout Prompt**:
-> "Based on what you heard tonight: What's ONE thing you're going to try this week? Share it with your group and get their reaction."
-
-**Room Setup**:
-- Re-shuffle rooms (meet new people)
-- 11 minutes total
-- Encourage LinkedIn exchanges before leaving breakout
-
----
-
-### Wrap-Up + Soft CTA (15 min) - Mekaiel + Katrina
-
-| Time | Content |
-|------|---------|
-| 60:00-65:00 | Highlights from breakouts |
-| 65:00-70:00 | The offer (soft) |
-| 70:00-75:00 | Final thoughts + goodbyes |
-
-**Highlights**:
-- Ask 2-3 people to share their "one thing" from breakout
-- Celebrate the connections made
-
-**The Offer (Soft)**:
-> "If tonight was helpful and you want to go deeper on YOUR specific situation, I do free 30-minute AI Readiness Audits. No pitch - just a focused conversation where I map your operations and identify your best AI opportunities.
+**The Offer**:
+> "If you identified your 2-3 opportunities and want help prioritizing or implementing, I offer a free 30-minute AI Readiness Audit. No pitch—just a focused conversation where I map your operations and give you a clear action plan.
 >
-> Link is in the chat. Totally optional. Either way, stay connected on LinkedIn."
+> Link is in the chat. First 5 bookings from today's session get priority scheduling."
 
-**Calendly Link**: Drop in chat at minute 65
+**Calendly Link**: Drop in chat at minute 85
 
-**Final Thoughts**:
-- Katrina: Entrepreneurship encouragement
-- Mekaiel: Reminder this is a recurring event
-- Both: Thank everyone for showing up
+**Final Close**:
+- Thank everyone for showing up live
+- Reminder: resources will be emailed (worksheet, matrix, checklist)
+- LinkedIn connection invite
 
 ---
 
 ## Chat Messages to Prepare
 
-**Icebreaker (0:08)**:
+**Welcome (0:00)**:
 ```
-ICEBREAKER: In one sentence, what AI tool did you try and what happened?
+Welcome to "AI Didn't Fail. Your Systems Did."
 
-Drop your answer below 👇
-```
+Quick ground rules:
+- This is interactive—participate in chat and exercises
+- No recording—speak freely, ask questions
+- You'll leave with a framework, not just information
 
-**Breakout 1 Prompt (0:10)**:
-```
-BREAKOUT PROMPT: Go around the room. 2 min each.
-- Your name
-- Your business
-- What AI tool you tried
-- What happened
-
-You have 11 minutes. Go!
+Let's go!
 ```
 
-**Hot Seat Call (0:25)**:
+**Worksheet Drop (0:30)**:
 ```
-HOT SEAT TIME: Want to share your AI challenge and get live feedback?
+EXERCISE TIME
 
-Type "ME" in the chat if you're willing to be in the hot seat.
-```
+Download your Business Functions Self-Audit Worksheet:
+👉 [WORKSHEET LINK]
 
-**Breakout 2 Prompt (0:45)**:
-```
-BREAKOUT PROMPT: Based on what you heard tonight...
-
-What's ONE thing you're going to try this week?
-
-Share it with your group. Get their reaction.
-
-Also: Exchange LinkedIn connections before the breakout ends!
+You have 15 minutes to complete it. Rate each function 1-5.
 ```
 
-**Calendly Drop (1:05)**:
+**Opportunity Matrix (0:55)**:
+```
+AI OPPORTUNITY MATRIX
+
+Now let's map your functions to AI opportunities.
+
+Template: [MATRIX LINK]
+
+Identify your TOP 2-3 priorities.
+```
+
+**Breakout Prompt (1:05)**:
+```
+BREAKOUT PROMPT: Share your top 2-3 AI opportunities with your group.
+
+- What did you identify?
+- Does your group see it differently?
+- What questions do you have?
+
+You have 6 minutes. Go!
+```
+
+**Calendly Drop (1:25)**:
 ```
 FREE AI READINESS AUDIT
 
-If you want personalized help figuring out where AI fits in YOUR business:
+Identified your opportunities? Want help prioritizing or implementing?
 
 👉 [CALENDLY LINK]
 
-30 minutes. No pitch. Just clarity.
+30 minutes. No pitch. Just a clear action plan.
+
+First 5 bookings get priority scheduling.
 ```
 
-**LinkedIn Drop (1:10)**:
+**Resources + LinkedIn (1:28)**:
 ```
-STAY CONNECTED
+YOUR RESOURCES (will also be emailed):
+- Business Functions Worksheet
+- AI Opportunity Matrix
+- Quick Win Checklist
 
+STAY CONNECTED:
 Mekaiel: [LinkedIn URL]
 Katrina: [LinkedIn URL]
 
-Follow for more events like this.
+Thanks for showing up live!
 ```
 
 ---
@@ -229,80 +274,93 @@ See [[EVENTBRITE-SETUP.md]] for full details.
 |-----|--------|-------|
 | D-14 | Eventbrite live, first promotion | Mekaiel + Katrina |
 | D-14 | **Start Eventbrite Ads ($25/day)** | Mekaiel |
-| D-12 | LinkedIn post #1 (vulnerability post) | Mekaiel |
+| D-12 | LinkedIn post #1 (bold/provocative) | Mekaiel |
 | D-10 | Email to existing list | Mekaiel |
 | D-8 | Katrina promotes to her network | Katrina |
-| D-7 | LinkedIn post #2 (community angle) | Mekaiel |
-| D-3 | LinkedIn post #3 (FOMO/last chance) | Mekaiel |
+| D-7 | LinkedIn post #2 (framework teaser) | Mekaiel |
+| D-3 | LinkedIn post #3 (FOMO/scarcity) | Mekaiel |
 | D-2 | Reminder email to registrants | Auto |
-| D-1 | Final reminder email + **STOP ads if 50 reached** | Auto / Mekaiel |
+| D-1 | Final reminder: "No recording, attend live" + **STOP ads if 150 reached** | Auto / Mekaiel |
 | D-0 | Event day! | Both |
 
+### Eventbrite Ads Strategy
+- **Budget**: $25/day
+- **Expected Fill Time**: ~1 week
+- **Total Spend**: $170-188
+- **Target**: Business professionals, entrepreneurs, US
+- **Action**: Manually STOP ads when 150 cap reached
+- **ROI**: 150 leads for <$200 = ~$1.25/lead
+
 ### LinkedIn Post Themes
-1. **Vulnerability**: "I've talked to 50+ business owners about AI. Most have the same story: they tried, it didn't stick, they feel behind."
-2. **Community**: "Hosting a networking event for founders who tried AI and got nowhere. No webinar. No pitch. Just real talk with people in the same boat."
-3. **FOMO**: "12 spots left. If you've ever felt like everyone else figured out AI except you—this is your room."
+1. **Bold/Provocative**: "AI didn't fail. Your systems did. Here's what I mean..."
+2. **Framework Teaser**: "70% of AI projects fail. But it's not the AI. It's the approach. I'll show you the difference in our free workshop."
+3. **Scarcity/FOMO**: "150 spots. No recording. No replay. If you've tried AI and got nowhere—this is your session."
 
 ---
 
 ## Tech Setup Checklist
 
 ### Pre-Event
-- [ ] Eventbrite page created and tested
+- [ ] Eventbrite page created (150 cap, workshop format)
+- [ ] Eventbrite Ads started ($25/day)
 - [ ] Zapier -> Notion integration active
 - [ ] Email sequences loaded and tested
 - [ ] Zoom meeting set up (NOT webinar - need breakouts)
 - [ ] Breakout rooms enabled in Zoom settings
+- [ ] Worksheets/templates ready (Drive links)
 - [ ] Chat messages doc prepared (copy/paste ready)
 - [ ] Calendly link for audits ready
 - [ ] Tech test with Katrina (D-3)
 
 ### Day-Of
+- [ ] STOP Eventbrite Ads if 150 reached
 - [ ] Test Zoom 30 min before
 - [ ] Open chat messages doc
 - [ ] Breakout rooms configured (4-5 per room)
+- [ ] Worksheet links ready to paste
 - [ ] Calendly link ready to paste
 - [ ] LinkedIn URLs ready to paste
 - [ ] Water, notes, quiet space
-- [ ] Good lighting (cameras on event)
 
 ### Post-Event
 - [ ] Download attendee list from Eventbrite
 - [ ] Update Notion: Attended vs No-Show
-- [ ] Send thank-you email with LinkedIn links (within 4 hours)
+- [ ] Send resources email (worksheets + LinkedIn) within 4 hours
 - [ ] Trigger post-event sequence
-- [ ] Review chat for hot seat themes
+- [ ] Review chat engagement metrics
 - [ ] Note who booked audits
 - [ ] Debrief with Katrina (D+1 or D+2)
+- [ ] Calculate final cost per lead
 
 ---
 
 ## Success Criteria (Pilot)
 
-| Metric | Target | Notes |
-|--------|--------|-------|
-| Registrations | 50 | Intimate networking cap |
-| Attendance | 50-70% | 25-35 attendees (networking = higher show rate) |
-| Cameras on | 60%+ | Good networking energy |
-| Hot seat volunteers | 4+ | Engaged audience |
-| LinkedIn connections made | High | Ask in post-survey |
-| Audit bookings | 3-5 | Within 48 hours |
-| NPS/feedback | 8+ average | "Would you come again?" |
-| Audit -> conversion | 2+ | Within 30 days |
-| Ad spend | ~$100-125 | Less spend for 50 cap |
-| Cost per lead | ~$2-2.50 | Higher quality networking leads |
+| Metric | Old Target | New Target | Notes |
+|--------|------------|------------|-------|
+| Registrations | 30-40 | **150** | Scarcity cap for list building |
+| Attendance rate | 50-60% | **10-15%** | Realistic for free events |
+| Attendees | 15-24 | **15-25** | Same quality outcome |
+| Chat engagement | - | **70%+** | High engagement = high intent |
+| Audit bookings | 5-8 | **5-8** | Same target |
+| NPS/feedback | 8+ | **8+** | "Would you come again?" |
+| Audit -> conversion | 2+ | **2+** | Within 30 days |
+| Ad spend | $0 | **$170-188** | Eventbrite Ads budget |
+| Cost per lead | - | **~$1.25** | Excellent ROI |
 
 ---
 
 ## Post-Pilot Analysis Questions
 
-1. What registration answers best predicted engagement?
-2. Which breakout prompts sparked best conversation?
-3. What hot seat themes came up repeatedly?
-4. Did people exchange LinkedIn connections?
-5. Was 75 min the right length? Too long? Too short?
-6. Did the soft CTA feel natural or forced?
-7. Would attendees come to a recurring version?
+1. What registration answers best predicted attendance?
+2. Did the 10-15% attendance rate hold? (15-25 from 150)
+3. Which exercise got the most engagement?
+4. What questions came up repeatedly?
+5. Was 90 min the right length? Too long? Too short?
+6. Did the breakout discussion add value?
+7. How many audits booked? (Target: 5-8)
+8. Was $1.25/lead achieved? Final cost per lead?
+9. Would attendees come to a recurring version?
 
 ---
 

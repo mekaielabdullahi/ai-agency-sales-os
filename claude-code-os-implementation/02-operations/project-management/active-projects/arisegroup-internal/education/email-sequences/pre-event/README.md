@@ -14,7 +14,7 @@
 | 2 | Day 3 | The Framework Teaser | Build anticipation |
 | 3 | Day 5 | Industry-Specific Value | Personalize based on registration |
 | 4 | Day 6 | What to Prepare | Pre-work + engagement |
-| 5 | Day 7 (D-1) | Final Reminder | Reduce no-shows |
+| 5 | Day 7 (D-1) | No Recording Urgency | Reduce no-shows, emphasize live-only |
 
 ---
 
@@ -184,7 +184,7 @@ P.S. First 5 attendees to book during the session get a free 30-min AI Readiness
 
 ## Email 5: Final Reminder (Day 7 / Event Day)
 
-**Subject**: LIVE in 2 hours - No recording, no replay
+**Subject**: LIVE in 2 hours - This won't be recorded
 
 **Body**:
 ```
@@ -192,18 +192,21 @@ Hi {{first_name}},
 
 We're starting in 2 hours.
 
-**IMPORTANT: This will NOT be recorded.**
+**IMPORTANT: This workshop will NOT be recorded. There is no replay.**
 
-We're doing live exercises, breakout room discussions, and real-time Q&A. That only works when everyone's there together.
+We're doing live exercises, breakout room discussions, and real-time Q&A. The interactive format only works when everyone's there together.
 
-If you can't make it, you'll miss it. There's no replay.
+If you can't make it, you'll miss it completely.
 
 **Join here:** {{zoom_link}}
 
 **Quick reminders:**
-- Have your "most frustrating process" ready
-- We're doing a live self-audit exercise + breakout rooms
-- First 5 to book get a free AI Readiness Audit
+- Have your biggest operational frustration ready
+- We're doing a live self-audit exercise (you'll identify your top AI opportunities)
+- Breakout rooms for discussion with other business owners
+- First 5 to book get priority scheduling for a free AI Readiness Audit
+
+This is the workshop where AI stops being confusing and starts making sense for YOUR business.
 
 See you at {{event_time}},
 

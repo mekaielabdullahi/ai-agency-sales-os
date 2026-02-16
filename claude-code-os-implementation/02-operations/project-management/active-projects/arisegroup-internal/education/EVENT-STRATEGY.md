@@ -19,7 +19,7 @@ Events become our top-of-funnel feeding into the existing sales process: **Free 
 | Tier | Format | Duration | Price | Purpose | Frequency |
 |------|--------|----------|-------|---------|-----------|
 | **Tier 0** | LinkedIn Live | 30-45 min | Free | Brand awareness, list building | Weekly |
-| **Tier 1** | Virtual Networking | 75 min | Free | Community + qualification | Bi-weekly |
+| **Tier 1** | Virtual Workshop | 90 min | Free | Education + qualification | Bi-weekly |
 | **Tier 2** | Virtual Intensive | 3 hours | $47-97 | Deep education + conversion | Monthly |
 | **Tier 3** | In-Person (w/ Katrina) | 3-4 hours | $197-297 | High-touch + conversion | Quarterly |
 
@@ -80,7 +80,7 @@ Post-Event Sequence (5 emails / 14 days)
 - **Tier 3 ($197-297)**: $2K-4.5K/event (10-15 registrations)
 
 ### Conversion Revenue (Indirect)
-- **Tier 1**: 5-8 audits -> 2 closes = $10K/event
+- **Tier 1**: 150 reg -> 15-25 attend -> 5-8 audits -> 2 closes = $10K/event (cost: $170-188)
 - **Tier 2**: 3-5 audits -> 2 closes = $12K/event
 - **Tier 3**: 4-6 audits -> 3 closes = $26K/event
 
@@ -94,19 +94,19 @@ Post-Event Sequence (5 emails / 14 days)
 
 ## Success Metrics
 
-### Per-Event Targets (Tier 1 Networking Pilot)
+### Per-Event Targets (Tier 1 Workshop Pilot)
 
 | Metric | Target | Why |
 |--------|--------|-----|
-| Registrations | 50 | Intimate networking cap |
-| Attendance rate | 50-70% | Networking = higher show rate |
-| Attendees | 25-35 | Quality over quantity |
-| Cameras on | 60%+ | Real connection |
-| Audit bookings | 3-5 | Warmer leads from networking |
+| Registrations | 150 | Scarcity cap for list building |
+| Attendance rate | 10-15% | Realistic for free events |
+| Attendees | 15-25 | Same quality outcome |
+| Chat engagement | 70%+ | High engagement = high intent |
+| Audit bookings | 5-8 | From engaged attendees |
 | Audit -> Paid | 2+ closes | Pipeline validation |
 | Post-event NPS | 8+ | "Would you come again?" |
-| Ad spend | ~$100-125 | Eventbrite Ads budget |
-| Cost per lead | ~$2-2.50 | Higher quality leads |
+| Ad spend | $170-188 | Eventbrite Ads budget |
+| Cost per lead | ~$1.25 | Excellent ROI |
 
 ### Quarterly KPIs
 
@@ -124,7 +124,7 @@ Post-Event Sequence (5 emails / 14 days)
 
 ### Required Integrations
 1. **Eventbrite** -> Event hosting, ticketing, registration
-2. **Eventbrite Ads** -> Paid promotion ($25/day, $170-188 total)
+2. **Eventbrite Ads** -> Paid promotion ($25/day, $170-188 total, ~$1.25/lead)
 3. **Zapier** -> Automation hub
 4. **Notion** -> Lead database (CRM)
 5. **Gmail** -> Email sequences (or Mailchimp/ConvertKit)
