@@ -121,7 +121,6 @@ After discovery is complete, Mekaiel and Matthew work in parallel to create the 
 | SOW | Mekaiel | Matthew (criteria) |
 | Criteria (acceptance/work) | Matthew | Mekaiel |
 | Technical scope review | Trent + Matthew | — |
-| Client presentation | Mekaiel + Trent (joint) | — |
 | Negotiation & close | Mekaiel + Trent (joint) | — |
 
 ### Key Definitions
