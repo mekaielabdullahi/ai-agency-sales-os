@@ -1,4 +1,5 @@
 # ICP Profile: Homestead Businesses
+*Updated: February 16, 2026 - Expanded to 1-50 employees*
 
 ---
 
@@ -14,17 +15,38 @@ Solution already built and ready for deployment. S&S Wolf Sheds (shed dealer, 3 
 
 | Attribute | Target |
 |-----------|--------|
-| Company Size | 1-10 employees (often husband-wife operations) |
-| Revenue | $100K-$2M (smaller than printing) |
-| Role | Owner who runs everything -- content, fulfillment, customer service |
+| Company Size | 1-50 employees (expanded from 1-10) |
+| Revenue | $100K-$5M (expanded from $2M ceiling) |
+| Role | Owner, CEO, General Manager, Operations Manager |
 | Geography | National (mostly online businesses) |
 | Business Type | Homesteading-related products, education, or services |
+
+### Company Size Segments
+
+| Segment | Employees | Revenue Range | Decision Maker | Priority |
+|---------|-----------|---------------|----------------|----------|
+| Micro | 1-10 | $100K-$1M | Owner/Founder | HIGH |
+| Small | 11-20 | $500K-$3M | Owner/CEO | HIGH |
+| Small-Mid | 21-50 | $1M-$5M | CEO, GM, Ops Manager | MEDIUM (test) |
+
+**Why 1-50:** Owner/GM still accessible. Decision-maker reachable without gatekeepers. Sales cycle remains short (1-2 calls).
 
 ---
 
 ## Decision Maker
 
+### 1-20 Employees (Proven ICP)
 **Owner.** Always. These are small operations where the owner makes every decision.
+
+### 21-50 Employees (Test Segment)
+**CEO, GM, or Operations Manager.** Owner may have stepped back from daily operations, but these roles handle workflow and fulfillment decisions.
+
+| Role | Why They Buy |
+|------|--------------|
+| General Manager | Handles day-to-day operations |
+| Operations Manager | Manages fulfillment and customer service |
+| Managing Partner | Often co-owner who handles business side |
+| Director | May oversee specific departments |
 
 ---
 
@@ -69,7 +91,7 @@ Solution already built and ready for deployment. S&S Wolf Sheds (shed dealer, 3 
 
 ---
 
-## The "Homestead Owner" Profile
+## The "Homestead Owner" Profile (1-20 Employees)
 
 The ideal prospect looks like:
 - **Passionate homesteader first**, business owner second
@@ -78,6 +100,16 @@ The ideal prospect looks like:
 - **Drowning in admin** -- order processing, customer service, inventory
 - **Started this for the lifestyle** but now spends half their time on a laptop
 - **Would gladly pay** to get back to the work they love
+
+## The "Growing Farm Business" Profile (21-50 Employees)
+
+The expanded segment looks like a scaled-up version:
+- **Founder stepped back** from day-to-day fulfillment
+- **$1M-$5M revenue** with multiple team members
+- **Operations manager** handles fulfillment, customer service
+- **Multiple products/channels** (courses, products, memberships)
+- **Wants to scale** but operations can't keep up
+- **Has budget** and already tried VAs or basic tools
 
 ---
 

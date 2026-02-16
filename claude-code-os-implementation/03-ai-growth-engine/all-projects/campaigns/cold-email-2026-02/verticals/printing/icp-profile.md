@@ -1,4 +1,5 @@
 # ICP Profile: Large Format Printer Companies
+*Updated: February 16, 2026 - Expanded to 2-50 employees*
 
 ---
 
@@ -14,17 +15,38 @@ Plotter Mechanix = 1,378% ROI, $73K+ annual value from $5K investment. Alyssa sa
 
 | Attribute | Target |
 |-----------|--------|
-| Company Size | 2-20 employees (small service shops like Plotter Mechanix) |
-| Revenue | $500K-$5M |
-| Role | Owner-operator who is also the lead technician (the Kelsey profile) |
+| Company Size | 2-50 employees (expanded from 2-20) |
+| Revenue | $500K-$10M (expanded from $5M ceiling) |
+| Role | Owner-operator, CEO, VP Operations, GM |
 | Geography | National (printer repair is everywhere) |
 | Business Type | Large format printer service, repair, sales, and support |
+
+### Company Size Segments
+
+| Segment | Employees | Revenue Range | Decision Maker | Priority |
+|---------|-----------|---------------|----------------|----------|
+| Micro | 2-10 | $500K-$1M | Owner/Founder | HIGH |
+| Small | 11-20 | $1M-$5M | Owner/CEO | HIGH |
+| Small-Mid | 21-50 | $3M-$10M | CEO, GM, VP Ops | MEDIUM (test) |
+
+**Why 2-50:** Owner/GM still accessible. Decision-maker reachable without gatekeepers. Sales cycle remains short (1-2 calls).
 
 ---
 
 ## Decision Maker
 
+### 2-20 Employees (Proven ICP)
 **Owner.** These are small shops -- the owner IS the decision maker. No gatekeepers, no committees. One conversation, one decision.
+
+### 21-50 Employees (Test Segment)
+**CEO, GM, or VP Operations.** Owner may be less hands-on, but these roles handle vendor/tool decisions. May need 2 conversations instead of 1.
+
+| Role | Why They Buy |
+|------|--------------|
+| VP Operations | Handles day-to-day operations pain |
+| COO | Responsible for efficiency metrics |
+| General Manager | Often the de facto decision-maker |
+| Operations Director | Manages technicians and workflows |
 
 ---
 
@@ -55,7 +77,7 @@ Plotter Mechanix = 1,378% ROI, $73K+ annual value from $5K investment. Alyssa sa
 
 ---
 
-## The "Kelsey Profile"
+## The "Kelsey Profile" (2-20 Employees)
 
 The ideal prospect looks like Kelsey before working with us:
 - **Expert technician** who built a business around their skill
@@ -64,6 +86,16 @@ The ideal prospect looks like Kelsey before working with us:
 - **Admin staff overwhelmed** with manual processing
 - **Wants to grow** but can't because they're the bottleneck
 - **Would pay for time back** if they trusted it would actually work
+
+## The "Growing Shop Profile" (21-50 Employees)
+
+The expanded segment looks like a scaled-up version:
+- **Founder stepped back** from day-to-day tech work
+- **$3M-$10M revenue** with multiple technicians
+- **Operations manager or GM** handles scheduling/dispatch
+- **Multiple admin staff** still doing manual processing
+- **Wants to scale** but ops can't keep up with growth
+- **Has budget** but needs ROI proof before committing
 
 ---
 
