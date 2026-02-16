@@ -34,12 +34,19 @@ This document compares our current Sales SOPs against Matthew's Development Fram
 - Joint call participation
 - Basic tech questionnaire
 
-**What Still Needs Work:**
-- Metrics discovery template
-- MoSCoW prioritization
-- Pricing formula standardization
-- Milestone payment structure
-- Change request process
+**Templates Created (P1 + P2):**
+- ✅ Metrics discovery template
+- ✅ MoSCoW prioritization
+- ✅ Change request process
+- ✅ Problem statement template
+- ✅ Pricing calculator
+- ✅ Milestone payment terms
+
+**Still Needs Work (P3/P4):**
+- Billable discovery (pricing decision)
+- Vibe coding training
+- Functional requirements template
+- Quality gate checklists
 
 **Matthew's Framework Location:** `shared-resources/matthew-repos/ai-agency-development-os/claude-code-os-implementation/03-ai-growth-engine/development-framework/`
 
@@ -505,10 +512,16 @@ So that [outcome]
 | P1 | GAP 5: MoSCoW Requirements | ✅ Created | `templates/moscow-prioritization-template.md` |
 | P1 | GAP 10: Change Request Process | ✅ Created | `templates/change-request-process.md` |
 
-### Still Needs Implementation
-| P2 | GAP 4: Problem Statement Template | Medium | Low | Mekaiel (transcript automation) |
-| P2 | GAP 6: Complexity Scoring + Pricing | High | Medium | Matthew (validate) |
-| P2 | GAP 7: Milestone Payments | High | Medium | Mekaiel + Matthew |
+### P2 Templates Created (Feb 16, 2026)
+| Priority | Gap | Template | Location |
+|----------|-----|----------|----------|
+| P2 | GAP 4: Problem Statement | ✅ Created | `templates/problem-statement-template.md` |
+| P2 | GAP 6: Pricing Calculator | ✅ Created | `templates/pricing-calculator.md` |
+| P2 | GAP 7: Milestone Payments | ✅ Created | `templates/milestone-payment-terms.md` |
+
+### Still Needs Implementation (P3/P4)
+| Priority | Gap | Impact | Effort | Action Item Owner |
+|----------|-----|--------|--------|-------------------|
 | P3 | GAP 1: Billable Discovery | Medium | Medium | Trent (pricing decision) |
 | P3 | GAP 3: Vibe Coding | Medium | High | Matthew (train Mekaiel) |
 | P3 | GAP 8: Functional Requirements | Medium | Low | Mekaiel |
