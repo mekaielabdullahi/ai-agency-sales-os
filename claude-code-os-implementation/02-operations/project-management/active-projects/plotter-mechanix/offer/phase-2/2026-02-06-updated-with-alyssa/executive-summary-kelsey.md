@@ -65,6 +65,20 @@ Phase 2 changes everything.
 | Fix operations | Add knowledge systems | Complete transformation |
 | 4-month payback | 3-month payback | 3-month payback |
 
+### What Support Looks Like at Each Tier
+
+We serve multiple clients and balance our attention accordingly. Your tier determines your priority level, response times, and team allocation.
+
+| Support Element | Foundation | Growth | Full Scale |
+|-----------------|------------|--------|------------|
+| Check-ins | Weekly 30min | Bi-weekly 45min | Weekly 60min |
+| Response time | 24-48 hrs | Same day | 4-6 hours |
+| Slack access | Shared channel | Dedicated channel | Premium + DMs |
+| Team hours/week | ~10 | ~20 | ~30 |
+| Priority | Standard | High | First |
+| Post-launch support | 30 days | 60 days | 90 days |
+| Your contacts | Mekaiel (PM) | Mekaiel + Matthew | Full team access |
+
 ### Your Return (Annual)
 
 **Time Freed Up:**

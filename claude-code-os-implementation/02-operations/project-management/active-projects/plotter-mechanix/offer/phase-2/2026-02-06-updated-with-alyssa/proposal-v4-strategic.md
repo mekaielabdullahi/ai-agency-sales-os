@@ -272,6 +272,28 @@ Week 9+: Contributing new knowledge
 
 ---
 
+## How We Work Together
+
+We support multiple clients simultaneously. Your investment tier determines your priority level, response times, and team allocation. Here's what that means for you:
+
+| Support Element | Foundation | Growth | Full Scale |
+|-----------------|------------|--------|------------|
+| Check-ins | Weekly 30min | Bi-weekly 45min | Weekly 60min |
+| Response time | 24-48 hrs | Same day | 4-6 hours |
+| Slack access | Shared | Dedicated | Premium + DMs |
+| Team hours/week | ~10 | ~20 | ~30 |
+| Priority | Standard | High | First |
+| Post-launch | 30 days | 60 days | 90 days |
+
+**What This Means:**
+- **Foundation:** You get our systems and standard support. We work on your project alongside others, responding within 24-48 hours.
+- **Growth:** You get more attention and faster responses. Same-day turnaround on questions, dedicated Slack channel for your team.
+- **Full Scale:** You get priority access and premium support. First in queue, direct team access, 4-6 hour response times.
+
+Higher tiers = faster responses + more dedicated time + direct access to senior team members.
+
+---
+
 ## Investment Tiers
 
 ### 🔵 Foundation - $15,000
@@ -282,6 +304,14 @@ Week 9+: Contributing new knowledge
 - Basic inventory system
 - Customer portal
 - 5 training videos
+
+**Support Level: Standard**
+- Check-in frequency: Weekly 30min call
+- Response time: 24-48 hours
+- Slack access: Shared channel
+- Team hours/week: ~10
+- Post-launch support: 30 days
+- Direct contact: Mekaiel (PM)
 
 **Focus:** Stop the bleeding, gain efficiency
 
@@ -297,6 +327,14 @@ Week 9+: Contributing new knowledge
 - Advanced inventory (or Ply integration)
 - Supplier integrations
 
+**Support Level: Priority**
+- Check-in frequency: Bi-weekly 45min strategy calls + weekly async updates
+- Response time: Same business day
+- Slack access: Dedicated channel
+- Team hours/week: ~20
+- Post-launch support: 60 days
+- Direct contacts: Mekaiel + Matthew (architecture)
+
 **Focus:** Enable delegation and scaling
 
 ---
@@ -311,6 +349,15 @@ Week 9+: Contributing new knowledge
 - Consultant booking system
 - Advanced analytics
 - Remote diagnostic tools
+
+**Support Level: Premium**
+- Check-in frequency: Weekly 60min strategy calls + daily async during sprints
+- Response time: 4-6 hours
+- Slack access: Dedicated channel + direct DMs
+- Team hours/week: ~30
+- Post-launch support: 90 days
+- Direct contacts: Full team access
+- Priority: First in queue for all requests
 
 **Focus:** Become a knowledge business
 
