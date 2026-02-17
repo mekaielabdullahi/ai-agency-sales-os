@@ -4,7 +4,7 @@
 
 **Date:** February 12, 2026
 **Prepared For:** Kelsey Hartzell, Plotter Mechanix
-**Prepared By:** AI Agency Development Team
+**Prepared By:** AI Agency Development Team (Technology Infrastructure Partner)
 **Status:** Updated Proposal Following Stakeholder Interviews
 
 ---
@@ -13,7 +13,9 @@
 
 Plotter Mechanix generated $850,000 in 2025. But thinking $1 million for 2026 is thinking too small. You have the expertise, reputation, and market position to eventually 10x this business to $8.5 million.
 
-**The Game Changer:** Andrew brings $2M+/year Amazon supplies experience and 25 years as an HP Supply Partner. Your 10,000 contacts ALL buy supplies somewhere - why not from you?
+**The Team Dynamic:** Andrew recently joined Plotter Mechanix as their supplies business lead, bringing proven success in supplies distribution and 25 years as an HP Supply Partner. Our role is to build the technology infrastructure that enables Andrew to deploy his expertise at scale.
+
+**The Game Changer:** Andrew's proven supplies expertise combined with your 10,000 contacts ALL buying supplies somewhere - why not from you?
 
 **Phase 2 Mission:** Build the operational foundation that makes 10x possible. Deploy Andrew's supplies expertise, liberate Kelsey from daily chaos, consolidate the 10,000+ contact database, and create systems that can handle exponential growth.
 
@@ -41,7 +43,7 @@ Plotter Mechanix generated $850,000 in 2025. But thinking $1 million for 2026 is
 ### Critical Bottlenecks Identified
 
 1. **10,000+ Contacts in Chaos:** Duplicated across Capsule, QuickBooks, Jobber, Outlook - each worth $850/year at 10x scale
-2. **Zero Supplies Revenue:** Andrew has $2M/year expertise, but no system to deploy it
+2. **Supplies Revenue Opportunity:** Andrew has proven expertise and could build his own systems, but we can make them AI-native and optimized with custom automations tailored to his workflows
 3. **Training Takes Forever:** 120-200 hours of Kelsey's time per new tech
 4. **Communication Chaos:** 10+ email inboxes, no integration, constant confusion
 5. **No Knowledge Transfer:** 25 years of expertise trapped in Kelsey's head
@@ -50,29 +52,41 @@ Plotter Mechanix generated $850,000 in 2025. But thinking $1 million for 2026 is
 
 ---
 
-## Hidden Gold Mine #1: Andrew's Supplies Expertise
+## Hidden Gold Mine #1: Enabling Andrew's Supplies Integration
 
-**What You Have:**
-- Andrew: $2M+/year Amazon supplies track record
-- 25 years as HP Supply Partner
-- Deep vendor relationships and margin knowledge
-- 10,000 contacts who ALL buy supplies somewhere
+**What Plotter Mechanix Has:**
+
+- Andrew: Recently joined as supplies lead with proven success in printer supplies sales
+- His 25 years of HP Partner relationships and vendor networks
+- Deep knowledge of margin optimization and obscure part sourcing
+- Ability to source parts at better prices than competitors
+- 10,000 customers who need supplies
+
+**Our Agency's Role:**
+
+- Interview Andrew comprehensively to understand his vision, systems, and how he operates
+- Build technology infrastructure matching his workflows
+- Automate repetitive tasks so Andrew focuses on strategy
+- Enable his expertise to scale across all 10,000 contacts
 
 **The Math Is Staggering:**
+
 - 10,000 contacts buying supplies elsewhere
 - Average customer: $500-2,000/year in supplies
 - Capture just 20% = 2,000 customers
-- 2,000 × $1,000 average = $2M supplies revenue
-- At 25-40% margins = $500K-$800K profit
+- 2,000 × $1,000 average = Significant supplies revenue
+- At 25-40% margins = Strong profit potential
 
 **Why This Works NOW:**
-- Andrew just joined your team
+
+- Andrew recently joined Plotter Mechanix directly
 - He knows the suppliers, margins, and systems
 - Your service relationships = trusted supplies vendor
 - Bundle service + supplies = customer retention
 - Phase 2 builds the platform to scale this
 
 **What Phase 2 Enables for Supplies:**
+
 - Automated reorder reminders
 - Customer portal for easy ordering
 - Integration with service history (we know their equipment)
@@ -129,9 +143,9 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 ## Phase 2's Five Pillars (Foundation for 10x)
 
-### Pillar 1: Unleash Andrew's $2M Supplies Machine
+### Pillar 1: Support Andrew's Supplies Integration
 
-**Deploy his 25 years of HP expertise to your 10,000 contacts**
+**Discover and address Andrew's technology needs through comprehensive assessment and adaptive solutions**
 
 ### Pillar 2: Activate Your 10,000 Contact Goldmine
 
@@ -214,15 +228,15 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 **Alyssa's Real Workflow (Not Just "Email"):**
 
-| Current Task            | Hours/Week | Automated Solution   | Hours Saved |
-| ----------------------- | ---------- | -------------------- | ----------- |
-| Supplier quotes/orders  | 6 hrs      | Catalog integration  | 4 hrs       |
-| Customer → Job creation | 5 hrs      | Auto-job generation  | 3 hrs       |
-| Parts research          | 4 hrs      | Smart parts database | 3 hrs       |
-| Invoice processing      | 3 hrs      | Automated processing | 2 hrs       |
-| Status updates          | 3 hrs      | Customer portal      | 2 hrs       |
-| Coordination            | 4 hrs      | Unified dashboard    | 2 hrs       |
-| **Total**               | **25 hrs** | **Unified Platform** | **16 hrs**  |
+| Current Task            | Hours/Week | Automated Solution     | Hours Saved |
+| ----------------------- | ---------- | ---------------------- | ----------- |
+| Supplier quotes/orders  | 6 hrs      | Ply catalog workflows  | 4 hrs       |
+| Customer → Job creation | 5 hrs      | Auto-job generation    | 3 hrs       |
+| Parts research          | 4 hrs      | Ply integration assist | 3 hrs       |
+| Invoice processing      | 3 hrs      | Automated processing   | 2 hrs       |
+| Status updates          | 3 hrs      | Customer portal        | 2 hrs       |
+| Coordination            | 4 hrs      | Unified dashboard      | 2 hrs       |
+| **Total**               | **25 hrs** | **Unified Platform**   | **16 hrs**  |
 
 **Unified Operations Platform Features:**
 
@@ -231,7 +245,6 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 - Create Jobber entries automatically
 - Streamline invoice workflow
 - Customer self-service portal
-- Mobile vacation coverage
 
 **Communication Fix (Chris's Priority):**
 
@@ -250,26 +263,53 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 ---
 
+## Andrew Discovery & Support Plan
+
+### Initial Discovery (1.5-2 hours)
+
+After Andrew has been with Plotter Mechanix for 2-3 weeks, we'll conduct a comprehensive discovery session to understand:
+
+- **Current Integration:** How he's settling into Plotter Mechanix workflows
+- **Pain Points:** What's slowing him down or creating friction
+- **Technology Gaps:** What tools he needs but doesn't have
+- **Opportunities:** Where automation could multiply his effectiveness
+- **Priorities:** What would help him most in the next 30-60 days
+
+### Adaptive Solutions (Based on Discovery)
+
+Rather than prescribe solutions, we'll build based on what we learn:
+
+- Technology infrastructure tailored to his actual needs
+- Automation for his specific bottlenecks
+- Integration with his preferred vendor systems
+- Tools that complement his existing processes
+
+The specific deliverables for Andrew will be defined AFTER the discovery call, ensuring we build exactly what he needs to succeed.
+
+---
+
 ## Pillar 3: New Revenue Enablement
 
-### Unlock the $2M+ You're Leaving on the Table
+### Unlock the Revenue You're Leaving on the Table
 
 **1. Andrew's Supplies Empire (THE BIG OPPORTUNITY)**
 
 **Andrew's Proven Track Record:**
-- **$2M+/year selling printing supplies on Amazon**
+
+- **Proven success in printer supplies distribution**
 - **25 years as HP Supply Partner**
 - Deep relationships with distributors
 - Knows margin optimization strategies
-- Already integrated into your team
+- Recently joined Plotter Mechanix team
 
 **The Immediate Opportunity:**
+
 - Your 10,000 contacts ALL need supplies
 - Current: They buy elsewhere
 - Future: Automated supplies business
 - Conservative estimate: 2,000 active customers × $500/year supplies = $1M
-- With Andrew's expertise: Scale to $2M+ within 18 months
-- **Potential Revenue: $1,000,000 - $2,000,000/year**
+- With Andrew's expertise: Significant growth within 18 months
+- **Potential Revenue: Significant supplies revenue potential**
 
 **2. Enterprise Contracts**
 
@@ -300,32 +340,33 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 ## Implementation Options
 
-### Phase 2A: Liberation Foundation + Contact Gold Mine
+### Phase 2A: Liberation Foundation + Andrew Integration
 
 **Investment: $15,000 | Timeline: 4 weeks**
 
 **Deliverables:**
 
-- **Contact Database Consolidation (20 hours dev time)**
-  - Audit all systems (Capsule, QuickBooks, Jobber, Outlook)
-  - Identify and merge duplicates
-  - Create master contact record structure
-  - Build initial sync connections
+- **Andrew Integration Support**
+  - Extended discovery session (2-3 hours)
+  - Initial workflow automation for his priorities
+  - Basic supplies ordering system
+  - Integration with existing tools
+  - Custom solutions based on his needs
 - Stakeholder interviews (5-6 sessions @ $1,500 total)
+  - Andrew: Deep discovery and needs assessment
   - Megan: Ply platform integration needs
-  - Andrew: Supplies workflow and systems
   - Joe: Advanced troubleshooting gaps
-  - Alyssa: Deep dive on communication workflows
+  - Alyssa: Communication workflow analysis
 - 8-10 priority training videos
 - Basic knowledge base structure
 - Email consolidation system
-- Equipment database structure
 - Morning coordination optimizer
-- After-hours voice assistant (test mode)
+- After-hours voice assistant
+- Basic operational automations
 
 **Success Metrics:**
 
-- 10,000 contacts unified and deduplicated
+- Andrew operating efficiently in new role
 - Joe at 40% independence (up from 30%)
 - Save 5 hours/week of Kelsey time
 - 25% reduction in morning chaos
@@ -339,22 +380,28 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 **Everything in 2A plus:**
 
-- **Supplies Business Automation (Andrew's Domain)**
+- **Contact Database Consolidation**
+  - Audit all systems (Capsule, QuickBooks, Jobber, Outlook)
+  - Microsoft Shared Mailbox setup
+  - Identify and merge duplicates
+  - Create master contact record structure
+  - Power Automate sync workflows
+  - Master Data Steward process setup
+- **Advanced Andrew Support & Supplies Automation**
   - Customer equipment database (know what they own)
   - Automated supplies recommendations
   - Reorder reminder system
   - Margin optimization tools
-  - Vendor catalog integration
+  - Ply-Jobber sync optimization
   - Bundle service + supplies quotes
-- **Advanced Contact Activation (40 hours dev time)**
-  - Automated nurturing campaigns
-  - Service history analysis
-  - Revenue opportunity scoring
-  - Dormant account reactivation
-  - Contract renewal automation
+  - Follow-up sessions and iterative improvements
 - Extended stakeholder interviews ($2,000 total for 7-8 sessions)
   - All Phase 2A interviews plus:
-  - **Andrew deep dive: Supplies systems and margins**
+  - Andrew follow-up sessions (scope TBD based on Phase 2A discovery):
+    - Additional workshops as needed
+    - Solution validation sessions
+    - Training on any new systems
+    - Iterative feedback and adjustments
   - Joe's brother: Shop operations and support role
   - Joe (2nd session): Field experience feedback
   - Alyssa (2nd session): Testing automation workflows
@@ -383,12 +430,12 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 **Everything in 2B plus:**
 
-- **Full Contact Revenue Maximization (60 hours dev time)**
-  - AI-powered opportunity identification
-  - Automated cross-sell/upsell engine
-  - Predictive service scheduling
-  - Partner referral tracking
-  - Revenue attribution system
+- **Complete Contact Infrastructure (35 hours dev time)**
+  - Advanced data quality controls
+  - Automated deduplication engine
+  - Historical data preservation
+  - Multi-system sync reliability
+  - Segmentation enforcement tools
 - Complete 30-video library
 - Advanced AI with learning capability
 - Full workflow automation
@@ -412,17 +459,20 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 ### Phase 2 Direct Returns (Including Andrew's Supplies)
 
-| Phase         | Investment | Year 1 Return       | Payback Period |
-| ------------- | ---------- | ------------------- | -------------- |
-| 2A Foundation | $15,000    | $150,000-$250,000   | 3-4 weeks      |
-| 2B Growth     | $28,000    | $400,000-$750,000   | 2-3 weeks      |
-| 2C Platform   | $45,000    | $800,000-$1,500,000 | 2 weeks        |
+| Phase         | Investment | Year 1 Return                                                        | Payback Period |
+| ------------- | ---------- | -------------------------------------------------------------------- | -------------- |
+| 2A Foundation | $15,000    | $150,000-$250,000                                                    | 3-4 weeks      |
+| 2B Growth     | $28,000    | Enables Andrew to capture $400K-$750K (multiplies his baseline 3-5x) | 2-3 weeks      |
+| 2C Platform   | $45,000    | $800,000-$1,500,000                                                  | 2 weeks        |
 
-### The Andrew Factor Alone
-- His expertise: $2M/year proven on Amazon
-- Your advantage: 10,000 warm contacts who trust you
-- Conservative capture: 20% = $400K immediate revenue
-- Realistic potential: $1M+ in Year 1
+### The Partnership ROI: Andrew + AI Infrastructure
+
+- **Andrew's baseline value:** Proven supplies expertise worth $200-300K/year manually
+- **Our technology multiplier:** 3-5x reach amplification through automation
+- **Combined potential:** $600K-$1.5M supplies revenue with proper systems
+- **Key insight:** We don't generate the revenue - we remove friction so Andrew can
+- **Risk mitigation:** Andrew can execute without burning out or hiring large team
+- **True ROI:** Turning Andrew's 15 hours/week into $1M+ annual revenue stream
 
 ### Contact Database Preparation (Enables Future 10x)
 
@@ -457,7 +507,12 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 - **Stakeholder Interviews (Round 1):**
   - Megan: Ply platform capabilities (1.5 hrs)
-  - Andrew: Supplies workflow mapping (1.5 hrs)
+  - **Andrew Discovery Session (1.5-2 hours):**
+    - Learn about his integration with Plotter Mechanix
+    - Understand his current workflows and challenges
+    - Identify immediate needs and pain points
+    - Prioritize technology support requirements
+    - Define success metrics together
   - Joe: Training needs assessment (1 hr)
 - Set up unified dashboard
 - Record first 3 training videos based on Joe's input
@@ -466,86 +521,121 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 - Test after-hours voice assistant setup
 - **Validation:** Joe reviews videos, dashboard operational
 
-### Week 2: Knowledge Capture
+### Week 2: Knowledge Capture & Andrew Solutions
 
 - **Stakeholder Interviews (Round 2):**
   - Alyssa: Deep communication audit (2 hrs)
   - Joe's brother: Shop role definition (1 hr)
+- Solutions built based on Week 1 Andrew discovery findings
+- Andrew involved in design decisions as needed
 - Record 5 more training videos
 - Build mobile app structure
-- Set up supplier catalogs (using Andrew's input)
+- Configure Ply workflows (based on Andrew's discovery input)
 - Design voice interface
 - **Validation:** Field test with Joe
 
-### Week 3: Integration
+### Week 3: Integration & Iteration
 
 - Connect Jobber automation
 - Launch customer portal
 - Deploy AI assistant beta
 - Create equipment database
-- **Validation:** Alyssa workflow test
+- Continue iterative development with Andrew's feedback
+- Focus on his highest-priority needs
+- **Validation:** Alyssa workflow test, Andrew solutions review
 
-### Week 4: Automation
+### Week 4: Automation & Refinement
 
 - **Follow-up Interviews:**
   - Joe: Testing mobile tools feedback (1 hr)
   - Alyssa: Automation adjustments (1 hr)
+  - Andrew: Solutions feedback session (if needed)
 - Activate job auto-creation
 - Enable smart routing
-- Launch parts database
+- Support Ply integration setup
 - Test contract tracking
 - **Validation:** Live customer test with stakeholder sign-off
 
-### Week 5: Enhancement
+### Week 5-6: Validation & Enhancement
 
 - **Final Validation Interviews:**
-  - Andrew: Supplies portal review (1 hr)
+  - Andrew tests any new systems or tools
+  - Gather feedback and make adjustments
+  - Ensure solutions actually solve his problems
+  - Training on new processes as needed
   - Team group session: System walkthrough (1.5 hrs)
 - Record advanced modules
 - Refine AI responses
 - Optimize workflows based on feedback
 - Add reporting dashboards
-- **Validation:** Full team training and acceptance
-
-### Week 6: Scale Preparation
-
 - Complete video library
 - Finalize mobile apps
 - Document procedures
-- Train Andrew on systems
-- **Validation:** 3-day Kelsey absence test
+- **Validation:** Full team training and acceptance
+- **Final Test:** 3-day Kelsey absence test
 
 ---
 
-## Why Andrew + Your Contacts = Immediate Gold
+## How AI Infrastructure Multiplies Andrew's Expertise
 
 ### The Perfect Storm of Opportunity
 
 **Andrew's Assets:**
-- Proven $2M+/year on Amazon
+
+- Proven success in printer supplies distribution
 - 25 years HP Supply Partner experience
-- Knows every margin trick
+- Knows every margin optimization strategy
 - Deep vendor relationships
 - Ready to execute NOW
 
 **Your Assets:**
+
 - 10,000 contacts who trust you
 - Know exactly what equipment they have
 - Service relationship = supplies trust
 - They're buying supplies somewhere already
 
 **Phase 2 Bridge:**
+
 - Organize the contact chaos
 - Build automated supplies platform
 - Enable Andrew to scale
 - Bundle service + supplies
 - Capture revenue immediately
 
-**Conservative Math:**
-- 10% of contacts buy supplies from you = 1,000 customers
-- $1,000 average supplies/year = $1M revenue
-- 30% margin = $300K profit
-- **This alone pays for Phase 2 in 6 weeks**
+**The Partnership Multiplier Effect:**
+
+- Andrew's baseline capability: Could manually reach ~200 contacts/year
+- With our AI-native infrastructure: Can systematically reach 1,000+ contacts
+- Andrew executes the supplies business; we provide the scale infrastructure
+- $1,000 average supplies/year × enhanced reach = significant revenue acceleration
+- **Our value:** 5x multiplier on Andrew's reach without adding to his workload
+- **Critical note:** Revenue depends on Andrew's execution, not just our systems
+
+## Understanding Value Creation in the Partnership
+
+### What Andrew Brings (Independent of Technology)
+
+- Proven supplies distribution expertise
+- 25+ years of vendor relationships and margin knowledge
+- Ability to source obscure parts at competitive prices
+- Execution capability and industry credibility
+- **Baseline potential:** Could generate $200-300K annually through manual outreach
+
+### What Our AI Infrastructure Adds
+
+- Systematic contact organization (10,000 relationships accessible)
+- Automated workflow management (saves 10-15 hours/week)
+- AI-native processes from day one (no legacy habits to break)
+- Scalable fulfillment without proportional time investment
+- **Multiplier effect:** Enables 5x the customer reach with same effort
+
+### The Synergy
+
+- Andrew's expertise + Our infrastructure = $1M+ opportunity
+- Neither creates full value alone - it's the partnership that unlocks potential
+- We optimize the Kelsey-Andrew collaboration through technology
+- Success requires both: Andrew's execution AND our systems
 
 ---
 
@@ -569,7 +659,7 @@ You can't scale chaos. Phase 2 builds the infrastructure to handle 10x volume BE
 
 - Joe eager for training tools
 - Alyssa drowning, needs automation
-- **Andrew: $2M/year supplies track record ready to deploy**
+- **Andrew: Proven supplies track record ready to deploy**
 - Kelsey ready to scale beyond daily grind
 - Perfect timing with all pieces in place
 
@@ -667,13 +757,22 @@ If Joe isn't at 60% independence by week 8, we continue support at no charge unt
 
 ### Phase 2 Outcomes (What This Proposal Delivers)
 
-**In 60 Days:** Contact database unified, supplies business launched with Andrew, Joe largely independent, Kelsey freed from chaos, trending to $1.5M run rate.
+**In 60 Days:** Contact database unified for Andrew to leverage, Andrew executing supplies strategy with AI support, Joe largely independent, Kelsey freed from chaos, business trending to $1.5M run rate.
 
-**In 6 Months:** Supplies generating $50K+/month, working from Pinetop occasionally, 2-3 trained technicians, organized systems, $2.5M run rate achievable.
+**In 6 Months:** Andrew driving $50K+/month in supplies with our infrastructure, Kelsey working from Pinetop occasionally, 2-3 trained technicians, organized systems supporting $2.5M run rate.
 
 ### Future Phases (What Comes Next)
 
-**Phase 3 (Months 7-12):** Launch marketing engine, aggressive hiring, leverage organized database, push to $3-4M run rate.
+**Phase 3 - Marketing & Expansion (Months 7-12):**
+
+- Launch marketing engine with organized database
+- Automated nurturing campaigns
+- Dormant account reactivation
+- Cross-sell/upsell campaigns
+- Revenue opportunity scoring
+- Service history marketing
+- Aggressive hiring
+- Push to $3-4M run rate
 
 **Phase 4 (Year 2):** Multi-location expansion, 10+ person team, platform monetization, $5-6M run rate.
 
@@ -687,15 +786,16 @@ If Joe isn't at 60% independence by week 8, we continue support at no charge unt
 
 ### Choose Phase 2A ($15K) If:
 
-- Want to start with contact consolidation
+- Want to start with Andrew integration support
 - Need immediate relief from chaos
-- Testing the 10x vision
+- Testing the waters with basic automation
 
 ### Choose Phase 2B ($28K) If: ⭐
 
 - Committed to 10x growth
-- Ready to activate your contact goldmine
-- Want maximum ROI in 6 weeks
+- Ready to consolidate contact database
+- Want Andrew fully enabled with supplies automation
+- Need complete operational foundation
 
 ### Choose Phase 2C ($45K) If:
 
