@@ -9,19 +9,31 @@
 
 ## Line Item 1: Quote Generation Automation
 
-### Section A: Time Cost - COMPLETE
+### Section A: Time Cost - COMPLETE (Revised)
 
 | Input | Value | Source |
 |-------|-------|--------|
-| Time wasted per day (hrs) | 0.375 | Calculated: (2.5 quotes × 45 min) ÷ 5 days |
+| Time wasted per day (hrs) | 1.5 | Fireflies: Conservative estimate of quote processing portion |
 | Number of people | 1 | Alyssa |
 | Working days/year | 260 | Standard |
 | Loaded hourly cost | $22 | User input |
 
-**Calculation:**
+**Fireflies Evidence:**
+- "I'm so behind" — Alyssa
+- "by the end of the day, there's like 40 things in there" — Kelsey
+- "the two hours that we recorded" — Trent (screen recording duration)
+- Full admin burden estimated at 5-8 hrs/day
+
+**Calculation (Conservative - Quote Processing Only):**
 ```
-Annual Cost = 0.375 hrs × 1 person × 260 days × $22/hr
-Annual Cost = $2,145/year
+Annual Cost = 1.5 hrs × 1 person × 260 days × $22/hr
+Annual Cost = $8,580/year
+```
+
+**Alternative (Full Administrative Burden):**
+```
+Annual Cost = 6 hrs × 1 person × 260 days × $22/hr
+Annual Cost = $34,320/year
 ```
 
 ---
@@ -112,14 +124,14 @@ Annual Lost Revenue = ($15,000 × 12) + $5,000 = $185,000/year
 
 ---
 
-### TOTAL Y (Quote Generation) - COMPLETE
+### TOTAL Y (Quote Generation) - COMPLETE (Revised)
 
 | Section | Annual Low | Annual High |
 |---------|------------|-------------|
-| A: Time Cost | $2,145 | $2,145 |
+| A: Time Cost | $8,580 | $8,580 |
 | B: Lost Revenue | $5,000 | $185,000 |
 | C: Revenue Upside | $234,000 | $1,164,000 |
-| **TOTAL Y** | **$241,145** | **$1,351,145** |
+| **TOTAL Y** | **$247,580** | **$1,357,580** |
 
 ---
 

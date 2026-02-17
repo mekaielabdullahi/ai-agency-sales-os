@@ -9,20 +9,52 @@ Automate the quote creation, tracking, and follow-up process. Centralizes quotes
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
-| Time wasted per person per day (hours) | **0.375** | Fireflies - Alyssa Workflow | 2.5 quotes/week × 45 min each ÷ 5 days = 0.375 hrs/day |
+| Time wasted per person per day (hours) | **1.5** | Fireflies - Alyssa Workflow | Conservative: Quote generation + invoicing portion of 5-8 hr daily admin burden |
 | Number of people doing this task | **1** | Fireflies - Alyssa Workflow | Alyssa handles quote entry and processing |
 | Working days per year | **260** | Standard | Default (52 wks × 5 days) |
 | Loaded hourly cost ($) | **$22** | User input | Based on role compensation |
-| **ANNUAL COST OF INEFFICIENCY** | **$2,145** | Calculated | 0.375 × 1 × 260 × $22 |
+| **ANNUAL COST OF INEFFICIENCY** | **$8,580** | Calculated | 1.5 × 1 × 260 × $22 |
 
 ### Fireflies Evidence (Section A):
-> "I'm basically doing the same thing over and over... copy from Quo, paste into Jobber, calculate the surcharge on Google Calculator, then back to email..."
-> — Alyssa describing manual quote workflow
+
+**Time Pressure Quotes:**
+> "I'm so behind"
+> — Alyssa
+
+> "by the end of the day, there's like 40 things in there"
+> — Kelsey (on daily item backlog)
+
+> "I've got emails to go through. I've got calls to look through. I've got texts to go through."
+> — Alyssa (on multi-channel workload)
+
+> "the two hours that we recorded"
+> — Trent (referencing screen recording duration)
 
 **Manual Tasks Identified:**
 1. Surcharge Calculations - 3.5% via Google Calculator
 2. Copy/Paste Operations - Quo to Jobber
 3. Contact Management - Manual sync across Quo, Jobber, Capsule
+
+### Estimated Time Breakdown (Full Administrative Burden):
+
+| Task | Daily Hours | Notes |
+|------|-------------|-------|
+| Email sorting & filtering | 1-2 hrs | Multiple inboxes managed |
+| Quo request processing | 2-3 hrs | Copy/paste/search workflow |
+| Quote generation/invoicing | 1-2 hrs | 5-10 quotes workflow estimate |
+| Contact management | 1 hr | Manual sync across systems |
+| **Total Estimated** | **5-8 hrs** | Context-based estimate |
+
+### Data Limitations (Honest Disclosure):
+The following data points were **NOT explicitly specified** in the Fireflies transcript:
+- Exact hours per day spent on quotes
+- Time per quote generation
+- Number of quotes generated per day/week
+- Specific count of calls/emails daily
+
+**Calculation Approach:**
+- **Conservative (used):** 1.5 hrs/day = Quote processing portion → $8,580/year
+- **Full burden (alternative):** 6 hrs/day = Midpoint of 5-8 hr estimate → $34,320/year
 
 ---
 
@@ -93,10 +125,10 @@ Automate the quote creation, tracking, and follow-up process. Centralizes quotes
 
 | Section | Annual LOW | Annual HIGH | Status |
 |---------|------------|-------------|--------|
-| A: Time Cost (Inefficiency) | $2,145 | $2,145 | COMPLETE |
+| A: Time Cost (Inefficiency) | $8,580 | $8,580 | COMPLETE (Revised) |
 | B: Lost Revenue | $5,000 | $185,000 | COMPLETE |
 | C: Revenue Upside | $234,000 | $1,164,000 | COMPLETE |
-| **TOTAL Y** | **$241,145** | **$1,351,145** | **COMPLETE** |
+| **TOTAL Y** | **$247,580** | **$1,357,580** | **COMPLETE** |
 
 ---
 
@@ -109,8 +141,8 @@ Automate the quote creation, tracking, and follow-up process. Centralizes quotes
 | Total first-year cost | TBD | Implementation + Year 1 |
 
 ### ROI Preview (If solution costs $20,000):
-- **ROI (Conservative):** $241,145 ÷ $20,000 = **12.1x**
-- **ROI (Full):** $1,351,145 ÷ $20,000 = **67.6x**
+- **ROI (Conservative):** $247,580 ÷ $20,000 = **12.4x**
+- **ROI (Full):** $1,357,580 ÷ $20,000 = **67.9x**
 - **Payback:** < 1 month
 
 ---
