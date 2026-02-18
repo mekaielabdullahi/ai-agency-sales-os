@@ -152,3 +152,21 @@ Mekaiel
 - **Timing:** Cron Tue-Thu 9-11am, respects day gaps between emails
 - **Inbox rotation:** Round-robin across 15 inboxes, max 30/inbox/day
 - **Thread:** Emails 2-4 reply to Email 1's Message-ID for threading
+
+---
+
+## Verified Claims
+
+All metrics in these emails verified against Fireflies transcripts (Feb 16, 2026):
+
+| Claim in Email | Verified | Source |
+|----------------|----------|--------|
+| "1,378% ROI" | ✅ | Calculation: ($73K / $5K - 1) × 100 |
+| "25 hours/week" (Alyssa before) | ✅ | Alyssa Interview, Phase 2 Proposal |
+| "15 hours back" (Alyssa saved) | ✅ | 25 hrs → 10 hrs = 15 hrs saved |
+| "$175/hr wrench-turner" | ✅ | Feb 3 Coach Call, Jobber data |
+| "$300-500/hr consultant" | ✅ (in progress) | Target rate, transformation ongoing |
+| "$5K investment" | ✅ | Phase 1 Quick Win Sprint |
+| "$73K+ annually" | ✅ | ROI calculation methodology |
+
+**Full verification:** See `conviction/SOURCE-CITATIONS.md`

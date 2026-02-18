@@ -71,3 +71,19 @@
 ## Thumbnail
 
 Use Loom's auto-generated thumbnail or set a custom one showing the ROI metric (1,378%) on screen.
+
+---
+
+## Verified Talking Points
+
+All metrics in this script verified against Fireflies transcripts (Feb 16, 2026):
+
+| Claim | Verified | Source |
+|-------|----------|--------|
+| 25 hrs/week → 10 hrs/week | ✅ | Alyssa Interview, Phase 2 Proposal |
+| $175/hr tech → $300-500/hr consultant | ✅ (in progress) | Feb 3 Coach Call, Discovery |
+| $5K investment | ✅ | Phase 1 deliverables |
+| $73K+ annual value | ✅ | ROI calculation methodology |
+| 1,378% ROI | ✅ | Math verified |
+
+**Full verification:** See `conviction/SOURCE-CITATIONS.md`

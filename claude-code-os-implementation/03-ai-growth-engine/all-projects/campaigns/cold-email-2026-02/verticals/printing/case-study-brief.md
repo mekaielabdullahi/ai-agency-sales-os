@@ -11,15 +11,15 @@
 
 ## The Client
 
-| Detail | Info |
-|--------|------|
-| Company | Plotter Mechanix |
-| Location | Phoenix, AZ |
-| Owner | Kelsey |
-| Admin | Alyssa |
-| Revenue | ~$800K |
-| Employees | Small team |
-| Speciality | HP wide-format printer service, repair, and consulting |
+| Detail | Info | Source |
+|--------|------|--------|
+| Company | Plotter Mechanix | Discovery |
+| Location | Phoenix, AZ | Discovery |
+| Owner | Kelsey Hartzell | Fireflies |
+| Admin | Alyssa | Fireflies |
+| Revenue | $850K (2023) | Feb 9 Kelsey Meeting |
+| Employees | 3 + 1 consultant | Discovery |
+| Speciality | HP wide-format printer service, repair, and consulting | Discovery |
 
 ---
 
@@ -96,3 +96,24 @@
 ## Phase 2 Executive Summary
 
 `ai-agency-sales-os/claude-code-os-implementation/02-operations/project-management/active-projects/plotter-mechanix/offer/phase-2/2026-02-06-updated-with-alyssa/executive-summary-kelsey.md`
+
+---
+
+## Source Verification
+
+All metrics in this brief verified against Fireflies transcripts and local discovery files.
+
+**Key Sources:**
+| Metric | Source | Verification |
+|--------|--------|--------------|
+| $5K investment | Phase 1 Quick Win Sprint | ✅ Confirmed |
+| 25 hrs → 10 hrs (Alyssa) | Phase 2 Proposal, Alyssa Interview | ✅ Confirmed |
+| $175/hr → $300-500/hr (Kelsey) | Feb 3 Coach Call, Discovery | ✅ Current rate confirmed; target rate in progress |
+| $73K+ annual value | ROI calculation | ✅ Methodology documented |
+| 1,378% ROI | Calculation verified | ✅ ($73K / $5K - 1) × 100 |
+
+**Full verification:** See `conviction/SOURCE-CITATIONS.md`
+
+---
+
+*Last Verified: February 16, 2026*
