@@ -65,8 +65,8 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 | What is being lost? | **Quotes slipping through cracks + mistakes** | Fireflies - Kelsey | Leads not followed up, wrong parts ordered |
 | Volume affected per month | **15** | Fireflies - Kelsey | "15 quotes I sent out that I never followed up on" |
 | % lost due to this problem | **50%** | Industry benchmark | Conservative estimate for unfollowed quotes |
-| Value per unit ($) | **$1,500** | Industry benchmark | Blended avg: service + parts (AllTech, DMW research) |
-| **ANNUAL LOST REVENUE** | **$135,000** | Calculated | 15 × 50% × $1,500 × 12 months |
+| Value per unit ($) | **$750** | Jobber data | Mean of 460 service invoices |
+| **ANNUAL LOST REVENUE** | **$67,500** | Calculated | 15 × 50% × $750 × 12 months |
 
 ### Fireflies Evidence (Section B):
 
@@ -78,16 +78,21 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 
 **Calculation Notes:**
 - Conservative: $5,000/year (documented mistake only)
-- With unfollowed quotes: $135,000/year + $5,000 mistake = **$140,000/year**
+- With unfollowed quotes: $67,500/year + $5,000 mistake = **$72,500/year**
 
-### Industry Benchmark Sources (Value per Unit):
-| Company | Location | Rate |
-|---------|----------|------|
-| AllTech Imaging | San Diego | $189 flat / $105/hr |
-| Digital Media Warehouse | National | $203.50/hr |
-| Premier Colour | Costa Mesa | $170/hr (2hr min) |
+### Jobber Invoice Analysis (Value per Unit):
+**Source:** Plotter Mechanix Jobber export (1,730 invoices, Feb 2026)
 
-**Blended average rationale:** $1,500 accounts for typical service calls ($300-500) plus parts and occasional complex repairs ($800-1,500). Falls within Fireflies range ($1,500-$3,000) from Kelsey.
+| Metric | Service Calls |
+|--------|---------------|
+| Count | 460 |
+| Mean | $746.58 |
+| Median | $426.94 |
+| 75th percentile | $806.25 |
+
+**Value used:** $750 (rounded mean) - accounts for mix of routine repairs ($200-500) and complex jobs ($1,000+).
+
+**Note:** Kelsey's verbal estimate of "$1,500-$3,000" likely refers to larger, complex jobs (top 20% of service calls). The real Jobber data shows 46% of service calls are $200-500 (simple repairs).
 
 ---
 
@@ -135,9 +140,9 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 | Section | Annual LOW | Annual HIGH | Status |
 |---------|------------|-------------|--------|
 | A: Time Cost (Inefficiency) | $8,580 | $8,580 | COMPLETE (Revised) |
-| B: Lost Revenue | $5,000 | $140,000 | COMPLETE (Revised) |
+| B: Lost Revenue | $5,000 | $72,500 | COMPLETE (Jobber Data) |
 | C: Revenue Upside | $234,000 | $1,164,000 | COMPLETE |
-| **TOTAL Y** | **$247,580** | **$1,312,580** | **COMPLETE** |
+| **TOTAL Y** | **$247,580** | **$1,245,080** | **COMPLETE** |
 
 ---
 

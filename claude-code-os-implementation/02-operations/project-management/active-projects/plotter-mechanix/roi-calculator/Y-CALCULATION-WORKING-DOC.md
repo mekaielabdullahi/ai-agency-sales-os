@@ -38,37 +38,40 @@ Annual Cost = $34,320/year
 
 ---
 
-### Section B: Lost Revenue - COMPLETE
+### Section B: Lost Revenue - COMPLETE (Jobber Data)
 
 | Input | Value | Source |
 |-------|-------|--------|
 | What's being lost | Leads "slip through cracks" + mistakes | Fireflies + Discovery |
 | Documented mistake | $5,000 (Tucson trip - wrong part) | Fireflies meeting |
 | Unfollowed quotes | 15+ quotes with no follow-up | "15 quotes I sent out that I never followed up on" |
-| Quote value | $1,500-$3,000/job | Service job pricing |
+| Quote value | $750 | Jobber data (mean of 460 service invoices) |
 | Lost conversion (est) | 50% of unfollowed quotes | Industry standard |
 
-**Calculation (Conservative):**
+**Calculation:**
 ```
-Lost from unfollowed quotes: 15 quotes × 50% lost × $1,500 avg = $11,250/month
+Lost from unfollowed quotes: 15 quotes × 50% lost × $750 avg = $5,625/month
 Lost from mistakes: $5,000/year (documented)
-Annual Lost Revenue = ($11,250 × 12) + $5,000 = $140,000/year
+Annual Lost Revenue = ($5,625 × 12) + $5,000 = $72,500/year
 ```
 
-**Industry Benchmark Sources (Value per Unit):**
-| Company | Location | Rate |
-|---------|----------|------|
-| AllTech Imaging | San Diego | $189 flat / $105/hr |
-| Digital Media Warehouse | National | $203.50/hr |
-| Premier Colour | Costa Mesa | $170/hr (2hr min) |
+**Jobber Invoice Analysis (Value per Unit):**
+**Source:** Plotter Mechanix Jobber export (1,730 invoices, Feb 2026)
 
-**Blended average rationale:** $1,500 accounts for typical service calls ($300-500) plus parts and occasional complex repairs ($800-1,500).
+| Metric | Service Calls |
+|--------|---------------|
+| Count | 460 |
+| Mean | $746.58 |
+| Median | $426.94 |
+| 75th percentile | $806.25 |
+
+**Value used:** $750 (rounded mean) - accounts for mix of routine repairs ($200-500) and complex jobs ($1,000+).
 
 **Section B Summary:**
 | Scenario | Annual Value |
 |----------|--------------|
 | Conservative (documented only) | $5,000 |
-| With Unfollowed Quotes | $140,000 |
+| With Unfollowed Quotes | $72,500 |
 
 ---
 
@@ -133,14 +136,14 @@ Annual Lost Revenue = ($11,250 × 12) + $5,000 = $140,000/year
 
 ---
 
-### TOTAL Y (Quote Generation) - COMPLETE (Revised)
+### TOTAL Y (Quote Generation) - COMPLETE (Jobber Data)
 
 | Section | Annual Low | Annual High |
 |---------|------------|-------------|
 | A: Time Cost | $8,580 | $8,580 |
-| B: Lost Revenue | $5,000 | $140,000 |
+| B: Lost Revenue | $5,000 | $72,500 |
 | C: Revenue Upside | $234,000 | $1,164,000 |
-| **TOTAL Y** | **$247,580** | **$1,312,580** |
+| **TOTAL Y** | **$247,580** | **$1,245,080** |
 
 ---
 
