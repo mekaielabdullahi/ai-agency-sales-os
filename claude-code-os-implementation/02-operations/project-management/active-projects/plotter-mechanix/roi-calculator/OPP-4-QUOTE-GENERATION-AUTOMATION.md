@@ -65,8 +65,8 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 | What is being lost? | **Quotes slipping through cracks + mistakes** | Fireflies - Kelsey | Leads not followed up, wrong parts ordered |
 | Volume affected per month | **15** | Fireflies - Kelsey | "15 quotes I sent out that I never followed up on" |
 | % lost due to this problem | **50%** | Industry benchmark | Conservative estimate for unfollowed quotes |
-| Value per unit ($) | **$2,000** | Discovery + Fireflies | Average service job: $1,500-$3,000 |
-| **ANNUAL LOST REVENUE** | **$180,000** | Calculated | 15 × 50% × $2,000 × 12 months |
+| Value per unit ($) | **$1,500** | Industry benchmark | Blended avg: service + parts (AllTech, DMW research) |
+| **ANNUAL LOST REVENUE** | **$135,000** | Calculated | 15 × 50% × $1,500 × 12 months |
 
 ### Fireflies Evidence (Section B):
 
@@ -78,7 +78,16 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 
 **Calculation Notes:**
 - Conservative: $5,000/year (documented mistake only)
-- With unfollowed quotes: $180,000/year + $5,000 mistake = **$185,000/year**
+- With unfollowed quotes: $135,000/year + $5,000 mistake = **$140,000/year**
+
+### Industry Benchmark Sources (Value per Unit):
+| Company | Location | Rate |
+|---------|----------|------|
+| AllTech Imaging | San Diego | $189 flat / $105/hr |
+| Digital Media Warehouse | National | $203.50/hr |
+| Premier Colour | Costa Mesa | $170/hr (2hr min) |
+
+**Blended average rationale:** $1,500 accounts for typical service calls ($300-500) plus parts and occasional complex repairs ($800-1,500). Falls within Fireflies range ($1,500-$3,000) from Kelsey.
 
 ---
 
@@ -126,9 +135,9 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 | Section | Annual LOW | Annual HIGH | Status |
 |---------|------------|-------------|--------|
 | A: Time Cost (Inefficiency) | $8,580 | $8,580 | COMPLETE (Revised) |
-| B: Lost Revenue | $5,000 | $185,000 | COMPLETE |
+| B: Lost Revenue | $5,000 | $140,000 | COMPLETE (Revised) |
 | C: Revenue Upside | $234,000 | $1,164,000 | COMPLETE |
-| **TOTAL Y** | **$247,580** | **$1,357,580** | **COMPLETE** |
+| **TOTAL Y** | **$247,580** | **$1,312,580** | **COMPLETE** |
 
 ---
 

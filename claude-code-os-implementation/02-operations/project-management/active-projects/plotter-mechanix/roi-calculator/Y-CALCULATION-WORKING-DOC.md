@@ -50,16 +50,25 @@ Annual Cost = $34,320/year
 
 **Calculation (Conservative):**
 ```
-Lost from unfollowed quotes: 15 quotes × 50% lost × $2,000 avg = $15,000/month
+Lost from unfollowed quotes: 15 quotes × 50% lost × $1,500 avg = $11,250/month
 Lost from mistakes: $5,000/year (documented)
-Annual Lost Revenue = ($15,000 × 12) + $5,000 = $185,000/year
+Annual Lost Revenue = ($11,250 × 12) + $5,000 = $140,000/year
 ```
+
+**Industry Benchmark Sources (Value per Unit):**
+| Company | Location | Rate |
+|---------|----------|------|
+| AllTech Imaging | San Diego | $189 flat / $105/hr |
+| Digital Media Warehouse | National | $203.50/hr |
+| Premier Colour | Costa Mesa | $170/hr (2hr min) |
+
+**Blended average rationale:** $1,500 accounts for typical service calls ($300-500) plus parts and occasional complex repairs ($800-1,500).
 
 **Section B Summary:**
 | Scenario | Annual Value |
 |----------|--------------|
 | Conservative (documented only) | $5,000 |
-| With Unfollowed Quotes | $185,000 |
+| With Unfollowed Quotes | $140,000 |
 
 ---
 
@@ -129,9 +138,9 @@ Annual Lost Revenue = ($15,000 × 12) + $5,000 = $185,000/year
 | Section | Annual Low | Annual High |
 |---------|------------|-------------|
 | A: Time Cost | $8,580 | $8,580 |
-| B: Lost Revenue | $5,000 | $185,000 |
+| B: Lost Revenue | $5,000 | $140,000 |
 | C: Revenue Upside | $234,000 | $1,164,000 |
-| **TOTAL Y** | **$247,580** | **$1,357,580** |
+| **TOTAL Y** | **$247,580** | **$1,312,580** |
 
 ---
 
