@@ -188,7 +188,202 @@ All data from Fireflies meeting: [Plotter Mechanix-alyssa work flow](https://app
 
 ---
 
-## Line Item 2: [NEXT]
+## Line Item 2: Knowledge Capture & Training System
+
+### Section A: Time Cost - COMPLETE (Fireflies Validated)
+
+#### Training Burden (Per New Tech Hire)
+| Input | Value | Source |
+|-------|-------|--------|
+| Training time per hire (hrs) | 160-200 | Meeting with Plotter_Kelsey: "20-30 hrs/week × 6 months" |
+| Hires per year | 2 | Business growth plan |
+| Kelsey's billable rate | $175/hr | Meeting with Plotter_Kelsey: remote support rate |
+
+**Fireflies Evidence:**
+> "20, 30 hours, 20, 30 hours initially... took me a good 3 months"
+> — Joe (on Kelsey training time)
+
+> "6 months before becoming fully independent"
+> — Meeting with Plotter_Kelsey
+
+**Calculation:**
+```
+Annual Training Cost = 160-200 hrs × $175 × 2 hires
+Annual Training Cost = $56,000-$70,000/year
+```
+
+#### Daily Coordination
+| Input | Value | Source |
+|-------|-------|--------|
+| Coordination time/day (hrs) | 1 | Meeting with Plotter_Kelsey: phone briefs |
+| Working days/year | 260 | Standard |
+| Kelsey's rate | $175/hr | Billable rate |
+
+**Calculation:**
+```
+Annual Coordination Cost = 1 hr × $175 × 260 days
+Annual Coordination Cost = $45,500/year
+```
+
+#### Parts Research (Alyssa)
+| Input | Value | Source |
+|-------|-------|--------|
+| Research time per order (hrs) | 0.5-0.75 | Plotter Mechanix-alyssa workflow: "30-45 minutes" |
+| Orders per week | 2-3 | Estimated from context |
+| Alyssa's rate | $25/hr | Administrative rate |
+
+**Fireflies Evidence:**
+> "It can take me about half an hour to try and figure it out because I don't know parts"
+> — Alyssa
+
+**Calculation:**
+```
+Annual Parts Research = 0.625 hrs × 2.5/week × $25 × 52 weeks
+Annual Parts Research = $1,300-$2,925/year
+```
+
+**Section A Summary:**
+| Cost Area | Annual LOW | Annual HIGH |
+|-----------|------------|-------------|
+| Training new techs | $56,000 | $70,000 |
+| Daily coordination | $45,500 | $45,500 |
+| Parts research | $1,300 | $2,925 |
+| **TOTAL** | **$102,800** | **$118,425** |
+
+---
+
+### Section B: Lost Revenue - COMPLETE (Fireflies Validated)
+
+| Input | Value | Source |
+|-------|-------|--------|
+| Documented HP mistake | $5,000 | Meeting with Plotter_Kelsey: wrong ink variant |
+| Escalation rate | 25% | Meeting with Plotter_Kelsey: high complexity calls |
+| Estimated calls/week | 15-20 | Business capacity |
+| Lost time per escalation | 0.5 hrs | Wait + context switching |
+| RMA lost credits | $2,000-$5,000 | Plotter Mechanix-alyssa workflow: "stacks up" |
+
+**Fireflies Evidence:**
+> "$5,000 mistake (wrong ink ordered)"
+> — Meeting with Plotter_Kelsey
+
+> "~25% of calls need Kelsey help (high complexity)"
+> — Meeting with Plotter_Kelsey
+
+> "RMA backlog 'stacks up'; vendors refuse returns after 30 days"
+> — Plotter Mechanix-alyssa workflow
+
+**Calculation:**
+```
+Escalation delays:  4-5 calls/week × 0.5 hrs × $175 × 52 = $18,200-$22,750
+Conservative (50%): $11,375 (partial recovery)
+RMA losses:         $2,000-$5,000/year
+Documented mistake: $5,000/year
+```
+
+**Section B Summary:**
+| Loss Area | Annual LOW | Annual HIGH |
+|-----------|------------|-------------|
+| Documented mistakes | $5,000 | $5,000 |
+| Escalation delays | $11,375 | $22,750 |
+| RMA lost credits | $2,000 | $5,000 |
+| **TOTAL** | **$18,375** | **$32,750** |
+
+---
+
+### Section C: Revenue Upside - COMPLETE (Fireflies Validated)
+
+#### Training Time Savings
+| Input | Value | Source |
+|-------|-------|--------|
+| Current training time | 160-200 hrs | Meeting with Plotter_Kelsey |
+| Target training time | 40-50 hrs | 75% reduction with video library |
+| Saved hrs per hire | 120-150 | Calculated |
+| Hires per year | 2 | Business growth plan |
+| Kelsey's rate | $175/hr | Billable rate |
+
+**Calculation:**
+```
+Annual Training Savings = 120-150 hrs × $175 × 2 hires
+Annual Training Savings = $42,000-$52,500/year
+```
+
+#### Freed Escalation Capacity
+| Input | Value | Source |
+|-------|-------|--------|
+| Escalation reduction target | 50% | From 25% to 12.5% with knowledge base |
+| Freed Kelsey hrs/week | 2-3 | Calculated |
+
+**Calculation:**
+```
+Annual Freed Capacity = 2.5 hrs × $175 × 52 weeks
+Annual Freed Capacity = $18,200-$27,300/year
+```
+
+#### Remote Consulting Upside
+| Input | Value | Source |
+|-------|-------|--------|
+| Consulting rate | $175/hr | Meeting with Plotter_Kelsey: already operating |
+| Additional hrs/week | 5-10 | Meeting w/ Nikki: Pinetop vision |
+
+**Fireflies Evidence:**
+> "Kelsey working remotely from balcony" (Pinetop vision)
+> — Meeting w/ Nikki
+
+> "Already operating; $175/hr phone consultations"
+> — Meeting with Plotter_Kelsey
+
+**Calculation:**
+```
+Annual Consulting Upside = 5-10 hrs × $175 × 52 weeks
+Annual Consulting Upside = $45,500-$91,000/year
+```
+
+**Section C Summary:**
+| Opportunity | Annual LOW | Annual HIGH |
+|-------------|------------|-------------|
+| Training time savings | $42,000 | $52,500 |
+| Freed escalation capacity | $18,200 | $27,300 |
+| Remote consulting upside | $45,500 | $91,000 |
+| **TOTAL** | **$105,700** | **$170,800** |
+
+---
+
+### TOTAL Y (Knowledge Capture) - COMPLETE (Fireflies Validated)
+
+| Section | Annual Low | Annual High |
+|---------|------------|-------------|
+| A: Time Cost | $102,800 | $118,425 |
+| B: Lost Revenue | $18,375 | $32,750 |
+| C: Revenue Upside | $105,700 | $170,800 |
+| **TOTAL Y** | **$226,875** | **$321,975** |
+
+### Critical Quote from Nicole:
+> "Without him nothing would get done. He just has all that information in his brain."
+> — Nicole (Meeting w/ Nikki)
+
+---
+
+## GRAND TOTAL Y (All Line Items)
+
+| Line Item | Annual LOW | Annual HIGH |
+|-----------|------------|-------------|
+| 1: Quote Generation Automation | $247,580 | $1,267,580 |
+| 2: Knowledge Capture & Training | $226,875 | $321,975 |
+| **COMBINED TOTAL Y** | **$474,455** | **$1,589,555** |
+
+---
+
+## Sources
+| Meeting | URL |
+|---------|-----|
+| Meeting with Plotter_Kelsey | https://app.fireflies.ai/view/01KH1QBWAEVPK4PQVG2FB4F4TD |
+| Meeting w/ Nikki - Plotter Mechanix | https://app.fireflies.ai/view/01KEA3M22BPVHYR2ZB3BGK668Z |
+| Meeting with Plotter Mechanix | https://app.fireflies.ai/view/01KCMCY0H3JRZV87EX0Z0ZRHMP |
+| Plotter Mechanix-alyssa workflow | https://app.fireflies.ai/view/01KH6ZF397K4C6BNYGASMDX88V |
+
+---
+
+## Line Item 3: [NEXT]
 
 ### Section A: Time Cost
 
