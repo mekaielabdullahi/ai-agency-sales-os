@@ -5,7 +5,26 @@ Systematize knowledge transfer that currently depends on Kelsey. Includes video 
 
 ---
 
+## Methodology Notes
+
+**Pattern Used:** A + B + C
+
+**Why this pattern:**
+- Section A captures time costs (training, coordination, parts research)
+- Section B captures revenue lost TODAY (documented mistakes, RMA losses)
+- Section C captures NEW capacity enabled (training efficiency, freed escalation time, consulting upside)
+
+**What's NOT included (to avoid double-counting):**
+- Escalation delays were REMOVED from Section B (they appear in Section C as "Freed escalation capacity")
+- The same escalation hours cannot be counted as both a current loss AND future gain
+
+**Audit Note:** Per Morningside AI methodology, Section B should only include revenue walking out the door that cannot be recovered, while Section C should include new activities enabled by freed time.
+
+---
+
 ## SECTION A: WHAT THIS PROBLEM COSTS IN WASTED TIME
+
+### Formula: Time × People × 260 days × Hourly Rate
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
@@ -64,30 +83,15 @@ Systematize knowledge transfer that currently depends on Kelsey. Includes video 
 
 ## SECTION B: REVENUE YOU'RE LOSING TODAY
 
+### Formula: Documented losses + recurring mistake costs
+
+**Note:** This section only includes revenue lost TODAY that cannot be recovered through improved processes. Escalation-related costs are captured in Section C as freed capacity.
+
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
-| What is being lost? | **Mistakes from knowledge gaps + escalation delays** | Multiple meetings | Wrong parts, customer wait time |
+| What is being lost? | **Mistakes from knowledge gaps** | Multiple meetings | Wrong parts, RMA losses |
 | Documented mistake | **$5,000** | Meeting with Plotter_Kelsey | HP ink mistake (wrong variant ordered) |
-| Field escalation rate | **25%** | Meeting with Plotter_Kelsey | High complexity calls needing Kelsey |
-| Service calls per week | **15-20** | Business context | Estimated from capacity |
-| Lost productivity per escalation | **0.5 hrs** | Estimated | Wait time + context switching |
-| **ANNUAL ESCALATION COST** | **$11,375-$22,750** | Calculated | See below |
-
-### Escalation Cost Calculation:
-
-```
-Calls needing escalation:    15-20/week × 25% = 4-5 calls/week
-Wait/switching time:         0.5 hrs × $175 (Kelsey rate while on call)
-Weekly cost:                 4-5 × 0.5 × $175 = $350-$437.50
-Annual cost:                 $350-$437.50 × 52 = $18,200-$22,750
-
-Conservative (partial):      $11,375 (assuming 50% recoverable)
-```
-
-| Field | Value | Source | Rationale |
-|-------|-------|--------|-----------|
 | RMA backlog impact | **Unquantified** | Plotter Mechanix-alyssa workflow | "Stacks up" - vendors refuse after 30 days |
-| RMA resolution time | **~1 week** | Plotter Mechanix-alyssa workflow | Negotiation with vendors |
 | Estimated lost credits/year | **$2,000-$5,000** | Conservative estimate | Based on backlog description |
 
 ### Fireflies Evidence (Section B):
@@ -97,13 +101,6 @@ Conservative (partial):      $11,375 (assuming 50% recoverable)
 > — Meeting with Plotter_Kelsey (HP parts complexity)
 
 > "HP parts complexity includes multiple variants (dye, UV, different sizes) with identical-looking print heads that are functionally different"
-> — Meeting with Plotter_Kelsey
-
-**Escalation Dependency:**
-> "~25% of calls need Kelsey help (high complexity)"
-> — Meeting with Plotter_Kelsey
-
-> "~20-25% are completely new printer types requiring his expertise"
 > — Meeting with Plotter_Kelsey
 
 **RMA Backlog:**
@@ -118,13 +115,16 @@ Conservative (partial):      $11,375 (assuming 50% recoverable)
 | Loss Area | Annual LOW | Annual HIGH |
 |-----------|------------|-------------|
 | Documented mistakes | $5,000 | $5,000 |
-| Escalation delays | $11,375 | $22,750 |
 | RMA lost credits | $2,000 | $5,000 |
-| **TOTAL SECTION B** | **$18,375** | **$32,750** |
+| **TOTAL SECTION B** | **$7,000** | **$10,000** |
 
 ---
 
 ## SECTION C: NEW REVENUE THE SOLUTION UNLOCKS
+
+### Formula: Activities × Conversion × Value × 12 months
+
+**Note:** This section captures NEW capacity enabled by the solution, including freed escalation time that is DIFFERENT from Section B losses.
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
@@ -168,12 +168,11 @@ With video library + knowledge base, target: 4-6 weeks to 75% independence (vs c
 > "Already operating; $175/hr phone consultations"
 > — Meeting with Plotter_Kelsey
 
-**Knowledge Base in Progress:**
-> "Video training vision: Full year of recorded service calls"
-> — Meeting w/ Nikki
+**Escalation Improvement (why this is in C, not B):**
+> "~25% of calls need Kelsey help (high complexity)"
+> — Meeting with Plotter_Kelsey
 
-> "Active; videos being created and uploaded"
-> — Plotter Mechanix-alyssa workflow
+The knowledge base enables techs to resolve issues independently, FREEING Kelsey's time for higher-value work (consulting). This is capacity gained, not revenue currently being lost.
 
 ### Section C Summary:
 
@@ -190,10 +189,10 @@ With video library + knowledge base, target: 4-6 weeks to 75% independence (vs c
 
 | Section | Annual LOW | Annual HIGH | Status |
 |---------|------------|-------------|--------|
-| A: Time Cost (Training + Coordination) | $102,800 | $118,425 | COMPLETE (Fireflies Validated) |
-| B: Lost Revenue (Mistakes + Delays) | $18,375 | $32,750 | COMPLETE (Fireflies Validated) |
-| C: Revenue Upside (Freed Capacity) | $105,700 | $170,800 | COMPLETE (Fireflies Validated) |
-| **TOTAL Y** | **$226,875** | **$321,975** | **COMPLETE** |
+| A: Time Cost (Training + Coordination) | $102,800 | $118,425 | COMPLETE |
+| B: Lost Revenue (Mistakes + RMA) | $7,000 | $10,000 | COMPLETE |
+| C: Revenue Upside (Freed Capacity) | $105,700 | $170,800 | COMPLETE |
+| **TOTAL Y** | **$215,500** | **$299,225** | **COMPLETE** |
 
 ---
 
@@ -207,8 +206,8 @@ With video library + knowledge base, target: 4-6 weeks to 75% independence (vs c
 | Total implementation cost | $15,000-$23,000 | Phase 2 scope |
 
 ### ROI Preview (If solution costs $20,000):
-- **ROI (Conservative):** $226,875 ÷ $20,000 = **11.3x**
-- **ROI (Full):** $321,975 ÷ $20,000 = **16.1x**
+- **ROI (Conservative):** $215,500 ÷ $20,000 = **10.8x**
+- **ROI (Full):** $299,225 ÷ $20,000 = **15.0x**
 - **Payback:** < 2 months
 
 ---
@@ -234,7 +233,7 @@ With video library + knowledge base, target: 4-6 weeks to 75% independence (vs c
 > — Nicole, Plotter Mechanix
 
 **ROI Justification:**
-Reducing Kelsey's training burden by 75% per hire saves $42,000-$52,500 annually. Freeing 5-10 hours/week for remote consulting adds $45,500-$91,000 in high-margin revenue. Total opportunity: $226,875-$321,975/year.
+Reducing Kelsey's training burden by 75% per hire saves $42,000-$52,500 annually. Freeing 5-10 hours/week for remote consulting adds $45,500-$91,000 in high-margin revenue. Total opportunity: $215,500-$299,225/year.
 
 ---
 
@@ -252,3 +251,4 @@ Reducing Kelsey's training burden by 75% per hire saves $42,000-$52,500 annually
 *Generated: 2026-02-17*
 *Framework: Morningside AI ROI Calculator*
 *Data Source: Fireflies Meeting Transcripts (Validated)*
+*Methodology Audit: Double-counting violations corrected*

@@ -5,7 +5,31 @@ Automate the quote creation, tracking, and follow-up process. Centralizes quotes
 
 ---
 
+## Methodology Notes
+
+**Pattern Used:** A + B only
+
+**Why this pattern:**
+Per Morningside AI ROI Calculator: "AI-Powered Quote Generator → A + B: Slow quotes = prospects go to competitors"
+
+- Section A captures time costs (quote processing inefficiency)
+- Section B captures revenue lost TODAY (conversion gap from no follow-up + documented mistakes)
+
+**What's NOT included (to avoid double-counting):**
+- Section C was REMOVED entirely from this opportunity
+- Quote follow-up revenue was already captured in Section B as conversion gap
+- AR Collections → Moved to OPP-6 (Contacts Consolidation)
+- Supply Sales → Moved to OPP-6 (Contacts Consolidation)
+- Customer Retention → Moved to OPP-6 (Contacts Consolidation)
+- Equipment Upgrades → Not included (requires separate analysis)
+
+**Audit Note:** The original document double-counted quote follow-up by including it in both Section B (as conversion gap) AND Section C (as revenue upside). Per Morningside methodology, you cannot count the same revenue opportunity twice.
+
+---
+
 ## SECTION A: WHAT THIS PROBLEM COSTS IN WASTED TIME
+
+### Formula: Time × People × 260 days × Hourly Rate
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
@@ -56,9 +80,20 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 - **Conservative (used):** 1.5 hrs/day = Quote processing portion → $8,580/year
 - **Full burden (alternative):** 6 hrs/day = Midpoint of 5-8 hr estimate → $34,320/year
 
+### Section A Summary:
+
+| Cost Area | Annual Value |
+|-----------|--------------|
+| Quote processing inefficiency | $8,580 |
+| **TOTAL SECTION A** | **$8,580** |
+
 ---
 
 ## SECTION B: REVENUE YOU'RE LOSING TODAY
+
+### Formula: Volume × % Lost × Value × 12 months
+
+**Note:** This section captures revenue that is walking out the door TODAY due to lack of systematic quote follow-up. Using Jobber-validated $750/job value (not verbal estimates).
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
@@ -68,7 +103,6 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 | Potential close rate | **60-70%** | Industry benchmark | Systematic follow-up |
 | Conversion opportunity gap | **45-50%** | Calculated | Potential minus current |
 | Value per conversion ($) | **$750** | Jobber data | Mean of 460 service invoices |
-| **ANNUAL LOST REVENUE** | **$54,000-$95,000** | Calculated | See calculation below |
 
 ### Quote Volume Analysis
 
@@ -111,11 +145,6 @@ Aggressive:   10 missed × $750 × 12 months = $90,000/year
 Plus documented mistake:                   + $5,000/year
 ```
 
-| Scenario | Annual Lost Revenue |
-|----------|---------------------|
-| LOW (documented only) | $5,000 |
-| HIGH (conversion gap + mistake) | $95,000 |
-
 ### Jobber Invoice Analysis (Value per Unit):
 **Source:** Plotter Mechanix Jobber export (1,730 invoices, Feb 2026)
 
@@ -128,57 +157,38 @@ Plus documented mistake:                   + $5,000/year
 
 **Value used:** $750 (rounded mean) - accounts for mix of routine repairs ($200-500) and complex jobs ($1,000+).
 
-**Note:** Kelsey's verbal estimate of "$1,500-$3,000" likely refers to larger, complex jobs (top 20% of service calls). The real Jobber data shows 46% of service calls are $200-500 (simple repairs).
+**Note:** Kelsey's verbal estimate of "$1,500-$3,000" likely refers to larger, complex jobs (top 20% of service calls). The real Jobber data shows 46% of service calls are $200-500 (simple repairs). We use the Jobber-validated mean for defensibility.
+
+### Section B Summary:
+
+| Loss Area | Annual LOW | Annual HIGH |
+|-----------|------------|-------------|
+| Quote conversion gap | $54,000 | $90,000 |
+| Documented mistakes | $5,000 | $5,000 |
+| **TOTAL SECTION B** | **$59,000** | **$95,000** |
 
 ---
 
-## SECTION C: NEW REVENUE THE SOLUTION UNLOCKS
-
-| Field | Value | Source | Rationale |
-|-------|-------|--------|-----------|
-| What does saved time enable? | **Systematic quote follow-up & revenue activities** | Fireflies - Multiple | Staff can focus on AR, upsells, equipment sales |
-| Additional revenue-generating activities per month | **See breakdown** | Fireflies | Multiple revenue streams enabled |
-| Conversion / success rate (%) | **40-80%** | Fireflies | "When I call they're like, oh shit" (AR collections) |
-| Value per conversion ($) | **$500-$15,000** | Fireflies | Varies by activity type |
-
-### Revenue Opportunity Breakdown:
-
-| Opportunity | Activities/Mo | Conversion | Value/Each | Monthly | Annual | Fireflies Evidence |
-|-------------|---------------|------------|------------|---------|--------|-------------------|
-| Quote Follow-up | 15-20 quotes | 40-50% | $1,500-$3,000 | $4,500-$21,000 | $54,000-$252,000 | "15 quotes I never followed up on" |
-| AR Collections | 5-10 accounts | 70-80% | $500-$1,500 | $2,500-$15,000 | $30,000-$180,000 | "When I call they're like, oh shit" |
-| Supply Sales | 5-8 opportunities | 80-90% | $500-$2,000 | $2,500-$16,000 | $30,000-$192,000 | Andrew can proactively sell consumables |
-| Equipment Upgrades | 1-2 opportunities | 80-90% | $6,000-$15,000 | $6,000-$30,000 | $72,000-$360,000 | "Replacing old OSA with HP" |
-| Customer Retention | 2-3 customers | 80% | $2,000-$5,000 | $4,000-$15,000 | $48,000-$180,000 | Alyssa's customer communication |
-
-| **ANNUAL REVENUE FROM FREED CAPACITY** | **LOW** | **HIGH** |
-|----------------------------------------|---------|----------|
-| **Total** | **$234,000** | **$1,164,000** |
-
-### Fireflies Evidence (Section C):
-
-**AR Collections:**
-> "When I call them they're like, 'oh shit, I'm so sorry, let me pay that right now'"
-> — Demonstrating high conversion when follow-up actually happens
-
-**Contact Database Disparity:**
-> "Kelsey has 10,581 contacts... Alyssa has 43... Andrew has 2"
-> — Shows visibility problem preventing proactive sales
-
-**New Customer Volume:**
-> "About 50% of the work is brand new customers"
-> — High volume of new contacts not being captured/nurtured
-
----
-
-## TOTAL ANNUAL IMPACT (A + B + C)
+## TOTAL ANNUAL IMPACT (A + B)
 
 | Section | Annual LOW | Annual HIGH | Status |
 |---------|------------|-------------|--------|
-| A: Time Cost (Inefficiency) | $8,580 | $8,580 | COMPLETE (Revised) |
-| B: Lost Revenue | $5,000 | $95,000 | COMPLETE (Conversion Framework) |
-| C: Revenue Upside | $234,000 | $1,164,000 | COMPLETE |
-| **TOTAL Y** | **$247,580** | **$1,267,580** | **COMPLETE** |
+| A: Time Cost (Inefficiency) | $8,580 | $8,580 | COMPLETE |
+| B: Lost Revenue (Conversion Gap) | $59,000 | $95,000 | COMPLETE |
+| **TOTAL Y** | **$67,580** | **$103,580** | **COMPLETE** |
+
+---
+
+## Items Moved to Other Opportunities
+
+The following items from the original Section C have been relocated to avoid double-counting:
+
+| Item | New Location | Rationale |
+|------|--------------|-----------|
+| AR Collections | OPP-6 (Contacts Consolidation) | AR recovery requires contact visibility, not quote automation |
+| Supply Sales | OPP-6 (Contacts Consolidation) | Andrew needs contact access to sell supplies |
+| Customer Retention | OPP-6 (Contacts Consolidation) | Retention requires systematic customer communication |
+| Equipment Upgrades | Not included | Separate opportunity requiring distinct analysis |
 
 ---
 
@@ -191,9 +201,9 @@ Plus documented mistake:                   + $5,000/year
 | Total first-year cost | TBD | Implementation + Year 1 |
 
 ### ROI Preview (If solution costs $20,000):
-- **ROI (Conservative):** $247,580 ÷ $20,000 = **12.4x**
-- **ROI (Full):** $1,357,580 ÷ $20,000 = **67.9x**
-- **Payback:** < 1 month
+- **ROI (Conservative):** $67,580 ÷ $20,000 = **3.4x**
+- **ROI (Full):** $103,580 ÷ $20,000 = **5.2x**
+- **Payback:** 3-4 months
 
 ---
 
@@ -204,8 +214,7 @@ Plus documented mistake:                   + $5,000/year
 | Business type | Plotter/Printer Service | Discovery |
 | Service area | Phoenix, AZ metro | Discovery |
 | Team size | 3 (Kelsey, Alyssa, Andrew) | Fireflies |
-| Average service job | $1,500-$3,000 | Fireflies |
-| Average equipment sale | $6,000-$15,000 | Fireflies |
+| Average service job | $750 | Jobber data (validated) |
 | New customer rate | ~50% of jobs | Fireflies |
 | Quote follow-up rate | <20% (current) | Fireflies |
 
@@ -217,14 +226,19 @@ Plus documented mistake:                   + $5,000/year
 > — Kelsey, Plotter Mechanix
 
 **ROI Justification:**
-One additional service job per week ($2,000-$3,000) or one equipment sale per month ($10,000+) pays for the entire solution.
+Automating quote follow-up converts 6-10 additional jobs per month at $750 each. This alone justifies the solution cost. Total opportunity: $67,580-$103,580/year.
 
 ---
 
-## SOURCE
-Fireflies Meeting: [Plotter Mechanix-alyssa work flow](https://app.fireflies.ai/view/01KH6ZF397K4C6BNYGASMDX88V)
+## SOURCES
+
+| Meeting | URL |
+|---------|-----|
+| Plotter Mechanix-alyssa workflow | https://app.fireflies.ai/view/01KH6ZF397K4C6BNYGASMDX88V |
 
 ---
 
 *Generated: 2026-02-17*
 *Framework: Morningside AI ROI Calculator*
+*Pattern: A + B (per Morningside: "AI Quote Generator → A + B")*
+*Methodology Audit: Double-counting violations corrected, Section C removed*

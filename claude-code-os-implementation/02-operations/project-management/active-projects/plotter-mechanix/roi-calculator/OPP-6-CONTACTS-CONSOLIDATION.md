@@ -5,7 +5,31 @@ Consolidate fragmented contact databases across Capsule CRM, Jobber, QuickBooks,
 
 ---
 
+## Methodology Notes
+
+**Pattern Used:** A + B + C
+
+**Why this pattern:**
+- Section A captures time costs (duplicate management, data cleanup, sync errors, searching)
+- Section B captures revenue lost TODAY (contact invisibility, unused CRM waste)
+- Section C captures NEW revenue enabled (AR recovery, supplies visibility, contracts, activation)
+
+**What's NOT included (to avoid double-counting):**
+- AR collection gaps were REMOVED from Section B (they appear in Section C as "AR systematic recovery")
+- The same AR accounts cannot be counted as both a current loss AND future recovery
+
+**Range Methodology for Section A:**
+- Calculated values use formula: Time × $25/hr × 260 days
+- LOW range assumes 80% of calculated (conservative efficiency gains)
+- HIGH range assumes 120% of calculated (accounts for variability)
+
+**Audit Note:** Per Morningside AI methodology, Section B should only include revenue walking out the door that cannot be recovered, while Section C should include new activities enabled by consolidated data.
+
+---
+
 ## SECTION A: WHAT THIS PROBLEM COSTS IN WASTED TIME
+
+### Formula: Time × People × 260 days × Hourly Rate
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
@@ -32,35 +56,42 @@ Consolidate fragmented contact databases across Capsule CRM, Jobber, QuickBooks,
 
 ### Calculation (Section A):
 
+**Base Calculations:**
 ```
 Duplicate elimination:    0.5 hrs × $25 × 260 = $3,250/year
 Data cleanup:             0.25 hrs × $25 × 260 = $1,625/year
 QuickBooks sync errors:   0.125 hrs × $25 × 260 = $812.50/year
 Contact search time:      0.5 hrs × $25 × 260 = $3,250/year
+CALCULATED TOTAL:         $8,937.50/year
 ```
+
+**Range Application:**
+- LOW (80% efficiency): $8,937.50 × 0.80 = $7,150
+- HIGH (120% variability): $8,937.50 × 1.20 = $10,725
 
 ### Section A Summary:
 
-| Cost Area | Annual LOW | Annual HIGH |
-|-----------|------------|-------------|
-| Duplicate entry elimination | $2,600 | $3,900 |
-| Data cleanup | $1,040 | $1,560 |
-| QuickBooks sync errors | $520 | $780 |
-| Contact search time | $3,250 | $3,250 |
-| **TOTAL SECTION A** | **$7,410** | **$9,490** |
+| Cost Area | Calculated | Annual LOW (80%) | Annual HIGH (120%) |
+|-----------|------------|------------------|-------------------|
+| Duplicate entry elimination | $3,250 | $2,600 | $3,900 |
+| Data cleanup | $1,625 | $1,300 | $1,950 |
+| QuickBooks sync errors | $812.50 | $650 | $975 |
+| Contact search time | $3,250 | $2,600 | $3,900 |
+| **TOTAL SECTION A** | **$8,937.50** | **$7,150** | **$10,725** |
 
 ---
 
 ## SECTION B: REVENUE YOU'RE LOSING TODAY
 
+### Formula: Lost opportunities from fragmentation
+
+**Note:** This section only includes revenue lost TODAY due to fragmentation. AR collection issues are captured in Section C as recovery opportunity (since consolidation enables systematic collection).
+
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
-| What is being lost? | **Contact invisibility + fragmented follow-up** | Multiple meetings | 246:1 contact disparity |
+| What is being lost? | **Contact invisibility + CRM waste** | Multiple meetings | 246:1 contact disparity |
 | Contact disparity ratio | **246:1** | Plotter Mechanix-alyssa workflow | Kelsey 10,581 vs Andrew 2 |
 | Capsule CRM unused | **$30/month** | DISCOVERY-FINDINGS | Paying but not using |
-| AR collection affected accounts | **5-10/month** | Fireflies meeting | Contacts hard to reach |
-| Average AR value | **$750** | Jobber invoice analysis | Mean service invoice |
-| Uncollected rate | **30%** | Conservative estimate | Due to contact gaps |
 
 ### Fireflies Evidence (Section B):
 
@@ -73,12 +104,6 @@ This means:
 - Team members cannot see or access customer information
 - Customer relationships trapped in Kelsey's personal devices
 
-**AR Collection Challenges:**
-> "When I call they're like, oh shit"
-> — Kelsey (on AR collection effectiveness)
-
-When contact info is accessible, collection happens. When fragmented, opportunities are lost.
-
 **Unused CRM:**
 > Capsule CRM: $30/month paid but unused due to fragmentation
 > — DISCOVERY-FINDINGS
@@ -88,7 +113,6 @@ When contact info is accessible, collection happens. When fragmented, opportunit
 ```
 Contact invisibility:     Lost opportunities from 246:1 disparity = $5,000-$10,000/year (conservative)
 Capsule CRM waste:        $30 × 12 = $360/year
-AR collection gaps:       5-10 accounts/month × 30% uncollected × $750 = $13,500-$27,000/year
 ```
 
 ### Section B Summary:
@@ -97,12 +121,15 @@ AR collection gaps:       5-10 accounts/month × 30% uncollected × $750 = $13,5
 |-----------|------------|-------------|
 | Contact invisibility | $5,000 | $10,000 |
 | Capsule CRM unused | $360 | $360 |
-| AR collection gaps | $13,500 | $27,000 |
-| **TOTAL SECTION B** | **$18,860** | **$37,360** |
+| **TOTAL SECTION B** | **$5,360** | **$10,360** |
 
 ---
 
 ## SECTION C: NEW REVENUE THE SOLUTION UNLOCKS
+
+### Formula: Activities × Conversion × Value × 12 months
+
+**Note:** This section captures NEW revenue enabled by consolidated contact data. AR recovery is included here (not in Section B) because consolidation enables systematic collection that isn't happening today.
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
@@ -122,7 +149,7 @@ AR collection gaps:       5-10 accounts/month × 30% uncollected × $750 = $13,5
 > "When I call they're like, oh shit"
 > — Kelsey (AR collection effectiveness)
 
-With consolidated contacts, Alyssa can systematically call overdue accounts.
+With consolidated contacts, Alyssa can systematically call overdue accounts. This is NEW capability enabled by the solution.
 
 **Andrew's Supplies Business:**
 > "50% of work is NEW customers" (brand new contacts)
@@ -167,10 +194,10 @@ Top customer activation:  1,000 contacts × 2% conversion × $750 = $15,000/year
 
 | Section | Annual LOW | Annual HIGH | Status |
 |---------|------------|-------------|--------|
-| A: Time Cost (Duplicates + Sync) | $7,410 | $9,490 | COMPLETE (Fireflies Validated) |
-| B: Lost Revenue (Fragmentation) | $18,860 | $37,360 | COMPLETE (Fireflies Validated) |
-| C: Revenue Upside (Unified Access) | $120,260 | $151,760 | COMPLETE (Fireflies Validated) |
-| **TOTAL Y** | **$146,530** | **$198,610** | **COMPLETE** |
+| A: Time Cost (Duplicates + Sync) | $7,150 | $10,725 | COMPLETE |
+| B: Lost Revenue (Fragmentation) | $5,360 | $10,360 | COMPLETE |
+| C: Revenue Upside (Unified Access) | $120,260 | $151,760 | COMPLETE |
+| **TOTAL Y** | **$132,770** | **$172,845** | **COMPLETE** |
 
 ---
 
@@ -185,9 +212,9 @@ Top customer activation:  1,000 contacts × 2% conversion × $750 = $15,000/year
 | Total implementation cost | $9,000-$15,000 | Phase 3 scope |
 
 ### ROI Preview (If solution costs $12,000):
-- **ROI (Conservative):** $146,530 ÷ $12,000 = **12.2x**
-- **ROI (Full):** $198,610 ÷ $12,000 = **16.6x**
-- **Payback:** < 1 month
+- **ROI (Conservative):** $132,770 ÷ $12,000 = **11.1x**
+- **ROI (Full):** $172,845 ÷ $12,000 = **14.4x**
+- **Payback:** < 2 months
 
 ---
 
@@ -214,7 +241,7 @@ Top customer activation:  1,000 contacts × 2% conversion × $750 = $15,000/year
 > — Plotter Mechanix-alyssa workflow
 
 **ROI Justification:**
-Consolidating contacts eliminates the 246:1 visibility gap. When team members can access customer information, AR collection improves ("When I call they pay"), Andrew can see supply opportunities, and systematic outreach becomes possible. Total opportunity: $146,530-$198,610/year.
+Consolidating contacts eliminates the 246:1 visibility gap. When team members can access customer information, AR collection improves ("When I call they pay"), Andrew can see supply opportunities, and systematic outreach becomes possible. Total opportunity: $132,770-$172,845/year.
 
 ---
 
@@ -232,3 +259,4 @@ Consolidating contacts eliminates the 246:1 visibility gap. When team members ca
 *Generated: 2026-02-17*
 *Framework: Morningside AI ROI Calculator*
 *Data Source: Fireflies Meeting Transcripts (Validated)*
+*Methodology Audit: Double-counting violations corrected*
