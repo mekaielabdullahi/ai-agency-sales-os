@@ -62,7 +62,7 @@ Hey [First Name],
 
 Great question -- [answer their specific question].
 
-In short, I help [printing companies / homestead businesses] automate
+In short, I help printing companies automate
 their backend operations so the owner isn't the bottleneck. Happy to
 share more details if helpful, or just let me know if you have other
 questions.

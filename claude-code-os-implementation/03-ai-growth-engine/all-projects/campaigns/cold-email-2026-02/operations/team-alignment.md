@@ -8,14 +8,14 @@
 Before the first cold email goes out, ensure the team has:
 
 - [ ] Watched the Otto meeting recording
-- [ ] Understands the two primary verticals (printing, homestead)
+- [ ] Understands the primary vertical (printing)
 - [ ] Knows the Kelsey case study inside and out:
   - 1,378% ROI
   - Alyssa: 25 hrs/week -> 10 hrs/week (15 hrs saved)
   - Kelsey: $175/hr tech -> $300-500/hr consultant
   - $5K investment -> $73K+ annual value
-- [ ] Reviewed the cold email strategy (email sequences for both verticals)
-- [ ] Committed to focused execution (printing + homestead only)
+- [ ] Reviewed the cold email strategy (printing email sequence)
+- [ ] Committed to focused execution (printing only)
 - [ ] Has questions answered before outreach begins
 
 ---
@@ -38,12 +38,7 @@ Before the first cold email goes out, ensure the team has:
 
 Notes: _________________
 
-### 2. Homestead Vertical
-> What specific pain points are we solving? Do we have metrics to share?
-
-Notes: _________________
-
-### 3. Cold Email Operations
+### 2. Cold Email Operations
 > Who's sending the emails? What's our reply management process?
 
 - Sending: Automated via n8n (Matthew builds)
@@ -52,7 +47,7 @@ Notes: _________________
 
 Notes: _________________
 
-### 4. Tracking
+### 3. Tracking
 > How do we measure success? (Leads, meetings booked, deals closed)
 
 - Google Sheet "Cold Outreach Tracker" (4 tabs)
@@ -61,7 +56,7 @@ Notes: _________________
 
 Notes: _________________
 
-### 5. Timeline
+### 4. Timeline
 > When can we send the first batch of cold emails?
 
 - Infrastructure setup: Mon 2/16
@@ -110,8 +105,8 @@ Notes: _________________
 | CTA | Invite to paid workshops specific to their industry |
 
 **Example workflow:**
-1. Free Eventbrite workshop: "How to Scale Your Printing Business with AI Operations"
-2. Attendees see your process and results (Kelsey case study)
+1. Free Eventbrite workshop: "How to Scale Your Large Format Printing Business with AI Operations"
+2. Attendees see your process and results (Kelsey/Plotter Mechanix case study)
 3. Offer: Paid workshop or audit for their specific business
 4. This feeds into cold email campaign (attendees who don't convert = warm leads for follow-up)
 

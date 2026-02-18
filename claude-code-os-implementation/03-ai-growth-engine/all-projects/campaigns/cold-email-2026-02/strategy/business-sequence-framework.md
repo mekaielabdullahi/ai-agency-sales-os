@@ -50,19 +50,13 @@ These businesses don't need more leads. They need to handle the leads they alrea
 
 ---
 
-## Applied to Our Verticals
+## Applied to Our Vertical
 
 ### Printing Companies
 - **Step 1:** Reputation-based referrals drive calls (working)
 - **Step 2:** Owner closes deals because they're the expert (working)
 - **Step 3:** Owner is also the only tech, scheduler, dispatcher, and admin (**bottleneck**)
 - **Our solution:** Automate call routing, ticket creation, dispatch, follow-up
-
-### Homestead Businesses
-- **Step 1:** Content/social media drives audience (working)
-- **Step 2:** Products sell through website/Etsy/social (working)
-- **Step 3:** Owner manually processes every order, email, DM, inventory update (**bottleneck**)
-- **Our solution:** Automate order processing, customer follow-up, inventory tracking
 
 ---
 
@@ -82,9 +76,9 @@ When talking to prospects, map their business to this sequence:
 
 | Stage | Offer | Price |
 |-------|-------|-------|
-| Entry | Operations audit | $500 (homestead) / Free (printing, proof-led) |
-| Phase 1 | Build one automation | $2K (homestead) / $5K (printing) |
-| Phase 2 | Full operational system | $5-10K (homestead) / $15-42K (printing) |
+| Entry | Free automation (proof-led) | Free |
+| Phase 1 | Build one automation | $5K |
+| Phase 2 | Full operational system | $15-42K |
 | Ongoing | Maintenance + expansion | Monthly retainer |
 
 The key: **Start small, prove ROI, then expand.** Let results sell the next phase.

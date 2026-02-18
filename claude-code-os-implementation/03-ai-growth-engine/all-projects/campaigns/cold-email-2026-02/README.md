@@ -1,4 +1,4 @@
-# Cold Email Attack Plan: Printing & Homestead Verticals
+# Cold Email Attack Plan: Printing Vertical
 ## Launch Date: Monday, February 16, 2026
 
 ---
@@ -11,10 +11,14 @@
 | Business Sequence Framework | [strategy/business-sequence-framework.md](strategy/business-sequence-framework.md) |
 | Focus Rules | [strategy/focus-rules.md](strategy/focus-rules.md) |
 | **Printing Vertical** | [verticals/printing/](verticals/printing/) |
-| **Homestead Vertical** | [verticals/homestead/](verticals/homestead/) |
+| Homestead (Archived) | [verticals/_archive/homestead/](verticals/_archive/homestead/) |
 | Domain & Inbox Setup | [infrastructure/domain-inbox-setup.md](infrastructure/domain-inbox-setup.md) |
 | n8n Engine Spec | [infrastructure/n8n-engine-spec.md](infrastructure/n8n-engine-spec.md) |
 | Personalization Pipeline | [infrastructure/personalization-pipeline.md](infrastructure/personalization-pipeline.md) |
+| **Lead Scraping Stack** | [infrastructure/lead-scraping-stack.md](infrastructure/lead-scraping-stack.md) |
+| **Apollo API Queries** | [infrastructure/apollo-queries.md](infrastructure/apollo-queries.md) |
+| **n8n Workflow Templates** | [infrastructure/n8n-workflow-templates.md](infrastructure/n8n-workflow-templates.md) |
+| **Cold Leads (Feb 16)** | [leads/cold-leads-2026-02-16.md](leads/cold-leads-2026-02-16.md) |
 | Daily Rhythm | [operations/daily-rhythm.md](operations/daily-rhythm.md) |
 | Weekly Targets | [operations/weekly-targets.md](operations/weekly-targets.md) |
 | Metrics Dashboard | [operations/metrics-dashboard.md](operations/metrics-dashboard.md) |
@@ -29,12 +33,13 @@
 ## Strategic Foundation
 
 ### The Core Insight
-**Stop marketing to "anyone and everyone." Go deep on two verticals where you have proof.**
+**Stop marketing to "anyone and everyone." Go deep on ONE vertical where you have proof: Printing.**
 
-### The Two Verticals
+### The Vertical
 
-1. **Large Format Printer Companies** (Kelsey/Plotter Mechanix model) - $800K revenue client, 1,378% ROI case study, Phase 1 complete, Phase 2 in progress, videos in production
-2. **Homestead Businesses** - Solution already built and ready for deployment. S&S Wolf Sheds is the bridge deal. Close Sandra -> deploy pre-built solution -> first homestead case study.
+**Large Format Printer Companies** (Kelsey/Plotter Mechanix model) - $800K revenue client, 1,378% ROI case study, Phase 1 complete, Phase 2 in progress, videos in production
+
+> **Note:** Homestead vertical archived until $1M revenue milestone. S&S Wolf remains trackable in warm leads (warm outreach allowed under Hormozi Focus Framework).
 
 ### Phases
 
@@ -63,8 +68,7 @@
 - [ ] **2:30** Find Tim Moorman email on LinkedIn, send outreach
 - [ ] **3:00** Email Michele (dolche900@gmail.com) partnership angle
 - [ ] **3:30** Create Google Sheet "Cold Outreach Tracker" (4 tabs: Dashboard, Lead Tracker, ICP Refinement, Deliverability)
-- [ ] **4:00** Research printing companies - target 25 from HP/Canon authorized service partner directories + SGIA
-- [ ] **4:45** Research homestead businesses - target 15 from Homesteaders of America, Etsy homestead shops
+- [ ] **4:00** Research printing companies - target 40 from HP/Canon authorized service partner directories + SGIA
 - [ ] **5:00** Day done.
 
 ---
@@ -72,16 +76,11 @@
 ## Expected Outcomes & Revenue Projection
 
 ```
-PRINTING VERTICAL:
-Week 4:   ~120 emails -> 6-12 replies -> 3-6 calls -> 1-2 proposals -> 0-1 close ($5K Phase 1)
-Month 2:  ~300 emails -> 15-30 replies -> 7-15 calls -> 3-6 proposals -> 1-3 closes
-Month 3:  ~600+ emails, pipeline compounding -> 2-4 closes -> $10-60K
+PRINTING VERTICAL (Cold Email):
+Week 4:   ~150 emails -> 8-15 replies -> 4-8 calls -> 2-3 proposals -> 1-2 closes ($5K Phase 1)
+Month 2:  ~400 emails -> 20-40 replies -> 10-20 calls -> 5-8 proposals -> 2-4 closes
+Month 3:  ~800+ emails, pipeline compounding -> 4-6 closes -> $20-80K
            + Phase 2 upsells from Month 1 closes ($15-42K each)
-
-HOMESTEAD VERTICAL:
-Week 4:   ~60 emails -> 2-3 replies -> 1-2 calls -> 0-1 proposal ($500 audit + $2K deliverable)
-Month 2:  S&S Wolf case study published -> improved conversion
-Month 3:  First case study driving proof -> 1-2 closes -> $5-20K
 
 WARM LEADS (IMMEDIATE):
 Feb Week 1: Close Scott + Randy ($4-8K) + Sandra/S&S Wolf ($500 audit + $2K) = $6.5-10.5K
@@ -89,8 +88,8 @@ Feb total: $10-25K from warm leads alone
 
 COMBINED:
 Feb:    2-4 warm closes + infrastructure setup -> $10-25K
-March:  1-4 cold closes + first homestead case study -> $5-25K
-April:  3-6 cold closes + Phase 2 upsells -> $15-80K
+March:  2-4 cold closes -> $10-30K
+April:  4-6 cold closes + Phase 2 upsells -> $20-80K
 = Path to $50K/month by Month 3-4
 ```
 
@@ -107,6 +106,15 @@ April:  3-6 cold closes + Phase 2 upsells -> $15-80K
 | `ai-agency-sales-os/agentic/modules/leads/tool/scrape_leads.py` | Apify lead scraper |
 | `ai-agency-sales-os/agentic/extras/n8n-wf/nurture_sequence.json` | Post-reply nurture |
 | `ai-agency-sales-os/claude-code-os-implementation/02-operations/discovery-process/templates/5-questions-discovery-call-script.md` | Discovery call script |
+
+### Lead Scraping Tools (API-Based)
+
+| Tool | Documentation | Free Tier |
+|------|---------------|-----------|
+| Apollo.io | [lead-scraping-stack.md](infrastructure/lead-scraping-stack.md) | 600 credits/mo (search FREE) |
+| Apify | [lead-scraping-stack.md](infrastructure/lead-scraping-stack.md) | $5/mo credits |
+| Hunter.io | [lead-scraping-stack.md](infrastructure/lead-scraping-stack.md) | 25 searches + 50 verifications |
+| Clay.com | [lead-scraping-stack.md](infrastructure/lead-scraping-stack.md) | 100 credits/mo |
 
 ---
 

@@ -40,10 +40,9 @@
 **Cause:** Copy/offer doesn't resonate. Reaching the right people but wrong message.
 
 **Fix:**
-1. **Printing:** Strengthen proof (add more specific Kelsey metrics)
-2. **Homestead:** Lower risk further (emphasize "completely free", "no commitment")
-3. Review negative replies for patterns -- what objections keep coming up?
-4. A/B test offer framing
+1. **Printing:** Strengthen proof (add more specific Kelsey/Plotter Mechanix metrics)
+2. Review negative replies for patterns -- what objections keep coming up?
+3. A/B test offer framing
 
 ### Reply Rate 5-10%
 **Status:** Golden zone. Optimize conversion to calls.
@@ -62,7 +61,6 @@
 | Test | Variant A | Variant B |
 |------|-----------|-----------|
 | Printing | Curiosity: `quick q about [Company]'s service ops` | Benefit: `saw [Company] services [HP/Canon] -- had a thought` |
-| Homestead | Personal: `[First Name], had a thought about [Company/Brand]` | Intrigue: `a weird offer for [Company]` |
 
 **How to test:** Split lead list 50/50. Run for 1 week. Compare open rates.
 
@@ -70,7 +68,6 @@
 | Test | Variant A | Variant B |
 |------|-----------|-----------|
 | Printing | "free automation" | "free audit" |
-| Homestead | "case study" angle | "free help" angle |
 
 **How to test:** Split lead list 50/50. Run for 1 week. Compare reply rates and positive reply %.
 
@@ -110,7 +107,7 @@ Add 3 more domains when ALL of these are true:
 ### Section 1: Overview
 ```
 Total Leads: ___    Emails Sent (all time): ___    This Week: ___
-Printing Leads: ___ Homestead Leads: ___
+Printing Leads: ___
 ```
 
 ### Section 2: Deliverability
