@@ -62,11 +62,27 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 
 | Field | Value | Source | Rationale |
 |-------|-------|--------|-----------|
-| What is being lost? | **Quotes slipping through cracks + mistakes** | Fireflies - Kelsey | Leads not followed up, wrong parts ordered |
-| Volume affected per month | **15** | Fireflies - Kelsey | "15 quotes I sent out that I never followed up on" |
-| % lost due to this problem | **50%** | Industry benchmark | Conservative estimate for unfollowed quotes |
-| Value per unit ($) | **$750** | Jobber data | Mean of 460 service invoices |
-| **ANNUAL LOST REVENUE** | **$67,500** | Calculated | 15 × 50% × $750 × 12 months |
+| What is being lost? | **Quote conversion opportunity + mistakes** | Fireflies - Kelsey | Low follow-up = low close rate |
+| Estimated quotes per month | **16-20** | Calculated | 4-5 quotes/week (see Volume Analysis) |
+| Current close rate | **15-20%** | Industry benchmark | Unmanaged quote follow-up |
+| Potential close rate | **60-70%** | Industry benchmark | Systematic follow-up |
+| Conversion opportunity gap | **45-50%** | Calculated | Potential minus current |
+| Value per conversion ($) | **$750** | Jobber data | Mean of 460 service invoices |
+| **ANNUAL LOST REVENUE** | **$54,000-$95,000** | Calculated | See calculation below |
+
+### Quote Volume Analysis
+
+**Kelsey's "15 quotes" statement:**
+> "I've got like 15 quotes I sent out that I never followed up on"
+> — Kelsey (Feb 11, 2026)
+
+**Interpretation:** This is a point-in-time snapshot of pending quotes with no follow-up, NOT monthly volume.
+
+**Estimated Weekly Quote Volume:**
+- 50% of work = new customers (Fireflies)
+- New customers typically require quotes before service
+- Conservative estimate: 4-5 quotes generated per week
+- Monthly volume: 16-20 quotes
 
 ### Fireflies Evidence (Section B):
 
@@ -76,9 +92,29 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 **Quote 2 - Documented $5,000 Mistake:**
 > "We had the Tucson trip where the wrong part was ordered... that was a $5,000 mistake"
 
-**Calculation Notes:**
-- Conservative: $5,000/year (documented mistake only)
-- With unfollowed quotes: $67,500/year + $5,000 mistake = **$72,500/year**
+### Calculation (Conversion Opportunity Framework):
+
+```
+Monthly quotes:              16-20
+Current close rate:          ~18% (midpoint of 15-20%)
+Potential close rate:        ~65% (midpoint of 60-70%)
+
+Current conversions/month:   16-20 × 18% = 3-4 jobs
+Potential conversions/month: 16-20 × 65% = 10-13 jobs
+MISSED conversions/month:    6-10 jobs
+```
+
+**Annual Lost Revenue:**
+```
+Conservative: 6 missed × $750 × 12 months = $54,000/year
+Aggressive:   10 missed × $750 × 12 months = $90,000/year
+Plus documented mistake:                   + $5,000/year
+```
+
+| Scenario | Annual Lost Revenue |
+|----------|---------------------|
+| LOW (documented only) | $5,000 |
+| HIGH (conversion gap + mistake) | $95,000 |
 
 ### Jobber Invoice Analysis (Value per Unit):
 **Source:** Plotter Mechanix Jobber export (1,730 invoices, Feb 2026)
@@ -140,9 +176,9 @@ The following data points were **NOT explicitly specified** in the Fireflies tra
 | Section | Annual LOW | Annual HIGH | Status |
 |---------|------------|-------------|--------|
 | A: Time Cost (Inefficiency) | $8,580 | $8,580 | COMPLETE (Revised) |
-| B: Lost Revenue | $5,000 | $72,500 | COMPLETE (Jobber Data) |
+| B: Lost Revenue | $5,000 | $95,000 | COMPLETE (Conversion Framework) |
 | C: Revenue Upside | $234,000 | $1,164,000 | COMPLETE |
-| **TOTAL Y** | **$247,580** | **$1,245,080** | **COMPLETE** |
+| **TOTAL Y** | **$247,580** | **$1,267,580** | **COMPLETE** |
 
 ---
 

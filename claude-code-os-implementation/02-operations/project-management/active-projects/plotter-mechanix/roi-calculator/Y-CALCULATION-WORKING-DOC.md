@@ -38,21 +38,33 @@ Annual Cost = $34,320/year
 
 ---
 
-### Section B: Lost Revenue - COMPLETE (Jobber Data)
+### Section B: Lost Revenue - COMPLETE (Conversion Framework)
 
 | Input | Value | Source |
 |-------|-------|--------|
-| What's being lost | Leads "slip through cracks" + mistakes | Fireflies + Discovery |
+| What's being lost | Quote conversion opportunity + mistakes | Fireflies + Discovery |
 | Documented mistake | $5,000 (Tucson trip - wrong part) | Fireflies meeting |
-| Unfollowed quotes | 15+ quotes with no follow-up | "15 quotes I sent out that I never followed up on" |
+| Estimated quotes/month | 16-20 (4-5/week) | Calculated from 50% new customer rate |
+| Current close rate | 15-20% | Industry: unmanaged quotes |
+| Potential close rate | 60-70% | Industry: systematic follow-up |
 | Quote value | $750 | Jobber data (mean of 460 service invoices) |
-| Lost conversion (est) | 50% of unfollowed quotes | Industry standard |
 
-**Calculation:**
+**Quote Volume Analysis:**
+Kelsey's "15 quotes I sent out that I never followed up on" = point-in-time snapshot of pending quotes, NOT monthly volume. Estimated 4-5 quotes/week based on 50% new customer rate.
+
+**Calculation (Conversion Opportunity Framework):**
 ```
-Lost from unfollowed quotes: 15 quotes × 50% lost × $750 avg = $5,625/month
-Lost from mistakes: $5,000/year (documented)
-Annual Lost Revenue = ($5,625 × 12) + $5,000 = $72,500/year
+Monthly quotes:              16-20
+Current close rate:          ~18% (midpoint of 15-20%)
+Potential close rate:        ~65% (midpoint of 60-70%)
+
+Current conversions/month:   16-20 × 18% = 3-4 jobs
+Potential conversions/month: 16-20 × 65% = 10-13 jobs
+MISSED conversions/month:    6-10 jobs
+
+Conservative: 6 × $750 × 12 = $54,000/year
+Aggressive:   10 × $750 × 12 = $90,000/year
+Plus documented mistake:     + $5,000/year
 ```
 
 **Jobber Invoice Analysis (Value per Unit):**
@@ -70,8 +82,8 @@ Annual Lost Revenue = ($5,625 × 12) + $5,000 = $72,500/year
 **Section B Summary:**
 | Scenario | Annual Value |
 |----------|--------------|
-| Conservative (documented only) | $5,000 |
-| With Unfollowed Quotes | $72,500 |
+| LOW (documented only) | $5,000 |
+| HIGH (conversion gap + mistake) | $95,000 |
 
 ---
 
@@ -136,14 +148,14 @@ Annual Lost Revenue = ($5,625 × 12) + $5,000 = $72,500/year
 
 ---
 
-### TOTAL Y (Quote Generation) - COMPLETE (Jobber Data)
+### TOTAL Y (Quote Generation) - COMPLETE (Conversion Framework)
 
 | Section | Annual Low | Annual High |
 |---------|------------|-------------|
 | A: Time Cost | $8,580 | $8,580 |
-| B: Lost Revenue | $5,000 | $72,500 |
+| B: Lost Revenue | $5,000 | $95,000 |
 | C: Revenue Upside | $234,000 | $1,164,000 |
-| **TOTAL Y** | **$247,580** | **$1,245,080** |
+| **TOTAL Y** | **$247,580** | **$1,267,580** |
 
 ---
 
