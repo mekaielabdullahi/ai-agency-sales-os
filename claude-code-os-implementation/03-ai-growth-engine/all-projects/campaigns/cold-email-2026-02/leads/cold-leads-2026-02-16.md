@@ -22,21 +22,15 @@
 - [ ] Get API keys from each service
 - [ ] Test Apollo People Search API (FREE - no credits)
 
-### Phase 2: Printing Leads (35 total)
+### Phase 2: Printing Leads (60 total)
 - [ ] Run Apollo People API Search with **expanded 1-50 employee filters**
-- [ ] Export 35 decision-makers (founders, owners, GMs, VPs)
+- [ ] Export 60 decision-makers (founders, owners, GMs, VPs)
 - [ ] Segment results: 1-20 (priority) vs 21-50 (test)
 - [ ] Run Apify CEO Finder on company domains
-- [ ] Enrich top 15 with Apollo (15 credits) or Hunter
+- [ ] Enrich top 30 with Apollo (30 credits) or Hunter
 - [ ] Add to table below with segment tag
 
-### Phase 3: Homestead Leads (25 total)
-- [ ] Run Apollo People API Search with **expanded 1-50 employee filters**
-- [ ] Cross-reference with Homesteaders of America vendor list (already scraped)
-- [ ] Segment results: 1-20 (priority) vs 21-50 (test)
-- [ ] Run Apify CEO Finder on company domains
-- [ ] Enrich top 15 with Apollo or Hunter
-- [ ] Add to table below with segment tag
+> **Note:** All cold email volume focused on Printing vertical per Hormozi Focus Framework.
 
 ### Phase 4: Activity Signals (Optional)
 - [ ] Import n8n hiring signals workflow
@@ -62,21 +56,6 @@ curl --request POST \
   }'
 ```
 
-### Homestead Vertical (1-50 Employees)
-```bash
-curl --request POST \
-  --url 'https://api.apollo.io/v1/mixed_people/search' \
-  --header 'Content-Type: application/json' \
-  --data '{
-    "api_key": "YOUR_KEY",
-    "q_keywords": "homestead OR homesteading OR small farm OR organic",
-    "person_titles": ["Founder", "Owner", "CEO", "General Manager", "Operations Manager", "Managing Partner", "Director"],
-    "organization_num_employees_ranges": ["1,10", "11,20", "21,50"],
-    "organization_locations": ["United States"],
-    "per_page": 50
-  }'
-```
-
 ---
 
 ## Credit Budget Tracker
@@ -93,13 +72,12 @@ curl --request POST \
 
 | Vertical | 1-20 Employees (Priority) | 21-50 Employees (Test) | Total Target |
 |----------|---------------------------|------------------------|--------------|
-| Printing | 25 leads | 10 leads | 35 |
-| Homestead | 15 leads | 10 leads | 25 |
+| Printing | 40 leads | 20 leads | 60 |
 | **Weekly Total** | **40** | **20** | **60** |
 
 ---
 
-## Printing Vertical (15 Found / 35 Target)
+## Printing Vertical (15 Found / 60 Target)
 
 | # | Company | Owner | Email | Website | Location | Brands | Employees | Segment | Source | Pain Signal | Status |
 |---|---------|-------|-------|---------|----------|--------|-----------|---------|--------|-------------|--------|
@@ -119,7 +97,7 @@ curl --request POST \
 | 14 | Usherwood | TBD | TBD | usherwood.com | Binghamton, NY | Canon Elite Dealer | ~15-20 | 1-20 | Web Search | Master Tech certified | new |
 | 15 | Chicago Printer Repair | TBD | TBD | chicagoprinterrepairinc.com | Chicago, IL | Wide format | ~5-10 | 1-20 | Web Search | Local service | new |
 
-**Printing Progress:** 15/35 - Need 20 more (10 from 1-20 segment, 10 from 21-50 segment)
+**Printing Progress:** 15/60 - Need 45 more (25 from 1-20 segment, 20 from 21-50 segment)
 
 ### Enrichment Priority (Printing)
 1. Techni-Serve Inc - 39 years, large customer base
@@ -130,29 +108,6 @@ curl --request POST \
 
 ---
 
-## Homestead Vertical (9 Found / 25 Target)
-
-| # | Business | Owner | Email | Website/Shop | Social | Location | Employees | Segment | Type | Revenue Indicator | Source | Pain Signal | Status |
-|---|----------|-------|-------|--------------|--------|----------|-----------|---------|------|-------------------|--------|-------------|--------|
-| 1 | Green Willow Homestead | Kelsey | hello@greenwillowhomestead.com | greenwillowhomestead.com | TBD | TBD | ~1-5 | 1-20 | Courses | Cultivating Capital course | Web Search | Coaching farm businesses | new |
-| 2 | Living Traditions Homestead | Kevin & Sarah | PO Box 323, Ava MO | livingtraditionshomestead.com | 842K YouTube | Ava, MO | ~5-10 | 1-20 | Content + Products | 842K subs | Web Search | High volume requests | new |
-| 3 | Abundance Plus | Justin Rhodes | TBD (DM for members) | abundanceplus.com | 1M+ YouTube | Asheville, NC | ~10-20 | 1-20 | Courses + Membership | #1 selling book | Web Search | Large audience | new |
-| 4 | The Homestead Education | Kody Hanner | TBD | thehomesteadeducation.com | TBD | TBD | ~1-5 | 1-20 | Courses + Coaching | 20yr experience | Web Search | Pork operation + courses | new |
-| 5 | HarmonyFarmsShop | TBD | TBD | etsy.com/shop/HarmonyFarmsShop | TBD | TBD | ~1-5 | 1-20 | Seeds, Nursery | Licensed seed dealer | Etsy | Heirloom + heritage focus | new |
-| 6 | MountainlilyFarm | TBD | TBD | etsy.com/shop/MountainlilyFarm | TBD | Winslow, AR | ~1-5 | 1-20 | Heirloom seeds | 30+ yr horticulturist | Etsy | Licensed nursery | new |
-| 7 | FarmFromHome | TBD | TBD | etsy.com/shop/FarmFromHome | TBD | TBD | ~1-5 | 1-20 | Herbs, Medicines | Wildcrafted herbs | Etsy | Urban homestead focus | new |
-| 8 | Silver Homestead | TBD | TBD | silverhomestead.com | TBD | TBD | ~1-5 | 1-20 | Farm stand products | Best-seller guides | Web Search | Content + products | new |
-| 9 | HomesteadHow-To | TBD | TBD | homesteadhow-to.com | TBD | TBD | ~1-5 | 1-20 | Beeswax products | Multi-year Etsy shop | Web Search | Growing customer base | new |
-
-**Homestead Progress:** 9/25 - Need 16 more (6 from 1-20 segment, 10 from 21-50 segment)
-
-### Enrichment Priority (Homestead)
-1. Living Traditions Homestead - 842K YouTube, high volume
-2. Abundance Plus - 1M+ YouTube, book author
-3. Green Willow Homestead - Has email, coaches businesses
-4. The Homestead Education - 20yr experience
-5. Silver Homestead - Best-seller guides
-
 ---
 
 ## Lead Sources for API Scraping
@@ -161,23 +116,17 @@ curl --request POST \
 - HP Partner Locator: https://locator.hp.com/us/en/
 - PRINTING United Directory: https://directory.printing.org/
 - LinkedIn: "large format printer owner" + company size filter
-
-### Homestead (Use Apollo Query)
-- Homesteaders of America: https://homesteadersofamerica.com/conference-vendor-list/
-- Mother Earth News Fair: https://www.motherearthnewsfair.com/exhibitors-sponsors/
-- Etsy: "homestead" shops with 1000+ sales
+- Canon Authorized Dealer locator
+- SGIA member directory
 
 ---
 
 ## Verification Criteria
 
 ### Target Outcomes
-- [ ] 35 printing leads with decision-maker names + emails
-  - At least 25 from 1-20 employee segment (proven ICP)
-  - Up to 10 from 21-50 employee segment (test)
-- [ ] 25 homestead leads with decision-maker names + emails
-  - At least 15 from 1-20 employee segment (proven ICP)
-  - Up to 10 from 21-50 employee segment (test)
+- [ ] 60 printing leads with decision-maker names + emails
+  - At least 40 from 1-20 employee segment (proven ICP)
+  - Up to 20 from 21-50 employee segment (test)
 - [ ] At least 50% email verification rate from Hunter
 - [ ] Document any hiring signals found
 

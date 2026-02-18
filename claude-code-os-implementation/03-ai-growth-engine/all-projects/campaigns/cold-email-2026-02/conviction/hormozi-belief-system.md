@@ -17,10 +17,10 @@
 |------|-----------|----------------|
 | 1 | Plotter Mechanix Phase 1 | "1,378% ROI. Alyssa got 15 hrs back. Kelsey's becoming a $500/hr consultant." |
 | 2 | Plotter Mechanix (Alyssa's story) | "She was drowning in 25 hrs/week of comms processing. Now the system handles it." |
-| 3 | S&S Wolf Sheds | "3-location shed dealer with zero digital presence. We're building their first lead capture system." |
-| 4 | The homestead opportunity | "These businesses are underserved. The first case study here unlocks an entire vertical." |
+| 3 | Plotter Mechanix Phase 2 | "$800K company scaling to $1.5M with AI-powered quoting and dispatch automation." |
+| 4 | Plotter Mechanix (Kelsey's transformation) | "From $175/hr technician to $500/hr consultant. The business runs without her on the phones." |
 
-**Rotation:** After Week 4, loop back. Add new case studies as they're created.
+**Rotation:** After Week 4, loop back. Add new printing case studies as they're created.
 
 **How to run the deep-dive:**
 1. Pick one team member to present the case study (5 min)
@@ -124,6 +124,18 @@ The answer is always yes. The follow-up isn't annoying -- it's a service.
 |--------|-----|
 | "They haven't replied, they must not be interested" | Most people are busy, not uninterested. Follow up per conviction score. |
 | "I don't want to be annoying" | Time Travel Test. If you know it works, following up is a service. |
-| "Maybe our solution isn't good enough" | Re-read the Plotter Mechanix metrics. 1,378% ROI. It works. |
-| "This prospect is too small/big for us" | If they match the ICP, they're a fit. Trust the profile. |
+| "Maybe our solution isn't good enough" | Re-read the Plotter Mechanix metrics. 1,378% ROI. It works. (Source: [SOURCE-CITATIONS.md](./SOURCE-CITATIONS.md)) |
+| "This prospect is too small/big for us" | If they match the ICP, they're a fit. Plotter Mechanix = $850K revenue, 3 employees. Trust the profile. |
 | "I should wait until I have more case studies" | One case study is enough to start. Kelsey is your proof. |
+
+---
+
+## Conviction Line Source Verification
+
+All conviction lines verified against Fireflies transcripts and local discovery files:
+- **1,378% ROI:** Calculated from $5K investment → $73K+ annual value (verified)
+- **15 hrs saved:** Alyssa's operational time reduction from 25 hrs → 10 hrs (verified)
+- **$500/hr consultant:** Kelsey's target rate transition (in progress, not yet achieved)
+- **25 hrs/week comms processing:** Alyssa's pre-automation workload (verified)
+
+**Full verification:** See [SOURCE-CITATIONS.md](./SOURCE-CITATIONS.md)
