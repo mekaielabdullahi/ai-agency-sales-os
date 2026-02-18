@@ -5,8 +5,15 @@
 
 ## Files
 
-- `Plotter Mechanix - AI ROI Calculator - Phase 2.xlsx` - The main ROI calculator workbook
-- `create_roi_calculator.py` - Python script used to generate the Excel file
+| File | Purpose |
+|------|---------|
+| `Plotter Mechanix - AI ROI Calculator - Phase 2.xlsx` | Client deliverable - main ROI calculator workbook |
+| `create_roi_calculator.py` | Python script to generate the Excel file |
+| `SOP-ROI-CREATION.md` | **Team SOP** - How ROI outputs are created (workflow, prompts, formulas) |
+| `Y-CALCULATION-WORKING-DOC.md` | Source of truth for all Y-variable calculations |
+| `OPP-4-QUOTE-GENERATION-AUTOMATION.md` | Quote generation automation opportunity |
+| `OPP-5-KNOWLEDGE-CAPTURE.md` | Knowledge capture opportunity |
+| `OPP-6-CONTACTS-CONSOLIDATION.md` | Contacts consolidation opportunity |
 
 ## Workbook Contents
 
