@@ -114,86 +114,6 @@ These queries use Apollo's **People Search API** which is **FREE** (no credits r
 
 ---
 
-## Homestead Vertical Query
-
-### Basic Search (1-20 Employees - Proven ICP)
-```json
-{
-  "api_key": "YOUR_API_KEY",
-  "q_keywords": "homestead OR homesteading OR small farm OR organic farm OR heritage seeds OR backyard poultry",
-  "person_titles": [
-    "Founder",
-    "Owner",
-    "CEO"
-  ],
-  "organization_num_employees_ranges": ["1,10", "11,20"],
-  "organization_locations": ["United States"],
-  "page": 1,
-  "per_page": 25
-}
-```
-
-### Expanded Search (1-50 Employees - Full Range)
-```json
-{
-  "api_key": "YOUR_API_KEY",
-  "q_keywords": "farm supplies OR homestead education OR sustainable agriculture OR permaculture OR farm to table OR cottage food",
-  "person_titles": [
-    "Founder",
-    "Owner",
-    "CEO",
-    "General Manager",
-    "Operations Manager",
-    "Managing Partner",
-    "Director",
-    "Farmer"
-  ],
-  "organization_num_employees_ranges": ["1,10", "11,20", "21,50"],
-  "organization_locations": ["United States"],
-  "q_organization_keyword_tags": ["homestead", "farm", "organic", "seeds", "poultry", "agriculture"],
-  "page": 1,
-  "per_page": 50
-}
-```
-
-### 21-50 Employee Segment (Test Market)
-```json
-{
-  "api_key": "YOUR_API_KEY",
-  "q_keywords": "farm supplies OR organic farm OR sustainable agriculture",
-  "person_titles": [
-    "CEO",
-    "General Manager",
-    "Operations Manager",
-    "Managing Partner",
-    "Director"
-  ],
-  "organization_num_employees_ranges": ["21,50"],
-  "organization_locations": ["United States"],
-  "q_organization_keyword_tags": ["agriculture", "farming", "organic"],
-  "page": 1,
-  "per_page": 25
-}
-```
-
-### Etsy/E-Commerce Sellers (1-10 Employees)
-```json
-{
-  "api_key": "YOUR_API_KEY",
-  "q_keywords": "etsy seller homestead OR farm shop owner OR seed company founder",
-  "person_titles": [
-    "Founder",
-    "Owner",
-    "Etsy Shop Owner",
-    "Creator"
-  ],
-  "organization_num_employees_ranges": ["1,10"],
-  "organization_locations": ["United States"],
-  "page": 1,
-  "per_page": 25
-}
-```
-
 ---
 
 ## cURL Examples
@@ -224,38 +144,6 @@ curl --request POST \
     "api_key": "YOUR_API_KEY",
     "q_keywords": "large format printer OR wide format OR plotter service",
     "person_titles": ["Founder", "Owner", "CEO", "President"],
-    "organization_num_employees_ranges": ["1,10", "11,20"],
-    "organization_locations": ["United States"],
-    "per_page": 25
-  }'
-```
-
-### Homestead Vertical - Full Range (1-50 Employees)
-```bash
-curl --request POST \
-  --url 'https://api.apollo.io/v1/mixed_people/search' \
-  --header 'Content-Type: application/json' \
-  --header 'Cache-Control: no-cache' \
-  --data '{
-    "api_key": "YOUR_API_KEY",
-    "q_keywords": "homestead OR homesteading OR small farm OR organic",
-    "person_titles": ["Founder", "Owner", "CEO", "General Manager", "Operations Manager"],
-    "organization_num_employees_ranges": ["1,10", "11,20", "21,50"],
-    "organization_locations": ["United States"],
-    "per_page": 50
-  }'
-```
-
-### Homestead Vertical - Priority Segment (1-20 Employees)
-```bash
-curl --request POST \
-  --url 'https://api.apollo.io/v1/mixed_people/search' \
-  --header 'Content-Type: application/json' \
-  --header 'Cache-Control: no-cache' \
-  --data '{
-    "api_key": "YOUR_API_KEY",
-    "q_keywords": "homestead OR homesteading OR small farm OR organic",
-    "person_titles": ["Founder", "Owner", "CEO"],
     "organization_num_employees_ranges": ["1,10", "11,20"],
     "organization_locations": ["United States"],
     "per_page": 25
@@ -344,12 +232,10 @@ Score leads by:
 
 ### Step 4: Enrich by Segment
 **Priority Batch (1-20 employees):**
-- Printing: Enrich 25 leads
-- Homestead: Enrich 15 leads
+- Printing: Enrich 40 leads
 
 **Test Batch (21-50 employees):**
-- Printing: Enrich up to 10 leads
-- Homestead: Enrich up to 10 leads
+- Printing: Enrich up to 20 leads
 
 Use remaining Apollo credits or Hunter.io for email enrichment on highest-scored leads.
 

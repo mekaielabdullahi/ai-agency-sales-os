@@ -7,7 +7,7 @@
 
 Matthew builds this as an n8n workflow. Automates the research and icebreaker generation for each new lead added to the Google Sheet.
 
-**Manual first:** Mekaiel manually personalizes the first 50 leads (25 printing, 25 homestead) via ChatGPT while Matthew builds the automation. ~2.5 hours. Validates copy quality before automation scales it.
+**Manual first:** Mekaiel manually personalizes the first 50 printing leads via ChatGPT while Matthew builds the automation. ~2.5 hours. Validates copy quality before automation scales it.
 
 ---
 
@@ -32,7 +32,7 @@ Research this company and return the following in JSON format:
 
 Company: [Company Name]
 Website: [Website URL]
-Vertical: [Printing/Homestead]
+Vertical: Printing
 ```
 
 - **Output:** JSON with 4 fields
@@ -51,15 +51,15 @@ You are writing the opening line of a cold email. The tone should be:
 
 Company: [Company Name]
 Owner: [First Name]
-Vertical: [Printing/Homestead]
+Vertical: Printing
 Company Description: [from Perplexity]
 Recent News: [from Perplexity]
 Specific Detail: [from Perplexity]
 
 Write ONE icebreaker sentence. Examples of good icebreakers:
 - "Saw [Company] handles HP wide-format service across [state] -- keeping those machines running is no joke."
-- "Your spring seed collection looks incredible -- your community clearly loves what you're building."
 - "Noticed you service Canon plotters for the [city] area -- that's a niche that doesn't get enough credit."
+- "Been in business [X] years servicing [Brand] -- that kind of longevity says a lot."
 
 Return ONLY the icebreaker sentence. No quotes, no explanation.
 ```
@@ -112,8 +112,7 @@ Keep it under 25 words, humble, and specific. No sales language.
 6. Set status to "Ready to Send" (5s)
 
 ### Time Estimate:
-- 25 printing leads x 3 min = 75 min
-- 25 homestead leads x 3 min = 75 min
+- 50 printing leads x 3 min = 150 min
 - **Total: ~2.5 hours**
 
 ---
@@ -154,8 +153,7 @@ Keep it under 25 words, humble, and specific. No sales language.
 
 ## Testing
 
-- [ ] Run 5 printing leads through pipeline. Verify icebreakers are specific, not generic.
-- [ ] Run 5 homestead leads through pipeline. Verify icebreakers are specific, not generic.
+- [ ] Run 10 printing leads through pipeline. Verify icebreakers are specific, not generic.
 - [ ] Verify fallback works when Perplexity returns insufficient data.
 - [ ] Verify validation rejects generic icebreakers.
 - [ ] Verify Google Sheet is updated correctly (all fields populated, status changed).

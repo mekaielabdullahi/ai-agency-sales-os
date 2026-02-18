@@ -140,9 +140,10 @@ This document outlines the free-tier API tools stack for finding decision-makers
 
 | Vertical | 1-20 Employees (Priority) | 21-50 Employees (Test) | Total |
 |----------|---------------------------|------------------------|-------|
-| Printing | 25 leads | 10 leads | 35 |
-| Homestead | 15 leads | 10 leads | 25 |
+| Printing | 40 leads | 20 leads | 60 |
 | **Weekly Total** | **40** | **20** | **60** |
+
+> **Note:** All cold email volume focused on Printing vertical per Hormozi Focus Framework.
 
 ---
 

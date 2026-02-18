@@ -83,7 +83,7 @@ Store in n8n credentials manager. Each inbox needs:
 2. Query Google Sheet for rows where:
    - Status = "Ready to Send"
    - Next Email Date <= today
-   - Vertical matches current batch (printing or homestead)
+   - Vertical matches current batch (printing)
 3. For each qualifying row:
    - Determine email number (1-4) from "Last Email Sent" column
    - Load corresponding email template
@@ -99,7 +99,7 @@ Store in n8n credentials manager. Each inbox needs:
 | First Name | Prospect first name |
 | Company | Company name |
 | Email | Prospect email |
-| Vertical | "Printing" or "Homestead" |
+| Vertical | "Printing" |
 | Icebreaker | AI-generated personalized opener |
 | Status | New / Ready to Send / Sent-1 / Sent-2 / Sent-3 / Sent-4 / Reply / Bounce / Opted Out |
 | Last Email Sent | 0-4 |
@@ -198,6 +198,21 @@ Calculated on a rolling 7-day window.
 | Post-Call Follow-up | `post_call_followup.json` | After discovery calls |
 | Proposal Assembly | `proposal_assembly.json` | Qualified leads after discovery |
 | Sales Interaction Agent | `sales_interaction_agent.json` | Reply sentiment classification |
+
+---
+
+## Lead Scraping Workflows (Upstream)
+
+See `n8n-workflow-templates.md` for lead generation workflows that feed into this engine:
+
+| Workflow | Purpose | Output |
+|----------|---------|--------|
+| Apollo to Airtable | One-click lead scraping | Qualified leads |
+| LinkedIn Enrichment Pipeline | Email enrichment | Leads with verified emails |
+| Hiring Signals Scraper | Activity detection | Prioritized leads |
+| Apollo + Apify Combined | Multi-source enrichment | Fully enriched leads |
+
+**Data flow:** Lead Scraping Workflows → Google Sheet (Tab 2: Lead Tracker) → Send Scheduler
 
 ---
 
