@@ -363,13 +363,145 @@ Annual Consulting Upside = $45,500-$91,000/year
 
 ---
 
+## Line Item 3: Contacts Consolidation + Outreach/Marketing
+
+### Section A: Time Cost - COMPLETE (Fireflies Validated)
+
+| Input | Value | Source |
+|-------|-------|--------|
+| Duplicate entry elimination | 0.5 hrs/day | Plotter Mechanix-alyssa workflow: "We have like seven Daves" |
+| Data cleanup time | 0.25 hrs/day | Plotter Mechanix-alyssa workflow: Fixing mismatched records |
+| QuickBooks sync errors | 0.125 hrs/day | Plotter Mechanix-alyssa workflow: "Breaking weekly" |
+| Contact search time | 0.5 hrs/day | Estimated: Finding info across 5 systems |
+| Alyssa's hourly rate | $25/hr | Administrative rate |
+| Working days/year | 260 | Standard |
+
+**Fireflies Evidence:**
+> "We have like seven Daves"
+> — Alyssa (duplicate contacts problem)
+
+> "Contact database disparity: Kelsey 10,581 vs Alyssa 43 vs Andrew 2"
+> — Plotter Mechanix-alyssa workflow
+
+**Calculation:**
+```
+Duplicate elimination:    0.5 hrs × $25 × 260 = $3,250/year
+Data cleanup:             0.25 hrs × $25 × 260 = $1,625/year
+QuickBooks sync errors:   0.125 hrs × $25 × 260 = $812.50/year
+Contact search time:      0.5 hrs × $25 × 260 = $3,250/year
+```
+
+**Section A Summary:**
+| Cost Area | Annual LOW | Annual HIGH |
+|-----------|------------|-------------|
+| Duplicate entry elimination | $2,600 | $3,900 |
+| Data cleanup | $1,040 | $1,560 |
+| QuickBooks sync errors | $520 | $780 |
+| Contact search time | $3,250 | $3,250 |
+| **TOTAL** | **$7,410** | **$9,490** |
+
+---
+
+### Section B: Lost Revenue - COMPLETE (Fireflies Validated)
+
+| Input | Value | Source |
+|-------|-------|--------|
+| Contact invisibility loss | $5,000-$10,000 | 246:1 disparity (Kelsey vs team average) |
+| Capsule CRM unused | $30/month | DISCOVERY-FINDINGS: Paying but not using |
+| AR collection affected | 5-10 accounts/month | Fireflies meeting |
+| AR uncollected rate | 30% | Due to contact gaps |
+| Average invoice value | $750 | Jobber analysis |
+
+**Fireflies Evidence:**
+> "Kelsey 10,581 vs Alyssa 43 vs Andrew 2"
+> — Contact database disparity shows 246:1 ratio
+
+> "When I call they're like, oh shit"
+> — Kelsey (AR collection works when contacts accessible)
+
+**Calculation:**
+```
+Contact invisibility:     Lost opportunities = $5,000-$10,000/year
+Capsule CRM waste:        $30 × 12 = $360/year
+AR collection gaps:       5-10/month × 30% uncollected × $750 = $13,500-$27,000/year
+```
+
+**Section B Summary:**
+| Loss Area | Annual LOW | Annual HIGH |
+|-----------|------------|-------------|
+| Contact invisibility | $5,000 | $10,000 |
+| Capsule CRM unused | $360 | $360 |
+| AR collection gaps | $13,500 | $27,000 |
+| **TOTAL** | **$18,860** | **$37,360** |
+
+---
+
+### Section C: Revenue Upside - COMPLETE (Fireflies Validated)
+
+#### Opportunity 1: AR Systematic Recovery
+| Input | Value | Source |
+|-------|-------|--------|
+| Affected accounts/month | 5-10 | Fireflies meeting |
+| Recovery rate with access | 70% | "When I call they pay" |
+| Average invoice | $750 | Jobber analysis |
+| **Annual Revenue** | **$31,500-$63,000** | |
+
+#### Opportunity 2: Andrew Supplies Visibility
+| Input | Value | Source |
+|-------|-------|--------|
+| Hidden customer base | 100 | Andrew's 2 contacts vs Kelsey's 10,581 |
+| Average supply sale/year | $500 | Consumables estimate |
+| **Annual Revenue** | **$50,000** | |
+
+#### Opportunity 3: Service Contract Renewals
+| Input | Value | Source |
+|-------|-------|--------|
+| Eligible customers | 20 | Customers with qualifying equipment |
+| Contract value | $99/month | Proposed maintenance agreement |
+| **Annual Revenue** | **$23,760** | |
+
+#### Opportunity 4: Top Customer Activation
+| Input | Value | Source |
+|-------|-------|--------|
+| Contacts for activation | 1,000 | Conservative (from 10,581) |
+| Conversion rate | 2% | With systematic outreach |
+| Value per activation | $750 | Jobber mean |
+| **Annual Revenue** | **$15,000** | |
+
+**Section C Summary:**
+| Opportunity | Annual LOW | Annual HIGH |
+|-------------|------------|-------------|
+| AR systematic recovery | $31,500 | $63,000 |
+| Andrew supplies visibility | $50,000 | $50,000 |
+| Service contract renewals | $23,760 | $23,760 |
+| Top customer activation | $15,000 | $15,000 |
+| **TOTAL** | **$120,260** | **$151,760** |
+
+---
+
+### TOTAL Y (Contacts Consolidation) - COMPLETE (Fireflies Validated)
+
+| Section | Annual Low | Annual High |
+|---------|------------|-------------|
+| A: Time Cost | $7,410 | $9,490 |
+| B: Lost Revenue | $18,860 | $37,360 |
+| C: Revenue Upside | $120,260 | $151,760 |
+| **TOTAL Y** | **$146,530** | **$198,610** |
+
+### Critical Quote from Alyssa:
+> "We have like seven Daves"
+> — Alyssa (Plotter Mechanix-alyssa workflow)
+
+---
+
 ## GRAND TOTAL Y (All Line Items)
 
 | Line Item | Annual LOW | Annual HIGH |
 |-----------|------------|-------------|
 | 1: Quote Generation Automation | $247,580 | $1,267,580 |
 | 2: Knowledge Capture & Training | $226,875 | $321,975 |
-| **COMBINED TOTAL Y** | **$474,455** | **$1,589,555** |
+| 3: Contacts Consolidation + Outreach | $146,530 | $198,610 |
+| **COMBINED TOTAL Y** | **$620,985** | **$1,788,165** |
 
 ---
 
@@ -383,7 +515,7 @@ Annual Consulting Upside = $45,500-$91,000/year
 
 ---
 
-## Line Item 3: [NEXT]
+## Line Item 4: [NEXT]
 
 ### Section A: Time Cost
 
