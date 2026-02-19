@@ -1,7 +1,7 @@
 # Skills Inventory
 
-**Last Updated:** 2026-02-13
-**Total Skills:** 13
+**Last Updated:** 2026-02-18
+**Total Skills:** 13 (+ 9 BMad agents)
 
 ---
 
@@ -96,6 +96,28 @@
 | **Gmail** | client-outreach, outreach |
 | **Slack** | dashboard, publish, weekly-report |
 | **Chrome MCP** | publish |
+
+---
+
+## BMad Framework Agents (9)
+
+Added via `5e76f84` commit. Located in `_bmad/bmm/agents/`.
+
+| Agent | Slash Command | Purpose |
+|-------|---------------|---------|
+| Paige - Technical Writer | `/tech-writer` | Documentation, knowledge curation, clarity |
+| Bob - Scrum Master | `/sm` | Story preparation, sprint planning, agile ceremonies |
+| Barry - Quick Flow Solo Dev | `/quick-flow` | Fast implementation, lean specs, efficiency |
+| John - Product Manager | `/pm` | PRD creation, user interviews, requirement discovery |
+| Murat - Test Architect | `/tea` | Test strategy, quality gates, automation |
+| Amelia - Developer | `/dev` | Story implementation, coding, testing |
+| Sally - UX Designer | `/ux-designer` | User experience, interaction design, wireframes |
+| Mary - Business Analyst | `/analyst` | Market research, competitive analysis, requirements |
+| Winston - Architect | `/architect` | System design, technical decisions, scalable patterns |
+
+**Additional BMad Workflows:**
+- `/workflow-init` - Initialize BMM project, determine level, type, and workflow path
+- `/bmad-master` - BMad Master: Task executor, knowledge custodian, workflow orchestrator
 
 ---
 

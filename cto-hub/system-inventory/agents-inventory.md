@@ -1,10 +1,11 @@
 # Agents Inventory
 
-**Last Updated:** 2026-02-13
-**Total Defined Agents:** ~30
+**Last Updated:** 2026-02-18
+**Total Defined Agents:** ~30 (+ 9 BMad agents)
 **Fully Documented (Markdown):** 3
 **TypeScript Agents:** 4 (undeployed)
 **Role Prompts:** 6
+**BMad Agents:** 9 (new)
 
 ---
 
@@ -107,8 +108,31 @@
 
 ---
 
+## BMad Framework Agents (9) - NEW
+
+Added via commit `5e76f84`. Located in `_bmad/bmm/agents/`.
+
+| Agent | Slash Command | Role |
+|-------|---------------|------|
+| Paige | `/tech-writer` | Technical Writer - Documentation, knowledge curation |
+| Bob | `/sm` | Scrum Master - Story prep, sprint planning, agile |
+| Barry | `/quick-flow` | Quick Flow Solo Dev - Fast implementation, lean specs |
+| John | `/pm` | Product Manager - PRD creation, user interviews |
+| Murat | `/tea` | Test Architect - Test strategy, quality gates |
+| Amelia | `/dev` | Developer - Story implementation, coding, testing |
+| Sally | `/ux-designer` | UX Designer - User experience, wireframes |
+| Mary | `/analyst` | Business Analyst - Market research, requirements |
+| Winston | `/architect` | Architect - System design, technical decisions |
+
+**Additional BMad Commands:**
+- `/workflow-init` - Initialize BMM project
+- `/bmad-master` - BMad Master orchestrator
+
+---
+
 ## Notes
 
 - No agents are deployed as autonomous services — all are specification documents
 - TypeScript onboarding agents need deployment infrastructure (TD-002)
 - Agent creation guide template available at `09-templates/agent-creation-guide.md`
+- BMad agents are accessible via slash commands and are fully functional

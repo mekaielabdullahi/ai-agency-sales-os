@@ -196,14 +196,14 @@ The following items from the original Section C have been relocated to avoid dou
 
 | Field | Value | Notes |
 |-------|-------|-------|
-| Solution implementation cost ($) | TBD | Phase 2 scope |
-| Annual tool/license cost ($) | TBD | Platform fees |
-| Total first-year cost | TBD | Implementation + Year 1 |
+| Solution implementation cost ($) | **$1,850** | 37h pessimistic @ $50/hr |
+| Annual tool/license cost ($) | $0 | Uses existing Quo/Jobber |
+| Total first-year cost | **$1,850** | Implementation only |
 
-### ROI Preview (If solution costs $20,000):
-- **ROI (Conservative):** $67,580 ÷ $20,000 = **3.4x**
-- **ROI (Full):** $103,580 ÷ $20,000 = **5.2x**
-- **Payback:** 3-4 months
+### ROI Summary (OPP-4 Standalone)
+- **ROI (Conservative):** $67,580 ÷ $1,850 = **36.5x**
+- **ROI (Full):** $103,580 ÷ $1,850 = **56.0x**
+- **Payback:** ~1.5 weeks
 
 ---
 
@@ -227,6 +227,53 @@ The following items from the original Section C have been relocated to avoid dou
 
 **ROI Justification:**
 Automating quote follow-up converts 6-10 additional jobs per month at $750 each. This alone justifies the solution cost. Total opportunity: $67,580-$103,580/year.
+
+---
+
+## IMPLEMENTATION DETAILS
+
+### Development Estimate (3-Point)
+
+| Category | Optimistic | Likely | Pessimistic |
+|----------|------------|--------|-------------|
+| Quote Workflow (direct) | 8h | 15h | 23h |
+| Infrastructure (shared) | 5h | 9h | 14h |
+| **OPP-4 TOTAL** | **13h** | **24h** | **37h** |
+
+### Task Breakdown
+
+| # | Task | Opt | Likely | Pess | Notes |
+|---|------|-----|--------|------|-------|
+| 1 | Extend call summarization | 2h | 4h | 6h | Pull more fields for quotes |
+| 2 | Quo→Holding Area→Jobber flow | 4h | 8h | 12h | Streamline quote creation |
+| 3 | Deposit notification system | 2h | 3h | 5h | QuickBooks webhook |
+| 4 | Holding Area UI (50% alloc) | 3h | 5h | 8h | Shared with other opps |
+| 5 | Routing logic (50% alloc) | 1h | 2h | 3h | Assign to correct person |
+| 6 | UI/workflow design (50% alloc) | 1h | 2h | 3h | Shared infrastructure |
+
+### Cost Estimate
+
+| Scenario | Hours | Cost (@$50/hr) |
+|----------|-------|----------------|
+| Optimistic | 13h | $650 |
+| Likely | 24h | $1,200 |
+| **Pessimistic** | **37h** | **$1,850** |
+
+### Timeline & Resources
+
+- **Milestone:** M2 (Weeks 3-4)
+- **Team:** Matthew + Trent (split)
+- **Dependencies:** Phase 1 Quo integration stable
+
+### Structured Requirements
+
+| ID | Requirement | Priority | Hours |
+|----|-------------|----------|-------|
+| QA-001 | Auto-extract quote details from Quo calls | P1 | 4h |
+| QA-002 | Route quote to holding area for triage | P1 | 5h |
+| QA-003 | Create Jobber job from holding area | P1 | 8h |
+| QA-004 | Trigger deposit notification when paid | P2 | 3h |
+| QA-005 | Flag second-call opportunities | P2 | 4h |
 
 ---
 

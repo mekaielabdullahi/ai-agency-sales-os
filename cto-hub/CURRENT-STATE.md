@@ -1,66 +1,84 @@
 # Current System State - AI Agency Sales OS
 
-**Last Synced:** 2026-02-13
+**Last Synced:** 2026-02-18
 **Synced By:** Claude Code (CTO Sync)
-**Next Sync:** 2026-02-20
+**Next Sync:** 2026-02-25
 
 ---
 
 ## Quick Stats
 
-| Component | Count | Status | Change (since Feb 12) |
+| Component | Count | Status | Change (since Feb 13) |
 |-----------|-------|--------|----------------------|
-| **Skills** | 13 | ✅ All operational | +1 (tasks skill was missed) |
-| **System Commands** | 9 | ✅ All functional | — |
-| **Agentic Commands** | 25 | ✅ All functional | — |
-| **Agentic Modules** | 15 | ✅ Deployed | — |
-| **Defined Agents** | ~30 | ⚠️ Specs only (3 documented) | — |
-| **Active Projects** | 8 | ✅ In delivery | — |
-| **Incubated Projects** | 5 | ✅ Pipeline building | — |
-| **Internal Projects** | 5 | ✅ Ongoing | +2 (audit-beta-application, checklist-app-requirements missed) |
-| **Python Tools** | 29 | ✅ Operational | — |
-| **n8n Workflows** | 15 | ⚠️ Exported, untracked | — |
-| **Git Branches** | 7 remote | ⚠️ Stale branches | — |
+| **Skills** | 13 | All operational | No change |
+| **System Commands** | 9 | All functional | No change |
+| **Agentic Commands** | 25 | All functional | No change |
+| **Agentic Modules** | 15 | Deployed | No change |
+| **Defined Agents** | ~30 | Specs only (3 documented) | No change |
+| **Active Projects** | 8 | In delivery | No change |
+| **Incubated Projects** | 5 | Pipeline building | No change |
+| **Internal Projects** | 5 | Ongoing | No change |
+| **Python Tools** | 29 | Operational | No change |
+| **n8n Workflows** | 15 | Exported, untracked | No change |
+| **BMad Framework** | NEW | Integrated | +1 framework added |
+| **Claude Code Plugins** | NEW | Untracked (cc-plugins/) | +1 directory added |
 
 ---
 
-## Recent Changes (Since Last Sync: 2026-02-12)
+## Recent Changes (Since Last Sync: 2026-02-13)
 
-### Commits Today (Feb 13)
+### Major Additions
 
-5 commits focused on Plotter Mechanix Phase 2 proposal:
+**1. BMad Method Framework (5e76f84)**
+- Added complete BMad method framework with agents and workflows
+- Location: `_bmad/` directory with core workflows, BMM workflows
+- Includes 9 BMad agents accessible via slash commands
+- Workflows: brainstorming, party-mode, PRD creation, UX design, product briefs
+
+**2. Claude Code Plugins (01efcc2)**
+- New `cc-plugins/` directory (untracked in git)
+- Contains 24+ plugin modules: diagrams, leads, slack, notion, proposal, etc.
+- Mirrors agentic modules functionality for Claude Code ecosystem
+- Status: Needs decision on git tracking
+
+**3. Shared Resources (6b7deaf)**
+- Added `shared-resources/matthew-repos/` with reference repositories
+- Includes: n8n-nodes-jobber, n8n-nodes-quo, fathom-os-integration, claude-code-os, ai-agency-development-os
+- Added `shared-resources/team-context/` for team documentation
+
+**4. System Prompts Reference (abb0dec)**
+- Added reference materials for system prompts
+
+### Plotter Mechanix ROI Work (12 commits)
+
+Major focus on Phase 2 ROI validation:
 
 | Commit | Description |
 |--------|-------------|
-| `98d6451` | feat(plotter-mechanix): Add Phase 2 roadmap diagram |
-| `aa44272` | feat(plotter-mechanix): Polish Phase 2 proposal with $100M Offers framework |
-| `9ee5979` | feat(plotter-mechanix): Apply $100M Offers framework to proposal and diagram |
-| `24c8e35` | fix(plotter-mechanix): Update diagram with conservative ROI, remove Facebook |
-| `47412ae` | fix(plotter-mechanix): Final diagram polish with emails/texts/website channels |
+| `f55cdad` | Simplify roi-calculator folder structure |
+| `3ecfe1b` | Fix double-counting violations in ROI calculations |
+| `efb9380` | Add OPP-6 Contacts Consolidation ROI |
+| `6979a37` | Add OPP-5 Knowledge Capture ROI |
+| Earlier commits | ROI calculator, Value per Unit updates, verification SOPs |
 
 **Key Deliverables:**
-- **Polished Proposal:** `phase-2-proposal-2026-02-13-polished.md` - Complete rewrite using $100M Offers framework
-- **Excalidraw Diagram:** `diagrams/plotter-phase2-roadmap.excalidraw` - Visual roadmap for client presentation
+- Complete ROI calculations for 6 opportunities
+- Plug-and-play ROI calculator template
+- Validated conversion framework in Section B
 
-### $100M Offers Framework Applied
-- Dominant promise with specific numbers ($91K/year, 20 hrs/week)
-- Success criteria per milestone (measurable outcomes)
-- Clean pricing story ($10K + $10K + $8K + included $10K bonus)
-- Risk reversal guarantee (50% reduction or 60 extra days free)
-- Conservative ROI: 336%, 67-day payback, $122K annual value
+### Other Updates
 
-### Inventory Corrections (This Sync)
-
-- **Skills count corrected: 13, not 12** — The `/tasks` skill (committed Feb 9, `14fab1f`) was missed by the Feb 12 sync. Now added to inventory.
-- **Internal projects corrected: 5, not 3** — `audit-beta-application` and `checklist-app-requirements` were not documented in previous syncs.
-- **gamma-discovery-deck-prompt.md resolved** — Was flagged as untracked since Feb 5; now committed (`13281a6`). Removed from issues.
-- **TD-004 updated** — n8n workflow count corrected from "8" to "15" in DEBT-REGISTER.md.
+- **Steve Tobey (58453fb):** Added followup call meeting notes
+- **Cold Email Campaign:** Updated printing vertical, conviction content, infrastructure docs
+- **SOPs:** Added P1/P2 templates for sales-dev collaboration
+- **Education:** Updated event strategy for 150-cap workshop model
 
 ### Still Unaddressed (Carried Over)
 
 - `__pycache__/` still not in .gitignore (flagged Feb 9)
-- Slack token still expired (flagged Jan 29) — **now 21+ days**
+- Slack token expired (flagged Jan 29) — **now 26+ days**
 - CLIENT_FEEDBACK_DB_ID still not configured
+- cc-plugins/ directory is untracked
 
 ---
 
@@ -68,19 +86,19 @@
 
 | Skill | Purpose | Status | Notes |
 |-------|---------|--------|-------|
-| **brand-illustrator** | Generate branded content (images + copy) | ✅ Active | Last used Feb 6 |
-| **business-functions-mapping** | Map operations to AI opportunities | ✅ Active | |
-| **client-feedback** | Manage client testing feedback via Notion | ⚠️ Needs DB ID | |
-| **client-outreach** | Systematic outreach & pipeline management | ✅ Active | |
-| **comprehensive-ai-audit** | Full paid AI audit workflow | ✅ Active | |
-| **content-strategy** | LinkedIn content planning & creation | ✅ Active | Notion integrated |
-| **dashboard** | Business analytics & metrics | ✅ Active | |
-| **notion-sync** | Push markdown to Notion | ⚠️ Partial | Needs page IDs (TD-001) |
-| **outreach** | Universal lead outreach (Gmail + Notion) | ✅ Active | Graceful fallbacks |
-| **publish** | Post content to LinkedIn | ✅ Active | |
-| **tasks** | Notion task dashboard (tasks, leads, projects) | ✅ Active | Added Feb 9 |
-| **weekly-planning** | Strategic weekly plans | ✅ Active | |
-| **weekly-report** | Auto-generate weekly reports | ✅ Active | |
+| **brand-illustrator** | Generate branded content (images + copy) | Active | |
+| **business-functions-mapping** | Map operations to AI opportunities | Active | |
+| **client-feedback** | Manage client testing feedback via Notion | Needs DB ID | |
+| **client-outreach** | Systematic outreach & pipeline management | Active | |
+| **comprehensive-ai-audit** | Full paid AI audit workflow | Active | |
+| **content-strategy** | LinkedIn content planning & creation | Active | Notion integrated |
+| **dashboard** | Business analytics & metrics | Active | |
+| **notion-sync** | Push markdown to Notion | Partial | Needs page IDs (TD-001) |
+| **outreach** | Universal lead outreach (Gmail + Notion) | Active | Graceful fallbacks |
+| **publish** | Post content to LinkedIn | Active | |
+| **tasks** | Notion task dashboard (tasks, leads, projects) | Active | |
+| **weekly-planning** | Strategic weekly plans | Active | |
+| **weekly-report** | Auto-generate weekly reports | Active | |
 
 ---
 
@@ -88,39 +106,61 @@
 
 | Command | Purpose | Status |
 |---------|---------|--------|
-| `/agentic-new` | Scaffold new agentic module | ✅ |
-| `/agentic-new-project` | Create new project | ✅ |
-| `/agentic-setup` | Initialize workspace | ✅ |
-| `/agentic-sync` | Rebuild workspace index | ✅ |
-| `/agentic-version` | Show version | ✅ |
-| `/cto-debt` | Log technical debt | ✅ |
-| `/cto-decision` | Log architecture decision | ✅ |
-| `/cto-sync` | Full system scan & doc refresh | ✅ |
-| `/status` | Quick system health check | ✅ |
+| `/agentic-new` | Scaffold new agentic module | Working |
+| `/agentic-new-project` | Create new project | Working |
+| `/agentic-setup` | Initialize workspace | Working |
+| `/agentic-sync` | Rebuild workspace index | Working |
+| `/agentic-version` | Show version | Working |
+| `/cto-debt` | Log technical debt | Working |
+| `/cto-decision` | Log architecture decision | Working |
+| `/cto-sync` | Full system scan & doc refresh | Working |
+| `/status` | Quick system health check | Working |
 
 **Agentic Commands:** 25 additional module-specific commands. See `modules-inventory.md` for full list.
 
 ---
 
+## BMad Framework (NEW)
+
+| Component | Location | Count |
+|-----------|----------|-------|
+| Core Workflows | `_bmad/core/workflows/` | 2 (brainstorming, party-mode) |
+| BMM Workflows | `_bmad/bmm/workflows/` | 4+ (research, PRD, UX design, product brief) |
+| BMM Agents | `_bmad/bmm/agents/` | 9 agents |
+| Resources | `_bmad/core/resources/` | Excalidraw helpers, libraries |
+
+**BMad Agents Available:**
+1. `/tech-writer` - Paige: Documentation, knowledge curation
+2. `/sm` - Bob: Scrum Master, sprint planning
+3. `/quick-flow` - Barry: Fast implementation, lean specs
+4. `/pm` - John: Product Manager, PRD creation
+5. `/tea` - Murat: Test Architect, quality gates
+6. `/dev` - Amelia: Developer, story implementation
+7. `/ux-designer` - Sally: User experience, wireframes
+8. `/analyst` - Mary: Business Analyst, market research
+9. `/architect` - Winston: System design, technical decisions
+
+---
+
 ## Agentic Modules (15)
 
-| Module | Tools | Env Configured | Status | Notes |
-|--------|-------|----------------|--------|-------|
-| **client-feedback** | 1 | ⚠️ Needs DB ID | ⚠️ | Notion feedback workflow |
-| **client-onboarding** | 0 | 🔴 Slack expired | 🔴 Blocked | Depends on slack module |
-| **dashboard** | 7 | ✅ | ✅ | Collectors, generators, formatters |
-| **demo-deploy** | 1 | ✅ | ✅ | Depends on infrastructure |
-| **diagrams** | 3 | ✅ | ✅ | Excalidraw, Mermaid, ASCII |
-| **infrastructure** | 2 | ✅ | ✅ | Cloudflare + Dokploy |
-| **leads** | 3 | ✅ | ✅ | Apify + Google Sheets |
-| **md-export** | 2 | ✅ | ✅ | Google Docs + Word |
-| **n8n** | 1 | ✅ | ✅ | MCP server + 15 workflow exports |
-| **notion** | 1 | ✅ | ✅ | Pages, databases, blocks, search |
-| **notebooklm** | 0 | ⚠️ Needs auth | ⚠️ | Prototype, undocumented APIs |
-| **proposal** | 2 | ✅ | ✅ | Google Slides |
-| **slack** | 1 | 🔴 Token expired | 🔴 Blocked | Needs token refresh |
-| **sop** | 2 | ✅ | ✅ | Audio transcription + SOP |
-| **ssh** | 1 | ✅ | ✅ | Remote commands |
+| Module | Tools | Env Status | Operational | Notes |
+|--------|-------|------------|-------------|-------|
+| **client-feedback** | 1 | Needs DB ID | Partial | Notion feedback workflow |
+| **client-onboarding** | 0 | Slack expired | Blocked | Depends on slack module |
+| **dashboard** | 7 | Configured | Working | Collectors, generators, formatters |
+| **demo-deploy** | 1 | Configured | Working | Dokploy + GitHub integration |
+| **diagrams** | 3 | Configured | Working | Excalidraw, Mermaid, ASCII |
+| **infrastructure** | 2 | Configured | Working | Cloudflare + Dokploy |
+| **leads** | 3 | Configured | Working | Apify + Google Sheets |
+| **md-export** | 2 | Configured | Working | Google Docs + Word |
+| **n8n** | 1 | Configured | Working | MCP server + 15 workflows |
+| **notion** | 1 | Configured | Working | Pages, databases, blocks, search |
+| **notebooklm** | 0 | Needs auth | Prototype | Undocumented Google APIs |
+| **proposal** | 2 | Configured | Working | Google Slides |
+| **slack** | 1 | Token expired | Blocked | Needs token refresh |
+| **sop** | 2 | Configured | Working | Audio transcription + SOP |
+| **ssh** | 1 | Configured | Working | Remote commands |
 
 ---
 
@@ -130,12 +170,12 @@
 
 | Project | Type | Status | Priority | Recent Activity |
 |---------|------|--------|----------|-----------------|
-| **plotter-mechanix** | Client | Phase 2 Ready | P0 | Polished proposal + diagram complete, ROI validated ($75/hr) |
+| **plotter-mechanix** | Client | Phase 2 Ready | P0 | 12 ROI commits, all 6 opportunities calculated |
 | **remus-development** | Client | Discovery | P0 | — |
 | **ss-wolf-sheds** | Client | Active/Expanded | P1 | Phase 1 PRD for QR Lead Capture |
 | **xigent** | Client | Discovery | P1 | — |
-| **aaa-diy-pod** | Network | Active | P2 | Chat summary documented |
-| **arisegroup-internal** | Internal | Ongoing | P2 | Education, PRDs, onboarding |
+| **aaa-diy-pod** | Network | Active | P2 | — |
+| **arisegroup-internal** | Internal | Ongoing | P2 | SOPs, workshop model updates |
 | **maples-apothecary** | Client | Paused | P3 | Waiting on discovery transcript |
 | **az-events-planning** | Client | Pre-Discovery | P3 | — |
 
@@ -143,10 +183,10 @@
 
 | Project | Type | Status | Recent Activity |
 |---------|------|--------|-----------------|
-| **steve-tobey-threat-analysis** | Lead | Discovery Done | Discovery call Feb 6, followup prep Feb 11 (Hawkwood LLC) |
+| **steve-tobey-threat-analysis** | Lead | Discovery Done | Followup call notes added (Feb 14+) |
 | **concrete-ceo** | Lead | Pre-Discovery | — |
 | **david-equipment-share** | Lead | Pre-Discovery | — |
-| **dennis-consulting** | Lead | Pre-Discovery | Intro meeting Dec 15 documented |
+| **dennis-consulting** | Lead | Pre-Discovery | — |
 | **infinity-vault-website** | Lead | Pre-Discovery | — |
 
 ### Internal Projects (5)
@@ -161,43 +201,24 @@
 
 ---
 
-## Agents Summary (~30 Defined)
-
-| Category | Count | Location | Status |
-|----------|-------|----------|--------|
-| Executive Office | 2 | `01-executive-office/agents/` | Spec |
-| Discovery Process | 5 | `02-operations/discovery-process/agents/` | Spec |
-| Metrics & Productivity | 2 | `02-operations/` | Spec |
-| Project Management | 2 | `02-operations/project-management/` | Spec |
-| Internal Projects (Self-Discovery) | 4 | `02-operations/internal-projects/` | Spec |
-| Active Project Audits | 2 | `02-operations/active-projects/` | Spec |
-| AI Growth Engine (Sales) | 2 | `03-ai-growth-engine/all-projects/` | Spec |
-| AI Growth Engine (Onboarding) | 4 | `03-ai-growth-engine/onboarding/` | ⚠️ TypeScript (TD-002) |
-| Content Team (Agent) | 1 | `04-content-team/agents/` | Spec |
-| Content Team (Prompts) | 6 | `04-content-team/prompts/` | Role Prompts |
-
-**Note:** 3 agents have full markdown specs. 4 TypeScript onboarding agents need deployment. See `agents-inventory.md` for details.
-
----
-
 ## Environment Configuration
 
 | Variable | Configured | Module | Status |
 |----------|------------|--------|--------|
-| NOTION_API_KEY | ✅ | notion, client-feedback, dashboard | Valid |
-| CLIENT_FEEDBACK_DB_ID | ❌ | client-feedback | **Needs setup** |
-| GOOGLE_AUTH_TOKEN | ❌ | notebooklm | **Needs `notebooklm auth`** |
-| SLACK_BOT_TOKEN | 🔴 | slack, client-onboarding | Expired (15+ days) |
-| SLACK_USER_TOKEN | 🔴 | slack, client-onboarding | Expired (15+ days) |
-| OPENAI_API_KEY | ✅ | diagrams, sop | Valid |
-| GOOGLE_SLIDES_TEMPLATE_ID | ✅ | proposal | Valid |
-| GOOGLE_FOLDER_ID | ✅ | md-export | Valid |
-| CLOUDFLARE_API_TOKEN | ✅ | infrastructure | Valid |
-| DOKPLOY_URL | ✅ | infrastructure, demo-deploy | Valid |
-| DOKPLOY_API_KEY | ✅ | infrastructure, demo-deploy | Valid |
-| N8N_API_URL | ✅ | n8n | Valid |
-| N8N_API_KEY | ✅ | n8n | Valid |
-| APIFY_TOKEN | ✅ | leads | Valid |
+| NOTION_API_KEY | Yes | notion, client-feedback, dashboard | Valid |
+| CLIENT_FEEDBACK_DB_ID | No | client-feedback | **Needs setup** |
+| GOOGLE_AUTH_TOKEN | No | notebooklm | **Needs `notebooklm auth`** |
+| SLACK_BOT_TOKEN | Expired | slack, client-onboarding | **26+ days expired** |
+| SLACK_USER_TOKEN | Expired | slack, client-onboarding | **26+ days expired** |
+| OPENAI_API_KEY | Yes | diagrams, sop | Valid |
+| GOOGLE_SLIDES_TEMPLATE_ID | Yes | proposal | Valid |
+| GOOGLE_FOLDER_ID | Yes | md-export | Valid |
+| CLOUDFLARE_API_TOKEN | Yes | infrastructure | Valid |
+| DOKPLOY_URL | Yes | infrastructure, demo-deploy | Valid |
+| DOKPLOY_API_KEY | Yes | infrastructure, demo-deploy | Valid |
+| N8N_API_URL | Yes | n8n | Valid |
+| N8N_API_KEY | Yes | n8n | Valid |
+| APIFY_TOKEN | Yes | leads | Valid |
 
 ---
 
@@ -205,14 +226,14 @@
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Git | ✅ | Clean working tree (1 untracked: __pycache__) |
-| Notion API | ✅ | Connected as "MEKAIEL's CC (bot)" |
-| Slack | 🔴 | Token expired — needs refresh (15+ days) |
-| Gmail | ✅ | Working via MCP |
-| n8n | ✅ | MCP server + 15 exported workflows |
-| Agentic Modules | ✅ | 29 Python tools operational |
-| Matthew Remote | ✅ | Configured as `matthew` remote |
-| Agent Teams Branch | ⚠️ | Experimental, not merged |
+| Git | Working | 1 modified (shared-resources submodule), 1 untracked (cc-plugins) |
+| Notion API | Working | Connected as "MEKAIEL's CC (bot)" |
+| Slack | Blocked | Token expired — needs refresh (26+ days) |
+| Gmail | Working | Via MCP |
+| n8n | Working | MCP server + 15 exported workflows |
+| Agentic Modules | Working | 29 Python tools operational |
+| BMad Framework | Working | Fully integrated |
+| Matthew Remote | Working | Configured as `matthew` remote |
 
 ---
 
@@ -224,7 +245,7 @@
 | P1 | — | TypeScript agents not deployed (TD-002) |
 | P1 | — | Missing agentic .env file (TD-006) |
 | P2 | 4 | Duplicate outreach templates (TD-003) |
-| P2 | — | n8n workflow exports untracked — 15 files (TD-004, updated) |
+| P2 | — | n8n workflow exports untracked — 15 files (TD-004) |
 | P2 | — | Slack tokens expired (TD-005) |
 | P2 | — | TODOs in onboarding agent handlers (TD-007) |
 | P3 | 1 | Deprecated code references (TD-008) |
@@ -233,20 +254,11 @@
 
 ---
 
-## Untracked/Uncommitted
+## New Issues Detected
 
-**Untracked (1 item):**
-- `agentic/modules/notion/tool/__pycache__/` — should be gitignored
-
-**Resolved:**
-- ~~`gamma-discovery-deck-prompt.md`~~ — committed as `13281a6`
-
-**Stale Remote Branches (cleanup candidates):**
-- `origin/bold-shockley`
-- `origin/condescending-saha`
-- `origin/claude/automation-commands-guide-L5y3c`
-- `origin/claude/dashboard-prompt-ai-clients-01Cd4YoF6kjMVuFacXY2GcGN`
-- `origin/claude/document-client-touchpoints-F2aYw`
+1. **cc-plugins/ directory untracked** — 24+ plugin modules sitting outside git. Decision needed: track in git or separate repo?
+2. **shared-resources submodule modified** — `shared-resources/matthew-repos/ai-agency-development-os` shows as modified
+3. **Slack token now 26+ days expired** — Escalated from 21+ days
 
 ---
 
@@ -254,17 +266,17 @@
 
 ### Immediate (This Week)
 
-1. **Send Plotter Phase 2 proposal to Kelsey** — Polished proposal + diagram ready for delivery
-2. **Add `__pycache__/` to .gitignore** — Prevents Python cache clutter in git status
-3. **Refresh Slack token** at api.slack.com/apps — 21+ days expired, blocks client-onboarding
-4. **Follow up Steve Tobey / Hawkwood LLC** — Followup prep done Feb 11, advance to proposal
+1. **Deliver Plotter Phase 2 proposal to Kelsey** — ROI calculations complete for all 6 opportunities
+2. **Decide on cc-plugins/** — Track in git, .gitignore, or separate repo?
+3. **Refresh Slack token** at api.slack.com/apps — 26+ days expired, critical blocker
+4. **Follow up Steve Tobey / Hawkwood LLC** — Meeting notes added, advance to proposal
 
 ### This Sprint
 
-5. **Configure CLIENT_FEEDBACK_DB_ID** in .env for feedback workflow
-6. **Test notebooklm module** — Run `notebooklm auth` and process a test transcript
-7. **Clean up stale remote branches** — 5 branches likely deletable
-8. **Resolve at least 1 TD item** — 0 items resolved since register created Jan 22
+5. **Add `__pycache__/` to .gitignore** — Prevents Python cache clutter
+6. **Configure CLIENT_FEEDBACK_DB_ID** in .env for feedback workflow
+7. **Resolve shared-resources submodule** — Commit or reset the modified state
+8. **Explore BMad framework usage** — 9 agents available, integrate into workflows
 
 ### This Month
 
@@ -272,16 +284,16 @@
 10. Deploy TypeScript onboarding agents (TD-002)
 11. Consolidate duplicate outreach templates (TD-003)
 12. Document Plotter Mechanix Phase 1 lessons learned
-13. Evaluate Agent Teams branch for merge to main
+13. **Resolve at least 1 TD item** — 0 items resolved since Jan 22
 
 ---
 
 ## Session Log Reference
 
 Latest sessions:
-- `2026-02-13-cto-sync.md` - This sync
-- `2026-02-12-cto-sync.md` - Previous sync
-- `2026-02-09-cto-sync.md` - Earlier sync
+- `2026-02-18-cto-sync.md` - This sync
+- `2026-02-13-cto-sync.md` - Previous sync
+- `2026-02-12-cto-sync.md` - Earlier sync
 
 ---
 

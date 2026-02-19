@@ -1,8 +1,10 @@
 # Agentic Modules Inventory
 
-**Last Updated:** 2026-02-13
+**Last Updated:** 2026-02-18
 **Total Modules:** 15
 **Total Python Tools:** 29
+
+**Note:** A parallel plugin system exists in `cc-plugins/` (untracked) with 24+ modules mirroring this structure.
 
 ---
 
