@@ -11,9 +11,11 @@
 | `create_roi_calculator.py` | Python script to generate the Excel file |
 | `SOP-ROI-CREATION.md` | **Team SOP** - How ROI outputs are created (workflow, prompts, formulas) |
 | `Y-CALCULATION-WORKING-DOC.md` | Source of truth for all Y-variable calculations |
-| `OPP-4-QUOTE-GENERATION-AUTOMATION.md` | Quote generation automation opportunity |
-| `OPP-5-KNOWLEDGE-CAPTURE.md` | Knowledge capture opportunity |
-| `OPP-6-CONTACTS-CONSOLIDATION.md` | Contacts consolidation opportunity |
+| `OPP-4-QUOTE-GENERATION-AUTOMATION.md` | Quote generation automation opportunity (with dev estimates) |
+| `OPP-5-KNOWLEDGE-CAPTURE.md` | Knowledge capture opportunity (with dev estimates) |
+| `OPP-6-CONTACTS-CONSOLIDATION.md` | Contacts consolidation opportunity (with dev estimates) |
+| `PHASE-2-DEV-ESTIMATE-30K.md` | **Master WBS** - $30K/8-week dev estimate with 292h breakdown |
+| `A-TO-Z-ROADMAP-CARDS.md` | **Demo Site Content** - Cards D-J with quotes, deliverables, ROI |
 
 ## Workbook Contents
 

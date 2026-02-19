@@ -196,19 +196,72 @@ The knowledge base enables techs to resolve issues independently, FREEING Kelsey
 
 ---
 
+## IMPLEMENTATION DETAILS
+
+### Development Estimate (3-Point)
+
+| Category | Optimistic | Likely | Pessimistic |
+|----------|------------|--------|-------------|
+| Sona KB (M2) | 4h | 7h | 11h |
+| Training Videos (M3) | 12h | 18h | 28h |
+| Operations Runbook (M3) | 4h | 8h | 12h |
+| WhatsApp Group (M3) | 1h | 2h | 3h |
+| **OPP-5 TOTAL** | **21h** | **35h** | **54h** |
+
+### Task Breakdown
+
+| # | Task | Opt | Likely | Pess | Notes |
+|---|------|-----|--------|------|-------|
+| **Sona KB (M2)** | | | | | |
+| 1 | Doc upload + indexing | 2h | 4h | 6h | Upload 50+ documents, configure KB |
+| 2 | Voice/text search config | 2h | 3h | 5h | Enable techs to ask questions, get answers |
+| **Training Videos (M3)** | | | | | |
+| 3 | Script + record (15 videos) | 8h | 12h | 18h | Write scripts, record screencasts |
+| 4 | Edit + upload | 4h | 6h | 10h | Polish, add captions, host |
+| **Operations Runbook (M3)** | | | | | |
+| 5 | Document all workflows | 4h | 8h | 12h | Write SOPs for Alyssa |
+| **WhatsApp Group (M3)** | | | | | |
+| 6 | Setup + seed content | 1h | 2h | 3h | Create team knowledge group |
+
+### Cost Estimate
+
+| Scenario | Hours | Cost (@$50/hr) |
+|----------|-------|----------------|
+| Optimistic | 21h | $1,050 |
+| Likely | 35h | $1,750 |
+| **Pessimistic** | **54h** | **$2,700** |
+
+### Timeline & Resources
+
+- **Milestone 2:** Sona KB (Weeks 3-4)
+- **Milestone 3:** Training Videos, Runbook, WhatsApp (Weeks 5-6)
+- **Team:** Matthew + Trent (split)
+- **Dependencies:** Content from Kelsey, document access
+
+### Structured Requirements
+
+| ID | Requirement | Priority | Hours |
+|----|-------------|----------|-------|
+| KC-001 | Upload 50+ documents to Sona KB | P1 | 6h |
+| KC-002 | Configure voice/text search interface | P1 | 5h |
+| KC-003 | Create 15 training videos | P1 | 28h |
+| KC-004 | Write operations runbook for Alyssa | P2 | 12h |
+| KC-005 | Setup WhatsApp knowledge group | P3 | 3h |
+
+---
+
 ## SOLUTION COST INPUTS (For ROI Calculation)
 
 | Field | Value | Notes |
 |-------|-------|-------|
-| Video library creation | $8,000-$12,000 | 15-25 training videos |
-| Knowledge base setup | $4,000-$6,000 | Parts catalog + procedures |
-| AI field assistant | $3,000-$5,000 | Integration + training |
-| Total implementation cost | $15,000-$23,000 | Phase 2 scope |
+| Solution implementation cost ($) | **$2,700** | 54h pessimistic @ $50/hr |
+| Annual tool/license cost ($) | $0 | Uses existing Sona subscription |
+| Total first-year cost | **$2,700** | Implementation only |
 
-### ROI Preview (If solution costs $20,000):
-- **ROI (Conservative):** $215,500 ÷ $20,000 = **10.8x**
-- **ROI (Full):** $299,225 ÷ $20,000 = **15.0x**
-- **Payback:** < 2 months
+### ROI Summary (OPP-5 Standalone)
+- **ROI (Conservative):** $215,500 ÷ $2,700 = **79.8x**
+- **ROI (Full):** $299,225 ÷ $2,700 = **110.8x**
+- **Payback:** ~5 days
 
 ---
 

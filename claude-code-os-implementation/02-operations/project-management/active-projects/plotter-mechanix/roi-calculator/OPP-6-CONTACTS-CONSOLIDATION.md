@@ -201,20 +201,73 @@ Top customer activation:  1,000 contacts × 2% conversion × $750 = $15,000/year
 
 ---
 
+## IMPLEMENTATION DETAILS
+
+### Development Estimate (3-Point)
+
+| Category | Optimistic | Likely | Pessimistic |
+|----------|------------|--------|-------------|
+| Capsule export + cleanup | 3h | 6h | 10h |
+| Jobber import | 4h | 8h | 14h |
+| QuickBooks sync | 4h | 8h | 12h |
+| Duplicate merge rules | 3h | 6h | 10h |
+| **OPP-6 TOTAL** | **14h** | **28h** | **46h** |
+
+### Task Breakdown
+
+| # | Task | Opt | Likely | Pess | Notes |
+|---|------|-----|--------|------|-------|
+| 1 | Capsule export + cleanup | 3h | 6h | 10h | Export 10,581 contacts, normalize data, dedupe prep |
+| 2 | Jobber import | 4h | 8h | 14h | Map fields, batch import, handle API rate limits |
+| 3 | QuickBooks sync | 4h | 8h | 12h | Bi-directional sync setup |
+| 4 | Duplicate merge rules | 3h | 6h | 10h | Define + implement merge logic |
+
+### Cost Estimate
+
+| Scenario | Hours | Cost (@$50/hr) |
+|----------|-------|----------------|
+| Optimistic | 14h | $700 |
+| Likely | 28h | $1,400 |
+| **Pessimistic** | **46h** | **$2,300** |
+
+### Timeline & Resources
+
+- **Milestone 2:** Contact Sync Engine (Weeks 3-4)
+- **Team:** Matthew + Trent (split)
+- **Dependencies:** Capsule data export, Jobber API access, QuickBooks credentials
+
+### Structured Requirements
+
+| ID | Requirement | Priority | Hours |
+|----|-------------|----------|-------|
+| CC-001 | Export and normalize Capsule contacts | P1 | 10h |
+| CC-002 | Import contacts to Jobber (master source) | P1 | 14h |
+| CC-003 | Setup bi-directional QuickBooks sync | P1 | 12h |
+| CC-004 | Implement duplicate merge rules | P2 | 10h |
+
+### Data Migration Details
+
+| System | Records | Notes |
+|--------|---------|-------|
+| Capsule CRM | 10,581 | Export, normalize, dedupe |
+| Jobber | Varies | Target source of truth |
+| QuickBooks | Synced | Bi-directional after migration |
+| Outlook | Read-only | Pull contact info from emails |
+
+---
+
 ## SOLUTION COST INPUTS (For ROI Calculation)
 
 | Field | Value | Notes |
 |-------|-------|-------|
-| Contact database consolidation | $3,000-$5,000 | Merge & dedup across systems |
-| System integrations (Jobber/QB) | $2,000-$4,000 | Bi-directional sync |
-| Team access portal | $2,000-$3,000 | Unified contact view |
-| Marketing automation setup | $2,000-$3,000 | Email/campaign tools |
-| Total implementation cost | $9,000-$15,000 | Phase 3 scope |
+| Solution implementation cost ($) | **$2,300** | 46h pessimistic @ $50/hr |
+| Annual tool/license cost ($) | -$360 | Cancel Capsule CRM ($30/mo savings) |
+| Total first-year cost | **$1,940** | Implementation minus Capsule savings |
 
-### ROI Preview (If solution costs $12,000):
-- **ROI (Conservative):** $132,770 ÷ $12,000 = **11.1x**
-- **ROI (Full):** $172,845 ÷ $12,000 = **14.4x**
-- **Payback:** < 2 months
+### ROI Summary (OPP-6 Standalone)
+- **ROI (Conservative):** $132,770 ÷ $2,300 = **57.7x**
+- **ROI (Full):** $172,845 ÷ $2,300 = **75.2x**
+- **Payback:** ~6 days
 
 ---
 
