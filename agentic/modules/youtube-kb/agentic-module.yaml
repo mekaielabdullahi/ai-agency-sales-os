@@ -13,6 +13,7 @@ files:
     - runbook/youtube_kb_extraction.md
   commands:
     - commands/youtube-kb.md
+    - commands/youtube.md
 
 requires: []
 
