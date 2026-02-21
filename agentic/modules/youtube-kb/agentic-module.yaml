@@ -1,0 +1,26 @@
+name: youtube-kb
+version: 1.0.0
+description: YouTube knowledge base extractor - download, transcribe, and compress YouTube videos into structured markdown notes
+
+type: bundled
+
+files:
+  tools:
+    - tool/fetch_youtube_audio.py
+    - tool/transcribe_audio.py
+    - tool/compress_to_kb.py
+  runbooks:
+    - runbook/youtube_kb_extraction.md
+  commands:
+    - commands/youtube-kb.md
+
+requires: []
+
+python_requires:
+  - python-dotenv
+  - yt-dlp
+  - faster-whisper
+  - anthropic
+
+env_vars:
+  - ANTHROPIC_API_KEY

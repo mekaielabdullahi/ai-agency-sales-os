@@ -97,7 +97,7 @@ The Notion database IDs are hardcoded. If your workspace has different IDs, upda
 
 ### Missing project data
 Ensure active projects folder exists at expected path:
-- `claude-code-os-implementation/02-operations/project-management/active-projects/`
+- `02-operations/project-management/active-projects/`
 
 ### Slack blocks not posting
 The Slack format outputs JSON blocks. To post:

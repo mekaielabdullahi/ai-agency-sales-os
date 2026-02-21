@@ -1,0 +1,7 @@
+Generated: 2026-01-20T12:41:40.028092
+Provider: pollinations
+Dimensions: 1080x1080
+Excalidraw: v1.excalidraw
+Prompt:
+----------------------------------------
+A glowing AI brain connected to business icons, warm amber and teal colors, isometric digital illustration

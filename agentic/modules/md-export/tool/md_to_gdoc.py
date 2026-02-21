@@ -29,17 +29,15 @@ import re
 import json
 import argparse
 from pathlib import Path
-from dotenv import load_dotenv
+from modules._shared.env import load_env
+from modules._shared.google_auth import get_google_credentials
 
 # Google API imports
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaInMemoryUpload
 
 # Load environment variables
-load_dotenv()
+load_env()
 
 # Google API scopes
 SCOPES = [
@@ -364,37 +362,8 @@ class DriveManager:
         return f"{title}_r{max_rev + 1}"
 
 
-def get_google_credentials():
-    """Get Google API credentials (follows existing pattern)."""
-    creds = None
 
-    if os.path.exists("token.json"):
-        try:
-            creds = Credentials.from_authorized_user_file("token.json", SCOPES)
-        except Exception:
-            creds = None
 
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            try:
-                creds.refresh(Request())
-            except Exception:
-                creds = None
-
-        if not creds:
-            if not os.path.exists("credentials.json"):
-                print("Error: credentials.json not found.", file=sys.stderr)
-                print("Please set up Google OAuth credentials first.", file=sys.stderr)
-                sys.exit(1)
-
-            print("Initiating Google OAuth flow...", file=sys.stderr)
-            flow = InstalledAppFlow.from_client_secrets_file("credentials.json", SCOPES)
-            creds = flow.run_local_server(port=8080)
-
-        with open("token.json", "w") as token:
-            token.write(creds.to_json())
-
-    return creds
 
 
 def process_file(file_path: Path, folder_id: str = None, dry_run: bool = False,
@@ -419,7 +388,7 @@ def process_file(file_path: Path, folder_id: str = None, dry_run: bool = False,
         }
 
     # Get credentials and build service
-    creds = get_google_credentials()
+    creds = get_google_credentials(scopes=SCOPES, exit_on_missing=True)
     drive_service = build('drive', 'v3', credentials=creds)
 
     drive_manager = DriveManager(drive_service)

@@ -1,0 +1,7 @@
+Generated: 2026-01-20T13:24:41.117797
+Provider: pollinations
+Dimensions: 1080x1080
+Excalidraw: v1.excalidraw
+Prompt:
+----------------------------------------
+Warm tech isometric illustration of AI audit discovery. A glowing magnifying glass examining a business system diagram, revealing hidden insights and opportunities highlighted in amber-gold glow. Organized flowchart with connected nodes beneath the lens. Soft cream background, warm amber gold and soft teal color palette, professional digital illustration, soft shadows, detailed but clean

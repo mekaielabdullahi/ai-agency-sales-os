@@ -37,7 +37,7 @@ Extract: module name, tools, env requirements
 
 **Scan all agents:**
 ```
-claude-code-os-implementation/*/agents/*.md
+*/agents/*.md
 ```
 Extract: agent name, purpose, location
 
@@ -51,7 +51,7 @@ Compare current scan to last CURRENT-STATE.md:
 
 ### Phase 3: Update Inventories
 
-Update files in `cto-hub/system-inventory/`:
+Update files in `docs/cto-hub/system-inventory/`:
 - `skills-inventory.md`
 - `modules-inventory.md`
 - `agents-inventory.md`
@@ -59,7 +59,7 @@ Update files in `cto-hub/system-inventory/`:
 
 ### Phase 4: Generate CURRENT-STATE.md
 
-Create fresh `cto-hub/CURRENT-STATE.md` with:
+Create fresh `docs/cto-hub/CURRENT-STATE.md` with:
 
 ```markdown
 # Current System State
@@ -113,7 +113,7 @@ Automatically detect and flag:
 
 ### Phase 6: Log Session
 
-Create entry in `cto-hub/session-logs/`:
+Create entry in `docs/cto-hub/session-logs/`:
 ```
 YYYY-MM-DD-cto-sync.md
 ```
@@ -155,16 +155,16 @@ After sync, display summary:
    2. Review onboarding agents for deployment
    3. Run /weekly-report (5 days overdue)
 
-✅ Updated: cto-hub/CURRENT-STATE.md
-✅ Updated: cto-hub/system-inventory/*
-✅ Created: cto-hub/session-logs/2026-01-22-cto-sync.md
+✅ Updated: docs/cto-hub/CURRENT-STATE.md
+✅ Updated: docs/cto-hub/system-inventory/*
+✅ Created: docs/cto-hub/session-logs/2026-01-22-cto-sync.md
 
 Next sync recommended: 2026-01-29
 ```
 
 ## Integration Points
 
-- **cto-hub/** - All outputs stored here
+- **docs/cto-hub/** - All outputs stored here
 - **technical-debt/DEBT-REGISTER.md** - Auto-populated with found issues
 - **notion-sync** - Can optionally push CURRENT-STATE to Notion
 

@@ -131,4 +131,4 @@ After setup is complete:
 
 ---
 
-*For more details on the Claude Code OS system, see the [Implementation README](../claude-code-os-implementation/README.md).*
+*For detailed department navigation, see the [Navigation Guide](NAVIGATION.md).*

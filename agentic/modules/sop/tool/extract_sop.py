@@ -27,56 +27,16 @@ import argparse
 import json
 from datetime import datetime
 from pathlib import Path
-from dotenv import load_dotenv
+from modules._shared.env import load_env
+from modules._shared.google_auth import get_google_credentials
 from openai import OpenAI
 
 # Google Docs imports
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 # Load environment variables
-load_dotenv()
-
-# Google API scopes
-SCOPES = [
-    "https://www.googleapis.com/auth/documents",
-    "https://www.googleapis.com/auth/drive.file"
-]
-
-
-def get_google_credentials():
-    """Get Google API credentials (follows existing pattern from copy_slides_template.py)."""
-    creds = None
-
-    if os.path.exists("token.json"):
-        try:
-            creds = Credentials.from_authorized_user_file("token.json", SCOPES)
-        except Exception:
-            creds = None
-
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            try:
-                creds.refresh(Request())
-            except Exception:
-                creds = None
-
-        if not creds:
-            if not os.path.exists("credentials.json"):
-                print("Warning: credentials.json not found. Google Doc creation will be skipped.", file=sys.stderr)
-                return None
-
-            print("Initiating Google OAuth flow...", file=sys.stderr)
-            flow = InstalledAppFlow.from_client_secrets_file("credentials.json", SCOPES)
-            creds = flow.run_local_server(port=8080)
-
-        with open("token.json", "w") as token:
-            token.write(creds.to_json())
-
-    return creds
+load_env()
 
 
 def list_topics(client: OpenAI, transcript: str) -> list[dict]:

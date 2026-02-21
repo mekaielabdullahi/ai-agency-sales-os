@@ -20,3 +20,8 @@ apify-client
 
 # Slack (slack, client-onboarding)
 slack-sdk
+
+# YouTube KB (youtube-kb)
+yt-dlp
+faster-whisper
+anthropic

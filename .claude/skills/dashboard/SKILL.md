@@ -207,7 +207,7 @@ Based on current data, priority actions:
 
 ### Step 1: Scan Projects
 ```
-claude-code-os-implementation/02-operations/project-management/active-projects/
+02-operations/project-management/active-projects/
 ```
 For each project:
 - Read README for client/status

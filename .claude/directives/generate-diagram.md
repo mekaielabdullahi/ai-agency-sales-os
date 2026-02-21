@@ -21,7 +21,7 @@ Generate Draw.io diagrams from structured input and save as `.drawio` files that
 2. **Parse Structure**: Identify nodes, groups/containers, and connections
 3. **Generate XML**: Build Draw.io mxGraphModel XML with proper cell hierarchy
 4. **Calculate Layout**: Position elements with appropriate spacing
-5. **Save File**: Write `.drawio` file to `diagrams/` directory (or specified location)
+5. **Save File**: Write `.drawio` file to `docs/diagrams/` directory (or specified location)
 6. **Deliver**: Return file path so user can open in Draw.io
 
 ## Outputs

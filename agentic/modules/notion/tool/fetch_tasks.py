@@ -17,55 +17,13 @@ import argparse
 from datetime import datetime
 from typing import Dict, List, Any
 
-try:
-    import requests
-except ImportError:
-    print("Installing requests...")
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests", "-q"])
-    import requests
-
-# Load from .env file if exists
-def load_env():
-    env_path = os.path.join(os.path.dirname(__file__), '..', '..', '..', '.env')
-    if os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith('#') and '=' in line:
-                    key, value = line.split('=', 1)
-                    os.environ.setdefault(key.strip(), value.strip())
+from modules._shared.env import load_env
+from modules._shared.notion import notion_request
 
 load_env()
 
 # Configuration
-NOTION_API_KEY = os.getenv("NOTION_API_KEY", "")
 TASKS_DATABASE_ID = "2d5e7406-6c7d-810e-a1be-c35b71fdf23b"
-NOTION_VERSION = "2022-06-28"
-
-
-def notion_request(method: str, endpoint: str, data: Dict = None) -> Dict:
-    """Make a request to Notion API."""
-    if not NOTION_API_KEY:
-        raise ValueError("NOTION_API_KEY not configured. Set it in agentic/.env file.")
-
-    url = f"https://api.notion.com/v1/{endpoint}"
-    headers = {
-        "Authorization": f"Bearer {NOTION_API_KEY}",
-        "Notion-Version": NOTION_VERSION,
-        "Content-Type": "application/json"
-    }
-
-    if method == "GET":
-        response = requests.get(url, headers=headers)
-    else:
-        response = requests.post(url, headers=headers, json=data or {})
-
-    if response.status_code != 200:
-        error = response.json().get("message", response.text)
-        raise Exception(f"Notion API error ({response.status_code}): {error}")
-
-    return response.json()
 
 
 def fetch_active_tasks() -> List[Dict]:

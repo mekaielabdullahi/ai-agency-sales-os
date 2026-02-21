@@ -36,7 +36,7 @@ I may ask:
 
 ### Step 3: Add to Register
 
-Append to `cto-hub/technical-debt/DEBT-REGISTER.md`:
+Append to `docs/cto-hub/technical-debt/DEBT-REGISTER.md`:
 - Generate next TD-XXX ID
 - Add row to appropriate priority table
 - Include today's date
@@ -47,7 +47,7 @@ Append to `cto-hub/technical-debt/DEBT-REGISTER.md`:
 ✅ Logged: TD-004 - "Notion sync targets missing page IDs"
    Priority: P1 | Location: .claude/skills/notion-sync/targets.json
 
-   View: cto-hub/technical-debt/DEBT-REGISTER.md
+   View: docs/cto-hub/technical-debt/DEBT-REGISTER.md
 ```
 
 ## Priority Levels
@@ -79,4 +79,4 @@ Moves the item to "Resolved" table with resolution notes.
 
 - `/cto-sync` - Reviews debt register during sync
 - `/cto-decision` - For architectural decisions, not debt
-- `cto-hub/technical-debt/DEBT-REGISTER.md` - The register
+- `docs/cto-hub/technical-debt/DEBT-REGISTER.md` - The register

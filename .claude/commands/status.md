@@ -13,7 +13,7 @@ Quick overview of the AI Agency Sales OS state - active projects, pending tasks,
 
 ### 1. Active Projects Summary
 
-Scan `claude-code-os-implementation/02-operations/project-management/active-projects/` and for each project:
+Scan `02-operations/project-management/active-projects/` and for each project:
 
 ```markdown
 ## Active Projects ([COUNT])

@@ -30,7 +30,7 @@ I'll ask you:
 
 ### Step 2: Generate ADR
 
-Create a new ADR file in `cto-hub/decisions/`:
+Create a new ADR file in `docs/cto-hub/decisions/`:
 ```
 ADR-XXX-[topic-slug].md
 ```
@@ -46,7 +46,7 @@ Following the standard ADR format:
 
 ### Step 3: Update Index
 
-Add entry to `cto-hub/decisions/INDEX.md` (created if doesn't exist)
+Add entry to `docs/cto-hub/decisions/INDEX.md` (created if doesn't exist)
 
 ### Step 4: Log
 
@@ -82,4 +82,4 @@ Creates a minimal ADR with just the decision statement, marked for expansion lat
 
 - `/cto-sync` - Reviews all ADRs during sync
 - `/cto-debt` - For technical debt, not decisions
-- `cto-hub/decisions/ADR-000-template.md` - Full template
+- `docs/cto-hub/decisions/ADR-000-template.md` - Full template

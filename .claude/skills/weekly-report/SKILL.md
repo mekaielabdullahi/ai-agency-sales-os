@@ -18,7 +18,7 @@ Automate the generation of weekly progress reports by scanning all active projec
 
 ### Step 1: Scan Active Projects
 
-Scan the directory: `claude-code-os-implementation/02-operations/project-management/active-projects/`
+Scan the directory: `02-operations/project-management/active-projects/`
 
 For each subdirectory (excluding README.md files):
 1. Identify as a project folder
@@ -55,7 +55,7 @@ For each project, look for content from the last 7 days. Meeting folders follow 
 ### Step 3: Generate Report
 
 Create a markdown report at:
-`claude-code-os-implementation/02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md`
+`02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md`
 
 **Report Structure:**
 
@@ -142,7 +142,7 @@ After posting to Slack, offer to sync the report to Notion for permanent referen
 
 ```bash
 python .claude/skills/notion-sync/scripts/notion_upload.py \
-  --file "claude-code-os-implementation/02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md" \
+  --file "02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md" \
   --page-id "<weekly-reports-parent-id>" \
   --title "Weekly Report - [DATE]" \
   --icon "📊"
@@ -222,7 +222,7 @@ Extract:
 
 ## Output Locations
 
-- **Report file:** `claude-code-os-implementation/02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md`
+- **Report file:** `02-operations/weekly-reports/weekly-report-YYYY-MM-DD.md`
 - **Slack channel:** Use default configured channel or prompt user
 - **Notion page:** Weekly Reports parent page (when --sync flag used)
 

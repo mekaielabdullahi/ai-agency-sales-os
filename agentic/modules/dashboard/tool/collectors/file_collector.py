@@ -33,10 +33,10 @@ class FileCollector:
 
         # Common paths
         self.paths = {
-            "active_projects": self.base_path / "claude-code-os-implementation" / "02-operations" / "project-management" / "active-projects",
-            "weekly_reports": self.base_path / "claude-code-os-implementation" / "02-operations" / "weekly-reports",
+            "active_projects": self.base_path / "02-operations" / "project-management" / "active-projects",
+            "weekly_reports": self.base_path / "02-operations" / "weekly-reports",
             "content_projects": self.base_path / "agentic" / ".claude" / "skills" / "brand-illustrator" / "projects",
-            "action_items": self.base_path / "claude-code-os-implementation" / "01-executive-office" / "internal-business-meetings" / "action-items",
+            "action_items": self.base_path / "01-executive-office" / "internal-business-meetings" / "action-items",
         }
 
     # ==================== Project Metrics ====================

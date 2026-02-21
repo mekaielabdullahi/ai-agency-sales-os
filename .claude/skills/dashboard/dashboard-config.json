@@ -16,10 +16,10 @@
     "red": 0.5
   },
   "data_sources": {
-    "projects": "claude-code-os-implementation/02-operations/project-management/active-projects/",
-    "weekly_reports": "claude-code-os-implementation/02-operations/weekly-reports/",
+    "projects": "02-operations/project-management/active-projects/",
+    "weekly_reports": "02-operations/weekly-reports/",
     "content": ".claude/skills/brand-illustrator/projects/",
-    "action_items": "claude-code-os-implementation/01-executive-office/internal-business-meetings/action-items/"
+    "action_items": "01-executive-office/internal-business-meetings/action-items/"
   },
   "notifications": {
     "slack_channel": "#arisegroup-internal",

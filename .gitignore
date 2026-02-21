@@ -8,15 +8,30 @@ Thumbs.db
 *.swp
 *.swo
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
 # Environment
 .env
 .env.local
+
+# Temp directories
+.tmp/
 
 # Claude Code (only ignore user-specific settings)
 .claude/settings.local.json
 
 # Auto Claude data directory
 .auto-claude/
+
+# Removed projects
+Auto-Claude/
 
 # Google API credentials (sensitive)
 agentic/modules/google/credentials.json

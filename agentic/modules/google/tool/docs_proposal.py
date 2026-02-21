@@ -25,19 +25,9 @@ from typing import Optional, Dict
 
 # Path setup
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-SERVICE_ACCOUNT_FILE = os.path.join(SCRIPT_DIR, "service_account.json")
+SERVICE_ACCOUNT_FILE = os.path.join(SCRIPT_DIR, '..', "service_account.json")
 
-# Load env
-def load_env():
-    env_path = os.path.join(SCRIPT_DIR, '..', '..', '.env')
-    if os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith('#') and '=' in line:
-                    key, value = line.split('=', 1)
-                    os.environ.setdefault(key.strip(), value.strip())
-
+from modules._shared.env import load_env
 load_env()
 
 DRIVE_FOLDER_ID = os.getenv("GOOGLE_DRIVE_FOLDER_ID", "")

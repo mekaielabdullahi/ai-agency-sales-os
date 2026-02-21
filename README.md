@@ -1,54 +1,50 @@
-# Claude Code OS
+# AI Agency Sales OS
 
 > **[Get Started: Setup and Installation Guide](docs/SETUP-AND-INSTALLATION.md)**
 
 ---
 
-An AI-powered Business Operating System that transforms productivity through intelligent automation, strategic alignment, and frictionless execution.
+An AI-powered Business Operating System for AriseGroup.ai — combining strategic frameworks, sales systems, content strategies, and agentic automation into a unified workspace.
 
-## Overview
+## Architecture
 
-Claude Code OS is a comprehensive system built on 13 core productivity principles, organized into 5 specialized departments that work together to maximize productivity and strategic alignment.
+The system has three layers:
 
-### Core Philosophy
-
-- **Entropy Principle**: Accept imperfection, focus on what matters
-- **Zero Friction**: Remove barriers to create sustainable discipline
-- **Spartan Rule**: Lean operations with brutal prioritization
-- **Strategic Alignment**: Every action serves the main objective
+| Layer | Purpose | Location |
+|-------|---------|----------|
+| **Departments** | Business operations — strategy, sales, content, workflows, templates | `01-*` through `10-*` |
+| **Agentic** | Automation framework — Python tools, runbooks, module discovery | `agentic/` |
+| **Claude Skills** | AI skills, slash commands, hooks, directives | `.claude/` |
 
 ## Structure
 
 ```
-claude-code-os/
-├── docs/                             # Documentation & guides
-│   └── SETUP-AND-INSTALLATION.md     # Getting started guide
-├── claude-code-os-implementation/    # Full implementation
-│   ├── 01-executive-office/          # Planning & strategic alignment
-│   ├── 02-operations/                # Productivity & project management
-│   ├── 03-ai-growth-engine/          # Strategic framework & positioning
-│   ├── 04-content-team/              # Content creation agents
-│   ├── 05-hr-department/             # Agent creation framework
-│   ├── 06-knowledge-base/            # Core principles & frameworks
-│   ├── 07-workflows/                 # Daily/weekly/monthly routines
-│   ├── 08-technical-architecture/    # System design & integrations
-│   ├── 09-templates/                 # Reusable prompts & agents
-│   └── 10-implementation-roadmap/    # Phased rollout plan
-└── original_youtube_transcript.txt   # Source material
+ai-agency-sales-os/
+├── .claude/                      # Skills, commands, hooks, directives
+├── 01-executive-office/          # Strategic planning & daily roadmaps
+├── 02-operations/                # Productivity tracking & project management
+├── 03-ai-growth-engine/          # Sales engine, onboarding, audits
+├── 04-content-team/              # LinkedIn content & brand strategy
+├── 05-hr-department/             # AI agent creation framework
+├── 06-knowledge-base/            # Core principles & industry insights
+├── 07-workflows/                 # Daily/weekly/monthly routines
+├── 08-technical-architecture/    # System design & integrations
+├── 09-templates/                 # Reusable prompts & agent templates
+├── 10-implementation-roadmap/    # Phased rollout plan
+├── agentic/                      # Automation framework (modules, tools, KB)
+└── docs/                         # Consolidated documentation
 ```
 
-## The Transformation
+## Quick Links
 
-| Before | After |
-|--------|-------|
-| Scattered AI sessions with no continuity | Integrated system with persistent memory |
-| Manual planning taking 30+ minutes | 1-minute automated planning |
-| Strategic drift and lost projects | Perfect strategic alignment |
-| Inconsistent productivity | Consistent high productivity |
-| High friction workflows | Frictionless execution |
+- **Department guide:** [docs/NAVIGATION.md](docs/NAVIGATION.md)
+- **Agentic framework:** [agentic/CLAUDE.md](agentic/CLAUDE.md)
+- **Setup:** [docs/SETUP-AND-INSTALLATION.md](docs/SETUP-AND-INSTALLATION.md)
+- **Diagrams:** [docs/diagrams/](docs/diagrams/)
 
----
+## Core Principles
 
-For detailed implementation guides, see the [Implementation README](claude-code-os-implementation/README.md).
-
-*Built on 20 years of productivity refinement, powered by AI, designed for freedom.*
+- **Entropy Principle** — Accept imperfection, focus on what matters
+- **Zero Friction** — Remove barriers to create sustainable discipline
+- **Spartan Rule** — Lean operations with brutal prioritization
+- **Strategic Alignment** — Every action serves the One Big Goal (OBG)

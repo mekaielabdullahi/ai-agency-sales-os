@@ -5,7 +5,12 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 if [[ -d "$SCRIPT_DIR/.venv" ]]; then
-    source "$SCRIPT_DIR/.venv/bin/activate"
+    # Windows (MINGW/Git Bash) uses Scripts/, Linux/macOS uses bin/
+    if [[ -f "$SCRIPT_DIR/.venv/Scripts/activate" ]]; then
+        source "$SCRIPT_DIR/.venv/Scripts/activate"
+    elif [[ -f "$SCRIPT_DIR/.venv/bin/activate" ]]; then
+        source "$SCRIPT_DIR/.venv/bin/activate"
+    fi
 fi
 
 python3 "$@"

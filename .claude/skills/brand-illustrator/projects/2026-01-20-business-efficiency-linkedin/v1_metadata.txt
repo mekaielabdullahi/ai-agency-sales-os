@@ -1,0 +1,7 @@
+Generated: 2026-01-20T12:44:59.249070
+Provider: pollinations
+Dimensions: 1080x1080
+Excalidraw: v1.excalidraw
+Prompt:
+----------------------------------------
+Warm tech isometric illustration of business efficiency transformation. Left side shows tangled complex workflows, center has glowing amber-gold transformation zone, right side shows smooth organized flowing data streams. Soft cream background, warm amber gold and soft teal color palette, professional digital illustration, soft shadows, detailed but clean, sunrise gradient colors illuminating the streamlined side
