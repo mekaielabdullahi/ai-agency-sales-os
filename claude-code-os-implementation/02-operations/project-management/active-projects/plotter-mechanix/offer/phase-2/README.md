@@ -14,8 +14,8 @@
 phase-2/
 ├── README.md                                 # 📍 YOU ARE HERE
 │
-├── 🎯 2026-02-20-closing-call/              # ✅ SALES CALL PREP (NEW)
-│   └── sales-call-prep.md                   # Opening scripts, objection handlers, closing approaches
+├── 🎯 2026-02-20-closing-call/              # ✅ DISCOVERY-TO-CLOSE CALL PREP
+│   └── sales-call-prep.md                   # One-call framework: discover pain → quantify cost → close
 │
 ├── 🔥 2026-02-06-updated-with-alyssa/       # ✅ LATEST & READY TO PRESENT
 │   ├── executive-summary-kelsey.md          # 1-page decision document
@@ -41,17 +41,20 @@ phase-2/
 
 ## 🚀 Quick Start Guide
 
-### For Closing Call (Feb 20, 2026)
+### For Discovery-to-Close Call (Feb 20, 2026)
 
 **📁 Go to:** [`2026-02-20-closing-call/sales-call-prep.md`](2026-02-20-closing-call/sales-call-prep.md)
 
+**Structure:** Discovery → Pain → Cost → Solution → Close (one-call framework)
+
 **Contents:**
-- 8 opening script options
-- 32 comprehensive feedback questions
-- Kelsey-specific objection handlers
-- Closing approaches
+- 8-phase call flow (45 min total)
+- Situation & problem discovery questions
+- Live cost calculation prompts (they sell themselves)
+- Solution mapping to their pain
+- Objection handlers
+- Multiple closing approaches
 - Key numbers & quotes reference
-- Pre-call checklist
 
 ---
 

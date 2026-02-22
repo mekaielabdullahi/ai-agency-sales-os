@@ -167,6 +167,12 @@ audit/
 
 ## 🔗 Related Files
 
+### Audit Analysis Documents
+- [Kelsey Revenue Scaling Vision](./kelsey-revenue-scaling-vision.md) - Research summary of Kelsey's $850K→$8.5M growth vision
+- [Opportunity Matrix](./opportunity-matrix.md) - AI opportunities prioritized by impact
+- [Kelsey Jobber Workflow](./kelsey-jobber-workflow.md) - How Kelsey actually uses Jobber
+- [Process Map](./process-map.md) - Current state process mapping
+
 ### Source Documents
 - [Project Overview](../PROJECT-OVERVIEW.md)
 - [Chris Partner Info](../CHRIS-PARTNER-INFO.md)
