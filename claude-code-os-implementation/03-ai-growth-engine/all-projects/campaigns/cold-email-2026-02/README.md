@@ -11,6 +11,9 @@
 | Business Sequence Framework | [strategy/business-sequence-framework.md](strategy/business-sequence-framework.md) |
 | Focus Rules | [strategy/focus-rules.md](strategy/focus-rules.md) |
 | **Printing Vertical** | [verticals/printing/](verticals/printing/) |
+| **Pain Points & Hooks** | [verticals/printing/pain-points-hooks.md](verticals/printing/pain-points-hooks.md) |
+| **Email Sequences (A-D)** | [verticals/printing/email-sequences/](verticals/printing/email-sequences/) |
+| **Implementation Plan** | [verticals/printing/implementation-plan.md](verticals/printing/implementation-plan.md) |
 | Homestead (Archived) | [verticals/_archive/homestead/](verticals/_archive/homestead/) |
 | Domain & Inbox Setup | [infrastructure/domain-inbox-setup.md](infrastructure/domain-inbox-setup.md) |
 | n8n Engine Spec | [infrastructure/n8n-engine-spec.md](infrastructure/n8n-engine-spec.md) |
