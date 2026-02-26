@@ -29,7 +29,8 @@ So the customer has to re-explain. The tech has to start over. And everyone look
 
 If information disappears between calls at your company, you're not alone.
 
-- Mekai
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---
@@ -57,7 +58,7 @@ Week after week, the same information gets lost. The same questions get asked. T
 
 What would change if every conversation was automatically captured and available to anyone who needed it?
 
-- Mekai
+- Mekaiel
 ```
 
 ---
@@ -88,7 +89,7 @@ The calls didn't change. But now they're captured - and everyone can see what ha
 
 Want to see how we diagnose where information disappears in service businesses?
 
-- Mekai
+- Mekaiel
 ```
 
 ---
@@ -110,7 +111,8 @@ We're hosting a free online workshop on March 17th at 7 PM EST where we break do
 
 If you've ever watched important context vanish between calls and wondered if there's a better way - there is. And this workshop shows you how to find exactly where it's happening.
 
-- Mekai
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---

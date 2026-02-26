@@ -29,7 +29,8 @@ Does that sound familiar?
 
 Because if more than half your day disappears into your inbox, you're not alone.
 
-- Mekai
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---
@@ -56,7 +57,7 @@ And every week that passes? Another 25+ hours vanish into the same black hole.
 
 What would you do with half those hours back?
 
-- Mekai
+- Mekaiel
 ```
 
 ---
@@ -87,7 +88,7 @@ The emails didn't disappear. But the chaos did.
 
 If you want to see how this works, we're breaking down the entire diagnostic process at a free workshop on March 17th.
 
-- Mekai
+- Mekaiel
 ```
 
 ---
@@ -113,7 +114,8 @@ No pitch. Just the actual diagnostic framework we use.
 
 If you've ever wondered where your day goes, this will show you exactly how to find out.
 
-- Mekai
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---

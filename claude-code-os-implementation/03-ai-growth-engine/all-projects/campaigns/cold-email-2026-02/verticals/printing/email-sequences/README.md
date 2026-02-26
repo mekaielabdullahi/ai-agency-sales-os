@@ -2,7 +2,7 @@
 
 ## Overview
 
-This folder contains eight emotional email sequences built on Alex Hormozi's Value Equation framework. Each sequence targets a specific VISCERAL pain point using verbatim quotes from real stakeholder interviews.
+This folder contains twelve emotional email sequences built on Alex Hormozi's Value Equation framework. Each sequence targets a specific VISCERAL pain point using verbatim quotes from real stakeholder interviews.
 
 **Value = (Dream Outcome × Likelihood of Achievement) / (Time Delay × Effort & Sacrifice)**
 
@@ -12,10 +12,14 @@ This folder contains eight emotional email sequences built on Alex Hormozi's Val
 
 | Sequence | Campaign Name | Emotional Anchor | Target Profile | File |
 |----------|---------------|------------------|----------------|------|
-| **A** | The Burnout Cycle | Fear of success = punishment | Owners who self-sabotage at growth | [sequence-a-burnout-cycle.md](sequence-a-burnout-cycle.md) |
-| **B** | The Confusion Hours | 30 hours/week lost to chaos | Owners busy but not productive | [sequence-b-confusion-hours.md](sequence-b-confusion-hours.md) |
-| **C** | The Email Sinkhole | 50% of day in inbox | Office managers drowning in comms | [sequence-c-email-sinkhole.md](sequence-c-email-sinkhole.md) |
-| **D** | Disappearing Information | Context lost between calls | Companies losing customer history | [sequence-d-disappearing-info.md](sequence-d-disappearing-info.md) |
+| **A1** | The Burnout Cycle | Fear of success = punishment | Owners who self-sabotage at growth | [sequence-a-burnout-cycle.md](sequence-a-burnout-cycle.md) |
+| **A2** | The Owner Bottleneck | "If I don't show up, nothing moves" | Owners trapped as sole expert | [sequence-a-owner-bottleneck.md](sequence-a-owner-bottleneck.md) |
+| **B1** | The Confusion Hours | 30 hours/week lost to chaos | Owners busy but not productive | [sequence-b-confusion-hours.md](sequence-b-confusion-hours.md) |
+| **B2** | The Communication Chaos | 10 inboxes, zero sanity | Companies with fragmented comms | [sequence-b-communication-chaos.md](sequence-b-communication-chaos.md) |
+| **C1** | The Email Sinkhole | 50% of day in inbox | Office managers drowning in comms | [sequence-c-email-sinkhole.md](sequence-c-email-sinkhole.md) |
+| **C2** | The Inventory Blindness | "Let me check and call you back" | Companies flying blind on parts | [sequence-c-inventory-blindness.md](sequence-c-inventory-blindness.md) |
+| **D1** | Disappearing Information | Context lost between calls | Companies losing customer history | [sequence-d-disappearing-info.md](sequence-d-disappearing-info.md) |
+| **D2** | The Training Tax | 200 hours to train a tech | Owners exhausted from training | [sequence-d-training-tax.md](sequence-d-training-tax.md) |
 | **E** | The Contact Nightmare | 15,000 contacts, can't find anyone | Owners with CRM shame | [sequence-e-contact-nightmare.md](sequence-e-contact-nightmare.md) |
 | **F** | The Family Sacrifice | Vacation property sits unused | Owners whose business steals life | [sequence-f-family-sacrifice.md](sequence-f-family-sacrifice.md) |
 | **G** | The Rate Transformation | Technician → Consultant mindset | Owners trading hours for dollars | [sequence-g-rate-transformation.md](sequence-g-rate-transformation.md) |
@@ -25,17 +29,17 @@ This folder contains eight emotional email sequences built on Alex Hormozi's Val
 
 ## Campaign Categories
 
-### Fear-Based (A)
-Targets owners who have learned to fear their own success because growth historically meant chaos.
+### Fear-Based (A1, A2)
+Targets owners who fear their own success or are trapped as the single point of failure.
 
-### Time-Based (B)
-Targets owners working massive hours but feeling unproductive - the "confusion hours" problem.
+### Time-Based (B1, B2)
+Targets owners working massive hours but feeling unproductive, or teams buried in fragmented communication.
 
-### Admin-Targeted (C)
-Specifically written for office managers and admins to forward to owners.
+### Admin-Targeted (C1, C2)
+Targets office managers drowning in email chaos or parts inventory blindness - written to resonate with admins who forward to owners.
 
-### Operations-Focused (D)
-Targets the operational pain of losing context between customer interactions.
+### Operations-Focused (D1, D2)
+Targets the operational pain of losing context between interactions or the hidden cost of training every new hire from scratch.
 
 ### Data-Chaos (E)
 Targets the shame of messy CRM, scattered contacts, and duplicate records.
@@ -102,13 +106,21 @@ All sequences close with:
 
 ---
 
+## Signature Standard
+
+All emails use consistent branding:
+- **Email 1 & 4:** Sign off with `- Mekaiel` + `AriseGroup.ai`
+- **Email 2 & 3:** Sign off with `- Mekaiel` (no domain - keeps it personal)
+
+---
+
 ## A/B Testing Strategy
 
 ### Phase 1: Deploy (Week 1-2)
-- **Sequence A (Burnout):** 10 contacts
-- **Sequence B (Confusion):** 10 contacts
-- **Sequence C (Email):** 10 contacts
-- **Sequence D (Disappearing):** 10 contacts
+- **Sequences A1-A2 (Fear/Bottleneck):** 10 contacts each
+- **Sequences B1-B2 (Time/Comms):** 10 contacts each
+- **Sequences C1-C2 (Admin/Inventory):** 10 contacts each
+- **Sequences D1-D2 (Ops/Training):** 10 contacts each
 - **Sequences E-H:** 5 contacts each
 
 ### Phase 2: Optimize (Week 3-4)
@@ -137,6 +149,7 @@ All sequences close with:
 - **YES** focus on transformation and process
 - **YES** verbatim emotional quotes
 - **YES** March 17th workshop as primary CTA
+- **YES** consistent "Mekaiel / AriseGroup.ai" signature
 
 ---
 

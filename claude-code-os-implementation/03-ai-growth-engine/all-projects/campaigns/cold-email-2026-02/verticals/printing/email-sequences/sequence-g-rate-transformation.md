@@ -27,7 +27,8 @@ Every job needs YOUR hands. YOUR diagnosis. YOUR expertise.
 
 Am I close?
 
-- Mek
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---
@@ -49,7 +50,7 @@ And the brutal part - the business can't survive without you. No exit. No scale.
 
 This isn't a time management problem. It's an identity problem.
 
-- Mek
+- Mekaiel
 ```
 
 ---
@@ -77,7 +78,7 @@ The shift: He stopped selling his hands. Started selling his brain.
 
 That's consultant pricing.
 
-- Mek
+- Mekaiel
 ```
 
 ---
@@ -97,7 +98,8 @@ You'll see exactly how we uncover where owner expertise gets trapped in technici
 
 If you can't make it live, reply and I'll send the recording.
 
-- Mek
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---

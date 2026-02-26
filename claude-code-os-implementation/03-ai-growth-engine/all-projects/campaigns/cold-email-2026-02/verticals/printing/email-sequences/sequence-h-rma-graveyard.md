@@ -27,7 +27,8 @@ I'm curious - if you looked around your shop right now, is there a pile like tha
 
 How much is just... sitting there?
 
-- Mek
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---
@@ -51,7 +52,7 @@ The pile grows. The urgency fades. The money stays buried.
 
 This is what "we'll get to it later" actually costs.
 
-- Mek
+- Mekaiel
 ```
 
 ---
@@ -75,7 +76,7 @@ Here's how we approached it through our 3-pillar process:
 
 The pile didn't just shrink - the graveyard stopped growing.
 
-- Mek
+- Mekaiel
 ```
 
 ---
@@ -93,7 +94,8 @@ We'll walk through the exact diagnostic we use. You'll see how we map touchpoint
 
 If you can't make the live session, reply "recording" and I'll send it your way.
 
-- Mek
+- Mekaiel
+AriseGroup.ai
 ```
 
 ---

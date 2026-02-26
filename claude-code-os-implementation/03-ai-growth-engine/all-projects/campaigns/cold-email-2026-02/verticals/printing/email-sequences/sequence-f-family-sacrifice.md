@@ -30,6 +30,7 @@ You built this business for freedom. But somewhere along the way, it became the 
 Sound familiar?
 
 - Mekaiel
+AriseGroup.ai
 ```
 
 ---
@@ -104,6 +105,7 @@ We'll show you the framework for finding where your business is stealing your li
 Or if you'd rather just talk, reply and tell me: what's the one thing that keeps pulling you back in when you try to step away?
 
 - Mekaiel
+AriseGroup.ai
 ```
 
 ---

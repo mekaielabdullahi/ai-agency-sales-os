@@ -28,6 +28,7 @@ The contact list that was supposed to be your greatest asset has become your big
 Does any of this sound familiar?
 
 - Mekaiel
+AriseGroup.ai
 ```
 
 ---
@@ -98,6 +99,7 @@ No pitch. Just the process.
 If March 17th doesn't work, reply and tell me what's broken in your system right now. Sometimes a 15-minute conversation reveals more than you'd expect.
 
 - Mekaiel
+AriseGroup.ai
 ```
 
 ---
