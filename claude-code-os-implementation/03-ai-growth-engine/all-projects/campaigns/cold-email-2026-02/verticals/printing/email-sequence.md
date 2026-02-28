@@ -1,5 +1,5 @@
 # Email Sequence: Printing Vertical
-## 4 Touches, 12 Days - Proof-Led Approach
+## 4 Touches, 14 Days - Short. Direct. Value-First.
 
 ---
 
@@ -9,26 +9,22 @@
 
 ---
 
-## EMAIL 1 (Day 0, Tuesday) - Icebreaker + Loom
+## EMAIL 1 (Day 1) - Quick Question + Pain Point
 
-**Subject:** `quick q about [Company]'s service ops`
+**Subject:** `Quick question about [Company]`
 
 ```
-Hey [First Name],
+[First Name],
 
 [AI icebreaker - e.g., "Saw [Company] handles HP wide-format service
-across [state] -- keeping those machines running is no joke."]
+across [state]."]
 
-I work with print service companies on automation. Nothing fancy --
-just systems that handle the scheduling, dispatch, and customer
-follow-up your team is probably doing by hand.
+Most print service shops I talk to have the same problem: the owner
+is the only one who can handle the hard jobs, and admin work eats
+15-25 hours/week that should go to revenue.
 
-I recorded a 3-minute video showing what we built for a plotter
-repair shop in Phoenix (1,378% ROI on their first project):
-
-[Loom link]
-
-No pitch, no call needed.
+We helped a Phoenix plotter repair company turn a $5K system into
+$73K+ in annual savings. Worth 15 min to see if it applies to you?
 
 Mekaiel
 AriseGroup.ai
@@ -36,50 +32,46 @@ AriseGroup.ai
 
 ---
 
-## EMAIL 2 (Day 4, Saturday) - Pain Point + Social Proof
+## EMAIL 2 (Day 3) - Follow Up + Specific Proof
 
-**Subject:** `re: quick q about [Company]'s service ops`
+**Subject:** `Re: Quick question about [Company]`
 
 ```
-Hey [First Name],
+[First Name],
 
-Following up -- wanted to share one thing.
+Following up.
 
-We worked with Kelsey at Plotter Mechanix in Phoenix. Her admin Alyssa
-was spending 25 hours/week just processing calls into service tickets,
-quotes, and orders. Kelsey was the only tech and couldn't step away.
+Kelsey at Plotter Mechanix was the only tech. Her admin Alyssa spent
+25 hours/week processing calls into tickets, quotes, and orders.
+Kelsey couldn't step away without the business grinding to a halt.
 
 We built a system that auto-routes calls, creates tickets, and handles
-triage. Alyssa got 15 hours back. Kelsey's moving from $175/hr wrench-
-turner to $300-500/hr consultant.
+triage. Alyssa got 15 hours back. Kelsey's moving from $175/hr wrench
+work to $300-500/hr consulting.
 
-Quick question -- what's the biggest time-killer in your service ops?
+What's the biggest time-killer in your service ops right now?
 
 Mekaiel
 ```
 
 ---
 
-## EMAIL 3 (Day 8, Wednesday) - The Close
+## EMAIL 3 (Day 7) - Case Study + Free Offer
 
-**Subject:** `the $5K experiment that changed everything`
+**Subject:** `The $5K experiment that changed everything`
 
 ```
 [First Name],
 
-Last one unless you want me to keep going.
+Attached: how we helped a print service company your size cut admin
+time by 60% and achieve 1,378% ROI.
 
-Kelsey at Plotter Mechanix invested $5K in Phase 1. The system now saves
-$73K+ annually. That's 1,378% ROI.
+My offer: I'll audit [Company]'s operations and build ONE automation
+for free. If it saves you time, we talk about more. If not, no hard
+feelings.
 
-My offer: I'll audit [Company]'s operations and build ONE automation --
-free. If it saves you time, we talk about a full engagement. If not,
-we shake hands.
-
-Zero risk. I eat the cost.
-
-Why free? Your shop looks like a perfect fit for what we build, and
-I want more print service case studies.
+Why free? I want more print service case studies, and your shop looks
+like a fit.
 
 Reply "interested" and I'll send details.
 
@@ -89,20 +81,21 @@ AriseGroup.ai
 
 ---
 
-## EMAIL 4 (Day 12, Sunday) - Breakup
+## EMAIL 4 (Day 14) - Last Note
 
-**Subject:** `closing the loop`
+**Subject:** `Closing the loop`
 
 ```
-Hey [First Name],
+[First Name],
 
-Haven't heard back -- totally fine. You're busy fixing printers.
+Not trying to be a pest. If operations aren't a priority right now,
+no worries.
 
-If timing is ever better: mekaiel@arisegroup.ai
+But if they are -- reply and I'll send our free audit checklist.
+Same one that found $73K in savings for Plotter Mechanix.
 
-The free operations audit offer stands whenever you're ready.
+Either way, best of luck. Your [product/service] is solid.
 
-All the best,
 Mekaiel
 ```
 
@@ -110,25 +103,29 @@ Mekaiel
 
 ## Subject Lines to A/B Test
 
-### Suvam Style (Humble/Curious)
-- A: `quick q about [Company]'s service ops`
-- B: `saw [Company] services [HP/Canon] -- had a thought`
-- C: `[First Name], the 25-hour problem`
+### Direct (Ruthless Style)
+- A: `Quick question about [Company]`
+- B: `[Company] + operations`
+- C: `The $5K experiment that changed everything`
 
-### Otto Style (Proof-Led)
-- D: `How [Printer Name] solved their operational bottleneck`
+### Pain-Led
+- D: `[First Name], the 25-hour problem`
 - E: `Your growth is limited by operations, not leads`
+
+### Proof-Led
+- F: `How a Phoenix print shop hit 1,378% ROI`
+- G: `$5K system → $73K savings (print service case study)`
 
 ---
 
 ## Sending Schedule
 
-| Email | Day | Day of Week | Time |
-|-------|-----|-------------|------|
-| Email 1 | Day 0 | Tuesday | 9-11am local |
-| Email 2 | Day 4 | Saturday | 9-11am local |
-| Email 3 | Day 8 | Wednesday | 9-11am local |
-| Email 4 | Day 12 | Sunday | 9-11am local |
+| Email | Day | Spacing | Time |
+|-------|-----|---------|------|
+| Email 1 | Day 1 | — | 9-11am local |
+| Email 2 | Day 3 | +2 days | 9-11am local |
+| Email 3 | Day 7 | +4 days | 9-11am local |
+| Email 4 | Day 14 | +7 days | 9-11am local |
 
 ---
 
@@ -149,9 +146,11 @@ Mekaiel
 
 - **Trigger:** Google Sheet row with Status = "Ready to Send" and Vertical = "Printing"
 - **Email number:** Based on `Last Email Sent` column (1-4)
-- **Timing:** Cron Tue-Thu 9-11am, respects day gaps between emails
-- **Inbox rotation:** Round-robin across 15 inboxes, max 30/inbox/day
+- **Timing:** Day 1 → Day 3 (+2) → Day 7 (+4) → Day 14 (+7)
+- **Send window:** 9-11am local time
+- **Inbox rotation:** Round-robin across 5 inboxes, start at 20/day, scale to 50/day after warmup
 - **Thread:** Emails 2-4 reply to Email 1's Message-ID for threading
+- **Daily capacity:** 250/day total across all inboxes (post-warmup)
 
 ---
 
