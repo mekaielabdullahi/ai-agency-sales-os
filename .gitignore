@@ -25,3 +25,15 @@ agentic/modules/google/token.json
 
 # Team communications (private)
 shared-resources/team-context/whatsapp-exports/
+
+# AIOS data (local only)
+data/data.db
+data/data.db-wal
+data/data.db-shm
+data/*.json
+credentials/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
