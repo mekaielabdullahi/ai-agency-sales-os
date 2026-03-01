@@ -10,6 +10,12 @@
 
 ## 2026-03-01
 
+### Workspace Cleanup
+- Removed duplicate `docs/CLAUDE.md` (old Sales OS version, superseded by root AIOS CLAUDE.md)
+- Cleaned up 6 empty submodule placeholders (Auto-Claude, bmad-method, cc-plugins, system_prompts_leaks, matthew-repos/*, projects/bookedin)
+- Removed Python cache files (__pycache__, .pyc)
+- Verified CLAUDE.md structure: root (AIOS master) + agentic/ (module-scoped) are the only two needed
+
 ### CommandOS — Telegram Bot
 - Installed CommandOS module — persistent Claude Code agent via Telegram
 - Bot runs as `python -m apps.command.main`, polls @ariseaicommandbot
