@@ -1,0 +1,135 @@
+direction: down
+
+title: |md
+  # AIOS Architecture
+| {near: top-center; shape: text; style.font-size: 28; style.bold: true}
+
+# User layer
+mekaiel: Mekaiel {
+  shape: person
+  style.fill: "#6b7280"
+  style.font-color: "#ffffff"
+}
+
+# Input layer
+inputs: Input Channels {
+  style.fill: "#f8f9fa"
+  style.font-size: 16
+  style.bold: true
+
+  telegram: Telegram Bot\nCommandOS {
+    style.fill: "#3b82f6"
+    style.font-color: "#ffffff"
+  }
+  claude_code: Claude Code\nTerminal {
+    style.fill: "#3b82f6"
+    style.font-color: "#ffffff"
+  }
+}
+
+# Core processing
+core: AIOS Core {
+  style.fill: "#eef2ff"
+  style.font-size: 16
+  style.bold: true
+
+  context: ContextOS\nBusiness Context {
+    style.fill: "#8b5cf6"
+    style.font-color: "#ffffff"
+  }
+  data: DataOS\nMetrics & Collection {
+    style.fill: "#8b5cf6"
+    style.font-color: "#ffffff"
+  }
+  intel: IntelOS\nMeeting Intelligence {
+    style.fill: "#8b5cf6"
+    style.font-color: "#ffffff"
+  }
+  productivity: ProductivityOS\nGTD System {
+    style.fill: "#8b5cf6"
+    style.font-color: "#ffffff"
+  }
+  content: Content Pipeline\nLinkedIn System {
+    style.fill: "#8b5cf6"
+    style.font-color: "#ffffff"
+  }
+}
+
+# Data layer
+storage: Data Layer {
+  style.fill: "#f0fdf4"
+  style.font-size: 16
+  style.bold: true
+
+  db: SQLite\ndata.db {
+    shape: cylinder
+    style.fill: "#1a1a2e"
+    style.font-color: "#ffffff"
+  }
+  content_db: SQLite\ncontent.db {
+    shape: cylinder
+    style.fill: "#1a1a2e"
+    style.font-color: "#ffffff"
+  }
+}
+
+# Output layer
+outputs: Outputs {
+  style.fill: "#fef3c7"
+  style.font-size: 16
+  style.bold: true
+
+  brief: Daily Brief\nTelegram {
+    style.fill: "#d97706"
+    style.font-color: "#ffffff"
+  }
+  dashboard: GTD Dashboard\nMarkdown {
+    style.fill: "#d97706"
+    style.font-color: "#ffffff"
+  }
+  linkedin: LinkedIn\nContent {
+    style.fill: "#d97706"
+    style.font-color: "#ffffff"
+  }
+}
+
+# External data sources
+external: External Sources {
+  style.fill: "#fee2e2"
+  style.font-size: 16
+  style.bold: true
+
+  fireflies: Fireflies\n234 meetings {
+    shape: hexagon
+    style.fill: "#ef4444"
+    style.font-color: "#ffffff"
+  }
+  fx: FX Rates\nDaily {
+    shape: hexagon
+    style.fill: "#ef4444"
+    style.font-color: "#ffffff"
+  }
+}
+
+# Connections
+mekaiel -> inputs.telegram
+mekaiel -> inputs.claude_code
+
+inputs.telegram -> core.context
+inputs.claude_code -> core.context
+
+core.context -> core.data
+core.context -> core.intel
+core.context -> core.productivity
+core.context -> core.content
+
+core.data -> storage.db
+core.intel -> storage.db
+core.content -> storage.content_db
+
+external.fireflies -> core.intel
+external.fx -> core.data
+
+storage.db -> outputs.brief
+storage.db -> outputs.dashboard
+storage.content_db -> outputs.linkedin
