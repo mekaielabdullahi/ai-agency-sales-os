@@ -28,6 +28,7 @@ Read all context files and orient yourself for this session.
 
 These files are NOT read during /prime — load them when a task requires deep detail:
 - `reference/data-access.md` — Full table schemas, SQL query examples, collection scripts
+- `ai-docs/README.md` — **AI Landscape Reference** — Living documentation of the best AI models across 10 categories (text, code, vision, image gen, image edit, search, video gen, image-to-video, TTS, STT). Updated daily by automated scanner. When building anything that uses AI models, or when you need to know the current best model for any category — load this first, then drill into `ai-docs/{category}/state-of-the-art.md` for full rankings, pricing, integration code, and tips.
 
 ## Rules
 

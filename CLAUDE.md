@@ -87,6 +87,14 @@ Most business owners are stuck working IN their business — 80% of bandwidth go
 │   └── intel/                 # IntelOS — meeting collection
 │       ├── collect_fireflies.py
 │       └── db.py
+├── gtd/                       # ProductivityOS — GTD system
+│   ├── dashboard.md           # Operational hub (projects, actions, waiting-for)
+│   ├── inbox.md               # Raw capture bucket
+│   ├── projects.md            # Master project list by area
+│   ├── next-actions.md        # Actions by context (@me, @claude, @calls, etc.)
+│   ├── waiting-for.md         # Delegated items
+│   ├── someday-maybe.md       # Ideas for later
+│   └── areas.md               # Areas of responsibility
 ├── apps/
 │   └── command/               # CommandOS — Telegram bot
 ├── outputs/
@@ -110,6 +118,30 @@ Most business owners are stuck working IN their business — 80% of bandwidth go
 ### /task-audit
 **Purpose:** Map every recurring task, score for automation potential. Scoreboard for Task Automation % KPI.
 
+### /process
+**Purpose:** Process GTD inbox to zero. Walk through each item with the decision tree — route to projects, actions, waiting-for, someday, or trash.
+
+### /review
+**Purpose:** Guided weekly review (Fridays recommended). Get Clear → Get Current → Get Creative → Rebuild dashboard. 30-60 minutes.
+
+### /capture
+**Purpose:** Quick capture of content ideas. Prompts for pillar, format, and hook. Stores in content database.
+
+### /develop
+**Purpose:** Develop a captured idea into a full content concept. Applies positioning angles, audience targeting, and format optimization.
+
+### /schedule
+**Purpose:** Schedule developed content for publication. Assigns to calendar slot (Mon/Wed/Fri).
+
+### /update-ai-docs
+**Purpose:** Pull live rankings from AI leaderboards, detect changes, research new leaders, and update `ai-docs/` documentation. Runs autonomously.
+
+### /brainstorm
+**Purpose:** Scan workspace and Task Audit to find the best automation opportunities. Ranks by impact x feasibility. Outputs to `plans/`.
+
+### /explore [idea]
+**Purpose:** Shape a specific idea into a buildable concept. 5 stages: Discovery → Research → Shape → Scope → Output. Feeds into `/create-plan` or `/implement`.
+
 ### Existing Commands
 - `/status` — Quick status check
 - `/cto-sync`, `/cto-decision`, `/cto-debt` — CTO hub commands
@@ -125,6 +157,11 @@ Most business owners are stuck working IN their business — 80% of bandwidth go
 - **IntelOS v1** — Meeting transcript collection from Fireflies (234 meetings)
 - **CommandOS v1** — Telegram bot with Claude Code agent access
 - **Daily Brief v1** — Morning intelligence report via Gemini, delivered to Telegram
+- **ProductivityOS v1** — GTD system with /process and /review commands, dashboard auto-refresh
+- **Content Pipeline v1** — LinkedIn content system with 7 pillars, /capture → /develop → /schedule workflow
+- **Diagram Engine v1** — D2-based diagram generation, `diagrams/` folder, render script
+- **AI Landscape Monitor v1** — Daily scanner tracking 10 AI categories, `/update-ai-docs` command, `ai-docs/` reference
+- **Slash Command Toolkit v1** — `/brainstorm` and `/explore` commands for custom building workflow
 
 ---
 
