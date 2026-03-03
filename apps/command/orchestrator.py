@@ -155,8 +155,17 @@ class Orchestrator:
             os.path.join(config.workspace_dir, "data", "command")
         )
 
+        # Locks to prevent concurrent agent calls per topic
+        self._topic_locks: dict[str, asyncio.Lock] = {}
+
         # Clean up old temp photos on startup
         _cleanup_old_photos(config.workspace_dir)
+
+    def _get_topic_lock(self, topic_key: str) -> asyncio.Lock:
+        """Get or create a lock for a topic to prevent concurrent agent calls."""
+        if topic_key not in self._topic_locks:
+            self._topic_locks[topic_key] = asyncio.Lock()
+        return self._topic_locks[topic_key]
 
     # ── General Message Handler ──────────────────────────────────────────────
 
@@ -266,6 +275,24 @@ class Orchestrator:
         8. Show cost footer
         9. Warn if context is getting large (>180K tokens)
         """
+        # Acquire lock to prevent concurrent agent calls for same topic
+        lock = self._get_topic_lock(topic_key)
+        if lock.locked():
+            # Another agent call is already running for this topic
+            agent_log.info("Queued message for %s (agent busy)", topic_key)
+
+        async with lock:
+            await self._run_agent_locked(topic_key, message, text, photos, model)
+
+    async def _run_agent_locked(
+        self,
+        topic_key: str,
+        message: Message,
+        text: str,
+        photos: list[dict] | None = None,
+        model: str = "sonnet",
+    ) -> None:
+        """Run the agent with lock held. Extracted from _handle_cc_agent_message."""
         session = self.sessions.get(topic_key)
 
         # Determine chat_id and thread_id for response delivery
