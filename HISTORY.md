@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-03-03
+
+### LinkedIn Collector v1 — Unipile Integration
+- Built `scripts/collect_linkedin.py` — LinkedIn messaging collector via Unipile API
+- Connected Unipile account (UNIPILE_DSN, UNIPILE_API_KEY, UNIPILE_ACCOUNT_ID in .env)
+- Collects: chats (50 conversations), messages (17 collected), invitations
+- Database tables: `linkedin_chats`, `linkedin_messages`, `linkedin_invitations`
+- Integrated with DataOS orchestrator (`python scripts/collect.py --sources linkedin`)
+- 12 unread messages detected, engagement summary available via `--summary` flag
+- Updated `reference/data-access.md` with LinkedIn table schemas and queries
+- Created LinkedIn 2-week content plan with DM playbook tiers
+
 ## 2026-03-02
 
 ### Outreach OS — DMV Pipeline Build
