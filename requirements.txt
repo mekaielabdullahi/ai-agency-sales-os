@@ -1,0 +1,14 @@
+# AIOS Dependencies
+# Install: pip install -r requirements.txt
+
+# Core
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Daily Brief (Gemini AI)
+google-genai>=1.0.0
+matplotlib>=3.0.0
+
+# Telegram Bot (CommandOS)
+aiogram>=3.0.0
+claude-agent-sdk>=0.1.0
