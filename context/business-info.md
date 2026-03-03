@@ -51,7 +51,9 @@
 - **Client tools:** Jobber, Quo AI (phone system), QuickBooks, Google Suite
 - **AI:** Claude Code (operations/dev), OpenAI (SOPs/diagrams)
 - **Meetings:** Fireflies (transcription), Fathom (recording/clips)
-- **Lead gen:** Apify (scraping), Google Sheets API
+- **Lead gen:** Apify (scraping), Google Sheets API, Apollo.io (key in .env)
+- **Social/Inbox:** Unipile (connected — unified LinkedIn + messaging inbox, search tools available)
+- **Website lead capture:** Lovable platform (cloud setup) — tracks leads from arisegroup.ai, free tools and workflows as lead magnets
 
 ## Existing Workspace Systems
 

@@ -12,13 +12,63 @@
 
 | Source | Table(s) | Collection Script | What It Tracks |
 |--------|----------|-------------------|----------------|
+| LinkedIn | `linkedin_chats`, `linkedin_messages`, `linkedin_invitations` | `scripts/collect_linkedin.py` | LinkedIn messaging, conversations, connection requests |
 | Fireflies | `meetings` | `scripts/intel/collect_fireflies.py` | Meeting transcripts, summaries, action items |
 | Slack | `slack_messages` | `scripts/intel/collect_slack.py` | Team messages (not yet configured) |
 | Google Analytics | `ga4_daily`, `ga4_sources` | `scripts/collect_google_analytics.py` | Website sessions, users, page views, traffic sources |
 | Lead Tracker | `leads` | `scripts/collect_leads.py` | Sales pipeline from Google Sheets |
 | FX Rates | `fx_rates` | `scripts/collect_fx_rates.py` | Daily exchange rates from USD (ECB data) |
+| Apollo | - | `scripts/collect_apollo.py` | Lead prospecting, outputs to CSV |
 
 ## Table Schemas
+
+### linkedin_chats
+| Column | Type | Description |
+|--------|------|-------------|
+| id | INTEGER | Auto-increment ID |
+| chat_id | TEXT | Unique chat/conversation ID |
+| participant_id | TEXT | LinkedIn ID of the other participant |
+| participant_name | TEXT | Name of the chat / subject line |
+| participant_headline | TEXT | Content type (inmail, message, sponsored) |
+| last_message_at | TEXT | Timestamp of last message |
+| unread_count | INTEGER | Number of unread messages |
+| collected_at | TEXT | UTC timestamp when collected |
+| raw_data | TEXT | Full API response JSON |
+
+**Primary key:** chat_id
+
+### linkedin_messages
+| Column | Type | Description |
+|--------|------|-------------|
+| id | INTEGER | Auto-increment ID |
+| message_id | TEXT | Unique message ID |
+| chat_id | TEXT | Parent chat ID |
+| sender_id | TEXT | LinkedIn ID of sender |
+| sender_name | TEXT | Name of sender |
+| content | TEXT | Message text content |
+| sent_at | TEXT | Timestamp when sent |
+| is_inbound | INTEGER | 1 = received, 0 = sent by you |
+| collected_at | TEXT | UTC timestamp when collected |
+| raw_data | TEXT | Full API response JSON |
+
+**Primary key:** message_id
+
+### linkedin_invitations
+| Column | Type | Description |
+|--------|------|-------------|
+| id | INTEGER | Auto-increment ID |
+| invitation_id | TEXT | Unique invitation ID |
+| from_id | TEXT | LinkedIn ID of sender |
+| from_name | TEXT | Name of sender |
+| from_headline | TEXT | Headline of sender |
+| from_profile_url | TEXT | Profile URL of sender |
+| message | TEXT | Invitation message |
+| received_at | TEXT | When invitation was received |
+| status | TEXT | pending, accepted, declined |
+| collected_at | TEXT | UTC timestamp when collected |
+| raw_data | TEXT | Full API response JSON |
+
+**Primary key:** invitation_id
 
 ### fx_rates
 | Column | Type | Description |
@@ -139,6 +189,25 @@
 ## Common Queries
 
 ```sql
+-- LinkedIn: Recent inbound messages
+SELECT sender_name, substr(content, 1, 100), sent_at
+FROM linkedin_messages WHERE is_inbound = 1 ORDER BY sent_at DESC LIMIT 10;
+
+-- LinkedIn: Unread chats
+SELECT participant_name, unread_count, last_message_at
+FROM linkedin_chats WHERE unread_count > 0 ORDER BY last_message_at DESC;
+
+-- LinkedIn: Message volume last 7 days
+SELECT date(sent_at) as day, COUNT(*) as messages,
+       SUM(is_inbound) as inbound, COUNT(*) - SUM(is_inbound) as outbound
+FROM linkedin_messages
+WHERE datetime(sent_at) > datetime('now', '-7 days')
+GROUP BY day ORDER BY day DESC;
+
+-- LinkedIn: Search messages by content
+SELECT sender_name, content, sent_at FROM linkedin_messages
+WHERE content LIKE '%AI%' ORDER BY sent_at DESC LIMIT 10;
+
 -- Search meeting transcripts
 SELECT title, date, substr(transcript_text, 1, 200) FROM meetings
 WHERE transcript_text LIKE '%budget%' ORDER BY date DESC;
