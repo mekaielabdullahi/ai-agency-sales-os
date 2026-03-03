@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-03-02
+
+### Outreach OS — DMV Pipeline Build
+- Built Apollo scraper (`scripts/collect_apollo.py`) — pain-signal targeting across DC/NoVA/MD
+- 6 segments: professional services, gov contractors, legal, healthcare, real estate, associations
+- Gov contractors scored highest — Pentagon/NATO background = credibility advantage
+- Built caller briefing doc with 5Q script for cold call rep
+- Built 5-touch cold email drip sequence (problem → cost → bump → consequence → break-up)
+- Built lead scraping plan with ICP, scoring system, and source stack
+- Built 3-channel outreach tracker with pipeline stages and weekly metrics
+- APOLLO_API_KEY slot added to .env — key to be pushed via desktop terminal
+
 ## 2026-03-01
 
 ### Slash Command Toolkit v1 — Layer 5 Build Commands
